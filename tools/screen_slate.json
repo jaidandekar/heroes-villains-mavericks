@@ -1,0 +1,236 @@
+{
+  "page_title": "Heroes, Villains, & Mavericks",
+  "brand": "Heroes, Villains, & Mavericks",
+  "headline": "What\u2019s on, and what\u2019s next through December.",
+  "lede": "Comic movies and series currently in play \u2014 plus the remaining slate through New Year\u2019s Eve.",
+  "hero": {
+    "id": "lanterns",
+    "backdrop_path": "/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg"
+  },
+  "titles": [
+    {
+      "id": "lanterns",
+      "title": "Lanterns",
+      "kind": "tv",
+      "tmdb_id": 95350,
+      "universe": "DC",
+      "blurb": "New recruit John Stewart and Lantern legend Hal Jordan \u2014 two intergalactic cops drawn into a dark, Earth-based mystery with cosmic ties as they investigate a murder in the American heartland. From HBO, Warner Bros. Television, and DC Studios; weekly Sundays through the Oct 4 finale.",
+      "where": "HBO / Max",
+      "where_override": "HBO / Max \u00b7 airing now \u00b7 through Oct 4",
+      "guide": {
+        "href": "green-lantern-guide/index.html",
+        "label": "Learn more about Green Lantern"
+      },
+      "trailer": {
+        "youtube": "7UIBOsuUwc4",
+        "label": "Watch trailer"
+      },
+      "external": "https://www.max.com/",
+      "keep_now_while_airing": true,
+      "ratings": {
+        "rt_critics": {
+          "value": 94,
+          "label": "Rotten Tomatoes",
+          "href": "https://www.rottentomatoes.com/tv/lanterns/s01"
+        },
+        "imdb": {
+          "value": 8.4,
+          "label": "IMDb",
+          "href": "https://www.imdb.com/title/tt26545992/"
+        },
+        "metacritic": {
+          "value": 72,
+          "label": "Metacritic",
+          "href": "https://www.metacritic.com/tv/lanterns/"
+        }
+      }
+    },
+    {
+      "id": "brand-new-day",
+      "title": "Spider-Man: Brand New Day",
+      "kind": "movie",
+      "tmdb_id": 969681,
+      "universe": "Marvel",
+      "blurb": "Fighting crime full-time as Spider-Man in a world that doesn't remember him \u2014 and the pressure of seeing his old friends move on without him \u2014 sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves: a powerful villain no one can even see.",
+      "where": "Theaters",
+      "where_override": "In theaters now",
+      "guide": {
+        "href": "spiderman-guide/index.html",
+        "label": "Learn more about Spider-Man"
+      },
+      "trailer": {
+        "youtube": "P3uI5sLosKU",
+        "label": "Watch trailer"
+      },
+      "external": "https://www.marvel.com/movies/spider-man-brand-new-day",
+      "current_window_days": 150,
+      "ratings": {
+        "rt_critics": {
+          "value": 90,
+          "label": "Rotten Tomatoes",
+          "href": "https://www.rottentomatoes.com/m/spider_man_brand_new_day"
+        },
+        "imdb": {
+          "value": 8.2,
+          "label": "IMDb",
+          "href": "https://www.imdb.com/title/tt22084616/"
+        },
+        "metacritic": {
+          "value": 69,
+          "label": "Metacritic",
+          "href": "https://www.metacritic.com/movie/spider-man-brand-new-day/"
+        }
+      }
+    },
+    {
+      "id": "supergirl",
+      "title": "Supergirl",
+      "kind": "movie",
+      "tmdb_id": 1081003,
+      "universe": "DC",
+      "blurb": "In its inaugural flight into the new DC Universe, Supergirl reveals the origin of the interplanetary nomad Kara Zor-El \u2014 cousin of Kal-El, better known as Superman. Headstrong, worldly-wise, and often reckless, she exudes a brand of heroism all her own. When an unexpected and ruthless adversary strikes too close to home, Kara reluctantly joins forces with an unlikely companion on an epic interstellar journey \u2014 balancing vengeance with justice, and fighting to save her best friend, Krypto.",
+      "where": "Max",
+      "where_override": "Streaming now on Max",
+      "kicker_override": "Film \u00b7 streaming",
+      "guide": {
+        "href": "supergirl-guide/index.html",
+        "label": "Learn more about Supergirl"
+      },
+      "trailer": {
+        "youtube": "s1-pfiVMKAs",
+        "label": "Watch trailer"
+      },
+      "external": "https://www.max.com/",
+      "current_window_days": 150,
+      "ratings": {
+        "rt_critics": {
+          "value": 53,
+          "label": "Rotten Tomatoes",
+          "href": "https://www.rottentomatoes.com/m/supergirl_2026"
+        },
+        "imdb": {
+          "value": 5.9,
+          "label": "IMDb",
+          "href": "https://www.imdb.com/title/tt8814476/"
+        }
+      }
+    },
+    {
+      "id": "xmen-97",
+      "title": "X-Men \u201997",
+      "kind": "tv",
+      "tmdb_id": 138502,
+      "universe": "Marvel",
+      "blurb": "Season 1 left the X-Men reeling after loss, betrayal, and a future that still threatens mutantkind. Season 2 picks up with the team divided and thrown across different eras in time \u2014 from the dawn of Apocalypse\u2019s reign to the height of his rule \u2014 as they struggle to find their way home. Meanwhile, back in the 1990s, suspicious foes and new strains of mutant intolerance rise in the wake of their absence.",
+      "where": "Disney+",
+      "where_override": "Streaming now on Disney+",
+      "guide": {
+        "href": "x-men-guide/index.html",
+        "label": "Learn more about X-Men"
+      },
+      "trailer": {
+        "youtube": "h1x0MJweTU0",
+        "label": "Watch trailer"
+      },
+      "external": "https://www.disneyplus.com/",
+      "keep_now_while_airing": true,
+      "season_label": "Season 2",
+      "ratings": {
+        "rt_critics": {
+          "value": 97,
+          "label": "Rotten Tomatoes",
+          "href": "https://www.rottentomatoes.com/tv/x_men_97/s02"
+        },
+        "imdb": {
+          "value": 8.7,
+          "label": "IMDb",
+          "note": "Series score",
+          "href": "https://www.imdb.com/title/tt16026746/"
+        }
+      }
+    },
+    {
+      "id": "endgame-rerelease",
+      "title": "Avengers: Endgame",
+      "kind": "movie",
+      "tmdb_id": 299534,
+      "universe": "Marvel",
+      "blurb": "Encore theatrical run with roughly four minutes of new footage \u2014 a warm-up for Doomsday.",
+      "where": "Theaters",
+      "guide": {
+        "href": "avengers-guide/index.html",
+        "label": "Learn more about the Avengers"
+      },
+      "external": "https://www.marvel.com/movies/avengers-endgame",
+      "manual_date": "2026-09-25",
+      "kicker_override": "Re-release \u00b7 Marvel",
+      "current_window_days": 21,
+      "trailer": {
+        "youtube": "L2NAh3CIdig",
+        "label": "Watch trailer"
+      }
+    },
+    {
+      "id": "visionquest",
+      "title": "VisionQuest",
+      "kind": "tv",
+      "tmdb_id": 213375,
+      "universe": "Marvel",
+      "blurb": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive \u2014 while a mysterious boy who may be his son is drawn into the chase.",
+      "where": "Disney+",
+      "guide": {
+        "href": "vision-guide/index.html",
+        "label": "Learn more about Vision"
+      },
+      "external": "https://www.disneyplus.com/",
+      "keep_now_while_airing": true,
+      "trailer": {
+        "youtube": "oSVTAUKyrL8",
+        "label": "Watch trailer"
+      }
+    },
+    {
+      "id": "clayface",
+      "title": "Clayface",
+      "kind": "movie",
+      "tmdb_id": 1400940,
+      "universe": "DC",
+      "blurb": "Follow the terrifying descent of a promising Hollywood actor who becomes a monster driven by revenge \u2014 a story about the loss of identity and humanity, toxic love, and the dark side of scientific ambition.",
+      "where": "Theaters",
+      "guide": {
+        "href": "clayface-guide/index.html",
+        "label": "Learn more about Clayface"
+      },
+      "external": "https://www.clayfacemovie.com/",
+      "manual_date": "2026-10-23",
+      "date_note": "North America Oct 23; international from Oct 21",
+      "trailer": {
+        "youtube": "OGO4Mqvo3jI",
+        "label": "Watch trailer"
+      }
+    },
+    {
+      "id": "doomsday",
+      "title": "Avengers: Doomsday",
+      "kind": "movie",
+      "tmdb_id": 1003596,
+      "universe": "Marvel",
+      "blurb": "Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.",
+      "where": "Theaters",
+      "guide": {
+        "href": "avengers-guide/index.html",
+        "label": "Learn more about the Avengers"
+      },
+      "guide_secondary": {
+        "href": "doctor-doom-guide/index.html",
+        "label": "Learn more about Doctor Doom"
+      },
+      "external": "https://www.marvel.com/movies",
+      "manual_date": "2026-12-18",
+      "trailer": {
+        "youtube": "irVNGjRFZGk",
+        "label": "Watch trailer"
+      }
+    }
+  ]
+}

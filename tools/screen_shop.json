@@ -1,0 +1,215 @@
+{
+  "affiliate_tag": "YOURTAG-20",
+  "comics": [
+    {
+      "id": "gl-secret-origin",
+      "kicker": "Green Lantern · Lanterns",
+      "title": "Green Lantern: Secret Origin",
+      "note": "Geoff Johns’ modern Hal Jordan foundation — the comic DNA behind the HBO series.",
+      "search": "Green Lantern Secret Origin Geoff Johns",
+      "isbn": "9781401221904"
+    },
+    {
+      "id": "sm-brand-new-day",
+      "kicker": "Spider-Man · Brand New Day",
+      "title": "Spider-Man: Brand New Day",
+      "note": "Peter starts over after Civil War — the comic era that shares the film’s name.",
+      "search": "Spider-Man Brand New Day comic",
+      "isbn": "9780785133247"
+    },
+    {
+      "id": "sg-woman-of-tomorrow",
+      "kicker": "Supergirl",
+      "title": "Supergirl: Woman of Tomorrow",
+      "note": "Tom King & Bilquis Evely’s galactic road trip — the template for the DCU film.",
+      "search": "Supergirl Woman of Tomorrow",
+      "isbn": "9781779515681"
+    },
+    {
+      "id": "xmen-dark-phoenix",
+      "kicker": "X-Men · ’97",
+      "title": "X-Men: The Dark Phoenix Saga",
+      "note": "Claremont & Byrne’s classic — still the backbone of animated X-Men storytelling.",
+      "search": "X-Men Dark Phoenix Saga",
+      "isbn": "9780785122135"
+    },
+    {
+      "id": "vis-tom-king",
+      "kicker": "Vision · VisionQuest",
+      "title": "Vision by Tom King",
+      "note": "The suburban synthezoid masterpiece — identity, family, and horror.",
+      "search": "Vision Tom King graphic novel",
+      "isbn": "9781302904135"
+    },
+    {
+      "id": "cf-face-the-face",
+      "kicker": "Clayface",
+      "title": "Batman: Face the Face",
+      "note": "Post-Infinite Crisis Batman with Clayface in the mix — shapeshifter identity crime.",
+      "search": "Batman Face the Face Clayface",
+      "isbn": "9781401209667"
+    },
+    {
+      "id": "avg-secret-wars",
+      "kicker": "Avengers · Doctor Doom",
+      "title": "Secret Wars (2015)",
+      "note": "Hickman & Ribic’s multiverse collapse — God Emperor Doom at the center.",
+      "search": "Secret Wars 2015 Hickman",
+      "isbn": "9780785198840"
+    },
+    {
+      "id": "xmen-house-of-x",
+      "kicker": "X-Men",
+      "title": "House of X / Powers of X",
+      "note": "Hickman’s mutant nation reboot — the modern X-Men jumping-on point.",
+      "search": "House of X Powers of X",
+      "isbn": "9781302915704"
+    }
+  ],
+  "toys": [
+    {
+      "id": "funko-hal-jordan",
+      "kicker": "Green Lantern",
+      "title": "Hal Jordan Funko Pop",
+      "note": "Lantern Corps vinyl for Hal Jordan.",
+      "search": "Funko Pop Green Lantern Hal Jordan",
+      "asin": "B004OFRJDI",
+      "image": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg",
+      "resolved_title": "Green Lantern Movie Funko POP! 4 Inch Vinyl Figure Hal Jordan",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-spiderman",
+      "kicker": "Spider-Man",
+      "title": "Spider-Man Funko Pop",
+      "note": "Peter Parker Funko Pop vinyl.",
+      "search": "Funko Pop Spider-Man",
+      "asin": "B0DJFNV15R",
+      "image": "https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg",
+      "resolved_title": "Pop! Marvel: Spider-Man (Last Stand) Previews Exclusive Vinyl Figure",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-supergirl",
+      "kicker": "Supergirl",
+      "title": "Supergirl Funko Pop",
+      "note": "Kara Zor-El vinyl collectible.",
+      "search": "Funko Pop Supergirl",
+      "asin": "B0FPN14YWR",
+      "image": "https://m.media-amazon.com/images/I/71TKl1-Uf8L._AC_SL500_.jpg",
+      "resolved_title": "Funko POP! & Buddy: Supergirl with Puppy Krypto",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-wolverine",
+      "kicker": "X-Men",
+      "title": "Wolverine Funko Pop",
+      "note": "X-Men Wolverine vinyl figure.",
+      "search": "Funko Pop X-Men Wolverine",
+      "asin": "B0FPNQKTQP",
+      "image": "https://m.media-amazon.com/images/I/71jNbJWssHL._AC_SL500_.jpg",
+      "resolved_title": "Funko Pop! Marvel: X-Men '97 - Wolverine (Wasteland)",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-vision",
+      "kicker": "Vision",
+      "title": "Vision Funko Pop",
+      "note": "Marvel Vision vinyl figure.",
+      "search": "Funko Pop Vision Marvel",
+      "asin": "B08KGV6SH6",
+      "image": "https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg",
+      "resolved_title": "Funko Pop! Marvel: Wandavision - The Vision (Finale)",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-clayface",
+      "kicker": "Clayface",
+      "title": "Batman vs Clayface figure",
+      "note": "DC Clayface action figure packaging — SKU resolved from Amazon.",
+      "search": "McFarlane Clayface figure",
+      "asin": "B0G27VB83P",
+      "image": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+      "resolved_title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "funko-doom",
+      "kicker": "Doctor Doom · Doomsday",
+      "title": "Doctor Doom Funko Pop",
+      "note": "Doctor Doom vinyl figure.",
+      "search": "Funko Pop Doctor Doom",
+      "asin": "B07TXLJPRQ",
+      "image": "https://m.media-amazon.com/images/I/71vvWGyaKdL._AC_SL500_.jpg",
+      "resolved_title": "Funko POP! Marvel: Fantastic Four - Doctor Doom",
+      "resolve_source": "amazon-search"
+    },
+    {
+      "id": "legends-avengers",
+      "kicker": "Avengers",
+      "title": "Marvel Legends Avengers",
+      "note": "6-inch Marvel Legends Avengers / Doomsday figure.",
+      "search": "Marvel Legends Avengers figure",
+      "asin": "B0FHSK1N78",
+      "image": "https://m.media-amazon.com/images/I/71CK3HW1yeL._AC_SL500_.jpg",
+      "resolved_title": "Marvel Legends Series Thor | Avengers: Doomsday 6-Inch Figure",
+      "resolve_source": "amazon-search"
+    }
+  ],
+  "games": [
+    {
+      "id": "spiderman-2",
+      "kicker": "Spider-Man",
+      "title": "Marvel’s Spider-Man 2",
+      "note": "Insomniac’s Peter & Miles epic — the modern Spidey game benchmark.",
+      "search": "Marvels Spider-Man 2 PS5",
+      "image": "https://upload.wikimedia.org/wikipedia/en/0/0f/SpiderMan2PS5BoxArt.jpeg",
+      "asin": null
+    },
+    {
+      "id": "marvel-rivals",
+      "kicker": "Avengers · Doom · Spider-Man",
+      "title": "Marvel Rivals",
+      "note": "Hero shooter with Doom, Spidey, and a rotating Marvel roster.",
+      "search": "Marvel Rivals",
+      "image": null,
+      "asin": null
+    },
+    {
+      "id": "injustice-2",
+      "kicker": "Supergirl · Green Lantern",
+      "title": "Injustice 2",
+      "note": "NetherRealm fighter with Supergirl, Hal Jordan, and the DC roster.",
+      "search": "Injustice 2",
+      "image": "https://upload.wikimedia.org/wikipedia/en/3/36/Injustice_2_Cover.jpg",
+      "asin": null
+    },
+    {
+      "id": "mvc-collection",
+      "kicker": "X-Men · Avengers",
+      "title": "Marvel vs. Capcom Fighting Collection",
+      "note": "Arcade classics packed with X-Men and Avengers fighters.",
+      "search": "Marvel vs Capcom Fighting Collection Arcade Classics",
+      "image": "https://upload.wikimedia.org/wikipedia/en/6/68/Marvel_vs_Capcom_Fighting_Collection_Arcade_Classics_cover.jpg",
+      "asin": null
+    },
+    {
+      "id": "lego-marvel",
+      "kicker": "Avengers · Spider-Man",
+      "title": "LEGO Marvel Super Heroes",
+      "note": "Family-friendly Marvel sandbox with Avengers and Spidey front and center.",
+      "search": "LEGO Marvel Super Heroes",
+      "image": "https://upload.wikimedia.org/wikipedia/en/a/a7/Lego-Marvel-cover.jpg",
+      "asin": null
+    },
+    {
+      "id": "midnight-suns",
+      "kicker": "Avengers · Spider-Man",
+      "title": "Marvel’s Midnight Suns",
+      "note": "Tactical RPG with Avengers, Spider-Man, and supernatural Marvel heroes.",
+      "search": "Marvels Midnight Suns",
+      "image": "https://upload.wikimedia.org/wikipedia/en/4/42/Marvel%27s_Midnight_Suns.jpg",
+      "asin": null
+    }
+  ]
+}

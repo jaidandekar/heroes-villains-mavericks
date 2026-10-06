@@ -1,0 +1,18 @@
+{
+  "comicvine": {
+    "api_key": "PASTE_COMIC_VINE_KEY_HERE"
+  },
+  "tmdb": {
+    "api_key": "PASTE_TMDB_V3_KEY_HERE"
+  },
+  "google_books": {
+    "api_key": "OPTIONAL_GOOGLE_BOOKS_KEY"
+  },
+  "amazon": {
+    "partner_tag": "YOURTAG-20",
+    "access_key": "OPTIONAL_AMAZON_CREATORS_OR_PAAPI_ACCESS_KEY",
+    "secret_key": "OPTIONAL_AMAZON_CREATORS_OR_PAAPI_SECRET_KEY",
+    "version": "2.2"
+  },
+  "user_agent": "ComicCharacterGuides/1.0 (personal non-commercial fan project)"
+}

@@ -1,0 +1,60 @@
+{
+  "green-lantern": {
+    "hal-jordan": "https://upload.wikimedia.org/wikipedia/en/9/90/Green_Lantern_%28Hal_Jordan%29.png",
+    "john-stewart": "https://upload.wikimedia.org/wikipedia/en/7/75/Green_Lantern_%28John_Stewart%29.png",
+    "guy-gardner": "https://upload.wikimedia.org/wikipedia/en/7/74/Green_Lantern_%28Guy_Gardner%29.png",
+    "kyle-rayner": "https://upload.wikimedia.org/wikipedia/en/d/d8/Green_Lantern_%28Kyle_Rayner%29.png",
+    "jessica-cruz": "https://upload.wikimedia.org/wikipedia/en/e/e6/Green_Lantern_%28Jessica_Cruz%29.jpg",
+    "alan-scott": "https://upload.wikimedia.org/wikipedia/en/1/1a/Green_Lantern_%28Alan_Scott%29.png",
+    "gl-earth-one": "https://upload.wikimedia.org/wikipedia/en/a/ad/Green_Lantern_Earth_One.jpg",
+    "parallax-hal": "https://upload.wikimedia.org/wikipedia/en/e/e6/Parallax_%28DC_Comics_character%29.png"
+  },
+  "doctor-doom": {
+    "victor-von-doom": "https://upload.wikimedia.org/wikipedia/en/6/66/Doctor_Doom_%28Marvel_Comics_character%29.png",
+    "god-emperor-doom": "https://upload.wikimedia.org/wikipedia/en/3/33/Secret_Wars.jpg",
+    "infamous-iron-man": "https://upload.wikimedia.org/wikipedia/en/4/43/Infamous_Iron_Man_Vol_1_1_Textless.jpg",
+    "doom-2099": "https://upload.wikimedia.org/wikipedia/en/5/56/Doom-2099.jpg"
+  },
+  "supergirl": {
+    "kara-zor-el": "https://upload.wikimedia.org/wikipedia/en/2/20/Supergirl_%28Kara_Zor-El_circa_2016%29.png",
+    "matrix-supergirl": "https://upload.wikimedia.org/wikipedia/en/e/e1/The_Supergirls.jpg",
+    "cir-el": "https://upload.wikimedia.org/wikipedia/en/3/38/Supergirl_%28Cir-El%29.png",
+    "new52-supergirl": "https://upload.wikimedia.org/wikipedia/en/0/06/Supergirl_v1_1.jpg",
+    "supergirl-2099": "https://upload.wikimedia.org/wikipedia/en/0/06/Supergirl_v1_1.jpg"
+  },
+  "clayface": {
+    "basil-karlo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+    "preston-payne": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+    "cassius-clayface": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+    "mudpack": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+    "btas-clayface": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+    "dcu-hagen": "https://upload.wikimedia.org/wikipedia/en/4/4f/Clayface_%28film%29_poster.jpg"
+  },
+  "vision": {
+    "vision-scarlets": "https://upload.wikimedia.org/wikipedia/en/d/df/The_Vision_and_the_Scarlet_Witch.jpg"
+  },
+  "x-men": {
+    "all-new": "https://upload.wikimedia.org/wikipedia/en/6/61/Giant-Size_X-Men_%28no._1_-_cover%29.jpg",
+    "claremont-era": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Chris_Claremont_at_Galaxy_Con_Richmond_-_55175609845.jpg",
+    "morrison-new": "https://upload.wikimedia.org/wikipedia/en/1/1e/New_X-Men_114.jpg",
+    "ultimate-x": "https://upload.wikimedia.org/wikipedia/en/a/a9/X-Men_%28Ultimate_Marvel_characters%29.jpg",
+    "krakoa": "https://upload.wikimedia.org/wikipedia/en/d/da/House_of_X.jpg",
+    "xmen-97-era": "https://upload.wikimedia.org/wikipedia/commons/6/6a/X-Men_%2797_logo.png"
+  },
+  "avengers": {
+    "founders": "https://upload.wikimedia.org/wikipedia/en/2/2b/Avengers_%28Marvel_Comics%29_vol_3_num_38.jpg",
+    "kooky-quartet": "https://upload.wikimedia.org/wikipedia/en/2/2b/Avengers_%28Marvel_Comics%29_vol_3_num_38.jpg",
+    "bendis-new": "https://upload.wikimedia.org/wikipedia/en/7/73/New_Avengers_Vol_2_1.jpg",
+    "hickman-avengers": "https://upload.wikimedia.org/wikipedia/en/8/84/Avengers-1.jpg",
+    "ultimates": "https://upload.wikimedia.org/wikipedia/en/e/e8/Ultimates_01_promo.jpg",
+    "mcu-avengers": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Symbol_from_Marvel%27s_The_Avengers_logo.svg/250px-Symbol_from_Marvel%27s_The_Avengers_logo.svg.png"
+  },
+  "spiderman": {
+    "peter-parker": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+    "miles-morales": "https://upload.wikimedia.org/wikipedia/en/8/8e/Spider-Man_%28Miles_Morales%29_character_art.png",
+    "ultimate-peter": "https://upload.wikimedia.org/wikipedia/en/9/96/Ultimate_Spider-Man_%28October_2000%29_-1.jpg",
+    "spider-gwen": "https://upload.wikimedia.org/wikipedia/en/4/42/Spider-Gwen_Vol_1_1.jpg",
+    "spider-2099": "https://upload.wikimedia.org/wikipedia/en/b/bb/Spider-Man_%28Miguel_O%27Hara%29.png",
+    "mcu-peter": "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg"
+  }
+}

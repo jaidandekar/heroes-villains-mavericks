@@ -1,0 +1,13 @@
+# Secrets — never commit API keys
+tools/config.json
+
+# Tooling caches / temp
+tools/.cache/
+**/__pycache__/
+**/*.pyc
+.DS_Store
+
+# Editor / OS
+*.swp
+.idea/
+.vscode/

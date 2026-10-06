@@ -1,0 +1,9 @@
+# Real API keys — never commit
+config.json
+
+# Resolution cache and transient run state
+.cache/
+
+# Python
+__pycache__/
+*.pyc

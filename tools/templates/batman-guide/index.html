@@ -1,0 +1,3424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <title>Batman — The Dark Knight in Every Form</title>
+  <link rel="preconnect" href="https://covers.openlibrary.org">
+  <link rel="preconnect" href="https://books.google.com">
+  <link rel="preconnect" href="https://images-na.ssl-images-amazon.com">
+  <link rel="preconnect" href="https://upload.wikimedia.org">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-subtle: #f7f7f8;
+      --surface: #ffffff;
+      --surface-2: #f5f5f7;
+      --surface-3: #ebebed;
+      --border: #e4e4e7;
+      --border-light: #f0f0f2;
+      --text: #1d1d1f;
+      --text-secondary: #48484a;
+      --muted: #6e6e73;
+      --accent: #1d1d1f;
+      --accent-hover: #000000;
+      --link: #0066cc;
+      --link-hover: #004499;
+      --radius: 16px;
+      --radius-sm: 12px;
+      --radius-pill: 999px;
+      --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
+      --shadow-hover: 0 2px 4px rgba(0,0,0,0.06), 0 12px 32px rgba(0,0,0,0.1);
+      --shadow-card: 0 6px 20px rgba(0,0,0,0.08);
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
+      --content-max: min(1920px, calc(100vw - 4rem));
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Stacked chrome: HVM site header + guide bar */
+    .site-chrome {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .site-header {
+      background: #ffffff;
+      transition: box-shadow 0.28s var(--ease);
+    }
+
+    .site-header-inner {
+      width: min(100%, var(--content-max, 72rem));
+      margin: 0 auto;
+      padding: 0.85rem 2rem;
+    }
+
+    .site-header-title {
+      font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--text);
+      line-height: 1.2;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .site-header-title:hover { color: var(--text); }
+
+    .site-chrome.is-scrolled {
+      box-shadow: 0 10px 28px rgba(26, 28, 30, 0.1);
+    }
+
+    .guide-bar {
+      border-top: 1px solid var(--border-light);
+      background: var(--bg-subtle);
+    }
+
+    .guide-bar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      width: min(100%, var(--content-max, 72rem));
+      margin: 0 auto;
+      padding: 0.45rem 2rem 0.55rem;
+    }
+
+    .guide-bar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 0;
+    }
+
+    .guide-back {
+      flex: 0 0 auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5rem;
+      height: 1.5rem;
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      line-height: 1;
+      border-radius: 0.3rem;
+      transition: background 0.2s var(--ease), color 0.2s var(--ease);
+    }
+
+    .guide-back:hover {
+      background: rgba(0, 0, 0, 0.06);
+      color: var(--text-secondary);
+    }
+
+    .logo {
+      font-size: 0.8125rem;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .logo:hover { color: var(--text); }
+
+    .logo span { color: var(--muted); font-weight: 500; }
+
+    .guide-bar nav { display: flex; gap: 1.1rem; flex-wrap: wrap; align-items: center; }
+
+    .guide-bar nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: color 0.2s var(--ease);
+    }
+
+    .guide-bar nav a:hover { color: var(--text-secondary); }
+
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+    }
+
+    @media (max-width: 640px) {
+      .site-header-inner,
+      .guide-bar-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .guide-bar-inner { flex-wrap: wrap; }
+      .logo { font-size: 0.75rem; white-space: normal; }
+      main { padding: 0 1.25rem 4rem; }
+    }
+
+    .page { animation: fadeIn 0.35s ease; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Home: Who is Batman ── */
+    .home-section {
+      margin-bottom: 4rem;
+      scroll-margin-top: 5rem;
+    }
+
+    .home-full-bleed {
+      width: 100vw;
+      max-width: 100vw;
+      margin-left: calc(50% - 50vw);
+      margin-right: calc(50% - 50vw);
+    }
+
+    .intro-banner {
+      position: relative;
+      min-height: min(72vh, 640px);
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      margin-bottom: 2.5rem;
+    }
+
+    .intro-banner-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .intro-banner-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+      display: block;
+    }
+
+    .intro-banner-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.45) 45%, rgba(0,0,0,0.15) 100%);
+    }
+
+    .intro-banner-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: var(--content-max);
+      margin: 0 auto;
+      padding: 3rem 2rem 2.5rem;
+      color: #f5f5f7;
+    }
+
+    .intro-banner-content h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.05;
+      margin-bottom: 0.75rem;
+    }
+
+    .intro-lead {
+      font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+      line-height: 1.5;
+      color: rgba(245, 245, 247, 0.88);
+      max-width: 640px;
+      font-weight: 500;
+    }
+
+    .intro-body {
+      max-width: 820px;
+    }
+
+    .intro-summary {
+      font-size: 1.0625rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+
+    .intro-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .intro-fact {
+      padding: 1rem 1.15rem;
+      background: var(--surface-2);
+      border-radius: var(--radius-sm);
+    }
+
+    .intro-fact-label {
+      display: block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .intro-fact-value {
+      display: block;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .wiki-attribution {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .wiki-attribution:hover { color: var(--link-hover); text-decoration: underline; }
+
+    /* ── Home: essential runs row ── */
+    .essential-runs-grid,
+    .run-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    @media (min-width: 640px) {
+      .essential-runs-grid,
+      .run-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .essential-runs-grid,
+      .run-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.15rem;
+      }
+    }
+
+    /* ── Home: screen media groups ── */
+    .screen-group {
+      margin-bottom: 2.5rem;
+    }
+
+    .screen-group:last-child { margin-bottom: 0; }
+
+    .screen-group-title {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .screen-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 900px) {
+      .screen-list {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      }
+    }
+
+    .screen-item {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: box-shadow 0.2s var(--ease), transform 0.2s var(--ease);
+    }
+
+    .screen-item:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+    }
+
+    .screen-item-poster {
+      aspect-ratio: 2 / 3;
+      background: var(--surface-2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screen-item-poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s var(--ease);
+    }
+
+    .screen-item:hover .screen-item-poster img {
+      transform: scale(1.04);
+    }
+
+    .screen-item-poster.no-img::after {
+      content: '🎬';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      opacity: 0.2;
+    }
+
+    .screen-item-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 1rem 1.1rem 1.15rem;
+      flex: 1;
+    }
+
+    .screen-item h3 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .screen-item-meta {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .screen-item-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.35rem;
+    }
+
+    .screen-item-links a {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .screen-item-links a:hover { text-decoration: underline; }
+
+    /* ── Hero (legacy, unused on home) ── */
+    .hero {
+      text-align: center;
+      padding: 3.5rem 1rem 2.5rem;
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.25rem, 5.5vw, 3.25rem);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+      margin-bottom: 0.85rem;
+      color: var(--text);
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 1.55;
+      max-width: 540px;
+      margin: 0 auto 1.75rem;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .stat-pill {
+      padding: 0.45rem 1rem;
+      background: var(--surface-2);
+      border: none;
+      border-radius: var(--radius-pill);
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .stat-pill strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    /* ── Sections ── */
+    .section {
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .section-header h2 {
+      font-size: 1.375rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 0.9375rem;
+      margin-top: 0.35rem;
+      line-height: 1.5;
+      max-width: 520px;
+    }
+
+    .section-badge {
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-pill);
+      background: var(--surface-2);
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .see-all {
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+    }
+
+    .see-all:hover { color: var(--link-hover); text-decoration: underline; }
+
+    .verses-explore-cta {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+
+    .verses-explore-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      min-height: 48px;
+      padding: 0.75rem 1.75rem;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 1;
+      color: #fff;
+      background: var(--accent);
+      border: none;
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: none;
+      transition: background 0.18s var(--ease), transform 0.12s var(--ease);
+    }
+
+    .verses-explore-link:hover {
+      background: var(--link);
+      transform: none;
+      box-shadow: none;
+    }
+
+    .verses-explore-link:active {
+      background: var(--link-hover);
+      transform: scale(0.98);
+    }
+
+    .verses-explore-link:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 3px;
+    }
+
+    /* ── Homepage featured rows ── */
+    .featured-version-rows {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+
+    @media (max-width: 900px) {
+      .featured-version-rows {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .featured-version-row {
+      margin-bottom: 0;
+      min-width: 0;
+    }
+
+    .featured-version-link {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 460px;
+      height: 100%;
+      text-decoration: none;
+      color: inherit;
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      background: var(--surface-2);
+      transition: box-shadow 0.25s var(--ease), transform 0.25s var(--ease);
+    }
+
+    .featured-version-link:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-2px);
+    }
+
+    .featured-version-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .featured-version-bg img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Bias below center so Multiverse banners show cover art, not masthead lettering. */
+      object-position: center 65%;
+      display: block;
+      transition: transform 0.55s var(--ease);
+    }
+
+    .featured-version-link:hover .featured-version-bg img {
+      transform: scale(1.05);
+    }
+
+    .featured-version-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      /* Always-dark base scrim so light covers never wash out the type */
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.92) 0%,
+        rgba(0, 0, 0, 0.78) 32%,
+        rgba(0, 0, 0, 0.42) 58%,
+        rgba(0, 0, 0, 0.18) 78%,
+        rgba(0, 0, 0, 0.06) 100%
+      );
+      transition: opacity 0.45s var(--ease);
+    }
+
+    .featured-version-link:hover .featured-version-overlay {
+      opacity: 0.96;
+    }
+
+    .featured-version-copy {
+      position: relative;
+      z-index: 2;
+      flex: 0 0 auto;
+      min-width: 0;
+      padding: 2rem 1.5rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+      background: transparent;
+      transition: color 0.3s var(--ease);
+    }
+
+    /* Extra text-panel wash sitting under the copy, above the image overlay.
+       Uses --featured-theme-rgb when set so cards keep distinct color identity. */
+    .featured-version-copy::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: -35%;
+      z-index: -1;
+      pointer-events: none;
+      background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.78) 0%,
+        rgba(var(--featured-theme-rgb, 0, 0, 0), 0.58) 42%,
+        rgba(var(--featured-theme-rgb, 0, 0, 0), 0.22) 72%,
+        rgba(0, 0, 0, 0) 100%
+      );
+    }
+
+    @media (max-width: 768px) {
+      .featured-version-copy { padding: 1.5rem 1.25rem 1.75rem; }
+    }
+
+    .featured-version-copy--on-dark {
+      color: #f5f5f7;
+    }
+
+    .featured-version-copy--on-dark h2 {
+      text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+    }
+
+    .featured-version-copy--on-dark .featured-version-tagline,
+    .featured-version-copy--on-dark .featured-version-desc {
+      text-shadow: 0 1px 12px rgba(0, 0, 0, 0.5);
+    }
+
+    .featured-version-copy--on-dark .featured-version-label,
+    .featured-version-copy--on-dark .featured-version-desc,
+    .featured-version-copy--on-dark .featured-version-meta {
+      color: rgba(245, 245, 247, 0.88);
+    }
+
+    .featured-version-copy--on-dark .featured-version-tagline {
+      color: rgba(245, 245, 247, 0.95);
+    }
+
+    .featured-version-copy--on-dark .featured-version-meta span {
+      background: rgba(255, 255, 255, 0.14);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .featured-version-copy--on-dark .featured-version-cta {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .featured-version-copy--on-dark .featured-version-cta:hover {
+      background: #fff;
+      border-color: #fff;
+      color: var(--text);
+    }
+
+    .featured-version-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.65rem;
+    }
+
+    .featured-version-copy h2 {
+      font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+
+    .featured-version-tagline {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      margin-bottom: 0.85rem;
+    }
+
+    .featured-version-desc {
+      font-size: 0.9375rem;
+      line-height: 1.6;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      max-width: none;
+    }
+
+    .featured-version-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .featured-version-meta span {
+      padding: 0.3rem 0.65rem;
+      background: rgba(0, 0, 0, 0.06);
+      border-radius: var(--radius-pill);
+    }
+
+    .featured-version-cta {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--link);
+      padding: 0.55rem 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+    }
+
+    .featured-version-link:hover .featured-version-cta {
+      background: #fff;
+      border-color: #fff;
+      color: var(--text);
+    }
+
+    .featured-version-link--static {
+      cursor: default;
+    }
+
+    .featured-version-run-links {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.45rem;
+      margin-top: 0.35rem;
+    }
+
+    .featured-version-run-link {
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: var(--radius-pill);
+      text-decoration: none;
+      transition: background 0.18s var(--ease), border-color 0.18s var(--ease), color 0.18s var(--ease);
+    }
+
+    .featured-version-copy--on-dark .featured-version-run-link:hover {
+      background: #fff;
+      border-color: #fff;
+      color: var(--text);
+    }
+
+    .featured-version-more-runs {
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: rgba(245, 245, 247, 0.65);
+      padding: 0.15rem 0.25rem 0;
+    }
+
+    .featured-version-shop {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 0.85rem;
+      margin-top: 0.35rem;
+    }
+
+    .featured-version-shop .run-shop-link {
+      color: inherit;
+      opacity: 0.92;
+    }
+
+    .featured-version-copy--on-dark .featured-version-shop .run-shop-link {
+      color: #ffffff;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .run-shop-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .run-shop-link::after {
+      content: '→';
+      font-size: 0.85em;
+      line-height: 1;
+      transform: translateY(0.02em);
+    }
+
+    .run-shop-link:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+
+    /* ── Run cards (horizontal: cover left, text right) ── */
+    .run-card {
+      display: flex;
+      flex-direction: row;
+      align-items: stretch;
+      min-height: 248px;
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+
+    @media (min-width: 640px) {
+      .run-card {
+        min-height: 272px;
+      }
+    }
+
+    .run-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .run-card-cover {
+      flex: 0 0 132px;
+      width: 132px;
+      align-self: stretch;
+      background: var(--surface-2);
+      position: relative;
+      overflow: hidden;
+      border-radius: 0;
+    }
+
+    @media (min-width: 640px) {
+      .run-card-cover {
+        flex: 0 0 156px;
+        width: 156px;
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .run-card-cover {
+        flex: 0 0 168px;
+        width: 168px;
+      }
+    }
+
+    .run-card-cover img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s var(--ease);
+    }
+
+    .run-card:hover .run-card-cover img {
+      transform: scale(1.04);
+    }
+
+    .run-card-cover.no-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface-2);
+    }
+
+    .run-card-cover.no-img::after {
+      content: '✨';
+      font-size: 2rem;
+      opacity: 0.2;
+    }
+
+    .run-card-year {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      color: var(--text);
+      font-size: 0.625rem;
+      font-weight: 600;
+      padding: 0.2rem 0.45rem;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .run-card-body {
+      flex: 1;
+      min-width: 0;
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.25rem;
+      border-top: none;
+    }
+
+    .run-card-body h3 {
+      font-size: 1rem;
+      font-weight: 800;
+      line-height: 1.25;
+      letter-spacing: -0.025em;
+      color: var(--text);
+    }
+
+    .run-card-creators {
+      font-size: 0.8125rem;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      font-weight: 500;
+    }
+
+    .run-card-meta {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    .run-card-summary {
+      font-size: 0.75rem;
+      color: var(--muted);
+      line-height: 1.4;
+      margin-top: 0.1rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .run-card-character {
+      display: inline-block;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+    }
+
+    .run-card-cta {
+      margin-top: 0.35rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--link);
+      transition: color 0.2s var(--ease);
+    }
+
+    .run-card:hover .run-card-cta {
+      color: var(--link-hover);
+    }
+
+    /* ── Version cards ── */
+    .version-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .version-card {
+      display: flex;
+      flex-direction: column;
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius);
+      overflow: hidden;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: var(--shadow);
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+
+    .version-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .version-card-image {
+      aspect-ratio: 4/5;
+      position: relative;
+      overflow: hidden;
+      background: var(--surface-2);
+      border-radius: 0;
+    }
+
+    .version-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s var(--ease);
+    }
+
+    .version-card:hover .version-card-image img {
+      transform: scale(1.04);
+    }
+
+    .version-card-image.no-img {
+      background: var(--surface-2);
+    }
+
+    .version-card-image.no-img::after {
+      content: '🦇';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      opacity: 0.15;
+    }
+
+    .version-card-image::after {
+      content: none;
+    }
+
+    .version-card-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 1;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(8px);
+      color: var(--text);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    .version-card-body {
+      padding: 1rem 1.15rem 1.2rem;
+      border-top: 1px solid var(--border-light);
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .version-card-body h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+
+    .version-card-body p {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.45;
+      flex: 1;
+    }
+
+    /* ── Filters ── */
+    .filters {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.25rem;
+    }
+
+    .filter-btn {
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-secondary);
+      font-size: 0.8125rem;
+      font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.2s var(--ease);
+      white-space: nowrap;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+
+    .filter-btn.active {
+      border-color: var(--text);
+      color: var(--bg);
+      background: var(--text);
+    }
+
+    /* ── Path cards ── */
+    .path-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .path-card {
+      padding: 1.25rem;
+      background: var(--surface);
+      border: none;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+
+    .path-card h4 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.4rem;
+    }
+
+    .path-card p { font-size: 0.8125rem; color: var(--muted); }
+
+    /* ── Version page hero ── */
+    .version-banner {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 2.5rem;
+      align-items: start;
+      margin-bottom: 2.5rem;
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .version-banner {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    .version-banner-visual {
+      position: relative;
+    }
+
+    .version-banner-bg {
+      aspect-ratio: 4/5;
+      border-radius: var(--radius);
+      background-size: cover;
+      background-position: center top;
+      box-shadow: var(--shadow-card);
+      background-color: var(--surface-2);
+    }
+
+    .version-banner-bg.no-img {
+      background: var(--surface-2);
+    }
+
+    .version-banner-content {
+      padding: 0.5rem 0 0;
+    }
+
+    .version-banner h1 {
+      font-size: clamp(1.875rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+
+    .version-banner .tagline {
+      color: var(--text-secondary);
+      font-size: 1.125rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .version-meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .meta-tag {
+      font-size: 0.8125rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--surface-2);
+      border-radius: var(--radius-pill);
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .version-description {
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+
+    .wiki-link {
+      display: inline-block;
+      margin-top: 1.25rem;
+      color: var(--link);
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .wiki-link:hover { color: var(--link-hover); text-decoration: underline; }
+
+    .wiki-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .version-run-merged {
+      margin-top: 0.5rem;
+    }
+
+    .version-run-merged .section-header {
+      margin-bottom: 1.75rem;
+    }
+
+    .version-run-merged .run-layout {
+      margin-top: 0;
+    }
+    .breadcrumb {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 1.75rem;
+      padding-top: 1.25rem;
+      font-weight: 500;
+    }
+
+    .breadcrumb a {
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .breadcrumb a:hover { color: var(--text); text-decoration: underline; }
+
+    .run-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    @media (max-width: 768px) {
+      .run-layout { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    .run-cover-card {
+      background: transparent;
+      border: none;
+      border-radius: var(--radius);
+      overflow: hidden;
+      position: sticky;
+      top: 5.5rem;
+    }
+
+    .run-cover-wrap {
+      aspect-ratio: 2/3;
+      background: var(--surface-2);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+
+    .run-cover-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .run-cover-wrap.no-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      opacity: 0.12;
+    }
+
+    .run-cover-meta {
+      padding: 1rem 0.15rem 0;
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .run-detail h1 {
+      font-size: clamp(1.875rem, 4vw, 2.375rem);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 0.4rem;
+      color: var(--text);
+    }
+
+    .run-detail .creators {
+      color: var(--text-secondary);
+      font-size: 1.0625rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .run-detail .summary {
+      color: var(--muted);
+      line-height: 1.7;
+      margin-bottom: 2rem;
+      font-size: 1.0625rem;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 2.25rem;
+    }
+
+    .info-box {
+      background: var(--surface-2);
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.1rem;
+    }
+
+    .info-box label {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .info-box span {
+      font-weight: 600;
+      font-size: 0.9375rem;
+      line-height: 1.35;
+      color: var(--text);
+    }
+
+    .block-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .reading-order ol {
+      list-style: none;
+      counter-reset: order;
+      margin-bottom: 2.25rem;
+    }
+
+    .reading-order li {
+      counter-increment: order;
+      padding: 0.9rem 1.1rem 0.9rem 3rem;
+      background: var(--surface-2);
+      border: none;
+      border-radius: var(--radius-sm);
+      margin-bottom: 0.5rem;
+      position: relative;
+      font-size: 0.9375rem;
+      color: var(--text-secondary);
+    }
+
+    .reading-order li::before {
+      content: counter(order);
+      position: absolute;
+      left: 1.1rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+
+    /* ── Issue inventory ── */
+    .issue-inventory {
+      margin-bottom: 2.25rem;
+    }
+
+    .issue-inventory-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+
+    .issue-count {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    .issue-note {
+      font-size: 0.875rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+      padding: 0.85rem 1rem;
+      background: var(--surface-2);
+      border-radius: var(--radius-sm);
+    }
+
+    .issue-list {
+      list-style: none;
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+
+    .issue-list li {
+      display: grid;
+      grid-template-columns: 52px minmax(120px, 32%) 1fr;
+      gap: 0.75rem 1rem;
+      padding: 0.7rem 1rem;
+      font-size: 0.875rem;
+      border-bottom: 1px solid var(--border-light);
+      align-items: center;
+    }
+
+    .issue-list li.issue-row-no-cover {
+      grid-template-columns: minmax(140px, 38%) 1fr;
+    }
+
+    .issue-thumb {
+      width: 52px;
+      height: 78px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface-2);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+      flex-shrink: 0;
+    }
+
+    .issue-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .issue-thumb.no-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      opacity: 0.15;
+    }
+
+    /* ── Screen / media (TV & film) ── */
+    .media-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .media-card {
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      padding: 1.15rem 1.2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .media-card-type {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .media-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .media-meta {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      line-height: 1.55;
+      margin-bottom: 0.85rem;
+    }
+
+    .media-meta span {
+      display: block;
+    }
+
+    .media-links {
+      display: flex;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .media-link {
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--link);
+      text-decoration: none;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-pill);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .media-link:hover {
+      border-color: var(--text);
+      color: var(--text);
+    }
+
+    .issue-list li:last-child { border-bottom: none; }
+
+    .issue-list li:nth-child(even) {
+      background: var(--bg-subtle);
+    }
+
+    .issue-id {
+      font-weight: 600;
+      color: var(--text);
+      white-space: nowrap;
+    }
+
+    .issue-title {
+      color: var(--text-secondary);
+      line-height: 1.4;
+    }
+
+    @media (max-width: 520px) {
+      .issue-list li,
+      .issue-list li.issue-row-no-cover {
+        grid-template-columns: 44px 1fr;
+        gap: 0.5rem;
+      }
+
+      .issue-title { grid-column: 2; }
+      .issue-id { grid-column: 2; }
+    }
+
+    /* ── Amazon product cards ── */
+    .product-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    .product-card {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.15rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      color: inherit;
+      transition: border-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    }
+
+    .product-card:hover {
+      border-color: var(--text);
+      box-shadow: var(--shadow);
+    }
+
+    .product-thumb {
+      width: 52px;
+      height: 78px;
+      flex-shrink: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--surface-2);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .product-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .product-info { flex: 1; min-width: 0; }
+
+    .product-info h4 {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+      color: var(--text);
+    }
+
+    .product-info span {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    .product-cta {
+      flex-shrink: 0;
+      background: var(--text);
+      color: var(--bg);
+      font-weight: 600;
+      font-size: 0.8125rem;
+      padding: 0.55rem 1rem;
+      border-radius: var(--radius-pill);
+      transition: background 0.2s var(--ease);
+    }
+
+    .product-card:hover .product-cta {
+      background: var(--accent-hover);
+    }
+
+    .disclosure {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .subsection-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    #page-version .breadcrumb,
+    #page-run .breadcrumb,
+    #page-all-versions .breadcrumb {
+      padding-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-chrome">
+    <div class="site-header">
+      <div class="site-header-inner">
+        <a class="site-header-title" href="../heroesvillainsmavericks.html">Heroes, Villains, &amp; Mavericks</a>
+      </div>
+    </div>
+    <div class="guide-bar">
+      <div class="guide-bar-inner">
+        <div class="guide-bar-brand">
+          <a class="guide-back" href="../heroesvillainsmavericks.html" aria-label="Back to Heroes, Villains, &amp; Mavericks">←</a>
+          <a href="#home" class="logo">Learn more about Batman</a>
+        </div>
+        <nav>
+          <a href="#who-is-batman">Who is Batman</a>
+          <a href="#verses">Verses</a>
+          <a href="#graphic-novels">Comics</a>
+          <a href="#on-screen">Film &amp; TV</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="app"></main>
+
+  <script>
+    const AFFILIATE_TAG = 'YOURTAG-20';
+    /* Wide/cinematic hero fallbacks (TMDB etc). Local header file is tried first. */
+    const HERO_REMOTE_SOURCES = [];
+
+    const RUN_ISBN = {
+      'year-one': '9781401207526',
+      'long-halloween': '9781401232597',
+      'dark-victory': '9781401233309',
+      'killing-joke': '9781401284272',
+      'death-in-the-family': '9781401293623',
+      'knightfall': '9781401233217',
+      'no-mans-land': '9781401295277',
+      'hush': '9781401297244',
+      'under-the-red-hood': '9781401231453',
+      'batman-rip': '9781401220325',
+      'court-of-owls': '9781401235420',
+      'death-of-the-family': '9781401242370',
+      'earth-two-golden-age': '9781563890433',
+      'dark-knight-returns': '9781563893421',
+      'flashpoint-knight-of-vengeance': '9781401234054',
+      'crime-syndicate': '9781401249367',
+      'red-rain': '9781563890369',
+      'batman-beyond-vol-1': '9781563894076',
+      'hush-beyond': '9781401229887',
+      'batman-who-laughs': '9781779504463',
+      'gotham-by-gaslight': '9781779524058',
+      'white-knight': '9781401274527',
+      'holy-terror': '9781563892034',
+      'batman-66-vol-1': '9781401244737',
+      'in-darkest-knight': '9781563891266',
+      'dc-one-million': '9781401203205',
+      'batman-million': '9781401242435',
+      'knightfall-vol-1': '9781401233217',
+      'knightquest': '9781401233866',
+      'knightsend': '9781401234078'
+    };
+
+    const versions = [
+      { slug: 'prime-earth-batman', name: 'Prime Earth Batman', universe: 'Earth-0 (Main Continuity)', type: 'main', firstAppearance: 'Detective Comics #27 (1939)', tagline: 'The definitive Dark Knight', description: 'Bruce Wayne of Gotham City. Witness to his parents\' murder, he trained his body and mind to wage a one-man war on crime. Unlike most superheroes, he has no powers — only discipline, wealth, and an iron will. This is the Batman of DC\'s main continuity: the version every other Batman is measured against.', wikipedia: 'https://en.wikipedia.org/wiki/Batman', runs: ['year-one','long-halloween','dark-victory','killing-joke','death-in-the-family','knightfall','no-mans-land','hush','under-the-red-hood','batman-rip','court-of-owls','death-of-the-family'] },
+      { slug: 'earth-two-batman', name: 'Earth-Two Batman', universe: 'Earth-Two', type: 'multiverse', firstAppearance: 'Detective Comics #27 (1939)', tagline: 'The Golden Age Batman who aged and died a hero', description: 'The original Golden Age Batman from DC\'s parallel Earth-Two. This Bruce Wayne fought crime from the 1940s onward, eventually marrying Selina Kyle, fathering Helena Wayne (the Huntress), and dying in Crisis on Infinite Earths.', wikipedia: 'https://en.wikipedia.org/wiki/Alternative_versions_of_Batman#Earth-Two', runs: ['earth-two-golden-age'] },
+      { slug: 'earth-31-batman', name: 'Earth-31 Batman', universe: 'Earth-31', type: 'multiverse', firstAppearance: 'Batman: The Dark Knight Returns #1 (1986)', tagline: 'The aged, brutal Dark Knight of dystopian Gotham', description: 'An older Bruce Wayne, ten years retired, watches Gotham collapse into mutant gang violence. When he returns, this Batman is harder, more violent, and willing to cross lines the main Bruce never would.', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_The_Dark_Knight_Returns', runs: ['dark-knight-returns'] },
+      { slug: 'thomas-wayne-batman', name: 'Thomas Wayne Batman', universe: 'Flashpoint', type: 'multiverse', firstAppearance: 'Flashpoint #1 (2011)', tagline: 'The father who became Batman when Bruce died', description: 'In the Flashpoint timeline, young Bruce Wayne was killed instead of his parents. Thomas Wayne became a gun-wielding, lethal Batman while Martha Wayne became the Joker.', wikipedia: 'https://en.wikipedia.org/wiki/Flashpoint_(comics)', runs: ['flashpoint-knight-of-vengeance'] },
+      { slug: 'owlman', name: 'Owlman', universe: 'Earth-3', type: 'multiverse', firstAppearance: 'Justice League of America #29 (1964)', tagline: 'Evil mirror-universe Batman', description: 'Thomas Wayne Jr. of Earth-3 — the evil counterpart to Batman. A member of the Crime Syndicate, Owlman is a ruthless strategist who believes he is superior to all life.', wikipedia: 'https://en.wikipedia.org/wiki/Owlman_(character)', runs: ['crime-syndicate'] },
+      { slug: 'vampire-batman', name: 'Vampire Batman', universe: 'Elseworlds (Red Rain)', type: 'elseworlds', firstAppearance: 'Batman & Dracula: Red Rain (1991)', tagline: 'The Dark Knight who became a vampire', description: 'When Dracula invades Gotham, Bruce Wayne allows himself to be turned into a vampire to gain the power to stop him. He succeeds — but at the cost of his humanity.', wikipedia: 'https://en.wikipedia.org/wiki/Batman_%26_Dracula:_Red_Rain', runs: ['red-rain'] },
+      { slug: 'batman-beyond', name: 'Batman Beyond', universe: 'Neo-Gotham / Earth-12', type: 'future', firstAppearance: 'Batman Beyond (TV) — Jan. 1999', tagline: 'Terry McGinnis — Batman of the future', description: 'Neo-Gotham, decades ahead: an elderly Bruce Wayne mentors Terry McGinnis in an advanced Batsuit. The Emmy-winning animated series defined this version; comics and Batman Beyond: Return of the Joker expanded the mythos.', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Beyond', wikipediaComics: 'https://en.wikipedia.org/wiki/Batman_Beyond_(comics)', runs: ['batman-beyond-vol-1', 'hush-beyond'], media: [
+        { type: 'tv', title: 'Batman Beyond', years: '1999–2001', network: 'Kids\' WB', episodes: '52 (3 seasons)', creators: 'Bruce Timm, Paul Dini, Alan Burnett', imdb: 'https://www.imdb.com/title/tt0118266/', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Beyond' },
+        { type: 'film', title: 'Batman Beyond: Return of the Joker', year: '2000', runtime: '76 min', creators: 'Curt Geda (dir.)', imdb: 'https://www.imdb.com/title/tt0233298/', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Beyond:_Return_of_the_Joker' }
+      ] },
+      { slug: 'batman-one-million', name: 'Batman One Million', universe: '853rd Century / Justice Legion Alpha', type: 'future', firstAppearance: 'DC One Million #1 (1998)', tagline: 'The Batman of the far future', description: 'In Grant Morrison\'s DC One Million event, the Batman of the 853rd century patrols a terraformed solar system alongside Robin the Toy Wonder and Justice Legion Alpha. A descendant of the original Dark Knight, he embodies Batman\'s legacy stretched across millennia.', wikipedia: 'https://en.wikipedia.org/wiki/DC_One_Million', runs: ['dc-one-million', 'batman-million'] },
+      { slug: 'knightfall-batman', name: 'Knightfall Batman', universe: 'Earth-0 (Post-Crisis)', type: 'main', firstAppearance: 'Batman #497 (1993)', tagline: 'Jean-Paul Valley — Batman after Bane', description: 'When Bane breaks Bruce Wayne\'s back, Jean-Paul Valley (Azrael) inherits the mantle. His armored, lethal Batman escalates through Knightfall, Knightquest, and KnightsEnd until Bruce returns to reclaim Gotham.', wikipedia: 'https://en.wikipedia.org/wiki/Knightfall', runs: ['knightfall-vol-1', 'knightquest', 'knightsend'] },
+      { slug: 'batman-who-laughs', name: 'The Batman Who Laughs', universe: 'Earth -22 (Dark Multiverse)', type: 'dark-multiverse', firstAppearance: 'Dark Days: The Casting #1 (2017)', tagline: 'Half Batman, half Joker — pure nightmare', description: 'When the Joker dies, his toxin infects Bruce Wayne. The result is the Batman Who Laughs: Batman\'s tactical genius merged with the Joker\'s chaos and cruelty. Kept as the flagship Dark Multiverse entry — one of the few with a dedicated Wikipedia article and trade coverage.', wikipedia: 'https://en.wikipedia.org/wiki/The_Batman_Who_Laughs', runs: ['batman-who-laughs'] },
+      { slug: 'gaslight-batman', name: 'Gotham by Gaslight Batman', universe: 'Elseworlds', type: 'elseworlds', firstAppearance: 'Batman: Gotham by Gaslight #1 (1989)', tagline: 'Victorian-era Batman vs. Jack the Ripper', description: 'The first official Elseworlds tale. Bruce Wayne returns to Victorian Gotham and becomes the Bat-Man, hunting Jack the Ripper through gaslit streets.', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_Gotham_by_Gaslight', runs: ['gotham-by-gaslight'] },
+      { slug: 'white-knight-batman', name: 'White Knight Batman', universe: 'Murphyverse', type: 'elseworlds', firstAppearance: 'Batman: White Knight #1 (2017)', tagline: 'Bruce in Sean Murphy\'s reformed-Joker Gotham', description: 'Sean Murphy\'s alternate Gotham where the Joker is "cured" and turns public opinion against Batman. Bruce must confront whether he created his own enemies.', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_White_Knight', runs: ['white-knight'] },
+      { slug: 'holy-terror-batman', name: 'Holy Terror Batman', universe: 'Elseworlds', type: 'elseworlds', firstAppearance: 'Batman: Holy Terror #1 (1991)', tagline: 'Theocratic dystopia Batman', description: 'A theocratic America where Bruce Wayne is a priest-inquisitor hunting heretics. One of DC\'s darkest alternate takes.', wikipedia: 'https://en.wikipedia.org/wiki/Holy_Terror_(graphic_novel)', runs: ['holy-terror'] },
+      { slug: 'batman-66', name: 'Batman \'66', universe: 'Earth-66', type: 'multiverse', firstAppearance: 'Batman (TV) — Jan. 1966', tagline: 'Silver Age camp Batman from the TV show', description: 'The Batman of the 1966 Adam West TV series — colorful, quippy, and wonderfully camp. Jeff Parker\'s Batman \'66 comics continue the pop-art Caped Crusader in print.', wikipedia: 'https://en.wikipedia.org/wiki/Batman_(TV_series)', wikipediaComics: 'https://en.wikipedia.org/wiki/Batman_%2766_(comics)', runs: ['batman-66-vol-1'], media: [
+        { type: 'tv', title: 'Batman', years: '1966–1968', network: 'ABC', episodes: '120 (3 seasons)', creators: 'William Dozier', imdb: 'https://www.imdb.com/title/tt0059968/', wikipedia: 'https://en.wikipedia.org/wiki/Batman_(TV_series)' }
+      ] },
+      { slug: 'darkest-knight-batman', name: 'In Darkest Knight Batman', universe: 'Elseworlds', type: 'elseworlds', firstAppearance: 'Batman: In Darkest Knight #1 (1994)', tagline: 'Bruce Wayne becomes Green Lantern', description: 'What if Bruce Wayne received Abin Sur\'s Green Lantern ring instead of Hal Jordan? A cosmic-powered Bruce Wayne patrols Gotham and space.', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_In_Darkest_Knight', runs: ['in-darkest-knight'] }
+    ];
+
+    const runs = {
+      'year-one': { slug: 'year-one', versionSlug: 'prime-earth-batman', title: 'Batman: Year One', creators: 'Frank Miller & David Mazzucchelli', years: '1987', collects: 'Batman #404–407', era: 'Post-Crisis / Modern Age', prerequisites: 'None — ideal entry point', summary: 'Bruce Wayne\'s first year as Batman, told in parallel with Lieutenant James Gordon\'s first year on a corrupt GCPD. A noir origin story that redefined Batman for a generation.', readingOrder: ['Batman: Year One (complete in one volume)'], amazon: [{ asin: '1401207529', title: 'Batman: Year One (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'long-halloween': { slug: 'long-halloween', versionSlug: 'prime-earth-batman', title: 'The Long Halloween', creators: 'Jeph Loeb & Tim Sale', years: '1996–97', collects: '13-issue limited series', era: 'Post-Crisis', prerequisites: 'Year One (recommended)', summary: 'A mob war tears Gotham apart as a killer called Holiday murders on holidays. Harvey Dent\'s transformation into Two-Face unfolds across one calendar year.', readingOrder: ['Batman: The Long Halloween (complete)'], amazon: [{ asin: '1401232590', title: 'Batman: The Long Halloween (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'dark-victory': { slug: 'dark-victory', versionSlug: 'prime-earth-batman', title: 'Dark Victory', creators: 'Jeph Loeb & Tim Sale', years: '1999–2000', collects: '14-issue limited series', era: 'Post-Crisis', prerequisites: 'The Long Halloween', summary: 'Sequel to The Long Halloween. Two-Face rises as a new killer called the Hangman targets Gotham\'s police and allies.', readingOrder: ['Batman: Dark Victory (complete)'], amazon: [{ asin: '1401233309', title: 'Batman: Dark Victory (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'killing-joke': { slug: 'killing-joke', versionSlug: 'prime-earth-batman', title: 'The Killing Joke', creators: 'Alan Moore & Brian Bolland', years: '1988', collects: 'One-shot graphic novel', era: 'Post-Crisis', prerequisites: 'None', summary: 'The Joker\'s most infamous act — shooting Barbara Gordon — and an origin story for the Clown Prince of Crime.', readingOrder: ['Batman: The Killing Joke (complete)'], amazon: [{ asin: '1401284272', title: 'Batman: The Killing Joke (Deluxe Edition)', format: 'Hardcover', recommended: true }] },
+      'death-in-the-family': { slug: 'death-in-the-family', versionSlug: 'prime-earth-batman', title: 'A Death in the Family', creators: 'Jim Starlin & Jim Aparo', years: '1988', collects: 'Batman #426–429', era: 'Post-Crisis', prerequisites: 'None', summary: 'The Joker beats Jason Todd, the second Robin, to death. Fans voted by phone to decide whether Jason lived or died.', readingOrder: ['A Death in the Family (TPB collection)'], amazon: [{ asin: '1401293623', title: 'Batman: A Death in the Family', format: 'Trade Paperback', recommended: true }] },
+      'knightfall': { slug: 'knightfall', versionSlug: 'prime-earth-batman', title: 'Knightfall', creators: 'Multiple (Moench, Dixon, Nolan)', years: '1993–94', collects: 'Crossover arc', era: 'Post-Crisis', prerequisites: 'None', summary: 'Bane breaks Batman\'s back. Jean-Paul Valley (Azrael) takes the mantle and becomes a violent, unstable Batman.', readingOrder: ['Batman: Knightfall Vol. 1', 'Vol. 2', 'Vol. 3'], amazon: [{ asin: '140123321X', title: 'Batman: Knightfall Vol. 1', format: 'Trade Paperback', recommended: true }] },
+      'no-mans-land': { slug: 'no-mans-land', versionSlug: 'prime-earth-batman', title: 'No Man\'s Land', creators: 'Multiple', years: '1999–2000', collects: 'Massive crossover', era: 'Post-Crisis', prerequisites: 'Cataclysm (optional)', summary: 'Gotham is destroyed by an earthquake and abandoned by the U.S. government. Batman fights to reunite the city.', readingOrder: ['Batman: No Man\'s Land Vol. 1–5'], amazon: [{ asin: '1401295271', title: 'Batman: No Man\'s Land Vol. 1', format: 'Trade Paperback', recommended: true }] },
+      'hush': { slug: 'hush', versionSlug: 'prime-earth-batman', title: 'Hush', creators: 'Jeph Loeb & Jim Lee', years: '2002–03', collects: 'Batman #608–619', era: 'Post-Crisis', prerequisites: 'None', summary: 'Every major villain emerges as Batman hunts a mysterious mastermind called Hush. Blockbuster story with stunning Jim Lee artwork.', readingOrder: ['Batman: Hush (complete)'], amazon: [{ asin: '1401297242', title: 'Batman: Hush (New Edition)', format: 'Trade Paperback', recommended: true }] },
+      'under-the-red-hood': { slug: 'under-the-red-hood', versionSlug: 'prime-earth-batman', title: 'Under the Red Hood', creators: 'Judd Winick & Doug Mahnke', years: '2004–06', collects: 'Batman #635–650', era: 'Post-Crisis', prerequisites: 'A Death in the Family (recommended)', summary: 'Jason Todd returns as the Red Hood — a violent vigilante who forces Bruce to confront his greatest failure.', readingOrder: ['Batman: Under the Red Hood (complete)'], amazon: [{ asin: '1401231454', title: 'Batman: Under the Red Hood (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'batman-rip': { slug: 'batman-rip', versionSlug: 'prime-earth-batman', title: 'Batman RIP', creators: 'Grant Morrison & Tony Daniel', years: '2008–09', collects: 'Batman #676–681', era: 'Post-Crisis', prerequisites: 'Batman and Son (recommended)', summary: 'The Black Glove destroys Bruce\'s psyche. The Batman of Zur-En-Arrh emerges as Bruce\'s mind fractures.', readingOrder: ['Batman RIP (collection)'], amazon: [{ asin: '1401220322', title: 'Batman RIP', format: 'Trade Paperback', recommended: true }] },
+      'court-of-owls': { slug: 'court-of-owls', versionSlug: 'prime-earth-batman', title: 'Court of Owls', creators: 'Scott Snyder & Greg Capullo', years: '2011–12', collects: 'Batman (2011) #1–7', era: 'New 52', prerequisites: 'None — great New 52 entry', summary: 'A secret society called the Court of Owls has ruled Gotham from the shadows for centuries.', readingOrder: ['Batman Vol. 1: The Court of Owls'], amazon: [{ asin: '1401235425', title: 'Batman Vol. 1: The Court of Owls', format: 'Trade Paperback', recommended: true }] },
+      'death-of-the-family': { slug: 'death-of-the-family', versionSlug: 'prime-earth-batman', title: 'Death of the Family / Endgame', creators: 'Scott Snyder & Greg Capullo', years: '2012–14', collects: 'Batman #13–17, #35–40', era: 'New 52', prerequisites: 'Court of Owls', summary: 'The Joker returns to destroy the Bat-family. Then Endgame brings all-out war on Gotham.', readingOrder: ['Batman Vol. 3: Death of the Family', 'Batman Vol. 6: Endgame'], amazon: [{ asin: '1401242370', title: 'Batman Vol. 3: Death of the Family', format: 'Trade Paperback', recommended: true }, { asin: '1401250225', title: 'Batman Vol. 6: Endgame', format: 'Trade Paperback', recommended: false }] },
+      'earth-two-golden-age': { slug: 'earth-two-golden-age', versionSlug: 'earth-two-batman', title: 'Golden Age Archives', creators: 'Bob Kane, Bill Finger & others', years: '1939–1950s', collects: 'Early Batman stories', era: 'Golden Age', prerequisites: 'None', summary: 'The original Batman stories from the Golden Age — simpler, pulpier, and the foundation of everything that followed.', readingOrder: ['Batman Archives Vol. 1'], amazon: [{ asin: '1563890439', title: 'Batman Archives Vol. 1', format: 'Hardcover', recommended: true }] },
+      'dark-knight-returns': { slug: 'dark-knight-returns', versionSlug: 'earth-31-batman', title: 'The Dark Knight Returns', creators: 'Frank Miller, Klaus Janson & Lynn Varley', years: '1986', collects: 'DKR #1–4', era: 'Earth-31', prerequisites: 'None', summary: 'Ten years after retiring, Bruce Wayne returns to fight mutant gangs, the Joker, and ultimately Superman.', readingOrder: ['Batman: The Dark Knight Returns (complete)'], amazon: [{ asin: '1563893428', title: 'Batman: The Dark Knight Returns (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'flashpoint-knight-of-vengeance': { slug: 'flashpoint-knight-of-vengeance', versionSlug: 'thomas-wayne-batman', title: 'Knight of Vengeance', creators: 'Brian Azzarello & Eduardo Risso', years: '2011', collects: 'Flashpoint: Knight of Vengeance #1–3', era: 'Flashpoint', prerequisites: 'Flashpoint #1 (optional)', summary: 'Thomas Wayne\'s brutal war on crime in the Flashpoint timeline.', readingOrder: ['Flashpoint: World of Flashpoint Featuring Batman'], amazon: [{ asin: '1401234054', title: 'Flashpoint: World of Flashpoint Featuring Batman', format: 'Trade Paperback', recommended: true }] },
+      'crime-syndicate': { slug: 'crime-syndicate', versionSlug: 'owlman', title: 'Crime Syndicate', creators: 'Geoff Johns & Ivan Reis', years: '2013–14', collects: 'Justice League #23–25', era: 'Earth-3', prerequisites: 'Justice League Vol. 1–3', summary: 'The evil Crime Syndicate from Earth-3 invades. Owlman manipulates from the shadows.', readingOrder: ['Justice League Vol. 3: The Crime Syndicate'], amazon: [{ asin: '1401249367', title: 'Justice League Vol. 3: The Crime Syndicate', format: 'Trade Paperback', recommended: true }] },
+      'red-rain': { slug: 'red-rain', versionSlug: 'vampire-batman', title: 'Red Rain', creators: 'Doug Moench & Kelley Jones', years: '1991', collects: 'Batman & Dracula: Red Rain', era: 'Elseworlds', prerequisites: 'None', summary: 'Dracula invades Gotham. Bruce becomes a vampire to stop him — and never turns back.', readingOrder: ['Red Rain', 'Bloodstorm', 'Crimson Mist'], amazon: [{ asin: '1563890364', title: 'Batman & Dracula: Red Rain (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'batman-beyond-vol-1': { slug: 'batman-beyond-vol-1', versionSlug: 'batman-beyond', title: 'Batman Beyond Vol. 1 (1999)', creators: 'Hilary J. Bader, Dirk Gruson & others', years: '1999', collects: 'Batman Beyond #1–6', era: 'Neo-Gotham / DCAU', prerequisites: 'Optional: watch Batman Beyond S1', summary: 'The first Batman Beyond comic miniseries — tie-in stories set in the world of the animated series, introducing Neo-Gotham threats in print.', readingOrder: ['Batman Beyond #1–6 (1999 miniseries)'], amazon: [{ asin: '1563894079', title: 'Batman Beyond: No Place Like Home (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'hush-beyond': { slug: 'hush-beyond', versionSlug: 'batman-beyond', title: 'Hush Beyond', creators: 'Adam Beechen & Ryan Benjamin', years: '2010–11', collects: 'Batman Beyond #1–6', era: 'Neo-Gotham', prerequisites: 'Optional: animated series', summary: 'Terry McGinnis faces a new Hush targeting Bruce\'s old rogues in Neo-Gotham.', readingOrder: ['Batman Beyond: Hush Beyond'], amazon: [{ asin: '1401229887', title: 'Batman Beyond: Hush Beyond', format: 'Trade Paperback', recommended: true }] },
+      'dc-one-million': { slug: 'dc-one-million', versionSlug: 'batman-one-million', title: 'DC One Million', creators: 'Grant Morrison & Val Semeiks', years: '1998', collects: 'DC One Million #1–4 + key tie-ins', era: '853rd Century', prerequisites: 'None', summary: 'Grant Morrison\'s millennium crossover: Justice Legion Alpha visits the present while Solaris and Vandal Savage threaten both eras. The essential spine for the future Batman.', readingOrder: ['JLA: One Million (trade paperback)', 'DC One Million Omnibus (complete collection)'], amazon: [{ asin: '1401203205', title: 'JLA: One Million', format: 'Trade Paperback', recommended: true }] },
+      'batman-million': { slug: 'batman-million', versionSlug: 'batman-one-million', title: 'Batman #1,000,000', creators: 'Grant Morrison, Val Semeiks & Chuck Dixon', years: '1998', collects: 'Batman #1,000,000, Detective Comics #1,000,000', era: '853rd Century', prerequisites: 'DC One Million (recommended)', summary: 'Tie-in issues spotlighting the Batman and Robin of the 853rd century — future Gotham, future rogues, and the legacy of the cowl a million issues from now.', readingOrder: ['Batman #1,000,000', 'Detective Comics #1,000,000'], amazon: [{ asin: '1401242435', title: 'DC One Million Omnibus', format: 'Hardcover', recommended: false }] },
+      'knightfall-vol-1': { slug: 'knightfall-vol-1', versionSlug: 'knightfall-batman', title: 'Knightfall Vol. 1', creators: 'Multiple (Moench, Dixon, Nolan)', years: '1993', collects: 'Knightfall crossover (Part One)', era: 'Post-Crisis', prerequisites: 'None', summary: 'Bane breaks Batman. Jean-Paul Valley becomes a deadly new Dark Knight — armored, ruthless, and spiraling out of control.', readingOrder: ['Batman: Knightfall Vol. 1'], amazon: [{ asin: '140123321X', title: 'Batman: Knightfall Vol. 1', format: 'Trade Paperback', recommended: true }] },
+      'knightquest': { slug: 'knightquest', versionSlug: 'knightfall-batman', title: 'Knightquest', creators: 'Multiple (Dixon, Moench, Grant)', years: '1993–94', collects: 'Knightquest crossover', era: 'Post-Crisis', prerequisites: 'Knightfall Vol. 1', summary: 'Jean-Paul\'s violent Batman alienates Robin and Alfred during Knightquest: The Crusade and The Search while Bruce Wayne recovers abroad.', readingOrder: ['Batman: Knightfall Vol. 2 — Knightquest'], amazon: [{ asin: '1401233869', title: 'Batman: Knightfall Vol. 2 — Knightquest', format: 'Trade Paperback', recommended: true }] },
+      'knightsend': { slug: 'knightsend', versionSlug: 'knightfall-batman', title: 'KnightsEnd', creators: 'Multiple (Dixon, Moench, Grant)', years: '1994', collects: 'KnightsEnd crossover', era: 'Post-Crisis', prerequisites: 'Knightquest', summary: 'Bruce Wayne returns to Gotham to reclaim the mantle from a fully unhinged Azrael Batman — the saga\'s brutal climax.', readingOrder: ['Batman: Knightfall Vol. 3 — KnightsEnd'], amazon: [{ asin: '1401234078', title: 'Batman: Knightfall Vol. 3 — KnightsEnd', format: 'Trade Paperback', recommended: true }] },
+      'batman-who-laughs': { slug: 'batman-who-laughs', versionSlug: 'batman-who-laughs', title: 'The Batman Who Laughs', creators: 'Scott Snyder, Jock & James Tynion IV', years: '2018–19', collects: 'TBWL #1–7 + Grim Knight', era: 'Dark Multiverse', prerequisites: 'Dark Nights: Metal', summary: 'The Batman Who Laughs invades the main DC Universe. Bruce must consider breaking his one rule.', readingOrder: ['The Batman Who Laughs (complete TPB)'], amazon: [{ asin: '1779504462', title: 'The Batman Who Laughs (TPB)', format: 'Trade Paperback', recommended: true }] },
+      'gotham-by-gaslight': { slug: 'gotham-by-gaslight', versionSlug: 'gaslight-batman', title: 'Gotham by Gaslight', creators: 'Brian Augustyn & Mike Mignola', years: '1989', collects: 'Gotham by Gaslight #1', era: 'Elseworlds', prerequisites: 'None', summary: 'Victorian-era Batman hunts Jack the Ripper through gaslit Gotham.', readingOrder: ['Batman: Gotham by Gaslight (2023 edition)'], amazon: [{ asin: '1779524056', title: 'Gotham by Gaslight (2023 Edition)', format: 'Trade Paperback', recommended: true }] },
+      'white-knight': { slug: 'white-knight', versionSlug: 'white-knight-batman', title: 'Batman: White Knight', creators: 'Sean Murphy', years: '2017–18', collects: 'White Knight #1–8', era: 'Murphyverse', prerequisites: 'None', summary: 'The Joker is cured and turns Gotham against Batman.', readingOrder: ['Batman: White Knight'], amazon: [{ asin: '1401274527', title: 'Batman: White Knight', format: 'Trade Paperback', recommended: true }] },
+      'holy-terror': { slug: 'holy-terror', versionSlug: 'holy-terror-batman', title: 'Batman: Holy Terror', creators: 'Alan Brennert & Norm Breyfogle', years: '1991', collects: 'Holy Terror #1', era: 'Elseworlds', prerequisites: 'None', summary: 'A theocratic America where Bruce Wayne is a priest-inquisitor.', readingOrder: ['Batman: Holy Terror'], amazon: [{ asin: '1563892030', title: 'Batman: Holy Terror', format: 'Trade Paperback', recommended: true }] },
+      'batman-66-vol-1': { slug: 'batman-66-vol-1', versionSlug: 'batman-66', title: 'Batman \'66 Vol. 1', creators: 'Jeff Parker & Jonathan Case', years: '2013', collects: 'Batman \'66 #1–5', era: 'Earth-66', prerequisites: 'None', summary: 'Comics continuation of the 1966 Adam West TV show.', readingOrder: ['Batman \'66 Vol. 1'], amazon: [{ asin: '1401244737', title: 'Batman \'66 Vol. 1', format: 'Trade Paperback', recommended: true }] },
+      'in-darkest-knight': { slug: 'in-darkest-knight', versionSlug: 'darkest-knight-batman', title: 'Batman: In Darkest Knight', creators: 'Mike W. Barr & Jerry Bingham', years: '1994', collects: 'In Darkest Knight #1', era: 'Elseworlds', prerequisites: 'None', summary: 'Bruce Wayne receives Abin Sur\'s Green Lantern ring.', readingOrder: ['Batman: In Darkest Knight'], amazon: [{ asin: '1563891265', title: 'Batman: In Darkest Knight', format: 'Trade Paperback', recommended: true }] },
+    };
+
+    /* Individual comics that make up each run (shown on run detail pages) */
+    const RUN_ISSUES = {
+      'year-one': [
+        { id: 'Batman #404', title: 'Chapter One: Who I Am. How I Came to Be.' },
+        { id: 'Batman #405', title: 'Chapter Two: War Triggered' },
+        { id: 'Batman #406', title: 'Chapter Three: Black Dawn' },
+        { id: 'Batman #407', title: 'Chapter Four: Friend in Need' }
+      ],
+      'long-halloween': [
+        { id: 'The Long Halloween #1', title: 'Crime' },
+        { id: '#2', title: 'Thanksgiving' },
+        { id: '#3', title: 'Christmas' },
+        { id: '#4', title: 'New Year\'s Eve' },
+        { id: '#5', title: 'Valentine\'s Day' },
+        { id: '#6', title: 'St. Patrick\'s Day' },
+        { id: '#7', title: 'April Fool\'s Day' },
+        { id: '#8', title: 'Mother\'s Day' },
+        { id: '#9', title: 'Independence Day' },
+        { id: '#10', title: 'Roman Holiday' },
+        { id: '#11', title: 'Labor Day' },
+        { id: '#12', title: 'Halloween' },
+        { id: '#13', title: 'Punishment' }
+      ],
+      'dark-victory': [
+        { id: 'Dark Victory #1', title: 'Book One' },
+        { id: '#2', title: 'Book Two' },
+        { id: '#3', title: 'Book Three' },
+        { id: '#4', title: 'Book Four' },
+        { id: '#5', title: 'Book Five' },
+        { id: '#6', title: 'Book Six' },
+        { id: '#7', title: 'Book Seven' },
+        { id: '#8', title: 'Book Eight' },
+        { id: '#9', title: 'Book Nine' },
+        { id: '#10', title: 'Book Ten' },
+        { id: '#11', title: 'Book Eleven' },
+        { id: '#12', title: 'Book Twelve' },
+        { id: '#13', title: 'Book Thirteen' },
+        { id: '#14', title: 'Book Fourteen' }
+      ],
+      'killing-joke': [
+        { id: 'Batman: The Killing Joke', title: 'One-shot graphic novel (48 pages)' }
+      ],
+      'death-in-the-family': [
+        { id: 'Batman #426', title: 'Death in the Family, Chapter 1' },
+        { id: '#427', title: 'Chapter 2' },
+        { id: '#428', title: 'Chapter 3' },
+        { id: '#429', title: 'Chapter 4' }
+      ],
+      'knightfall': {
+        note: 'Knightfall is a sprawling crossover. Below is the core Batman-title spine; tie-ins appear in Detective Comics, Shadow of the Bat, Robin, and more.',
+        issues: [
+          { id: 'Batman #492', title: 'Part One: The Broken Bat' },
+          { id: '#493', title: 'Part Two' },
+          { id: '#494', title: 'Part Three' },
+          { id: '#495', title: 'Who Rules the Night' },
+          { id: '#496', title: 'The Fall' },
+          { id: '#497', title: 'The Chain' },
+          { id: '#498', title: 'The Search' },
+          { id: '#499', title: 'The Final Chapter' },
+          { id: '#500', title: 'KnightsEnd prelude' },
+          { id: 'Showcase \'93 #8', title: 'Knightquest: The Search' },
+          { id: 'Batman: KnightsEnd', title: 'One-shot' },
+          { id: 'Batman #509–510', title: 'KnightsEnd' }
+        ]
+      },
+      'no-mans-land': {
+        note: 'No Man\'s Land spans 70+ issues across Batman, Detective Comics, Shadow of the Bat, Legends of the Dark Knight, and tie-ins. Trade paperbacks (Vol. 1–5) are the practical way to collect it.',
+        issues: [
+          { id: 'Batman: No Man\'s Land #0', title: 'Prelude' },
+          { id: 'Batman: No Man\'s Land #1', title: 'Ground Zero' },
+          { id: '#2', title: 'No Law and No Order' },
+          { id: '#3', title: 'Powers' },
+          { id: '#4', title: 'Fear of Faith' },
+          { id: '#5', title: 'Bread and Circuses' }
+        ]
+      },
+      'hush': [
+        { id: 'Batman #608', title: 'Hush, Part One' },
+        { id: '#609', title: 'Part Two' },
+        { id: '#610', title: 'Part Three' },
+        { id: '#611', title: 'Part Four' },
+        { id: '#612', title: 'Part Five' },
+        { id: '#613', title: 'Part Six' },
+        { id: '#614', title: 'Part Seven' },
+        { id: '#615', title: 'Part Eight' },
+        { id: '#616', title: 'Part Nine' },
+        { id: '#617', title: 'Part Ten' },
+        { id: '#618', title: 'Part Eleven' },
+        { id: '#619', title: 'Part Twelve' }
+      ],
+      'under-the-red-hood': [
+        { id: 'Batman #635', title: 'Under the Hood, Part One' },
+        { id: '#636', title: 'Part Two' },
+        { id: '#637', title: 'Part Three' },
+        { id: '#638', title: 'Part Four' },
+        { id: '#639', title: 'Part Five' },
+        { id: '#640', title: 'Part Six' },
+        { id: '#641', title: 'Part Seven' },
+        { id: '#645', title: 'Part Eight' },
+        { id: '#646', title: 'Part Nine' },
+        { id: '#647', title: 'Part Ten' },
+        { id: '#648', title: 'Part Eleven' },
+        { id: '#649', title: 'Part Twelve' },
+        { id: '#650', title: 'Part Thirteen' }
+      ],
+      'batman-rip': [
+        { id: 'Batman #676', title: 'Batman R.I.P., Part One' },
+        { id: '#677', title: 'Part Two' },
+        { id: '#678', title: 'Part Three' },
+        { id: '#679', title: 'Part Four' },
+        { id: '#680', title: 'Part Five' },
+        { id: '#681', title: 'Part Six' }
+      ],
+      'court-of-owls': [
+        { id: 'Batman (2011) #1', title: 'The Court of Owls, Part One' },
+        { id: '#2', title: 'Part Two' },
+        { id: '#3', title: 'Part Three' },
+        { id: '#4', title: 'Part Four' },
+        { id: '#5', title: 'Part Five' },
+        { id: '#6', title: 'Part Six' },
+        { id: '#7', title: 'Part Seven' }
+      ],
+      'death-of-the-family': {
+        note: 'Death of the Family is a Bat-family crossover. Batman\'s chapters are listed below; tie-ins appear in Batgirl, Batwoman, Nightwing, Red Hood, Catwoman, and others.',
+        issues: [
+          { id: 'Batman (2011) #13', title: 'Death of the Family, Part One' },
+          { id: '#14', title: 'Part Two' },
+          { id: '#15', title: 'Part Three' },
+          { id: '#16', title: 'Part Four' },
+          { id: '#17', title: 'Part Five' },
+          { id: 'Batman (2011) #35', title: 'Endgame, Part One' },
+          { id: '#36', title: 'Part Two' },
+          { id: '#37', title: 'Part Three' },
+          { id: '#38', title: 'Part Four' },
+          { id: '#39', title: 'Part Five' },
+          { id: '#40', title: 'Part Six' }
+        ]
+      },
+      'earth-two-golden-age': {
+        note: 'Golden Age stories were published across Detective Comics and Batman. Archives Vol. 1 reprints early appearances in reading order.',
+        issues: [
+          { id: 'Detective Comics #27', title: 'The Case of the Chemical Syndicate (first appearance)' },
+          { id: 'Detective Comics #28–38', title: 'Early Golden Age cases' },
+          { id: 'Batman #1', title: 'First solo Batman issue' }
+        ]
+      },
+      'dark-knight-returns': [
+        { id: 'The Dark Knight Returns #1', title: 'Book One: The Dark Knight Returns' },
+        { id: '#2', title: 'Book Two: The Dark Knight Triumphant' },
+        { id: '#3', title: 'Book Three: Hunt the Dark Knight' },
+        { id: '#4', title: 'Book Four: The Dark Knight Falls' }
+      ],
+      'flashpoint-knight-of-vengeance': [
+        { id: 'Flashpoint: Batman – Knight of Vengeance #1', title: 'Part One' },
+        { id: '#2', title: 'Part Two' },
+        { id: '#3', title: 'Part Three' }
+      ],
+      'crime-syndicate': {
+        note: 'Owlman\'s Earth-3 arc is collected in Justice League Vol. 3. Core issues below.',
+        issues: [
+          { id: 'Justice League (2011) #23', title: 'Forever Evil prelude' },
+          { id: '#23.1', title: 'Owlman one-shot' },
+          { id: 'Forever Evil #1–7', title: 'Crime Syndicate invasion (limited series)' }
+        ]
+      },
+      'red-rain': [
+        { id: 'Batman & Dracula: Red Rain', title: 'Elseworlds one-shot' },
+        { id: 'Batman: Bloodstorm', title: 'Sequel one-shot' },
+        { id: 'Batman: Crimson Mist', title: 'Conclusion one-shot' }
+      ],
+      'batman-beyond-vol-1': [
+        { id: 'Batman Beyond #1', title: 'Obscurity', coverSlug: 'bb99-1' },
+        { id: '#2', title: 'Lingo', coverSlug: 'bb99-2' },
+        { id: '#3', title: 'Untouchable', coverSlug: 'bb99-3' },
+        { id: '#4', title: 'Inherit the Earth', coverSlug: 'bb99-4' },
+        { id: '#5', title: 'The Trigger', coverSlug: 'bb99-5' },
+        { id: '#6', title: 'Mark of the Phantasm', coverSlug: 'bb99-6' }
+      ],
+      'hush-beyond': [
+        { id: 'Batman Beyond #1', title: 'Hush Beyond, Part One', coverSlug: 'bb-hush-1' },
+        { id: '#2', title: 'Part Two', coverSlug: 'bb-hush-2' },
+        { id: '#3', title: 'Part Three', coverSlug: 'bb-hush-3' },
+        { id: '#4', title: 'Part Four', coverSlug: 'bb-hush-4' },
+        { id: '#5', title: 'Part Five', coverSlug: 'bb-hush-5' },
+        { id: '#6', title: 'Part Six', coverSlug: 'bb-hush-6' }
+      ],
+      'batman-who-laughs': [
+        { id: 'The Batman Who Laughs #1', title: 'Part One' },
+        { id: '#2', title: 'Part Two' },
+        { id: '#3', title: 'Part Three' },
+        { id: '#4', title: 'Part Four' },
+        { id: '#5', title: 'Part Five' },
+        { id: '#6', title: 'Part Six' },
+        { id: '#7', title: 'Part Seven' },
+        { id: 'The Batman Who Laughs: The Grim Knight #1', title: 'Bonus issue (in TPB)' }
+      ],
+      'gotham-by-gaslight': [
+        { id: 'Batman: Gotham by Gaslight', title: 'Elseworlds one-shot (1989)' }
+      ],
+      'white-knight': [
+        { id: 'Batman: White Knight #1', title: 'Part One' },
+        { id: '#2', title: 'Part Two' },
+        { id: '#3', title: 'Part Three' },
+        { id: '#4', title: 'Part Four' },
+        { id: '#5', title: 'Part Five' },
+        { id: '#6', title: 'Part Six' },
+        { id: '#7', title: 'Part Seven' },
+        { id: '#8', title: 'Part Eight' }
+      ],
+      'holy-terror': [
+        { id: 'Batman: Holy Terror', title: 'Elseworlds one-shot' }
+      ],
+      'batman-66-vol-1': [
+        { id: 'Batman \'66 #1', title: 'The Joker\'s Big Score' },
+        { id: '#2', title: 'Part Two' },
+        { id: '#3', title: 'Part Three' },
+        { id: '#4', title: 'Part Four' },
+        { id: '#5', title: 'Part Five' }
+      ],
+      'in-darkest-knight': [
+        { id: 'Batman: In Darkest Knight', title: 'Elseworlds one-shot' }
+      ],
+      'dc-one-million': {
+        note: 'DC One Million spans a 4-issue miniseries plus dozens of #1,000,000 tie-ins. The JLA: One Million trade collects the core plot; the Omnibus has everything.',
+        issues: [
+          { id: 'JLA #23', title: 'Prelude' },
+          { id: 'DC One Million #1', title: 'Part One' },
+          { id: '#2', title: 'Part Two' },
+          { id: '#3', title: 'Part Three' },
+          { id: '#4', title: 'Part Four' },
+          { id: 'JLA #1,000,000', title: 'Tie-in' }
+        ]
+      },
+      'batman-million': [
+        { id: 'Batman #1,000,000', title: 'Future Batman' },
+        { id: 'Detective Comics #1,000,000', title: 'Future Gotham' },
+        { id: 'Batman: Shadow of the Bat #1,000,000', title: 'Tie-in' }
+      ],
+      'knightfall-vol-1': {
+        note: 'Knightfall Vol. 1 covers Bane\'s attack and Jean-Paul Valley taking the mantle. See the full Knightfall run on Prime Earth Batman for the complete crossover spine.',
+        issues: [
+          { id: 'Batman #492', title: 'The Broken Bat begins' },
+          { id: '#497', title: 'The Fall' },
+          { id: '#500', title: 'Jean-Paul as Batman' }
+        ]
+      },
+      'knightquest': {
+        note: 'Knightquest splits into The Crusade (Jean-Paul in Gotham) and The Search (Bruce abroad). Collected in Knightfall Vol. 2.',
+        issues: [
+          { id: 'Batman #501', title: 'Knightquest: The Crusade' },
+          { id: 'Showcase \'93 #8', title: 'Knightquest: The Search' },
+          { id: 'Detective Comics #668', title: 'Tie-in' }
+        ]
+      },
+      'knightsend': [
+        { id: 'Batman: KnightsEnd', title: 'One-shot' },
+        { id: 'Batman #509', title: 'Bruce returns' },
+        { id: 'Batman #510', title: 'The final battle' }
+      ],
+    };
+
+    /* Per-issue cover art — local: images/covers/issues/{coverSlug}.jpg */
+    const ISSUE_COVER_OVERRIDES = {
+      'bb99-1': 'https://upload.wikimedia.org/wikipedia/en/8/8a/Batman_Beyond_%28comic%29_1.jpg'
+    };
+
+    /* Curated cover URLs (Wikipedia / publisher promos) — tried first when available */
+    const COVER_OVERRIDES = {
+      'year-one': 'https://upload.wikimedia.org/wikipedia/en/1/10/Batman_-_Year_One_%28softcover%29.jpg',
+      'long-halloween': 'https://upload.wikimedia.org/wikipedia/en/2/2f/The_Long_Halloween.jpg',
+      'dark-victory': 'https://upload.wikimedia.org/wikipedia/en/4/4c/Batman_-_Dark_Victory_%28softcover%29.jpg',
+      'killing-joke': 'https://upload.wikimedia.org/wikipedia/en/b/bc/Batman_The_Killing_Joke.jpg',
+      'death-in-the-family': 'https://upload.wikimedia.org/wikipedia/en/3/37/Batman_-_A_Death_in_the_Family_%28softcover%29.jpg',
+      'knightfall': 'https://upload.wikimedia.org/wikipedia/en/2/2d/Batman_-_Knightfall_Vol._1_%28softcover%29.jpg',
+      'no-mans-land': 'https://upload.wikimedia.org/wikipedia/en/8/8e/Batman_-_No_Man%27s_Land_Vol._1_%28softcover%29.jpg',
+      'hush': 'https://upload.wikimedia.org/wikipedia/en/9/9d/Batman_Hush_TPB_cover.jpg',
+      'under-the-red-hood': 'https://upload.wikimedia.org/wikipedia/en/6/6e/Batman_-_Under_the_Red_Hood_%28softcover%29.jpg',
+      'batman-rip': 'https://upload.wikimedia.org/wikipedia/en/9/9a/Batman_R.I.P._TPB.jpg',
+      'court-of-owls': 'https://upload.wikimedia.org/wikipedia/en/4/4d/Batman_-_The_Court_of_Owls_%28softcover%29.jpg',
+      'death-of-the-family': 'https://upload.wikimedia.org/wikipedia/en/1/1e/Batman_-_Death_of_the_Family_%28softcover%29.jpg',
+      'dark-knight-returns': 'https://upload.wikimedia.org/wikipedia/en/5/50/Batman_-_The_Dark_Knight_Returns_%28softcover%29.jpg',
+      'red-rain': 'https://upload.wikimedia.org/wikipedia/en/d/d9/Batman_%26_Dracula_-_Red_Rain.jpg',
+      'gotham-by-gaslight': 'https://upload.wikimedia.org/wikipedia/en/4/4f/Gotham_by_Gaslight.jpg',
+      'white-knight': 'https://upload.wikimedia.org/wikipedia/en/8/8f/Batman_-_White_Knight_%28softcover%29.jpg',
+      'batman-who-laughs': 'https://upload.wikimedia.org/wikipedia/en/9/9f/The_Batman_Who_Laughs_%28softcover%29.jpg',
+      'flashpoint-knight-of-vengeance': 'https://upload.wikimedia.org/wikipedia/en/0/0d/Flashpoint_-_Batman_Knight_of_Vengeance_%28softcover%29.jpg',
+      'batman-beyond-vol-1': 'https://upload.wikimedia.org/wikipedia/en/8/8a/Batman_Beyond_%28comic%29_1.jpg',
+      'hush-beyond': 'https://upload.wikimedia.org/wikipedia/en/5/5c/Batman_Beyond_-_Hush_Beyond_%28softcover%29.jpg',
+      'in-darkest-knight': 'https://upload.wikimedia.org/wikipedia/en/9/9b/Batman_-_In_Darkest_Knight_%28softcover%29.jpg',
+      'holy-terror': 'https://upload.wikimedia.org/wikipedia/en/2/2a/Batman_-_Holy_Terror_%28softcover%29.jpg',
+      'batman-66-vol-1': 'https://upload.wikimedia.org/wikipedia/en/1/1f/Batman_%2766_Vol._1_%28softcover%29.jpg',
+      'earth-two-golden-age': 'https://upload.wikimedia.org/wikipedia/en/1/1a/Batman_%28DC_Comics_character%29.jpg',
+      'crime-syndicate': 'https://upload.wikimedia.org/wikipedia/en/4/4d/Batman_-_The_Court_of_Owls_%28softcover%29.jpg',
+      'dc-one-million': 'https://upload.wikimedia.org/wikipedia/en/9/9c/DC_One_Million_1.jpg',
+      'knightfall-vol-1': 'https://upload.wikimedia.org/wikipedia/en/2/2d/Batman_-_Knightfall_Vol._1_%28softcover%29.jpg',
+      'knightquest': 'https://upload.wikimedia.org/wikipedia/en/4/4a/Batman_-_Knightfall_Vol._2_%28softcover%29.jpg',
+      'knightsend': 'https://upload.wikimedia.org/wikipedia/en/0/0c/Batman_-_Knightfall_Vol._3_%28softcover%29.jpg'
+    };
+
+    /* Character art when a run cover is unavailable (version cards) */
+    const VERSION_ART = {
+      'prime-earth-batman': 'https://upload.wikimedia.org/wikipedia/en/1/1a/Batman_%28DC_Comics_character%29.jpg',
+      'earth-two-batman': 'https://upload.wikimedia.org/wikipedia/en/1/1a/Batman_%28DC_Comics_character%29.jpg',
+      'earth-31-batman': 'https://upload.wikimedia.org/wikipedia/en/5/50/Batman_-_The_Dark_Knight_Returns_%28softcover%29.jpg',
+      'thomas-wayne-batman': 'https://upload.wikimedia.org/wikipedia/en/0/0d/Flashpoint_-_Batman_Knight_of_Vengeance_%28softcover%29.jpg',
+      'owlman': 'https://upload.wikimedia.org/wikipedia/en/9/9e/Owlman_%28DC_Comics%29.jpg',
+      'vampire-batman': 'https://upload.wikimedia.org/wikipedia/en/d/d9/Batman_%26_Dracula_-_Red_Rain.jpg',
+      'batman-beyond': 'https://upload.wikimedia.org/wikipedia/en/a/a6/Batman_Beyond_%28character%29.jpg',
+      'batman-who-laughs': 'https://upload.wikimedia.org/wikipedia/en/9/9f/The_Batman_Who_Laughs_%28softcover%29.jpg',
+      'gaslight-batman': 'https://upload.wikimedia.org/wikipedia/en/4/4f/Gotham_by_Gaslight.jpg',
+      'white-knight-batman': 'https://upload.wikimedia.org/wikipedia/en/8/8f/Batman_-_White_Knight_%28softcover%29.jpg',
+      'holy-terror-batman': 'https://upload.wikimedia.org/wikipedia/en/2/2a/Batman_-_Holy_Terror_%28softcover%29.jpg',
+      'batman-66': 'https://upload.wikimedia.org/wikipedia/en/e/e6/Batman_1966_TV_series_cast.jpg',
+      'darkest-knight-batman': 'https://upload.wikimedia.org/wikipedia/en/9/9b/Batman_-_In_Darkest_Knight_%28softcover%29.jpg',
+      'batman-one-million': 'https://upload.wikimedia.org/wikipedia/en/9/9c/DC_One_Million_1.jpg',
+      'knightfall-batman': 'https://upload.wikimedia.org/wikipedia/en/2/2d/Batman_-_Knightfall_Vol._1_%28softcover%29.jpg'
+    };
+
+    const COVER_SOURCES = {};
+
+    /* Resolve image folder whether you open batman-guide/index.html or ~/batman-guide.html */
+    function imageRoot() {
+      var path = window.location.pathname || '';
+      var filename = path.split('/').pop() || '';
+      if (filename === 'batman-guide.html') return 'batman-guide/images/';
+      return 'images/';
+    }
+
+    function isRemoteImageUrl(url) {
+      return /^https?:\/\//i.test(url || '');
+    }
+
+    function localRunCover(slug) {
+      return imageRoot() + 'covers/runs/' + slug + '.jpg';
+    }
+
+    function localRunFinaleCover(slug) {
+      return imageRoot() + 'covers/runs/' + slug + '-last.jpg';
+    }
+
+    function localVersionCover(versionSlug) {
+      return imageRoot() + 'covers/versions/' + versionSlug + '.jpg';
+    }
+
+    function localIssueCover(coverSlug) {
+      return imageRoot() + 'covers/issues/' + coverSlug + '.jpg';
+    }
+
+    function localScreenPoster(screenId) {
+      return imageRoot() + 'covers/screen/' + screenId + '.jpg';
+    }
+
+    function imdbIdFromUrl(url) {
+      var match = (url || '').match(/tt\d{7,8}/);
+      return match ? match[0] : null;
+    }
+
+    function tmdbPosterUrl(posterPath) {
+      if (!posterPath) return null;
+      var path = posterPath.charAt(0) === '/' ? posterPath : '/' + posterPath;
+      return 'https://image.tmdb.org/t/p/w500' + path;
+    }
+
+    /* TMDB poster paths — live-action films with verified paths; TV/animated use Wikipedia API */
+    const SCREEN_TMDB_POSTERS = {
+      'batman-1966-film': '/b7Ad1ot2SlB2q6qS04f9lQoNenY.jpg',
+      'batman-1989': '/kBf3g9rrv8G93jYJ2H6Y66yH351.jpg',
+      'batman-returns': '/2f08m9R2bovChFeN6xPD6mX8syt.jpg',
+      'batman-forever': '/roYyksQqkfIkedaK9wZPqyBl.jpg',
+      'batman-and-robin-1997': '/GcQm5x5kHkHMQ7Nf4GJq0x9x6H.jpg',
+      'batman-begins': '/8xr43VvE0121v7f7B0p398717s0.jpg',
+      'the-dark-knight': '/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
+      'the-dark-knight-rises': '/b9rMo86N2h3y3cLQ7i6q4fR6E4R.jpg',
+      'batman-v-superman': '/5UsK3grJvtQrtPKCikPOUnIg3HX.jpg',
+      'justice-league-2017': '/2SIXx6ihG6XUi5uX0p7kK1h0M3F.jpg',
+      'zack-snyders-justice-league': '/tnMjS2BktA3O3T6On7a9Ykq5dLd.jpg',
+      'the-batman-2022': '/74xteSQ7aZsTyngC5Sif3aW88Vi.jpg',
+      'the-flash-2023': '/yF1eOkaYvwiORLRcUCMPN8nFd5d.jpg'
+    };
+
+    /* TVMaze poster URLs — reliable fallback for TV series */
+    const SCREEN_TVMAZE_POSTERS = {
+      'gotham-tv': 'https://static.tvmaze.com/uploads/images/medium_portrait/189/474715.jpg',
+      'pennyworth-tv': 'https://static.tvmaze.com/uploads/images/medium_portrait/426/1065796.jpg'
+    };
+
+    var WIKI_POSTER_CACHE = {};
+    var TVMAZE_POSTER_CACHE = {};
+
+    function wikiTitleFromUrl(wikipediaUrl) {
+      var raw = decodeURIComponent((wikipediaUrl || '').split('/wiki/').pop() || '');
+      return raw.split('#')[0];
+    }
+
+    function wikiThumbToFull(thumbUrl) {
+      if (!thumbUrl || thumbUrl.indexOf('/thumb/') === -1) return thumbUrl;
+      var prefix = thumbUrl.split('/thumb/')[0];
+      var parts = thumbUrl.split('/thumb/')[1].split('/');
+      if (parts.length < 3) return thumbUrl;
+      return prefix + '/' + parts.slice(0, 3).join('/');
+    }
+
+    function fetchWikiPoster(wikipediaUrl) {
+      if (!wikipediaUrl) return Promise.resolve(null);
+      if (WIKI_POSTER_CACHE[wikipediaUrl]) return Promise.resolve(WIKI_POSTER_CACHE[wikipediaUrl]);
+      var title = wikiTitleFromUrl(wikipediaUrl);
+      return fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title))
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(data) {
+          var src = data && data.thumbnail && data.thumbnail.source;
+          if (!src) return null;
+          var full = wikiThumbToFull(src);
+          WIKI_POSTER_CACHE[wikipediaUrl] = full;
+          return full;
+        })
+        .catch(function() { return null; });
+    }
+
+    function applyScreenPosterImg(img, url) {
+      if (!img || !url) return;
+      img.removeAttribute('crossorigin');
+      img.style.display = '';
+      img.src = url;
+      if (img.parentElement) img.parentElement.classList.remove('no-img');
+    }
+
+    function fetchTvmazePoster(imdbUrl) {
+      var imdbId = imdbIdFromUrl(imdbUrl);
+      if (!imdbId) return Promise.resolve(null);
+      if (TVMAZE_POSTER_CACHE[imdbId]) return Promise.resolve(TVMAZE_POSTER_CACHE[imdbId]);
+      return fetch('https://api.tvmaze.com/lookup/shows?imdb=' + imdbId)
+        .then(function(r) { return r.ok ? r.json() : null; })
+        .then(function(data) {
+          var src = data && data.image && (data.image.medium || data.image.original);
+          if (src) TVMAZE_POSTER_CACHE[imdbId] = src;
+          return src || null;
+        })
+        .catch(function() { return null; });
+    }
+
+    function hydrateScreenPosterFromTvmaze(img) {
+      if (!img || img.dataset.tvmazeHydrating === 'true' || img.dataset.tvmazeHydrated === 'true') return;
+      var imdb = img.getAttribute('data-imdb');
+      if (!imdb) return;
+      img.dataset.tvmazeHydrating = 'true';
+      fetchTvmazePoster(imdb).then(function(url) {
+        img.dataset.tvmazeHydrating = 'false';
+        if (!url) {
+          hydrateScreenPosterFromWiki(img);
+          return;
+        }
+        img.dataset.tvmazeHydrated = 'true';
+        if (img.naturalWidth > 0) return;
+        applyScreenPosterImg(img, url);
+      });
+    }
+
+    function hydrateScreenPosterFromWiki(img) {
+      if (!img || img.dataset.wikiHydrating === 'true' || img.dataset.wikiHydrated === 'true') return;
+      var wiki = img.getAttribute('data-wikipedia');
+      if (!wiki) return;
+      img.dataset.wikiHydrating = 'true';
+      fetchWikiPoster(wiki).then(function(url) {
+        img.dataset.wikiHydrating = 'false';
+        if (!url) {
+          img.style.display = 'none';
+          if (img.parentElement) img.parentElement.classList.add('no-img');
+          return;
+        }
+        img.dataset.wikiHydrated = 'true';
+        if (img.naturalWidth > 0) return;
+        applyScreenPosterImg(img, url);
+      });
+    }
+
+    function hydrateScreenPosters() {
+      document.querySelectorAll('.screen-item-poster img[data-screen-id]').forEach(function(img) {
+        var id = img.getAttribute('data-screen-id');
+        if (SCREEN_TVMAZE_POSTERS[id] && !img.naturalWidth) {
+          applyScreenPosterImg(img, SCREEN_TVMAZE_POSTERS[id]);
+        } else if (img.getAttribute('data-imdb') && !SCREEN_TMDB_POSTERS[id]) {
+          hydrateScreenPosterFromTvmaze(img);
+        } else if (img.getAttribute('data-wikipedia')) {
+          hydrateScreenPosterFromWiki(img);
+        }
+      });
+    }
+
+    function getScreenPosterSources(item) {
+      if (!item || !item.id) return [];
+      var urls = [localScreenPoster(item.id)];
+      if (SCREEN_TMDB_POSTERS[item.id]) urls.push(tmdbPosterUrl(SCREEN_TMDB_POSTERS[item.id]));
+      if (SCREEN_TVMAZE_POSTERS[item.id]) urls.push(SCREEN_TVMAZE_POSTERS[item.id]);
+      if (item.poster) urls.push(item.poster);
+      return uniqueUrls(urls);
+    }
+
+    function screenPosterTag(item) {
+      if (!item || !item.id) return '<div class="screen-item-poster no-img"></div>';
+      var cacheKey = 'screen:' + item.id;
+      if (!COVER_SOURCES[cacheKey]) COVER_SOURCES[cacheKey] = getScreenPosterSources(item);
+      var sources = COVER_SOURCES[cacheKey];
+      if (!sources.length) return '<div class="screen-item-poster no-img"></div>';
+      var wikiAttr = item.wikipedia ? ' data-wikipedia="' + escAttr(item.wikipedia) + '"' : '';
+      var imdbAttr = item.imdb ? ' data-imdb="' + escAttr(item.imdb) + '"' : '';
+      return '<div class="screen-item-poster no-img">' +
+        '<img src="' + sources[0] + '" alt="' + escAttr(item.title + ' poster') + '" loading="lazy" ' +
+        'referrerpolicy="no-referrer" data-screen-id="' + escAttr(item.id) + '"' + wikiAttr + imdbAttr +
+        ' data-cover-key="' + escAttr(cacheKey) + '" ' +
+        'data-cover-idx="0" onerror="tryNextCover(this)" onload="this.parentElement.classList.remove(\'no-img\')"></div>';
+    }
+
+    /* Alternate local filenames in images/ (checked before covers/runs) */
+    const RUN_LOCAL_ALIASES = {
+      'killing-joke': 'batman-the-killing-joke-graphic-novel-cover',
+      'knightfall': 'batman-knightfall-graphicnovel-cover',
+      'knightfall-vol-1': 'batman-knightfall-graphicnovel-cover',
+      'no-mans-land': 'batman-no-mans-land-graphicnovel-cover',
+      'death-of-the-family': 'batman-death-of-the-family-graphicnovel-cover',
+      'white-knight': 'batman-white-knight-graphicnovel-cover',
+      'batman-who-laughs': 'the-batman-who-laughs',
+      'gotham-by-gaslight': 'gotham-by-gaslight-batman',
+      'in-darkest-knight': 'in-darkest-knight-batman'
+    };
+
+    function getRunLocalImagePaths(slug) {
+      var root = imageRoot();
+      var paths = [];
+      if (RUN_LOCAL_ALIASES[slug]) {
+        paths.push(root + RUN_LOCAL_ALIASES[slug] + '.jpg');
+      }
+      return paths;
+    }
+
+    /* Alternate local filenames in images/ (checked before covers/versions) */
+    const VERSION_LOCAL_ALIASES = {
+      'batman-beyond': 'batman-beyond-2',
+      'knightfall-batman': 'batman-knightfall',
+      'batman-who-laughs': 'the-batman-who-laughs',
+      'gaslight-batman': 'gotham-by-gaslight-batman',
+      'darkest-knight-batman': 'in-darkest-knight-batman'
+    };
+
+    function getVersionLocalImagePaths(versionSlug) {
+      var root = imageRoot();
+      var paths = [];
+      if (VERSION_LOCAL_ALIASES[versionSlug]) {
+        paths.push(root + VERSION_LOCAL_ALIASES[versionSlug] + '.jpg');
+      }
+      paths.push(root + versionSlug + '.jpg');
+      return paths;
+    }
+
+    const typeLabels = {
+      main: 'Main Continuity',
+      multiverse: 'Multiverse',
+      elseworlds: 'Elseworlds',
+      'dark-multiverse': 'Dark Multiverse',
+      future: 'Future'
+    };
+
+    function getRunAsin(slug) {
+      var run = runs[slug];
+      if (!run || !run.amazon || !run.amazon.length) return null;
+      return run.amazon[0].asin;
+    }
+
+    function uniqueUrls(urls) {
+      var seen = {};
+      return urls.filter(function(u) {
+        if (!u || seen[u]) return false;
+        seen[u] = true;
+        return true;
+      });
+    }
+
+    function getCoverSources(slug) {
+      var isbn13 = RUN_ISBN[slug];
+      var isbn10 = isbn13 ? isbn13.replace(/^978/, '') : null;
+      var asin = getRunAsin(slug);
+      var urls = getRunLocalImagePaths(slug).concat([localRunCover(slug)]);
+
+      if (COVER_OVERRIDES[slug]) urls.push(COVER_OVERRIDES[slug]);
+
+      if (isbn13) {
+        urls.push('https://covers.openlibrary.org/b/isbn/' + isbn13 + '-L.jpg?default=false');
+        urls.push('https://covers.openlibrary.org/b/isbn/' + isbn13 + '-M.jpg?default=false');
+        urls.push('https://books.google.com/books/content?vid=ISBN:' + isbn13 + '&printsec=frontcover&img=1&zoom=1');
+      }
+      if (isbn10 && isbn10 !== isbn13) {
+        urls.push('https://covers.openlibrary.org/b/isbn/' + isbn10 + '-L.jpg?default=false');
+      }
+
+      if (asin) {
+        urls.push('https://images-na.ssl-images-amazon.com/images/P/' + asin + '.01._SCMZZZZZZZ_.jpg');
+        urls.push('https://images-na.ssl-images-amazon.com/images/P/' + asin + '.01.LZZZZZZZ.jpg');
+        urls.push('https://images-na.ssl-images-amazon.com/images/P/' + asin + '.jpg');
+      }
+
+      // Fall back to the earliest mapped issue cover for this run, when available.
+      var issueSlug = getFirstIssueCoverSlug(slug);
+      if (issueSlug) {
+        urls = urls.concat(getIssueCoverSources(issueSlug));
+      }
+
+      return uniqueUrls(urls);
+    }
+
+    function getVersionCoverSources(versionSlug) {
+      var version = getVersion(versionSlug);
+      if (!version) return [];
+      var runSlug = getVersionCoverSlug(version);
+      var urls = [];
+      // Multiverse: try real run art first (finale, then trade). Avoid leading with
+      // usually-missing version alias paths — those 404s burn the fallback chain on host.
+      if (runSlug) urls.push(localRunFinaleCover(runSlug));
+      var lastIssue = runSlug ? getLastIssueCoverSlug(runSlug) : null;
+      if (lastIssue) urls = urls.concat(getIssueCoverSources(lastIssue));
+      if (runSlug) urls.push(localRunCover(runSlug));
+      if (runSlug) urls = urls.concat(getCoverSources(runSlug).slice(1));
+      urls = urls.concat(getVersionLocalImagePaths(versionSlug)).concat([localVersionCover(versionSlug)]);
+      // Curated Wikipedia last — often the same portrait across sibling versions.
+      if (VERSION_ART[versionSlug]) urls.push(VERSION_ART[versionSlug]);
+      return uniqueUrls(urls);
+    }
+
+    function preferUniqueVersionSources(sources, claimedRemotes) {
+      var preferred = [];
+      var deferred = [];
+      (sources || []).forEach(function(url) {
+        if (!isRemoteImageUrl(url) || !claimedRemotes[url]) preferred.push(url);
+        else deferred.push(url);
+      });
+      return uniqueUrls(preferred.concat(deferred));
+    }
+
+    function buildCoverSourceIndex() {
+      Object.keys(runs).forEach(function(slug) {
+        COVER_SOURCES['run:' + slug] = getCoverSources(slug);
+      });
+      var claimedRemotes = {};
+      versions.forEach(function(v) {
+        var sources = preferUniqueVersionSources(getVersionCoverSources(v.slug), claimedRemotes);
+        COVER_SOURCES['version:' + v.slug] = sources;
+        // Claim the first remote that may display so siblings don't share Multiverse art.
+        for (var i = 0; i < sources.length; i++) {
+          if (isRemoteImageUrl(sources[i])) {
+            claimedRemotes[sources[i]] = true;
+            break;
+          }
+        }
+      });
+      BATMAN_SCREEN.forEach(function(group) {
+        group.items.forEach(function(item) {
+          COVER_SOURCES['screen:' + item.id] = getScreenPosterSources(item);
+        });
+      });
+    }
+
+    function escAttr(str) {
+      return String(str || '').replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    }
+
+    window.tryNextCover = function(img) {
+      var key = img.getAttribute('data-cover-key');
+      var sources = COVER_SOURCES[key] || [];
+      var idx = parseInt(img.getAttribute('data-cover-idx') || '0', 10) + 1;
+      if (idx < sources.length) {
+        img.setAttribute('data-cover-idx', idx);
+        // Never force CORS on Multiverse banners — Open Library / Amazon / CV often
+        // omit ACAO, and crossOrigin then fires onerror so the card stays blank.
+        img.removeAttribute('crossorigin');
+        img.style.display = '';
+        if (img.parentElement) img.parentElement.classList.remove('no-img');
+        img.src = sources[idx];
+        if (img.getAttribute('data-featured-theme') === 'true') {
+          if (img.complete && img.naturalWidth) applyFeaturedThemeFromImg(img);
+          else img.addEventListener('load', function onFeaturedThemeLoad() {
+            img.removeEventListener('load', onFeaturedThemeLoad);
+            applyFeaturedThemeFromImg(img);
+          });
+        }
+        return;
+      }
+      img.style.display = 'none';
+      if (img.getAttribute('data-imdb')) {
+        hydrateScreenPosterFromTvmaze(img);
+        return;
+      }
+      if (img.getAttribute('data-wikipedia')) {
+        hydrateScreenPosterFromWiki(img);
+        return;
+      }
+      if (img.parentElement) img.parentElement.classList.add('no-img');
+      if (key && key.indexOf('run:') === 0) {
+        hydrateRunCoverFromFirstIssue(img);
+      }
+      if (img.getAttribute('data-hero') === 'true') {
+        hydrateHeroFromWikipedia(img);
+      }
+      if (img.getAttribute('data-featured-theme') === 'true') {
+        hydrateFeaturedFromWikipedia(img);
+      }
+    };
+
+    window.tryNextHero = function(img) {
+      window.tryNextCover(img);
+    };
+
+    function hydrateFeaturedFromWikipedia(img) {
+      if (!img || img.dataset.featuredWiki === 'true' || img.dataset.featuredWiki === 'pending') return;
+      var slug = img.getAttribute('data-featured-slug') || '';
+      var version = slug ? getVersion(slug) : null;
+      var wiki = (version && version.wikipedia) || img.getAttribute('data-wikipedia') || '';
+      if (!wiki) return;
+      var title = '';
+      try {
+        var parts = wiki.split('/wiki/');
+        title = parts.length > 1 ? decodeURIComponent(parts[1].split('#')[0]) : '';
+      } catch (err) { title = ''; }
+      if (!title) return;
+      img.dataset.featuredWiki = 'pending';
+      fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title.replace(/ /g, '_')), {
+        headers: { 'Accept': 'application/json' }
+      }).then(function(resp) { return resp.ok ? resp.json() : null; }).then(function(data) {
+        var url = data && ((data.originalimage && data.originalimage.source) || (data.thumbnail && data.thumbnail.source));
+        if (!url) {
+          img.dataset.featuredWiki = 'false';
+          return;
+        }
+        img.dataset.featuredWiki = 'true';
+        img.style.display = '';
+        if (img.parentElement) img.parentElement.classList.remove('no-img');
+        img.removeAttribute('crossorigin');
+        img.onload = function() { applyFeaturedThemeFromImg(img); };
+        img.src = url;
+      }).catch(function() {
+        img.dataset.featuredWiki = 'false';
+      });
+    }
+
+    function hydrateHeroFromWikipedia(img) {
+      if (!img || img.dataset.heroWiki === 'true' || img.dataset.heroWiki === 'pending') return;
+      var wiki = img.getAttribute('data-wikipedia');
+      if (!wiki) {
+        applyHeroGradientFallback(img);
+        return;
+      }
+      var title = '';
+      try {
+        var parts = wiki.split('/wiki/');
+        title = parts.length > 1 ? decodeURIComponent(parts[1]) : '';
+      } catch (err) { title = ''; }
+      if (!title) {
+        applyHeroGradientFallback(img);
+        return;
+      }
+      img.dataset.heroWiki = 'pending';
+      fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title.replace(/ /g, '_')), {
+        headers: { 'Accept': 'application/json' }
+      }).then(function(resp) { return resp.ok ? resp.json() : null; }).then(function(data) {
+        var url = data && ((data.originalimage && data.originalimage.source) || (data.thumbnail && data.thumbnail.source));
+        if (!url) {
+          img.dataset.heroWiki = 'false';
+          applyHeroGradientFallback(img);
+          return;
+        }
+        img.dataset.heroWiki = 'true';
+        img.style.display = '';
+        if (img.parentElement) img.parentElement.classList.remove('no-img');
+        img.onerror = function() { applyHeroGradientFallback(img); };
+        img.src = url;
+      }).catch(function() {
+        img.dataset.heroWiki = 'false';
+        applyHeroGradientFallback(img);
+      });
+    }
+
+    function applyHeroGradientFallback(img) {
+      if (!img || !img.parentElement) return;
+      img.style.display = 'none';
+      var gradient = img.parentElement.getAttribute('data-hero-gradient');
+      if (gradient) img.parentElement.style.background = gradient;
+    }
+
+    function getFirstIssueCoverSlug(slug) {
+      var data = getRunIssueData(slug);
+      for (var i = 0; i < data.issues.length; i++) {
+        if (data.issues[i] && data.issues[i].coverSlug) return data.issues[i].coverSlug;
+      }
+      return null;
+    }
+
+    function getLastIssueCoverSlug(slug) {
+      var data = getRunIssueData(slug);
+      for (var i = data.issues.length - 1; i >= 0; i--) {
+        if (data.issues[i] && data.issues[i].coverSlug) return data.issues[i].coverSlug;
+      }
+      return null;
+    }
+
+    function firstIssueSearchQuery(run) {
+      if (!run) return '';
+      var collects = (run.collects || '').trim();
+      if (collects) {
+        var first = collects.split(',')[0].trim();
+        first = first.replace(/#(\d+)\s*[–\-—]\s*\d+/g, '#$1');
+        first = first.replace(/\s+and\s+related$/i, '').trim();
+        if (first && !/^(selected|various|crossover|related)\b/i.test(first)) {
+          return first;
+        }
+      }
+      if (run.readingOrder && run.readingOrder.length) {
+        return String(run.readingOrder[0]).trim();
+      }
+      return run.title || '';
+    }
+
+    function preferLargeGoogleCover(url) {
+      if (!url) return null;
+      url = String(url).replace(/^http:\/\//i, 'https://');
+      if (/zoom=\d+/.test(url)) url = url.replace(/zoom=\d+/, 'zoom=0');
+      else url += (url.indexOf('?') >= 0 ? '&' : '?') + 'zoom=0';
+      return url;
+    }
+
+    function coverSearchTokens(title) {
+      return String(title || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().split(/\s+/).filter(function(t) {
+        return t.length > 2 && ['the', 'and', 'vol', 'volume', 'omnibus'].indexOf(t) === -1;
+      });
+    }
+
+    function scoreCoverCandidate(haystack, wantTitle) {
+      var want = coverSearchTokens(wantTitle);
+      var hay = String(haystack || '').toLowerCase();
+      if (!want.length || !hay) return 0;
+      var hit = 0;
+      for (var i = 0; i < want.length; i++) {
+        if (hay.indexOf(want[i]) !== -1) hit++;
+      }
+      var score = hit / want.length;
+      var tail = want.slice(-2).join(' ');
+      if (tail && hay.indexOf(tail) !== -1) score += 0.35;
+      return score;
+    }
+
+    function hydrateRunCoverFromFirstIssue(img) {
+      if (!img || img.dataset.issueHydrated === 'true' || img.dataset.issueHydrating === 'true') return;
+      var key = img.getAttribute('data-cover-key') || '';
+      if (key.indexOf('run:') !== 0) return;
+      var run = runs[key.slice(4)];
+      // Prefer the collected-edition title so Open Library doesn't latch onto a wrong first hit
+      // (e.g. "Secret Origin" → "No Fear"). Issue-level query is a secondary attempt only.
+      var query = (run && run.title) || firstIssueSearchQuery(run);
+      if (!query) return;
+      img.dataset.issueHydrating = 'true';
+
+      function applyUrl(url) {
+        if (!url) return false;
+        img.dataset.issueHydrated = 'true';
+        img.dataset.issueHydrating = 'false';
+        img.style.display = '';
+        if (img.parentElement) img.parentElement.classList.remove('no-img');
+        img.onerror = function() {
+          img.style.display = 'none';
+          if (img.parentElement) img.parentElement.classList.add('no-img');
+        };
+        img.src = url;
+        return true;
+      }
+
+      function pickOpenLibraryCover(docs, wantTitle) {
+        var best = null;
+        var bestScore = 0;
+        for (var i = 0; i < (docs || []).length; i++) {
+          var d = docs[i];
+          if (!d || !d.cover_i) continue;
+          var hay = [d.title, d.subtitle, (d.author_name || []).join(' ')].join(' ');
+          var s = scoreCoverCandidate(hay, wantTitle);
+          if (s > bestScore) {
+            best = d;
+            bestScore = s;
+          }
+        }
+        if (best && bestScore >= 0.55) {
+          return 'https://covers.openlibrary.org/b/id/' + best.cover_i + '-L.jpg';
+        }
+        return null;
+      }
+
+      function pickGoogleCover(items, wantTitle) {
+        var bestUrl = null;
+        var bestScore = 0;
+        for (var j = 0; j < (items || []).length; j++) {
+          var info = (items[j] && items[j].volumeInfo) || {};
+          var links = info.imageLinks || {};
+          var raw = links.extraLarge || links.large || links.medium || links.thumbnail || links.smallThumbnail;
+          if (!raw) continue;
+          var hay = [info.title, info.subtitle, (info.authors || []).join(' ')].join(' ');
+          var s = scoreCoverCandidate(hay, wantTitle);
+          if (s > bestScore) {
+            bestScore = s;
+            bestUrl = preferLargeGoogleCover(raw);
+          }
+        }
+        return bestScore >= 0.55 ? bestUrl : null;
+      }
+
+      fetch('https://openlibrary.org/search.json?q=' + encodeURIComponent(query) + '&limit=12', {
+        headers: { 'Accept': 'application/json' }
+      }).then(function(resp) {
+        return resp.ok ? resp.json() : null;
+      }).then(function(data) {
+        var wantTitle = (run && run.title) || query;
+        var url = pickOpenLibraryCover((data && data.docs) || [], wantTitle);
+        if (url && applyUrl(url)) return null;
+        return fetch('https://www.googleapis.com/books/v1/volumes?q=' + encodeURIComponent('intitle:' + wantTitle) + '&maxResults=8', {
+          headers: { 'Accept': 'application/json' }
+        }).then(function(resp) {
+          return resp.ok ? resp.json() : null;
+        });
+      }).then(function(gdata) {
+        if (!gdata || img.dataset.issueHydrated === 'true') return;
+        var wantTitle = (run && run.title) || query;
+        var url = pickGoogleCover(gdata.items || [], wantTitle);
+        if (url && applyUrl(url)) return;
+        img.dataset.issueHydrating = 'false';
+      }).catch(function() {
+        img.dataset.issueHydrating = 'false';
+      });
+    }
+
+    function colorLuminance(r, g, b) {
+      return (0.299 * r + 0.587 * g + 0.114 * b) / 255;
+    }
+
+    function normalizeFeaturedColor(c) {
+      if (!c) return { r: 28, g: 24, b: 32 };
+      var lum = colorLuminance(c.r, c.g, c.b);
+      if (lum <= 0.38) return c;
+      var factor = 0.32 / lum;
+      return {
+        r: Math.min(255, Math.round(c.r * factor)),
+        g: Math.min(255, Math.round(c.g * factor)),
+        b: Math.min(255, Math.round(c.b * factor))
+      };
+    }
+
+    function extractImageDarkColor(img) {
+      var w = 48;
+      var h = 48;
+      var canvas = document.createElement('canvas');
+      canvas.width = w;
+      canvas.height = h;
+      var ctx = canvas.getContext('2d');
+      if (!ctx) return null;
+      try {
+        ctx.drawImage(img, 0, 0, w, h);
+        var data = ctx.getImageData(0, 0, w, h).data;
+        var darkR = 0, darkG = 0, darkB = 0, darkN = 0;
+        var allR = 0, allG = 0, allB = 0, allN = 0;
+        for (var y = 0; y < h; y++) {
+          var rowWeight = y / h;
+          if (rowWeight < 0.35) continue;
+          for (var x = 0; x < w; x++) {
+            var i = (y * w + x) * 4;
+            if (data[i + 3] < 100) continue;
+            var pr = data[i];
+            var pg = data[i + 1];
+            var pb = data[i + 2];
+            var weight = 1 + rowWeight * 2;
+            allR += pr * weight;
+            allG += pg * weight;
+            allB += pb * weight;
+            allN += weight;
+            if (colorLuminance(pr, pg, pb) < 0.52) {
+              darkR += pr * weight;
+              darkG += pg * weight;
+              darkB += pb * weight;
+              darkN += weight;
+            }
+          }
+        }
+        if (darkN > 6) {
+          return normalizeFeaturedColor({
+            r: Math.round(darkR / darkN),
+            g: Math.round(darkG / darkN),
+            b: Math.round(darkB / darkN)
+          });
+        }
+        if (allN) {
+          return normalizeFeaturedColor({
+            r: Math.round(allR / allN),
+            g: Math.round(allG / allN),
+            b: Math.round(allB / allN)
+          });
+        }
+        return null;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function buildFeaturedOverlayGradient(c) {
+      // Bottom stays near-black for readable white type; mid/upper bands keep the card's color.
+      var deepR = Math.round(c.r * 0.42);
+      var deepG = Math.round(c.g * 0.42);
+      var deepB = Math.round(c.b * 0.42);
+      var midR = Math.round(c.r * 0.72);
+      var midG = Math.round(c.g * 0.72);
+      var midB = Math.round(c.b * 0.72);
+      return 'linear-gradient(to top, ' +
+        'rgba(0,0,0,0.92) 0%, ' +
+        'rgba(' + deepR + ',' + deepG + ',' + deepB + ',0.9) 20%, ' +
+        'rgba(' + midR + ',' + midG + ',' + midB + ',0.72) 42%, ' +
+        'rgba(' + midR + ',' + midG + ',' + midB + ',0.38) 64%, ' +
+        'rgba(' + c.r + ',' + c.g + ',' + c.b + ',0.14) 82%, ' +
+        'rgba(0,0,0,0.06) 100%)';
+    }
+
+    function buildFeaturedCardGradient(c) {
+      return buildFeaturedOverlayGradient(c);
+    }
+
+    var DEFAULT_FEATURED_THEME = { r: 28, g: 24, b: 32 };
+
+    var FEATURED_THEME_COLORS = {
+      'prime-earth-batman': { r: 72, g: 18, b: 14 },
+      'batman-beyond': { r: 52, g: 18, b: 62 },
+      'batman-one-million': { r: 48, g: 38, b: 12 },
+      'knightfall-batman': { r: 32, g: 22, b: 52 },
+      'earth-two-batman': { r: 44, g: 30, b: 18 }
+    };
+
+    function getFeaturedThemeColor(slug, imgColor) {
+      // Prefer curated per-card colors so Multiverse rows stay distinct;
+      // fall back to image sampling only when no theme is mapped.
+      return normalizeFeaturedColor(FEATURED_THEME_COLORS[slug] || imgColor || DEFAULT_FEATURED_THEME);
+    }
+
+    function applyFeaturedCardTheme(link, copy, c) {
+      if (!link || !copy || !c) return;
+      var overlay = link.querySelector('.featured-version-overlay');
+      if (overlay) overlay.style.background = buildFeaturedOverlayGradient(c);
+      link.style.setProperty('--featured-theme-rgb', c.r + ', ' + c.g + ', ' + c.b);
+      copy.classList.add('featured-version-copy--on-dark');
+    }
+
+    window.applyFeaturedThemeFromImg = function(img) {
+      var copyId = img.getAttribute('data-featured-copy');
+      var copy = copyId ? document.getElementById(copyId) : null;
+      var link = img.closest('.featured-version-link');
+      if (!copy || !link || !img || img.getAttribute('data-featured-theme') !== 'true') return;
+      var slug = img.getAttribute('data-featured-slug') || '';
+      var c = getFeaturedThemeColor(slug, extractImageDarkColor(img));
+      applyFeaturedCardTheme(link, copy, c);
+    };
+
+    function featuredImgTag(versionSlug, alt, copyId) {
+      var cacheKey = 'version:' + versionSlug;
+      COVER_SOURCES[cacheKey] = getVersionCoverSources(versionSlug);
+      var sources = COVER_SOURCES[cacheKey];
+      if (!sources.length) return '';
+      // No crossorigin: display first; theme sampling falls back to per-slug presets
+      // when the canvas is tainted.
+      return '<img src="' + sources[0] + '" alt="' + escAttr(alt) + '" loading="eager" ' +
+        'referrerpolicy="no-referrer" data-cover-key="' + escAttr(cacheKey) + '" ' +
+        'data-cover-idx="0" data-featured-theme="true" data-featured-slug="' + escAttr(versionSlug) + '" ' +
+        'data-featured-copy="' + escAttr(copyId) + '" ' +
+        'onload="applyFeaturedThemeFromImg(this)" onerror="tryNextCover(this)">';
+    }
+
+    function initFeaturedRows() {
+      document.querySelectorAll('img[data-featured-theme="true"]').forEach(function(img) {
+        var copyId = img.getAttribute('data-featured-copy');
+        var copy = copyId ? document.getElementById(copyId) : null;
+        var link = img.closest('.featured-version-link');
+        var slug = img.getAttribute('data-featured-slug') || '';
+        applyFeaturedCardTheme(link, copy, getFeaturedThemeColor(slug, null));
+        if (img.complete && img.naturalWidth) applyFeaturedThemeFromImg(img);
+      });
+    }
+
+    function coverUrl(slug, kind) {
+      kind = kind || 'run';
+      var key = kind + ':' + slug;
+      if (!COVER_SOURCES[key]) {
+        COVER_SOURCES[key] = kind === 'version'
+          ? getVersionCoverSources(slug)
+          : getCoverSources(slug);
+      }
+      return COVER_SOURCES[key].length ? COVER_SOURCES[key][0] : '';
+    }
+
+    function imgTag(key, alt, kind) {
+      kind = kind || 'run';
+      var cacheKey = kind + ':' + key;
+      if (!COVER_SOURCES[cacheKey]) {
+        COVER_SOURCES[cacheKey] = kind === 'version'
+          ? getVersionCoverSources(key)
+          : getCoverSources(key);
+      }
+      var sources = COVER_SOURCES[cacheKey];
+      if (!sources.length) return '';
+      return '<img src="' + sources[0] + '" alt="' + escAttr(alt) + '" loading="lazy" referrerpolicy="no-referrer" ' +
+        'data-cover-key="' + escAttr(cacheKey) + '" data-cover-idx="0" ' +
+        'onload="if(this.parentElement&&this.parentElement.classList.contains(\'run-card-cover\'))this.parentElement.classList.remove(\'no-img\')"' +
+        ' onerror="tryNextCover(this)">';
+    }
+
+    function amazonUrl(asin) {
+      return 'https://www.amazon.com/dp/' + asin + '?tag=' + AFFILIATE_TAG;
+    }
+
+    function amazonSearchUrl(query) {
+      return 'https://www.amazon.com/s?k=' + encodeURIComponent(query) + '&tag=' + AFFILIATE_TAG;
+    }
+
+    function runShopLinksHtml(slug, linkClass) {
+      linkClass = linkClass || 'run-shop-link';
+      var run = runs[slug];
+      if (!run) return '';
+      var query = run.title || RUN_ISBN[slug] || '';
+      if (!query) return '';
+      return '<a class="' + linkClass + '" href="' + amazonSearchUrl(query) + '" target="_blank" rel="noopener sponsored">Find on Amazon</a>';
+    }
+
+    function getVersion(slug) {
+      return versions.find(function(v) { return v.slug === slug; });
+    }
+
+    /* Used to decide whether a verse card links directly to one run or lists several */
+    function versionIsSingleRun(v) {
+      return !!(v && v.runs && v.runs.length === 1);
+    }
+
+    function getRun(slug) {
+      return runs[slug];
+    }
+
+    function getRunIssueData(slug) {
+      var entry = RUN_ISSUES[slug];
+      if (!entry) return { note: '', issues: [] };
+      if (Array.isArray(entry)) return { note: '', issues: entry };
+      return { note: entry.note || '', issues: entry.issues || [] };
+    }
+
+    function getIssueCoverSources(coverSlug) {
+      if (!coverSlug) return [];
+      var urls = [localIssueCover(coverSlug)];
+      if (ISSUE_COVER_OVERRIDES[coverSlug]) urls.push(ISSUE_COVER_OVERRIDES[coverSlug]);
+      return uniqueUrls(urls);
+    }
+
+    function issueImgTag(coverSlug, alt) {
+      if (!coverSlug) return '';
+      var cacheKey = 'issue:' + coverSlug;
+      if (!COVER_SOURCES[cacheKey]) COVER_SOURCES[cacheKey] = getIssueCoverSources(coverSlug);
+      var sources = COVER_SOURCES[cacheKey];
+      if (!sources.length) return '';
+      return '<img src="' + sources[0] + '" alt="' + escAttr(alt) + '" loading="lazy" referrerpolicy="no-referrer" ' +
+        'data-cover-key="' + escAttr(cacheKey) + '" data-cover-idx="0" onerror="tryNextCover(this)">';
+    }
+
+    function renderIssueInventory(slug) {
+      var data = getRunIssueData(slug);
+      if (!data.issues.length) return '';
+      var listHtml = data.issues.map(function(item) {
+        var thumb = item.coverSlug
+          ? '<div class="issue-thumb">' + issueImgTag(item.coverSlug, item.id) + '</div>'
+          : '';
+        var rowClass = item.coverSlug ? '' : ' class="issue-row-no-cover"';
+        return '<li' + rowClass + '>' + thumb +
+          '<span class="issue-id">' + item.id + '</span>' +
+          (item.title ? '<span class="issue-title">' + item.title + '</span>' : '') + '</li>';
+      }).join('');
+      var noteHtml = data.note ? '<p class="issue-note">' + data.note + '</p>' : '';
+      return '<div class="issue-inventory">' +
+        '<div class="issue-inventory-header">' +
+        '<h2 class="block-title">Issue inventory</h2>' +
+        '<span class="issue-count">' + data.issues.length + ' entr' + (data.issues.length === 1 ? 'y' : 'ies') + '</span></div>' +
+        noteHtml +
+        '<ol class="issue-list">' + listHtml + '</ol></div>';
+    }
+
+    function getVersionCoverSlug(v) {
+      return v.runs && v.runs[0] ? v.runs[0] : null;
+    }
+
+    function renderRunCard(runSlug, showCharacter) {
+      var run = runs[runSlug];
+      if (!run) return '';
+      var year = run.years.split('–')[0];
+      var version = getVersion(run.versionSlug);
+      var charHtml = (showCharacter !== false && version)
+        ? '<span class="run-card-character">' + version.name + '</span>'
+        : '';
+      var summary = run.summary && run.summary.length > 130
+        ? run.summary.slice(0, 127) + '…'
+        : (run.summary || '');
+      var href = amazonSearchUrl(run.title);
+      return '<a href="' + href + '" target="_blank" rel="noopener sponsored" class="run-card">' +
+        '<div class="run-card-cover no-img">' + imgTag(runSlug, run.title) +
+        '<span class="run-card-year">' + year + '</span></div>' +
+        '<div class="run-card-body">' + charHtml +
+        '<h3>' + run.title + '</h3>' +
+        '<p class="run-card-creators">' + run.creators + '</p>' +
+        '<p class="run-card-meta">' + run.years + ' · ' + run.era + '</p>' +
+        (summary ? '<p class="run-card-summary">' + summary + '</p>' : '') +
+        '<span class="run-card-cta">Find on Amazon →</span></div></a>';
+    }
+
+    /* Wikipedia-sourced profile (https://en.wikipedia.org/wiki/Batman) */
+    const BATMAN_PROFILE = {
+      wikipedia: 'https://en.wikipedia.org/wiki/Batman',
+      lead: 'A vigilante without superpowers — only discipline, genius, and the will to never stop.',
+      summary: 'Batman is the superhero alias of Bruce Wayne, a wealthy American playboy who witnessed his parents\' murder as a child and swore vengeance against criminals. Operating in Gotham City, he trained his body and mind to peak human perfection, using his fortune to build technology and a rogues gallery of allies and enemies. Created by artist Bob Kane and writer Bill Finger, he first appeared in Detective Comics #27 (1939) and became one of the most enduring characters in popular culture.',
+      facts: [
+        { label: 'Alter ego', value: 'Bruce Wayne' },
+        { label: 'First appearance', value: 'Detective Comics #27 (May 1939)' },
+        { label: 'Created by', value: 'Bob Kane & Bill Finger' },
+        { label: 'Publisher', value: 'DC Comics' },
+        { label: 'Base of operations', value: 'Gotham City' },
+        { label: 'Allies', value: 'Robin, Alfred, Batgirl, Gordon' },
+        { label: 'Notable foes', value: 'Joker, Riddler, Penguin, Bane' },
+        { label: 'Powers', value: 'None — peak human skill & resources' }
+      ]
+    };
+
+    /* Best-selling / landmark graphic novels & runs for the home page */
+    const HOME_ESSENTIAL_RUNS = [
+      'year-one', 'dark-knight-returns', 'long-halloween', 'killing-joke',
+      'hush', 'court-of-owls', 'knightfall', 'no-mans-land',
+      'under-the-red-hood', 'gotham-by-gaslight', 'death-of-the-family', 'white-knight'
+    ];
+
+    /* Batman on screen — live action & animated (Wikipedia / IMDb references) */
+    const BATMAN_SCREEN = [
+      {
+        group: 'Live-action films',
+        items: [
+          { id: 'batman-1966-film', title: 'Batman', year: '1966', note: 'Adam West', wikipedia: 'https://en.wikipedia.org/wiki/Batman_(1966_film)', imdb: 'https://www.imdb.com/title/tt0060153/' },
+          { id: 'batman-1989', title: 'Batman', year: '1989', note: 'Tim Burton · Michael Keaton', wikipedia: 'https://en.wikipedia.org/wiki/Batman_(1989_film)', imdb: 'https://www.imdb.com/title/tt0096898/' },
+          { id: 'batman-returns', title: 'Batman Returns', year: '1992', note: 'Tim Burton', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Returns', imdb: 'https://www.imdb.com/title/tt0103776/' },
+          { id: 'batman-forever', title: 'Batman Forever', year: '1995', note: 'Joel Schumacher', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Forever', imdb: 'https://www.imdb.com/title/tt0112462/' },
+          { id: 'batman-and-robin-1997', title: 'Batman & Robin', year: '1997', note: 'Joel Schumacher', wikipedia: 'https://en.wikipedia.org/wiki/Batman_%26_Robin_(film)', imdb: 'https://www.imdb.com/title/tt0118688/' },
+          { id: 'batman-begins', title: 'Batman Begins', year: '2005', note: 'Christopher Nolan', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Begins', imdb: 'https://www.imdb.com/title/tt0372784/' },
+          { id: 'the-dark-knight', title: 'The Dark Knight', year: '2008', note: 'Christopher Nolan', wikipedia: 'https://en.wikipedia.org/wiki/The_Dark_Knight', imdb: 'https://www.imdb.com/title/tt0468569/' },
+          { id: 'the-dark-knight-rises', title: 'The Dark Knight Rises', year: '2012', note: 'Christopher Nolan', wikipedia: 'https://en.wikipedia.org/wiki/The_Dark_Knight_Rises', imdb: 'https://www.imdb.com/title/tt1345836/' },
+          { id: 'batman-v-superman', title: 'Batman v Superman: Dawn of Justice', year: '2016', note: 'Ben Affleck', wikipedia: 'https://en.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice', imdb: 'https://www.imdb.com/title/tt2975590/' },
+          { id: 'justice-league-2017', title: 'Justice League', year: '2017', note: 'Zack Snyder / Joss Whedon', wikipedia: 'https://en.wikipedia.org/wiki/Justice_League_(film)', imdb: 'https://www.imdb.com/title/tt0974015/' },
+          { id: 'zack-snyders-justice-league', title: 'Zack Snyder\'s Justice League', year: '2021', note: 'Director\'s cut', wikipedia: 'https://en.wikipedia.org/wiki/Zack_Snyder%27s_Justice_League', imdb: 'https://www.imdb.com/title/tt12361974/' },
+          { id: 'the-batman-2022', title: 'The Batman', year: '2022', note: 'Matt Reeves · Robert Pattinson', wikipedia: 'https://en.wikipedia.org/wiki/The_Batman_(film)', imdb: 'https://www.imdb.com/title/tt1877830/' },
+          { id: 'the-flash-2023', title: 'The Flash', year: '2023', note: 'Michael Keaton cameo', wikipedia: 'https://en.wikipedia.org/wiki/The_Flash_(film)', imdb: 'https://www.imdb.com/title/tt0437095/' }
+        ]
+      },
+      {
+        group: 'Animated films',
+        items: [
+          { id: 'mask-of-the-phantasm', title: 'Batman: Mask of the Phantasm', year: '1993', note: 'DCAU feature', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_Mask_of_the_Phantasm', imdb: 'https://www.imdb.com/title/tt0106364/' },
+          { id: 'return-of-the-joker', title: 'Batman Beyond: Return of the Joker', year: '2000', note: 'Neo-Gotham', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Beyond:_Return_of_the_Joker', imdb: 'https://www.imdb.com/title/tt0233298/' },
+          { id: 'under-the-red-hood-film', title: 'Batman: Under the Red Hood', year: '2010', note: 'Jason Todd', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_Under_the_Red_Hood', imdb: 'https://www.imdb.com/title/tt1564973/' },
+          { id: 'tdkr-animated', title: 'Batman: The Dark Knight Returns', year: '2012–13', note: 'Frank Miller adaptation', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_The_Dark_Knight_Returns_(film)', imdb: 'https://www.imdb.com/title/tt2313197/' },
+          { id: 'lego-batman-movie', title: 'The Lego Batman Movie', year: '2017', note: 'Animated comedy', wikipedia: 'https://en.wikipedia.org/wiki/The_Lego_Batman_Movie', imdb: 'https://www.imdb.com/title/tt4116284/' },
+          { id: 'hush-animated', title: 'Batman: Hush', year: '2019', note: 'Jim Lee story', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_Hush_(film)', imdb: 'https://www.imdb.com/title/tt8756494/' },
+          { id: 'long-halloween-animated', title: 'Batman: The Long Halloween', year: '2021–22', note: 'Two-part adaptation', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_The_Long_Halloween_(film)', imdb: 'https://www.imdb.com/title/tt14805344/' }
+        ]
+      },
+      {
+        group: 'Live-action television',
+        items: [
+          { id: 'batman-1966-tv', title: 'Batman', years: '1966–1968', note: 'Adam West · ABC', wikipedia: 'https://en.wikipedia.org/wiki/Batman_(TV_series)', imdb: 'https://www.imdb.com/title/tt0059968/' },
+          { id: 'gotham-tv', title: 'Gotham', years: '2014–2019', note: 'Pre-Batman origin · Fox', wikipedia: 'https://en.wikipedia.org/wiki/Gotham_(TV_series)', imdb: 'https://www.imdb.com/title/tt3749900/' },
+          { id: 'pennyworth-tv', title: 'Pennyworth', years: '2019–2022', note: 'Alfred origin · Epix/HBO Max', wikipedia: 'https://en.wikipedia.org/wiki/Pennyworth_(TV_series)', imdb: 'https://www.imdb.com/title/tt8425532/' },
+          { id: 'batwoman-tv', title: 'Batwoman', years: '2019–2022', note: 'The CW · Bat-Family', wikipedia: 'https://en.wikipedia.org/wiki/Batwoman_(TV_series)', imdb: 'https://www.imdb.com/title/tt8714904/' }
+        ]
+      },
+      {
+        group: 'Animated television',
+        items: [
+          { id: 'adventures-of-batman', title: 'The Adventures of Batman', years: '1968–1969', note: 'Filmation', wikipedia: 'https://en.wikipedia.org/wiki/The_Adventures_of_Batman', imdb: 'https://www.imdb.com/title/tt0062482/' },
+          { id: 'super-friends', title: 'Super Friends', years: '1973–1985', note: 'Hanna-Barbera', wikipedia: 'https://en.wikipedia.org/wiki/Super_Friends', imdb: 'https://www.imdb.com/title/tt0077027/' },
+          { id: 'batman-tas', title: 'Batman: The Animated Series', years: '1992–1995', note: 'DCAU · Fox Kids', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_The_Animated_Series', imdb: 'https://www.imdb.com/title/tt0103359/' },
+          { id: 'new-batman-adventures', title: 'The New Batman Adventures', years: '1997–1999', note: 'DCAU continuation', wikipedia: 'https://en.wikipedia.org/wiki/The_New_Batman_Adventures', imdb: 'https://www.imdb.com/title/tt0103359/' },
+          { id: 'batman-beyond-tv', title: 'Batman Beyond', years: '1999–2001', note: 'Neo-Gotham · Kids\' WB', wikipedia: 'https://en.wikipedia.org/wiki/Batman_Beyond', imdb: 'https://www.imdb.com/title/tt0118266/' },
+          { id: 'the-batman-2004', title: 'The Batman', years: '2004–2008', note: 'Kids\' WB / CW', wikipedia: 'https://en.wikipedia.org/wiki/The_Batman_(TV_series)', imdb: 'https://www.imdb.com/title/tt0373584/' },
+          { id: 'brave-and-bold', title: 'Batman: The Brave and the Bold', years: '2008–2011', note: 'Cartoon Network', wikipedia: 'https://en.wikipedia.org/wiki/Batman:_The_Brave_and_the_Bold', imdb: 'https://www.imdb.com/title/tt1216518/' },
+          { id: 'beware-the-batman', title: 'Beware the Batman', years: '2013–2014', note: 'CGI · Cartoon Network', wikipedia: 'https://en.wikipedia.org/wiki/Beware_the_Batman', imdb: 'https://www.imdb.com/title/tt2247732/' }
+        ]
+      }
+    ];
+
+    function renderWhoIsBatman() {
+      var p = BATMAN_PROFILE;
+      var factsHtml = p.facts.map(function(f) {
+        return '<div class="intro-fact"><span class="intro-fact-label">' + f.label + '</span>' +
+          '<span class="intro-fact-value">' + f.value + '</span></div>';
+      }).join('');
+      var localHero = imageRoot() + 'batman-homepage-header-image.jpg';
+      var sources = [localHero].concat(HERO_REMOTE_SOURCES || []);
+      if (versions && versions[0]) {
+        sources = sources.concat(getVersionCoverSources(versions[0].slug).slice(0, 2));
+      }
+      sources = uniqueUrls(sources);
+      COVER_SOURCES['hero:main'] = sources;
+      var imgSrc = sources[0] || '';
+      var wikiAttr = p.wikipedia ? ' data-wikipedia="' + escAttr(p.wikipedia) + '"' : '';
+      var gradient = 'radial-gradient(circle at 30% 25%, #1c2430, #0a0c10 55%, #000)';
+      return '<section class="home-section" id="who-is-batman">' +
+        '<div class="intro-banner home-full-bleed">' +
+        '<div class="intro-banner-bg" data-hero-gradient="' + escAttr(gradient) + '">' +
+        '<img src="' + imgSrc + '" alt="Batman" loading="eager" referrerpolicy="no-referrer" ' +
+        'data-hero="true" data-cover-key="hero:main" data-cover-idx="0"' + wikiAttr + ' ' +
+        'onerror="tryNextHero(this)"></div>' +
+        '<div class="intro-banner-overlay"></div>' +
+        '<div class="intro-banner-content">' +
+        '<h1>Who is Batman?</h1>' +
+        '<p class="intro-lead">' + p.lead + '</p>' +
+        '</div></div>' +
+        '<div class="intro-body">' +
+        '<p class="intro-summary">' + p.summary + '</p>' +
+        '<div class="intro-facts">' + factsHtml + '</div>' +
+        '<a class="wiki-attribution" href="' + p.wikipedia + '" target="_blank" rel="noopener">Facts sourced from Wikipedia →</a>' +
+        '</div></section>';
+    }
+
+    function renderFeaturedVersionRows(versionList) {
+      var html = versionList.map(function(v) {
+        return v ? renderFeaturedVersionRow(v) : '';
+      }).join('');
+      return html ? '<div class="featured-version-rows">' + html + '</div>' : '';
+    }
+
+    function renderVersesSection() {
+      return '<section class="home-section section" id="verses">' +
+        '<div class="section-header"><div>' +
+        '<h2>Batman in Different Verses</h2>' +
+        '<p>All ' + versions.length + ' versions across DC\'s multiverse — Prime Earth, Elseworlds, the far future, and every alternate Dark Knight.</p>' +
+        '</div><span class="section-badge">' + versions.length + ' versions</span></div>' +
+        renderFeaturedVersionRows(versions) +
+        '</section>';
+    }
+
+    function renderEssentialRunsSection() {
+      var cardsHtml = HOME_ESSENTIAL_RUNS.map(function(slug) {
+        return renderRunCard(slug, true);
+      }).join('');
+      return '<section class="home-section section" id="graphic-novels">' +
+        '<div class="section-header"><div>' +
+        '<h2>Graphic Novels &amp; Comic Runs</h2>' +
+        '<p>The most essential, best-selling Batman stories in print — from Frank Miller\'s Year One and Dark Knight Returns to modern classics like Court of Owls and Hush.</p>' +
+        '</div><span class="section-badge">' + HOME_ESSENTIAL_RUNS.length + ' essentials</span></div>' +
+        '<div class="essential-runs-grid">' + cardsHtml + '</div></section>';
+    }
+
+    function renderScreenItem(item) {
+      var when = item.years || item.year || '';
+      var links = [];
+      if (item.wikipedia) links.push('<a href="' + item.wikipedia + '" target="_blank" rel="noopener">Wikipedia</a>');
+      if (item.imdb) links.push('<a href="' + item.imdb + '" target="_blank" rel="noopener">IMDb</a>');
+      return '<article class="screen-item">' +
+        screenPosterTag(item) +
+        '<div class="screen-item-body">' +
+        '<h3>' + item.title + '</h3>' +
+        '<p class="screen-item-meta">' + when + (item.note ? ' · ' + item.note : '') + '</p>' +
+        (links.length ? '<div class="screen-item-links">' + links.join('') + '</div>' : '') +
+        '</div></article>';
+    }
+
+    function renderScreenSection() {
+      var groupsHtml = BATMAN_SCREEN.map(function(g) {
+        return '<div class="screen-group">' +
+          '<h3 class="screen-group-title">' + g.group + '</h3>' +
+          '<div class="screen-list">' + g.items.map(renderScreenItem).join('') + '</div></div>';
+      }).join('');
+      var totalCount = BATMAN_SCREEN.reduce(function(n, g) { return n + g.items.length; }, 0);
+      return '<section class="home-section section" id="on-screen">' +
+        '<div class="section-header"><div>' +
+        '<h2>Movies &amp; TV Series</h2>' +
+        '<p>Every major live-action and animated appearance — from the 1966 camp classic and Burton films to the DCAU, Nolan trilogy, and The Batman.</p>' +
+        '</div><span class="section-badge">' + totalCount + ' titles</span></div>' +
+        groupsHtml + '</section>';
+    }
+
+    function renderFeaturedVersionRow(v) {
+      var desc = v.description || '';
+      var copyId = 'featured-copy-' + v.slug;
+      var theme = getFeaturedThemeColor(v.slug, null);
+      var overlayStyle = ' style="background:' + buildFeaturedOverlayGradient(theme) + '"';
+      var copyClass = 'featured-version-copy featured-version-copy--on-dark';
+      var mediaNote = v.media && v.media.length
+        ? '<span>Also in Movies &amp; TV below</span>'
+        : '';
+      var wikiAttr = v.wikipedia ? ' data-wikipedia="' + escAttr(v.wikipedia) + '"' : '';
+      var maxRuns = 3;
+      var visibleRuns = (v.runs || []).slice(0, maxRuns);
+      var shopBlocks = visibleRuns.map(function(runSlug) {
+        var run = getRun(runSlug);
+        if (!run) return '';
+        var links = runShopLinksHtml(runSlug);
+        if (!links) return '';
+        return '<div class="featured-version-shop" data-run="' + escAttr(runSlug) + '">' +
+          '<span class="featured-version-more-runs">' + run.title + '</span>' + links + '</div>';
+      }).join('');
+      if ((v.runs || []).length > maxRuns) {
+        shopBlocks += '<span class="featured-version-more-runs">+' + (v.runs.length - maxRuns) + ' more collected edition' + (v.runs.length - maxRuns === 1 ? '' : 's') + ' in Graphic Novels below</span>';
+      }
+      var runsNote = (v.runs && v.runs.length)
+        ? '<span>' + v.runs.length + ' essential run' + (v.runs.length === 1 ? '' : 's') + '</span>'
+        : '';
+      return '<section class="featured-version-row" id="featured-' + v.slug + '" data-type="' + v.type + '">' +
+        '<div class="featured-version-link featured-version-link--static" data-slug="' + v.slug + '">' +
+        '<div class="featured-version-bg">' + featuredImgTag(v.slug, v.name, copyId) + '</div>' +
+        '<div class="featured-version-overlay"' + overlayStyle + '></div>' +
+        '<div class="' + copyClass + '" id="' + copyId + '">' +
+        '<span class="featured-version-label">' + (typeLabels[v.type] || v.type) + '</span>' +
+        '<h2>' + v.name + '</h2>' +
+        '<p class="featured-version-tagline">' + v.tagline + '</p>' +
+        '<p class="featured-version-desc"' + wikiAttr + '>' + desc + '</p>' +
+        '<div class="featured-version-meta">' +
+        '<span>' + v.universe + '</span>' +
+        runsNote +
+        mediaNote +
+        '<span>' + v.firstAppearance + '</span></div>' +
+        shopBlocks +
+        '</div></div></section>';
+    }
+
+    function renderHome() {
+      return '<div class="page" id="page-home">' +
+        renderWhoIsBatman() +
+        renderVersesSection() +
+        renderEssentialRunsSection() +
+        renderScreenSection() +
+        '</div>';
+    }
+
+    function renderRunBody(slug) {
+      var run = getRun(slug);
+      if (!run) return '';
+      var orderHtml = run.readingOrder.map(function(item) { return '<li>' + item + '</li>'; }).join('');
+      var productHtml = run.amazon.map(function(p) {
+        var thumb = imgTag(slug, p.title);
+        return '<a href="' + amazonUrl(p.asin) + '" target="_blank" rel="noopener sponsored" class="product-card">' +
+          '<div class="product-thumb">' + (thumb || '<div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;opacity:0.3">🦇</div>') + '</div>' +
+          '<div class="product-info"><h4>' + p.title + '</h4>' +
+          '<span>' + p.format + (p.recommended ? ' · Recommended' : '') + '</span></div>' +
+          '<span class="product-cta">Buy →</span></a>';
+      }).join('');
+      return '<div class="run-layout">' +
+        '<div class="run-cover-card">' +
+        '<div class="run-cover-wrap">' + imgTag(slug, run.title) + '</div>' +
+        '<div class="run-cover-meta">' + run.collects + '<br>' + run.era + '</div></div>' +
+        '<div class="run-detail">' +
+        '<h1>' + run.title + '</h1>' +
+        '<p class="creators">' + run.creators + '</p>' +
+        '<p class="summary">' + run.summary + '</p>' +
+        '<div class="info-grid">' +
+        '<div class="info-box"><label>Years</label><span>' + run.years + '</span></div>' +
+        '<div class="info-box"><label>Collects</label><span>' + run.collects + '</span></div>' +
+        '<div class="info-box"><label>Era</label><span>' + run.era + '</span></div>' +
+        '<div class="info-box"><label>Prerequisites</label><span>' + run.prerequisites + '</span></div></div>' +
+        renderIssueInventory(slug) +
+        '<div class="reading-order"><h2 class="block-title">Collected editions</h2><ol>' + orderHtml + '</ol></div>' +
+        '<div class="buy-section"><h2 class="block-title">Where to buy</h2>' +
+        '<div class="product-grid">' + productHtml + '</div>' +
+        '<p class="disclosure">As an Amazon Associate we earn from qualifying purchases. Replace YOURTAG-20 with your affiliate tag.</p>' +
+        '</div></div></div>';
+    }
+
+    function renderRun(slug) {
+      var run = getRun(slug);
+      if (!run) return renderHome();
+
+      var version = getVersion(run.versionSlug);
+
+      return '<div class="page" id="page-run">' +
+        '<div class="breadcrumb"><a href="#home">Home</a> / ' +
+        '<a href="#verses">' + version.name + '</a> / <span>' + run.title + '</span></div>' +
+        renderRunBody(slug) + '</div>';
+    }
+
+    function hydrateVersionDescriptions() {
+      document.querySelectorAll('.featured-version-desc[data-wikipedia]').forEach(function(el) {
+        if (el.dataset.wikiHydrated === 'true') return;
+        var wiki = el.getAttribute('data-wikipedia');
+        if (!wiki) return;
+        var title = '';
+        try {
+          var parts = wiki.split('/wiki/');
+          title = parts.length > 1 ? decodeURIComponent(parts[1]) : '';
+        } catch (err) { title = ''; }
+        if (!title) return;
+        el.dataset.wikiHydrated = 'pending';
+        fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(title.replace(/ /g, '_')), {
+          headers: { 'Accept': 'application/json' }
+        }).then(function(resp) { return resp.ok ? resp.json() : null; }).then(function(data) {
+          if (!data || !data.extract) {
+            el.dataset.wikiHydrated = 'false';
+            return;
+          }
+          var extract = String(data.extract).trim();
+          var current = (el.textContent || '').trim();
+          if (extract.length > current.length + 40) {
+            el.textContent = extract;
+          }
+          el.dataset.wikiHydrated = 'true';
+        }).catch(function() {
+          el.dataset.wikiHydrated = 'false';
+        });
+      });
+    }
+
+    function route() {
+      var hash = location.hash.slice(1) || 'home';
+      var app = document.getElementById('app');
+      var isVersion = hash.indexOf('version/') === 0;
+      var isRun = hash.indexOf('run/') === 0;
+
+      if (isVersion) {
+        location.replace('#verses');
+        return;
+      } else if (isRun) {
+        window.scrollTo(0, 0);
+        app.innerHTML = renderRun(hash.replace('run/', ''));
+      } else {
+        app.innerHTML = renderHome();
+        initFeaturedRows();
+        hydrateScreenPosters();
+        hydrateVersionDescriptions();
+        var scrollTarget = (hash === 'home' || !hash) ? null : (hash === 'all-versions' ? 'verses' : hash);
+        if (scrollTarget) {
+          requestAnimationFrame(function() {
+            var el = document.getElementById(scrollTarget);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            else window.scrollTo(0, 0);
+          });
+        } else {
+          window.scrollTo(0, 0);
+        }
+      }
+    }
+
+    function refreshCoverSources() {
+      Object.keys(COVER_SOURCES).forEach(function(k) { delete COVER_SOURCES[k]; });
+      buildCoverSourceIndex();
+    }
+
+    refreshCoverSources();
+    window.addEventListener('hashchange', route);
+    window.addEventListener('load', route);
+
+    (function () {
+      var chrome = document.querySelector('.site-chrome');
+      if (!chrome) return;
+      var ticking = false;
+      var ON = 24;
+      var OFF = 8;
+      var scrolled = false;
+      function update() {
+        ticking = false;
+        var y = window.scrollY || 0;
+        if (!scrolled && y > ON) {
+          scrolled = true;
+          chrome.classList.add('is-scrolled');
+        } else if (scrolled && y < OFF) {
+          scrolled = false;
+          chrome.classList.remove('is-scrolled');
+        }
+      }
+      function onScroll() {
+        if (!ticking) {
+          ticking = true;
+          window.requestAnimationFrame(update);
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      update();
+    })();
+  </script>
+</body>
+</html>
