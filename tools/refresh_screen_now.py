@@ -24,12 +24,13 @@ from datetime import date, datetime, timedelta
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-HOME = HERE.parent
-SITE_ROOT = HOME / 'heroesvillainsmavericks'
+REPO = HERE.parent
+SITE_ROOT = REPO / 'site'
 ROOT = SITE_ROOT
 SLATE_PATH = HERE / 'screen_slate.json'
 CONFIG_PATH = HERE / 'config.json'
 OUT_PATH = SITE_ROOT / 'heroesvillainsmavericks.html'
+INDEX_PATH = SITE_ROOT / 'index.html'
 SHOP_SECTIONS_PATH = HERE / 'screen_shop_sections.html'
 CACHE_PATH = HERE / '.cache' / 'tmdb_screen.json'
 TMDB_BASE = 'https://api.themoviedb.org/3'
@@ -1137,6 +1138,7 @@ def main() -> None:
         return
 
     OUT_PATH.write_text(html, encoding='utf-8')
+    INDEX_PATH.write_text(html, encoding='utf-8')
     print('Wrote', OUT_PATH)
 
 

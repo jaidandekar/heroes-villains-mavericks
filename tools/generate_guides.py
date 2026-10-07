@@ -15,10 +15,11 @@ from packs_image import IMAGE_PACKS
 from packs_marvel_more import MARVEL_MORE_PACKS
 from packs_screen import SCREEN_PACKS
 
-HOME = Path('/Users/jaidandekar')
-SITE_ROOT = HOME / 'heroesvillainsmavericks'
+TOOLS = Path(__file__).resolve().parent
+REPO = TOOLS.parent
+SITE_ROOT = REPO / 'site'
 ROOT = SITE_ROOT  # generated guides + public site live here
-TEMPLATE = HOME / 'character-guides' / 'templates' / 'batman-guide' / 'index.html'
+TEMPLATE = TOOLS / 'templates' / 'batman-guide' / 'index.html'
 
 # Only guides linked from heroesvillainsmavericks / the Screen Now slate.
 # Template lives under character-guides/templates/batman-guide (not a public guide).

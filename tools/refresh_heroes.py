@@ -26,7 +26,7 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-SITE_ROOT = HERE.parent / 'heroesvillainsmavericks'
+SITE_ROOT = HERE.parent / 'site'
 ROOT = SITE_ROOT
 sys.path.insert(0, str(HERE))
 

@@ -33,13 +33,14 @@ import urllib.request
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-HOME = HERE.parent
-SITE_ROOT = HOME / 'heroesvillainsmavericks'
+REPO = HERE.parent
+SITE_ROOT = REPO / 'site'
 ROOT = SITE_ROOT
 SHOP_PATH = HERE / 'screen_shop.json'
 OUT_HTML = HERE / 'screen_shop_sections.html'
 CONFIG_PATH = HERE / 'config.json'
 LIVE_PAGE = SITE_ROOT / 'heroesvillainsmavericks.html'
+INDEX_PAGE = SITE_ROOT / 'index.html'
 SHOP_START = '<!-- SHOP_SECTIONS_START -->'
 SHOP_END = '<!-- SHOP_SECTIONS_END -->'
 
@@ -347,7 +348,9 @@ def patch_live_shop_sections(shop_html: str) -> bool:
             return False
         page = page[:idx] + block + '\n' + page[foot:]
     LIVE_PAGE.write_text(page, encoding='utf-8')
-    print(f'Patched shop sections → {LIVE_PAGE}')
+    # Keep GitHub Pages root URL in sync with the named landing file.
+    INDEX_PAGE.write_text(page, encoding='utf-8')
+    print(f'Patched shop sections → {LIVE_PAGE} (+ index.html)')
     return True
 
 

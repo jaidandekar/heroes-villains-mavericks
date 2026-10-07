@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroes, Villains, &amp; Mavericks</title>
+  <meta name="description" content="Comic book movies and series playing now, plus everything lined up through the end of 2026.">
+  <meta name="screen-now-generated" content="2026-09-13">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&display=swap" rel="stylesheet">
+  <style>
+
+    :root {
+      --bg: #f5f5f5;
+      --ink: #1a1c1e;
+      --muted: #6a6e75;
+      --line: rgba(26, 28, 30, 0.06);
+      --accent: #e4572e;
+      --accent-deep: #c2410c;
+      --link: #5BA4E6;
+      --link-hover: #3D8FD9;
+      --on-media: #f7f4ef;
+      --on-media-muted: rgba(247, 244, 239, 0.72);
+      --font-display: 'Google Sans Flex', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --font-body: 'Google Sans Flex', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      color: var(--ink);
+      background: var(--bg);
+      min-height: 100vh;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    .site {
+      width: min(100%, 72rem);
+      max-width: none;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+      background: transparent;
+    }
+    .nav {
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 0.35rem 0 1.5rem; border-bottom: 1px solid var(--line); margin-bottom: 2rem;
+      opacity: 0; animation: rise 0.7s var(--ease) 0.05s forwards;
+    }
+    .nav-brand { font-family: var(--font-display); font-size: 1.35rem; letter-spacing: 0.08em; text-decoration: none; }
+    .nav-links { display: flex; gap: 1.25rem; font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
+    .nav-links a { text-decoration: none; color: var(--muted); transition: color 0.2s ease; }
+    .nav-links a:hover, .nav-links a[aria-current="page"] { color: var(--ink); }
+    .hero {
+      position: relative; min-height: min(72vh, 580px); display: grid; align-items: end;
+      overflow: hidden; margin: 0 -1.25rem 0;
+      opacity: 0; animation: rise 0.85s var(--ease) 0.15s forwards;
+    }
+    .hero-media {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(14, 17, 20, 0.92) 0%, rgba(14, 17, 20, 0.55) 42%, rgba(14, 17, 20, 0.2) 100%),
+        linear-gradient(0deg, rgba(14, 17, 20, 0.98) 0%, transparent 42%),
+        var(--hero-image) center / cover no-repeat;
+      transform: scale(1.04); animation: ken 18s ease-in-out infinite alternate;
+    }
+    .hero-copy { position: relative; z-index: 1; padding: 2.5rem 1.25rem 2.75rem; max-width: 34rem; color: var(--on-media); }
+    .brand { font-family: var(--font-display); font-size: clamp(3.5rem, 12vw, 6.5rem); letter-spacing: 0.04em; line-height: 0.9; margin-bottom: 0.85rem; }
+    .brand span { display: block; color: var(--accent); }
+    .hero h1 { font-size: clamp(1.35rem, 3.2vw, 1.85rem); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; margin-bottom: 0.65rem; max-width: 18ch; }
+    .hero-lede { color: var(--on-media-muted); font-size: 1rem; max-width: 34ch; margin-bottom: 1.35rem; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.7rem 1.15rem;
+      font-size: 0.8125rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+      text-decoration: none; border: 1px solid transparent;
+      transition: transform 0.2s var(--ease), background 0.2s ease, border-color 0.2s ease;
+    }
+    .cta-primary { background: var(--accent); color: #fff; }
+    .cta-primary:hover { transform: translateY(-1px); background: #f06a3f; }
+    .cta-ghost { background: transparent; border-color: rgba(247, 244, 239, 0.35); color: var(--on-media); }
+    .cta-ghost:hover { border-color: var(--on-media); }
+    .as-of { margin-top: 1.1rem; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+
+    /* Site header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: #ffffff;
+      transition: box-shadow 0.28s var(--ease);
+    }
+    .site-header-inner {
+      width: min(100%, 72rem);
+      margin: 0 auto;
+      padding: 1.05rem 1rem;
+    }
+    .site-header-title {
+      font-family: var(--font-display);
+      font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .site-header.is-scrolled {
+      box-shadow: 0 10px 28px rgba(26, 28, 30, 0.1);
+    }
+
+    /* Now section head */
+    .now-stage-head {
+      margin: 0.35rem 0 0.85rem;
+      padding-bottom: 0;
+    }
+    .now-stage-head h2 {
+      font-family: var(--font-display);
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      color: #c4c7ce;
+    }
+    .now-cards {
+      display: grid;
+      gap: 1.15rem;
+      margin-bottom: 4.5rem;
+      width: 100%;
+    }
+    .now-card {
+      position: relative;
+      width: 100%;
+      min-height: clamp(20rem, 70vw, 26rem);
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      isolation: isolate;
+      border-radius: 0.85rem;
+      border: 1px solid rgba(26, 28, 30, 0.08);
+      box-shadow: 0 18px 40px rgba(26, 28, 30, 0.08);
+      background: #2a2e33;
+      color: var(--on-media);
+    }
+    .now-studio {
+      position: absolute;
+      top: 1.15rem;
+      right: 1.15rem;
+      z-index: 3;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 14px rgba(0, 0, 0, 0.45));
+      pointer-events: none;
+    }
+    .now-studio-marvel {
+      height: 1.85rem;
+    }
+    .now-studio-dc {
+      height: 2.65rem;
+      width: 2.65rem;
+    }
+    .now-card-media {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      transform: scale(1.03);
+      filter: saturate(1.06) contrast(1.04);
+    }
+    .now-card-veil {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(90deg, rgba(12, 14, 16, 0.92) 0%, rgba(12, 14, 16, 0.7) 42%, rgba(12, 14, 16, 0.28) 72%, rgba(12, 14, 16, 0.42) 100%),
+        linear-gradient(0deg, rgba(12, 14, 16, 0.86) 0%, rgba(12, 14, 16, 0.18) 48%, rgba(12, 14, 16, 0.3) 100%);
+      pointer-events: none;
+    }
+    .now-card-copy {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem 1.15rem 1.6rem;
+      width: min(100%, 36rem);
+      padding-right: 4.5rem;
+    }
+    .now-kicker {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f0a27a;
+      margin-bottom: 0.7rem;
+    }
+    .now-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.1rem, 5.5vw, 3.75rem);
+      letter-spacing: 0.01em;
+      line-height: 0.98;
+      margin-bottom: 0.85rem;
+      font-weight: 700;
+    }
+    .now-title a {
+      text-decoration: none;
+      color: var(--on-media);
+      text-shadow: 0 2px 28px rgba(0, 0, 0, 0.4);
+    }
+    .now-title a:hover { color: #f0a27a; }
+    .now-ratings {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem 1.1rem;
+      margin: 0 0 1rem;
+    }
+    .now-rating {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+      text-decoration: none;
+      color: inherit;
+      min-width: 4.5rem;
+    }
+    a.now-rating:hover .now-rating-score { color: #f0a27a; }
+    .now-rating-score {
+      font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2.5vw, 1.65rem);
+      line-height: 1;
+      letter-spacing: 0.02em;
+      color: var(--on-media);
+      font-weight: 700;
+    }
+    .now-rating-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(247, 244, 239, 0.5);
+    }
+    .now-blurb {
+      font-size: clamp(0.95rem, 1.6vw, 1.08rem);
+      color: var(--on-media-muted);
+      margin-bottom: 0.75rem;
+    }
+    .now-where {
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(247, 244, 239, 0.55);
+      margin-bottom: 1.2rem;
+    }
+    .now-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .now-guide, .now-trailer {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: transform 0.2s var(--ease), background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+    .now-guide {
+      color: #fff;
+      background: var(--accent);
+    }
+    .now-guide:hover { transform: translateY(-1px); background: #f06a3f; }
+    .now-trailer {
+      color: var(--on-media);
+      background: transparent;
+      border: 1px solid rgba(247, 244, 239, 0.4);
+    }
+    .now-trailer:hover {
+      transform: translateY(-1px);
+      border-color: var(--on-media);
+      background: rgba(247, 244, 239, 0.1);
+    }
+
+    .section { margin-bottom: 3.25rem; }
+    .section-head {
+      display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+      gap: 0.5rem 1.5rem; margin: 0 0 0.85rem; padding-bottom: 0;
+    }
+    .section-head h2 { font-family: var(--font-display); font-size: clamp(1.2rem, 2.4vw, 1.55rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; color: #c4c7ce; }
+    .section-head p { color: var(--muted); font-size: 0.9rem; max-width: 28rem; }
+    .upcoming-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.15rem;
+    }
+    .upcoming-card {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 0;
+      align-items: stretch;
+      background: #ffffff;
+      border-radius: 1rem;
+      border: 1px solid rgba(26, 28, 30, 0.05);
+      box-shadow: 0 14px 34px rgba(26, 28, 30, 0.07);
+      padding: 0;
+      overflow: hidden;
+    }
+    .upcoming-card-poster {
+      width: 100%;
+      height: 100%;
+      min-height: 11.5rem;
+      object-fit: cover;
+      background: #e8e8e8;
+      display: block;
+      border-radius: 0;
+    }
+    .upcoming-card-body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      min-width: 0;
+      height: 100%;
+      padding: 1.05rem 1.1rem 1.1rem 1.2rem;
+    }
+    .title-name { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; text-decoration: none; color: var(--ink); transition: color 0.2s ease; }
+    .title-name:hover { color: var(--link-hover); }
+    .title-blurb { color: var(--muted); font-size: 0.88rem; }
+    .guide-link { display: inline-flex; margin-top: 0.1rem; font-size: 0.78rem; font-weight: 600; color: var(--link); text-decoration: none; width: fit-content; }
+    .guide-link:hover { color: var(--link-hover); text-decoration: underline; }
+    .upcoming-card .guide-link {
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .upcoming-card .guide-link::after {
+      content: '→';
+      font-size: 0.85em;
+      line-height: 1;
+      transform: translateY(0.02em);
+    }
+    .upcoming-card-meta {
+      margin-top: auto;
+      padding-top: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.15rem;
+    }
+    .date-status {
+      margin: 0;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      line-height: 1.35;
+      color: var(--ink);
+    }
+    .upcoming-trailer {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 0.65rem;
+      padding: 0.55rem 1.05rem;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      border-radius: 999px;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid rgba(26, 28, 30, 0.18);
+      transition: transform 0.2s var(--ease), background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+      white-space: nowrap;
+    }
+    .upcoming-trailer:hover,
+    .upcoming-trailer:active {
+      transform: translateY(-1px);
+      color: #ffffff;
+      background: var(--ink);
+      border-color: var(--ink);
+    }
+    .shop-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
+    }
+    .shop-item {
+      display: grid;
+      grid-template-columns: 88px 1fr;
+      gap: 0.95rem;
+      align-items: stretch;
+      padding: 0;
+      background: #ffffff;
+      border-radius: 0.85rem;
+      border: 1px solid rgba(26, 28, 30, 0.05);
+      box-shadow: 0 10px 28px rgba(26, 28, 30, 0.06);
+      text-decoration: none;
+      color: inherit;
+      overflow: hidden;
+      transition: transform 0.2s var(--ease), box-shadow 0.2s ease, border-color 0.2s ease;
+    }
+    .shop-item:hover {
+      transform: translateY(-2px);
+      border-color: rgba(26, 28, 30, 0.1);
+      box-shadow: 0 16px 34px rgba(26, 28, 30, 0.1);
+    }
+    .shop-item-media {
+      width: 100%;
+      height: 100%;
+      min-height: 7.25rem;
+      border-radius: 0;
+      object-fit: cover;
+      object-position: center top;
+      background: #e8e8e8;
+      display: block;
+      align-self: stretch;
+    }
+    .shop-item-media--square {
+      object-fit: cover;
+      padding: 0;
+      background: #e8e8e8;
+    }
+    .shop-item-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      min-width: 0;
+      padding: 0.9rem 1rem 0.9rem 0;
+      justify-content: center;
+    }
+    .shop-item--no-media {
+      grid-template-columns: 1fr;
+      padding: 0.95rem 1.05rem;
+    }
+    .shop-item--no-media .shop-item-copy {
+      padding: 0;
+    }
+    .shop-kicker {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .shop-title {
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: -0.015em;
+      line-height: 1.25;
+      color: var(--ink);
+    }
+    .shop-note {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+    .shop-cta {
+      margin-top: 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--link);
+    }
+    .shop-item:hover .shop-cta { color: var(--link-hover); }
+    .shop-disclosure {
+      margin-top: 0.85rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--line); font-size: 0.8rem;
+      color: var(--muted); display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; justify-content: space-between;
+    }
+    .footer a { color: var(--link); text-decoration: none; }
+    .footer a:hover { text-decoration: underline; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes ken { from { transform: scale(1.04); } to { transform: scale(1.1) translate3d(-1.5%, -1%, 0); } }
+    @media (min-width: 640px) {
+      .site {
+        width: min(100%, 78rem);
+        padding: 1.75rem 1.25rem 3.5rem;
+      }
+      .site-header-inner {
+        width: min(100%, 78rem);
+        padding: 1.2rem 1.25rem;
+      }
+      .now-cards { gap: 1.25rem; }
+      .now-card {
+        min-height: clamp(22rem, 48vw, 28rem);
+        border-radius: 1rem;
+      }
+      .now-card-copy {
+        padding: 1.85rem 1.5rem 2rem;
+        padding-right: 5.5rem;
+        width: min(100%, 40rem);
+      }
+      .upcoming-card {
+        grid-template-columns: 148px 1fr;
+      }
+      .title-name { font-size: 1.35rem; }
+      .shop-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+    }
+    @media (min-width: 900px) {
+      .site {
+        width: min(100%, 88rem);
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+        padding-bottom: 4rem;
+      }
+      .site-header-inner {
+        width: min(100%, 88rem);
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+      }
+      .hero { margin: 0 -1.75rem 0; }
+      .hero-copy { padding: 3rem 2rem 3.25rem; }
+      .now-cards { gap: 1.5rem; }
+      .now-card {
+        min-height: clamp(26rem, 38vw, 32rem);
+      }
+      .now-card-copy {
+        padding: 2.25rem 2rem 2.4rem;
+        width: min(52%, 38rem);
+      }
+      .now-studio {
+        top: 1.5rem;
+        right: 1.5rem;
+      }
+      .now-studio-marvel { height: 2.1rem; }
+      .now-studio-dc { height: 3rem; width: 3rem; }
+      .now-title {
+        font-size: clamp(2.4rem, 4.2vw, 4rem);
+      }
+      .upcoming-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+      }
+      .upcoming-card {
+        grid-template-columns: 168px 1fr;
+      }
+      .shop-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.1rem;
+      }
+    }
+    @media (min-width: 1280px) {
+      .site {
+        width: min(100%, 96rem);
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .site-header-inner {
+        width: min(100%, 96rem);
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      .now-card {
+        min-height: clamp(28rem, 30vw, 34rem);
+      }
+      .now-card-copy {
+        width: min(48%, 42rem);
+        padding: 2.5rem 2.35rem 2.6rem;
+      }
+      .now-title {
+        font-size: clamp(2.75rem, 3.4vw, 4.25rem);
+      }
+    }
+    @media (min-width: 1600px) {
+      .site {
+        width: min(100%, 108rem);
+      }
+      .site-header-inner {
+        width: min(100%, 108rem);
+      }
+      .now-card {
+        min-height: clamp(34rem, 32vw, 42rem);
+      }
+      .now-card-copy {
+        width: min(42%, 46rem);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .nav, .hero { opacity: 1; }
+      .hero-media { transform: none !important; }
+      .site-header, .site-header-inner, .site-header-title { transition: none !important; }
+    }
+
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-header-title">Heroes, Villains, &amp; Mavericks</p>
+    </div>
+  </header>
+  <div class="site">
+    <header class="now-stage-head">
+      <h2>In theaters &amp; streaming now</h2>
+    </header>
+
+    <section class="now-cards" id="now" aria-label="In theaters and streaming now">
+      <article class="now-card" id="now-lanterns">
+        <div class="now-card-media" aria-hidden="true" style="background-image: url('https://image.tmdb.org/t/p/w1280/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg')"></div>
+        <div class="now-card-veil" aria-hidden="true"></div>
+        
+        <img class="now-studio now-studio-dc" src="assets/studio-logos/dc.svg" alt="DC" width="80" height="80" loading="lazy">
+        <div class="now-card-copy">
+          <span class="now-kicker">Series · airing</span>
+          <h3 class="now-title">
+            <a href="https://www.max.com/" target="_blank" rel="noopener">Lanterns</a>
+          </h3>
+          
+          <div class="now-ratings" aria-label="Ratings"><a class="now-rating" href="https://www.rottentomatoes.com/tv/lanterns/s01" target="_blank" rel="noopener"><span class="now-rating-score">94%</span><span class="now-rating-label">Rotten Tomatoes</span></a><a class="now-rating" href="https://www.imdb.com/title/tt26545992/" target="_blank" rel="noopener"><span class="now-rating-score">8.4</span><span class="now-rating-label">IMDb</span></a><a class="now-rating" href="https://www.metacritic.com/tv/lanterns/" target="_blank" rel="noopener"><span class="now-rating-score">72</span><span class="now-rating-label">Metacritic</span></a></div>
+          <p class="now-blurb">New recruit John Stewart and Lantern legend Hal Jordan — two intergalactic cops drawn into a dark, Earth-based mystery with cosmic ties as they investigate a murder in the American heartland. From HBO, Warner Bros. Television, and DC Studios; weekly Sundays through the Oct 4 finale.</p>
+          <p class="now-where">HBO / Max · airing now · through Oct 4</p>
+          <div class="now-actions">
+            <a class="now-trailer" href="https://www.youtube.com/watch?v=7UIBOsuUwc4" target="_blank" rel="noopener">Watch trailer</a>
+            <a class="now-guide" href="green-lantern-guide/index.html">Learn more about Green Lantern</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="now-card" id="now-brand-new-day">
+        <div class="now-card-media" aria-hidden="true" style="background-image: url('https://image.tmdb.org/t/p/w1280/qeQJx07rK2xm8SD2sJxFKhE7gs0.jpg')"></div>
+        <div class="now-card-veil" aria-hidden="true"></div>
+        
+        <img class="now-studio now-studio-marvel" src="assets/studio-logos/marvel.svg" alt="Marvel" width="80" height="80" loading="lazy">
+        <div class="now-card-copy">
+          <span class="now-kicker">Film · in theaters</span>
+          <h3 class="now-title">
+            <a href="https://www.marvel.com/movies/spider-man-brand-new-day" target="_blank" rel="noopener">Spider-Man: Brand New Day</a>
+          </h3>
+          
+          <div class="now-ratings" aria-label="Ratings"><a class="now-rating" href="https://www.rottentomatoes.com/m/spider_man_brand_new_day" target="_blank" rel="noopener"><span class="now-rating-score">90%</span><span class="now-rating-label">Rotten Tomatoes</span></a><a class="now-rating" href="https://www.imdb.com/title/tt22084616/" target="_blank" rel="noopener"><span class="now-rating-score">8.2</span><span class="now-rating-label">IMDb</span></a><a class="now-rating" href="https://www.metacritic.com/movie/spider-man-brand-new-day/" target="_blank" rel="noopener"><span class="now-rating-score">69</span><span class="now-rating-label">Metacritic</span></a></div>
+          <p class="now-blurb">Fighting crime full-time as Spider-Man in a world that doesn't remember him — and the pressure of seeing his old friends move on without him — sparks a change in Peter Parker he may not have the power to control. But that transformation might also be the only thing that can stop a shocking new threat to the city and those he loves: a powerful villain no one can even see.</p>
+          <p class="now-where">In theaters now</p>
+          <div class="now-actions">
+            <a class="now-trailer" href="https://www.youtube.com/watch?v=P3uI5sLosKU" target="_blank" rel="noopener">Watch trailer</a>
+            <a class="now-guide" href="spiderman-guide/index.html">Learn more about Spider-Man</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="now-card" id="now-supergirl">
+        <div class="now-card-media" aria-hidden="true" style="background-image: url('https://image.tmdb.org/t/p/w1280/54KIfdTEzOliHDKx0OkzYGqAICx.jpg')"></div>
+        <div class="now-card-veil" aria-hidden="true"></div>
+        
+        <img class="now-studio now-studio-dc" src="assets/studio-logos/dc.svg" alt="DC" width="80" height="80" loading="lazy">
+        <div class="now-card-copy">
+          <span class="now-kicker">Film · streaming</span>
+          <h3 class="now-title">
+            <a href="https://www.max.com/" target="_blank" rel="noopener">Supergirl</a>
+          </h3>
+          
+          <div class="now-ratings" aria-label="Ratings"><a class="now-rating" href="https://www.rottentomatoes.com/m/supergirl_2026" target="_blank" rel="noopener"><span class="now-rating-score">53%</span><span class="now-rating-label">Rotten Tomatoes</span></a><a class="now-rating" href="https://www.imdb.com/title/tt8814476/" target="_blank" rel="noopener"><span class="now-rating-score">5.9</span><span class="now-rating-label">IMDb</span></a></div>
+          <p class="now-blurb">In its inaugural flight into the new DC Universe, Supergirl reveals the origin of the interplanetary nomad Kara Zor-El — cousin of Kal-El, better known as Superman. Headstrong, worldly-wise, and often reckless, she exudes a brand of heroism all her own. When an unexpected and ruthless adversary strikes too close to home, Kara reluctantly joins forces with an unlikely companion on an epic interstellar journey — balancing vengeance with justice, and fighting to save her best friend, Krypto.</p>
+          <p class="now-where">Streaming now on Max</p>
+          <div class="now-actions">
+            <a class="now-trailer" href="https://www.youtube.com/watch?v=s1-pfiVMKAs" target="_blank" rel="noopener">Watch trailer</a>
+            <a class="now-guide" href="supergirl-guide/index.html">Learn more about Supergirl</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="now-card" id="now-xmen-97">
+        <div class="now-card-media" aria-hidden="true" style="background-image: url('https://image.tmdb.org/t/p/w1280/jIyEmnBrZtl6SEWyBoMO2hZnzMa.jpg')"></div>
+        <div class="now-card-veil" aria-hidden="true"></div>
+        
+        <img class="now-studio now-studio-marvel" src="assets/studio-logos/marvel.svg" alt="Marvel" width="80" height="80" loading="lazy">
+        <div class="now-card-copy">
+          <span class="now-kicker">Series · airing</span>
+          <h3 class="now-title">
+            <a href="https://www.disneyplus.com/" target="_blank" rel="noopener">X-Men ’97 · Season 2</a>
+          </h3>
+          
+          <div class="now-ratings" aria-label="Ratings"><a class="now-rating" href="https://www.rottentomatoes.com/tv/x_men_97/s02" target="_blank" rel="noopener"><span class="now-rating-score">97%</span><span class="now-rating-label">Rotten Tomatoes</span></a><a class="now-rating" href="https://www.imdb.com/title/tt16026746/" target="_blank" rel="noopener" title="Series score"><span class="now-rating-score">8.7</span><span class="now-rating-label">IMDb</span></a></div>
+          <p class="now-blurb">Season 1 left the X-Men reeling after loss, betrayal, and a future that still threatens mutantkind. Season 2 picks up with the team divided and thrown across different eras in time — from the dawn of Apocalypse’s reign to the height of his rule — as they struggle to find their way home. Meanwhile, back in the 1990s, suspicious foes and new strains of mutant intolerance rise in the wake of their absence.</p>
+          <p class="now-where">Streaming now on Disney+</p>
+          <div class="now-actions">
+            <a class="now-trailer" href="https://www.youtube.com/watch?v=h1x0MJweTU0" target="_blank" rel="noopener">Watch trailer</a>
+            <a class="now-guide" href="x-men-guide/index.html">Learn more about X-Men</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section" id="upcoming">
+      <div class="section-head">
+        <h2>Coming soon to theaters &amp; streaming</h2>
+      </div>
+      <div class="upcoming-grid">
+        <article class="upcoming-card">
+          <img class="upcoming-card-poster" src="https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg" alt="Avengers: Endgame poster" width="200" height="300" loading="lazy">
+          <div class="upcoming-card-body">
+            <a class="title-name" href="https://www.marvel.com/movies/avengers-endgame" target="_blank" rel="noopener">Avengers: Endgame</a>
+            <span class="title-blurb">Encore theatrical run with roughly four minutes of new footage — a warm-up for Doomsday.</span>
+            <a class="guide-link" href="avengers-guide/index.html">Learn more about the Avengers</a>
+            <div class="upcoming-card-meta">
+              <p class="date-status">Re-release in theaters on September 25th, 2026</p>
+              <a class="upcoming-trailer" href="https://www.youtube.com/watch?v=L2NAh3CIdig" target="_blank" rel="noopener">Watch trailer</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="upcoming-card">
+          <img class="upcoming-card-poster" src="https://image.tmdb.org/t/p/w500/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg" alt="VisionQuest poster" width="200" height="300" loading="lazy">
+          <div class="upcoming-card-body">
+            <a class="title-name" href="https://www.disneyplus.com/" target="_blank" rel="noopener">VisionQuest</a>
+            <span class="title-blurb">With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive — while a mysterious boy who may be his son is drawn into the chase.</span>
+            <a class="guide-link" href="vision-guide/index.html">Learn more about Vision</a>
+            <div class="upcoming-card-meta">
+              <p class="date-status">Series premiere on Disney+ on October 14th, 2026</p>
+              <a class="upcoming-trailer" href="https://www.youtube.com/watch?v=oSVTAUKyrL8" target="_blank" rel="noopener">Watch trailer</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="upcoming-card">
+          <img class="upcoming-card-poster" src="https://image.tmdb.org/t/p/w500/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg" alt="Clayface poster" width="200" height="300" loading="lazy">
+          <div class="upcoming-card-body">
+            <a class="title-name" href="https://www.clayfacemovie.com/" target="_blank" rel="noopener">Clayface</a>
+            <span class="title-blurb">Follow the terrifying descent of a promising Hollywood actor who becomes a monster driven by revenge — a story about the loss of identity and humanity, toxic love, and the dark side of scientific ambition. North America Oct 23; international from Oct 21</span>
+            <a class="guide-link" href="clayface-guide/index.html">Learn more about Clayface</a>
+            <div class="upcoming-card-meta">
+              <p class="date-status">In theaters on October 23rd, 2026</p>
+              <a class="upcoming-trailer" href="https://www.youtube.com/watch?v=OGO4Mqvo3jI" target="_blank" rel="noopener">Watch trailer</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="upcoming-card">
+          <img class="upcoming-card-poster" src="https://image.tmdb.org/t/p/w500/jzPwsojjFStf5lR5Nm07w2hH56G.jpg" alt="Avengers: Doomsday poster" width="200" height="300" loading="lazy">
+          <div class="upcoming-card-body">
+            <a class="title-name" href="https://www.marvel.com/movies" target="_blank" rel="noopener">Avengers: Doomsday</a>
+            <span class="title-blurb">Beloved heroes from three distinct universes are set on a deadly collision course and face an existential threat unlike anything they've ever encountered.</span>
+            <a class="guide-link" href="avengers-guide/index.html">Learn more about the Avengers</a>
+            <a class="guide-link" href="doctor-doom-guide/index.html">Learn more about Doctor Doom</a>
+            <div class="upcoming-card-meta">
+              <p class="date-status">In theaters on December 18th, 2026</p>
+              <a class="upcoming-trailer" href="https://www.youtube.com/watch?v=irVNGjRFZGk" target="_blank" rel="noopener">Watch trailer</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SHOP_SECTIONS_START -->
+    <section class="section" id="shop-comics">
+      <div class="section-head">
+        <h2>Bestsellers in comics &amp; graphic novels</h2>
+        <p>Landmark trades resolved to Amazon product SKUs when available.</p>
+      </div>
+      <div class="shop-grid">
+        <a class="shop-item" href="https://www.amazon.com/s?k=Green+Lantern+Secret+Origin+Geoff+Johns&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9781401221904-L.jpg" alt="Green Lantern: Secret Origin" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Green Lantern · Lanterns</span>
+            <span class="shop-title">Green Lantern: Secret Origin</span>
+            <span class="shop-note">Geoff Johns’ modern Hal Jordan foundation — the comic DNA behind the HBO series.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Spider-Man+Brand+New+Day+comic&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9780785133247-L.jpg" alt="Spider-Man: Brand New Day" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Spider-Man · Brand New Day</span>
+            <span class="shop-title">Spider-Man: Brand New Day</span>
+            <span class="shop-note">Peter starts over after Civil War — the comic era that shares the film’s name.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Supergirl+Woman+of+Tomorrow&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9781779515681-L.jpg" alt="Supergirl: Woman of Tomorrow" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Supergirl</span>
+            <span class="shop-title">Supergirl: Woman of Tomorrow</span>
+            <span class="shop-note">Tom King &amp; Bilquis Evely’s galactic road trip — the template for the DCU film.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=X-Men+Dark+Phoenix+Saga&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9780785122135-L.jpg" alt="X-Men: The Dark Phoenix Saga" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">X-Men · ’97</span>
+            <span class="shop-title">X-Men: The Dark Phoenix Saga</span>
+            <span class="shop-note">Claremont &amp; Byrne’s classic — still the backbone of animated X-Men storytelling.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Vision+Tom+King+graphic+novel&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9781302904135-L.jpg" alt="Vision by Tom King" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Vision · VisionQuest</span>
+            <span class="shop-title">Vision by Tom King</span>
+            <span class="shop-note">The suburban synthezoid masterpiece — identity, family, and horror.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Batman+Face+the+Face+Clayface&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9781401209667-L.jpg" alt="Batman: Face the Face" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Clayface</span>
+            <span class="shop-title">Batman: Face the Face</span>
+            <span class="shop-note">Post-Infinite Crisis Batman with Clayface in the mix — shapeshifter identity crime.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Secret+Wars+2015+Hickman&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9780785198840-L.jpg" alt="Secret Wars (2015)" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Avengers · Doctor Doom</span>
+            <span class="shop-title">Secret Wars (2015)</span>
+            <span class="shop-note">Hickman &amp; Ribic’s multiverse collapse — God Emperor Doom at the center.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=House+of+X+Powers+of+X&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://covers.openlibrary.org/b/isbn/9781302915704-L.jpg" alt="House of X / Powers of X" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">X-Men</span>
+            <span class="shop-title">House of X / Powers of X</span>
+            <span class="shop-note">Hickman’s mutant nation reboot — the modern X-Men jumping-on point.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+      </div>
+      <p class="shop-disclosure">As an Amazon Associate we earn from qualifying purchases.</p>
+    </section>
+
+    <section class="section" id="shop-toys">
+      <div class="section-head">
+        <h2>Related bestsellers in toys &amp; collectibles</h2>
+        <p>SKU-specific Funko and figures — each card is a resolved Amazon product.</p>
+      </div>
+      <div class="shop-grid">
+        <a class="shop-item" href="https://www.amazon.com/dp/B004OFRJDI?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg" alt="Green Lantern Movie Funko POP! 4 Inch Vinyl Figure Hal Jordan" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Green Lantern</span>
+            <span class="shop-title">Hal Jordan Funko Pop</span>
+            <span class="shop-note">Lantern Corps vinyl for Hal Jordan.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B0DJFNV15R?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg" alt="Pop! Marvel: Spider-Man (Last Stand) Previews Exclusive Vinyl Figure" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Spider-Man</span>
+            <span class="shop-title">Spider-Man Funko Pop</span>
+            <span class="shop-note">Peter Parker Funko Pop vinyl.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B0FPN14YWR?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71TKl1-Uf8L._AC_SL500_.jpg" alt="Funko POP! &amp; Buddy: Supergirl with Puppy Krypto" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Supergirl</span>
+            <span class="shop-title">Supergirl Funko Pop</span>
+            <span class="shop-note">Kara Zor-El vinyl collectible.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B0FPNQKTQP?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71jNbJWssHL._AC_SL500_.jpg" alt="Funko Pop! Marvel: X-Men '97 - Wolverine (Wasteland)" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">X-Men</span>
+            <span class="shop-title">Wolverine Funko Pop</span>
+            <span class="shop-note">X-Men Wolverine vinyl figure.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B08KGV6SH6?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg" alt="Funko Pop! Marvel: Wandavision - The Vision (Finale)" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Vision</span>
+            <span class="shop-title">Vision Funko Pop</span>
+            <span class="shop-note">Marvel Vision vinyl figure.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B0G27VB83P?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg" alt="Mattel DC Premier Series Batman Vs Clayface 2-Pack" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Clayface</span>
+            <span class="shop-title">Batman vs Clayface figure</span>
+            <span class="shop-note">DC Clayface action figure packaging — SKU resolved from Amazon.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B07TXLJPRQ?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71vvWGyaKdL._AC_SL500_.jpg" alt="Funko POP! Marvel: Fantastic Four - Doctor Doom" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Doctor Doom · Doomsday</span>
+            <span class="shop-title">Doctor Doom Funko Pop</span>
+            <span class="shop-note">Doctor Doom vinyl figure.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/dp/B0FHSK1N78?tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://m.media-amazon.com/images/I/71CK3HW1yeL._AC_SL500_.jpg" alt="Marvel Legends Series Thor | Avengers: Doomsday 6-Inch Figure" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Avengers</span>
+            <span class="shop-title">Marvel Legends Avengers</span>
+            <span class="shop-note">6-inch Marvel Legends Avengers / Doomsday figure.</span>
+            <span class="shop-cta">Shop Amazon →</span>
+          </div>
+        </a>
+      </div>
+      <p class="shop-disclosure">As an Amazon Associate we earn from qualifying purchases. Cards show official product packaging when an ASIN is resolved.</p>
+    </section>
+
+    <section class="section" id="shop-games">
+      <div class="section-head">
+        <h2>Related bestsellers in video games</h2>
+        <p>Named titles resolved to product SKUs with that game’s box art — not character placeholders.</p>
+      </div>
+      <div class="shop-grid">
+        <a class="shop-item" href="https://www.amazon.com/s?k=Marvels+Spider-Man+2+PS5&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://upload.wikimedia.org/wikipedia/en/0/0f/SpiderMan2PS5BoxArt.jpeg" alt="Marvel’s Spider-Man 2" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Spider-Man</span>
+            <span class="shop-title">Marvel’s Spider-Man 2</span>
+            <span class="shop-note">Insomniac’s Peter &amp; Miles epic — the modern Spidey game benchmark.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item shop-item--no-media" href="https://www.amazon.com/s?k=Marvel+Rivals&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Avengers · Doom · Spider-Man</span>
+            <span class="shop-title">Marvel Rivals</span>
+            <span class="shop-note">Hero shooter with Doom, Spidey, and a rotating Marvel roster.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Injustice+2&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://upload.wikimedia.org/wikipedia/en/3/36/Injustice_2_Cover.jpg" alt="Injustice 2" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Supergirl · Green Lantern</span>
+            <span class="shop-title">Injustice 2</span>
+            <span class="shop-note">NetherRealm fighter with Supergirl, Hal Jordan, and the DC roster.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Marvel+vs+Capcom+Fighting+Collection+Arcade+Classics&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://upload.wikimedia.org/wikipedia/en/6/68/Marvel_vs_Capcom_Fighting_Collection_Arcade_Classics_cover.jpg" alt="Marvel vs. Capcom Fighting Collection" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">X-Men · Avengers</span>
+            <span class="shop-title">Marvel vs. Capcom Fighting Collection</span>
+            <span class="shop-note">Arcade classics packed with X-Men and Avengers fighters.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=LEGO+Marvel+Super+Heroes&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://upload.wikimedia.org/wikipedia/en/a/a7/Lego-Marvel-cover.jpg" alt="LEGO Marvel Super Heroes" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Avengers · Spider-Man</span>
+            <span class="shop-title">LEGO Marvel Super Heroes</span>
+            <span class="shop-note">Family-friendly Marvel sandbox with Avengers and Spidey front and center.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+        <a class="shop-item" href="https://www.amazon.com/s?k=Marvels+Midnight+Suns&amp;tag=YOURTAG-20" target="_blank" rel="noopener sponsored">
+          <img class="shop-item-media" src="https://upload.wikimedia.org/wikipedia/en/4/42/Marvel%27s_Midnight_Suns.jpg" alt="Marvel’s Midnight Suns" width="88" height="120" loading="lazy">
+          <div class="shop-item-copy">
+            <span class="shop-kicker">Avengers · Spider-Man</span>
+            <span class="shop-title">Marvel’s Midnight Suns</span>
+            <span class="shop-note">Tactical RPG with Avengers, Spider-Man, and supernatural Marvel heroes.</span>
+            <span class="shop-cta">Find on Amazon →</span>
+          </div>
+        </a>
+      </div>
+      <p class="shop-disclosure">As an Amazon Associate we earn from qualifying purchases. Box art shown is for that named game title.</p>
+    </section>
+<!-- SHOP_SECTIONS_END -->
+
+    <footer class="footer">
+      <span>Poster art and dates via TMDB. Shop links use Amazon product pages when an ASIN is resolved. Regenerated by refresh_screen_now.py.</span>
+    </footer>
+  </div>
+  <script>
+
+(function () {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+  var ticking = false;
+  // Hysteresis avoids sticky-header shrink/grow fighting scrollY near the threshold.
+  var ON = 24;
+  var OFF = 8;
+  var scrolled = false;
+  function update() {
+    ticking = false;
+    var y = window.scrollY || 0;
+    if (!scrolled && y > ON) {
+      scrolled = true;
+      header.classList.add('is-scrolled');
+    } else if (scrolled && y < OFF) {
+      scrolled = false;
+      header.classList.remove('is-scrolled');
+    }
+  }
+  function onScroll() {
+    if (!ticking) {
+      ticking = true;
+      window.requestAnimationFrame(update);
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  update();
+})();
+
+  </script>
+</body>
+</html>
