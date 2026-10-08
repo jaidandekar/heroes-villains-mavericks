@@ -69,19 +69,52 @@
       width: min(100%, var(--content-max, 72rem));
       margin: 0 auto;
       padding: 0.85rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
     }
 
     .site-header-title {
       font-size: clamp(0.95rem, 1.6vw, 1.1rem);
-      font-weight: 700;
+      font-weight: 900;
       letter-spacing: -0.01em;
       color: var(--text);
       line-height: 1.2;
-      text-decoration: none;
-      display: inline-block;
+      margin: 0;
+      min-width: 0;
     }
 
-    .site-header-title:hover { color: var(--text); }
+    .site-header-home {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .site-header-home:hover { color: var(--text); }
+
+    .site-header-by {
+      font-weight: 600;
+      letter-spacing: 0;
+      color: #5BA4E6;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .site-header-by:hover { color: #3D8FD9; }
+
+    .site-header-portfolio {
+      flex-shrink: 0;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      color: #5BA4E6;
+      transition: color 0.2s ease;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .site-header-portfolio:hover { color: #3D8FD9; }
 
     .site-chrome.is-scrolled {
       box-shadow: 0 10px 28px rgba(26, 28, 30, 0.1);
@@ -1725,7 +1758,8 @@
   <header class="site-chrome">
     <div class="site-header">
       <div class="site-header-inner">
-        <a class="site-header-title" href="../heroesvillainsmavericks.html">Heroes, Villains, &amp; Mavericks</a>
+        <p class="site-header-title"><a class="site-header-home" href="../heroesvillainsmavericks.html">Heroes, Villains &amp; Mavericks</a> <a class="site-header-by" href="https://www.linkedin.com/in/jaidandekar" target="_blank" rel="noopener">by Jai Dandekar</a></p>
+        <a class="site-header-portfolio" href="https://indypendee.com/" target="_blank" rel="noopener">View Jai Dandekar’s work →</a>
       </div>
     </div>
     <div class="guide-bar">
