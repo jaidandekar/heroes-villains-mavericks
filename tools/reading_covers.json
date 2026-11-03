@@ -29,7 +29,13 @@
     "thor-butcher": "https://covers.openlibrary.org/b/id/8459964-L.jpg",
     "walker-solo": "https://covers.openlibrary.org/b/id/13558142-L.jpg",
     "ava-namesake": "https://covers.openlibrary.org/b/id/9136482-L.jpg",
+    "ultron-unleashed": "https://comicvine.gamespot.com/a/uploads/scale_large/5/51078/1016657-avenge1.jpeg",
     "ultron-unlimited": "https://covers.openlibrary.org/b/id/15150842-L.jpg",
+    "ultron-conquest": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4635237-01.jpg",
+    "ultron-rage": "https://comicvine.gamespot.com/a/uploads/scale_large/0/40/4478781-avengers_rage_of_ultron_cover.jpg",
+    "ultron-age": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3816330-01.jpg",
+    "ultron-ultimate": "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Ultron_%28Earth-1610%29_from_Ultimates_3_Vol_1_5_001.png/revision/latest?cb=20201017064555",
+    "ultron-extreme": "https://comicvine.gamespot.com/a/uploads/scale_large/0/1202/89868-18108-106298-1-avengers-next.jpg",
     "thomas-crusade": "https://covers.openlibrary.org/b/id/8354792-L.jpg",
     "sam-cap": "https://covers.openlibrary.org/b/id/12738827-L.jpg",
     "batman-dkr": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9116/1657463-1c.png",
@@ -208,7 +214,11 @@
       "sentry-origin"
     ],
     "ultron": [
-      "ultron-unlimited"
+      "ultron-unleashed",
+      "ultron-unlimited",
+      "ultron-conquest",
+      "ultron-age",
+      "ultron-rage"
     ],
     "thomas-shepherd": [
       "thomas-crusade"

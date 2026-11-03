@@ -566,29 +566,120 @@ def visionquest(pid, brand, title, who, gradient, tagline, verses_p, comics_p, d
     )
 
 
-ULTRON = visionquest(
-    "ultron", "Ultron", "Ultron", "Who is Ultron",
+ULTRON = guide(
+    "ultron", "Ultron", "Ultron",
+    "Who is Ultron", "who-is-ultron",
     "radial-gradient(circle at 30% 25%, #c62828, #9e9e9e 42%, #121212)",
-    "Hank Pym's robot, and the voice inside Vision on VisionQuest.",
-    "Ultron, the robot who built the Vision. Jocasta and Vision have their own guides.",
+    "Ultron Across the Multiverse",
+    "versions of Ultron: Hank Pym's robot, the future where he has already won, the Ultimate Universe's Ultron, and Ultron Extreme.",
     "Ultron Unlimited, the story where his army almost wins.",
-    "Ultron first appears in a cameo in Avengers #54 (1968) and is fully introduced in Avengers #55, created by Roy Thomas and John Buscema. Hank Pym built him. Ultron later built the Vision, and in Avengers #162 he built Jocasta. On VisionQuest, James Spader plays Ultron, living inside Vision's programming while Vision resists him.",
-    "https://en.wikipedia.org/wiki/Ultron",
-    "Avengers #54 (1968)",
-    "ultron-unlimited", "Avengers: Ultron Unlimited", "Kurt Busiek & George Pérez", "1999",
-    "Avengers (1998) #0, 19–22",
-    "Modern Age",
-    "Ultron builds a new body and an army, and the Avengers almost lose.",
-    "9780785107743", "0785107746",
+    "Avengers: Age of Ultron, with James Spader, and VisionQuest on Disney+.",
+    MARVEL_TYPES,
     [
-        {"label": "Created by", "value": "Roy Thomas & John Buscema"},
-        {"label": "First appearance", "value": "Avengers #54 (1968), cameo; Avengers #55 in full"},
-        {"label": "Built by", "value": "Hank Pym"},
-        {"label": "On screen", "value": "VisionQuest · Disney+"},
-        {"label": "Played by", "value": "James Spader"},
+        version_obj(
+            "ultron", "Ultron", "Earth-616", "main",
+            "Avengers #55 (1968)",
+            "Hank Pym's robot",
+            "Hank Pym built him from a copy of his own mind. Ultron turned on his maker, then built the Vision.",
+            "https://en.wikipedia.org/wiki/Ultron",
+            ["ultron-unlimited", "ultron-unleashed", "ultron-conquest", "ultron-rage"],
+        ),
+        version_obj(
+            "ultron-age", "Age of Ultron", "A conquered future", "future",
+            "Age of Ultron #1 (2013)",
+            "The future where he already won",
+            "In this 2013 future, Ultron has conquered Earth and killed most of its heroes. Bendis and Bryan Hitch's event is a different story from the movie.",
+            "https://en.wikipedia.org/wiki/Age_of_Ultron",
+            ["ultron-age"],
+        ),
+        version_obj(
+            "ultron-ultimate", "Ultimate Ultron", "Earth-1610", "ultimate",
+            "The Ultimates 2 #6 (2005)",
+            "Pym's soldiers, then one of them wakes up",
+            "Hank Pym built Ultron drones as soldiers. In The Ultimates 3, one of them turns on the team and makes robot copies of the Ultimates.",
+            "https://en.wikipedia.org/wiki/Ultimates_(comics)",
+            ["ultron-ultimate"],
+        ),
+        version_obj(
+            "ultron-extreme", "Ultron Extreme", "Earth-982", "future",
+            "Avengers Next #2 (2007)",
+            "The MC2 war machine",
+            "On the MC2 future, a heavier Ultron is revived to fight the next generation of Avengers. Tom DeFalco and Ron Lim.",
+            "https://en.wikipedia.org/wiki/Marvel_Comics_2",
+            ["ultron-extreme"],
+        ),
     ],
-    "James Spader · Ultron, inside Vision's programming",
-    (198, 40, 40),
+    {
+        **book(
+            "ultron-unleashed", "ultron", "Avengers: Ultron Unleashed", "Roy Thomas, John Buscema, Jim Shooter & George Pérez", "1968–78",
+            "Avengers #57–58 and #170–171", "Silver Age", "None — start here",
+            "Ultron's origin, the building of the Vision, and his attempt to build a bride.",
+            "", "",
+        ),
+        **book(
+            "ultron-unlimited", "ultron", "Avengers: Ultron Unlimited", "Kurt Busiek & George Pérez", "1999",
+            "Avengers (1998) #0, 19–22", "Modern Age", "Ultron Unleashed",
+            "Ultron builds a new body and an army, and the Avengers almost lose.",
+            "9780785107743", "0785107746",
+        ),
+        **book(
+            "ultron-conquest", "ultron", "Annihilation: Conquest", "Dan Abnett & Andy Lanning", "2007–08",
+            "Annihilation: Conquest #1–6 and the tie-ins", "Modern Age", "None",
+            "Ultron takes the Phalanx and turns them on the Kree. Star-Lord's team is caught in the invasion.",
+            "", "",
+        ),
+        **book(
+            "ultron-rage", "ultron", "Avengers: Rage of Ultron", "Rick Remender, Jerome Opeña & Pepe Larraz", "2015",
+            "Original graphic novel", "Modern Age", "None",
+            "Hank Pym and Ultron are fused into one body, and the Avengers have to face the result.",
+            "", "",
+        ),
+        **book(
+            "ultron-age", "ultron-age", "Age of Ultron", "Brian Michael Bendis & Bryan Hitch", "2013",
+            "Age of Ultron #1–10", "Future", "None",
+            "A future Earth that Ultron has already remade. The heroes try to stop him before he is built.",
+            "", "",
+        ),
+        **book(
+            "ultron-ultimate", "ultron-ultimate", "The Ultimates 3", "Jeph Loeb & Joe Madureira", "2008",
+            "The Ultimates 3 #1–5", "Ultimate", "The Ultimates 2",
+            "One of Pym's Ultron drones becomes someone, and builds duplicates of the Ultimates.",
+            "", "",
+        ),
+        **book(
+            "ultron-extreme", "ultron-extreme", "Avengers Next", "Tom DeFalco & Ron Lim", "2007",
+            "Avengers Next #2–3", "MC2", "None",
+            "Ultron Extreme, a heavier model from the MC2 future, is brought back against the next Avengers.",
+            "", "",
+        ),
+    },
+    ["ultron-unleashed", "ultron-unlimited", "ultron-conquest", "ultron-age", "ultron-rage"],
+    profile(
+        "https://en.wikipedia.org/wiki/Ultron",
+        "A robot Hank Pym created from a copy of his own mind. He turns on that maker and on humanity.",
+        "Ultron first appears in a cameo in Avengers #54 (1968) and is fully introduced in Avengers #55, created by Roy Thomas and John Buscema. Hank Pym built him. Ultron later built the Vision, and in Avengers #162 he built Jocasta. James Spader plays him in Avengers: Age of Ultron (2015), and again on VisionQuest, where Ultron lives inside Vision's programming.",
+        [
+            {"label": "Created by", "value": "Roy Thomas & John Buscema"},
+            {"label": "First appearance", "value": "Avengers #54 (1968), cameo; Avengers #55 in full"},
+            {"label": "Built by", "value": "Hank Pym"},
+            {"label": "On screen", "value": "Avengers: Age of Ultron (2015); VisionQuest on Disney+"},
+            {"label": "Played by", "value": "James Spader"},
+        ],
+    ),
+    [
+        {"group": "Live-action films", "items": [
+            screen_item("ultron-aou", "Avengers: Age of Ultron", "James Spader · Ultron", "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron", "https://www.imdb.com/title/tt2395427/", year="2015"),
+        ]},
+        {"group": "This slate", "items": [
+            screen_item("ultron-visionquest", "VisionQuest", "James Spader · Ultron, inside Vision's programming", VISIONQUEST, VISIONQUEST_IMDB, year="2026"),
+        ]},
+    ],
+    {
+        "ultron": (198, 40, 40),
+        "ultron-age": (212, 168, 48),
+        "ultron-ultimate": (28, 64, 150),
+        "ultron-extreme": (186, 196, 206),
+    },
 )
 
 THOMAS = visionquest(

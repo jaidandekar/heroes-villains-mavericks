@@ -862,13 +862,20 @@
       cursor: pointer;
       transition: transform 0.5s var(--now-bounce), border-color 0.5s var(--now-bounce), color 0.5s var(--now-bounce);
     }
-    .verse-reel .now-arrow svg { display: block; }
+    .verse-reel .now-arrow svg {
+      display: block;
+      transition: transform 0.5s var(--now-bounce);
+    }
     .verse-reel .now-arrow:hover,
     .verse-reel .now-arrow:focus-visible {
       border-color: var(--link);
       color: var(--link);
       transform: scale(1.12);
     }
+    .verse-reel .now-arrow[data-now-prev]:hover svg,
+    .verse-reel .now-arrow[data-now-prev]:focus-visible svg { transform: translateX(-3px); }
+    .verse-reel .now-arrow[data-now-next]:hover svg,
+    .verse-reel .now-arrow[data-now-next]:focus-visible svg { transform: translateX(3px); }
     .verse-reel .now-picks {
       display: flex;
       align-items: center;
@@ -926,6 +933,7 @@
     @media (prefers-reduced-motion: reduce) {
       .verse-reel .now-reel-track,
       .verse-reel .now-arrow,
+      .verse-reel .now-arrow svg,
       .verse-reel .now-pick,
       .verse-reel .now-pick::after { transition: none; }
     }
