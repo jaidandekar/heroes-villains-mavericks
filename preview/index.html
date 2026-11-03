@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout preview — Heroes, Villains, &amp; Mavericks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --ink: #1a1c1e;
+      --muted: #6a6e75;
+      --line: rgba(26, 28, 30, 0.06);
+      --accent: #e4572e;
+      --link: #5BA4E6;
+      --link-hover: #3D8FD9;
+      --on-media: #f7f4ef;
+      --on-media-muted: rgba(247, 244, 239, 0.72);
+      --font: 'Google Sans Flex', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    button, a { font-family: inherit; }
+    .preview-bar {
+      background: #1a1c1e;
+      color: #f7f4ef;
+      font-size: 0.75rem;
+      letter-spacing: 0.04em;
+      text-align: center;
+      padding: 0.45rem 1rem;
+    }
+    .preview-bar strong { font-weight: 700; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: #fff;
+      border-bottom: 1px solid rgba(26, 28, 30, 0.06);
+    }
+    .site-header-inner {
+      width: min(100%, 72rem);
+      margin: 0 auto;
+      padding: 1.05rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .site-header-title {
+      font-size: clamp(0.95rem, 1.6vw, 1.1rem);
+      font-weight: 900;
+      letter-spacing: -0.01em;
+    }
+    .site-header-by, .site-header-portfolio {
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+      font-size: 0.8125rem;
+    }
+    .site {
+      width: min(100%, 72rem);
+      margin: 0 auto;
+      padding: 1.35rem 1rem 4rem;
+    }
+    .stage-head { margin: 0.35rem 0 0.85rem; }
+    .stage-head h2, .section-head h2 {
+      font-size: clamp(1.2rem, 2.4vw, 1.55rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #c4c7ce;
+    }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      margin: 0 0 0.85rem;
+    }
+    .section-head p { color: var(--muted); font-size: 0.9rem; }
+    .now-cards { display: grid; gap: 1.15rem; margin-bottom: 4.5rem; }
+    .now-card {
+      position: relative;
+      min-height: clamp(22rem, 52vw, 28rem);
+      display: grid;
+      align-items: end;
+      overflow: hidden;
+      border-radius: 0.85rem;
+      background: #2a2e33;
+      color: var(--on-media);
+    }
+    .now-card-media {
+      position: absolute;
+      inset: 0;
+      background-position: center;
+      background-size: cover;
+    }
+    .now-card-veil {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(12, 14, 16, 0.92) 0%, rgba(12, 14, 16, 0.62) 46%, rgba(12, 14, 16, 0.28) 100%),
+        linear-gradient(0deg, rgba(12, 14, 16, 0.88) 0%, rgba(12, 14, 16, 0.15) 55%);
+    }
+    .now-studio {
+      position: absolute;
+      top: 1.15rem;
+      right: 1.15rem;
+      z-index: 2;
+      height: 2.4rem;
+    }
+    .now-studio.marvel { height: 1.7rem; }
+    .now-card-copy {
+      position: relative;
+      z-index: 2;
+      padding: 1.5rem 1.25rem 1.6rem;
+      width: min(100%, 38rem);
+    }
+    .kicker {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #f0a27a;
+      margin-bottom: 0.65rem;
+    }
+    .now-title {
+      font-size: clamp(2.1rem, 5vw, 3.4rem);
+      line-height: 0.98;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .ratings { display: flex; gap: 1.1rem; margin-bottom: 0.9rem; }
+    .ratings b { display: block; font-size: 1.35rem; line-height: 1; }
+    .ratings span {
+      font-size: 0.62rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(247, 244, 239, 0.5);
+    }
+    .blurb { color: var(--on-media-muted); margin-bottom: 0.7rem; max-width: 42rem; }
+    .where {
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(247, 244, 239, 0.55);
+      margin-bottom: 1.1rem;
+    }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    .pill, .ghost {
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 0.7rem 1.3rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+    .pill { background: var(--accent); color: #fff; }
+    .ghost {
+      background: transparent;
+      color: var(--on-media);
+      border: 1px solid rgba(247, 244, 239, 0.4);
+    }
+    .section { margin-bottom: 3.25rem; }
+    .upcoming-grid, .home-grid { display: grid; gap: 1.15rem; }
+    .upcoming-card, .product, .comic {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      background: #fff;
+      border-radius: 1rem;
+      overflow: hidden;
+      border: 1px solid rgba(26, 28, 30, 0.05);
+    }
+    .upcoming-card img, .product img, .comic img, .type-poster {
+      width: 100%;
+      height: 100%;
+      min-height: 11.5rem;
+      object-fit: cover;
+      background: #1c2430;
+      display: block;
+    }
+    .type-poster {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 0.8rem;
+      color: #f7f4ef;
+      min-height: 11.5rem;
+    }
+    .type-poster strong { font-size: 1.05rem; line-height: 1.1; letter-spacing: -0.02em; }
+    .type-poster span { margin-top: 0.35rem; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(247,244,239,0.62); }
+    .card-body, .product-copy, .comic-copy {
+      padding: 1.05rem 1.15rem 1.1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      min-width: 0;
+    }
+    .title-name { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; }
+    .muted { color: var(--muted); font-size: 0.88rem; }
+    .text-link {
+      background: none;
+      border: 0;
+      padding: 0;
+      color: var(--link);
+      font-weight: 600;
+      font-size: 0.78rem;
+      cursor: pointer;
+      text-align: left;
+      width: fit-content;
+    }
+    .date-status { margin-top: auto; padding-top: 0.8rem; font-size: 0.82rem; font-weight: 600; }
+    .character-row {
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 9.5rem;
+      gap: 0.85rem;
+      overflow-x: auto;
+      padding-bottom: 0.4rem;
+    }
+    .character {
+      background: #fff;
+      border: 1px solid rgba(26, 28, 30, 0.05);
+      border-radius: 0.9rem;
+      overflow: hidden;
+      text-align: left;
+      cursor: pointer;
+      color: inherit;
+    }
+    .character-art {
+      height: 8.5rem;
+      background: #1c2430 center / cover no-repeat;
+    }
+    .character-copy { padding: 0.75rem 0.8rem 0.9rem; }
+    .character-copy strong { display: block; font-size: 0.92rem; letter-spacing: -0.02em; }
+    .character-copy span { display: block; margin-top: 0.2rem; color: var(--muted); font-size: 0.72rem; }
+    .guide-back {
+      background: none;
+      border: 0;
+      color: var(--link);
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+    .guide-kicker {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.4rem;
+    }
+    .guide h1 {
+      font-size: clamp(2.4rem, 6vw, 4rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+      margin-bottom: 1.25rem;
+    }
+    .guide-layout {
+      display: grid;
+      gap: 1.15rem;
+      margin-bottom: 2rem;
+    }
+    .who {
+      background: #fff;
+      border-radius: 1rem;
+      padding: 1.25rem 1.3rem 1.35rem;
+      border: 1px solid rgba(26, 28, 30, 0.05);
+    }
+    .who h2, .block-label {
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.55rem;
+    }
+    .who p { font-size: 1.05rem; max-width: 40rem; }
+    .who .ratings span { color: var(--muted); }
+    .watch-line { margin-top: 1rem; font-weight: 700; }
+    .take-home {
+      display: grid;
+      gap: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .product { grid-template-columns: 88px 1fr; text-decoration: none; color: inherit; }
+    .product img, .product .type-poster { min-height: 7.2rem; }
+    .shop-cta { margin-top: auto; font-size: 0.78rem; font-weight: 700; color: var(--link); }
+    .more {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .more summary { cursor: pointer; font-weight: 600; color: var(--ink); }
+    .more ul { margin: 0.6rem 0 0 1.1rem; }
+    @media (min-width: 800px) {
+      .upcoming-grid { grid-template-columns: 1fr 1fr; }
+      .guide-layout { grid-template-columns: 1.3fr 0.9fr; align-items: stretch; }
+      .take-home { grid-template-columns: 1fr 1fr 1fr; }
+      .comic { grid-template-columns: 148px 1fr; height: 100%; }
+    }
+    @media (min-width: 1100px) {
+      .upcoming-grid.three { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="preview-bar"><strong>Layout preview.</strong> Not the live page. Now and Coming soon stay first. Characters are the next choice, and the shop sits inside each guide.</div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <p class="site-header-title">Heroes, Villains &amp; Mavericks <a class="site-header-by" href="https://www.linkedin.com/in/jaidandekar">by Jai Dandekar</a></p>
+      <a class="site-header-portfolio" href="https://indypendee.com/">View Jai Dandekar’s work →</a>
+    </div>
+  </header>
+  <div class="site" id="app"></div>
+  <script>
+    const art = {
+      clayface: "art/clayface.jpg",
+      vision: "art/vision.jpg",
+      lanterns: "art/lanterns.jpg",
+      doomsday: "art/doomsday.jpg",
+      secretOrigin: "art/secret-origin.jpg",
+      hush: "art/hush.jpg",
+      secretWars: "art/secret-wars.jpg",
+      halPop: "art/hal.jpg",
+      clayPack: "art/claypack.jpg",
+      visionPop: "art/visionpop.jpg",
+      doomPop: "art/doompop.jpg",
+      legends: "art/legends.jpg",
+      yfn: "art/yfn.jpg",
+      mot: "art/mot.jpg",
+      beyond: "art/beyond.jpg"
+    };
+
+    const characters = {
+      clayface: {
+        name: "Clayface",
+        studio: "DC",
+        from: "In theaters",
+        art: art.clayface,
+        kicker: "Clayface · in theaters",
+        who: "Matt Hagen is a rising actor whose body stops being his own. The film treats Clayface as body horror and lost identity, the version of the villain the comics sharpened into a perfect impersonator.",
+        watch: "In theaters now. Opened October 23, 2026.",
+        comic: {
+          title: "Batman: Hush",
+          note: "The one trade. Jeph Loeb and Jim Lee’s impersonator story is the identity-horror DNA behind the film.",
+          img: art.hush
+        },
+        products: [
+          { title: "Batman: Hush", note: "The trade to start with.", img: art.hush },
+          { title: "Batman vs Clayface", note: "Mattel two-pack.", img: art.clayPack }
+        ],
+        more: ["Basil Karlo, the original actor", "Preston Payne", "DCU Matt Hagen"]
+      },
+      vision: {
+        name: "Vision",
+        studio: "Marvel",
+        from: "Airing on Disney+",
+        art: art.vision,
+        kicker: "VisionQuest · airing on Disney+",
+        who: "Vision is on the run with a bounty on his head, trying to stay himself while Ultron pulls at what he is. A boy who may be his son gets pulled into the chase.",
+        watch: "Airing now on Disney+. Episodes 1–4 are up. Episodes 5–6 arrive October 27. The finale is November 11.",
+        comic: {
+          title: "Vision by Tom King",
+          note: "The one trade. The suburban synthezoid story about family, identity, and horror."
+        },
+        products: [
+          { title: "Vision by Tom King", note: "The trade to start with." },
+          { title: "Vision Funko Pop", note: "WandaVision finale look.", img: art.visionPop }
+        ],
+        more: ["White Vision", "The original synthezoid", "Viv Vision"]
+      },
+      lanterns: {
+        name: "Green Lantern",
+        studio: "DC",
+        from: "Streaming on HBO / Max",
+        art: art.lanterns,
+        kicker: "Lanterns · full season on HBO / Max",
+        who: "Hal Jordan and John Stewart are two intergalactic cops on an Earth murder case with cosmic ties. Hal is the legend. John is the new recruit. The show is the case, not a tour of the whole Corps.",
+        watch: "The full season is streaming on HBO / Max. The finale aired October 4.",
+        ratings: [["94%", "Rotten Tomatoes"], ["8.4", "IMDb"], ["72", "Metacritic"]],
+        comic: {
+          title: "Green Lantern: Secret Origin",
+          note: "The one trade. Geoff Johns and Ivan Reis retell how Hal got the ring.",
+          img: art.secretOrigin
+        },
+        products: [
+          { title: "Secret Origin", note: "The trade to start with.", img: art.secretOrigin },
+          { title: "Hal Jordan Funko Pop", note: "Lantern Corps vinyl.", img: art.halPop }
+        ],
+        more: ["John Stewart", "Guy Gardner", "Kyle Rayner", "Jessica Cruz", "Alan Scott"]
+      },
+      avengers: {
+        name: "Avengers",
+        studio: "Marvel",
+        from: "Doomsday · December 18",
+        art: art.doomsday,
+        kicker: "Avengers: Doomsday · in theaters December 18",
+        who: "Heroes from three universes are on a collision course with a threat that sits outside any one team. Doomsday is the next Avengers film, with Doctor Doom at the center of it.",
+        watch: "In theaters December 18, 2026.",
+        comic: {
+          title: "Secret Wars (2015)",
+          note: "The one trade for the film’s villain. Hickman and Ribic’s collapse, with Doom at the center. The movie of the same name is a year away and stays off this page.",
+          img: art.secretWars
+        },
+        products: [
+          { title: "Secret Wars", note: "The Doom trade.", img: art.secretWars },
+          { title: "Marvel Legends Thor", note: "Avengers: Doomsday figure.", img: art.legends }
+        ],
+        more: ["The film roster is still unfolding", "Doctor Doom has a separate guide"]
+      },
+      doom: {
+        name: "Doctor Doom",
+        studio: "Marvel",
+        from: "Doomsday · December 18",
+        art: art.doomsday,
+        kicker: "Doctor Doom · Avengers: Doomsday",
+        who: "Victor von Doom arrives in Avengers: Doomsday as the threat the teams cannot treat as someone else’s problem. The film opens December 18.",
+        watch: "In theaters December 18, 2026, in Avengers: Doomsday.",
+        comic: {
+          title: "Secret Wars (2015)",
+          note: "The one trade. God Emperor Doom, and the reason this character has a guide of his own.",
+          img: art.secretWars
+        },
+        products: [
+          { title: "Secret Wars", note: "The trade to start with.", img: art.secretWars },
+          { title: "Doctor Doom Funko Pop", note: "Fantastic Four Doom vinyl.", img: art.doomPop }
+        ],
+        more: ["Victor von Doom", "Doom 2099", "God Emperor Doom"]
+      },
+      spidey: {
+        name: "Spider-Man",
+        studio: "Marvel",
+        from: "Series · January 13",
+        art: art.yfn,
+        kicker: "Your Friendly Neighborhood Spider-Man · season 2",
+        who: "This is the animated Peter, in the timeline where Norman Osborn is already in his life. Season 2 is the Marvel Animation series on Disney+, separate from Miles and from Brand New Day.",
+        watch: "Season 2 arrives on Disney+ on January 13, 2027.",
+        comic: {
+          title: "Ultimate Spider-Man",
+          note: "The one trade. Bendis and Bagley’s young Peter is the clean jump-on for this show’s tone."
+        },
+        products: [
+          { title: "Ultimate Spider-Man", note: "The trade to start with." }
+        ],
+        more: ["Brand New Day returns here when it hits Netflix"]
+      },
+      miles: {
+        name: "Miles Morales",
+        studio: "Sony",
+        from: "June 18, 2027",
+        art: art.beyond,
+        kicker: "Spider-Man: Beyond the Spider-Verse",
+        who: "Miles is still trying to get home. Beyond the Spider-Verse is the third Sony Pictures Animation film, after Into and Across.",
+        watch: "In theaters June 18, 2027. That date is on Sony Pictures Animation’s own page.",
+        comic: {
+          title: "Miles Morales: Spider-Man",
+          note: "The one trade. Saladin Ahmed’s run is the clean Miles jump-on while the films stay in their own canon."
+        },
+        products: [
+          { title: "Miles Morales: Spider-Man", note: "The trade to start with." }
+        ],
+        more: ["Gwen Stacy, Ghost-Spider", "Peter B. Parker", "The Spot"]
+      },
+      superman: {
+        name: "Superman",
+        studio: "DC",
+        from: "July 9, 2027",
+        art: art.mot,
+        kicker: "Man of Tomorrow · in theaters July 9, 2027",
+        who: "David Corenswet’s Superman and Nicholas Hoult’s Lex Luthor have to work together against Brainiac. It is the next DC theatrical after the films already on this page.",
+        watch: "In theaters July 9, 2027.",
+        comic: {
+          title: "Superman: Brainiac",
+          note: "The one trade. Geoff Johns and Gary Frank’s Brainiac story is the closest single comic to the film’s villain."
+        },
+        products: [
+          { title: "Superman: Brainiac", note: "The trade to start with." }
+        ],
+        more: ["A full Superman guide does not exist yet"]
+      }
+    };
+
+    const now = [
+      {
+        id: "clayface",
+        title: "Clayface",
+        kicker: "Film · in theaters",
+        blurb: "A promising actor’s body becomes the weapon. Identity, revenge, and the point where the person is gone.",
+        where: "In theaters now",
+        art: art.clayface,
+        studio: "dc"
+      },
+      {
+        id: "vision",
+        title: "VisionQuest",
+        kicker: "Series · airing",
+        blurb: "Vision is hunted, resisting Ultron, while a boy who may be his son is drawn into the chase.",
+        where: "Disney+ · episodes 5–6 on October 27 · finale November 11",
+        art: art.vision,
+        studio: "marvel"
+      },
+      {
+        id: "lanterns",
+        title: "Lanterns",
+        kicker: "Series · streaming",
+        blurb: "Hal Jordan and John Stewart investigate a murder in the American heartland. The case is over. The season is the thing to watch.",
+        where: "Full season streaming on HBO / Max",
+        art: art.lanterns,
+        studio: "dc",
+        ratings: [["94%", "Rotten Tomatoes"], ["8.4", "IMDb"], ["72", "Metacritic"]]
+      }
+    ];
+
+    const upcoming = [
+      {
+        id: "avengers",
+        also: "doom",
+        title: "Avengers: Doomsday",
+        blurb: "Heroes from three universes meet a threat with Doctor Doom at the center.",
+        when: "In theaters on December 18th, 2026",
+        art: art.doomsday
+      },
+      {
+        id: "spidey",
+        title: "Your Friendly Neighborhood Spider-Man",
+        blurb: "Season 2 of the animated series. Peter’s story in the timeline where Norman Osborn is already beside him.",
+        when: "On Disney+ on January 13th, 2027",
+        art: art.yfn
+      },
+      {
+        id: "miles",
+        title: "Spider-Man: Beyond the Spider-Verse",
+        blurb: "Miles keeps searching for a way home. Sony Pictures Animation’s third film.",
+        when: "In theaters on June 18th, 2027",
+        art: art.beyond
+      },
+      {
+        id: "superman",
+        title: "Man of Tomorrow",
+        blurb: "Superman and Lex Luthor against Brainiac. The Jim Lee drawing is the announcement art. A one-sheet is not out yet.",
+        when: "In theaters on July 9th, 2027",
+        art: art.mot
+      }
+    ];
+
+    const row = ["clayface", "vision", "lanterns", "avengers", "doom", "spidey", "miles", "superman"];
+    let view = "home";
+    let current = "lanterns";
+
+    function esc(s) {
+      return String(s).replace(/[&<>"]/g, function (c) {
+        return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c];
+      });
+    }
+
+    function poster(item) {
+      if (item.art) return '<img src="' + item.art + '" alt="">';
+      return '<div class="type-poster" style="background:' + item.tone + '"><strong>' + esc(item.posterTitle) + '</strong><span>' + esc(item.posterMeta) + '</span></div>';
+    }
+
+    function home() {
+      const nowHtml = now.map(function (item) {
+        const ratings = item.ratings
+          ? '<div class="ratings">' + item.ratings.map(function (r) {
+              return '<div><b>' + r[0] + '</b><span>' + r[1] + '</span></div>';
+            }).join("") + '</div>'
+          : "";
+        return '<article class="now-card">' +
+          '<div class="now-card-media" style="background-image:url(' + item.art + ')"></div>' +
+          '<div class="now-card-veil"></div>' +
+          '<img class="now-studio ' + item.studio + '" src="../site/assets/studio-logos/' + item.studio + '.svg" alt="' + item.studio.toUpperCase() + '">' +
+          '<div class="now-card-copy">' +
+            '<span class="kicker">' + item.kicker + '</span>' +
+            '<h3 class="now-title">' + item.title + '</h3>' +
+            ratings +
+            '<p class="blurb">' + item.blurb + '</p>' +
+            '<p class="where">' + item.where + '</p>' +
+            '<div class="actions"><button class="pill" data-open="' + item.id + '">Learn more</button></div>' +
+          '</div></article>';
+      }).join("");
+
+      const upHtml = upcoming.map(function (item) {
+        const extra = item.also
+          ? '<button class="text-link" data-open="' + item.also + '">Learn more about Doctor Doom</button>'
+          : "";
+        return '<article class="upcoming-card">' + poster(item) +
+          '<div class="card-body">' +
+            '<h3 class="title-name">' + item.title + '</h3>' +
+            '<p class="muted">' + item.blurb + '</p>' +
+            '<button class="text-link" data-open="' + item.id + '">Learn more</button>' +
+            extra +
+            '<p class="date-status">' + item.when + '</p>' +
+          '</div></article>';
+      }).join("");
+
+      const rowHtml = row.map(function (id) {
+        const c = characters[id];
+        const bg = c.art
+          ? 'background-image:url(' + c.art + ')'
+          : 'background:' + c.tone;
+        return '<button class="character" data-open="' + id + '">' +
+          '<div class="character-art" style="' + bg + '"></div>' +
+          '<div class="character-copy"><strong>' + c.name + '</strong><span>' + c.from + '</span></div>' +
+        '</button>';
+      }).join("");
+
+      return '<header class="stage-head"><h2>In theaters &amp; streaming now</h2></header>' +
+        '<section class="now-cards">' + nowHtml + '</section>' +
+        '<section class="section"><div class="section-head"><h2>Coming soon to theaters &amp; streaming</h2><p>Through July 9, 2027</p></div>' +
+        '<div class="upcoming-grid">' + upHtml + '</div></section>' +
+        '<section class="section"><div class="section-head"><h2>Learn more</h2><p>Only the characters on the slate above.</p></div>' +
+        '<div class="character-row">' + rowHtml + '</div></section>';
+    }
+
+    function guide(id) {
+      const c = characters[id];
+      const comicArt = c.comic.img
+        ? '<img src="' + c.comic.img + '" alt="">'
+        : '<div class="type-poster"><strong>' + esc(c.comic.title) + '</strong><span>Trade</span></div>';
+      const products = c.products.map(function (p) {
+        const media = p.img
+          ? '<img src="' + p.img + '" alt="">'
+          : '<div class="type-poster"><strong>' + esc(p.title) + '</strong><span>Find it</span></div>';
+        return '<a class="product" href="https://www.amazon.com/s?k=' + encodeURIComponent(p.title) + '">' +
+          media +
+          '<div class="product-copy"><span class="block-label">Take it home</span><strong>' + esc(p.title) + '</strong><span class="muted">' + esc(p.note) + '</span><span class="shop-cta">Find on Amazon →</span></div></a>';
+      }).join("");
+      const ratings = c.ratings
+        ? '<div class="ratings" style="margin-top:1rem;color:inherit">' + c.ratings.map(function (r) {
+            return '<div><b style="color:#1a1c1e">' + r[0] + '</b><span>' + r[1] + '</span></div>';
+          }).join("") + '</div>'
+        : "";
+      return '<button class="guide-back" data-home="1">← Back to what’s on</button>' +
+        '<article class="guide">' +
+          '<p class="guide-kicker">' + c.kicker + '</p>' +
+          '<h1>' + c.name + '</h1>' +
+          '<div class="guide-layout">' +
+            '<div class="who"><h2>Who this is on screen</h2><p>' + c.who + '</p><p class="watch-line">' + c.watch + '</p>' + ratings + '</div>' +
+            '<article class="comic">' + comicArt +
+              '<div class="comic-copy"><span class="block-label">The one comic</span><h3 class="title-name">' + c.comic.title + '</h3><p class="muted">' + c.comic.note + '</p></div>' +
+            '</article>' +
+          '</div>' +
+          '<div class="section-head"><h2>Take it home</h2></div>' +
+          '<div class="take-home">' + products + '</div>' +
+          '<details class="more"><summary>More versions</summary><ul>' +
+            c.more.map(function (m) { return '<li>' + esc(m) + '</li>'; }).join("") +
+          '</ul></details>' +
+        '</article>';
+    }
+
+    function render() {
+      document.getElementById("app").innerHTML = view === "home" ? home() : guide(current);
+      window.scrollTo(0, 0);
+    }
+
+    document.getElementById("app").addEventListener("click", function (event) {
+      const open = event.target.closest("[data-open]");
+      const back = event.target.closest("[data-home]");
+      if (open) {
+        current = open.getAttribute("data-open");
+        view = "guide";
+        render();
+      } else if (back) {
+        view = "home";
+        render();
+      }
+    });
+
+    render();
+  </script>
+</body>
+</html>
