@@ -2213,12 +2213,20 @@
 
     const versions = [
       { slug: "eddie-brock", name: "Eddie Brock", universe: "Earth-616", type: "main", firstAppearance: "Amazing Spider-Man #300 (1988)", tagline: "The suit Peter threw away", description: "Eddie Brock blamed Spider-Man for the ruin of his career. The symbiote Peter Parker rejected found him, and the two became Venom.", wikipedia: "https://en.wikipedia.org/wiki/Venom_(character)", runs: ["venom-birth","venom-lethal","venom-rex"] },
+      { slug: "mac-gargan", name: "Mac Gargan", universe: "Earth-616", type: "main", firstAppearance: "Marvel Knights: Spider-Man (2005)", tagline: "The Scorpion in the symbiote", description: "After Eddie loses the symbiote, it is sold to Mac Gargan, the Scorpion. Mark Millar's Marvel Knights: Spider-Man is where that Venom starts.", wikipedia: "https://en.wikipedia.org/wiki/Mac_Gargan", runs: ["venom-gargan"] },
+      { slug: "flash-thompson", name: "Flash Thompson", universe: "Earth-616", type: "main", firstAppearance: "Venom #1 (2011)", tagline: "A soldier wearing the symbiote", description: "Flash Thompson, Peter Parker's old classmate, bonds with the symbiote as a government weapon. Rick Remender and Tony Moore start that story in Venom #1 (2011).", wikipedia: "https://en.wikipedia.org/wiki/Agent_Venom", runs: ["venom-agent"] },
+      { slug: "ultimate-venom", name: "Ultimate Venom", universe: "Earth-1610", type: "multiverse", firstAppearance: "Ultimate Spider-Man #33 (2003)", tagline: "A different Eddie, a different suit", description: "On Earth-1610, Eddie Brock is Peter's childhood friend, and the symbiote is a lab-made cure for cancer. Brian Michael Bendis and Mark Bagley tell it in Ultimate Spider-Man #33 (2003).", wikipedia: "https://en.wikipedia.org/wiki/Ultimate_Spider-Man", runs: ["venom-ultimate"] },
+      { slug: "dylan-brock", name: "Dylan Brock", universe: "Earth-616", type: "main", firstAppearance: "Venom #1 (2022)", tagline: "Eddie's son in the suit", description: "Eddie's son Dylan wears the symbiote in the 2022 Venom series, while Eddie is tied to the symbiote god instead of the streets.", wikipedia: "https://en.wikipedia.org/wiki/Venom_(character)", runs: ["venom-dylan"] },
     ];
 
     const runs = {
       "venom-birth": { slug: "venom-birth", versionSlug: "eddie-brock", title: "Spider-Man: Birth of Venom", creators: "David Michelinie, Tom DeFalco & Todd McFarlane", years: "1984–88", collects: "The black costume and Amazing Spider-Man #300", era: "Copper Age", prerequisites: "None — start here", summary: "Spider-Man wears the alien costume, rejects it, and meets the enemy it makes with Eddie Brock.", readingOrder: ["Spider-Man: Birth of Venom"], amazon: [{ asin: "0785124985", title: "Spider-Man: Birth of Venom", format: "Trade Paperback", recommended: true }] },
       "venom-lethal": { slug: "venom-lethal", versionSlug: "eddie-brock", title: "Venom: Lethal Protector", creators: "David Michelinie & Mark Bagley", years: "1993", collects: "Venom: Lethal Protector #1–6", era: "Modern Age", prerequisites: "Spider-Man: Birth of Venom", summary: "Eddie takes the symbiote to San Francisco and tries to be a protector. The city does not agree.", readingOrder: ["Venom: Lethal Protector"], amazon: [{ asin: "1302911767", title: "Venom: Lethal Protector", format: "Trade Paperback", recommended: true }] },
       "venom-rex": { slug: "venom-rex", versionSlug: "eddie-brock", title: "Venom by Donny Cates Vol. 1: Rex", creators: "Donny Cates & Ryan Stegman", years: "2018", collects: "Venom (2018) #1–6", era: "Modern Age", prerequisites: "None", summary: "Eddie is pulled back to the symbiote, and something older than either of them wakes up.", readingOrder: ["Venom by Donny Cates Vol. 1: Rex"], amazon: [{ asin: "1302913069", title: "Venom by Donny Cates Vol. 1: Rex", format: "Trade Paperback", recommended: true }] },
+      "venom-gargan": { slug: "venom-gargan", versionSlug: "mac-gargan", title: "Marvel Knights Spider-Man: Venomous", creators: "Mark Millar, Terry Dodson & Frank Cho", years: "2004–05", collects: "Marvel Knights: Spider-Man #5–8", era: "Modern Age", prerequisites: "None", summary: "The symbiote is auctioned off, and Mac Gargan is the one who walks out wearing it.", readingOrder: ["Marvel Knights Spider-Man: Venomous"], amazon: [{ asin: "", title: "Marvel Knights Spider-Man: Venomous", format: "Trade Paperback", recommended: true }] },
+      "venom-agent": { slug: "venom-agent", versionSlug: "flash-thompson", title: "Venom #1 (2011)", creators: "Rick Remender & Tony Moore", years: "2011", collects: "Venom (2011) #1", era: "Modern Age", prerequisites: "None", summary: "Flash Thompson puts on the symbiote for the U.S. military.", readingOrder: ["Venom #1 (2011)"], amazon: [{ asin: "", title: "Venom #1 (2011)", format: "Trade Paperback", recommended: true }] },
+      "venom-ultimate": { slug: "venom-ultimate", versionSlug: "ultimate-venom", title: "Ultimate Spider-Man #33", creators: "Brian Michael Bendis & Mark Bagley", years: "2003", collects: "Ultimate Spider-Man #33", era: "Ultimate", prerequisites: "None", summary: "The Ultimate Universe's Eddie Brock meets a symbiote that was never Peter's costume.", readingOrder: ["Ultimate Spider-Man #33"], amazon: [{ asin: "", title: "Ultimate Spider-Man #33", format: "Trade Paperback", recommended: true }] },
+      "venom-dylan": { slug: "venom-dylan", versionSlug: "dylan-brock", title: "Venom #1 (2022)", creators: "Al Ewing & Bryan Hitch", years: "2022", collects: "Venom (2022) #1", era: "Modern Age", prerequisites: "None", summary: "Dylan Brock is the Venom on the street in Al Ewing and Bryan Hitch's series.", readingOrder: ["Venom #1 (2022)"], amazon: [{ asin: "", title: "Venom #1 (2022)", format: "Trade Paperback", recommended: true }] },
     };
 
     const RUN_ISSUES = {};
@@ -2231,6 +2239,10 @@
       "venom-birth": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5674133-01.jpg",
       "venom-lethal": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4897039-01.jpg",
       "venom-rex": "https://covers.openlibrary.org/b/id/8813263-L.jpg",
+      "venom-gargan": "https://comicvine.gamespot.com/a/uploads/scale_large/2/22664/1054590-spm.jpg",
+      "venom-agent": "https://comicvine.gamespot.com/a/uploads/scale_large/8/87073/1710738-venom01.jpg",
+      "venom-ultimate": "https://comicvine.gamespot.com/a/uploads/scale_large/0/3318/105592-7257-108168-1-ultimate-spider-man.jpg",
+      "venom-dylan": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8247950-large-4944271.jpg",
     };
 
     /* Character art when a run cover is unavailable (version cards) */
@@ -2913,7 +2925,11 @@
     var DEFAULT_FEATURED_THEME = { r: 28, g: 24, b: 32 };
 
     var FEATURED_THEME_COLORS = {
-      "venom": { r: 245, g: 245, b: 245 },
+      "eddie-brock": { r: 24, g: 24, b: 26 },
+      "mac-gargan": { r: 18, g: 48, b: 36 },
+      "flash-thompson": { r: 130, g: 24, b: 32 },
+      "ultimate-venom": { r: 36, g: 18, b: 52 },
+      "dylan-brock": { r: 28, g: 28, b: 34 },
     };
 
     function getFeaturedThemeColor(slug, imgColor) {
@@ -3238,7 +3254,7 @@
       return '<section class="home-section now-reel verse-reel" id="verses" data-now-reel aria-roledescription="carousel" aria-label="Across the multiverse">' +
         '<div class="now-reel-head"><div>' +
         '<h2>Venom Across the Multiverse</h2>' +
-        '<p>All ' + versions.length + ' versions of Venom. This guide is Eddie Brock. Mac Gargan and Flash Thompson come later.</p>' +
+        '<p>All ' + versions.length + ' versions of Venom: Eddie Brock, Mac Gargan, Flash Thompson, the Ultimate Universe\'s Venom, and Dylan Brock.</p>' +
         '</div></div>' +
         '<div class="now-reel-window">' +
         '<div class="now-reel-track">' + slides + '</div></div>' +
