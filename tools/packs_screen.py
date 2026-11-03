@@ -246,7 +246,7 @@ VISION = {
     "screen": [
         {"group": "Live-action series", "items": [
             screen_item("vis-wandavision", "WandaVision", "Paul Bettany · Elizabeth Olsen", "https://en.wikipedia.org/wiki/WandaVision", "https://www.imdb.com/title/tt9140560/", years="2021"),
-            screen_item("vis-visionquest", "VisionQuest", "White Vision · Disney+", "https://en.wikipedia.org/wiki/VisionQuest_(TV_series)", "https://www.imdb.com/title/tt15645124/", year="2026"),
+            screen_item("vis-visionquest", "VisionQuest", "White Vision · Disney+", "https://en.wikipedia.org/wiki/VisionQuest", "https://www.imdb.com/title/tt23112594/", year="2026"),
         ]},
         {"group": "Live-action films", "items": [
             screen_item("vis-aou", "Avengers: Age of Ultron", "Vision's birth", "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron", "https://www.imdb.com/title/tt2395427/", year="2015"),

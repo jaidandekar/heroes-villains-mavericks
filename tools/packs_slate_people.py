@@ -544,7 +544,7 @@ SENTRY = avenger(
 # Yelena/Ava special-case is inside avenger().
 
 VISIONQUEST = "https://en.wikipedia.org/wiki/VisionQuest"
-VISIONQUEST_IMDB = "https://www.imdb.com/title/tt15645124/"
+VISIONQUEST_IMDB = "https://www.imdb.com/title/tt23112594/"
 
 
 def visionquest(pid, brand, title, who, gradient, tagline, verses_p, comics_p, description, wiki, first, comic_slug, comic_title, creators, years, collects, era, summary, isbn13, isbn10, facts, screen_note, themes):
