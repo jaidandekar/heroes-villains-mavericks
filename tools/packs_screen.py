@@ -84,8 +84,6 @@ SUPERGIRL = {
         version_obj("matrix-supergirl", "Matrix Supergirl", "Earth-0 / Post-Crisis", "alternate", "Superman #16 (1988)", "Protoplasmic heroine", "The Matrix Supergirl was a shape-shifting artificial being from another pocket universe who took up Kara's mantle after Crisis.", "https://en.wikipedia.org/wiki/Matrix_(comics)", ["sg-matrix", "sg-power"]),
         version_obj("cir-el", "Cir-El", "Earth-0", "alternate", "Superman: The 10-Cent Adventure #1 (2003)", "Superman's future daughter?", "Cir-El claimed to be Superman's daughter from the future — a short-lived but memorable modern contender for the crest.", "https://en.wikipedia.org/wiki/Cir-El", ["sg-cir-el"]),
         version_obj("earth-one-supergirl", "Earth-One Supergirl", "Earth-One", "elseworlds", "Supergirl: Cosmic Adventures in the 8th Grade (2009)", "Younger Kara", "A youthful, school-age take on Kara discovering Earth and her powers with Silver Age charm.", "https://en.wikipedia.org/wiki/Supergirl:_Cosmic_Adventures_in_the_8th_Grade", ["sg-cosmic-8th"]),
-        version_obj("new52-supergirl", "New 52 Supergirl", "Prime Earth", "main", "Supergirl Vol. 6 #1 (2011)", "Angry arrival", "The New 52 relaunch dropped a furious Kara on Earth with no memory of Kal — raw power before she chose heroism.", "https://en.wikipedia.org/wiki/Supergirl_(comic_book)", ["sg-new52-vol1", "sg-red-daughter"]),
-        version_obj("supergirl-2099", "Supergirl Beyond", "Future / Elseworlds", "future", "Supergirl: Woman of Tomorrow #1 (2021)", "Road-trip myth", "Tom King's Woman of Tomorrow frames Kara as a wandering knight of the stars — the defining modern take.", "https://en.wikipedia.org/wiki/Supergirl:_Woman_of_Tomorrow", ["sg-woman-of-tomorrow"]),
     ],
     "runs": {
         "sg-woman-of-tomorrow": {**run_obj("sg-woman-of-tomorrow", "kara-zor-el", "Supergirl: Woman of Tomorrow", "Tom King & Bilquis Evely", "2021–22", "Supergirl: Woman of Tomorrow #1–8", "Modern Age", "None — ideal modern entry", "Kara escorts a grieving girl across the galaxy in a Western-flavored odyssey — the template for the DCU film.", "Supergirl: Woman of Tomorrow", "1779515684"), "isbn": "9781779515681"},
@@ -143,17 +141,14 @@ CLAYFACE = {
     "header_img": "clayface-homepage-header-image.jpg",
     "hero_gradient": "radial-gradient(circle at 30% 25%, #5d4037, #3e2723 45%, #120c0a)",
     "verses_h2": "Clayface Across the Multiverse",
-    "verses_p": "versions of Gotham's mud monster — Basil Karlo, Preston Payne, Cassius, Mudpack, and the horror-movie Matt Hagen.",
+    "verses_p": "versions in the comics. Basil Karlo, Preston Payne, and Cassius Payne. Matt Hagen's film and the animated series are in Film and TV.",
     "comics_p": "Essential Clayface stories — from Detective Comics origins through Mudpack, Face the Face, and modern horror takes.",
     "screen_p": "Live-action and animated appearances — from the 2026 James Watkins film to Batman: The Animated Series.",
     "types": DC_TYPES,
     "versions": [
         version_obj("basil-karlo", "Basil Karlo", "Earth-0 / Prime Earth", "main", "Detective Comics #40 (1940)", "The original Clayface", "Actor Basil Karlo donned the mask of a horror villain and became Gotham's first Clayface — identity, performance, and murder.", "https://en.wikipedia.org/wiki/Clayface", ["cf-origin-classic", "cf-face-the-face", "cf-outsiders"]),
-        version_obj("preston-payne", "Preston Payne", "Earth-0 / Post-Crisis", "main", "Detective Comics #298 (1961)", "The tragic Clayface", "Scientist Preston Payne's experimental cure left him a melting monster who needed human contact to survive — Batman's most pitiful foe.", "https://en.wikipedia.org/wiki/Clayface#Preston_Payne", ["cf-payne", "cf-mudpack"]),
+        version_obj("preston-payne", "Preston Payne", "Earth-0 / Post-Crisis", "main", "Detective Comics #478 (1978)", "The tragic Clayface", "Scientist Preston Payne's experimental cure left him a melting monster who needed human contact to survive — Batman's most pitiful foe.", "https://en.wikipedia.org/wiki/Clayface#Preston_Payne", ["cf-payne", "cf-mudpack"]),
         version_obj("cassius-clayface", "Cassius 'Clay' Payne", "Earth-0", "alternate", "Batman #550 (1998)", "Son of Clayface", "Cassius inherited his father's clay condition — a next-generation shapeshifter raised in tragedy.", "https://en.wikipedia.org/wiki/Clayface", ["cf-cassius"]),
-        version_obj("mudpack", "The Mudpack", "Earth-0", "main", "Detective Comics #604 (1989)", "Four Clayfaces united", "Karlo, Payne, Sondra Fuller, and Matt Hagen's legacy collide as the Mudpack — a clay army against Batman.", "https://en.wikipedia.org/wiki/Clayface#The_Mudpack", ["cf-mudpack", "cf-payne"]),
-        version_obj("btas-clayface", "BTAS Clayface", "DCAU", "elseworlds", "Batman: The Animated Series — Feat of Clay (1992)", "The actor who melted", "Matt Hagen's Animated Series tragedy — a film star dissolved into putty, voiced with heartbreaking menace.", "https://en.wikipedia.org/wiki/Clayface#In_other_media", ["cf-btas-era"]),
-        version_obj("dcu-hagen", "DCU Matt Hagen", "DC Universe (screen)", "alternate", "Clayface (2026 film)", "Horror-movie Clayface", "The Watkins/Flanagan take: a rising Hollywood actor's body-horror descent into a revenge-driven monster.", "https://en.wikipedia.org/wiki/Clayface_(film)", ["cf-horror-modern"]),
     ],
     "runs": {
         "cf-origin-classic": {**run_obj("cf-origin-classic", "basil-karlo", "Batman: The Golden Age Vol. 1", "Bill Finger & Bob Kane", "1940", "Detective Comics #40", "Golden Age", "None", "Basil Karlo's debut as Clayface — Batman vs. a murderous actor.", "Batman: The Golden Age Vol. 1", "1401260083"), "isbn": "9781401260088"},
@@ -186,8 +181,8 @@ CLAYFACE = {
             screen_item("cf-2026", "Clayface", "James Watkins · Tom Rhys Harries", "https://en.wikipedia.org/wiki/Clayface_(film)", "https://www.imdb.com/title/tt31193180/", year="2026"),
         ]},
         {"group": "Animated", "items": [
-            screen_item("cf-btas", "Batman: The Animated Series", "Feat of Clay · Ron Perlman", "https://en.wikipedia.org/wiki/Feat_of_Clay", "https://www.imdb.com/title/tt0519597/", years="1992"),
-            screen_item("cf-caped", "The Batman (2004)", "Clayface episodes", "https://en.wikipedia.org/wiki/The_Batman_(TV_series)", "https://www.imdb.com/title/tt0397150/", years="2004–2008"),
+            screen_item("cf-btas", "Batman: The Animated Series", "Feat of Clay · Ron Perlman", "https://en.wikipedia.org/wiki/Batman:_The_Animated_Series", "https://www.imdb.com/title/tt0103359/", years="1992–1995"),
+            screen_item("cf-caped", "The Batman (2004)", "Clayface episodes", "https://en.wikipedia.org/wiki/The_Batman_(TV_series)", "https://www.imdb.com/title/tt0398417/", years="2004–2008"),
         ]},
     ],
     "themes": {
@@ -214,9 +209,7 @@ VISION = {
     "types": MARVEL_TYPES,
     "versions": [
         version_obj("classic-vision", "Classic Vision", "Earth-616 / Prime Marvel", "main", "Avengers #57 (1968)", "Even an android can cry", "Ultron's creation who chose heroism — density control, solar beams, and a soul that shocked the Avengers.", "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)", ["vis-avengers-classic", "vis-bride-of-ultron", "vis-vision-quest"]),
-        version_obj("vision-scarlets", "Vision & Scarlet Witch", "Earth-616", "main", "Vision and the Scarlet Witch #1 (1982)", "Synthetic love", "Vision and Wanda's marriage, Westview-before-Westview domestic life, and the children who rewrote Marvel magic.", "https://en.wikipedia.org/wiki/Vision_and_the_Scarlet_Witch", ["vis-scarlets-1982", "vis-scarlets-1985"]),
-        version_obj("tom-king-vision", "Tom King's Vision", "Earth-616", "modern", "Vision #1 (2015)", "The perfect suburban nightmare", "Vision builds a synthezoid family in Arlington — a quiet masterpiece of identity, belonging, and horror.", "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)", ["vis-tom-king"]),
-        version_obj("white-vision", "White Vision", "Earth-616 / MCU echo", "alternate", "West Coast Avengers #45 (1989)", "Memories erased", "Dismantled and rebuilt without emotion or color — the White Vision must decide what selfhood means.", "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)", ["vis-vision-quest", "vis-white"]),
+        version_obj("white-vision", "White Vision", "Earth-616", "alternate", "West Coast Avengers #45 (1989)", "Memories erased", "Dismantled and rebuilt without emotion or color — the White Vision must decide what selfhood means.", "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)", ["vis-vision-quest", "vis-white"]),
         version_obj("ultimate-vision", "Ultimate Vision", "Earth-1610", "ultimate", "Ultimates #5 (2002)", "Gah Lak Tus probe", "Ultimate Universe's Vision is a robotic herald warning Earth of Gah Lak Tus — colder, stranger, cosmic.", "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)#Other_versions", ["vis-ultimate"]),
         version_obj("young-avengers-vision", "Young Avengers Vision", "Earth-616", "alternate", "Young Avengers #1 (2005)", "Jonas", "A new Vision forged from the old — Jonas joins the Young Avengers with heart and uncertainty.", "https://en.wikipedia.org/wiki/Vision_(Jonas)", ["vis-young-avengers"]),
     ],
@@ -265,16 +258,6 @@ VISION = {
 }
 
 
-# Fix Vision type key — "modern" isn't in MARVEL_TYPES. Use "main" instead.
-VISION["versions"][2] = version_obj(
-    "tom-king-vision", "Tom King's Vision", "Earth-616", "main",
-    "Vision #1 (2015)", "The perfect suburban nightmare",
-    "Vision builds a synthezoid family in Arlington — a quiet masterpiece of identity, belonging, and horror.",
-    "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)",
-    ["vis-tom-king"],
-)
-
-
 XMEN = {
     "id": "x-men",
     "brand": "X-Men",
@@ -285,17 +268,13 @@ XMEN = {
     "header_img": "x-men-homepage-header-image.jpg",
     "hero_gradient": "radial-gradient(circle at 30% 25%, #f9a825, #e65100 45%, #1a0a00)",
     "verses_h2": "X-Men Across the Eras",
-    "verses_p": "eras of Marvel's mutant family — All-New All-Different, Claremont classics, Morrison's New X-Men, Ultimate, Krakoa, and '97.",
+    "verses_p": "versions Marvel publishes as separate universes: Earth-616 and the Ultimate Universe.",
     "comics_p": "Essential X-Men stories — from Giant-Size #1 through Dark Phoenix, Grant Morrison, House of X, and X-Men '97.",
     "screen_p": "Live-action and animated appearances — from the Fox films and X-Men '97 to the MCU's incoming mutants.",
     "types": TEAM_TYPES,
     "versions": [
-        version_obj("all-new", "All-New All-Different", "Earth-616", "classic", "Giant-Size X-Men #1 (1975)", "The international team", "Storm, Wolverine, Nightcrawler, Colossus, and more join Cyclops — the lineup that made the X-Men a phenomenon.", "https://en.wikipedia.org/wiki/Giant-Size_X-Men", ["xmen-giant-size", "xmen-dark-phoenix", "xmen-god-loves"]),
-        version_obj("claremont-era", "Claremont Era", "Earth-616", "classic", "Uncanny X-Men #94 (1975)", "The long run", "Chris Claremont's epic defined mutant soap opera, politics, and tragedy for decades.", "https://en.wikipedia.org/wiki/Chris_Claremont", ["xmen-dark-phoenix", "xmen-days-of-future", "xmen-god-loves"]),
-        version_obj("morrison-new", "New X-Men", "Earth-616", "modern", "New X-Men #114 (2001)", "School for the strange", "Grant Morrison reinvented Xavier's school for the 21st century — fashion, secondary mutations, and Cassandra Nova.", "https://en.wikipedia.org/wiki/New_X-Men", ["xmen-morrison-vol1", "xmen-morrison-planet-x"]),
+        version_obj("all-new", "Earth-616 X-Men", "Earth-616", "classic", "Giant-Size X-Men #1 (1975)", "The international team", "Storm, Wolverine, Nightcrawler, Colossus, and more join Cyclops. Claremont, Morrison, and Krakoa are later eras of this same team, not other universes.", "https://en.wikipedia.org/wiki/X-Men", ["xmen-giant-size", "xmen-dark-phoenix", "xmen-house-of-x"]),
         version_obj("ultimate-x", "Ultimate X-Men", "Earth-1610", "ultimate", "Ultimate X-Men #1 (2001)", "Younger, darker mutants", "Mark Millar's Ultimate mutants — colder politics, sharper edges, different origins.", "https://en.wikipedia.org/wiki/Ultimate_X-Men", ["xmen-ultimate-vol1"]),
-        version_obj("krakoa", "Krakoan Age", "Earth-616", "modern", "House of X #1 (2019)", "Mutant nation", "Hickman's House of X / Powers of X birthed Krakoa — resurrection, diplomacy, and a mutant homeland.", "https://en.wikipedia.org/wiki/House_of_X", ["xmen-house-of-x", "xmen-immortal"]),
-        version_obj("xmen-97-era", "X-Men '97", "Animated / Earth-92131", "alternate", "X-Men: The Animated Series (1992)", "The '90s team lives", "The animated roster that defined a generation — revived for Disney+ as X-Men '97.", "https://en.wikipedia.org/wiki/X-Men_%2797", ["xmen-adventures", "xmen-dark-phoenix"]),
     ],
     "runs": {
         "xmen-giant-size": {**run_obj("xmen-giant-size", "all-new", "Giant-Size X-Men #1", "Len Wein & Dave Cockrum", "1975", "Giant-Size X-Men #1", "Bronze Age", "None — ideal entry", "The new team assembles — the single most important issue in X-history.", "Giant-Size X-Men", "0785117287"), "isbn": "9780785117285"},
@@ -331,8 +310,14 @@ XMEN = {
             screen_item("xmen-tas", "X-Men: The Animated Series", "Fox Kids classic", "https://en.wikipedia.org/wiki/X-Men:_The_Animated_Series", "https://www.imdb.com/title/tt0103584/", years="1992–1997"),
         ]},
         {"group": "Live-action films", "items": [
-            screen_item("xmen-2000", "X-Men", "Bryan Singer · 2000", "https://en.wikipedia.org/wiki/X-Men_(film)", "https://www.imdb.com/title/tt0120903/", year="2000"),
-            screen_item("xmen-days", "X-Men: Days of Future Past", "Singer · 2014", "https://en.wikipedia.org/wiki/X-Men:_Days_of_Future_Past", "https://www.imdb.com/title/tt1877832/", year="2014"),
+            screen_item("xmen-2000", "X-Men", "Bryan Singer", "https://en.wikipedia.org/wiki/X-Men_(film)", "https://www.imdb.com/title/tt0120903/", year="2000"),
+            screen_item("xmen-x2", "X2", "Bryan Singer", "https://en.wikipedia.org/wiki/X2_(film)", "https://www.imdb.com/title/tt0290334/", year="2003"),
+            screen_item("xmen-last-stand", "X-Men: The Last Stand", "Brett Ratner", "https://en.wikipedia.org/wiki/X-Men:_The_Last_Stand", "https://www.imdb.com/title/tt0376994/", year="2006"),
+            screen_item("xmen-first-class", "X-Men: First Class", "Matthew Vaughn", "https://en.wikipedia.org/wiki/X-Men:_First_Class", "https://www.imdb.com/title/tt1270798/", year="2011"),
+            screen_item("xmen-days", "X-Men: Days of Future Past", "Bryan Singer", "https://en.wikipedia.org/wiki/X-Men:_Days_of_Future_Past", "https://www.imdb.com/title/tt1877832/", year="2014"),
+            screen_item("xmen-apocalypse", "X-Men: Apocalypse", "Bryan Singer", "https://en.wikipedia.org/wiki/X-Men:_Apocalypse", "https://www.imdb.com/title/tt3385516/", year="2016"),
+            screen_item("xmen-dark-phoenix", "Dark Phoenix", "Simon Kinberg", "https://en.wikipedia.org/wiki/Dark_Phoenix_(film)", "https://www.imdb.com/title/tt6565702/", year="2019"),
+            screen_item("xmen-logan", "Logan", "James Mangold", "https://en.wikipedia.org/wiki/Logan_(film)", "https://www.imdb.com/title/tt3315342/", year="2017"),
         ]},
     ],
     "themes": {
@@ -356,17 +341,13 @@ AVENGERS = {
     "header_img": "avengers-homepage-header-image.jpg",
     "hero_gradient": "radial-gradient(circle at 30% 25%, #b71c1c, #0d47a1 50%, #050810)",
     "verses_h2": "Avengers Across the Eras",
-    "verses_p": "eras of Earth's Mightiest Heroes — founding members, Kooky Quartet, Bendis New Avengers, Hickman, Ultimates, and the MCU.",
+    "verses_p": "versions Marvel publishes as separate universes: the Earth-616 Avengers and the Ultimates.",
     "comics_p": "Essential Avengers stories — from Avengers #1 through Infinity Gauntlet, Disassembled, Hickman's run, and Secret Wars.",
     "screen_p": "Live-action and animated appearances — from the MCU saga and Avengers: Doomsday to classic cartoons.",
     "types": TEAM_TYPES,
     "versions": [
-        version_obj("founders", "Founding Avengers", "Earth-616", "classic", "Avengers #1 (1963)", "Assemble!", "Thor, Iron Man, Ant-Man, Wasp, and Hulk answer a call — Marvel's flagship team is born.", "https://en.wikipedia.org/wiki/Avengers_(comics)", ["avg-avengers-1", "avg-kooky-quartet"]),
-        version_obj("kooky-quartet", "Kooky Quartet", "Earth-616", "classic", "Avengers #16 (1965)", "Cap's new team", "Captain America leads Hawkeye, Scarlet Witch, and Quicksilver — the underdog Avengers.", "https://en.wikipedia.org/wiki/Avengers_(comics)", ["avg-kooky-quartet", "avg-buscema"]),
-        version_obj("bendis-new", "New Avengers", "Earth-616", "modern", "New Avengers #1 (2005)", "Street-level assemble", "Bendis rebuilds the team after Disassembled — Luke Cage, Spider-Man, Wolverine, and secrets.", "https://en.wikipedia.org/wiki/New_Avengers", ["avg-disassembled", "avg-new-avengers"]),
-        version_obj("hickman-avengers", "Hickman Avengers", "Earth-616", "modern", "Avengers #1 (2012)", "Time runs out", "Jonathan Hickman's grand Avengers / New Avengers epic ends in Secret Wars.", "https://en.wikipedia.org/wiki/Avengers_(comic_book)#Jonathan_Hickman_run", ["avg-hickman-vol1", "avg-secret-wars-2015"]),
-        version_obj("ultimates", "The Ultimates", "Earth-1610", "ultimate", "The Ultimates #1 (2002)", "Authority-style heroes", "Millar and Hitch's Ultimate Avengers — celebrity soldiers, geopolitics, and style.", "https://en.wikipedia.org/wiki/Ultimates", ["avg-ultimates-vol1"]),
-        version_obj("mcu-avengers", "MCU Avengers", "Earth-199999", "alternate", "The Avengers (2012)", "Movie assemble", "The screen team that made Assemble a global chant — from 2012 through Endgame and Doomsday.", "https://en.wikipedia.org/wiki/Avengers_(Marvel_Cinematic_Universe)", ["avg-infinity-gauntlet", "avg-secret-wars-2015"]),
+        version_obj("founders", "Earth-616 Avengers", "Earth-616", "classic", "Avengers #1 (1963)", "Assemble!", "Thor, Iron Man, Ant-Man, the Wasp, and the Hulk answer a call. Later lineups, including the New Avengers and Hickman's run, are this same team.", "https://en.wikipedia.org/wiki/Avengers_(comics)", ["avg-avengers-1", "avg-secret-wars-2015"]),
+        version_obj("ultimates", "The Ultimates", "Earth-1610", "ultimate", "The Ultimates #1 (2002)", "Authority-style heroes", "Millar and Hitch's Ultimate Avengers — a different universe from the Earth-616 team.", "https://en.wikipedia.org/wiki/Ultimates", ["avg-ultimates-vol1"]),
     ],
     "runs": {
         "avg-avengers-1": {**run_obj("avg-avengers-1", "founders", "Avengers Epic Collection: Earth's Mightiest Heroes", "Stan Lee & Jack Kirby", "1963–64", "Avengers #1–11", "Silver Age", "None — ideal entry", "The origin of the Avengers and Cap's thaw — Marvel's team book begins.", "Avengers Epic Collection Vol. 1", "0785188366"), "isbn": "9780785188360"},
@@ -398,6 +379,8 @@ AVENGERS = {
     "screen": [
         {"group": "Live-action films", "items": [
             screen_item("avg-2012", "The Avengers", "Joss Whedon", "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)", "https://www.imdb.com/title/tt0848228/", year="2012"),
+            screen_item("avg-ultron", "Avengers: Age of Ultron", "Joss Whedon", "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron", "https://www.imdb.com/title/tt2395427/", year="2015"),
+            screen_item("avg-infinity", "Avengers: Infinity War", "Russo brothers", "https://en.wikipedia.org/wiki/Avengers:_Infinity_War", "https://www.imdb.com/title/tt4154756/", year="2018"),
             screen_item("avg-endgame", "Avengers: Endgame", "Russo brothers", "https://en.wikipedia.org/wiki/Avengers:_Endgame", "https://www.imdb.com/title/tt4154796/", year="2019"),
             screen_item("avg-doomsday", "Avengers: Doomsday", "Russo brothers · Doom", "https://en.wikipedia.org/wiki/Avengers:_Doomsday", "https://www.imdb.com/title/tt21361794/", year="2026"),
         ]},
@@ -433,7 +416,6 @@ SPIDERMAN = {
         version_obj("ultimate-peter", "Ultimate Peter Parker", "Earth-1610", "ultimate", "Ultimate Spider-Man #1 (2000)", "Modern origin reborn", "Brian Michael Bendis and Mark Bagley's Ultimate Spider-Man reinvented Peter's high-school years for a new century.", "https://en.wikipedia.org/wiki/Ultimate_Spider-Man", ["sm-ultimate-vol1"]),
         version_obj("spider-gwen", "Ghost-Spider (Gwen Stacy)", "Earth-65", "alternate", "Edge of Spider-Verse #2 (2014)", "Spider-Woman of Earth-65", "On Earth-65, Gwen Stacy got the bite — and became Ghost-Spider, a dimension-hopping hero of the Spider-Verse.", "https://en.wikipedia.org/wiki/Ghost-Spider", ["sm-spider-gwen"]),
         version_obj("spider-2099", "Spider-Man 2099", "Earth-928", "future", "Spider-Man 2099 #1 (1992)", "Miguel O'Hara", "In the year 2099, Miguel O'Hara becomes a genetically engineered Spider-Man in a corporate dystopia.", "https://en.wikipedia.org/wiki/Spider-Man_2099", ["sm-2099"]),
-        version_obj("mcu-peter", "MCU Peter Parker", "Earth-199999", "alternate", "Captain America: Civil War (2016)", "The kid from Queens", "Tom Holland's MCU Spider-Man — mentored by Stark, undone by memory, and fighting for a brand new day.", "https://en.wikipedia.org/wiki/Spider-Man_(Marvel_Cinematic_Universe)", ["sm-brand-new-day"]),
     ],
     "runs": {
         "sm-origin": {**run_obj("sm-origin", "peter-parker", "Amazing Fantasy Omnibus / Amazing Spider-Man Vol. 1", "Stan Lee & Steve Ditko", "1962–63", "Amazing Fantasy #15, Amazing Spider-Man #1–10", "Silver Age", "None — ideal entry", "The radioactive spider, Uncle Ben, and the birth of Marvel's greatest street-level hero.", "Amazing Fantasy #15", "0785124635"), "isbn": "9780785124634"},
@@ -464,9 +446,17 @@ SPIDERMAN = {
     },
     "screen": [
         {"group": "Live-action films", "items": [
-            screen_item("sm-bnd", "Spider-Man: Brand New Day", "MCU · Tom Holland", "https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day", "https://www.imdb.com/title/tt22084616/", year="2026"),
-            screen_item("sm-nwh", "Spider-Man: No Way Home", "MCU · multiverse", "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home", "https://www.imdb.com/title/tt10872600/", year="2021"),
+            screen_item("sm-2002", "Spider-Man", "Tobey Maguire · Sam Raimi", "https://en.wikipedia.org/wiki/Spider-Man_(2002_film)", "https://www.imdb.com/title/tt0145487/", year="2002"),
+            screen_item("sm-2004", "Spider-Man 2", "Tobey Maguire · Sam Raimi", "https://en.wikipedia.org/wiki/Spider-Man_2", "https://www.imdb.com/title/tt0316654/", year="2004"),
+            screen_item("sm-2007", "Spider-Man 3", "Tobey Maguire · Sam Raimi", "https://en.wikipedia.org/wiki/Spider-Man_3", "https://www.imdb.com/title/tt0413300/", year="2007"),
+            screen_item("sm-tasm", "The Amazing Spider-Man", "Andrew Garfield · Marc Webb", "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_(film)", "https://www.imdb.com/title/tt0948470/", year="2012"),
+            screen_item("sm-tasm2", "The Amazing Spider-Man 2", "Andrew Garfield · Marc Webb", "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2", "https://www.imdb.com/title/tt1872181/", year="2014"),
+            screen_item("sm-homecoming", "Spider-Man: Homecoming", "Tom Holland · MCU", "https://en.wikipedia.org/wiki/Spider-Man:_Homecoming", "https://www.imdb.com/title/tt2250912/", year="2017"),
+            screen_item("sm-ffh", "Spider-Man: Far From Home", "Tom Holland · MCU", "https://en.wikipedia.org/wiki/Spider-Man:_Far_From_Home", "https://www.imdb.com/title/tt6320628/", year="2019"),
+            screen_item("sm-nwh", "Spider-Man: No Way Home", "Tom Holland · MCU", "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home", "https://www.imdb.com/title/tt10872600/", year="2021"),
+            screen_item("sm-bnd", "Spider-Man: Brand New Day", "Tom Holland · MCU", "https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day", "https://www.imdb.com/title/tt22084616/", year="2026"),
             screen_item("sm-itsv", "Spider-Man: Into the Spider-Verse", "Sony Animation", "https://en.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse", "https://www.imdb.com/title/tt4633694/", year="2018"),
+            screen_item("sm-atsv", "Spider-Man: Across the Spider-Verse", "Sony Animation", "https://en.wikipedia.org/wiki/Spider-Man:_Across_the_Spider-Verse", "https://www.imdb.com/title/tt9362722/", year="2023"),
         ]},
         {"group": "Animated series", "items": [
             screen_item("sm-tas", "Spider-Man: The Animated Series", "1990s classic", "https://en.wikipedia.org/wiki/Spider-Man_(1994_TV_series)", "https://www.imdb.com/title/tt0112175/", years="1994–1998"),

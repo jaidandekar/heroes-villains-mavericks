@@ -1,0 +1,47 @@
+{
+  "rule": "One image per name, and a file can be used once. Green Lantern and Spider-Man are each one name, so each gets one cover. Other tiles stay one person. Now and Coming soon keep the film and series art.",
+  "characters": [
+    {
+      "slug": "clayface",
+      "src": "https://static.dc.com/2023-07/BMOBD_CF%20%28%20Cover%29.jpg",
+      "kind": "comic-cover",
+      "position": "center 18%",
+      "subject": "Batman: One Bad Day — Clayface"
+    },
+    {
+      "slug": "vision",
+      "src": "https://images.penguinrandomhouse.com/cover/9780785196570",
+      "kind": "comic-cover",
+      "position": "center 26%",
+      "subject": "The Vision: Little Worse Than a Man"
+    },
+    {
+      "slug": "green-lantern",
+      "src": "https://covers.openlibrary.org/b/id/749453-L.jpg",
+      "kind": "comic-cover",
+      "position": "center 40%",
+      "subject": "Green Lantern Corps — Johns and Gibbons"
+    },
+    {
+      "slug": "doctor-doom",
+      "src": "https://covers.openlibrary.org/b/id/536360-L.jpg",
+      "kind": "comic-cover",
+      "position": "center 42%",
+      "subject": "Books of Doom"
+    },
+    {
+      "slug": "spiderman",
+      "src": "https://covers.openlibrary.org/b/id/12581771-L.jpg",
+      "kind": "comic-cover",
+      "position": "center 62%",
+      "subject": "Edge of Spider-Verse"
+    },
+    {
+      "slug": "superman",
+      "src": "https://images.penguinrandomhouse.com/cover/9781779527257",
+      "kind": "comic-cover",
+      "position": "center 68%",
+      "subject": "All-Star Superman"
+    }
+  ]
+}

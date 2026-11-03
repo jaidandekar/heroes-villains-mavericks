@@ -10,7 +10,7 @@ Published by GitHub Pages from this `site/` directory.
 ## Maintenance
 
 - **Movie / streaming dates are frozen** — no automatic TMDB refresh loop.
-- **Bestsellers** (comics, toys, games): from `../tools/`:
+- **Trending on Amazon, Hot Topic, and BoxLunch** (one shop section of toys, clothes, and collectibles; a product appears only when its store SKU has a photo, and the page shows eight of them): from `../tools/`:
 
 ```bash
 cd ../tools

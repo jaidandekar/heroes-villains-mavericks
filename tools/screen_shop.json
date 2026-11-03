@@ -7,7 +7,10 @@
       "title": "Green Lantern: Secret Origin",
       "note": "Geoff Johns’ modern Hal Jordan foundation — the comic DNA behind the HBO series.",
       "search": "Green Lantern Secret Origin Geoff Johns",
-      "isbn": "9781401221904"
+      "isbn": "9781401220174",
+      "asin": "1401220177",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/1401220177.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     },
     {
       "id": "sm-brand-new-day",
@@ -23,7 +26,10 @@
       "title": "Supergirl: Woman of Tomorrow",
       "note": "Tom King & Bilquis Evely’s galactic road trip — the template for the DCU film.",
       "search": "Supergirl Woman of Tomorrow",
-      "isbn": "9781779515681"
+      "isbn": "9781779515681",
+      "asin": "1779515685",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/1779515685.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     },
     {
       "id": "xmen-dark-phoenix",
@@ -31,15 +37,21 @@
       "title": "X-Men: The Dark Phoenix Saga",
       "note": "Claremont & Byrne’s classic — still the backbone of animated X-Men storytelling.",
       "search": "X-Men Dark Phoenix Saga",
-      "isbn": "9780785122135"
+      "isbn": "9780785122135",
+      "asin": "0785122133",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/0785122133.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     },
     {
       "id": "vis-tom-king",
       "kicker": "Vision · VisionQuest",
-      "title": "Vision by Tom King",
-      "note": "The suburban synthezoid masterpiece — identity, family, and horror.",
-      "search": "Vision Tom King graphic novel",
-      "isbn": "9781302904135"
+      "title": "The Vision: Little Worse Than a Man",
+      "note": "Tom King and Gabriel Hernández Walta. Vision tries to build a family.",
+      "search": "The Vision Little Worse Than a Man Tom King",
+      "isbn": "9780785196570",
+      "asin": "0785196579",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/0785196579.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     },
     {
       "id": "cf-face-the-face",
@@ -55,7 +67,10 @@
       "title": "Secret Wars (2015)",
       "note": "Hickman & Ribic’s multiverse collapse — God Emperor Doom at the center.",
       "search": "Secret Wars 2015 Hickman",
-      "isbn": "9780785198840"
+      "isbn": "9780785198840",
+      "asin": "0785198849",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/0785198849.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     },
     {
       "id": "xmen-house-of-x",
@@ -63,7 +78,10 @@
       "title": "House of X / Powers of X",
       "note": "Hickman’s mutant nation reboot — the modern X-Men jumping-on point.",
       "search": "House of X Powers of X",
-      "isbn": "9781302915704"
+      "isbn": "9781302915704",
+      "asin": "1302915703",
+      "image": "https://images-na.ssl-images-amazon.com/images/P/1302915703.01.LZZZZZZZ.jpg",
+      "resolve_source": "amazon-sku"
     }
   ],
   "toys": [
@@ -76,7 +94,9 @@
       "asin": "B004OFRJDI",
       "image": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg",
       "resolved_title": "Green Lantern Movie Funko POP! 4 Inch Vinyl Figure Hal Jordan",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 99.98,
+      "price_currency": "USD"
     },
     {
       "id": "funko-spiderman",
@@ -87,7 +107,9 @@
       "asin": "B0DJFNV15R",
       "image": "https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg",
       "resolved_title": "Pop! Marvel: Spider-Man (Last Stand) Previews Exclusive Vinyl Figure",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 11.55,
+      "price_currency": "USD"
     },
     {
       "id": "funko-supergirl",
@@ -98,7 +120,9 @@
       "asin": "B0FPN14YWR",
       "image": "https://m.media-amazon.com/images/I/71TKl1-Uf8L._AC_SL500_.jpg",
       "resolved_title": "Funko POP! & Buddy: Supergirl with Puppy Krypto",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 16.49,
+      "price_currency": "USD"
     },
     {
       "id": "funko-wolverine",
@@ -109,7 +133,9 @@
       "asin": "B0FPNQKTQP",
       "image": "https://m.media-amazon.com/images/I/71jNbJWssHL._AC_SL500_.jpg",
       "resolved_title": "Funko Pop! Marvel: X-Men '97 - Wolverine (Wasteland)",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 14.88,
+      "price_currency": "USD"
     },
     {
       "id": "funko-vision",
@@ -120,18 +146,22 @@
       "asin": "B08KGV6SH6",
       "image": "https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg",
       "resolved_title": "Funko Pop! Marvel: Wandavision - The Vision (Finale)",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 10.99,
+      "price_currency": "USD"
     },
     {
       "id": "funko-clayface",
       "kicker": "Clayface",
       "title": "Batman vs Clayface figure",
-      "note": "DC Clayface action figure packaging — SKU resolved from Amazon.",
+      "note": "A Batman and Clayface two-pack.",
       "search": "McFarlane Clayface figure",
       "asin": "B0G27VB83P",
       "image": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
       "resolved_title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 41.99,
+      "price_currency": "USD"
     },
     {
       "id": "funko-doom",
@@ -145,6 +175,153 @@
       "resolve_source": "amazon-search"
     },
     {
+      "id": "bl-vision-split",
+      "store": "boxlunch",
+      "sku": "35964015",
+      "kicker": "Vision · VisionQuest",
+      "title": "VisionQuest Vision Funko Pop",
+      "note": "The split Vision from VisionQuest.",
+      "url": "https://www.boxlunch.com/product/funko-pop-marvel-visionquest-the-vision-split-vinyl-bobblehead/35964015.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/35964012_hi",
+      "resolve_source": "boxlunch-sku",
+      "price": 15.9,
+      "price_currency": "USD"
+    },
+    {
+      "id": "bl-doom-bitty",
+      "store": "boxlunch",
+      "sku": "36360871",
+      "kicker": "Doctor Doom · Doomsday",
+      "title": "Doomsday Bitty Pop set",
+      "note": "Doctor Doom in the Avengers: Doomsday Bitty Pop set.",
+      "url": "https://www.boxlunch.com/product/funko-bitty-pop-marvel-avengers-doomsday-doctor-doom-and-friends-mini-figure-set/36360871.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/36360853_hi",
+      "resolve_source": "boxlunch-sku",
+      "price": 15.9,
+      "price_currency": "USD"
+    }
+  ],
+  "apparel": [
+    {
+      "id": "shirt-superman",
+      "kicker": "Superman",
+      "title": "Superman t-shirt",
+      "note": "A Superman shirt on Amazon.",
+      "search": "Superman t-shirt"
+    },
+    {
+      "id": "shirt-spiderman",
+      "kicker": "Peter Parker",
+      "title": "Spider-Man t-shirt",
+      "note": "A Spider-Man shirt on Amazon.",
+      "search": "Spider-Man t-shirt"
+    },
+    {
+      "id": "shirt-miles",
+      "kicker": "Miles Morales",
+      "title": "Miles Morales t-shirt",
+      "note": "A Miles Morales shirt on Amazon.",
+      "search": "Miles Morales Spider-Man t-shirt"
+    },
+    {
+      "id": "shirt-lantern",
+      "kicker": "Hal Jordan",
+      "title": "Green Lantern t-shirt",
+      "note": "A Green Lantern shirt on Amazon.",
+      "search": "Green Lantern Hal Jordan t-shirt"
+    },
+    {
+      "id": "shirt-doom",
+      "kicker": "Doctor Doom",
+      "title": "Doctor Doom t-shirt",
+      "note": "A Doctor Doom shirt on Amazon.",
+      "search": "Doctor Doom Marvel t-shirt"
+    },
+    {
+      "id": "ht-superman-crest",
+      "store": "hottopic",
+      "sku": "32646467",
+      "kicker": "Superman",
+      "title": "Superman crest t-shirt",
+      "note": "The classic shield, from Hot Topic.",
+      "url": "https://www.hottopic.com/product/dc-comics-superman-crest-t-shirt/32646467.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/32646467_hi",
+      "resolve_source": "hottopic-sku",
+      "price": 23.9,
+      "price_currency": "USD",
+      "price_max": 27.9
+    },
+    {
+      "id": "ht-clayface-hoodie",
+      "store": "hottopic",
+      "sku": "36004920",
+      "kicker": "Clayface",
+      "title": "Clayface hoodie",
+      "note": "Clayface across the front of a Hot Topic zip hoodie.",
+      "url": "https://www.hottopic.com/product/dc-comics-batman-clayface-hoodie/36004920.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/36004920_hi",
+      "resolve_source": "hottopic-sku",
+      "price": 59.9,
+      "price_currency": "USD",
+      "price_max": 63.9
+    },
+    {
+      "id": "ht-lantern-logo",
+      "store": "hottopic",
+      "sku": "36796580",
+      "kicker": "Green Lantern",
+      "title": "Green Lantern logo t-shirt",
+      "note": "The Green Lantern emblem, from Hot Topic.",
+      "url": "https://www.hottopic.com/product/dc-comics-green-lantern-logo-t-shirt/36796580.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/36796580_hi",
+      "resolve_source": "hottopic-sku",
+      "price": 24.9,
+      "price_currency": "USD",
+      "price_max": 28.9
+    },
+    {
+      "id": "ht-doom-secret-wars",
+      "store": "hottopic",
+      "sku": "37103250",
+      "kicker": "Doctor Doom",
+      "title": "Secret Wars Doctor Doom t-shirt",
+      "note": "A Secret Wars comic cover with Doctor Doom, from Hot Topic.",
+      "url": "https://www.hottopic.com/product/marvel-secret-wars-doctor-doom-comic-t-shirt/37103250.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/37103250_hi",
+      "resolve_source": "hottopic-sku",
+      "price": 24.9,
+      "price_currency": "USD",
+      "price_max": 28.9
+    },
+    {
+      "id": "bl-miles-jersey",
+      "store": "boxlunch",
+      "sku": "36099914",
+      "kicker": "Miles Morales",
+      "title": "Miles Morales batting jersey",
+      "note": "Brooklyn Spider-Man jersey. BoxLunch exclusive.",
+      "url": "https://www.boxlunch.com/product/marvel-spider-man-miles-morales-batting-jersey---boxlunch-exclusive/36099914.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/36099914_hi",
+      "resolve_source": "boxlunch-sku",
+      "price": 49.9,
+      "price_currency": "USD"
+    },
+    {
+      "id": "bl-lantern-bomber",
+      "store": "boxlunch",
+      "sku": "35756042",
+      "kicker": "Green Lantern",
+      "title": "Green Lantern Corps bomber",
+      "note": "Corps patches on a bomber jacket. BoxLunch exclusive.",
+      "url": "https://www.boxlunch.com/product/dc-comics-green-lantern-corps-bomber-jacket---boxlunch-exclusive/35756042.html",
+      "image": "https://cdn.media.amplience.net/s/hottopic/35756042_hi",
+      "resolve_source": "boxlunch-sku",
+      "price": 99.9,
+      "price_currency": "USD"
+    }
+  ],
+  "collectibles": [
+    {
       "id": "legends-avengers",
       "kicker": "Avengers",
       "title": "Marvel Legends Avengers",
@@ -153,7 +330,9 @@
       "asin": "B0FHSK1N78",
       "image": "https://m.media-amazon.com/images/I/71CK3HW1yeL._AC_SL500_.jpg",
       "resolved_title": "Marvel Legends Series Thor | Avengers: Doomsday 6-Inch Figure",
-      "resolve_source": "amazon-search"
+      "resolve_source": "amazon-search",
+      "price": 27.97,
+      "price_currency": "USD"
     }
   ],
   "games": [

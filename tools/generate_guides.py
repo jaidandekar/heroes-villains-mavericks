@@ -14,6 +14,7 @@ from packs_xmen import XMEN_PACKS
 from packs_image import IMAGE_PACKS
 from packs_marvel_more import MARVEL_MORE_PACKS
 from packs_screen import SCREEN_PACKS
+from packs_slate_people import SLATE_PEOPLE_PACKS
 
 TOOLS = Path(__file__).resolve().parent
 REPO = TOOLS.parent
@@ -32,6 +33,30 @@ ACTIVE_GUIDE_IDS = {
     'x-men',
     'avengers',
     'doctor-doom',
+    'superman',
+    'peter-parker',
+    'miles-morales',
+    'hal-jordan',
+    'john-stewart',
+    'guy-gardner',
+    'sinestro',
+    'steve-rogers',
+    'thor',
+    'sam-wilson',
+    'bucky-barnes',
+    'scott-lang',
+    'yelena-belova',
+    'john-walker',
+    'ava-starr',
+    'alexei-shostakov',
+    'sentry',
+    'ultron',
+    'thomas-shepherd',
+    'paladin',
+    'jocasta',
+    'venom',
+    'batman',
+    'fantastic-four',
 }
 
 # Wide TMDB art used as the primary remote hero when a local header file is missing.
@@ -44,15 +69,51 @@ HERO_TMDB = {
     'vision': 'https://image.tmdb.org/t/p/w1280/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg',
     'clayface': 'https://image.tmdb.org/t/p/w1280/5jCpQnWPikggmQZoDp1eAi6BI6w.jpg',
     'doctor-doom': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'superman': 'https://image.tmdb.org/t/p/w1280/tYLgfKk3cEk7LskgxWyW37Nty01.jpg',
+    'peter-parker': 'https://image.tmdb.org/t/p/w1280/rAgl03cfcLgPSzeozownXAdhDkw.jpg',
+    'miles-morales': 'https://image.tmdb.org/t/p/w1280/9KAe39xqyZnv9J4W3DRGdQqX82h.jpg',
+    'hal-jordan': 'https://image.tmdb.org/t/p/w1280/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg',
+    'john-stewart': 'https://image.tmdb.org/t/p/w1280/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg',
+    'guy-gardner': 'https://image.tmdb.org/t/p/w1280/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg',
+    'sinestro': 'https://image.tmdb.org/t/p/w1280/6gqezQJ2mkm4jreWwLyOZy2Vf6i.jpg',
+    'steve-rogers': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'thor': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'sam-wilson': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'bucky-barnes': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'scott-lang': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'yelena-belova': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'john-walker': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'ava-starr': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'alexei-shostakov': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'sentry': 'https://image.tmdb.org/t/p/w1280/jzPwsojjFStf5lR5Nm07w2hH56G.jpg',
+    'ultron': 'https://image.tmdb.org/t/p/w1280/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg',
+    'thomas-shepherd': 'https://image.tmdb.org/t/p/w1280/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg',
+    'paladin': 'https://image.tmdb.org/t/p/w1280/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg',
+    'jocasta': 'https://image.tmdb.org/t/p/w1280/xK27l5uwaVyZSlENWnmLlWwDQNS.jpg',
+    'batman': 'https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg',
+    'fantastic-four': 'https://image.tmdb.org/t/p/w1280/s94NjfKkcSczZ1FembwmQZwsuwY.jpg',
 }
 
 
 def hero_remote_sources(pack_id: str) -> list[str]:
-    url = HERO_TMDB.get(pack_id)
-    return [url] if url else []
+    comic = {}
+    path = TOOLS / 'hero_comic_art.json'
+    if path.exists():
+        try:
+            comic = json.loads(path.read_text(encoding='utf-8'))
+        except (OSError, json.JSONDecodeError):
+            comic = {}
+    urls = []
+    cover = comic.get(pack_id)
+    if cover:
+        urls.append(cover)
+    still = HERO_TMDB.get(pack_id)
+    if still:
+        urls.append(still)
+    return urls
 
 _ALL_PACKS = (
-    DC_PACKS + MARVEL_PACKS + XMEN_PACKS + IMAGE_PACKS + MARVEL_MORE_PACKS + SCREEN_PACKS
+    DC_PACKS + MARVEL_PACKS + XMEN_PACKS + IMAGE_PACKS + MARVEL_MORE_PACKS + SCREEN_PACKS + SLATE_PEOPLE_PACKS
 )
 ALL_GENERATED_PACKS = [p for p in _ALL_PACKS if p['id'] in ACTIVE_GUIDE_IDS]
 
@@ -152,7 +213,29 @@ def emit_home_runs(slugs: list) -> str:
     for i in range(0, len(slugs), 4):
         chunks.append(', '.join(js_str(s) for s in slugs[i:i + 4]))
     inner = ',\n      '.join(chunks)
+    if not inner:
+        return '    const HOME_ESSENTIAL_RUNS = [];'
     return '    const HOME_ESSENTIAL_RUNS = [\n      %s\n    ];' % inner
+
+
+def load_reading() -> dict:
+    path = TOOLS / 'reading_covers.json'
+    if not path.exists():
+        return {'covers': {}, 'order': {}}
+    data = json.loads(path.read_text(encoding='utf-8'))
+    data.setdefault('covers', {})
+    data.setdefault('order', {})
+    return data
+
+
+def emit_cover_overrides(runs: dict, covers: dict) -> str:
+    lines = ['    const COVER_OVERRIDES = {']
+    for slug in runs:
+        url = covers.get(slug)
+        if url:
+            lines.append('      %s: %s,' % (js_str(slug), js_str(url)))
+    lines.append('    };')
+    return '\n'.join(lines)
 
 
 def emit_screen(groups: list) -> str:
@@ -274,6 +357,14 @@ def filter_buttons(types: dict) -> str:
 
 def transform(template: str, char: dict) -> str:
     t = template
+    reading = load_reading()
+    covers = reading['covers']
+    char = dict(char)
+    preferred = reading['order'].get(char['id']) or char['home_runs']
+    picked = [slug for slug in preferred if slug in char['runs'] and slug in covers][:6]
+    if not picked:
+        picked = [slug for slug in char['home_runs'] if slug in covers][:6]
+    char['home_runs'] = picked
     cid = char['id']
     folder = cid + '-guide'
     top_html = cid + '-guide.html'
@@ -355,7 +446,7 @@ def transform(template: str, char: dict) -> str:
         '    const ISSUE_COVER_OVERRIDES = {};',
         '',
         '    /* Curated cover URLs — tried first when available */',
-        '    const COVER_OVERRIDES = {};',
+        emit_cover_overrides(char['runs'], covers),
         '',
         '    /* Character art when a run cover is unavailable (version cards) */',
         emit_version_art(char['id']),
@@ -462,21 +553,15 @@ def transform(template: str, char: dict) -> str:
     old_verses = (
         "        '<h2>Batman in Different Verses</h2>' +\n"
         "        '<p>All ' + versions.length + ' versions across DC\\'s multiverse — Prime Earth, Elseworlds, the far future, and every alternate Dark Knight.</p>' +\n"
-        "        '</div><span class=\"section-badge\">' + versions.length + ' versions</span></div>' +"
+        "        '</div></div>' +"
     )
     new_verses = (
         "        '<h2>%s</h2>' +\n"
         "        '<p>All ' + versions.length + ' %s</p>' +\n"
-        "        '</div><span class=\"section-badge\">' + versions.length + ' versions</span></div>' +"
+        "        '</div></div>' +"
     ) % (char['verses_h2'], char['verses_p'].replace("'", "\\'"))
     t = replace_once(t, old_verses, new_verses, 'verses section')
 
-    t = replace_once(
-        t,
-        "        '<p>The most essential, best-selling Batman stories in print — from Frank Miller\\'s Year One and Dark Knight Returns to modern classics like Court of Owls and Hush.</p>' +",
-        "        '<p>%s</p>' +" % char['comics_p'].replace("'", "\\'"),
-        'comics copy',
-    )
     t = replace_once(
         t,
         "        '<p>Every major live-action and animated appearance — from the 1966 camp classic and Burton films to the DCAU, Nolan trilogy, and The Batman.</p>' +",

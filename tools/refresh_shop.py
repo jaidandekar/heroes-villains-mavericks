@@ -1,16 +1,15 @@
 #!/usr/bin/env python3
 """Resolve Screen Now shop products and render shop HTML sections.
 
-Related bestsellers must be tied to a real Amazon ASIN (SKU) and populated
-dynamically — never invent ASINs or ship fragile search-only links as "done".
+Related bestsellers must be tied to a real product SKU and that SKU's photo.
+Amazon uses an ASIN. Hot Topic and BoxLunch use their own product number.
+Never invent a SKU, a product URL, or a photo.
 
   1. Cached asin/image already in screen_shop.json
   2. Amazon Creators API / PA-API if configured in config.json
   3. Browser Amazon search → --merge-resolutions (comics/toys/games)
-  4. Unresolved items keep a search fallback + are reported by sku_coverage()
-
-Comics may use Open Library ISBN covers for art until ASIN packaging is known;
-the href still prefers /dp/ASIN whenever asin is set.
+  4. Items with no ASIN product image are left in the catalog and omitted
+     from the page. The section never renders a card without that image.
 
 By default this also patches shop sections into the live main page without
 re-running TMDB date classification (movie/streaming dates stay frozen).
@@ -21,6 +20,7 @@ Usage:
   python3 refresh_shop.py --merge-resolutions .cache/toy_resolutions.json
   python3 refresh_shop.py --force         # re-query even when asin present
   python3 refresh_shop.py --no-live-patch # fragment only
+  python3 refresh_shop.py --refresh-prices # pull each store's current price
 """
 from __future__ import annotations
 
@@ -77,21 +77,8 @@ def affiliate_tag(shop: dict, cfg: dict) -> str:
     )
 
 
-def amazon_search_url(query: str, tag: str) -> str:
-    return (
-        'https://www.amazon.com/s?k='
-        + urllib.parse.quote_plus(query)
-        + '&tag='
-        + urllib.parse.quote(tag)
-    )
-
-
 def amazon_dp_url(asin: str, tag: str) -> str:
     return f'https://www.amazon.com/dp/{asin}?tag={urllib.parse.quote(tag)}'
-
-
-def isbn_cover(isbn: str) -> str:
-    return f'https://covers.openlibrary.org/b/isbn/{isbn}-L.jpg'
 
 
 def larger_amazon_image(url: str | None) -> str | None:
@@ -198,46 +185,75 @@ def resolve_toys(shop: dict, cfg: dict, force: bool = False) -> tuple[int, int]:
     return resolved, skipped
 
 
-def render_shop_item(item: dict, tag: str, kind: str) -> str:
-    """Render one card. Prefer /dp/ASIN links; search URLs are fallback only."""
-    asin = (item.get('asin') or '').strip() or None
-    image = item.get('image')
-    title = item.get('resolved_title') or item.get('title') or ''
-    kicker = item.get('kicker') or ''
-    note = item.get('note') or ''
-    search = item.get('search') or title
+STORE_LABEL = {
+    'amazon': 'Amazon',
+    'hottopic': 'Hot Topic',
+    'boxlunch': 'BoxLunch',
+}
 
-    # Comics: ISBN cover is fine as art, but link must still prefer ASIN when known.
-    if kind == 'comics' and item.get('isbn') and not image:
-        image = isbn_cover(item['isbn'])
-    elif kind == 'comics' and item.get('isbn') and not asin:
-        # Keep ISBN art until ASIN packaging is resolved.
-        image = isbn_cover(item['isbn'])
+STORE_HOST = {
+    'hottopic': 'www.hottopic.com',
+    'boxlunch': 'www.boxlunch.com',
+}
 
-    if asin:
-        href = amazon_dp_url(asin, tag)
-    else:
-        # Fragile fallback — resolve ASIN before treating the section as done.
-        href = amazon_search_url(search, tag)
+STORE_ORDER = ('amazon', 'hottopic', 'boxlunch')
 
-    cta = 'Shop Amazon →' if asin else 'Find on Amazon →'
-    if image:
-        return (
-            f'        <a class="shop-item" href="{esc(href)}" target="_blank" rel="noopener sponsored">\n'
-            f'          <img class="shop-item-media" src="{esc(image)}" alt="{esc(title)}" width="88" height="120" loading="lazy">\n'
-            f'          <div class="shop-item-copy">\n'
-            f'            <span class="shop-kicker">{esc(kicker)}</span>\n'
-            f'            <span class="shop-title">{esc(item.get("title") or title)}</span>\n'
-            f'            <span class="shop-note">{esc(note)}</span>\n'
-            f'            <span class="shop-cta">{esc(cta)}</span>\n'
-            f'          </div>\n'
-            f'        </a>'
+
+def item_store(item: dict) -> str:
+    return (item.get('store') or 'amazon').strip()
+
+
+def has_sku_image(item: dict) -> bool:
+    """True when the card can show the photo that belongs to its store SKU."""
+    image = (item.get('image') or '').strip()
+    store = item_store(item)
+    if not image:
+        return False
+    if store == 'amazon':
+        asin = (item.get('asin') or '').strip()
+        return bool(asin) and any(
+            host in image
+            for host in ('media-amazon.com', 'ssl-images-amazon.com', 'images-amazon.com')
         )
+    host = STORE_HOST.get(store)
+    sku = (item.get('sku') or '').strip()
+    url = (item.get('url') or '').strip()
+    return bool(
+        host
+        and sku
+        and url.startswith(f'https://{host}/product/')
+        and 'cdn.media.amplience.net' in image
+    )
+
+
+def shop_href(item: dict, tag: str) -> str:
+    if item_store(item) == 'amazon':
+        return amazon_dp_url(item['asin'].strip(), tag)
+    return item['url'].strip()
+
+
+def render_shop_item(item: dict, tag: str, kind: str, kind_label: str = '') -> str:
+    """Render one card. Only products with a store SKU image qualify."""
+    if not has_sku_image(item):
+        return ''
+    store = item_store(item)
+    image = item['image'].strip()
+    title = item.get('resolved_title') or item.get('title') or ''
+    # Category only. The store is the "Shop …" link, and the product title names the character.
+    kicker = kind_label
+    note = item.get('note') or ''
+    href = shop_href(item, tag)
+    rel = 'noopener sponsored' if store == 'amazon' else 'noopener'
+    cta = f'Shop {STORE_LABEL.get(store, "the store")} →'
+    price = format_price(item)
+    price_html = f'            <span class="shop-price">{esc(price)}</span>\n' if price else ''
     return (
-        f'        <a class="shop-item shop-item--no-media" href="{esc(href)}" target="_blank" rel="noopener sponsored">\n'
+        f'        <a class="shop-item" href="{esc(href)}" target="_blank" rel="{rel}">\n'
+        f'          <img class="shop-item-media" src="{esc(image)}" alt="{esc(title)}" width="256" height="320" loading="lazy">\n'
         f'          <div class="shop-item-copy">\n'
         f'            <span class="shop-kicker">{esc(kicker)}</span>\n'
         f'            <span class="shop-title">{esc(item.get("title") or title)}</span>\n'
+        f'{price_html}'
         f'            <span class="shop-note">{esc(note)}</span>\n'
         f'            <span class="shop-cta">{esc(cta)}</span>\n'
         f'          </div>\n'
@@ -245,61 +261,226 @@ def render_shop_item(item: dict, tag: str, kind: str) -> str:
     )
 
 
-def render_section(section_id: str, heading: str, lede: str, items: list, tag: str, kind: str, disclosure: str) -> str:
-    body = '\n'.join(render_shop_item(it, tag, kind) for it in items)
-    return (
-        f'    <section class="section" id="{section_id}">\n'
-        f'      <div class="section-head">\n'
-        f'        <h2>{heading}</h2>\n'
-        f'        <p>{lede}</p>\n'
-        f'      </div>\n'
-        f'      <div class="shop-grid">\n'
-        f'{body}\n'
-        f'      </div>\n'
-        f'      <p class="shop-disclosure">{disclosure}</p>\n'
-        f'    </section>\n'
+def format_price(item: dict) -> str:
+    """Current store price. "From" when sizes of the same product are priced differently."""
+    amount = item.get('price')
+    if amount is None:
+        return ''
+    try:
+        low = float(amount)
+    except (TypeError, ValueError):
+        return ''
+    label = f'${low:.2f}'
+    high = item.get('price_max')
+    try:
+        high_amount = float(high) if high is not None else low
+    except (TypeError, ValueError):
+        high_amount = low
+    if high_amount - low > 0.009:
+        return f'From {label}'
+    return label
+
+
+def _fetch_html(url: str, user_agent: str) -> str:
+    request = urllib.request.Request(
+        url,
+        headers={
+            'User-Agent': user_agent,
+            'Accept-Language': 'en-US,en;q=0.9',
+            'Accept': 'text/html',
+        },
     )
+    with urllib.request.urlopen(request, timeout=30) as response:
+        return response.read().decode('utf-8', 'ignore')
+
+
+def _amazon_buybox_price(html: str) -> float | None:
+    match = re.search(
+        r'desktop_buybox_group_1":\[\{"displayPrice":"[^"]+","priceAmount":([0-9.]+)',
+        html,
+    )
+    return float(match.group(1)) if match else None
+
+
+def _store_offer_prices(html: str) -> list[float]:
+    """Prices from Hot Topic / BoxLunch offers that can be bought online."""
+    prices: list[float] = []
+
+    def walk(node) -> None:
+        if isinstance(node, dict):
+            if node.get('@type') == 'Offer' and node.get('price') is not None:
+                availability = str(node.get('availability') or '')
+                if availability.endswith('InStock') or availability.endswith('OnlineOnly'):
+                    prices.append(float(node['price']))
+            for value in node.values():
+                walk(value)
+        elif isinstance(node, list):
+            for value in node:
+                walk(value)
+
+    for block in re.findall(r'<script type="application/ld\+json">(.*?)</script>', html, re.S):
+        try:
+            walk(json.loads(block))
+        except (json.JSONDecodeError, TypeError, ValueError):
+            continue
+    return prices
+
+
+def refresh_prices(shop: dict, cfg: dict) -> tuple[int, int]:
+    """Write each product's current store price. Leave the last price if a fetch fails."""
+    user_agent = cfg.get('user_agent') or 'Mozilla/5.0'
+    updated = 0
+    missing = 0
+    for kind in ('toys', 'apparel', 'collectibles'):
+        for item in shop.get(kind) or []:
+            if not has_sku_image(item):
+                continue
+            store = item_store(item)
+            if store == 'amazon':
+                asin = (item.get('asin') or '').strip()
+                url = f'https://www.amazon.com/dp/{asin}' if asin else ''
+            else:
+                url = (item.get('url') or '').strip()
+            if not url:
+                continue
+            try:
+                html = _fetch_html(url, user_agent)
+                amounts = [_amazon_buybox_price(html)] if store == 'amazon' else _store_offer_prices(html)
+                amounts = [amount for amount in amounts if amount is not None]
+            except (urllib.error.URLError, TimeoutError, OSError, ValueError) as exc:
+                print(f'price {item["id"]}: kept previous ({type(exc).__name__})')
+                missing += 1
+                continue
+            if not amounts:
+                print(f'price {item["id"]}: no current price on the product page')
+                missing += 1
+                continue
+            low, high = min(amounts), max(amounts)
+            item['price'] = round(low, 2)
+            item['price_currency'] = 'USD'
+            if high - low > 0.009:
+                item['price_max'] = round(high, 2)
+            else:
+                item.pop('price_max', None)
+            updated += 1
+            print(f'price {item["id"]}: {format_price(item)}')
+    return updated, missing
+
+
+KIND_LABEL = {
+    'comics': 'Graphic novel',
+    'toys': 'Toys',
+    'apparel': 'Clothes',
+    'collectibles': 'Collectibles',
+}
+
+# Every priced product tied to a title on the page, not a short sample.
+TRENDING_LIMIT = 24
+
+# Characters in theaters, streaming, or coming soon. Supergirl and X-Men stay off this grid.
+SLATE_TERMS = (
+    'lantern',
+    'hal jordan',
+    'john stewart',
+    'clayface',
+    'vision',
+    'doom',
+    'doomsday',
+    'spider-man',
+    'peter parker',
+    'miles',
+    'superman',
+)
+
+
+def mix_stores(items: list[dict]) -> list[dict]:
+    """Alternate Amazon, Hot Topic, and BoxLunch so one store does not run first."""
+    groups: dict[str, list[dict]] = {store: [] for store in STORE_ORDER}
+    for item in items:
+        groups.setdefault(item_store(item), []).append(item)
+    mixed: list[dict] = []
+    while any(groups.values()):
+        for store in list(groups):
+            if groups[store]:
+                mixed.append(groups[store].pop(0))
+    return mixed
+
+
+def is_slate_item(item: dict) -> bool:
+    text = " ".join(str(item.get(key) or "") for key in ("id", "title", "kicker", "note")).lower()
+    if "supergirl" in text or "wolverine" in text or "x-men" in text:
+        return False
+    return any(term in text for term in SLATE_TERMS)
+
+
+def trending_items(shop: dict) -> list[tuple[str, dict]]:
+    """Priced merchandise for the characters on screen. Other catalog items stay off this grid."""
+    def keep(item: dict) -> bool:
+        return has_sku_image(item) and is_slate_item(item) and item.get('price') is not None
+
+    buckets = [
+        ('toys', mix_stores([it for it in (shop.get('toys') or []) if keep(it)])),
+        ('apparel', mix_stores([it for it in (shop.get('apparel') or []) if keep(it)])),
+        ('collectibles', mix_stores([it for it in (shop.get('collectibles') or []) if keep(it)])),
+    ]
+    mixed: list[tuple[str, dict]] = []
+    while any(items for _, items in buckets):
+        for kind, items in buckets:
+            if items:
+                mixed.append((kind, items.pop(0)))
+    return mixed[:TRENDING_LIMIT]
+
+
+def section_lede(kinds: set[str]) -> str:
+    labels = [
+        label
+        for kind, label in (
+            ('toys', 'Toys'),
+            ('apparel', 'clothes'),
+            ('collectibles', 'other collectibles'),
+        )
+        if kind in kinds
+    ]
+    if not labels:
+        return 'Products with a store photo.'
+    if len(labels) == 1:
+        word = labels[0]
+        return word[:1].upper() + word[1:] + '.'
+    if len(labels) == 2:
+        return f'{labels[0]} and {labels[1]}.'
+    return f'{", ".join(labels[:-1])}, and {labels[-1]}.'
 
 
 def render_all(shop: dict, cfg: dict) -> str:
     tag = affiliate_tag(shop, cfg)
-    parts = [
-        render_section(
-            'shop-comics',
-            'Bestsellers in comics &amp; graphic novels',
-            'Landmark trades resolved to Amazon product SKUs when available.',
-            shop.get('comics') or [],
-            tag,
-            'comics',
-            'As an Amazon Associate we earn from qualifying purchases.',
-        ),
-        render_section(
-            'shop-toys',
-            'Related bestsellers in toys &amp; collectibles',
-            'SKU-specific Funko and figures — each card is a resolved Amazon product.',
-            shop.get('toys') or [],
-            tag,
-            'toys',
-            'As an Amazon Associate we earn from qualifying purchases. Cards show official product packaging when an ASIN is resolved.',
-        ),
-        render_section(
-            'shop-games',
-            'Related bestsellers in video games',
-            'Named titles resolved to product SKUs with that game’s box art — not character placeholders.',
-            shop.get('games') or [],
-            tag,
-            'games',
-            'As an Amazon Associate we earn from qualifying purchases. Box art shown is for that named game title.',
-        ),
-    ]
-    return '\n'.join(parts)
+    items = trending_items(shop)
+    body = '\n'.join(
+        render_shop_item(item, tag, kind, KIND_LABEL.get(kind, ''))
+        for kind, item in items
+    )
+    stores = {item_store(item) for _, item in items}
+    disclosure = 'As an Amazon Associate we earn from qualifying purchases.'
+    if stores & {'hottopic', 'boxlunch'}:
+        disclosure += ' Hot Topic and BoxLunch links open those stores.'
+    return (
+        '    <section class="section" id="shop">\n'
+        '      <div class="section-head">\n'
+        '        <h2>Trending on Amazon, Hot Topic, and BoxLunch</h2>\n'
+        '        <p>Toys and clothes for the characters in theaters, streaming, and coming soon.</p>\n'
+        '      </div>\n'
+        '      <div class="shop-grid">\n'
+        f'{body}\n'
+        '      </div>\n'
+        f'      <p class="shop-disclosure">{esc(disclosure)}</p>\n'
+        '    </section>\n'
+    )
 
 
 def apply_browser_resolutions(shop: dict, resolutions: dict[str, dict]) -> int:
     """Merge agent/browser-resolved {id: {asin, image, resolved_title}} across comics/toys/games."""
     n = 0
     by_id: dict[str, dict] = {}
-    for kind in ('comics', 'toys', 'games'):
+    for kind in ('comics', 'toys', 'apparel', 'collectibles'):
         for it in shop.get(kind) or []:
             by_id[it['id']] = it
     for tid, hit in resolutions.items():
@@ -318,13 +499,16 @@ def apply_browser_resolutions(shop: dict, resolutions: dict[str, dict]) -> int:
 
 
 def sku_coverage(shop: dict) -> None:
-    for kind in ('comics', 'toys', 'games'):
+    comic_ids = [it['id'] for it in (shop.get('comics') or [])]
+    if comic_ids:
+        print(f'comics: {len(comic_ids)} kept in the catalog, not shown')
+    for kind in ('toys', 'apparel', 'collectibles'):
         items = shop.get(kind) or []
-        with_asin = sum(1 for it in items if it.get('asin'))
-        missing = [it['id'] for it in items if not it.get('asin')]
-        print(f'{kind}: {with_asin}/{len(items)} with ASIN')
-        if missing:
-            print(f'  unresolved (search-link fallback): {", ".join(missing)}')
+        shown = [it['id'] for it in items if has_sku_image(it)]
+        hidden = [it['id'] for it in items if not has_sku_image(it)]
+        print(f'{kind}: {len(shown)}/{len(items)} with SKU image')
+        if hidden:
+            print(f'  omitted (no SKU image): {", ".join(hidden)}')
 
 
 def patch_live_shop_sections(shop_html: str) -> bool:
@@ -341,7 +525,7 @@ def patch_live_shop_sections(shop_html: str) -> bool:
     else:
         # First-time inject: replace existing shop sections ahead of the footer.
         footer = '    <footer class="footer">'
-        idx = page.find('<section class="section" id="shop-comics">')
+        idx = page.find('<section class="section" id="shop">')
         foot = page.find(footer)
         if idx == -1 or foot == -1 or foot < idx:
             print('Could not locate shop sections in live page — skipped patch.')
@@ -367,6 +551,11 @@ def main() -> int:
         action='store_true',
         help='Only write screen_shop_sections.html; do not patch the live main page',
     )
+    parser.add_argument(
+        '--refresh-prices',
+        action='store_true',
+        help='Pull the current price from each product page before rendering',
+    )
     args = parser.parse_args()
 
     shop = load_json(SHOP_PATH)
@@ -390,6 +579,11 @@ def main() -> int:
                 'Add amazon.access_key, amazon.secret_key, amazon.partner_tag\n'
                 'or merge browser search results with --merge-resolutions.'
             )
+
+    if args.refresh_prices:
+        updated, missing = refresh_prices(shop, cfg)
+        save_json(SHOP_PATH, shop)
+        print(f'Prices updated {updated} · missing {missing}')
 
     html = render_all(shop, cfg)
     OUT_HTML.write_text(html, encoding='utf-8')

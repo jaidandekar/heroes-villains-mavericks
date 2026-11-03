@@ -262,8 +262,24 @@ def pack_green_lantern():
         ],
         "profile": {
             "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern",
-            "lead": "In brightest day, in blackest night \u2014 willpower forged into a weapon of light.",
-            "summary": "Green Lantern is the shared mantle of intergalactic peacekeepers wielding power rings fueled by will. Earth's most famous Lantern, Hal Jordan, debuted in Showcase #22 (1959), created by John Broome and Gil Kane. The mythos expanded into a cosmic Corps, an emotional spectrum of rival lanterns, and a roster of human ring-bearers from John Stewart to Jessica Cruz.",
+            "lead": "Green Lantern is a name several heroes have carried, not a single person.",
+            "summary": (
+                "The first was Alan Scott. Martin Nodell created him, with Bill Finger on the early stories, "
+                "and he debuted in All-American Comics #16 in 1940. After a train crash, Scott came into a magic lantern "
+                "and crafted a ring from it. He had to recharge that ring against the lantern, and he used it on ordinary "
+                "criminals before joining the Justice Society of America. His power was magic. The Lanterns who followed are something else.\n\n"
+                "The Green Lantern most readers know arrived in 1959. Writer John Broome and artist Gil Kane introduced Hal Jordan, "
+                "a test pilot, in Showcase #22. A dying alien, Abin Sur, passes him a power ring and the post of Green Lantern for Earth. "
+                "The ring belongs to the Green Lantern Corps, an interstellar law-enforcement agency overseen by the Guardians of the Universe. "
+                "Willpower is the fuel. The ring lets its wearer fly, and the green light it throws can become a force field or a solid object, "
+                "limited mostly by imagination and nerve. The oath that comes with it still opens the way readers know it: in brightest day, "
+                "in blackest night, no evil shall escape my sight.\n\n"
+                "Other officers have held the name since. Guy Gardner was next, remembered for a stubborn streak. John Stewart arrived in 1972, "
+                "written by Dennis O'Neil and drawn by Neal Adams: an architect chosen as Hal's backup, and one of DC's first Black superheroes. "
+                "He refused a mask. A later story gave him a past in the U.S. Marines. Kyle Rayner, an artist, took up a ring after the Corps was destroyed. "
+                "Simon Baz, Jessica Cruz, and Sojourner Mullein followed, the last of them posted to the Far Sector. The light stays green. The job is a sector of space.\n\n"
+                "Lanterns puts two of those officers, Hal Jordan and John Stewart, on a murder case in the American heartland."
+            ),
             "facts": [
                 {"label": "Notable bearers", "value": "Hal Jordan, John Stewart, Kyle Rayner"},
                 {"label": "First appearance", "value": "All-American Comics #16 (1940) / Showcase #22 (1959)"},
@@ -279,6 +295,7 @@ def pack_green_lantern():
             {
                 "group": "Live-action films",
                 "items": [
+                    screen_item("gl-lanterns", "Lanterns", "Hal Jordan and John Stewart · HBO", "https://en.wikipedia.org/wiki/Lanterns_(TV_series)", "https://www.imdb.com/title/tt26545992/", year="2026"),
                     screen_item("gl-2011", "Green Lantern", "Ryan Reynolds as Hal Jordan", "https://en.wikipedia.org/wiki/Green_Lantern_(film)", "https://www.imdb.com/title/tt1133985/", year="2011"),
                     screen_item("jl-2017-gl", "Justice League", "Cameo constructs; Snyder Cut expanded", "https://en.wikipedia.org/wiki/Justice_League_(film)", "https://www.imdb.com/title/tt0974015/", year="2017"),
                 ],
@@ -814,7 +831,12 @@ def pack_superman():
             {
                 "group": "Live-action films",
                 "items": [
+                    screen_item("man-of-tomorrow", "Man of Tomorrow", "David Corenswet \u00b7 in theaters July 9, 2027", "https://www.dc.com/blog/2025-09-03/superman-sequel-coming-to-theaters-in-2027", "https://www.imdb.com/find/?q=Man%20of%20Tomorrow%20Superman", year="2027"),
                     screen_item("superman-1978", "Superman", "Christopher Reeve \u00b7 Richard Donner", "https://en.wikipedia.org/wiki/Superman_(1978_film)", "https://www.imdb.com/title/tt0078346/", year="1978"),
+                    screen_item("superman-ii", "Superman II", "Christopher Reeve \u00b7 Richard Lester", "https://en.wikipedia.org/wiki/Superman_II", "https://www.imdb.com/title/tt0081573/", year="1980"),
+                    screen_item("superman-iii", "Superman III", "Christopher Reeve \u00b7 Richard Lester", "https://en.wikipedia.org/wiki/Superman_III", "https://www.imdb.com/title/tt0086393/", year="1983"),
+                    screen_item("superman-iv", "Superman IV: The Quest for Peace", "Christopher Reeve", "https://en.wikipedia.org/wiki/Superman_IV:_The_Quest_for_Peace", "https://www.imdb.com/title/tt0094074/", year="1987"),
+                    screen_item("superman-returns", "Superman Returns", "Brandon Routh \u00b7 Bryan Singer", "https://en.wikipedia.org/wiki/Superman_Returns", "https://www.imdb.com/title/tt0348150/", year="2006"),
                     screen_item("superman-man-steel", "Man of Steel", "Henry Cavill \u00b7 Zack Snyder", "https://en.wikipedia.org/wiki/Man_of_Steel_(film)", "https://www.imdb.com/title/tt0770828/", year="2013"),
                     screen_item("superman-2025", "Superman", "James Gunn DCU reboot", "https://en.wikipedia.org/wiki/Superman_(2025_film)", "https://www.imdb.com/title/tt5950044/", year="2025"),
                 ],

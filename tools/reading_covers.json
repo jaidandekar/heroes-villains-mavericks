@@ -1,0 +1,229 @@
+{
+  "covers": {
+    "batman-zoo": "https://covers.openlibrary.org/b/id/15113626-L.jpg",
+    "gl-secret-origin": "https://covers.openlibrary.org/b/id/7566401-L.jpg",
+    "emerald-twilight": "https://covers.openlibrary.org/b/id/798883-L.jpg",
+    "kingdom-come": "https://covers.openlibrary.org/b/id/798157-L.jpg",
+    "superman-new52-action": "https://covers.openlibrary.org/b/id/10345330-L.jpg",
+    "doom-ultimate-vol1": "https://covers.openlibrary.org/b/id/535928-L.jpg",
+    "sg-power": "https://covers.openlibrary.org/b/id/748758-L.jpg",
+    "cf-outsiders": "https://covers.openlibrary.org/b/id/1729503-L.jpg",
+    "cf-cassius": "https://covers.openlibrary.org/b/id/798348-L.jpg",
+    "vis-young-avengers": "https://covers.openlibrary.org/b/id/2626228-L.jpg",
+    "xmen-house-of-x": "https://covers.openlibrary.org/b/id/9409849-L.jpg",
+    "xmen-giant-size": "https://covers.openlibrary.org/b/id/9960343-L.jpg",
+    "xmen-days-of-future": "https://covers.openlibrary.org/b/id/535973-L.jpg",
+    "xmen-immortal": "https://covers.openlibrary.org/b/id/14763205-L.jpg",
+    "avg-infinity-gauntlet": "https://covers.openlibrary.org/b/id/661375-L.jpg",
+    "avg-new-avengers": "https://covers.openlibrary.org/b/id/8459963-L.jpg",
+    "avg-hickman-vol1": "https://covers.openlibrary.org/b/id/8861562-L.jpg",
+    "avg-disassembled": "https://covers.openlibrary.org/b/id/535996-L.jpg",
+    "avg-avengers-1": "https://covers.openlibrary.org/b/id/8460029-L.jpg",
+    "sm-kraven": "https://covers.openlibrary.org/b/id/12794300-L.jpg",
+    "sm-superior": "https://covers.openlibrary.org/b/id/8810551-L.jpg",
+    "pp-kraven": "https://covers.openlibrary.org/b/id/12794300-L.jpg",
+    "hal-origin": "https://covers.openlibrary.org/b/id/7566401-L.jpg",
+    "hal-twilight": "https://covers.openlibrary.org/b/id/798883-L.jpg",
+    "venom-rex": "https://covers.openlibrary.org/b/id/8813263-L.jpg",
+    "bucky-solo": "https://covers.openlibrary.org/b/id/13245305-L.jpg",
+    "thor-butcher": "https://covers.openlibrary.org/b/id/8459964-L.jpg",
+    "walker-solo": "https://covers.openlibrary.org/b/id/13558142-L.jpg",
+    "ava-namesake": "https://covers.openlibrary.org/b/id/9136482-L.jpg",
+    "ultron-unlimited": "https://covers.openlibrary.org/b/id/15150842-L.jpg",
+    "thomas-crusade": "https://covers.openlibrary.org/b/id/8354792-L.jpg",
+    "sam-cap": "https://covers.openlibrary.org/b/id/12738827-L.jpg",
+    "batman-dkr": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9116/1657463-1c.png",
+    "sinestro-corps-war": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3485643-01.jpg",
+    "gl-rebirth": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9241/384983-21531-129954-1-green-lantern-rebir.jpg",
+    "doom-infamous-iron-man": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5489492-01.jpg",
+    "doom-2099-vol1": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56044/1811308-doom_2099__1993__1.jpeg",
+    "ff-worlds-greatest": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4092294-01.jpg",
+    "ff-hickman-2": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6843035-9150347246-74880.jpg",
+    "ff-north": "https://comicvine.gamespot.com/a/uploads/scale_large/11159/111592040/9013622-9351001981-B0C2D.jpg",
+    "sg-woman-of-tomorrow": "https://comicvine.gamespot.com/a/uploads/scale_large/11156/111567728/8676903-supergirl-womanoftomorrow%282022%29.jpg",
+    "sg-new52-vol1": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3485595-01.jpg",
+    "sg-red-daughter": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4332740-05.jpg",
+    "sg-cosmic-8th": "https://comicvine.gamespot.com/a/uploads/scale_large/2/29350/634566-cosmic_cover.jpg",
+    "cf-payne": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4289908-01.jpg",
+    "vis-vision-quest": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4536818-01.jpg",
+    "vis-scarlets-1985": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9730541-cover.jpg",
+    "vis-scarlets-1982": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/9730541-cover.jpg",
+    "xmen-dark-phoenix": "https://comicvine.gamespot.com/a/uploads/scale_large/3/30497/1043983-dps.jpg",
+    "sm-miles-ultimate": "https://comicvine.gamespot.com/a/uploads/scale_large/11136/111368663/6702110-8975137338-MILES.jpg",
+    "mm-ultimate": "https://comicvine.gamespot.com/a/uploads/scale_large/11136/111368663/6702110-8975137338-MILES.jpg",
+    "mm-616": "https://comicvine.gamespot.com/a/uploads/scale_large/11161/111615891/10153977-cover.jpg",
+    "hal-rebirth": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9241/384983-21531-129954-1-green-lantern-rebir.jpg",
+    "sin-war": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3485643-01.jpg",
+    "sin-demon": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4328751-01.jpg",
+    "venom-lethal": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4897039-01.jpg",
+    "venom-birth": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5674133-01.jpg",
+    "steve-winter": "https://comicvine.gamespot.com/a/uploads/scale_large/2/22664/889750-steven_rogers.jpg",
+    "scott-second": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4655894-01.jpg",
+    "paladin-hfh": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4721777-01.jpg",
+    "jocasta-bride": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3656514-01.jpg",
+    "john-recharge": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/2513284-01.jpg",
+    "john-mosaic": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/32077-4742-35751-1-green-lantern-mosai.jpg",
+    "guy-warrior": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/71087-11894-104085-1-guy-gardner-warrior.jpg",
+    "yelena-ties": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/7933101-01.jpg",
+    "batman-year-one": "https://comicvine.gamespot.com/a/uploads/scale_large/6/64684/2356058-bmyo_dlx_dj.jpg",
+    "batman-owls": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6594972-01.jpg",
+    "blackest-night": "https://covers.openlibrary.org/b/id/9127963-L.jpg",
+    "infinite-crisis": "https://covers.openlibrary.org/b/id/2737782-L.jpg",
+    "doom-books-of-doom": "https://covers.openlibrary.org/b/id/536360-L.jpg",
+    "cf-face-the-face": "https://comicvine.gamespot.com/a/uploads/scale_large/1/11307/439979-batman_face_the_face_1_00.jpg",
+    "sentry-origin": "https://covers.openlibrary.org/b/id/535562-L.jpg",
+    "alexei-origin": "https://covers.openlibrary.org/b/id/7749641-L.jpg",
+    "vis-tom-king": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4887932-01.jpg",
+    "avg-secret-wars-2015": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5102699-01.jpg",
+    "sm-2099": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56044/1811820-spider_man_2099__1992_.jpeg",
+    "xmen-ultimate-vol1": "https://comicvine.gamespot.com/a/uploads/scale_large/3/31599/2692821-ultimatex_men_1.jpg",
+    "batman-beyond-vol1": "https://comicvine.gamespot.com/a/uploads/scale_large/5/58127/1595849-bat007.jpg",
+    "batman-knightquest": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6623595-01.jpg",
+    "batman-one-million": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9241/624848-6751_20051105081406_large.jpg",
+    "batman-darkest-knight": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4043975-01.jpg"
+  },
+  "order": {
+    "batman": [
+      "batman-zoo",
+      "batman-owls",
+      "batman-year-one",
+      "batman-dkr"
+    ],
+    "green-lantern": [
+      "sinestro-corps-war",
+      "blackest-night",
+      "gl-rebirth",
+      "gl-secret-origin",
+      "emerald-twilight"
+    ],
+    "superman": [
+      "kingdom-come",
+      "superman-new52-action",
+      "infinite-crisis"
+    ],
+    "doctor-doom": [
+      "doom-books-of-doom",
+      "doom-infamous-iron-man",
+      "doom-ultimate-vol1",
+      "doom-2099-vol1"
+    ],
+    "fantastic-four": [
+      "ff-worlds-greatest",
+      "ff-hickman-2",
+      "ff-north"
+    ],
+    "supergirl": [
+      "sg-woman-of-tomorrow",
+      "sg-new52-vol1",
+      "sg-red-daughter",
+      "sg-cosmic-8th",
+      "sg-power"
+    ],
+    "clayface": [
+      "cf-mudpack",
+      "cf-face-the-face",
+      "cf-payne",
+      "cf-outsiders",
+      "cf-cassius"
+    ],
+    "vision": [
+      "vis-tom-king",
+      "vis-vision-quest",
+      "vis-young-avengers",
+      "vis-scarlets-1985",
+      "vis-scarlets-1982"
+    ],
+    "x-men": [
+      "xmen-dark-phoenix",
+      "xmen-house-of-x",
+      "xmen-giant-size",
+      "xmen-days-of-future",
+      "xmen-immortal",
+      "xmen-ultimate-vol1"
+    ],
+    "avengers": [
+      "avg-infinity-gauntlet",
+      "avg-secret-wars-2015",
+      "avg-new-avengers",
+      "avg-hickman-vol1",
+      "avg-disassembled",
+      "avg-avengers-1"
+    ],
+    "spiderman": [
+      "sm-kraven",
+      "sm-miles-ultimate",
+      "sm-superior",
+      "sm-2099"
+    ],
+    "peter-parker": [
+      "pp-kraven"
+    ],
+    "miles-morales": [
+      "mm-ultimate",
+      "mm-616"
+    ],
+    "hal-jordan": [
+      "hal-rebirth",
+      "hal-origin",
+      "hal-twilight"
+    ],
+    "sinestro": [
+      "sin-war",
+      "sin-demon"
+    ],
+    "venom": [
+      "venom-lethal",
+      "venom-rex",
+      "venom-birth"
+    ],
+    "steve-rogers": [
+      "steve-winter"
+    ],
+    "bucky-barnes": [
+      "bucky-solo"
+    ],
+    "thor": [
+      "thor-butcher"
+    ],
+    "scott-lang": [
+      "scott-second"
+    ],
+    "john-walker": [
+      "walker-solo"
+    ],
+    "ava-starr": [
+      "ava-namesake"
+    ],
+    "alexei-shostakov": [
+      "alexei-origin"
+    ],
+    "sentry": [
+      "sentry-origin"
+    ],
+    "ultron": [
+      "ultron-unlimited"
+    ],
+    "thomas-shepherd": [
+      "thomas-crusade"
+    ],
+    "paladin": [
+      "paladin-hfh"
+    ],
+    "jocasta": [
+      "jocasta-bride"
+    ],
+    "john-stewart": [
+      "john-recharge",
+      "john-mosaic"
+    ],
+    "guy-gardner": [
+      "guy-warrior"
+    ],
+    "sam-wilson": [
+      "sam-cap"
+    ],
+    "yelena-belova": [
+      "yelena-ties"
+    ]
+  }
+}

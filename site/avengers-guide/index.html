@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://upload.wikimedia.org">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #ffffff;
@@ -21,22 +21,22 @@
       --surface-3: #ebebed;
       --border: #e4e4e7;
       --border-light: #f0f0f2;
-      --text: #1d1d1f;
+      --text: #1a1c1e;
       --text-secondary: #48484a;
-      --muted: #6e6e73;
-      --accent: #1d1d1f;
-      --accent-hover: #000000;
-      --link: #0066cc;
-      --link-hover: #004499;
+      --muted: #6a6e75;
+      --accent: #e4572e;
+      --accent-hover: #c2410c;
+      --link: #5BA4E6;
+      --link-hover: #3D8FD9;
       --radius: 16px;
       --radius-sm: 12px;
       --radius-pill: 999px;
       --shadow: 0 1px 2px rgba(0,0,0,0.04), 0 4px 16px rgba(0,0,0,0.06);
       --shadow-hover: 0 2px 4px rgba(0,0,0,0.06), 0 12px 32px rgba(0,0,0,0.1);
       --shadow-card: 0 6px 20px rgba(0,0,0,0.08);
-      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-      --ease: cubic-bezier(0.25, 0.1, 0.25, 1);
-      --content-max: min(1920px, calc(100vw - 4rem));
+      --font: 'Google Sans Flex', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --content-max: 72rem;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -282,22 +282,44 @@
       font-weight: 500;
     }
 
+    .intro-overview-head {
+      margin-bottom: 0.85rem;
+    }
+
     .intro-body {
-      max-width: 820px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.75rem 2.75rem;
+      align-items: start;
+      max-width: none;
+    }
+
+    .intro-copy {
+      min-width: 0;
     }
 
     .intro-summary {
       font-size: 1.0625rem;
       line-height: 1.7;
       color: var(--text-secondary);
-      margin-bottom: 2rem;
+      margin-bottom: 1.15rem;
+    }
+
+    .intro-copy .intro-summary:last-of-type {
+      margin-bottom: 1.35rem;
     }
 
     .intro-facts {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem 1.5rem;
-      margin-bottom: 1.5rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin: 0;
+    }
+
+    @media (min-width: 800px) {
+      .intro-body {
+        grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+      }
     }
 
     .intro-fact {
@@ -336,7 +358,79 @@
 
     .wiki-attribution:hover { color: var(--link-hover); text-decoration: underline; }
 
-    /* ── Home: essential runs row ── */
+    @media (min-width: 640px) { :root { --content-max: 78rem; } }
+    @media (min-width: 900px) { :root { --content-max: 88rem; } }
+    @media (min-width: 1280px) { :root { --content-max: 96rem; } }
+    @media (min-width: 1600px) { :root { --content-max: 108rem; } }
+
+    .shelf-stories { display: block; }
+    .shelf-story + .shelf-story { border-top: 1px solid rgba(26, 28, 30, 0.12); }
+    .shelf-story-row {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 1.15rem;
+      align-items: start;
+      padding: 1.15rem 0;
+      container-type: inline-size;
+    }
+    .shelf-story:first-of-type .shelf-story-row { padding-top: 0; }
+    .shelf-cover { display: block; line-height: 0; }
+    .shelf-story img {
+      width: auto;
+      height: calc((100cqi - 1.15rem) * 1.15 / 2.15 * 9 / 16);
+    }
+    .shelf-kicker {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #8a8f97;
+    }
+    .shelf-story h3 {
+      margin-top: 0.35rem;
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #000000;
+    }
+    .shelf-dek {
+      margin-top: 0.45rem;
+      color: #000000;
+      font-size: 0.95rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .shelf-blurb {
+      margin-top: 0.55rem;
+      max-width: 38rem;
+      color: #000000;
+      font-size: 0.95rem;
+      font-weight: 400;
+      line-height: 1.45;
+    }
+    .shelf-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+    .shelf-buy {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 0.85rem;
+      padding: 0.45rem 0.95rem;
+      border: 2px solid var(--link);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--link);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .shelf-actions .shelf-buy { margin-top: 0; }
+    .shelf-buy:hover { border-color: var(--link-hover); color: var(--link-hover); }
+    .shelf-buy:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
     .essential-runs-grid,
     .run-grid {
       display: grid;
@@ -367,26 +461,27 @@
     .screen-group:last-child { margin-bottom: 0; }
 
     .screen-group-title {
-      font-size: 0.8125rem;
-      font-weight: 600;
+      margin: 0 0 0.35rem;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      line-height: 1.2;
       text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      margin-bottom: 1rem;
-      padding-bottom: 0.5rem;
-      border-bottom: 1px solid var(--border-light);
+      color: #000000;
     }
 
     .screen-list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.85rem;
     }
 
-    @media (min-width: 900px) {
-      .screen-list {
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      }
+    @media (min-width: 720px) {
+      .screen-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (min-width: 1100px) {
+      .screen-list { grid-template-columns: repeat(5, minmax(0, 1fr)); }
     }
 
     .screen-item {
@@ -536,10 +631,12 @@
     }
 
     .section-header h2 {
-      font-size: 1.375rem;
-      font-weight: 600;
-      letter-spacing: -0.02em;
-      color: var(--text);
+      font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1.15;
+      text-transform: uppercase;
+      color: #000000;
     }
 
     .section-header p {
@@ -611,18 +708,322 @@
       outline-offset: 3px;
     }
 
+    /* Across the multiverse: full-bleed cover, copy over the art */
+    .verse-reel {
+      --now-bounce: cubic-bezier(0.18, 1.7, 0.32, 1);
+      margin: 0 0 5.75rem;
+      container-type: inline-size;
+      container-name: verse;
+    }
+    .verse-reel .now-reel-head {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+    .verse-reel .now-reel-head h2 {
+      font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+      font-weight: 900;
+      letter-spacing: 0.04em;
+      line-height: 1.15;
+      text-transform: uppercase;
+      color: #000000;
+    }
+    .verse-reel .now-reel-head p {
+      color: var(--muted);
+      font-size: 0.9375rem;
+      margin-top: 0.35rem;
+      line-height: 1.5;
+      max-width: 40rem;
+    }
+    .verse-reel .section-badge { display: none; }
+    .verse-reel .now-reel-window {
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      background: #12151a;
+      border: 1px solid rgba(26, 28, 30, 0.06);
+      box-shadow: 0 14px 34px rgba(26, 28, 30, 0.07);
+    }
+    .verse-reel .now-reel-track {
+      display: flex;
+      transition: transform 1.15s var(--now-bounce);
+    }
+    .verse-reel .now-slide {
+      position: relative;
+      flex: 0 0 100%;
+      min-width: 0;
+      min-height: 42rem;
+    }
+    .verse-reel .now-slide-still {
+      position: absolute;
+      inset: 0;
+      background: #1c2430;
+      overflow: hidden;
+    }
+    .verse-reel .now-slide-still::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(8, 10, 14, 0.84) 0%, rgba(8, 10, 14, 0.55) 46%, rgba(8, 10, 14, 0.12) 78%);
+    }
+    .verse-reel .now-slide-still img.now-still {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      position: absolute;
+      inset: 0;
+    }
+    .verse-reel .now-slide-copy {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.7rem;
+      min-height: 42rem;
+      padding: 4.15rem 1.2rem 1.5rem 0.9rem;
+      color: #ffffff;
+    }
+    .verse-reel .now-kicker {
+      max-width: 36rem;
+      font-size: 0.92rem;
+      font-weight: 700;
+      line-height: 1.35;
+      color: rgba(255, 255, 255, 0.92);
+    }
+    .verse-reel .now-title {
+      max-width: 38rem;
+      font-size: clamp(1.85rem, 4vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.02;
+      color: #ffffff;
+    }
+    .verse-reel .now-blurb {
+      max-width: 38rem;
+      font-size: 1.02rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.9);
+    }
+    .verse-reel .now-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: auto;
+    }
+    .verse-reel .now-links a {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.7rem 1.25rem;
+      border: 2px solid var(--link);
+      border-radius: 999px;
+      background: var(--link);
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .verse-reel .now-links a:hover {
+      border-color: var(--link-hover);
+      background: var(--link-hover);
+      color: #ffffff;
+    }
+    .verse-reel .now-links a:focus-visible {
+      outline: 2px solid #ffffff;
+      outline-offset: 3px;
+    }
+    .verse-reel .now-reel-switch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      margin-top: 0.75rem;
+    }
+    .verse-reel .now-arrow {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 999px;
+      border: 2.5px solid var(--muted);
+      background: #ffffff;
+      color: var(--muted);
+      font: inherit;
+      line-height: 1;
+      cursor: pointer;
+      transition: transform 0.5s var(--now-bounce), border-color 0.5s var(--now-bounce), color 0.5s var(--now-bounce);
+    }
+    .verse-reel .now-arrow svg { display: block; }
+    .verse-reel .now-arrow:hover,
+    .verse-reel .now-arrow:focus-visible {
+      border-color: var(--link);
+      color: var(--link);
+      transform: scale(1.12);
+    }
+    .verse-reel .now-picks {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.4rem;
+      min-width: 0;
+    }
+    .verse-reel .now-pick {
+      position: relative;
+      z-index: 0;
+      flex: none;
+      width: 1.75rem;
+      height: 0.7rem;
+      padding: 0;
+      border: 0;
+      border-radius: 3px;
+      background: rgba(26, 28, 30, 0.22);
+      color: transparent;
+      font: inherit;
+      cursor: pointer;
+      overflow: hidden;
+    }
+    .verse-reel .now-pick-label {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .verse-reel .now-pick[aria-selected="true"] {
+      width: 2.85rem;
+      background: var(--link);
+    }
+    .verse-reel .now-pick:hover,
+    .verse-reel .now-pick:focus-visible { background: var(--link); }
+    .verse-reel .now-pick:focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+    @media (min-width: 800px) {
+      .verse-reel .now-slide,
+      .verse-reel .now-slide-copy {
+        min-height: 36rem;
+        aspect-ratio: 2.1 / 1;
+      }
+      .verse-reel .now-slide-copy { padding: 4.15rem 1.75rem 1.7rem 0.9rem; }
+      .verse-reel .now-slide-still::after {
+        background: linear-gradient(90deg, rgba(8, 10, 14, 0.9) 0%, rgba(8, 10, 14, 0.64) 32%, rgba(8, 10, 14, 0.16) 58%, rgba(8, 10, 14, 0.05) 100%);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .verse-reel .now-reel-track,
+      .verse-reel .now-arrow,
+      .verse-reel .now-pick,
+      .verse-reel .now-pick::after { transition: none; }
+    }
+
     /* ── Homepage featured rows ── */
     .featured-version-rows {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 1.25rem;
+      grid-template-columns: 1fr;
+      gap: 0.85rem;
       margin-bottom: 1.75rem;
     }
 
-    @media (max-width: 900px) {
+    @media (min-width: 700px) {
       .featured-version-rows {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+    }
+
+    @media (min-width: 1100px) {
+      .featured-version-rows {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .verse-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.3rem;
+      min-width: 0;
+      padding: 0 0 1rem;
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+
+    .verse-card-art {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      margin-bottom: 0.65rem;
+      background: #1c2430;
+      overflow: hidden;
+    }
+
+    .verse-card-art img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 32%;
+      display: block;
+    }
+
+    .verse-card h3,
+    .verse-card-tagline,
+    .verse-card-desc,
+    .verse-card-amazon {
+      padding-left: 1.1rem;
+      padding-right: 1.1rem;
+    }
+
+    .verse-card h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.25;
+      color: var(--text);
+    }
+
+    .verse-card-tagline {
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: 600;
+      line-height: 1.35;
+      color: var(--text-secondary);
+    }
+
+    .verse-card-desc {
+      margin: 0.2rem 0 0;
+      font-size: 0.875rem;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .verse-card-amazon {
+      margin-top: auto;
+      padding-top: 0.7rem;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    .verse-card-amazon:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
     }
 
     .featured-version-row {
@@ -1802,7 +2203,7 @@
   <script>
     const AFFILIATE_TAG = 'YOURTAG-20';
     /* Wide/cinematic hero fallbacks (TMDB etc). Local header file is tried first. */
-    const HERO_REMOTE_SOURCES = ["https://image.tmdb.org/t/p/w1280/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"];
+    const HERO_REMOTE_SOURCES = ["https://comicvine.gamespot.com/a/uploads/scale_large/11/110017/10004106-wwww.jpg", "https://image.tmdb.org/t/p/w1280/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg"];
 
     const RUN_ISBN = {
       "avg-avengers-1": "9780785188360",
@@ -1817,12 +2218,8 @@
     };
 
     const versions = [
-      { slug: "founders", name: "Founding Avengers", universe: "Earth-616", type: "classic", firstAppearance: "Avengers #1 (1963)", tagline: "Assemble!", description: "Thor, Iron Man, Ant-Man, Wasp, and Hulk answer a call — Marvel's flagship team is born.", wikipedia: "https://en.wikipedia.org/wiki/Avengers_(comics)", runs: ["avg-avengers-1","avg-kooky-quartet"] },
-      { slug: "kooky-quartet", name: "Kooky Quartet", universe: "Earth-616", type: "classic", firstAppearance: "Avengers #16 (1965)", tagline: "Cap's new team", description: "Captain America leads Hawkeye, Scarlet Witch, and Quicksilver — the underdog Avengers.", wikipedia: "https://en.wikipedia.org/wiki/Avengers_(comics)", runs: ["avg-kooky-quartet","avg-buscema"] },
-      { slug: "bendis-new", name: "New Avengers", universe: "Earth-616", type: "modern", firstAppearance: "New Avengers #1 (2005)", tagline: "Street-level assemble", description: "Bendis rebuilds the team after Disassembled — Luke Cage, Spider-Man, Wolverine, and secrets.", wikipedia: "https://en.wikipedia.org/wiki/New_Avengers", runs: ["avg-disassembled","avg-new-avengers"] },
-      { slug: "hickman-avengers", name: "Hickman Avengers", universe: "Earth-616", type: "modern", firstAppearance: "Avengers #1 (2012)", tagline: "Time runs out", description: "Jonathan Hickman's grand Avengers / New Avengers epic ends in Secret Wars.", wikipedia: "https://en.wikipedia.org/wiki/Avengers_(comic_book)#Jonathan_Hickman_run", runs: ["avg-hickman-vol1","avg-secret-wars-2015"] },
-      { slug: "ultimates", name: "The Ultimates", universe: "Earth-1610", type: "ultimate", firstAppearance: "The Ultimates #1 (2002)", tagline: "Authority-style heroes", description: "Millar and Hitch's Ultimate Avengers — celebrity soldiers, geopolitics, and style.", wikipedia: "https://en.wikipedia.org/wiki/Ultimates", runs: ["avg-ultimates-vol1"] },
-      { slug: "mcu-avengers", name: "MCU Avengers", universe: "Earth-199999", type: "alternate", firstAppearance: "The Avengers (2012)", tagline: "Movie assemble", description: "The screen team that made Assemble a global chant — from 2012 through Endgame and Doomsday.", wikipedia: "https://en.wikipedia.org/wiki/Avengers_(Marvel_Cinematic_Universe)", runs: ["avg-infinity-gauntlet","avg-secret-wars-2015"] },
+      { slug: "founders", name: "Earth-616 Avengers", universe: "Earth-616", type: "classic", firstAppearance: "Avengers #1 (1963)", tagline: "Assemble!", description: "Thor, Iron Man, Ant-Man, the Wasp, and the Hulk answer a call. Later lineups, including the New Avengers and Hickman's run, are this same team.", wikipedia: "https://en.wikipedia.org/wiki/Avengers_(comics)", runs: ["avg-avengers-1","avg-secret-wars-2015"] },
+      { slug: "ultimates", name: "The Ultimates", universe: "Earth-1610", type: "ultimate", firstAppearance: "The Ultimates #1 (2002)", tagline: "Authority-style heroes", description: "Millar and Hitch's Ultimate Avengers — a different universe from the Earth-616 team.", wikipedia: "https://en.wikipedia.org/wiki/Ultimates", runs: ["avg-ultimates-vol1"] },
     ];
 
     const runs = {
@@ -1843,7 +2240,14 @@
     const ISSUE_COVER_OVERRIDES = {};
 
     /* Curated cover URLs — tried first when available */
-    const COVER_OVERRIDES = {};
+    const COVER_OVERRIDES = {
+      "avg-avengers-1": "https://covers.openlibrary.org/b/id/8460029-L.jpg",
+      "avg-disassembled": "https://covers.openlibrary.org/b/id/535996-L.jpg",
+      "avg-new-avengers": "https://covers.openlibrary.org/b/id/8459963-L.jpg",
+      "avg-hickman-vol1": "https://covers.openlibrary.org/b/id/8861562-L.jpg",
+      "avg-secret-wars-2015": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5102699-01.jpg",
+      "avg-infinity-gauntlet": "https://covers.openlibrary.org/b/id/661375-L.jpg",
+    };
 
     /* Character art when a run cover is unavailable (version cards) */
     const VERSION_ART = {
@@ -2084,9 +2488,9 @@
       var isbn13 = RUN_ISBN[slug];
       var isbn10 = isbn13 ? isbn13.replace(/^978/, '') : null;
       var asin = getRunAsin(slug);
-      var urls = getRunLocalImagePaths(slug).concat([localRunCover(slug)]);
-
+      var urls = [];
       if (COVER_OVERRIDES[slug]) urls.push(COVER_OVERRIDES[slug]);
+      urls = urls.concat(getRunLocalImagePaths(slug)).concat([localRunCover(slug)]);
 
       if (isbn13) {
         urls.push('https://covers.openlibrary.org/b/isbn/' + isbn13 + '-L.jpg?default=false');
@@ -2117,6 +2521,7 @@
       if (!version) return [];
       var runSlug = getVersionCoverSlug(version);
       var urls = [];
+      if (runSlug && COVER_OVERRIDES[runSlug]) urls.push(COVER_OVERRIDES[runSlug]);
       // Multiverse: try real run art first (finale, then trade). Avoid leading with
       // usually-missing version alias paths — those 404s burn the fallback chain on host.
       if (runSlug) urls.push(localRunFinaleCover(runSlug));
@@ -2237,7 +2642,7 @@
         img.dataset.featuredWiki = 'true';
         img.style.display = '';
         if (img.parentElement) img.parentElement.classList.remove('no-img');
-        if (isRemoteImageUrl(url)) img.crossOrigin = 'anonymous';
+        img.removeAttribute('crossorigin');
         img.onload = function() { applyFeaturedThemeFromImg(img); };
         img.src = url;
       }).catch(function() {
@@ -2694,6 +3099,22 @@
       return v.runs && v.runs[0] ? v.runs[0] : null;
     }
 
+    function renderShelfRun(runSlug) {
+      var run = runs[runSlug];
+      if (!run) return '';
+      var version = getVersion(run.versionSlug);
+      var kicker = version ? version.name : (run.era || 'Graphic novel');
+      var img = imgTag(runSlug, run.title);
+      var cover = img ? '<span class="shelf-cover">' + img + '</span>' : '';
+      return '<article class="shelf-story"><div class="shelf-story-row">' + cover +
+        '<div><p class="shelf-kicker">' + kicker + '</p>' +
+        '<h3>' + run.title + '</h3>' +
+        '<p class="shelf-dek">' + run.creators + '</p>' +
+        (run.summary ? '<p class="shelf-blurb">' + run.summary + '</p>' : '') +
+        '<a class="shelf-buy" href="' + amazonSearchUrl(run.title) + '" target="_blank" rel="noopener sponsored">Find on Amazon</a>' +
+        '</div></div></article>';
+    }
+
     function renderRunCard(runSlug, showCharacter) {
       var run = runs[runSlug];
       if (!run) return '';
@@ -2739,9 +3160,8 @@
     /* Best-selling / landmark graphic novels & runs for the home page */
 
     const HOME_ESSENTIAL_RUNS = [
-      "avg-avengers-1", "avg-infinity-gauntlet", "avg-new-avengers", "avg-hickman-vol1",
-      "avg-disassembled", "avg-secret-wars-2015", "avg-ultimates-vol1", "avg-kooky-quartet",
-      "avg-buscema"
+      "avg-infinity-gauntlet", "avg-secret-wars-2015", "avg-new-avengers", "avg-hickman-vol1",
+      "avg-disassembled", "avg-avengers-1"
     ];
 
 
@@ -2753,6 +3173,8 @@
         group: "Live-action films",
         items: [
           { id: "avg-2012", title: "The Avengers", year: "2012", note: "Joss Whedon", wikipedia: "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)", imdb: "https://www.imdb.com/title/tt0848228/" },
+          { id: "avg-ultron", title: "Avengers: Age of Ultron", year: "2015", note: "Joss Whedon", wikipedia: "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron", imdb: "https://www.imdb.com/title/tt2395427/" },
+          { id: "avg-infinity", title: "Avengers: Infinity War", year: "2018", note: "Russo brothers", wikipedia: "https://en.wikipedia.org/wiki/Avengers:_Infinity_War", imdb: "https://www.imdb.com/title/tt4154756/" },
           { id: "avg-endgame", title: "Avengers: Endgame", year: "2019", note: "Russo brothers", wikipedia: "https://en.wikipedia.org/wiki/Avengers:_Endgame", imdb: "https://www.imdb.com/title/tt4154796/" },
           { id: "avg-doomsday", title: "Avengers: Doomsday", year: "2026", note: "Russo brothers · Doom", wikipedia: "https://en.wikipedia.org/wiki/Avengers:_Doomsday", imdb: "https://www.imdb.com/title/tt21361794/" },
         ]
@@ -2774,7 +3196,7 @@
           '<span class="intro-fact-value">' + f.value + '</span></div>';
       }).join('');
       var localHero = imageRoot() + "avengers-homepage-header-image.jpg";
-      var sources = [localHero].concat(HERO_REMOTE_SOURCES || []);
+      var sources = (HERO_REMOTE_SOURCES || []).concat(localHero ? [localHero] : []);
       if (versions && versions[0]) {
         sources = sources.concat(getVersionCoverSources(versions[0].slug).slice(0, 2));
       }
@@ -2794,10 +3216,16 @@
         '<h1>Who are the Avengers?</h1>' +
         '<p class="intro-lead">' + p.lead + '</p>' +
         '</div></div>' +
+        '<div class="section-header intro-overview-head"><div>' +
+        '<h2>Overview</h2></div></div>' +
         '<div class="intro-body">' +
-        '<p class="intro-summary">' + p.summary + '</p>' +
-        '<div class="intro-facts">' + factsHtml + '</div>' +
+        '<div class="intro-copy">' +
+        String(p.summary || '').split(/\n\n+/).filter(Boolean).map(function (part) {
+          return '<p class="intro-summary">' + part + '</p>';
+        }).join('') +
         '<a class="wiki-attribution" href="' + p.wikipedia + '" target="_blank" rel="noopener">Facts sourced from Wikipedia →</a>' +
+        '</div>' +
+        '<div class="intro-facts">' + factsHtml + '</div>' +
         '</div></section>';
     }
 
@@ -2808,26 +3236,61 @@
       return html ? '<div class="featured-version-rows">' + html + '</div>' : '';
     }
 
+    function renderVerseSlide(v, i) {
+      var cacheKey = 'version:' + v.slug;
+      COVER_SOURCES[cacheKey] = getVersionCoverSources(v.slug);
+      var sources = COVER_SOURCES[cacheKey] || [];
+      var img = sources.length
+        ? '<img class="now-still" src="' + sources[0] + '" alt="" width="1280" height="720" loading="' + (i === 0 ? 'eager' : 'lazy') + '" referrerpolicy="no-referrer" data-cover-key="' + escAttr(cacheKey) + '" data-cover-idx="0" onerror="tryNextCover(this)">'
+        : '';
+      var primary = (v.runs || [])[0];
+      var run = primary ? getRun(primary) : null;
+      var amazon = (run && run.title)
+        ? '<p class="now-links"><a href="' + amazonSearchUrl(run.title) + '" target="_blank" rel="noopener sponsored">Find on Amazon</a></p>'
+        : '';
+      var kicker = v.universe || '';
+      return '<article class="now-slide" id="verse-' + v.slug + '" role="tabpanel" aria-labelledby="verse-tab-' + v.slug + '">' +
+        '<div class="now-slide-still">' + img + '</div>' +
+        '<div class="now-slide-copy">' +
+        (kicker ? '<p class="now-kicker">' + kicker + '</p>' : '') +
+        '<h3 class="now-title">' + v.name + '</h3>' +
+        (v.description ? '<p class="now-blurb">' + v.description + '</p>' : '') +
+        amazon +
+        '</div></article>';
+    }
+
+    function renderVersePick(v, i) {
+      return '<button class="now-pick" type="button" role="tab" id="verse-tab-' + v.slug + '" aria-controls="verse-' + v.slug + '" aria-selected="' + (i === 0 ? 'true' : 'false') + '"' + (i === 0 ? '' : ' tabindex="-1"') + ' aria-label="' + escAttr(v.name) + '"><span class="now-pick-label">' + v.name + '</span></button>';
+    }
+
     function renderVersesSection() {
-      return '<section class="home-section section" id="verses">' +
-        '<div class="section-header"><div>' +
+      var slides = versions.map(renderVerseSlide).join('');
+      var picks = versions.map(renderVersePick).join('');
+      var nav = versions.length > 1
+        ? '<div class="now-reel-switch">' +
+          '<button class="now-arrow" type="button" data-now-prev aria-label="Previous version"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M12.25 4.25 6.5 10l5.75 5.75" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
+          '<div class="now-picks" role="tablist" aria-label="Versions">' + picks + '</div>' +
+          '<button class="now-arrow" type="button" data-now-next aria-label="Next version"><svg viewBox="0 0 20 20" width="18" height="18" aria-hidden="true"><path d="M7.75 4.25 13.5 10l-5.75 5.75" fill="none" stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>' +
+          '</div>'
+        : '';
+      return '<section class="home-section now-reel verse-reel" id="verses" data-now-reel aria-roledescription="carousel" aria-label="Across the multiverse">' +
+        '<div class="now-reel-head"><div>' +
         '<h2>Avengers Across the Eras</h2>' +
-        '<p>All ' + versions.length + ' eras of Earth\'s Mightiest Heroes — founding members, Kooky Quartet, Bendis New Avengers, Hickman, Ultimates, and the MCU.</p>' +
-        '</div><span class="section-badge">' + versions.length + ' versions</span></div>' +
-        renderFeaturedVersionRows(versions) +
+        '<p>All ' + versions.length + ' versions Marvel publishes as separate universes: the Earth-616 Avengers and the Ultimates.</p>' +
+        '</div></div>' +
+        '<div class="now-reel-window">' +
+        '<div class="now-reel-track">' + slides + '</div></div>' +
+        nav +
         '</section>';
     }
 
     function renderEssentialRunsSection() {
-      var cardsHtml = HOME_ESSENTIAL_RUNS.map(function(slug) {
-        return renderRunCard(slug, true);
-      }).join('');
+      var picks = HOME_ESSENTIAL_RUNS.filter(function (slug) { return runs[slug]; }).slice(0, 6);
+      if (!picks.length) return '';
+      var stories = picks.map(renderShelfRun).join('');
       return '<section class="home-section section" id="graphic-novels">' +
-        '<div class="section-header"><div>' +
-        '<h2>Graphic Novels &amp; Comic Runs</h2>' +
-        '<p>Essential Avengers stories — from Avengers #1 through Infinity Gauntlet, Disassembled, Hickman\'s run, and Secret Wars.</p>' +
-        '</div><span class="section-badge">' + HOME_ESSENTIAL_RUNS.length + ' essentials</span></div>' +
-        '<div class="essential-runs-grid">' + cardsHtml + '</div></section>';
+        '<div class="section-header"><h2>Required reading</h2></div>' +
+        '<div class="shelf-stories">' + stories + '</div></section>';
     }
 
     function renderScreenItem(item) {
@@ -2838,69 +3301,42 @@
       return '<article class="screen-item">' +
         screenPosterTag(item) +
         '<div class="screen-item-body">' +
+        (when ? '<p class="screen-item-meta">' + when + '</p>' : '') +
         '<h3>' + item.title + '</h3>' +
-        '<p class="screen-item-meta">' + when + (item.note ? ' · ' + item.note : '') + '</p>' +
+        (item.note ? '<p class="screen-item-meta">' + item.note + '</p>' : '') +
         (links.length ? '<div class="screen-item-links">' + links.join('') + '</div>' : '') +
         '</div></article>';
     }
 
     function renderScreenSection() {
-      var groupsHtml = BATMAN_SCREEN.map(function(g) {
-        return '<div class="screen-group">' +
-          '<h3 class="screen-group-title">' + g.group + '</h3>' +
-          '<div class="screen-list">' + g.items.map(renderScreenItem).join('') + '</div></div>';
-      }).join('');
-      var totalCount = BATMAN_SCREEN.reduce(function(n, g) { return n + g.items.length; }, 0);
+      var items = [];
+      BATMAN_SCREEN.forEach(function(g) { items = items.concat(g.items || []); });
+      if (!items.length) return '';
       return '<section class="home-section section" id="on-screen">' +
         '<div class="section-header"><div>' +
         '<h2>Movies &amp; TV Series</h2>' +
         '<p>Live-action and animated appearances — from the MCU saga and Avengers: Doomsday to classic cartoons.</p>' +
-        '</div><span class="section-badge">' + totalCount + ' titles</span></div>' +
-        groupsHtml + '</section>';
+        '</div></div>' +
+        '<div class="screen-list">' + items.map(renderScreenItem).join('') + '</div></section>';
     }
 
     function renderFeaturedVersionRow(v) {
       var desc = v.description || '';
-      var copyId = 'featured-copy-' + v.slug;
-      var theme = getFeaturedThemeColor(v.slug, null);
-      var overlayStyle = ' style="background:' + buildFeaturedOverlayGradient(theme) + '"';
-      var copyClass = 'featured-version-copy featured-version-copy--on-dark';
-      var mediaNote = v.media && v.media.length
-        ? '<span>Also in Movies &amp; TV below</span>'
-        : '';
-      var wikiAttr = v.wikipedia ? ' data-wikipedia="' + escAttr(v.wikipedia) + '"' : '';
-      var maxRuns = 3;
-      var visibleRuns = (v.runs || []).slice(0, maxRuns);
-      var shopBlocks = visibleRuns.map(function(runSlug) {
-        var run = getRun(runSlug);
-        if (!run) return '';
-        var links = runShopLinksHtml(runSlug);
-        if (!links) return '';
-        return '<div class="featured-version-shop" data-run="' + escAttr(runSlug) + '">' +
-          '<span class="featured-version-more-runs">' + run.title + '</span>' + links + '</div>';
-      }).join('');
-      if ((v.runs || []).length > maxRuns) {
-        shopBlocks += '<span class="featured-version-more-runs">+' + (v.runs.length - maxRuns) + ' more collected edition' + (v.runs.length - maxRuns === 1 ? '' : 's') + ' in Graphic Novels below</span>';
+      var primary = (v.runs || [])[0];
+      var run = primary ? getRun(primary) : null;
+      var amazon = '';
+      if (run && run.title) {
+        amazon = '<a class="verse-card-amazon" href="' + amazonSearchUrl(run.title) + '" target="_blank" rel="noopener sponsored">Find on Amazon →</a>';
       }
-      var runsNote = (v.runs && v.runs.length)
-        ? '<span>' + v.runs.length + ' essential run' + (v.runs.length === 1 ? '' : 's') + '</span>'
-        : '';
-      return '<section class="featured-version-row" id="featured-' + v.slug + '" data-type="' + v.type + '">' +
-        '<div class="featured-version-link featured-version-link--static" data-slug="' + v.slug + '">' +
-        '<div class="featured-version-bg">' + featuredImgTag(v.slug, v.name, copyId) + '</div>' +
-        '<div class="featured-version-overlay"' + overlayStyle + '></div>' +
-        '<div class="' + copyClass + '" id="' + copyId + '">' +
-        '<span class="featured-version-label">' + (typeLabels[v.type] || v.type) + '</span>' +
-        '<h2>' + v.name + '</h2>' +
-        '<p class="featured-version-tagline">' + v.tagline + '</p>' +
-        '<p class="featured-version-desc"' + wikiAttr + '>' + desc + '</p>' +
-        '<div class="featured-version-meta">' +
-        '<span>' + v.universe + '</span>' +
-        runsNote +
-        mediaNote +
-        '<span>' + v.firstAppearance + '</span></div>' +
-        shopBlocks +
-        '</div></div></section>';
+      var art = featuredImgTag(v.slug, v.name, 'featured-copy-' + v.slug);
+      var artHtml = art ? '<div class="verse-card-art">' + art + '</div>' : '';
+      return '<article class="verse-card" id="featured-' + v.slug + '">' +
+        artHtml +
+        '<h3>' + v.name + '</h3>' +
+        '<p class="verse-card-tagline">' + v.tagline + '</p>' +
+        '<p class="verse-card-desc">' + desc + '</p>' +
+        amazon +
+        '</article>';
     }
 
     function renderHome() {
@@ -2988,6 +3424,96 @@
       });
     }
 
+    function initNowReels() {
+      if (!window.__verseReelPage) {
+        window.__verseReelPage = true;
+        document.addEventListener('visibilitychange', function () {
+          document.querySelectorAll('[data-now-reel]').forEach(function (root) {
+            if (typeof root._arm === 'function') root._arm();
+          });
+        });
+        var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        if (motion.addEventListener) {
+          motion.addEventListener('change', function () {
+            document.querySelectorAll('[data-now-reel]').forEach(function (root) {
+              if (typeof root._arm === 'function') root._arm();
+            });
+          });
+        }
+      }
+      document.querySelectorAll('[data-now-reel]').forEach(function (root) {
+        if (root.dataset.reelBound) return;
+        root.dataset.reelBound = 'true';
+        var track = root.querySelector('.now-reel-track');
+        var slides = Array.prototype.slice.call(root.querySelectorAll('.now-slide'));
+        var picks = Array.prototype.slice.call(root.querySelectorAll('.now-pick'));
+        var countEl = root.querySelector('[data-now-count]');
+        var prev = root.querySelector('[data-now-prev]');
+        var next = root.querySelector('[data-now-next]');
+        if (!track || !slides.length) return;
+        var index = 0;
+        var timer = 0;
+        var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        function show(nextIndex) {
+          index = (nextIndex + slides.length) % slides.length;
+          track.style.transform = 'translateX(' + (-index * 100) + '%)';
+          slides.forEach(function (slide, i) {
+            var on = i === index;
+            slide.setAttribute('aria-hidden', on ? 'false' : 'true');
+            if (on) slide.removeAttribute('inert');
+            else slide.setAttribute('inert', '');
+          });
+          picks.forEach(function (pick, i) {
+            var on = i === index;
+            pick.setAttribute('aria-selected', on ? 'true' : 'false');
+            pick.tabIndex = on ? 0 : -1;
+          });
+          if (countEl) countEl.textContent = String(index + 1);
+        }
+
+        function paused() {
+          return motion.matches || document.hidden || root.matches(':hover') || root.contains(document.activeElement);
+        }
+
+        function arm() {
+          window.clearTimeout(timer);
+          timer = 0;
+          if (slides.length < 2 || paused()) return;
+          timer = window.setTimeout(function () {
+            show(index + 1);
+            arm();
+          }, 10000);
+        }
+
+        function go(nextIndex) {
+          show(nextIndex);
+          arm();
+        }
+
+        root._arm = arm;
+        if (prev) prev.addEventListener('click', function () { go(index - 1); });
+        if (next) next.addEventListener('click', function () { go(index + 1); });
+        picks.forEach(function (pick, i) {
+          pick.addEventListener('click', function () { go(i); });
+          pick.addEventListener('keydown', function (event) {
+            if (event.key !== 'ArrowRight' && event.key !== 'ArrowLeft') return;
+            event.preventDefault();
+            var dest = event.key === 'ArrowRight' ? i + 1 : i - 1;
+            dest = (dest + picks.length) % picks.length;
+            go(dest);
+            picks[dest].focus();
+          });
+        });
+        root.addEventListener('mouseenter', arm);
+        root.addEventListener('mouseleave', arm);
+        root.addEventListener('focusin', arm);
+        root.addEventListener('focusout', function () { window.setTimeout(arm, 0); });
+        show(0);
+        if (slides.length > 1) arm();
+      });
+    }
+
     function route() {
       var hash = location.hash.slice(1) || 'home';
       var app = document.getElementById('app');
@@ -3003,6 +3529,7 @@
       } else {
         app.innerHTML = renderHome();
         initFeaturedRows();
+        initNowReels();
         hydrateScreenPosters();
         hydrateVersionDescriptions();
         var scrollTarget = (hash === 'home' || !hash) ? null : (hash === 'all-versions' ? 'verses' : hash);
