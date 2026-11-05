@@ -2,6 +2,7 @@
 """Generate character reading guides from the current Batman template."""
 from __future__ import annotations
 
+import argparse
 import json
 import re
 import shutil
@@ -592,10 +593,23 @@ def write_guide(char: dict, template: str) -> Path:
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--check', action='store_true', help='Check committed guides in memory without writing files')
+    args = parser.parse_args()
     template = TEMPLATE.read_text(encoding='utf-8')
     packs = ALL_GENERATED_PACKS
     print('Template bytes:', len(template))
     print('Generating', len(packs), 'guides...')
+    if args.check:
+        different = []
+        for char in packs:
+            path = ROOT / (char['id'] + '-guide') / 'index.html'
+            if not path.exists() or path.read_text(encoding='utf-8') != transform(template, char):
+                different.append(char['id'])
+        if different:
+            raise SystemExit('Generated guides differ: ' + ', '.join(different))
+        print(f'All {len(packs)} guides match their sources; no files written.')
+        return
     for char in packs:
         path = write_guide(char, template)
         # quick sanity
@@ -610,18 +624,17 @@ def main():
         print('  OK', char['id'], '->', path, '(%d bytes)' % path.stat().st_size)
 
     # Index README
-    readme = HOME / 'character-guides' / 'GENERATED.md'
+    readme = TOOLS / 'GENERATED.md'
     lines = [
         '# Generated character guides\n\n',
-        'Built from `character-guides/templates/batman-guide/index.html`.\n\n',
+        'Built from `tools/templates/batman-guide/index.html`.\n\n',
         '| Character | Folder |\n',
         '|-----------|--------|\n',
     ]
     for char in packs:
         lines.append('| %s | `%s-guide/` |\n' % (char['brand'], char['id']))
     lines.append(
-        '\nLimited to Screen Now companions. See `UPLOAD.md` for the public upload set;\n'
-        'unused drafts live in `archive/`.\n'
+        '\nActive guides are selected by `ACTIVE_GUIDE_IDS` in `tools/generate_guides.py`.\n'
     )
     readme.write_text(''.join(lines), encoding='utf-8')
     print('Wrote', readme)

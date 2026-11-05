@@ -4,8 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'site/**'
-      - '.github/workflows/deploy-pages.yml'
+      - 'editorial-preview/RELEASE'
   workflow_dispatch:
 
 permissions:
@@ -27,13 +26,50 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Require production branch
+        run: test "$GITHUB_REF" = "refs/heads/main"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate site and maintenance tools
+        run: |
+          python3 -B tools/check_project.py
+          python3 -B -m unittest discover -s tools/tests -v
+          python3 -B tools/test_resolver.py
+
       - name: Configure Pages
+        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Upload site folder
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: '11.25.0'
+
+      - name: Build editorial pages
+        working-directory: editorial-preview
+        env:
+          ASTRO_TELEMETRY_DISABLED: '1'
+        run: |
+          pnpm install --frozen-lockfile
+          pnpm build
+
+      - name: Assemble and validate release
+        working-directory: editorial-preview
+        env:
+          PAGES_BASE_URL: ${{ steps.pages.outputs.base_url }}
+        run: python3 -B scripts/prepare-release.py --public-url "$PAGES_BASE_URL" --output release
+
+      - name: Upload release
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: editorial-preview/release
 
       - name: Deploy
         id: deployment

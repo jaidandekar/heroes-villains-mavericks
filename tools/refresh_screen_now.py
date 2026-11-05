@@ -1075,14 +1075,14 @@ HEADER_JS = r'''
 '''
 
 
-def build_html(slate: dict, now_items: list, upcoming: list, today: date) -> str:
+def build_html(slate: dict, now_items: list, upcoming: list, today: date, shop_html: str | None = None) -> str:
     now_html = '\n\n'.join(
         render_now_card(e) for e in now_items
     ) or '      <p class="now-blurb">Nothing currently marked as playing — check back after the next refresh.</p>'
     up_html = '\n\n'.join(render_upcoming_row(e) for e in upcoming) or '        <p class="title-blurb">No remaining dated titles through year-end in the slate.</p>'
-    shop_html = ''
-    if SHOP_SECTIONS_PATH.exists():
-        shop_html = '\n' + SHOP_SECTIONS_PATH.read_text(encoding='utf-8').rstrip() + '\n'
+    if shop_html is None:
+        shop_html = SHOP_SECTIONS_PATH.read_text(encoding='utf-8') if SHOP_SECTIONS_PATH.exists() else ''
+    shop_html = '\n' + shop_html.rstrip() + '\n' if shop_html else ''
     year = today.year
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -1172,14 +1172,14 @@ def main() -> None:
             rel = item['release'].isoformat() if item.get('release') else '—'
             print(f"  {item['id']:18} {bucket or 'skip':8}  date={rel}")
 
-    save_tmdb_cache(cache)
+    # Render auxiliary output in memory; dry runs must never persist it.
+    shop_html = None
 
     # Keep shop sections current from screen_shop.json (SKU art when resolved).
     try:
-        from refresh_shop import render_all, load_json as load_shop_json, save_json as save_shop_json, SHOP_PATH
+        from refresh_shop import render_all, load_json as load_shop_json, SHOP_PATH
         shop = load_shop_json(SHOP_PATH)
-        SHOP_SECTIONS_PATH.write_text(render_all(shop, cfg), encoding='utf-8')
-        print(f'Rendered shop sections → {SHOP_SECTIONS_PATH.name}')
+        shop_html = render_all(shop, cfg)
     except Exception as exc:
         print(f'Shop sections skipped: {exc}')
 
@@ -1189,13 +1189,16 @@ def main() -> None:
         key=lambda i: i['release'] or year_end(today),
     )
 
-    html = build_html(slate, now_items, upcoming, today)
+    html = build_html(slate, now_items, upcoming, today, shop_html=shop_html)
 
     print(f'Now: {len(now_items)} · Upcoming through Dec {today.year}: {len(upcoming)}')
     if args.dry_run:
-        print('Dry run — not writing', OUT_PATH)
+        print('Dry run — no pages, cache, or shop fragments written.')
         return
 
+    save_tmdb_cache(cache)
+    if shop_html is not None:
+        SHOP_SECTIONS_PATH.write_text(shop_html, encoding='utf-8')
     OUT_PATH.write_text(html, encoding='utf-8')
     INDEX_PATH.write_text(html, encoding='utf-8')
     print('Wrote', OUT_PATH)
