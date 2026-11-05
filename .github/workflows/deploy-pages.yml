@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'editorial-preview/RELEASE'
+      - 'editorial-preview/release-request.txt'
   workflow_dispatch:
 
 permissions:
