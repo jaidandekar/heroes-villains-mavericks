@@ -1,4 +1,5 @@
 ---
+import { validateScreenArt } from '../lib/validate-screen-art.mjs';
 import ProductCard from '../components/ProductCard.astro';
 import wishlistCss from '../components/wishlist.css?raw';
 import screenArtwork from '../data/screen-art.json';
@@ -13,6 +14,7 @@ import guideHeroArt from '../data/guide-hero-art.json';
 import editorial from '../data/editorial.json';
 import bestsellers from '../data/bestsellers.json';
 export function getStaticPaths() {
+  validateScreenArt(guides, screenArtwork);
   return Object.values(guides).map(guide => ({params: { guide: guide.id + '-guide' }, props: { guide }}));
 }
 const { guide } = Astro.props;
@@ -20,7 +22,8 @@ const edit = editorial[guide.id];
 const pitch = edit?.pitch ?? guide.profile.lead;
 const overview = edit?.overview ?? guide.profile.summary.split(/\n\n+/);
 const sources = edit?.sources ?? [{ label: 'Character reference', url: guide.profile.wikipedia }];
-const chart = { ...bestsellers, books: bestsellers.books.filter(book => book.guides.includes(guide.id)) };
+const relatedBestsellers = bestsellers.books.filter(book => book.guides.includes(guide.id));
+const chart = { ...bestsellers, books: relatedBestsellers.length ? relatedBestsellers : bestsellers.books.slice(0, 3), general: !relatedBestsellers.length };
 const products = edit?.products ?? [];
 const heroArt = guideHeroArt[guide.id];
 const versions = [...guide.versions, ...(edit?.versions ?? [])];
@@ -71,11 +74,11 @@ const versionSlides = versions.map(version => {
         const editions = run.amazon?.filter(edition => /^[A-Z0-9]{10}$/.test(edition.asin)) ?? [];
         const primary = editions[0];
         return <BookCard id={'run/' + run.slug} cover={run.cover} alt={'Cover for ' + run.title} base="../"
-          href={primary ? 'https://www.amazon.com/dp/' + primary.asin : undefined} external={!!primary}>
+          href={primary ? 'https://www.amazon.com/dp/' + primary.asin : edit?.reading?.[run.slug]?.url} external={!!primary}>
           <p class="eyebrow">{String(index + 1).padStart(2, '0')} / {run.years}</p>
           <h3>{run.title}</h3>
           <p class="shelf-dek">{run.creators}</p>
-          {primary && <span class="shelf-buy">View {primary.format || 'edition'} on Amazon ↗</span>}
+          {primary ? <span class="shelf-buy">View {primary.format || 'edition'} on Amazon ↗</span> : edit?.reading?.[run.slug]?.url && <span class="shelf-buy">View publisher edition ↗</span>}
           <Fragment slot="details">
             <p>{edit?.reading?.[run.slug]?.note ?? run.summary}</p>
             {run.collects && <p class="small"><strong>Collects</strong>{' '}{run.collects}</p>}
@@ -97,6 +100,7 @@ const versionSlides = versions.map(version => {
     {chart && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
       <h3 id="chart-title">Bestselling graphic novels</h3>
       <p class="small"><a href={chart.url}>{chart.label} ↗</a></p>
+      {chart.general && <p class="small">No {guide.brand} titles appeared in this chart. Explore these selections from the overall superhero chart.</p>}
       {chart.books.length ? <ol class="chart-list">{chart.books.map(book => <li value={book.rank}>
         {book.cover && <a class="chart-cover" href={book.url} aria-label={'View ' + book.title}><img src={'../' + book.cover} alt={'Cover of ' + book.title} loading="lazy" /></a>}
         <div class="chart-copy">
@@ -119,7 +123,7 @@ const versionSlides = versions.map(version => {
       <a href={item.imdb} class="screen-title-link">
         {screenArtwork[item.id] && <span class="screen-title-art"><img src={'../' + screenArtwork[item.id].src} alt={'Poster for ' + item.title} loading="lazy" /></span>}
         <div class="screen-title-copy">
-          <p class="eyebrow">{group.group} · {item.year || item.years}</p>
+          <p class="eyebrow">{screenArtwork[item.id]?.kind === 'tv' ? 'TV series' : 'Film'} · {item.year || item.years}</p>
           <h3>{item.title}</h3>
           <p>{item.note}</p>
           <span class="screen-title-action">View on IMDb ↗</span>

@@ -105,9 +105,10 @@
     "height": 450
   },
   "blackest-night": {
-    "source": "https://images.penguinrandomhouse.com/cover/9781401228064",
-    "width": 270,
-    "height": 400
+    "source": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night",
+    "imageSource": "https://static.dc.com/dc/files/default_images/14771_900x1350.jpg",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/blackest-night-verified.jpg"
   },
   "cf-asylum": {
     "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56299/1283575-clayface.jpg",
@@ -160,9 +161,10 @@
     "height": 900
   },
   "ultron-ultimate": {
-    "source": "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Ultron_%28Earth-1610%29_from_Ultimates_3_Vol_1_5_001.png/revision/latest?cb=20201017064555",
-    "width": 712,
-    "height": 604
+    "source": "https://www.marvel.com/comics/collection/23044/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785122692?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/ultron-ultimate-verified.jpg"
   },
   "ultron-extreme": {
     "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/1202/89868-18108-106298-1-avengers-next.jpg",
@@ -203,5 +205,41 @@
     "source": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8247950-large-4944271.jpg",
     "width": 592,
     "height": 900
+  },
+  "doom-secret-wars-2015": {
+    "source": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785198956?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-secret-wars-2015-verified.jpg"
+  },
+  "doom-time-runs-out": {
+    "source": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302966690?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-time-runs-out-verified.jpg"
+  },
+  "doom-doomwar": {
+    "source": "https://www.marvel.com/comics/collection/30862/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785147152?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-doomwar-verified.jpg"
+  },
+  "cf-face-the-face": {
+    "source": "https://www.dc.com/graphic-novels/batman-face-the-face",
+    "imageSource": "https://static.dc.com/dc/files/default_images/5703_400x600.jpg",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/cf-face-the-face-verified.jpg"
+  },
+  "cf-mudpack": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779507495?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/cf-mudpack-verified.jpg"
+  },
+  "vis-tom-king": {
+    "source": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302920555?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/vis-tom-king-verified.jpg"
   }
 }

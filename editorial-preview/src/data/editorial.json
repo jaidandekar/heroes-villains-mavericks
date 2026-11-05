@@ -303,7 +303,15 @@
         "image": "media/shop-B09DHGWLGK.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "cf-face-the-face": {
+        "url": "https://www.dc.com/graphic-novels/batman-face-the-face"
+      },
+      "cf-mudpack": {
+        "url": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4"
+      }
+    }
   },
   "doctor-doom": {
     "products": [
@@ -348,7 +356,18 @@
         "image": "media/shop-36965074.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "doom-secret-wars-2015": {
+        "url": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/"
+      },
+      "doom-time-runs-out": {
+        "url": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/"
+      },
+      "doom-doomwar": {
+        "url": "https://www.marvel.com/comics/collection/30862/"
+      }
+    }
   },
   "vision": {
     "products": [
@@ -383,7 +402,12 @@
         "image": "media/shop-B095824NYX.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "vis-tom-king": {
+        "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555"
+      }
+    }
   },
   "spiderman": {
     "products": [
@@ -477,7 +501,12 @@
         "image": "media/shop-B0B3G4XF3X.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "ultron-ultimate": {
+        "url": "https://www.marvel.com/comics/collection/23044/"
+      }
+    }
   },
   "venom": {
     "products": [

@@ -218,14 +218,14 @@
         ],
         "amazon": [
           {
-            "asin": "1401228067",
+            "asin": "1401226930",
             "title": "Blackest Night",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "9781401228064",
-        "cover": "media/blackest-night.jpg"
+        "isbn": "9781401226930",
+        "cover": "media/blackest-night-verified.jpg"
       },
       {
         "slug": "gl-mosaic",
@@ -533,7 +533,7 @@
             "title": "Green Lantern: First Flight",
             "note": "Origin animated feature",
             "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_First_Flight",
-            "imdb": "https://www.imdb.com/title/tt1389096/",
+            "imdb": "https://www.imdb.com/title/tt1384590/",
             "year": "2009"
           },
           {
@@ -541,7 +541,7 @@
             "title": "Green Lantern: Emerald Knights",
             "note": "Corps anthology",
             "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_Emerald_Knights",
-            "imdb": "https://www.imdb.com/title/tt1682778/",
+            "imdb": "https://www.imdb.com/title/tt1683043/",
             "year": "2011"
           }
         ]
@@ -554,7 +554,7 @@
             "title": "Green Lantern: The Animated Series",
             "note": "CGI · Cartoon Network",
             "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_The_Animated_Series",
-            "imdb": "https://www.imdb.com/title/tt1649913/",
+            "imdb": "https://www.imdb.com/title/tt1724587/",
             "years": "2011–2013"
           },
           {
@@ -562,7 +562,7 @@
             "title": "Justice League Unlimited",
             "note": "John Stewart era",
             "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_Unlimited",
-            "imdb": "https://www.imdb.com/title/tt0402022/",
+            "imdb": "https://www.imdb.com/title/tt6025022/",
             "years": "2004–2006"
           }
         ]
@@ -834,7 +834,7 @@
         "title": "Secret Wars (2015)",
         "creators": "Jonathan Hickman & Esad Ribic",
         "years": "2015",
-        "collects": "Secret Wars #1–9",
+        "collects": "Secret Wars (2015) #1–9 and Free Comic Book Day 2015: Secret Wars #0",
         "era": "Modern Age",
         "prerequisites": "Time Runs Out / New Avengers",
         "summary": "God Emperor Doom rules Battleworld as the multiverse collapses — Hickman's Marvel culmination.",
@@ -843,22 +843,22 @@
         ],
         "amazon": [
           {
-            "asin": "0785198841",
+            "asin": "0785198954",
             "title": "Secret Wars (2015)",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "9780785198841",
-        "cover": "media/doom-secret-wars-2015.jpg"
+        "isbn": "9780785198956",
+        "cover": "media/doom-secret-wars-2015-verified.jpg"
       },
       {
         "slug": "doom-time-runs-out",
         "versionSlug": "god-emperor-doom",
         "title": "Time Runs Out",
-        "creators": "Jonathan Hickman & various",
+        "creators": "Jonathan Hickman, Stefano Caselli, Mike Deodato Jr. & collaborators",
         "years": "2014–15",
-        "collects": "Avengers #35–44, New Avengers #24–33",
+        "collects": "Material from Avengers (2012) #35–44 and New Avengers (2013) #24–33",
         "era": "Modern Age",
         "prerequisites": "New Avengers / Avengers",
         "summary": "The road to Secret Wars — incursions, the Illuminati, and Doom's ascension.",
@@ -867,14 +867,14 @@
         ],
         "amazon": [
           {
-            "asin": "0785192274",
+            "asin": "1302966693",
             "title": "Time Runs Out",
-            "format": "Trade Paperback",
+            "format": "Marvel Premier Collection",
             "recommended": true
           }
         ],
-        "isbn": "9780785192274",
-        "cover": "media/doom-time-runs-out.jpg"
+        "isbn": "9781302966690",
+        "cover": "media/doom-time-runs-out-verified.jpg"
       },
       {
         "slug": "doom-infamous-iron-man",
@@ -976,7 +976,7 @@
         "slug": "doom-doomwar",
         "versionSlug": "doomwar-doom",
         "title": "Doomwar",
-        "creators": "Jonathan Hickman & various",
+        "creators": "Jonathan Maberry & Scot Eaton",
         "years": "2010",
         "collects": "Doomwar #1–6",
         "era": "Modern Age",
@@ -987,14 +987,14 @@
         ],
         "amazon": [
           {
-            "asin": "0785146920",
+            "asin": "0785147152",
             "title": "Doomwar",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "9780785146920",
-        "cover": "media/doom-doomwar.jpg"
+        "isbn": "9780785147152",
+        "cover": "media/doom-doomwar-verified.jpg"
       }
     ],
     "home_runs": [
@@ -1086,7 +1086,7 @@
             "title": "The Marvel Super Heroes",
             "note": "1966 Doctor Doom shorts",
             "wikipedia": "https://en.wikipedia.org/wiki/The_Marvel_Super_Heroes",
-            "imdb": "https://www.imdb.com/title/tt0060004/",
+            "imdb": "https://www.imdb.com/title/tt0206474/",
             "years": "1966"
           },
           {
@@ -1094,7 +1094,7 @@
             "title": "Fantastic Four (1994)",
             "note": "Animated series",
             "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(1994_TV_series)",
-            "imdb": "https://www.imdb.com/title/tt0108850/",
+            "imdb": "https://www.imdb.com/title/tt0187635/",
             "years": "1994–1996"
           }
         ]
@@ -1465,16 +1465,9 @@
         "readingOrder": [
           "Batman: Face the Face"
         ],
-        "amazon": [
-          {
-            "asin": "1401209660",
-            "title": "Batman: Face the Face",
-            "format": "Trade Paperback",
-            "recommended": true
-          }
-        ],
-        "isbn": "9781401209667",
-        "cover": "media/cf-face-the-face.jpg"
+        "amazon": [],
+        "isbn": "",
+        "cover": "media/cf-face-the-face-verified.jpg"
       },
       {
         "slug": "cf-outsiders",
@@ -1551,10 +1544,10 @@
       {
         "slug": "cf-mudpack",
         "versionSlug": "mudpack",
-        "title": "Batman: The Mudpack",
-        "creators": "Alan Grant, John Wagner & Norm Breyfogle",
+        "title": "The Mud Pack · Batman: The Dark Knight Detective Vol. 4",
+        "creators": "Alan Grant & Norm Breyfogle",
         "years": "1989–90",
-        "collects": "Detective Comics #604–607",
+        "collects": "Detective Comics #601–611 and Detective Comics Annual #2; includes The Mud Pack in #604–607",
         "era": "Modern Age",
         "prerequisites": "None",
         "summary": "Four Clayfaces unite — Karlo's Mudpack assault on Gotham.",
@@ -1563,14 +1556,14 @@
         ],
         "amazon": [
           {
-            "asin": "1401234801",
+            "asin": "1779507496",
             "title": "Batman: The Mudpack",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "9781401234801",
-        "cover": "media/cf-mudpack.jpg"
+        "isbn": "9781779507495",
+        "cover": "media/cf-mudpack-verified.jpg"
       },
       {
         "slug": "cf-cassius-debut",
@@ -1727,7 +1720,7 @@
             "title": "Clayface",
             "note": "James Watkins · Tom Rhys Harries",
             "wikipedia": "https://en.wikipedia.org/wiki/Clayface_(film)",
-            "imdb": "https://www.imdb.com/title/tt31193180/",
+            "imdb": "https://www.imdb.com/title/tt34890576/",
             "year": "2026"
           }
         ]
@@ -2009,14 +2002,14 @@
         ],
         "amazon": [
           {
-            "asin": "1302904130",
+            "asin": "1302920553",
             "title": "Vision by Tom King",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "9781302904135",
-        "cover": "media/vis-tom-king.jpg"
+        "isbn": "9781302920555",
+        "cover": "media/vis-tom-king-verified.jpg"
       },
       {
         "slug": "vis-white",
@@ -2946,7 +2939,7 @@
         "type": "future",
         "firstAppearance": "Avengers Next #2 (2007)",
         "tagline": "The MC2 war machine",
-        "description": "In the MC2 future of Avengers Next, the threat of reactivating Ultron Extreme draws the next generation of Avengers into Sylene\u2019s scheme. The dormant robot is part of a larger deception.",
+        "description": "In the MC2 future of Avengers Next, the threat of reactivating Ultron Extreme draws the next generation of Avengers into Sylene’s scheme. The dormant robot is part of a larger deception.",
         "wikipedia": "https://mightyavengers.net/characters/ultron/alternate-versions",
         "runs": [
           "ultron-extreme"
@@ -3089,14 +3082,14 @@
         ],
         "amazon": [
           {
-            "asin": "",
+            "asin": "0785122699",
             "title": "The Ultimates 3",
-            "format": "Trade Paperback",
+            "format": "Collected edition",
             "recommended": true
           }
         ],
-        "isbn": "",
-        "cover": "media/ultron-ultimate.jpg"
+        "isbn": "9780785122692",
+        "cover": "media/ultron-ultimate-verified.jpg"
       },
       {
         "slug": "ultron-extreme",
@@ -4061,7 +4054,7 @@
             "title": "Batman Beyond",
             "note": "Will Friedle · Kids' WB",
             "wikipedia": "https://en.wikipedia.org/wiki/Batman_Beyond",
-            "imdb": "https://www.imdb.com/title/tt0118266/",
+            "imdb": "https://www.imdb.com/title/tt0147746/",
             "years": "1999–2001"
           },
           {
@@ -4077,7 +4070,7 @@
             "title": "Batman: The Brave and the Bold",
             "note": "Diedrich Bader · Cartoon Network",
             "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Brave_and_the_Bold",
-            "imdb": "https://www.imdb.com/title/tt1216518/",
+            "imdb": "https://www.imdb.com/title/tt1213218/",
             "years": "2008–2011"
           }
         ]

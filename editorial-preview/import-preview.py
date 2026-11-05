@@ -36,4 +36,11 @@ for pack in guides.ALL_GENERATED_PACKS:
             cover = f'media/{local.name}'
         runs.append({**run, 'cover': cover})
     result[slug] = dict(pack, runs=runs, versionArt=version_art.get(slug, {}))
+# Keep reviewed editions and corrected screen identities when reimporting legacy packs.
+reviewed = json.loads((root / 'src/data/reviewed-content.json').read_text())
+for slug, guide in result.items():
+    overrides = reviewed.get(slug, {})
+    guide['runs'] = [overrides.get('runs', {}).get(run['slug'], run) for run in guide['runs']]
+    for group in guide['screen']:
+        group['items'] = [overrides.get('screen', {}).get(item['id'], item) for item in group['items']]
 (root / 'src/data/guides.json').write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')
