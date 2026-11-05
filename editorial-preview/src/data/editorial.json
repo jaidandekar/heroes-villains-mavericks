@@ -64,10 +64,24 @@
     },
     "products": [
       {
-        "title": "DC Comics Batman travel mug",
+        "title": "Batman Beyond Icons T-Shirt",
         "store": "BoxLunch",
-        "sku": "31128679",
-        "url": "https://www.boxlunch.com/product/dc-comics-batman-travel-mug-with-handle/31128679.html"
+        "sku": "32791510",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-beyond-icons-t-shirt---boxlunch-exclusive/32791510.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32791510_hi",
+        "label": "Apparel",
+        "image": "media/shop-32791510.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+        "store": "Amazon",
+        "sku": "B0G27VB83P",
+        "url": "https://www.amazon.com/dp/B0G27VB83P",
+        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+        "label": "Collectible",
+        "image": "media/shop-B0G27VB83P.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -115,25 +129,31 @@
         "title": "Hal Jordan Funko Pop",
         "store": "Amazon",
         "sku": "B004OFRJDI",
-        "url": "https://www.amazon.com/dp/B004OFRJDI?tag=",
-        "image": "media/product-green-lantern-B004OFRJDI.jpg",
-        "imageSource": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg"
+        "url": "https://www.amazon.com/dp/B004OFRJDI",
+        "image": "media/shop-B004OFRJDI.jpg",
+        "imageSource": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg",
+        "label": "Collectible",
+        "imageCheckedAt": "2026-11-05"
       },
       {
         "title": "Green Lantern logo t-shirt",
         "store": "Hot Topic",
         "sku": "36796580",
         "url": "https://www.hottopic.com/product/dc-comics-green-lantern-logo-t-shirt/36796580.html",
-        "image": "media/product-green-lantern-36796580.jpg",
-        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796580_hi"
+        "image": "media/shop-36796580.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796580_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
       },
       {
         "title": "Green Lantern Corps bomber",
         "store": "BoxLunch",
         "sku": "35756042",
         "url": "https://www.boxlunch.com/product/dc-comics-green-lantern-corps-bomber-jacket---boxlunch-exclusive/35756042.html",
-        "image": "media/product-green-lantern-35756042.jpg",
-        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35756042_hi"
+        "image": "media/shop-35756042.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35756042_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -206,8 +226,148 @@
         "store": "Hot Topic",
         "sku": "32446384",
         "url": "https://www.hottopic.com/product/marvel-fantastic-four-cosmic-t-shirt/32446384.html",
-        "image": "media/product-fantastic-four-32446384.jpg",
-        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32446384_hi"
+        "image": "media/shop-32446384.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32446384_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "clayface": {
+    "products": [
+      {
+        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+        "store": "Amazon",
+        "sku": "B0G27VB83P",
+        "url": "https://www.amazon.com/dp/B0G27VB83P",
+        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+        "label": "Collectible",
+        "image": "media/shop-B0G27VB83P.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Clayface Hoodie",
+        "store": "Hot Topic",
+        "sku": "36004920",
+        "url": "https://www.hottopic.com/product/dc-comics-batman-clayface-hoodie/36004920.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36004920_hi",
+        "label": "Apparel",
+        "image": "media/shop-36004920.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "doctor-doom": {
+    "products": [
+      {
+        "title": "Funko POP! Marvel: Fantastic Four - Doctor Doom",
+        "store": "Amazon",
+        "sku": "B07TXLJPRQ",
+        "url": "https://www.amazon.com/dp/B07TXLJPRQ",
+        "imageSource": "https://m.media-amazon.com/images/I/71vvWGyaKdL._AC_SL500_.jpg",
+        "label": "Collectible",
+        "image": "media/shop-B07TXLJPRQ.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Secret Wars Doctor Doom T-Shirt",
+        "store": "Hot Topic",
+        "sku": "37103250",
+        "url": "https://www.hottopic.com/product/marvel-secret-wars-doctor-doom-comic-t-shirt/37103250.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/37103250_hi",
+        "label": "Apparel",
+        "image": "media/shop-37103250.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "vision": {
+    "products": [
+      {
+        "title": "Funko Pop! Marvel: Wandavision - The Vision (Finale)",
+        "store": "Amazon",
+        "sku": "B08KGV6SH6",
+        "url": "https://www.amazon.com/dp/B08KGV6SH6",
+        "imageSource": "https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg",
+        "label": "Collectible",
+        "image": "media/shop-B08KGV6SH6.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "WandaVision Vision T-Shirt",
+        "store": "Hot Topic",
+        "sku": "15603261",
+        "url": "https://www.hottopic.com/product/marvel-wandavision-vision-t-shirt/15603261.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/15603261_hi",
+        "label": "Apparel",
+        "image": "media/shop-15603261.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "spiderman": {
+    "products": [
+      {
+        "title": "Pop! Marvel: Spider-Man (Last Stand) Previews Exclusive Vinyl Figure",
+        "store": "Amazon",
+        "sku": "B0DJFNV15R",
+        "url": "https://www.amazon.com/dp/B0DJFNV15R",
+        "imageSource": "https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg",
+        "label": "Collectible",
+        "image": "media/shop-B0DJFNV15R.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Web Pose T-Shirt",
+        "store": "BoxLunch",
+        "sku": "36984937",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-web-pose-t-shirt---boxlunch-exclusive/36984937.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi",
+        "label": "Apparel",
+        "image": "media/shop-36984937.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "sinestro": {
+    "products": [
+      {
+        "title": "Green Lantern Sinestro Corps T-Shirt",
+        "store": "Hot Topic",
+        "sku": "36796620",
+        "url": "https://www.hottopic.com/product/dc-comics-green-lantern-sinestro-corps-t-shirt/36796620.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796620_hi",
+        "label": "Apparel",
+        "image": "media/shop-36796620.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "ultron": {
+    "products": [
+      {
+        "title": "Marvel Rivals Ultron T-Shirt",
+        "store": "Hot Topic",
+        "sku": "33698817",
+        "url": "https://www.hottopic.com/product/marvel-rivals-ultron-t-shirt/33698817.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33698817_hi",
+        "label": "Apparel",
+        "image": "media/shop-33698817.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "venom": {
+    "products": [
+      {
+        "title": "Venom Symbiote T-Shirt",
+        "store": "BoxLunch",
+        "sku": "36513928",
+        "url": "https://www.boxlunch.com/product/marvel-venom-symbiote-t-shirt-%E2%80%94-boxlunch-exclusive/36513928.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36513928_hi",
+        "label": "Apparel",
+        "image": "media/shop-36513928.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   }
