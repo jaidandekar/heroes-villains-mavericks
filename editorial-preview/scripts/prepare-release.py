@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 import json
 import re
 from pathlib import Path
+from posixpath import dirname, relpath
 from shutil import copytree, ignore_patterns
 from urllib.parse import unquote, urlsplit
 
@@ -75,7 +76,26 @@ def main():
         file.write_text(html, encoding='utf-8')
 
     (output / 'heroesvillainsmavericks.html').write_bytes((output / 'index.html').read_bytes())
-    pages = {route: Page(output / route) for route in routes}
+    # Preserve links from the original branch-based Pages layout under /site/.
+    compatibility_routes = []
+    for route in routes:
+        alias = 'site/' + route
+        destination = relpath(route, dirname(alias))
+        canonical = args.public_url.rstrip('/') + '/' + route.removesuffix('index.html')
+        redirect = (
+            '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+            '<meta name="viewport" content="width=device-width,initial-scale=1">'
+            '<title>Page moved | Heroes, Villains &amp; Mavericks</title>'
+            + '<link rel="canonical" href="' + escape(canonical, quote=True) + '">'
+            + '<meta http-equiv="refresh" content="0;url=' + escape(destination, quote=True) + '">'
+            + '<script>location.replace(' + json.dumps(destination) + ' + location.search + location.hash);</script>'
+            + '</head><body><a href="' + escape(destination, quote=True) + '">Continue to Heroes, Villains &amp; Mavericks</a></body></html>'
+        )
+        file = output / alias
+        file.parent.mkdir(parents=True, exist_ok=True)
+        file.write_text(redirect, encoding='utf-8')
+        compatibility_routes.append(alias)
+    pages = {route: Page(output / route) for route in [*routes, *compatibility_routes]}
     for slug, guide in guides.items():
         route = f'{slug}-guide/index.html'
         expected = {guide['who_id'], 'verses', 'all-versions', 'graphic-novels', 'on-screen'}
@@ -98,7 +118,7 @@ def main():
                 destination = pages[target.relative_to(output).as_posix()]
                 if unquote(url.fragment) not in destination.ids:
                     raise SystemExit(f'{route}: missing local anchor {value}')
-    print(f'Prepared {len(routes)} compatible routes with {len(guides)} redesigned guides at {output}')
+    print(f'Prepared {len(routes)} compatible routes plus {len(compatibility_routes)} /site/ redirects with {len(guides)} redesigned guides at {output}')
 
 
 if __name__ == '__main__':
