@@ -43,6 +43,8 @@
 .screen-controls { display: flex; align-items: center; justify-content: center; gap: .55rem; margin-top: .65rem; }
 .screen-controls button { cursor: pointer; min-height: 2.75rem; }
 .screen-controls > button { min-width: 2.75rem; border: 1px solid var(--rule); border-radius: .45rem; background: white; color: var(--ink); font: 700 1.4rem/1 var(--body); }
+.screen-controls > button:hover,
+.screen-controls > button:focus-visible { background: var(--carousel-control-active); border-color: var(--carousel-control-active); }
 .screen-picks { display: flex; flex-wrap: wrap; justify-content: center; }
 .screen-picks button { display: grid; place-items: center; width: clamp(1.7rem, 6vw, 2.65rem); padding: 0 .15rem; background: transparent; border: 0; }
 .screen-picks button::before { content: ''; width: 100%; height: .35rem; border-radius: 2px; background: #a1a1aa; }
