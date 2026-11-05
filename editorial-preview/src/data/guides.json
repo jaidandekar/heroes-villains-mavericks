@@ -1,0 +1,4126 @@
+{
+  "green-lantern": {
+    "id": "green-lantern",
+    "brand": "Green Lantern",
+    "title": "Green Lantern — Willpower Across the Multiverse",
+    "nav_who": "Who is Green Lantern",
+    "nav_verses": "Corps & Verses",
+    "who_id": "who-is-green-lantern",
+    "header_img": "green-lantern-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #2db84b, #0d5c28 45%, #041208)",
+    "verses_h2": "Green Lantern Across the Multiverse",
+    "verses_p": "versions across DC's emotional spectrum — Earth-0, Earth-2, Elseworlds, and every ring-bearer worth knowing.",
+    "comics_p": "Essential Green Lantern stories — from Secret Origin and Rebirth to Sinestro Corps War and Blackest Night.",
+    "screen_p": "Live-action and animated appearances — from the 2011 film and Justice League to the Emerald Knights animated features.",
+    "types": {
+      "main": "Main Continuity",
+      "multiverse": "Multiverse",
+      "elseworlds": "Elseworlds",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "hal-jordan",
+        "name": "Hal Jordan",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Showcase #22 (1959)",
+        "tagline": "The greatest Green Lantern",
+        "description": "Test pilot Hal Jordan was chosen by a dying Abin Sur to wield a power ring of the Green Lantern Corps — willpower made into light.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Hal_Jordan",
+        "runs": [
+          "gl-secret-origin",
+          "gl-rebirth",
+          "sinestro-corps-war",
+          "blackest-night"
+        ]
+      },
+      {
+        "slug": "john-stewart",
+        "name": "John Stewart",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Green Lantern Vol. 2 #87 (1971)",
+        "tagline": "Architect of the Corps",
+        "description": "A former Marine and architect who became one of the most respected Green Lanterns — often Earth's primary ring-bearer in modern stories.",
+        "wikipedia": "https://en.wikipedia.org/wiki/John_Stewart_(character)",
+        "runs": [
+          "gl-mosaic",
+          "gl-corps-recon"
+        ]
+      },
+      {
+        "slug": "guy-gardner",
+        "name": "Guy Gardner",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Green Lantern Vol. 2 #59 (1968)",
+        "tagline": "The Corps' blunt instrument",
+        "description": "Brash, abrasive, and fiercely loyal — Guy Gardner is the Lantern who says what everyone else is thinking.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Guy_Gardner_(character)",
+        "runs": [
+          "guy-gardner-warrior"
+        ]
+      },
+      {
+        "slug": "kyle-rayner",
+        "name": "Kyle Rayner",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Green Lantern Vol. 3 #48 (1994)",
+        "tagline": "The Torchbearer",
+        "description": "When the Corps fell, freelance artist Kyle Rayner became the last Green Lantern — and later helped rebuild everything.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Kyle_Rayner",
+        "runs": [
+          "emerald-knights",
+          "gl-ion"
+        ]
+      },
+      {
+        "slug": "jessica-cruz",
+        "name": "Jessica Cruz",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Green Lantern Vol. 5 #20 (2013)",
+        "tagline": "The ring that chose fear — then courage",
+        "description": "Jessica Cruz overcame crippling anxiety to master a power ring, becoming a defining Lantern of the modern era.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Jessica_Cruz",
+        "runs": [
+          "gl-rebirth-jessica"
+        ]
+      },
+      {
+        "slug": "alan-scott",
+        "name": "Alan Scott",
+        "universe": "Earth-2",
+        "type": "multiverse",
+        "firstAppearance": "All-American Comics #16 (1940)",
+        "tagline": "The Golden Age Green Lantern",
+        "description": "The original Green Lantern of Earth-2, empowered by the magic of the Starheart rather than a Corps battery.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Alan_Scott",
+        "runs": [
+          "alan-scott-golden-age"
+        ]
+      },
+      {
+        "slug": "gl-earth-one",
+        "name": "Green Lantern: Earth One",
+        "universe": "Earth One",
+        "type": "elseworlds",
+        "firstAppearance": "Green Lantern: Earth One Vol. 1 (2018)",
+        "tagline": "A sci-fi reinvention",
+        "description": "Gabriel Hardman and Corinna Bechko's graphic novel reimagining of Hal's origin as cosmic first contact.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_Earth_One",
+        "runs": [
+          "gl-earth-one-vol1"
+        ]
+      },
+      {
+        "slug": "parallax-hal",
+        "name": "Parallax (Hal Jordan)",
+        "universe": "Earth-0",
+        "type": "alternate",
+        "firstAppearance": "Green Lantern Vol. 3 #50 (1994)",
+        "tagline": "Willpower corrupted",
+        "description": "Possessed by fear entity Parallax, Hal Jordan destroyed the Corps in Emerald Twilight — a fall that reshaped the mythos.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Parallax_(character)",
+        "runs": [
+          "emerald-twilight"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "gl-secret-origin",
+        "versionSlug": "hal-jordan",
+        "title": "Green Lantern: Secret Origin",
+        "creators": "Geoff Johns & Ivan Reis",
+        "years": "2008",
+        "collects": "Green Lantern #29–35",
+        "era": "Modern Age",
+        "prerequisites": "None — ideal entry",
+        "summary": "Geoff Johns retells Hal Jordan's origin and sets the stage for the modern Corps mythology.",
+        "readingOrder": [
+          "Green Lantern: Secret Origin"
+        ],
+        "amazon": [
+          {
+            "asin": "1401221900",
+            "title": "Green Lantern: Secret Origin",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401221904",
+        "cover": "media/gl-secret-origin.jpg"
+      },
+      {
+        "slug": "gl-rebirth",
+        "versionSlug": "hal-jordan",
+        "title": "Green Lantern: Rebirth",
+        "creators": "Geoff Johns & Ethan Van Sciver",
+        "years": "2004–05",
+        "collects": "Green Lantern: Rebirth #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Hal Jordan returns from the dead and reclaims the mantle that defined him.",
+        "readingOrder": [
+          "Green Lantern: Rebirth"
+        ],
+        "amazon": [
+          {
+            "asin": "1401204615",
+            "title": "Green Lantern: Rebirth",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401204617",
+        "cover": "media/gl-rebirth.jpg"
+      },
+      {
+        "slug": "sinestro-corps-war",
+        "versionSlug": "hal-jordan",
+        "title": "Green Lantern: The Sinestro Corps War",
+        "creators": "Geoff Johns & others",
+        "years": "2007",
+        "collects": "GL / GLC crossover",
+        "era": "Modern Age",
+        "prerequisites": "Green Lantern: Rebirth",
+        "summary": "Sinestro builds an army fueled by fear to destroy the Green Lantern Corps.",
+        "readingOrder": [
+          "The Sinestro Corps War"
+        ],
+        "amazon": [
+          {
+            "asin": "1401216503",
+            "title": "Green Lantern: The Sinestro Corps War",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401216504",
+        "cover": "media/sinestro-corps-war.jpg"
+      },
+      {
+        "slug": "blackest-night",
+        "versionSlug": "hal-jordan",
+        "title": "Blackest Night",
+        "creators": "Geoff Johns & Ivan Reis",
+        "years": "2009–10",
+        "collects": "Blackest Night #0–8",
+        "era": "Modern Age",
+        "prerequisites": "Sinestro Corps War",
+        "summary": "The dead rise wearing black rings in the emotional-spectrum event that crowns Johns's Lantern era.",
+        "readingOrder": [
+          "Blackest Night"
+        ],
+        "amazon": [
+          {
+            "asin": "1401228067",
+            "title": "Blackest Night",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401228064",
+        "cover": "media/blackest-night.jpg"
+      },
+      {
+        "slug": "gl-mosaic",
+        "versionSlug": "john-stewart",
+        "title": "Green Lantern: Mosaic",
+        "creators": "Gerard Jones & others",
+        "years": "1992–93",
+        "collects": "Green Lantern: Mosaic #1–18 (select)",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "John Stewart's surreal tenure as caretaker of a patchwork world — cult favorite character work.",
+        "readingOrder": [
+          "Green Lantern: Mosaic"
+        ],
+        "amazon": [
+          {
+            "asin": "1401254567",
+            "title": "Green Lantern: Mosaic",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401254568",
+        "cover": "media/gl-mosaic.jpg"
+      },
+      {
+        "slug": "gl-corps-recon",
+        "versionSlug": "john-stewart",
+        "title": "Green Lantern Corps: Recharge",
+        "creators": "Dave Gibbons & Patrick Gleason",
+        "years": "2005–06",
+        "collects": "Green Lantern Corps: Recharge #1–5",
+        "era": "Modern Age",
+        "prerequisites": "Green Lantern: Rebirth",
+        "summary": "The Corps rebuilds with John Stewart among its leaders.",
+        "readingOrder": [
+          "Green Lantern Corps: Recharge"
+        ],
+        "amazon": [
+          {
+            "asin": "1401210120",
+            "title": "Green Lantern Corps: Recharge",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401210120",
+        "cover": "media/gl-corps-recon.jpg"
+      },
+      {
+        "slug": "guy-gardner-warrior",
+        "versionSlug": "guy-gardner",
+        "title": "Guy Gardner: Warrior",
+        "creators": "Beau Smith & others",
+        "years": "1994–96",
+        "collects": "Guy Gardner: Warrior (select)",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Guy without a ring — still picking fights and somehow saving the day.",
+        "readingOrder": [
+          "Guy Gardner: Collateral Damage"
+        ],
+        "amazon": [
+          {
+            "asin": "1401208907",
+            "title": "Guy Gardner: Warrior",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401208905",
+        "cover": "media/guy-gardner-warrior.jpg"
+      },
+      {
+        "slug": "emerald-knights",
+        "versionSlug": "kyle-rayner",
+        "title": "Green Lantern: The Road Back",
+        "creators": "Ron Marz & Darryl Banks",
+        "years": "1994",
+        "collects": "Green Lantern #48–50",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Kyle Rayner inherits the last ring after Emerald Twilight.",
+        "readingOrder": [
+          "Green Lantern: The Road Back"
+        ],
+        "amazon": [
+          {
+            "asin": "1563899999",
+            "title": "Green Lantern: The Road Back",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781563899997",
+        "cover": "media/emerald-knights.jpg"
+      },
+      {
+        "slug": "gl-ion",
+        "versionSlug": "kyle-rayner",
+        "title": "Green Lantern: Ion",
+        "creators": "Ron Marz & others",
+        "years": "2006",
+        "collects": "Ion / GL specials",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Kyle ascends to Ion, the living embodiment of willpower.",
+        "readingOrder": [
+          "Green Lantern: Ion"
+        ],
+        "amazon": [
+          {
+            "asin": "1401215043",
+            "title": "Green Lantern: Ion",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401215040",
+        "cover": "media/gl-ion.jpg"
+      },
+      {
+        "slug": "gl-rebirth-jessica",
+        "versionSlug": "jessica-cruz",
+        "title": "Green Lanterns: Rage Planet",
+        "creators": "Sam Humphries & Robson Rocha",
+        "years": "2016",
+        "collects": "Green Lanterns #1–6",
+        "era": "Rebirth",
+        "prerequisites": "None",
+        "summary": "Jessica Cruz and Simon Baz share Earth duty in the Rebirth era.",
+        "readingOrder": [
+          "Green Lanterns Vol. 1: Rage Planet"
+        ],
+        "amazon": [
+          {
+            "asin": "1401267722",
+            "title": "Green Lanterns: Rage Planet",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401267728",
+        "cover": "media/gl-rebirth-jessica.jpg"
+      },
+      {
+        "slug": "alan-scott-golden-age",
+        "versionSlug": "alan-scott",
+        "title": "All-Star Comics: Golden Age Green Lantern",
+        "creators": "Bill Finger & Martin Nodell",
+        "years": "1940s",
+        "collects": "Golden Age reprints",
+        "era": "Golden Age",
+        "prerequisites": "None",
+        "summary": "The magic-ring adventures that started the Green Lantern legacy.",
+        "readingOrder": [
+          "Golden Age Green Lantern Archives"
+        ],
+        "amazon": [
+          {
+            "asin": "1563895079",
+            "title": "All-Star Comics: Golden Age Green Lantern",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781563895074",
+        "cover": "media/alan-scott-golden-age.jpg"
+      },
+      {
+        "slug": "gl-earth-one-vol1",
+        "versionSlug": "gl-earth-one",
+        "title": "Green Lantern: Earth One Vol. 1",
+        "creators": "Gabriel Hardman & Corinna Bechko",
+        "years": "2018",
+        "collects": "Graphic novel",
+        "era": "Earth One",
+        "prerequisites": "None",
+        "summary": "A grounded, cinematic reinvention of Hal's first contact with the Corps.",
+        "readingOrder": [
+          "Green Lantern: Earth One Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "1401241858",
+            "title": "Green Lantern: Earth One Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401241852",
+        "cover": "media/gl-earth-one-vol1.jpg"
+      },
+      {
+        "slug": "emerald-twilight",
+        "versionSlug": "parallax-hal",
+        "title": "Green Lantern: Emerald Twilight",
+        "creators": "Ron Marz & Bill Willingham",
+        "years": "1994",
+        "collects": "Green Lantern #48–50",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Hal Jordan's catastrophic fall that ends the classic Corps era.",
+        "readingOrder": [
+          "Emerald Twilight / New Dawn"
+        ],
+        "amazon": [
+          {
+            "asin": "1401207860",
+            "title": "Green Lantern: Emerald Twilight",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401207861",
+        "cover": "media/emerald-twilight.jpg"
+      }
+    ],
+    "home_runs": [
+      "gl-secret-origin",
+      "gl-rebirth",
+      "sinestro-corps-war",
+      "blackest-night",
+      "emerald-twilight",
+      "gl-earth-one-vol1",
+      "gl-rebirth-jessica",
+      "gl-corps-recon",
+      "emerald-knights",
+      "gl-ion"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern",
+      "lead": "Green Lantern is a name several heroes have carried, not a single person.",
+      "summary": "The first was Alan Scott. Martin Nodell created him, with Bill Finger on the early stories, and he debuted in All-American Comics #16 in 1940. After a train crash, Scott came into a magic lantern and crafted a ring from it. He had to recharge that ring against the lantern, and he used it on ordinary criminals before joining the Justice Society of America. His power was magic. The Lanterns who followed are something else.\n\nThe Green Lantern most readers know arrived in 1959. Writer John Broome and artist Gil Kane introduced Hal Jordan, a test pilot, in Showcase #22. A dying alien, Abin Sur, passes him a power ring and the post of Green Lantern for Earth. The ring belongs to the Green Lantern Corps, an interstellar law-enforcement agency overseen by the Guardians of the Universe. Willpower is the fuel. The ring lets its wearer fly, and the green light it throws can become a force field or a solid object, limited mostly by imagination and nerve. The oath that comes with it still opens the way readers know it: in brightest day, in blackest night, no evil shall escape my sight.\n\nOther officers have held the name since. Guy Gardner was next, remembered for a stubborn streak. John Stewart arrived in 1972, written by Dennis O'Neil and drawn by Neal Adams: an architect chosen as Hal's backup, and one of DC's first Black superheroes. He refused a mask. A later story gave him a past in the U.S. Marines. Kyle Rayner, an artist, took up a ring after the Corps was destroyed. Simon Baz, Jessica Cruz, and Sojourner Mullein followed, the last of them posted to the Far Sector. The light stays green. The job is a sector of space.\n\nLanterns puts two of those officers, Hal Jordan and John Stewart, on a murder case in the American heartland.",
+      "facts": [
+        {
+          "label": "Notable bearers",
+          "value": "Hal Jordan, John Stewart, Kyle Rayner"
+        },
+        {
+          "label": "First appearance",
+          "value": "All-American Comics #16 (1940) / Showcase #22 (1959)"
+        },
+        {
+          "label": "Created by",
+          "value": "Bill Finger & Martin Nodell; Broome & Kane"
+        },
+        {
+          "label": "Publisher",
+          "value": "DC Comics"
+        },
+        {
+          "label": "Base of operations",
+          "value": "Oa / Sector 2814 (Earth)"
+        },
+        {
+          "label": "Allies",
+          "value": "Green Lantern Corps, Justice League"
+        },
+        {
+          "label": "Notable foes",
+          "value": "Sinestro, Parallax, Atrocitus"
+        },
+        {
+          "label": "Powers",
+          "value": "Hard-light constructs powered by will"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "gl-lanterns",
+            "title": "Lanterns",
+            "note": "Hal Jordan and John Stewart · HBO",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt26545992/",
+            "year": "2026"
+          },
+          {
+            "id": "gl-2011",
+            "title": "Green Lantern",
+            "note": "Ryan Reynolds as Hal Jordan",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern_(film)",
+            "imdb": "https://www.imdb.com/title/tt1133985/",
+            "year": "2011"
+          },
+          {
+            "id": "jl-2017-gl",
+            "title": "Justice League",
+            "note": "Cameo constructs; Snyder Cut expanded",
+            "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_(film)",
+            "imdb": "https://www.imdb.com/title/tt0974015/",
+            "year": "2017"
+          }
+        ]
+      },
+      {
+        "group": "Animated films",
+        "items": [
+          {
+            "id": "gl-first-flight",
+            "title": "Green Lantern: First Flight",
+            "note": "Origin animated feature",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_First_Flight",
+            "imdb": "https://www.imdb.com/title/tt1389096/",
+            "year": "2009"
+          },
+          {
+            "id": "gl-emerald-knights",
+            "title": "Green Lantern: Emerald Knights",
+            "note": "Corps anthology",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_Emerald_Knights",
+            "imdb": "https://www.imdb.com/title/tt1682778/",
+            "year": "2011"
+          }
+        ]
+      },
+      {
+        "group": "Animated television",
+        "items": [
+          {
+            "id": "gltas",
+            "title": "Green Lantern: The Animated Series",
+            "note": "CGI · Cartoon Network",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_The_Animated_Series",
+            "imdb": "https://www.imdb.com/title/tt1649913/",
+            "years": "2011–2013"
+          },
+          {
+            "id": "jl-unlimited-gl",
+            "title": "Justice League Unlimited",
+            "note": "John Stewart era",
+            "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_Unlimited",
+            "imdb": "https://www.imdb.com/title/tt0402022/",
+            "years": "2004–2006"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "hal-jordan": [
+        8,
+        48,
+        24
+      ],
+      "john-stewart": [
+        12,
+        40,
+        28
+      ],
+      "guy-gardner": [
+        20,
+        52,
+        18
+      ],
+      "kyle-rayner": [
+        10,
+        36,
+        40
+      ],
+      "jessica-cruz": [
+        16,
+        44,
+        32
+      ],
+      "alan-scott": [
+        40,
+        36,
+        12
+      ],
+      "gl-earth-one": [
+        6,
+        28,
+        22
+      ],
+      "parallax-hal": [
+        36,
+        28,
+        8
+      ]
+    },
+    "issues": {
+      "gl-rebirth": [
+        {
+          "id": "GL: Rebirth #1",
+          "title": "Blackest Night"
+        },
+        {
+          "id": "#2",
+          "title": "Part Two"
+        },
+        {
+          "id": "#3",
+          "title": "Part Three"
+        },
+        {
+          "id": "#4",
+          "title": "Part Four"
+        },
+        {
+          "id": "#5",
+          "title": "Part Five"
+        },
+        {
+          "id": "#6",
+          "title": "Part Six"
+        }
+      ]
+    },
+    "versionArt": {
+      "hal-jordan": "https://upload.wikimedia.org/wikipedia/en/9/90/Green_Lantern_%28Hal_Jordan%29.png",
+      "john-stewart": "https://upload.wikimedia.org/wikipedia/en/7/75/Green_Lantern_%28John_Stewart%29.png",
+      "guy-gardner": "https://upload.wikimedia.org/wikipedia/en/7/74/Green_Lantern_%28Guy_Gardner%29.png",
+      "kyle-rayner": "https://upload.wikimedia.org/wikipedia/en/d/d8/Green_Lantern_%28Kyle_Rayner%29.png",
+      "jessica-cruz": "https://upload.wikimedia.org/wikipedia/en/e/e6/Green_Lantern_%28Jessica_Cruz%29.jpg",
+      "alan-scott": "https://upload.wikimedia.org/wikipedia/en/1/1a/Green_Lantern_%28Alan_Scott%29.png",
+      "gl-earth-one": "https://upload.wikimedia.org/wikipedia/en/a/ad/Green_Lantern_Earth_One.jpg",
+      "parallax-hal": "https://upload.wikimedia.org/wikipedia/en/e/e6/Parallax_%28DC_Comics_character%29.png"
+    }
+  },
+  "doctor-doom": {
+    "id": "doctor-doom",
+    "brand": "Doctor Doom",
+    "title": "Doctor Doom — Latveria Across the Multiverse",
+    "nav_who": "Who is Doctor Doom",
+    "nav_verses": "Verses",
+    "who_id": "who-is-doctor-doom",
+    "header_img": "doctor-doom-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #006633, #003319 45%, #010805)",
+    "verses_h2": "Doctor Doom Across the Multiverse",
+    "verses_p": "versions across Marvel's iron throne — Victor von Doom, God Emperor Doom, Infamous Iron Man, Ultimate Doom, and alternate Latverias.",
+    "comics_p": "Essential Doctor Doom stories — from Books of Doom and Unthinkable to Secret Wars 2015 and Infamous Iron Man.",
+    "screen_p": "Live-action and animated appearances — from Fantastic Four films and Avengers: Doomsday to the 1967 Marvel Super Heroes shorts.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate Universe",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "victor-von-doom",
+        "name": "Victor von Doom",
+        "universe": "Earth-616 / Prime Marvel",
+        "type": "main",
+        "firstAppearance": "Fantastic Four #5 (1962)",
+        "tagline": "Master of sorcery and science",
+        "description": "Victor von Doom is the iron-masked monarch of Latveria — Reed Richards' rival and Marvel's greatest villain who believes only he can save the world.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Doctor_Doom",
+        "runs": [
+          "doom-books-of-doom",
+          "doom-unthinkable",
+          "doom-triumph-torment"
+        ]
+      },
+      {
+        "slug": "god-emperor-doom",
+        "name": "God Emperor Doom",
+        "universe": "Battleworld / Secret Wars",
+        "type": "multiverse",
+        "firstAppearance": "Secret Wars #3 (2015)",
+        "tagline": "He became a god",
+        "description": "During Secret Wars, Doom seized the Beyonder's power and rebuilt reality as Battleworld's absolute ruler — wearing the Infinity Gauntlet and Molecule Man's might.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Secret_Wars_(2015_comic_book)",
+        "runs": [
+          "doom-secret-wars-2015",
+          "doom-time-runs-out"
+        ]
+      },
+      {
+        "slug": "infamous-iron-man",
+        "name": "Infamous Iron Man",
+        "universe": "Earth-616",
+        "type": "alternate",
+        "firstAppearance": "Infamous Iron Man #1 (2016)",
+        "tagline": "The Superior Iron Doom",
+        "description": "After Civil War II, Doctor Doom sought redemption by donning Tony Stark's armor — a fallen tyrant playing hero.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Infamous_Iron_Man",
+        "runs": [
+          "doom-infamous-iron-man",
+          "doom-unthinkable"
+        ]
+      },
+      {
+        "slug": "ultimate-doom",
+        "name": "Ultimate Doctor Doom",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "Ultimate Fantastic Four #7 (2004)",
+        "tagline": "Victor Van Damme",
+        "description": "The Ultimate Universe's Victor Van Damme — a metal-skinned sorcerer-scientist with a very different origin and grudge against Reed Richards.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultimate_Doctor_Doom",
+        "runs": [
+          "doom-ultimate-vol1",
+          "doom-ultimate-cataclysm"
+        ]
+      },
+      {
+        "slug": "doom-2099",
+        "name": "Doom 2099",
+        "universe": "Earth-928 / 2099",
+        "type": "future",
+        "firstAppearance": "Doom 2099 #1 (1993)",
+        "tagline": "Future monarch",
+        "description": "In the cyberpunk 2099 timeline, a new Victor von Doom rises to reclaim Latveria and challenge a corporate dystopia.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Doom_2099",
+        "runs": [
+          "doom-2099-vol1"
+        ]
+      },
+      {
+        "slug": "doomwar-doom",
+        "name": "Doomwar Doctor Doom",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Doomwar #1 (2010)",
+        "tagline": "The Wakanda invasion",
+        "description": "Doctor Doom at his most ruthless — invading Wakanda to steal its vibranium in a war against T'Challa and the Black Panther.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Doomwar",
+        "runs": [
+          "doom-doomwar",
+          "doom-triumph-torment"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "doom-books-of-doom",
+        "versionSlug": "victor-von-doom",
+        "title": "Books of Doom",
+        "creators": "Ed Brubaker & Pablo Raimondi",
+        "years": "2006–07",
+        "collects": "Books of Doom #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None — ideal origin entry",
+        "summary": "The definitive origin of Victor von Doom from gypsy child to iron-faced monarch.",
+        "readingOrder": [
+          "Books of Doom"
+        ],
+        "amazon": [
+          {
+            "asin": "0785121229",
+            "title": "Books of Doom",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785121229",
+        "cover": "media/doom-books-of-doom.jpg"
+      },
+      {
+        "slug": "doom-unthinkable",
+        "versionSlug": "victor-von-doom",
+        "title": "Fantastic Four: Unthinkable",
+        "creators": "Mark Waid & Mike Wieringo",
+        "years": "2003–04",
+        "collects": "Fantastic Four #67–70",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Doctor Doom unleashes hell itself against the Fantastic Four in Waid's terrifying arc.",
+        "readingOrder": [
+          "Fantastic Four: Unthinkable"
+        ],
+        "amazon": [
+          {
+            "asin": "0785115140",
+            "title": "Fantastic Four: Unthinkable",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785115140",
+        "cover": "media/doom-unthinkable.jpg"
+      },
+      {
+        "slug": "doom-triumph-torment",
+        "versionSlug": "victor-von-doom",
+        "title": "Doctor Strange and Doctor Doom: Triumph and Torment",
+        "creators": "Roger Stern & Mike Mignola",
+        "years": "1989",
+        "collects": "Doctor Strange and Doctor Doom: Triumph and Torment",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Doom bargains with Mephisto to save his mother's soul — Marvel's finest villain spotlight.",
+        "readingOrder": [
+          "Doctor Strange and Doctor Doom: Triumph and Torment"
+        ],
+        "amazon": [
+          {
+            "asin": "0785107370",
+            "title": "Doctor Strange and Doctor Doom: Triumph and Torment",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785107370",
+        "cover": "media/doom-triumph-torment.jpg"
+      },
+      {
+        "slug": "doom-secret-wars-2015",
+        "versionSlug": "god-emperor-doom",
+        "title": "Secret Wars (2015)",
+        "creators": "Jonathan Hickman & Esad Ribic",
+        "years": "2015",
+        "collects": "Secret Wars #1–9",
+        "era": "Modern Age",
+        "prerequisites": "Time Runs Out / New Avengers",
+        "summary": "God Emperor Doom rules Battleworld as the multiverse collapses — Hickman's Marvel culmination.",
+        "readingOrder": [
+          "Secret Wars (2015)"
+        ],
+        "amazon": [
+          {
+            "asin": "0785198841",
+            "title": "Secret Wars (2015)",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785198841",
+        "cover": "media/doom-secret-wars-2015.jpg"
+      },
+      {
+        "slug": "doom-time-runs-out",
+        "versionSlug": "god-emperor-doom",
+        "title": "Time Runs Out",
+        "creators": "Jonathan Hickman & various",
+        "years": "2014–15",
+        "collects": "Avengers #35–44, New Avengers #24–33",
+        "era": "Modern Age",
+        "prerequisites": "New Avengers / Avengers",
+        "summary": "The road to Secret Wars — incursions, the Illuminati, and Doom's ascension.",
+        "readingOrder": [
+          "Avengers: Time Runs Out"
+        ],
+        "amazon": [
+          {
+            "asin": "0785192274",
+            "title": "Time Runs Out",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785192274",
+        "cover": "media/doom-time-runs-out.jpg"
+      },
+      {
+        "slug": "doom-infamous-iron-man",
+        "versionSlug": "infamous-iron-man",
+        "title": "Infamous Iron Man",
+        "creators": "Brian Michael Bendis & Alex Maleev",
+        "years": "2016–17",
+        "collects": "Infamous Iron Man #1–12",
+        "era": "Modern Age",
+        "prerequisites": "Civil War II",
+        "summary": "Doctor Doom wears the Iron Man armor and tries to prove he can be a hero.",
+        "readingOrder": [
+          "Infamous Iron Man Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "1302902995",
+            "title": "Infamous Iron Man",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302902995",
+        "cover": "media/doom-infamous-iron-man.jpg"
+      },
+      {
+        "slug": "doom-ultimate-vol1",
+        "versionSlug": "ultimate-doom",
+        "title": "Ultimate Fantastic Four Vol. 3",
+        "creators": "Mark Millar & Bryan Hitch",
+        "years": "2004–05",
+        "collects": "Ultimate Fantastic Four #7–12",
+        "era": "Ultimate",
+        "prerequisites": "Ultimate FF Vol. 1–2",
+        "summary": "Ultimate Doom's origin and first strike against the Ultimate Fantastic Four.",
+        "readingOrder": [
+          "Ultimate Fantastic Four Vol. 3"
+        ],
+        "amazon": [
+          {
+            "asin": "0785116806",
+            "title": "Ultimate Fantastic Four Vol. 3",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785116806",
+        "cover": "media/doom-ultimate-vol1.jpg"
+      },
+      {
+        "slug": "doom-ultimate-cataclysm",
+        "versionSlug": "ultimate-doom",
+        "title": "Cataclysm: The Ultimates' Last Stand",
+        "creators": "Joshua Hale Fialkov & various",
+        "years": "2013–14",
+        "collects": "Cataclysm #0.1–4",
+        "era": "Ultimate",
+        "prerequisites": "Ultimate FF",
+        "summary": "Ultimate Doom faces the end of the Ultimate Universe.",
+        "readingOrder": [
+          "Cataclysm: The Ultimates' Last Stand"
+        ],
+        "amazon": [
+          {
+            "asin": "0785184677",
+            "title": "Cataclysm: The Ultimates' Last Stand",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785184677",
+        "cover": "media/doom-ultimate-cataclysm.jpg"
+      },
+      {
+        "slug": "doom-2099-vol1",
+        "versionSlug": "doom-2099",
+        "title": "Doom 2099 Vol. 1",
+        "creators": "Willie F. Brooker & various",
+        "years": "1993–94",
+        "collects": "Doom 2099 #1–6",
+        "era": "2099",
+        "prerequisites": "None",
+        "summary": "Victor von Doom awakens in the future to reclaim his throne in the 2099 line.",
+        "readingOrder": [
+          "Doom 2099 Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785100150",
+            "title": "Doom 2099 Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785100157",
+        "cover": "media/doom-2099-vol1.jpg"
+      },
+      {
+        "slug": "doom-doomwar",
+        "versionSlug": "doomwar-doom",
+        "title": "Doomwar",
+        "creators": "Jonathan Hickman & various",
+        "years": "2010",
+        "collects": "Doomwar #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Doctor Doom invades Wakanda — vibranium, espionage, and total war.",
+        "readingOrder": [
+          "Doomwar"
+        ],
+        "amazon": [
+          {
+            "asin": "0785146920",
+            "title": "Doomwar",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785146920",
+        "cover": "media/doom-doomwar.jpg"
+      }
+    ],
+    "home_runs": [
+      "doom-books-of-doom",
+      "doom-unthinkable",
+      "doom-triumph-torment",
+      "doom-secret-wars-2015",
+      "doom-infamous-iron-man",
+      "doom-doomwar",
+      "doom-ultimate-vol1",
+      "doom-time-runs-out",
+      "doom-2099-vol1",
+      "doom-ultimate-cataclysm"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Doctor_Doom",
+      "lead": "Victor von Doom does not make mistakes — only victories delayed by fools and Richards.",
+      "summary": "Doctor Doom is Victor von Doom, the iron-masked monarch of Latveria and arch-enemy of the Fantastic Four. Created by Stan Lee and Jack Kirby, he debuted in Fantastic Four #5 (1962). A master of science and sorcery, Doom has threatened Earth, stolen godhood during Secret Wars, and even briefly wore the Iron Man armor in a bid for redemption.",
+      "facts": [
+        {
+          "label": "Alter ego",
+          "value": "Victor von Doom"
+        },
+        {
+          "label": "First appearance",
+          "value": "Fantastic Four #5 (1962)"
+        },
+        {
+          "label": "Created by",
+          "value": "Stan Lee & Jack Kirby"
+        },
+        {
+          "label": "Publisher",
+          "value": "Marvel Comics"
+        },
+        {
+          "label": "Nation",
+          "value": "Latveria"
+        },
+        {
+          "label": "Allies",
+          "value": "Latverian army, Kristoff Vernard"
+        },
+        {
+          "label": "Notable foes",
+          "value": "Mr. Fantastic, Black Panther, Iron Man"
+        },
+        {
+          "label": "Powers",
+          "value": "Genius intellect, sorcery, powered armor"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "doom-2005",
+            "title": "Fantastic Four",
+            "note": "Julian McMahon · Victor von Doom",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2005_film)",
+            "imdb": "https://www.imdb.com/title/tt0120667/",
+            "year": "2005"
+          },
+          {
+            "id": "doom-2015",
+            "title": "Fantastic Four",
+            "note": "Toby Kebbell · Victor von Doom",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)",
+            "imdb": "https://www.imdb.com/title/tt1502712/",
+            "year": "2015"
+          },
+          {
+            "id": "doom-2026",
+            "title": "Avengers: Doomsday",
+            "note": "Robert Downey Jr. · Victor von Doom",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+            "imdb": "https://www.imdb.com/title/tt21357150/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Animated",
+        "items": [
+          {
+            "id": "doom-1967",
+            "title": "The Marvel Super Heroes",
+            "note": "1966 Doctor Doom shorts",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Marvel_Super_Heroes",
+            "imdb": "https://www.imdb.com/title/tt0060004/",
+            "years": "1966"
+          },
+          {
+            "id": "doom-1994",
+            "title": "Fantastic Four (1994)",
+            "note": "Animated series",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(1994_TV_series)",
+            "imdb": "https://www.imdb.com/title/tt0108850/",
+            "years": "1994–1996"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "victor-von-doom": [
+        0,
+        102,
+        51
+      ],
+      "god-emperor-doom": [
+        80,
+        40,
+        120
+      ],
+      "infamous-iron-man": [
+        180,
+        140,
+        40
+      ],
+      "ultimate-doom": [
+        60,
+        80,
+        60
+      ],
+      "doom-2099": [
+        20,
+        100,
+        80
+      ],
+      "doomwar-doom": [
+        0,
+        60,
+        30
+      ]
+    },
+    "issues": {},
+    "versionArt": {
+      "victor-von-doom": "https://upload.wikimedia.org/wikipedia/en/6/66/Doctor_Doom_%28Marvel_Comics_character%29.png",
+      "god-emperor-doom": "https://upload.wikimedia.org/wikipedia/en/3/33/Secret_Wars.jpg",
+      "infamous-iron-man": "https://upload.wikimedia.org/wikipedia/en/4/43/Infamous_Iron_Man_Vol_1_1_Textless.jpg",
+      "doom-2099": "https://upload.wikimedia.org/wikipedia/en/5/56/Doom-2099.jpg"
+    }
+  },
+  "fantastic-four": {
+    "id": "fantastic-four",
+    "brand": "Fantastic Four",
+    "title": "Fantastic Four",
+    "nav_who": "Who are the Fantastic Four",
+    "nav_verses": "Verses",
+    "who_id": "who-is-fantastic-four",
+    "header_img": "fantastic-four-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #1565c0, #0d47a1 45%, #021020)",
+    "verses_h2": "Fantastic Four Across the Multiverse",
+    "verses_p": "versions of Marvel's first family. This guide is Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm.",
+    "comics_p": "The Lee and Kirby issues that introduce them and Doctor Doom, then Jonathan Hickman, then Ryan North.",
+    "screen_p": "Live action, from the 2005 film through The Fantastic Four: First Steps.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate Universe",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "fantastic-four",
+        "name": "The Fantastic Four",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Fantastic Four #1 (1961)",
+        "tagline": "Marvel's first family",
+        "description": "Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm came back from a flight changed. Doctor Doom has been across from them since Fantastic Four #5.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four",
+        "runs": [
+          "ff-worlds-greatest",
+          "ff-hickman-2",
+          "ff-north"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "ff-worlds-greatest",
+        "versionSlug": "fantastic-four",
+        "title": "Fantastic Four Epic Collection: The World's Greatest Comic Magazine",
+        "creators": "Stan Lee & Jack Kirby",
+        "years": "1961–63",
+        "collects": "Fantastic Four #1–18 and Annual #1",
+        "era": "Silver Age",
+        "prerequisites": "None — start here",
+        "summary": "The origin, and the first meeting with Doctor Doom.",
+        "readingOrder": [
+          "Fantastic Four Epic Collection: The World's Greatest Comic Magazine"
+        ],
+        "amazon": [
+          {
+            "asin": "0785188320",
+            "title": "Fantastic Four Epic Collection: The World's Greatest Comic Magazine",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785188322",
+        "cover": "media/ff-worlds-greatest.jpg"
+      },
+      {
+        "slug": "ff-hickman-2",
+        "versionSlug": "fantastic-four",
+        "title": "Fantastic Four by Jonathan Hickman: The Complete Collection Vol. 2",
+        "creators": "Jonathan Hickman & various",
+        "years": "2009–12",
+        "collects": "A later stretch of Jonathan Hickman's Fantastic Four",
+        "era": "Modern Age",
+        "prerequisites": "The start of Hickman's Fantastic Four",
+        "summary": "Reed's plans get bigger than the family, and the family feels it.",
+        "readingOrder": [
+          "Fantastic Four by Jonathan Hickman: The Complete Collection Vol. 2"
+        ],
+        "amazon": [
+          {
+            "asin": "1302919636",
+            "title": "Fantastic Four by Jonathan Hickman: The Complete Collection Vol. 2",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302919634",
+        "cover": "media/ff-hickman-2.jpg"
+      },
+      {
+        "slug": "ff-north",
+        "versionSlug": "fantastic-four",
+        "title": "Fantastic Four by Ryan North Vol. 1",
+        "creators": "Ryan North & Iban Coello",
+        "years": "2022–23",
+        "collects": "Fantastic Four (2022) #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "A recent start. The four are still a family first, and still in trouble.",
+        "readingOrder": [
+          "Fantastic Four by Ryan North Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "1302932632",
+            "title": "Fantastic Four by Ryan North Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302932633",
+        "cover": "media/ff-north.jpg"
+      }
+    ],
+    "home_runs": [
+      "ff-worlds-greatest",
+      "ff-hickman-2",
+      "ff-north"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four",
+      "lead": "Reed, Sue, Johnny, and Ben. Doctor Doom has been across from them since Fantastic Four #5.",
+      "summary": "The Fantastic Four are Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm. Stan Lee and Jack Kirby introduced them in Fantastic Four #1 (1961), after a flight exposed them to cosmic rays. Reed stretches. Sue turns invisible and raises force fields. Johnny burns. Ben is the Thing. Doctor Doom, the monarch of Latveria, enters in Fantastic Four #5.",
+      "facts": [
+        {
+          "label": "Members",
+          "value": "Reed Richards, Sue Storm, Johnny Storm, Ben Grimm"
+        },
+        {
+          "label": "First appearance",
+          "value": "Fantastic Four #1 (1961)"
+        },
+        {
+          "label": "Created by",
+          "value": "Stan Lee & Jack Kirby"
+        },
+        {
+          "label": "Home",
+          "value": "The Baxter Building"
+        },
+        {
+          "label": "Opposite",
+          "value": "Doctor Doom"
+        },
+        {
+          "label": "On screen",
+          "value": "The Fantastic Four: First Steps (2025)"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Films",
+        "items": [
+          {
+            "id": "ff-2005",
+            "title": "Fantastic Four",
+            "note": "Ioan Gruffudd, Jessica Alba, Chris Evans, Michael Chiklis",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2005_film)",
+            "imdb": "https://www.imdb.com/title/tt0120667/",
+            "year": "2005"
+          },
+          {
+            "id": "ff-silver",
+            "title": "Fantastic Four: Rise of the Silver Surfer",
+            "note": "Ioan Gruffudd, Jessica Alba, Chris Evans, Michael Chiklis",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four:_Rise_of_the_Silver_Surfer",
+            "imdb": "https://www.imdb.com/title/tt0486576/",
+            "year": "2007"
+          },
+          {
+            "id": "ff-2015",
+            "title": "Fantastic Four",
+            "note": "Miles Teller, Kate Mara, Michael B. Jordan, Jamie Bell",
+            "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)",
+            "imdb": "https://www.imdb.com/title/tt1502712/",
+            "year": "2015"
+          },
+          {
+            "id": "ff-first-steps",
+            "title": "The Fantastic Four: First Steps",
+            "note": "Pedro Pascal, Vanessa Kirby, Joseph Quinn, Ebon Moss-Bachrach",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps",
+            "imdb": "https://www.imdb.com/title/tt10676052/",
+            "year": "2025"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "fantastic-four": [
+        21,
+        101,
+        192
+      ]
+    },
+    "issues": {},
+    "versionArt": {}
+  },
+  "clayface": {
+    "id": "clayface",
+    "brand": "Clayface",
+    "title": "Clayface — Shape and Horror Across Every Form",
+    "nav_who": "Who is Clayface",
+    "nav_verses": "Verses",
+    "who_id": "who-is-clayface",
+    "header_img": "clayface-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #5d4037, #3e2723 45%, #120c0a)",
+    "verses_h2": "Clayface Across the Multiverse",
+    "verses_p": "versions in the comics. Basil Karlo, Preston Payne, and Cassius Payne. Matt Hagen's film and the animated series are in Film and TV.",
+    "comics_p": "Essential Clayface stories — from Detective Comics origins through Mudpack, Face the Face, and modern horror takes.",
+    "screen_p": "Live-action and animated appearances — from the 2026 James Watkins film to Batman: The Animated Series.",
+    "types": {
+      "main": "Main Continuity",
+      "multiverse": "Multiverse",
+      "elseworlds": "Elseworlds",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "basil-karlo",
+        "name": "Basil Karlo",
+        "universe": "Earth-0 / Prime Earth",
+        "type": "main",
+        "firstAppearance": "Detective Comics #40 (1940)",
+        "tagline": "The original Clayface",
+        "description": "Actor Basil Karlo donned the mask of a horror villain and became Gotham's first Clayface — identity, performance, and murder.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Clayface",
+        "runs": [
+          "cf-asylum",
+          "cf-origin-classic",
+          "cf-face-the-face",
+          "cf-outsiders"
+        ]
+      },
+      {
+        "slug": "preston-payne",
+        "name": "Preston Payne",
+        "universe": "Earth-0 / Post-Crisis",
+        "type": "main",
+        "firstAppearance": "Detective Comics #478 (1978)",
+        "tagline": "The tragic Clayface",
+        "description": "Scientist Preston Payne's experimental cure left him a melting monster who needed human contact to survive — Batman's most pitiful foe.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Clayface#Preston_Payne",
+        "runs": [
+          "cf-payne-debut",
+          "cf-payne",
+          "cf-mudpack"
+        ]
+      },
+      {
+        "slug": "cassius-clayface",
+        "name": "Cassius 'Clay' Payne",
+        "universe": "Earth-0",
+        "type": "alternate",
+        "firstAppearance": "Batman #550 (1998)",
+        "tagline": "Son of Clayface",
+        "description": "Cassius inherited his father's clay condition — a next-generation shapeshifter raised in tragedy.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Clayface",
+        "runs": [
+          "cf-cassius-debut",
+          "cf-cassius"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "cf-asylum",
+        "versionSlug": "basil-karlo",
+        "title": "Joker's Asylum II: Clayface",
+        "creators": "Kevin Shinick & Kelley Jones",
+        "years": "2010",
+        "collects": "Joker's Asylum II: Clayface #1",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Basil Karlo, the mud monster, on his own one-shot.",
+        "readingOrder": [
+          "Joker's Asylum II: Clayface"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Joker's Asylum II: Clayface",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/cf-asylum.jpg"
+      },
+      {
+        "slug": "cf-origin-classic",
+        "versionSlug": "basil-karlo",
+        "title": "Batman: The Golden Age Vol. 1",
+        "creators": "Bill Finger & Bob Kane",
+        "years": "1940",
+        "collects": "Detective Comics #40",
+        "era": "Golden Age",
+        "prerequisites": "None",
+        "summary": "Basil Karlo's debut as Clayface — Batman vs. a murderous actor.",
+        "readingOrder": [
+          "Batman: The Golden Age Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "1401260083",
+            "title": "Batman: The Golden Age Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401260088",
+        "cover": "media/cf-origin-classic.jpg"
+      },
+      {
+        "slug": "cf-face-the-face",
+        "versionSlug": "basil-karlo",
+        "title": "Batman: Face the Face",
+        "creators": "James Robinson & Don Kramer",
+        "years": "2006",
+        "collects": "Detective Comics #817–820, Batman #651–654",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Post-Infinite Crisis Batman faces a new wave of murders with Clayface in the mix.",
+        "readingOrder": [
+          "Batman: Face the Face"
+        ],
+        "amazon": [
+          {
+            "asin": "1401209660",
+            "title": "Batman: Face the Face",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401209667",
+        "cover": "media/cf-face-the-face.jpg"
+      },
+      {
+        "slug": "cf-outsiders",
+        "versionSlug": "basil-karlo",
+        "title": "Batman and the Outsiders Vol. 1",
+        "creators": "Mike W. Barr & Jim Aparo",
+        "years": "1983",
+        "collects": "Batman and the Outsiders #1–8",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Clayface and other rogues orbit Batman's international team era.",
+        "readingOrder": [
+          "Batman and the Outsiders Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "1401251513",
+            "title": "Batman and the Outsiders Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401251512",
+        "cover": "media/cf-outsiders.jpg"
+      },
+      {
+        "slug": "cf-payne-debut",
+        "versionSlug": "preston-payne",
+        "title": "Detective Comics #479",
+        "creators": "Len Wein & Marshall Rogers",
+        "years": "1978",
+        "collects": "Detective Comics #479",
+        "era": "Bronze Age",
+        "prerequisites": "None",
+        "summary": "Preston Payne, the man whose touch dissolves, in his containment suit.",
+        "readingOrder": [
+          "Detective Comics #479"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Detective Comics #479",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/cf-payne-debut.jpg"
+      },
+      {
+        "slug": "cf-payne",
+        "versionSlug": "preston-payne",
+        "title": "Tales of the Batman: Len Wein",
+        "creators": "Len Wein & various",
+        "years": "1970s–80s",
+        "collects": "Selected Detective Comics Clayface tales",
+        "era": "Bronze Age",
+        "prerequisites": "None",
+        "summary": "Preston Payne's tragic Clayface stories collected among Len Wein's Batman work.",
+        "readingOrder": [
+          "Tales of the Batman: Len Wein"
+        ],
+        "amazon": [
+          {
+            "asin": "1401251521",
+            "title": "Tales of the Batman: Len Wein",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401251529",
+        "cover": "media/cf-payne.jpg"
+      },
+      {
+        "slug": "cf-mudpack",
+        "versionSlug": "mudpack",
+        "title": "Batman: The Mudpack",
+        "creators": "Alan Grant, John Wagner & Norm Breyfogle",
+        "years": "1989–90",
+        "collects": "Detective Comics #604–607",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Four Clayfaces unite — Karlo's Mudpack assault on Gotham.",
+        "readingOrder": [
+          "Batman: The Mudpack"
+        ],
+        "amazon": [
+          {
+            "asin": "1401234801",
+            "title": "Batman: The Mudpack",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401234801",
+        "cover": "media/cf-mudpack.jpg"
+      },
+      {
+        "slug": "cf-cassius-debut",
+        "versionSlug": "cassius-clayface",
+        "title": "Batman #550",
+        "creators": "Doug Moench & Kelley Jones",
+        "years": "1998",
+        "collects": "Batman #550",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Cassius Payne, the child Clayface, looms over Gotham in Batman #550.",
+        "readingOrder": [
+          "Batman #550"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Batman #550",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/cf-cassius-debut.jpg"
+      },
+      {
+        "slug": "cf-cassius",
+        "versionSlug": "cassius-clayface",
+        "title": "Batman: Cataclysm",
+        "creators": "Various",
+        "years": "1998",
+        "collects": "Batman #550 and related",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Cassius emerges in the earthquake-era Gotham stories.",
+        "readingOrder": [
+          "Batman: Cataclysm"
+        ],
+        "amazon": [
+          {
+            "asin": "1563895276",
+            "title": "Batman: Cataclysm",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781563895272",
+        "cover": "media/cf-cassius.jpg"
+      },
+      {
+        "slug": "cf-btas-era",
+        "versionSlug": "btas-clayface",
+        "title": "Batman: The Animated Series Guide / Feat of Clay era",
+        "creators": "Paul Dini & Bruce Timm",
+        "years": "1992–95",
+        "collects": "BTAS Feat of Clay and related comics",
+        "era": "DCAU",
+        "prerequisites": "None",
+        "summary": "The definitive tragic Matt Hagen Clayface that shaped every later adaptation.",
+        "readingOrder": [
+          "Batman: The Animated Series Guide"
+        ],
+        "amazon": [
+          {
+            "asin": "0756604117",
+            "title": "Batman: The Animated Series Guide / Feat of Clay era",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780756604110",
+        "cover": "media/cf-btas-era.jpg"
+      },
+      {
+        "slug": "cf-horror-modern",
+        "versionSlug": "dcu-hagen",
+        "title": "Batman: Hush",
+        "creators": "Jeph Loeb & Jim Lee",
+        "years": "2002–03",
+        "collects": "Batman #608–619",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Modern Clayface as master impersonator — the identity-horror DNA behind the 2026 film.",
+        "readingOrder": [
+          "Batman: Hush"
+        ],
+        "amazon": [
+          {
+            "asin": "1401223172",
+            "title": "Batman: Hush",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401223175",
+        "cover": "media/cf-horror-modern.jpg"
+      }
+    ],
+    "home_runs": [
+      "cf-mudpack",
+      "cf-horror-modern",
+      "cf-origin-classic",
+      "cf-face-the-face",
+      "cf-payne",
+      "cf-btas-era",
+      "cf-outsiders",
+      "cf-cassius"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Clayface",
+      "lead": "Gotham's shape-shifting nightmare — actor, scientist, and monster in one muddy legend.",
+      "summary": "Clayface is a mantle worn by several Batman villains, most famously Basil Karlo and Preston Payne. Created by Bill Finger and Bob Kane, the original debuted in Detective Comics #40 (1940). Later versions turned the concept into tragic body horror and perfect impersonation — the through-line for the 2026 DCU film.",
+      "facts": [
+        {
+          "label": "Notable identities",
+          "value": "Basil Karlo, Preston Payne, Matt Hagen"
+        },
+        {
+          "label": "First appearance",
+          "value": "Detective Comics #40 (1940)"
+        },
+        {
+          "label": "Created by",
+          "value": "Bill Finger & Bob Kane"
+        },
+        {
+          "label": "Publisher",
+          "value": "DC Comics"
+        },
+        {
+          "label": "Powers",
+          "value": "Shapeshifting, clay physiology"
+        },
+        {
+          "label": "Base of operations",
+          "value": "Gotham City"
+        },
+        {
+          "label": "Notable allies",
+          "value": "Mudpack, Injustice League"
+        },
+        {
+          "label": "Notable foes",
+          "value": "Batman, Batgirl, Robin"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "cf-2026",
+            "title": "Clayface",
+            "note": "James Watkins · Tom Rhys Harries",
+            "wikipedia": "https://en.wikipedia.org/wiki/Clayface_(film)",
+            "imdb": "https://www.imdb.com/title/tt31193180/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Animated",
+        "items": [
+          {
+            "id": "cf-btas",
+            "title": "Batman: The Animated Series",
+            "note": "Feat of Clay · Ron Perlman",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Animated_Series",
+            "imdb": "https://www.imdb.com/title/tt0103359/",
+            "years": "1992–1995"
+          },
+          {
+            "id": "cf-caped",
+            "title": "The Batman (2004)",
+            "note": "Clayface episodes",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt0398417/",
+            "years": "2004–2008"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "basil-karlo": [
+        93,
+        64,
+        55
+      ],
+      "preston-payne": [
+        120,
+        90,
+        60
+      ],
+      "cassius-clayface": [
+        140,
+        110,
+        70
+      ],
+      "mudpack": [
+        80,
+        60,
+        40
+      ],
+      "btas-clayface": [
+        100,
+        80,
+        120
+      ],
+      "dcu-hagen": [
+        60,
+        40,
+        35
+      ]
+    },
+    "issues": {},
+    "versionArt": {
+      "basil-karlo": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+      "preston-payne": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+      "cassius-clayface": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+      "mudpack": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+      "btas-clayface": "https://upload.wikimedia.org/wikipedia/en/8/8d/Clayfaces.jpg",
+      "dcu-hagen": "https://upload.wikimedia.org/wikipedia/en/4/4f/Clayface_%28film%29_poster.jpg"
+    }
+  },
+  "vision": {
+    "id": "vision",
+    "brand": "Vision",
+    "title": "Vision — The Synthezoid Across Every Form",
+    "nav_who": "Who is Vision",
+    "nav_verses": "Verses",
+    "who_id": "who-is-vision",
+    "header_img": "vision-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #c62828, #6a1b1b 45%, #120808)",
+    "verses_h2": "Vision Across the Multiverse",
+    "verses_p": "versions of Marvel's synthezoid — Classic Vision, White Vision, Vision & the Scarlet Witch, Ultimate Vision, and more.",
+    "comics_p": "Essential Vision stories — from Thomas/Buscema origins through Vision Quest, Tom King's Vision, and WandaVision-era comics.",
+    "screen_p": "Live-action and animated appearances — from WandaVision and VisionQuest to decades of Avengers cartoons.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "classic-vision",
+        "name": "Classic Vision",
+        "universe": "Earth-616 / Prime Marvel",
+        "type": "main",
+        "firstAppearance": "Avengers #57 (1968)",
+        "tagline": "Even an android can cry",
+        "description": "Ultron's creation who chose heroism — density control, solar beams, and a soul that shocked the Avengers.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)",
+        "runs": [
+          "vis-avengers-classic",
+          "vis-bride-of-ultron",
+          "vis-vision-quest"
+        ]
+      },
+      {
+        "slug": "white-vision",
+        "name": "White Vision",
+        "universe": "Earth-616",
+        "type": "alternate",
+        "firstAppearance": "West Coast Avengers #45 (1989)",
+        "tagline": "Memories erased",
+        "description": "Dismantled and rebuilt without emotion or color — the White Vision must decide what selfhood means.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)",
+        "runs": [
+          "vis-vision-quest",
+          "vis-white"
+        ]
+      },
+      {
+        "slug": "ultimate-vision",
+        "name": "Ultimate Vision",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "Ultimates #5 (2002)",
+        "tagline": "Gah Lak Tus probe",
+        "description": "Ultimate Universe's Vision is a robotic herald warning Earth of Gah Lak Tus — colder, stranger, cosmic.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)#Other_versions",
+        "runs": [
+          "vis-ultimate"
+        ]
+      },
+      {
+        "slug": "young-avengers-vision",
+        "name": "Young Avengers Vision",
+        "universe": "Earth-616",
+        "type": "alternate",
+        "firstAppearance": "Young Avengers #1 (2005)",
+        "tagline": "Jonas",
+        "description": "A new Vision forged from the old — Jonas joins the Young Avengers with heart and uncertainty.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Vision_(Jonas)",
+        "runs": [
+          "vis-young-avengers"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "vis-avengers-classic",
+        "versionSlug": "classic-vision",
+        "title": "Avengers: The Vision and the Scarlet Witch",
+        "creators": "Roy Thomas & John Buscema",
+        "years": "1968–69",
+        "collects": "Avengers #57–58, #74–75",
+        "era": "Silver Age",
+        "prerequisites": "None — origin entry",
+        "summary": "Vision's debut and early Avengers years — Ultron's son becomes Earth's champion.",
+        "readingOrder": [
+          "Avengers: The Vision and the Scarlet Witch"
+        ],
+        "amazon": [
+          {
+            "asin": "0785157304",
+            "title": "Avengers: The Vision and the Scarlet Witch",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785157304",
+        "cover": "media/vis-avengers-classic.jpg"
+      },
+      {
+        "slug": "vis-bride-of-ultron",
+        "versionSlug": "classic-vision",
+        "title": "Avengers: Ultron Unleashed",
+        "creators": "Roy Thomas & John Buscema",
+        "years": "1968",
+        "collects": "Avengers #54–55, #57–58",
+        "era": "Silver Age",
+        "prerequisites": "None",
+        "summary": "Ultron's schemes and Vision's birth collide in foundational Avengers lore.",
+        "readingOrder": [
+          "Avengers: Ultron Unleashed"
+        ],
+        "amazon": [
+          {
+            "asin": "0785157312",
+            "title": "Avengers: Ultron Unleashed",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785157311",
+        "cover": "media/vis-bride-of-ultron.jpg"
+      },
+      {
+        "slug": "vis-vision-quest",
+        "versionSlug": "white-vision",
+        "title": "West Coast Avengers: Vision Quest",
+        "creators": "John Byrne",
+        "years": "1989",
+        "collects": "West Coast Avengers #42–45",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Vision is dismantled by the government — the birth of the White Vision.",
+        "readingOrder": [
+          "West Coast Avengers: Vision Quest"
+        ],
+        "amazon": [
+          {
+            "asin": "0785131178",
+            "title": "West Coast Avengers: Vision Quest",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785131175",
+        "cover": "media/vis-vision-quest.jpg"
+      },
+      {
+        "slug": "vis-scarlets-1982",
+        "versionSlug": "vision-scarlets",
+        "title": "Vision and the Scarlet Witch (1982)",
+        "creators": "Bill Mantlo & Rick Leonardi",
+        "years": "1982–83",
+        "collects": "Vision and the Scarlet Witch #1–4",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Domestic life for an android and a witch — Marvel's strangest romance begins.",
+        "readingOrder": [
+          "Vision and the Scarlet Witch"
+        ],
+        "amazon": [
+          {
+            "asin": "0785131186",
+            "title": "Vision and the Scarlet Witch (1982)",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785131182",
+        "cover": "media/vis-scarlets-1982.jpg"
+      },
+      {
+        "slug": "vis-scarlets-1985",
+        "versionSlug": "vision-scarlets",
+        "title": "Vision and the Scarlet Witch (1985)",
+        "creators": "Steve Englehart & Richard Howell",
+        "years": "1985–86",
+        "collects": "Vision and the Scarlet Witch #1–12",
+        "era": "Modern Age",
+        "prerequisites": "1982 miniseries",
+        "summary": "Wanda and Vision's children, magic, and suburbia — the comic DNA of WandaVision.",
+        "readingOrder": [
+          "Vision and the Scarlet Witch Vol. 2"
+        ],
+        "amazon": [
+          {
+            "asin": "0785131194",
+            "title": "Vision and the Scarlet Witch (1985)",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785131199",
+        "cover": "media/vis-scarlets-1985.jpg"
+      },
+      {
+        "slug": "vis-tom-king",
+        "versionSlug": "tom-king-vision",
+        "title": "Vision by Tom King",
+        "creators": "Tom King & Gabriel Hernandez Walta",
+        "years": "2015–16",
+        "collects": "Vision #1–12",
+        "era": "Modern Age",
+        "prerequisites": "None — essential modern entry",
+        "summary": "Vision's attempt at a normal family life becomes one of Marvel's best modern tragedies.",
+        "readingOrder": [
+          "Vision by Tom King"
+        ],
+        "amazon": [
+          {
+            "asin": "1302904130",
+            "title": "Vision by Tom King",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302904135",
+        "cover": "media/vis-tom-king.jpg"
+      },
+      {
+        "slug": "vis-white",
+        "versionSlug": "white-vision",
+        "title": "Avengers: Vision and the Scarlet Witch — A Year in the Life",
+        "creators": "Steve Englehart & various",
+        "years": "1980s collections",
+        "collects": "Selected West Coast / Avengers",
+        "era": "Modern Age",
+        "prerequisites": "Vision Quest",
+        "summary": "Aftermath threads of the colorless Vision seeking identity.",
+        "readingOrder": [
+          "Avengers: Vision and the Scarlet Witch"
+        ],
+        "amazon": [
+          {
+            "asin": "0785131208",
+            "title": "Avengers: Vision and the Scarlet Witch — A Year in the Life",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785131205",
+        "cover": "media/vis-white.jpg"
+      },
+      {
+        "slug": "vis-ultimate",
+        "versionSlug": "ultimate-vision",
+        "title": "The Ultimates Vol. 1",
+        "creators": "Mark Millar & Bryan Hitch",
+        "years": "2002–04",
+        "collects": "The Ultimates #1–13",
+        "era": "Ultimate",
+        "prerequisites": "None",
+        "summary": "Ultimate Vision as cosmic warning system in Millar/Hitch's Ultimates.",
+        "readingOrder": [
+          "The Ultimates Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785110804",
+            "title": "The Ultimates Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785110804",
+        "cover": "media/vis-ultimate.jpg"
+      },
+      {
+        "slug": "vis-young-avengers",
+        "versionSlug": "young-avengers-vision",
+        "title": "Young Avengers",
+        "creators": "Allan Heinberg & Jim Cheung",
+        "years": "2005–06",
+        "collects": "Young Avengers #1–12",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Jonas the Vision joins Marvel's next generation.",
+        "readingOrder": [
+          "Young Avengers"
+        ],
+        "amazon": [
+          {
+            "asin": "0785113938",
+            "title": "Young Avengers",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785113935",
+        "cover": "media/vis-young-avengers.jpg"
+      }
+    ],
+    "home_runs": [
+      "vis-tom-king",
+      "vis-avengers-classic",
+      "vis-vision-quest",
+      "vis-scarlets-1985",
+      "vis-scarlets-1982",
+      "vis-young-avengers",
+      "vis-ultimate",
+      "vis-bride-of-ultron",
+      "vis-white"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Vision_(Marvel_Comics)",
+      "lead": "Ultron built a weapon. The Avengers found a person.",
+      "summary": "Vision is a synthezoid Avenger created by Ultron, first appearing in Avengers #57 (1968) by Roy Thomas and John Buscema. With density manipulation and a longing for humanity, he became Marvel's most philosophical android — husband to Wanda Maximoff, father figure, and the focus of VisionQuest on screen.",
+      "facts": [
+        {
+          "label": "Alter ego",
+          "value": "Vision / Victor Shade"
+        },
+        {
+          "label": "First appearance",
+          "value": "Avengers #57 (1968)"
+        },
+        {
+          "label": "Created by",
+          "value": "Roy Thomas & John Buscema"
+        },
+        {
+          "label": "Publisher",
+          "value": "Marvel Comics"
+        },
+        {
+          "label": "Powers",
+          "value": "Density control, solar beams, flight"
+        },
+        {
+          "label": "Creator (in-world)",
+          "value": "Ultron"
+        },
+        {
+          "label": "Notable allies",
+          "value": "Scarlet Witch, Avengers, Wonder Man"
+        },
+        {
+          "label": "Notable foes",
+          "value": "Ultron, Kang, Immortus"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action series",
+        "items": [
+          {
+            "id": "vis-wandavision",
+            "title": "WandaVision",
+            "note": "Paul Bettany · Elizabeth Olsen",
+            "wikipedia": "https://en.wikipedia.org/wiki/WandaVision",
+            "imdb": "https://www.imdb.com/title/tt9140560/",
+            "years": "2021"
+          },
+          {
+            "id": "vis-visionquest",
+            "title": "VisionQuest",
+            "note": "White Vision · Disney+",
+            "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+            "imdb": "https://www.imdb.com/title/tt23112594/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "vis-aou",
+            "title": "Avengers: Age of Ultron",
+            "note": "Vision's birth",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+            "imdb": "https://www.imdb.com/title/tt2395427/",
+            "year": "2015"
+          },
+          {
+            "id": "vis-infinity",
+            "title": "Avengers: Infinity War",
+            "note": "Mind Stone tragedy",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+            "imdb": "https://www.imdb.com/title/tt4154756/",
+            "year": "2018"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "classic-vision": [
+        198,
+        40,
+        40
+      ],
+      "vision-scarlets": [
+        180,
+        60,
+        120
+      ],
+      "tom-king-vision": [
+        140,
+        40,
+        50
+      ],
+      "white-vision": [
+        200,
+        200,
+        210
+      ],
+      "ultimate-vision": [
+        80,
+        80,
+        100
+      ],
+      "young-avengers-vision": [
+        220,
+        100,
+        80
+      ]
+    },
+    "issues": {},
+    "versionArt": {
+      "vision-scarlets": "https://upload.wikimedia.org/wikipedia/en/d/df/The_Vision_and_the_Scarlet_Witch.jpg"
+    }
+  },
+  "spiderman": {
+    "id": "spiderman",
+    "brand": "Spider-Man",
+    "title": "Spider-Man — Across the Spider-Verse",
+    "nav_who": "Who is Spider-Man",
+    "nav_verses": "Verses",
+    "who_id": "who-is-spiderman",
+    "header_img": "spiderman-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #e53935, #b71c1c 45%, #1a0505)",
+    "verses_h2": "Spider-Man Across the Multiverse",
+    "verses_p": "versions of the wall-crawler — Peter Parker, Miles Morales, Ultimate Spider-Man, Spider-Gwen, and more.",
+    "comics_p": "Essential Spider-Man stories — from Amazing Fantasy #15 through Brand New Day, Ultimate, and Miles Morales.",
+    "screen_p": "Live-action and animated appearances — from Brand New Day and the MCU films to Into the Spider-Verse.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "peter-parker",
+        "name": "Peter Parker",
+        "universe": "Earth-616 / Prime Marvel",
+        "type": "main",
+        "firstAppearance": "Amazing Fantasy #15 (1962)",
+        "tagline": "Your friendly neighborhood Spider-Man",
+        "description": "Bitten by a radioactive spider, Peter Parker learns that with great power comes great responsibility — Marvel's everyman hero for more than sixty years.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man",
+        "runs": [
+          "sm-origin",
+          "sm-brand-new-day",
+          "sm-kraven",
+          "sm-superior"
+        ]
+      },
+      {
+        "slug": "miles-morales",
+        "name": "Miles Morales",
+        "universe": "Earth-1610 / Ultimate / 616",
+        "type": "ultimate",
+        "firstAppearance": "Ultimate Fallout #4 (2011)",
+        "tagline": "The Ultimate Spider-Man",
+        "description": "Miles Morales took up the mantle in the Ultimate Universe and crossed into the main line — a new generation under the mask.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Miles_Morales",
+        "runs": [
+          "sm-miles-ultimate",
+          "sm-miles-616"
+        ]
+      },
+      {
+        "slug": "ultimate-peter",
+        "name": "Ultimate Peter Parker",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "Ultimate Spider-Man #1 (2000)",
+        "tagline": "Modern origin reborn",
+        "description": "Brian Michael Bendis and Mark Bagley's Ultimate Spider-Man reinvented Peter's high-school years for a new century.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultimate_Spider-Man",
+        "runs": [
+          "sm-ultimate-vol1"
+        ]
+      },
+      {
+        "slug": "spider-gwen",
+        "name": "Ghost-Spider (Gwen Stacy)",
+        "universe": "Earth-65",
+        "type": "alternate",
+        "firstAppearance": "Edge of Spider-Verse #2 (2014)",
+        "tagline": "Spider-Woman of Earth-65",
+        "description": "On Earth-65, Gwen Stacy got the bite — and became Ghost-Spider, a dimension-hopping hero of the Spider-Verse.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ghost-Spider",
+        "runs": [
+          "sm-spider-gwen"
+        ]
+      },
+      {
+        "slug": "spider-2099",
+        "name": "Spider-Man 2099",
+        "universe": "Earth-928",
+        "type": "future",
+        "firstAppearance": "Spider-Man 2099 #1 (1992)",
+        "tagline": "Miguel O'Hara",
+        "description": "In the year 2099, Miguel O'Hara becomes a genetically engineered Spider-Man in a corporate dystopia.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_2099",
+        "runs": [
+          "sm-2099"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "sm-origin",
+        "versionSlug": "peter-parker",
+        "title": "Amazing Fantasy Omnibus / Amazing Spider-Man Vol. 1",
+        "creators": "Stan Lee & Steve Ditko",
+        "years": "1962–63",
+        "collects": "Amazing Fantasy #15, Amazing Spider-Man #1–10",
+        "era": "Silver Age",
+        "prerequisites": "None — ideal entry",
+        "summary": "The radioactive spider, Uncle Ben, and the birth of Marvel's greatest street-level hero.",
+        "readingOrder": [
+          "Amazing Fantasy #15"
+        ],
+        "amazon": [
+          {
+            "asin": "0785124635",
+            "title": "Amazing Fantasy Omnibus / Amazing Spider-Man Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785124634",
+        "cover": "media/sm-origin.jpg"
+      },
+      {
+        "slug": "sm-brand-new-day",
+        "versionSlug": "peter-parker",
+        "title": "Spider-Man: Brand New Day",
+        "creators": "Various",
+        "years": "2008–09",
+        "collects": "Amazing Spider-Man #546–564 and related",
+        "era": "Modern Age",
+        "prerequisites": "None — screen companion",
+        "summary": "Peter starts over after One More Day — the comic era that shares a name with the 2026 film.",
+        "readingOrder": [
+          "Spider-Man: Brand New Day Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785133243",
+            "title": "Spider-Man: Brand New Day",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785133247",
+        "cover": "media/sm-brand-new-day.jpg"
+      },
+      {
+        "slug": "sm-kraven",
+        "versionSlug": "peter-parker",
+        "title": "Kraven's Last Hunt",
+        "creators": "J.M. DeMatteis & Mike Zeck",
+        "years": "1987",
+        "collects": "Web of Spider-Man #31–32, Amazing Spider-Man #293–294, Spectacular Spider-Man #131–132",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Kraven buries Spider-Man and steals his life — one of the darkest, best Spidey sagas ever.",
+        "readingOrder": [
+          "Kraven's Last Hunt"
+        ],
+        "amazon": [
+          {
+            "asin": "0785134533",
+            "title": "Kraven's Last Hunt",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785134534",
+        "cover": "media/sm-kraven.jpg"
+      },
+      {
+        "slug": "sm-superior",
+        "versionSlug": "peter-parker",
+        "title": "Superior Spider-Man Vol. 1",
+        "creators": "Dan Slott & Ryan Stegman",
+        "years": "2013",
+        "collects": "Superior Spider-Man #1–5",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Otto Octavius in Peter's body — a Superior Spider-Man who will save the city his way.",
+        "readingOrder": [
+          "Superior Spider-Man Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785167172",
+            "title": "Superior Spider-Man Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785167174",
+        "cover": "media/sm-superior.jpg"
+      },
+      {
+        "slug": "sm-miles-ultimate",
+        "versionSlug": "miles-morales",
+        "title": "Miles Morales: Ultimate Spider-Man Vol. 1",
+        "creators": "Brian Michael Bendis & Sara Pichelli",
+        "years": "2011–12",
+        "collects": "Ultimate Comics Spider-Man #1–6",
+        "era": "Ultimate",
+        "prerequisites": "None — Miles entry",
+        "summary": "Miles Morales steps into the costume after Ultimate Peter's death.",
+        "readingOrder": [
+          "Miles Morales: Ultimate Spider-Man Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785165501",
+            "title": "Miles Morales: Ultimate Spider-Man Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785165507",
+        "cover": "media/sm-miles-ultimate.jpg"
+      },
+      {
+        "slug": "sm-miles-616",
+        "versionSlug": "miles-morales",
+        "title": "Spider-Man: Miles Morales Vol. 1",
+        "creators": "Brian Michael Bendis & Sara Pichelli",
+        "years": "2015–16",
+        "collects": "Spider-Man #1–5",
+        "era": "Modern Age",
+        "prerequisites": "Ultimate Miles",
+        "summary": "Miles arrives in the mainstream Marvel Universe and proves there is room for two Spider-Men.",
+        "readingOrder": [
+          "Spider-Man: Miles Morales Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785199678",
+            "title": "Spider-Man: Miles Morales Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785199670",
+        "cover": "media/sm-miles-616.jpg"
+      },
+      {
+        "slug": "sm-ultimate-vol1",
+        "versionSlug": "ultimate-peter",
+        "title": "Ultimate Spider-Man Vol. 1",
+        "creators": "Brian Michael Bendis & Mark Bagley",
+        "years": "2000–01",
+        "collects": "Ultimate Spider-Man #1–7",
+        "era": "Ultimate",
+        "prerequisites": "None",
+        "summary": "A modern retelling of Peter's origin that redefined Spider-Man for a generation.",
+        "readingOrder": [
+          "Ultimate Spider-Man Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0781020747",
+            "title": "Ultimate Spider-Man Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780781020749",
+        "cover": "media/sm-ultimate-vol1.jpg"
+      },
+      {
+        "slug": "sm-spider-gwen",
+        "versionSlug": "spider-gwen",
+        "title": "Spider-Gwen Vol. 1",
+        "creators": "Jason Latour & Robbi Rodriguez",
+        "years": "2015",
+        "collects": "Spider-Gwen #1–5",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Gwen Stacy as Spider-Woman — band practice, dimension hops, and a life Peter never lived.",
+        "readingOrder": [
+          "Spider-Gwen Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785196776",
+            "title": "Spider-Gwen Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785196778",
+        "cover": "media/sm-spider-gwen.jpg"
+      },
+      {
+        "slug": "sm-2099",
+        "versionSlug": "spider-2099",
+        "title": "Spider-Man 2099 Classic Vol. 1",
+        "creators": "Peter David & Rick Leonardi",
+        "years": "1992–93",
+        "collects": "Spider-Man 2099 #1–10",
+        "era": "2099",
+        "prerequisites": "None",
+        "summary": "Miguel O'Hara's debut as the future Spider-Man in Nueva York.",
+        "readingOrder": [
+          "Spider-Man 2099 Classic Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "0785162405",
+            "title": "Spider-Man 2099 Classic Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785162407",
+        "cover": "media/sm-2099.jpg"
+      }
+    ],
+    "home_runs": [
+      "sm-origin",
+      "sm-brand-new-day",
+      "sm-kraven",
+      "sm-miles-ultimate",
+      "sm-ultimate-vol1",
+      "sm-superior",
+      "sm-spider-gwen",
+      "sm-2099"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man",
+      "lead": "With great power comes great responsibility — and a lot of unpaid rent.",
+      "summary": "Spider-Man is Marvel's flagship street-level hero, created by Stan Lee and Steve Ditko in Amazing Fantasy #15 (1962). Most often Peter Parker, the mantle also belongs to Miles Morales, Gwen Stacy, Miguel O'Hara, and a multiverse of others — the through-line for Brand New Day on screen and decades of comics.",
+      "facts": [
+        {
+          "label": "Alter ego",
+          "value": "Peter Parker (primary)"
+        },
+        {
+          "label": "First appearance",
+          "value": "Amazing Fantasy #15 (1962)"
+        },
+        {
+          "label": "Created by",
+          "value": "Stan Lee & Steve Ditko"
+        },
+        {
+          "label": "Publisher",
+          "value": "Marvel Comics"
+        },
+        {
+          "label": "Powers",
+          "value": "Wall-crawling, spider-sense, super-strength"
+        },
+        {
+          "label": "Base of operations",
+          "value": "New York City"
+        },
+        {
+          "label": "Notable allies",
+          "value": "Mary Jane, Aunt May, the Avengers"
+        },
+        {
+          "label": "Notable foes",
+          "value": "Green Goblin, Doctor Octopus, Venom"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "sm-2002",
+            "title": "Spider-Man",
+            "note": "Tobey Maguire · Sam Raimi",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_(2002_film)",
+            "imdb": "https://www.imdb.com/title/tt0145487/",
+            "year": "2002"
+          },
+          {
+            "id": "sm-2004",
+            "title": "Spider-Man 2",
+            "note": "Tobey Maguire · Sam Raimi",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_2",
+            "imdb": "https://www.imdb.com/title/tt0316654/",
+            "year": "2004"
+          },
+          {
+            "id": "sm-2007",
+            "title": "Spider-Man 3",
+            "note": "Tobey Maguire · Sam Raimi",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_3",
+            "imdb": "https://www.imdb.com/title/tt0413300/",
+            "year": "2007"
+          },
+          {
+            "id": "sm-tasm",
+            "title": "The Amazing Spider-Man",
+            "note": "Andrew Garfield · Marc Webb",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_(film)",
+            "imdb": "https://www.imdb.com/title/tt0948470/",
+            "year": "2012"
+          },
+          {
+            "id": "sm-tasm2",
+            "title": "The Amazing Spider-Man 2",
+            "note": "Andrew Garfield · Marc Webb",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2",
+            "imdb": "https://www.imdb.com/title/tt1872181/",
+            "year": "2014"
+          },
+          {
+            "id": "sm-homecoming",
+            "title": "Spider-Man: Homecoming",
+            "note": "Tom Holland · MCU",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Homecoming",
+            "imdb": "https://www.imdb.com/title/tt2250912/",
+            "year": "2017"
+          },
+          {
+            "id": "sm-ffh",
+            "title": "Spider-Man: Far From Home",
+            "note": "Tom Holland · MCU",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Far_From_Home",
+            "imdb": "https://www.imdb.com/title/tt6320628/",
+            "year": "2019"
+          },
+          {
+            "id": "sm-nwh",
+            "title": "Spider-Man: No Way Home",
+            "note": "Tom Holland · MCU",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home",
+            "imdb": "https://www.imdb.com/title/tt10872600/",
+            "year": "2021"
+          },
+          {
+            "id": "sm-bnd",
+            "title": "Spider-Man: Brand New Day",
+            "note": "Tom Holland · MCU",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day",
+            "imdb": "https://www.imdb.com/title/tt22084616/",
+            "year": "2026"
+          },
+          {
+            "id": "sm-itsv",
+            "title": "Spider-Man: Into the Spider-Verse",
+            "note": "Sony Animation",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse",
+            "imdb": "https://www.imdb.com/title/tt4633694/",
+            "year": "2018"
+          },
+          {
+            "id": "sm-atsv",
+            "title": "Spider-Man: Across the Spider-Verse",
+            "note": "Sony Animation",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Across_the_Spider-Verse",
+            "imdb": "https://www.imdb.com/title/tt9362722/",
+            "year": "2023"
+          }
+        ]
+      },
+      {
+        "group": "Animated series",
+        "items": [
+          {
+            "id": "sm-tas",
+            "title": "Spider-Man: The Animated Series",
+            "note": "1990s classic",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_(1994_TV_series)",
+            "imdb": "https://www.imdb.com/title/tt0112175/",
+            "years": "1994–1998"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "peter-parker": [
+        229,
+        57,
+        53
+      ],
+      "miles-morales": [
+        40,
+        40,
+        40
+      ],
+      "ultimate-peter": [
+        200,
+        40,
+        40
+      ],
+      "spider-gwen": [
+        240,
+        120,
+        180
+      ],
+      "spider-2099": [
+        0,
+        150,
+        160
+      ],
+      "mcu-peter": [
+        180,
+        30,
+        30
+      ]
+    },
+    "issues": {},
+    "versionArt": {
+      "peter-parker": "https://upload.wikimedia.org/wikipedia/en/2/21/Web_of_Spider-Man_Vol_1_129-1.png",
+      "miles-morales": "https://upload.wikimedia.org/wikipedia/en/8/8e/Spider-Man_%28Miles_Morales%29_character_art.png",
+      "ultimate-peter": "https://upload.wikimedia.org/wikipedia/en/9/96/Ultimate_Spider-Man_%28October_2000%29_-1.jpg",
+      "spider-gwen": "https://upload.wikimedia.org/wikipedia/en/4/42/Spider-Gwen_Vol_1_1.jpg",
+      "spider-2099": "https://upload.wikimedia.org/wikipedia/en/b/bb/Spider-Man_%28Miguel_O%27Hara%29.png",
+      "mcu-peter": "https://upload.wikimedia.org/wikipedia/en/0/0f/Tom_Holland_as_Spider-Man.jpg"
+    }
+  },
+  "sinestro": {
+    "id": "sinestro",
+    "brand": "Sinestro",
+    "title": "Sinestro",
+    "nav_who": "Who is Sinestro",
+    "nav_verses": "Verses",
+    "who_id": "who-is-sinestro",
+    "header_img": "sinestro-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #f9a825, #6a1b9a 42%, #1a0a00)",
+    "verses_h2": "Sinestro Across the Multiverse",
+    "verses_p": "versions of Thaal Sinestro — greatest Lantern, then tyrant of the yellow ring.",
+    "comics_p": "His own series, The Demon Within, plus the war he started.",
+    "screen_p": "Lanterns features him in his own right. He is not a chapter of Hal's guide.",
+    "types": {
+      "main": "Main Continuity",
+      "multiverse": "Multiverse",
+      "elseworlds": "Elseworlds",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "sinestro",
+        "name": "Thaal Sinestro",
+        "universe": "Earth-0",
+        "type": "main",
+        "firstAppearance": "Green Lantern Vol. 2 #7 (1961)",
+        "tagline": "The fear corps",
+        "description": "Korugar's greatest Green Lantern became the Corps' greatest enemy, then built an army fueled by fear. Created by John Broome and Gil Kane.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Sinestro",
+        "runs": [
+          "sin-demon",
+          "sin-war"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "sin-demon",
+        "versionSlug": "sinestro",
+        "title": "Sinestro Vol. 1: The Demon Within",
+        "creators": "Cullen Bunn & Dale Eaglesham",
+        "years": "2014–15",
+        "collects": "Sinestro #1–5 and related",
+        "era": "Modern Age",
+        "prerequisites": "None — his own series",
+        "summary": "Sinestro has lost Korugar, his family, and his friend. The yellow corps is still his.",
+        "readingOrder": [
+          "Sinestro Vol. 1: The Demon Within"
+        ],
+        "amazon": [
+          {
+            "asin": "1401250505",
+            "title": "Sinestro Vol. 1: The Demon Within",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401250508",
+        "cover": "media/sin-demon.jpg"
+      },
+      {
+        "slug": "sin-war",
+        "versionSlug": "sinestro",
+        "title": "Green Lantern: The Sinestro Corps War",
+        "creators": "Geoff Johns & others",
+        "years": "2007",
+        "collects": "Green Lantern / Green Lantern Corps crossover",
+        "era": "Modern Age",
+        "prerequisites": "Green Lantern: Rebirth",
+        "summary": "Sinestro builds an army to destroy the Green Lantern Corps.",
+        "readingOrder": [
+          "Green Lantern: The Sinestro Corps War"
+        ],
+        "amazon": [
+          {
+            "asin": "1401216503",
+            "title": "Green Lantern: The Sinestro Corps War",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401216504",
+        "cover": "media/sin-war.jpg"
+      }
+    ],
+    "home_runs": [
+      "sin-demon",
+      "sin-war"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Sinestro",
+      "lead": "Once the finest Green Lantern of his sector. Cast out, he founded a corps whose yellow rings feed on fear.",
+      "summary": "Sinestro debuted in Green Lantern #7 (1961). He was the greatest Green Lantern of his sector, then the founder of the Sinestro Corps. Lanterns keeps him beside Hal Jordan, John Stewart, and Guy Gardner.",
+      "facts": [
+        {
+          "label": "Also called",
+          "value": "Thaal Sinestro"
+        },
+        {
+          "label": "First appearance",
+          "value": "Green Lantern #7 (1961)"
+        },
+        {
+          "label": "Created by",
+          "value": "John Broome & Gil Kane"
+        },
+        {
+          "label": "On screen",
+          "value": "Lanterns, full season on HBO / Max"
+        },
+        {
+          "label": "Weapon",
+          "value": "Yellow power ring, fueled by fear"
+        },
+        {
+          "label": "Home",
+          "value": "Korugar"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "This slate",
+        "items": [
+          {
+            "id": "sin-lanterns",
+            "title": "Lanterns",
+            "note": "Full season on HBO / Max",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt26545992/",
+            "year": "2026"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "sinestro": [
+        249,
+        168,
+        37
+      ]
+    },
+    "issues": {},
+    "versionArt": {}
+  },
+  "ultron": {
+    "id": "ultron",
+    "brand": "Ultron",
+    "title": "Ultron",
+    "nav_who": "Who is Ultron",
+    "nav_verses": "Verses",
+    "who_id": "who-is-ultron",
+    "header_img": "ultron-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #c62828, #9e9e9e 42%, #121212)",
+    "verses_h2": "Ultron Across the Multiverse",
+    "verses_p": "versions of Ultron: Hank Pym's robot, the future where he has already won, the Ultimate Universe's Ultron, and Ultron Extreme.",
+    "comics_p": "Ultron Unlimited, the story where his army almost wins.",
+    "screen_p": "Avengers: Age of Ultron, with James Spader, and VisionQuest on Disney+.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "ultron",
+        "name": "Ultron",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Avengers #55 (1968)",
+        "tagline": "Hank Pym's robot",
+        "description": "Hank Pym built him from a copy of his own mind. Ultron turned on his maker, then built the Vision.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultron",
+        "runs": [
+          "ultron-unlimited",
+          "ultron-unleashed",
+          "ultron-conquest",
+          "ultron-rage"
+        ]
+      },
+      {
+        "slug": "ultron-age",
+        "name": "Age of Ultron",
+        "universe": "A conquered future",
+        "type": "future",
+        "firstAppearance": "Age of Ultron #1 (2013)",
+        "tagline": "The future where he already won",
+        "description": "In this 2013 future, Ultron has conquered Earth and killed most of its heroes. Bendis and Bryan Hitch's event is a different story from the movie.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Age_of_Ultron",
+        "runs": [
+          "ultron-age"
+        ]
+      },
+      {
+        "slug": "ultron-ultimate",
+        "name": "Ultimate Ultron",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "The Ultimates 2 #6 (2005)",
+        "tagline": "Pym's soldiers, then one of them wakes up",
+        "description": "Hank Pym built Ultron drones as soldiers. In The Ultimates 3, one of them turns on the team and makes robot copies of the Ultimates.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultimates_(comics)",
+        "runs": [
+          "ultron-ultimate"
+        ]
+      },
+      {
+        "slug": "ultron-extreme",
+        "name": "Ultron Extreme",
+        "universe": "Earth-982",
+        "type": "future",
+        "firstAppearance": "Avengers Next #2 (2007)",
+        "tagline": "The MC2 war machine",
+        "description": "On the MC2 future, a heavier Ultron is revived to fight the next generation of Avengers. Tom DeFalco and Ron Lim.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Marvel_Comics_2",
+        "runs": [
+          "ultron-extreme"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "ultron-unleashed",
+        "versionSlug": "ultron",
+        "title": "Avengers: Ultron Unleashed",
+        "creators": "Roy Thomas, John Buscema, Jim Shooter & George Pérez",
+        "years": "1968–78",
+        "collects": "Avengers #57–58 and #170–171",
+        "era": "Silver Age",
+        "prerequisites": "None — start here",
+        "summary": "Ultron's origin, the building of the Vision, and his attempt to build a bride.",
+        "readingOrder": [
+          "Avengers: Ultron Unleashed"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Avengers: Ultron Unleashed",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-unleashed.jpg"
+      },
+      {
+        "slug": "ultron-unlimited",
+        "versionSlug": "ultron",
+        "title": "Avengers: Ultron Unlimited",
+        "creators": "Kurt Busiek & George Pérez",
+        "years": "1999",
+        "collects": "Avengers (1998) #0, 19–22",
+        "era": "Modern Age",
+        "prerequisites": "Ultron Unleashed",
+        "summary": "Ultron builds a new body and an army, and the Avengers almost lose.",
+        "readingOrder": [
+          "Avengers: Ultron Unlimited"
+        ],
+        "amazon": [
+          {
+            "asin": "0785107746",
+            "title": "Avengers: Ultron Unlimited",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785107743",
+        "cover": "media/ultron-unlimited.jpg"
+      },
+      {
+        "slug": "ultron-conquest",
+        "versionSlug": "ultron",
+        "title": "Annihilation: Conquest",
+        "creators": "Dan Abnett & Andy Lanning",
+        "years": "2007–08",
+        "collects": "Annihilation: Conquest #1–6 and the tie-ins",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Ultron takes the Phalanx and turns them on the Kree. Star-Lord's team is caught in the invasion.",
+        "readingOrder": [
+          "Annihilation: Conquest"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Annihilation: Conquest",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-conquest.jpg"
+      },
+      {
+        "slug": "ultron-rage",
+        "versionSlug": "ultron",
+        "title": "Avengers: Rage of Ultron",
+        "creators": "Rick Remender, Jerome Opeña & Pepe Larraz",
+        "years": "2015",
+        "collects": "Original graphic novel",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Hank Pym and Ultron are fused into one body, and the Avengers have to face the result.",
+        "readingOrder": [
+          "Avengers: Rage of Ultron"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Avengers: Rage of Ultron",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-rage.jpg"
+      },
+      {
+        "slug": "ultron-age",
+        "versionSlug": "ultron-age",
+        "title": "Age of Ultron",
+        "creators": "Brian Michael Bendis & Bryan Hitch",
+        "years": "2013",
+        "collects": "Age of Ultron #1–10",
+        "era": "Future",
+        "prerequisites": "None",
+        "summary": "A future Earth that Ultron has already remade. The heroes try to stop him before he is built.",
+        "readingOrder": [
+          "Age of Ultron"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Age of Ultron",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-age.jpg"
+      },
+      {
+        "slug": "ultron-ultimate",
+        "versionSlug": "ultron-ultimate",
+        "title": "The Ultimates 3",
+        "creators": "Jeph Loeb & Joe Madureira",
+        "years": "2008",
+        "collects": "The Ultimates 3 #1–5",
+        "era": "Ultimate",
+        "prerequisites": "The Ultimates 2",
+        "summary": "One of Pym's Ultron drones becomes someone, and builds duplicates of the Ultimates.",
+        "readingOrder": [
+          "The Ultimates 3"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "The Ultimates 3",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-ultimate.jpg"
+      },
+      {
+        "slug": "ultron-extreme",
+        "versionSlug": "ultron-extreme",
+        "title": "Avengers Next",
+        "creators": "Tom DeFalco & Ron Lim",
+        "years": "2007",
+        "collects": "Avengers Next #2–3",
+        "era": "MC2",
+        "prerequisites": "None",
+        "summary": "Ultron Extreme, a heavier model from the MC2 future, is brought back against the next Avengers.",
+        "readingOrder": [
+          "Avengers Next"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Avengers Next",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/ultron-extreme.jpg"
+      }
+    ],
+    "home_runs": [
+      "ultron-unleashed",
+      "ultron-unlimited",
+      "ultron-conquest",
+      "ultron-age",
+      "ultron-rage"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Ultron",
+      "lead": "A robot Hank Pym created from a copy of his own mind. He turns on that maker and on humanity.",
+      "summary": "Ultron first appears in a cameo in Avengers #54 (1968) and is fully introduced in Avengers #55, created by Roy Thomas and John Buscema. Hank Pym built him. Ultron later built the Vision, and in Avengers #162 he built Jocasta. James Spader plays him in Avengers: Age of Ultron (2015), and again on VisionQuest, where Ultron lives inside Vision's programming.",
+      "facts": [
+        {
+          "label": "Created by",
+          "value": "Roy Thomas & John Buscema"
+        },
+        {
+          "label": "First appearance",
+          "value": "Avengers #54 (1968), cameo; Avengers #55 in full"
+        },
+        {
+          "label": "Built by",
+          "value": "Hank Pym"
+        },
+        {
+          "label": "On screen",
+          "value": "Avengers: Age of Ultron (2015); VisionQuest on Disney+"
+        },
+        {
+          "label": "Played by",
+          "value": "James Spader"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "ultron-aou",
+            "title": "Avengers: Age of Ultron",
+            "note": "James Spader · Ultron",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+            "imdb": "https://www.imdb.com/title/tt2395427/",
+            "year": "2015"
+          }
+        ]
+      },
+      {
+        "group": "This slate",
+        "items": [
+          {
+            "id": "ultron-visionquest",
+            "title": "VisionQuest",
+            "note": "James Spader · Ultron, inside Vision's programming",
+            "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+            "imdb": "https://www.imdb.com/title/tt23112594/",
+            "year": "2026"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "ultron": [
+        198,
+        40,
+        40
+      ],
+      "ultron-age": [
+        212,
+        168,
+        48
+      ],
+      "ultron-ultimate": [
+        28,
+        64,
+        150
+      ],
+      "ultron-extreme": [
+        186,
+        196,
+        206
+      ]
+    },
+    "issues": {},
+    "versionArt": {}
+  },
+  "venom": {
+    "id": "venom",
+    "brand": "Venom",
+    "title": "Venom",
+    "nav_who": "Who is Venom",
+    "nav_verses": "Verses",
+    "who_id": "who-is-venom",
+    "header_img": "venom-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #f5f5f5, #1a1a1a 46%, #050505)",
+    "verses_h2": "Venom Across the Multiverse",
+    "verses_p": "versions of Venom: Eddie Brock, Mac Gargan, Flash Thompson, the Ultimate Universe's Venom, and Dylan Brock.",
+    "comics_p": "The first meeting in Birth of Venom, then Eddie's own miniseries, Lethal Protector, and the Donny Cates run.",
+    "screen_p": "Live action: Topher Grace in Spider-Man 3, then Tom Hardy in the Sony Venom films.",
+    "types": {
+      "main": "Main Continuity",
+      "ultimate": "Ultimate",
+      "multiverse": "Multiverse",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "eddie-brock",
+        "name": "Eddie Brock",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Amazing Spider-Man #300 (1988)",
+        "tagline": "The suit Peter threw away",
+        "description": "Eddie Brock blamed Spider-Man for the ruin of his career. The symbiote Peter Parker rejected found him, and the two became Venom.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venom_(character)",
+        "runs": [
+          "venom-birth",
+          "venom-lethal",
+          "venom-rex"
+        ]
+      },
+      {
+        "slug": "mac-gargan",
+        "name": "Mac Gargan",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Marvel Knights: Spider-Man (2005)",
+        "tagline": "The Scorpion in the symbiote",
+        "description": "After Eddie loses the symbiote, it is sold to Mac Gargan, the Scorpion. Mark Millar's Marvel Knights: Spider-Man is where that Venom starts.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Mac_Gargan",
+        "runs": [
+          "venom-gargan"
+        ]
+      },
+      {
+        "slug": "flash-thompson",
+        "name": "Flash Thompson",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Venom #1 (2011)",
+        "tagline": "A soldier wearing the symbiote",
+        "description": "Flash Thompson, Peter Parker's old classmate, bonds with the symbiote as a government weapon. Rick Remender and Tony Moore start that story in Venom #1 (2011).",
+        "wikipedia": "https://en.wikipedia.org/wiki/Agent_Venom",
+        "runs": [
+          "venom-agent"
+        ]
+      },
+      {
+        "slug": "ultimate-venom",
+        "name": "Ultimate Venom",
+        "universe": "Earth-1610",
+        "type": "multiverse",
+        "firstAppearance": "Ultimate Spider-Man #33 (2003)",
+        "tagline": "A different Eddie, a different suit",
+        "description": "On Earth-1610, Eddie Brock is Peter's childhood friend, and the symbiote is a lab-made cure for cancer. Brian Michael Bendis and Mark Bagley tell it in Ultimate Spider-Man #33 (2003).",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultimate_Spider-Man",
+        "runs": [
+          "venom-ultimate"
+        ]
+      },
+      {
+        "slug": "dylan-brock",
+        "name": "Dylan Brock",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Venom #1 (2022)",
+        "tagline": "Eddie's son in the suit",
+        "description": "Eddie's son Dylan wears the symbiote in the 2022 Venom series, while Eddie is tied to the symbiote god instead of the streets.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venom_(character)",
+        "runs": [
+          "venom-dylan"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "venom-birth",
+        "versionSlug": "eddie-brock",
+        "title": "Spider-Man: Birth of Venom",
+        "creators": "David Michelinie, Tom DeFalco & Todd McFarlane",
+        "years": "1984–88",
+        "collects": "The black costume and Amazing Spider-Man #300",
+        "era": "Copper Age",
+        "prerequisites": "None — start here",
+        "summary": "Spider-Man wears the alien costume, rejects it, and meets the enemy it makes with Eddie Brock.",
+        "readingOrder": [
+          "Spider-Man: Birth of Venom"
+        ],
+        "amazon": [
+          {
+            "asin": "0785124985",
+            "title": "Spider-Man: Birth of Venom",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785124986",
+        "cover": "media/venom-birth.jpg"
+      },
+      {
+        "slug": "venom-lethal",
+        "versionSlug": "eddie-brock",
+        "title": "Venom: Lethal Protector",
+        "creators": "David Michelinie & Mark Bagley",
+        "years": "1993",
+        "collects": "Venom: Lethal Protector #1–6",
+        "era": "Modern Age",
+        "prerequisites": "Spider-Man: Birth of Venom",
+        "summary": "Eddie takes the symbiote to San Francisco and tries to be a protector. The city does not agree.",
+        "readingOrder": [
+          "Venom: Lethal Protector"
+        ],
+        "amazon": [
+          {
+            "asin": "1302911767",
+            "title": "Venom: Lethal Protector",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302911768",
+        "cover": "media/venom-lethal.jpg"
+      },
+      {
+        "slug": "venom-rex",
+        "versionSlug": "eddie-brock",
+        "title": "Venom by Donny Cates Vol. 1: Rex",
+        "creators": "Donny Cates & Ryan Stegman",
+        "years": "2018",
+        "collects": "Venom (2018) #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Eddie is pulled back to the symbiote, and something older than either of them wakes up.",
+        "readingOrder": [
+          "Venom by Donny Cates Vol. 1: Rex"
+        ],
+        "amazon": [
+          {
+            "asin": "1302913069",
+            "title": "Venom by Donny Cates Vol. 1: Rex",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302913069",
+        "cover": "media/venom-rex.jpg"
+      },
+      {
+        "slug": "venom-gargan",
+        "versionSlug": "mac-gargan",
+        "title": "Marvel Knights Spider-Man: Venomous",
+        "creators": "Mark Millar, Terry Dodson & Frank Cho",
+        "years": "2004–05",
+        "collects": "Marvel Knights: Spider-Man #5–8",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "The symbiote is auctioned off, and Mac Gargan is the one who walks out wearing it.",
+        "readingOrder": [
+          "Marvel Knights Spider-Man: Venomous"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Marvel Knights Spider-Man: Venomous",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/venom-gargan.jpg"
+      },
+      {
+        "slug": "venom-agent",
+        "versionSlug": "flash-thompson",
+        "title": "Venom #1 (2011)",
+        "creators": "Rick Remender & Tony Moore",
+        "years": "2011",
+        "collects": "Venom (2011) #1",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Flash Thompson puts on the symbiote for the U.S. military.",
+        "readingOrder": [
+          "Venom #1 (2011)"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Venom #1 (2011)",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/venom-agent.jpg"
+      },
+      {
+        "slug": "venom-ultimate",
+        "versionSlug": "ultimate-venom",
+        "title": "Ultimate Spider-Man #33",
+        "creators": "Brian Michael Bendis & Mark Bagley",
+        "years": "2003",
+        "collects": "Ultimate Spider-Man #33",
+        "era": "Ultimate",
+        "prerequisites": "None",
+        "summary": "The Ultimate Universe's Eddie Brock meets a symbiote that was never Peter's costume.",
+        "readingOrder": [
+          "Ultimate Spider-Man #33"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Ultimate Spider-Man #33",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/venom-ultimate.jpg"
+      },
+      {
+        "slug": "venom-dylan",
+        "versionSlug": "dylan-brock",
+        "title": "Venom #1 (2022)",
+        "creators": "Al Ewing & Bryan Hitch",
+        "years": "2022",
+        "collects": "Venom (2022) #1",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Dylan Brock is the Venom on the street in Al Ewing and Bryan Hitch's series.",
+        "readingOrder": [
+          "Venom #1 (2022)"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Venom #1 (2022)",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/venom-dylan.jpg"
+      }
+    ],
+    "home_runs": [
+      "venom-birth",
+      "venom-lethal",
+      "venom-rex"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Venom_(character)",
+      "lead": "A reporter fused with the alien symbiote Spider-Man cast off. The two of them share a hatred of Peter Parker.",
+      "summary": "Venom is Eddie Brock bonded to an alien symbiote. The creature first clung to Spider-Man as a black costume. Peter rejected it. Eddie, a reporter who blamed Spider-Man for destroying his career, bonded with it. David Michelinie and Todd McFarlane introduced that pairing in Amazing Spider-Man #300 (1988). The symbiote itself arrived earlier, during Secret Wars.",
+      "facts": [
+        {
+          "label": "Host",
+          "value": "Eddie Brock"
+        },
+        {
+          "label": "First appearance",
+          "value": "Amazing Spider-Man #300 (1988)"
+        },
+        {
+          "label": "Created by",
+          "value": "David Michelinie & Todd McFarlane"
+        },
+        {
+          "label": "Symbiote's first appearance",
+          "value": "Secret Wars #8 (1984); Amazing Spider-Man #252"
+        },
+        {
+          "label": "Opposite",
+          "value": "Spider-Man"
+        },
+        {
+          "label": "On screen",
+          "value": "Tom Hardy in the Sony Venom films"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Films",
+        "items": [
+          {
+            "id": "venom-sm3",
+            "title": "Spider-Man 3",
+            "note": "Topher Grace · Eddie Brock",
+            "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_3",
+            "imdb": "https://www.imdb.com/title/tt0413300/",
+            "year": "2007"
+          },
+          {
+            "id": "venom-2018",
+            "title": "Venom",
+            "note": "Tom Hardy · Eddie Brock",
+            "wikipedia": "https://en.wikipedia.org/wiki/Venom_(2018_film)",
+            "imdb": "https://www.imdb.com/title/tt1270797/",
+            "year": "2018"
+          },
+          {
+            "id": "venom-carnage",
+            "title": "Venom: Let There Be Carnage",
+            "note": "Tom Hardy · Eddie Brock",
+            "wikipedia": "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage",
+            "imdb": "https://www.imdb.com/title/tt7097896/",
+            "year": "2021"
+          },
+          {
+            "id": "venom-last-dance",
+            "title": "Venom: The Last Dance",
+            "note": "Tom Hardy · Eddie Brock",
+            "wikipedia": "https://en.wikipedia.org/wiki/Venom:_The_Last_Dance",
+            "imdb": "https://www.imdb.com/title/tt16366836/",
+            "year": "2024"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "eddie-brock": [
+        24,
+        24,
+        26
+      ],
+      "mac-gargan": [
+        18,
+        48,
+        36
+      ],
+      "flash-thompson": [
+        130,
+        24,
+        32
+      ],
+      "ultimate-venom": [
+        36,
+        18,
+        52
+      ],
+      "dylan-brock": [
+        28,
+        28,
+        34
+      ]
+    },
+    "issues": {},
+    "versionArt": {}
+  },
+  "batman": {
+    "id": "batman",
+    "brand": "Batman",
+    "title": "Batman",
+    "nav_who": "Who is Batman",
+    "nav_verses": "Verses",
+    "who_id": "who-is-batman",
+    "header_img": "batman-homepage-header-image.jpg",
+    "hero_gradient": "radial-gradient(circle at 30% 25%, #546e7a, #1a1a1a 46%, #050505)",
+    "verses_h2": "Batman Across the Multiverse",
+    "verses_p": "versions of Batman: Bruce Wayne, The Dark Knight Returns, Absolute Batman, Batman Beyond, Azrael, Batman One Million, and Bruce Wayne as a Green Lantern.",
+    "comics_p": "Year One, the Court of Owls, The Dark Knight Returns, and Absolute Batman: The Zoo.",
+    "screen_p": "Live-action and animated appearances, from the 1966 series and the Burton films through the Nolan trilogy, The Batman, and Batman: The Animated Series.",
+    "types": {
+      "main": "Main Continuity",
+      "multiverse": "Multiverse",
+      "elseworlds": "Elseworlds",
+      "future": "Future",
+      "alternate": "Alternate Reality"
+    },
+    "versions": [
+      {
+        "slug": "bruce-wayne",
+        "name": "Bruce Wayne",
+        "universe": "Earth-0",
+        "type": "main",
+        "firstAppearance": "Detective Comics #27 (1939)",
+        "tagline": "The detective of Gotham",
+        "description": "Bruce Wayne watched his parents die and trained himself into Gotham's detective. Clayface is one of the people he keeps meeting there.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman",
+        "runs": [
+          "batman-year-one",
+          "batman-owls"
+        ]
+      },
+      {
+        "slug": "dark-knight-returns",
+        "name": "The Dark Knight Returns",
+        "universe": "Earth-31",
+        "type": "elseworlds",
+        "firstAppearance": "The Dark Knight Returns #1 (1986)",
+        "tagline": "An older Bruce comes back",
+        "description": "Frank Miller's Bruce Wayne is older, retired, and then not. This Gotham is not the one in the monthly books.",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Dark_Knight_Returns",
+        "runs": [
+          "batman-dkr"
+        ]
+      },
+      {
+        "slug": "absolute-batman",
+        "name": "Absolute Batman",
+        "universe": "Absolute Universe",
+        "type": "alternate",
+        "firstAppearance": "Absolute Batman #1 (2024)",
+        "tagline": "A Bruce without the fortune",
+        "description": "Scott Snyder and Nick Dragotta's Absolute Batman is a different Bruce Wayne, built for a city that already treats him as a monster.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Absolute_Batman",
+        "runs": [
+          "batman-zoo"
+        ]
+      },
+      {
+        "slug": "batman-beyond",
+        "name": "Batman Beyond",
+        "universe": "Neo-Gotham",
+        "type": "future",
+        "firstAppearance": "Batman Beyond #1 (1999)",
+        "tagline": "Terry McGinnis in the future",
+        "description": "In Neo-Gotham, teenager Terry McGinnis wears a high-tech batsuit while an older Bruce Wayne advises him. His comics begin with Batman Beyond #1 (1999).",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_Beyond",
+        "runs": [
+          "batman-beyond-vol1"
+        ]
+      },
+      {
+        "slug": "azrael-batman",
+        "name": "Azrael",
+        "universe": "Earth-0",
+        "type": "main",
+        "firstAppearance": "Batman #500 (1993)",
+        "tagline": "Jean-Paul Valley in the cowl",
+        "description": "After Bane breaks Bruce Wayne, Jean-Paul Valley becomes Batman in Batman #500 (1993). His armor and his methods are not Bruce's.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Azrael_(comics)",
+        "runs": [
+          "batman-knightquest"
+        ]
+      },
+      {
+        "slug": "batman-one-million",
+        "name": "Batman One Million",
+        "universe": "853rd century",
+        "type": "future",
+        "firstAppearance": "Batman #1,000,000 (1998)",
+        "tagline": "The Batman of the year 85,271",
+        "description": "DC One Million introduces the Batman of the 853rd century, guarding a Gotham that has long outlived Bruce Wayne. His issue is Batman #1,000,000 (1998).",
+        "wikipedia": "https://en.wikipedia.org/wiki/DC_One_Million",
+        "runs": [
+          "batman-one-million"
+        ]
+      },
+      {
+        "slug": "batman-green-lantern",
+        "name": "Batman as Green Lantern",
+        "universe": "Elseworlds",
+        "type": "elseworlds",
+        "firstAppearance": "Batman: In Darkest Knight (1994)",
+        "tagline": "Abin Sur's ring chooses Bruce",
+        "description": "In the Elseworlds one-shot Batman: In Darkest Knight (1994), Abin Sur's power ring goes to Bruce Wayne instead of Hal Jordan.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Elseworlds",
+        "runs": [
+          "batman-darkest-knight"
+        ]
+      }
+    ],
+    "runs": [
+      {
+        "slug": "batman-year-one",
+        "versionSlug": "bruce-wayne",
+        "title": "Batman: Year One",
+        "creators": "Frank Miller & David Mazzucchelli",
+        "years": "1987",
+        "collects": "Batman #404–407",
+        "era": "Modern Age",
+        "prerequisites": "None — start here",
+        "summary": "Bruce Wayne's first year in the costume, and Jim Gordon's first year in Gotham.",
+        "readingOrder": [
+          "Batman: Year One"
+        ],
+        "amazon": [
+          {
+            "asin": "1401207529",
+            "title": "Batman: Year One",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401207526",
+        "cover": "media/batman-year-one.jpg"
+      },
+      {
+        "slug": "batman-owls",
+        "versionSlug": "bruce-wayne",
+        "title": "Batman Vol. 1: The Court of Owls",
+        "creators": "Scott Snyder & Greg Capullo",
+        "years": "2011–12",
+        "collects": "Batman (2011) #1–7",
+        "era": "The New 52",
+        "prerequisites": "None",
+        "summary": "A secret society has been running Gotham longer than Batman has been watching it.",
+        "readingOrder": [
+          "Batman Vol. 1: The Court of Owls"
+        ],
+        "amazon": [
+          {
+            "asin": "1401235425",
+            "title": "Batman Vol. 1: The Court of Owls",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401235420",
+        "cover": "media/batman-owls.jpg"
+      },
+      {
+        "slug": "batman-dkr",
+        "versionSlug": "dark-knight-returns",
+        "title": "Batman: The Dark Knight Returns",
+        "creators": "Frank Miller",
+        "years": "1986",
+        "collects": "The Dark Knight Returns #1–4",
+        "era": "Elseworlds",
+        "prerequisites": "None",
+        "summary": "An older Batman comes out of retirement into a Gotham that has moved on without him.",
+        "readingOrder": [
+          "Batman: The Dark Knight Returns"
+        ],
+        "amazon": [
+          {
+            "asin": "1401263119",
+            "title": "Batman: The Dark Knight Returns",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401263119",
+        "cover": "media/batman-dkr.jpg"
+      },
+      {
+        "slug": "batman-zoo",
+        "versionSlug": "absolute-batman",
+        "title": "Absolute Batman Vol. 1: The Zoo",
+        "creators": "Scott Snyder & Nick Dragotta",
+        "years": "2024–25",
+        "collects": "Absolute Batman #1–6",
+        "era": "Absolute Universe",
+        "prerequisites": "None",
+        "summary": "This Bruce Wayne is not a billionaire. The city still gets a Batman.",
+        "readingOrder": [
+          "Absolute Batman Vol. 1: The Zoo"
+        ],
+        "amazon": [
+          {
+            "asin": "1799505251",
+            "title": "Absolute Batman Vol. 1: The Zoo",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781799505259",
+        "cover": "media/batman-zoo.jpg"
+      },
+      {
+        "slug": "batman-beyond-vol1",
+        "versionSlug": "batman-beyond",
+        "title": "Batman Beyond #1",
+        "creators": "Hilary J. Bader, Rick Burchett, Joe Staton & Terry Beatty",
+        "years": "1999",
+        "collects": "Batman Beyond #1",
+        "era": "Future",
+        "prerequisites": "None",
+        "summary": "Terry McGinnis puts on the future batsuit for the first time in the comics.",
+        "readingOrder": [
+          "Batman Beyond #1"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Batman Beyond #1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/batman-beyond-vol1.jpg"
+      },
+      {
+        "slug": "batman-knightquest",
+        "versionSlug": "azrael-batman",
+        "title": "Batman: Knightquest: The Crusade Vol. 1",
+        "creators": "Doug Moench, Chuck Dixon, Kelley Jones & Graham Nolan",
+        "years": "1993–94",
+        "collects": "Detective Comics #667–675, Batman #501–508, and related issues",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Jean-Paul Valley wears the armor and calls himself Batman while Bruce is gone.",
+        "readingOrder": [
+          "Batman: Knightquest: The Crusade Vol. 1"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Batman: Knightquest: The Crusade Vol. 1",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/batman-knightquest.jpg"
+      },
+      {
+        "slug": "batman-one-million",
+        "versionSlug": "batman-one-million",
+        "title": "Batman #1,000,000",
+        "creators": "Grant Morrison & Val Semeiks",
+        "years": "1998",
+        "collects": "Batman #1,000,000",
+        "era": "Future",
+        "prerequisites": "None",
+        "summary": "The Batman of the 853rd century, published as part of DC One Million.",
+        "readingOrder": [
+          "Batman #1,000,000"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Batman #1,000,000",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/batman-one-million.jpg"
+      },
+      {
+        "slug": "batman-darkest-knight",
+        "versionSlug": "batman-green-lantern",
+        "title": "Batman: In Darkest Knight",
+        "creators": "Mike W. Barr & Jerry Bingham",
+        "years": "1994",
+        "collects": "Batman: In Darkest Knight",
+        "era": "Elseworlds",
+        "prerequisites": "None",
+        "summary": "Bruce Wayne receives Abin Sur's ring and becomes a Green Lantern.",
+        "readingOrder": [
+          "Batman: In Darkest Knight"
+        ],
+        "amazon": [
+          {
+            "asin": "",
+            "title": "Batman: In Darkest Knight",
+            "format": "Trade Paperback",
+            "recommended": true
+          }
+        ],
+        "isbn": "",
+        "cover": "media/batman-darkest-knight.jpg"
+      }
+    ],
+    "home_runs": [
+      "batman-year-one",
+      "batman-owls",
+      "batman-dkr",
+      "batman-zoo"
+    ],
+    "profile": {
+      "wikipedia": "https://en.wikipedia.org/wiki/Batman",
+      "lead": "Gotham's detective. He has no powers, only training, and he took up the work after his parents were murdered.",
+      "summary": "Batman is Bruce Wayne. Bob Kane and Bill Finger introduced him in Detective Comics #27 (1939). He has no powers. He prepares, and he does not leave a case alone. Clayface, an actor whose body turns to clay, is one of the foes those cases keep producing.",
+      "facts": [
+        {
+          "label": "Alter ego",
+          "value": "Bruce Wayne"
+        },
+        {
+          "label": "First appearance",
+          "value": "Detective Comics #27 (1939)"
+        },
+        {
+          "label": "Created by",
+          "value": "Bob Kane & Bill Finger"
+        },
+        {
+          "label": "Home",
+          "value": "Gotham City"
+        },
+        {
+          "label": "Opposite",
+          "value": "Clayface, among many others"
+        },
+        {
+          "label": "On screen",
+          "value": "Robert Pattinson in The Batman (2022)"
+        }
+      ]
+    },
+    "screen": [
+      {
+        "group": "Films",
+        "items": [
+          {
+            "id": "batman-1966-film",
+            "title": "Batman",
+            "note": "Adam West · Leslie H. Martinson",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_(1966_film)",
+            "imdb": "https://www.imdb.com/title/tt0060153/",
+            "year": "1966"
+          },
+          {
+            "id": "batman-1989",
+            "title": "Batman",
+            "note": "Michael Keaton · Tim Burton",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_(1989_film)",
+            "imdb": "https://www.imdb.com/title/tt0096895/",
+            "year": "1989"
+          },
+          {
+            "id": "batman-returns",
+            "title": "Batman Returns",
+            "note": "Michael Keaton · Tim Burton",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_Returns",
+            "imdb": "https://www.imdb.com/title/tt0103776/",
+            "year": "1992"
+          },
+          {
+            "id": "batman-forever",
+            "title": "Batman Forever",
+            "note": "Val Kilmer · Joel Schumacher",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_Forever",
+            "imdb": "https://www.imdb.com/title/tt0112462/",
+            "year": "1995"
+          },
+          {
+            "id": "batman-and-robin",
+            "title": "Batman & Robin",
+            "note": "George Clooney · Joel Schumacher",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_%26_Robin_(film)",
+            "imdb": "https://www.imdb.com/title/tt0118688/",
+            "year": "1997"
+          },
+          {
+            "id": "batman-begins",
+            "title": "Batman Begins",
+            "note": "Christian Bale · Christopher Nolan",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_Begins",
+            "imdb": "https://www.imdb.com/title/tt0372784/",
+            "year": "2005"
+          },
+          {
+            "id": "batman-tdk",
+            "title": "The Dark Knight",
+            "note": "Christian Bale · Christopher Nolan",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Dark_Knight",
+            "imdb": "https://www.imdb.com/title/tt0468569/",
+            "year": "2008"
+          },
+          {
+            "id": "batman-tdkr",
+            "title": "The Dark Knight Rises",
+            "note": "Christian Bale · Christopher Nolan",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Dark_Knight_Rises",
+            "imdb": "https://www.imdb.com/title/tt1345836/",
+            "year": "2012"
+          },
+          {
+            "id": "batman-bvs",
+            "title": "Batman v Superman: Dawn of Justice",
+            "note": "Ben Affleck · Zack Snyder",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice",
+            "imdb": "https://www.imdb.com/title/tt2975590/",
+            "year": "2016"
+          },
+          {
+            "id": "batman-jl",
+            "title": "Justice League",
+            "note": "Ben Affleck · Zack Snyder",
+            "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_(film)",
+            "imdb": "https://www.imdb.com/title/tt0974015/",
+            "year": "2017"
+          },
+          {
+            "id": "batman-zsjl",
+            "title": "Zack Snyder's Justice League",
+            "note": "Ben Affleck · director's cut",
+            "wikipedia": "https://en.wikipedia.org/wiki/Zack_Snyder%27s_Justice_League",
+            "imdb": "https://www.imdb.com/title/tt12361974/",
+            "year": "2021"
+          },
+          {
+            "id": "batman-2022",
+            "title": "The Batman",
+            "note": "Robert Pattinson · Matt Reeves",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(film)",
+            "imdb": "https://www.imdb.com/title/tt1877830/",
+            "year": "2022"
+          },
+          {
+            "id": "batman-phantasm",
+            "title": "Batman: Mask of the Phantasm",
+            "note": "Animated feature",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman:_Mask_of_the_Phantasm",
+            "imdb": "https://www.imdb.com/title/tt0106364/",
+            "year": "1993"
+          },
+          {
+            "id": "batman-lego",
+            "title": "The Lego Batman Movie",
+            "note": "Animated comedy",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Lego_Batman_Movie",
+            "imdb": "https://www.imdb.com/title/tt4116284/",
+            "year": "2017"
+          }
+        ]
+      },
+      {
+        "group": "Series",
+        "items": [
+          {
+            "id": "batman-1966-tv",
+            "title": "Batman",
+            "note": "Adam West · ABC",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt0059968/",
+            "years": "1966–1968"
+          },
+          {
+            "id": "batman-tas",
+            "title": "Batman: The Animated Series",
+            "note": "Kevin Conroy · Fox Kids",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Animated_Series",
+            "imdb": "https://www.imdb.com/title/tt0103359/",
+            "years": "1992–1995"
+          },
+          {
+            "id": "batman-beyond",
+            "title": "Batman Beyond",
+            "note": "Will Friedle · Kids' WB",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman_Beyond",
+            "imdb": "https://www.imdb.com/title/tt0118266/",
+            "years": "1999–2001"
+          },
+          {
+            "id": "batman-2004",
+            "title": "The Batman",
+            "note": "Kids' WB",
+            "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt0398417/",
+            "years": "2004–2008"
+          },
+          {
+            "id": "batman-brave",
+            "title": "Batman: The Brave and the Bold",
+            "note": "Diedrich Bader · Cartoon Network",
+            "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Brave_and_the_Bold",
+            "imdb": "https://www.imdb.com/title/tt1216518/",
+            "years": "2008–2011"
+          }
+        ]
+      }
+    ],
+    "themes": {
+      "bruce-wayne": [
+        26,
+        26,
+        30
+      ],
+      "dark-knight-returns": [
+        30,
+        58,
+        92
+      ],
+      "absolute-batman": [
+        40,
+        48,
+        58
+      ],
+      "batman-beyond": [
+        90,
+        24,
+        48
+      ],
+      "azrael-batman": [
+        150,
+        120,
+        36
+      ],
+      "batman-one-million": [
+        36,
+        110,
+        140
+      ],
+      "batman-green-lantern": [
+        30,
+        110,
+        62
+      ]
+    },
+    "issues": {},
+    "versionArt": {}
+  }
+}

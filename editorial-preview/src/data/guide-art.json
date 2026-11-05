@@ -1,0 +1,114 @@
+{
+  "batman": {
+    "src": "media/identity-batman.jpg",
+    "alt": "Illustration of Bruce Wayne in Batman’s cowl",
+    "focus": {
+      "x": 0.5,
+      "y": 0.34
+    },
+    "shape": "portrait",
+    "credit": "DC character artwork",
+    "source": "https://www.dc.com/characters/batman"
+  },
+  "green-lantern": {
+    "src": "media/identity-green-lantern.jpg",
+    "alt": "John Stewart leading a group of Green Lantern Corps members",
+    "focus": {
+      "x": 0.57,
+      "y": 0.27
+    },
+    "shape": "portrait",
+    "credit": "DC Green Lantern Corps artwork",
+    "source": "https://www.dc.com/characters/green-lantern"
+  },
+  "fantastic-four": {
+    "src": "media/fantastic-four-ross.jpg",
+    "alt": "Mister Fantastic, Human Torch, the Thing, and Invisible Woman",
+    "source": "https://www.cinemablend.com/news/2560016/marvels-fantastic-four-reboot-has-taken-a-massive-step-forward",
+    "assetSource": "https://cdn.mos.cms.futurecdn.net/x94fWjcYibmmmrssDggax3.jpg",
+    "credit": "Artwork by Alex Ross",
+    "shape": "ensemble",
+    "focus": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  "clayface": {
+    "src": "media/identity-clayface.jpg",
+    "source": "https://www.dc.com/characters/clayface",
+    "assetSource": "https://static.dc.com/dc/files/default_images/Char_Thumb_Clayface_5c47ca2f73dd72.52942976.jpg",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.5,
+      "y": 0.35
+    }
+  },
+  "sinestro": {
+    "src": "media/identity-sinestro.jpg",
+    "source": "https://www.dc.com/characters/sinestro",
+    "assetSource": "https://static.dc.com/dc/files/default_images/Char_Thumb_Sinestro_5c53a7f6ccfd39.94875238.jpg",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.5,
+      "y": 0.35
+    }
+  },
+  "vision": {
+    "src": "media/vision-ross.jpg",
+    "source": "https://www.heroicfineartgallery.com/store/p745/VISION_%26_SCARLET_WITCH_Set_of_2_Paper_Prints_by_Alex_Ross_%28Unsigned%29.html",
+    "assetSource": "https://www.heroicfineartgallery.com/uploads/8/7/8/9/87892586/s131516447605413758_p745_i2_w927.jpeg",
+    "credit": "Alex Ross",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.56,
+      "y": 0.22
+    }
+  },
+  "ultron": {
+    "src": "media/ultron-ross.jpg",
+    "source": "https://unknowncomicbooks.com/products/avengers-66-e-alex-ross-timeless-ultron-virgin-variant-03-08-2023-marvel",
+    "assetSource": "https://unknowncomicbooks.com/cdn/shop/files/75960608857706641.png?v=1757545072",
+    "credit": "Alex Ross",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.56,
+      "y": 0.27
+    }
+  },
+  "doctor-doom": {
+    "src": "media/doctor-doom-ross.jpg",
+    "alt": "Doctor Doom in his green cloak and armor",
+    "source": "https://www.heroicfineartgallery.com/store/p685/DOCTOR_DOOM_Paper_Print_by_Alex_Ross_%28Unsigned%29.html",
+    "assetSource": "https://www.heroicfineartgallery.com/uploads/8/7/8/9/87892586/s131516447605413758_p685_i1_w874.jpeg",
+    "credit": "Artwork by Alex Ross",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.59,
+      "y": 0.2
+    }
+  },
+  "spiderman": {
+    "src": "media/spiderman-ross.jpg",
+    "alt": "Spider-Man reaching through his web",
+    "source": "https://www.dailyherald.com/20250507/submitted-content/alex-ross-heroes-villains-exhibition-opens-this-summer-at-the-bess-bower-dunn-museum/",
+    "assetSource": "https://imengine.public.prod.pdh.navigacloud.com/?function=original&type=preview&uuid=49BCB7B1-01A3-453A-AAE2-0ECA2D5FC163",
+    "credit": "Artwork by Alex Ross",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.56,
+      "y": 0.61
+    }
+  },
+  "venom": {
+    "src": "media/venom-ross.jpg",
+    "alt": "Venom with white eyes and a long red tongue",
+    "source": "https://www.midtowncomics.com/product/2180393",
+    "assetSource": "https://www.midtowncomics.com/images/PRODUCT/XL/2180393_xl.jpg",
+    "credit": "Artwork by Alex Ross",
+    "shape": "portrait",
+    "focus": {
+      "x": 0.55,
+      "y": 0.36
+    }
+  }
+}

@@ -1,0 +1,57 @@
+[
+  {
+    "id": "mcfarlane-batman-lantern",
+    "title": "Batman as Green Lantern",
+    "label": "McFarlane Toys · 7-inch Collector Edition",
+    "url": "https://www.bestbuy.com/site/mcfarlane-toys-7-figure-batman-as-green-lantern-dc-mcfarlane-collector-edition/6561906.p",
+    "store": "Best Buy",
+    "guide": "Batman variant",
+    "guideUrl": "batman-guide/index.html#version/batman-green-lantern",
+    "image": "media/wishlist-mcfarlane-batman-lantern.jpg",
+    "imageSource": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6561/6561906_sd.jpg"
+  },
+  {
+    "id": "funko-hal",
+    "title": "Pop! Hal Jordan",
+    "label": "Funko · Lanterns · #649",
+    "url": "https://funko.com/pop-hal-jordan-lanterns/94736.html",
+    "store": "Funko",
+    "guide": "Green Lantern guide",
+    "guideUrl": "green-lantern-guide/index.html",
+    "image": "media/wishlist-funko-hal.jpg",
+    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw2b87108d/images/funko/upload/1/94736a_POPHEROES_DCLANT_HalJordan_Renders_Rev2-glam-WEB.png?sh=800&sw=800"
+  },
+  {
+    "id": "funko-beyond",
+    "title": "Pop! Batman Beyond",
+    "label": "Funko · From the Vault · #458",
+    "url": "https://funko.com/pop-batman-beyond/66645.html",
+    "store": "Funko Vault",
+    "guide": "Batman Beyond variant",
+    "guideUrl": "batman-guide/index.html#version/batman-beyond",
+    "image": "media/wishlist-funko-beyond.jpg",
+    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc1a96b50/images/funko/upload/66645A_POPHeroesDC_BatmanBeyond_GLAM-WEB.png?sh=800&sw=800"
+  },
+  {
+    "id": "spider-man-web-pose",
+    "title": "Spider-Man Web Pose Tee",
+    "label": "Apparel · BoxLunch Exclusive",
+    "url": "https://www.boxlunch.com/product/marvel-spider-man-web-pose-t-shirt---boxlunch-exclusive/36984937.html",
+    "store": "BoxLunch",
+    "guide": "Spider-Man guide",
+    "guideUrl": "spiderman-guide/index.html",
+    "image": "media/wishlist-spider-man-web-pose.jpg",
+    "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi?h=630"
+  },
+  {
+    "id": "hal-hoodie",
+    "title": "Green Lantern Hal Jordan Hoodie",
+    "label": "Apparel · Corps logo and Hal Jordan artwork",
+    "url": "https://shop.dc.com/products/green-lantern-hal-jordan-hoodie",
+    "store": "DC Shop",
+    "guide": "Green Lantern guide",
+    "guideUrl": "green-lantern-guide/index.html",
+    "image": "media/wishlist-hal-hoodie.jpg",
+    "imageSource": "https://shop.dc.com/cdn/shop/files/unisex-heavy-blend-hoodie-ash-back-689e4f49dca88.jpg?v=1755206113&width=800"
+  }
+]

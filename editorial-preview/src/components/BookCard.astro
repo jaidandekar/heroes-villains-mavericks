@@ -1,0 +1,12 @@
+---
+const { id, cover, alt = '', href, base = './', external = false } = Astro.props;
+const Wrapper = href ? 'a' : 'div';
+const image = cover?.startsWith('media/') ? base + cover : cover;
+---
+<article class="shelf-story" id={id}>
+  <Wrapper class="shelf-story-row" href={href} target={external ? '_blank' : undefined} rel={external ? 'noopener sponsored' : undefined}>
+    {image && <span class="shelf-cover"><img src={image} alt={alt} loading="lazy" /></span>}
+    <div class="shelf-copy"><slot /></div>
+  </Wrapper>
+  {Astro.slots.has('details') && <div class="shelf-details"><slot name="details" /></div>}
+</article>

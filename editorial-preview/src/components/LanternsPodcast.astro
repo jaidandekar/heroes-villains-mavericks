@@ -1,0 +1,68 @@
+---
+import css from './podcast.css?raw';
+---
+<section class="wrap section" id="lanterns-podcast">
+      <div class="section-head">
+        <h2>Go behind the scenes</h2>
+        <p>Juju Green’s official podcast for Lanterns.</p>
+      </div>
+      <div class="podcast" data-podcast>
+        <div class="podcast-player">
+          <iframe loading="lazy" data-podcast-frame title="Lanterns: The Official Podcast, Pilot" src="https://www.youtube-nocookie.com/embed/n1UCvx1QhK0?rel=0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="podcast-side">
+          <p class="podcast-kicker">Lanterns · the official podcast</p>
+          <h3 class="podcast-title" data-podcast-title>Pilot</h3>
+          <p class="podcast-note" data-podcast-note>Chris Mundy, Damon Lindelof, and Tom King on the pilot.</p>
+          <ol class="podcast-eps" id="lanterns-episodes">
+            <li><button type="button" aria-current="true" data-yt="n1UCvx1QhK0" data-ep="Pilot" data-who="Chris Mundy, Damon Lindelof, and Tom King on the pilot."><img src="https://i.ytimg.com/vi/n1UCvx1QhK0/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 1</span><span class="podcast-ep-name">Pilot</span><span class="podcast-ep-who">Chris Mundy, Damon Lindelof, and Tom King</span></span></button></li>
+            <li><button type="button" data-yt="kFBRSzRF1Z4" data-ep="Trust Fall" data-who="Chris Mundy, Vanessa Baden Kelly, and James Hawes on Trust Fall."><img src="https://i.ytimg.com/vi/kFBRSzRF1Z4/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 2</span><span class="podcast-ep-name">Trust Fall</span><span class="podcast-ep-who">Chris Mundy, Vanessa Baden Kelly, and James Hawes</span></span></button></li>
+            <li><button type="button" data-yt="0BveqtOzcz0" data-ep="OutKast" data-who="Aaron Pierre, Vanessa Baden Kelly, and Stephen Williams on OutKast."><img src="https://i.ytimg.com/vi/0BveqtOzcz0/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 3</span><span class="podcast-ep-name">OutKast</span><span class="podcast-ep-who">Aaron Pierre, Vanessa Baden Kelly, and Stephen Williams</span></span></button></li>
+            <li><button type="button" data-yt="aiRWFMtfu94" data-ep="The Weenie" data-who="Breannah Gibson, Garret Dillahunt, and Poorna Jagannathan on The Weenie."><img src="https://i.ytimg.com/vi/aiRWFMtfu94/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 4</span><span class="podcast-ep-name">The Weenie</span><span class="podcast-ep-who">Breannah Gibson, Garret Dillahunt, and Poorna Jagannathan</span></span></button></li>
+            <li><button type="button" data-yt="aJvAktMDerE" data-ep="Lights Out" data-who="Justin Britt-Gibson and Kelly Macdonald on Lights Out."><img src="https://i.ytimg.com/vi/aJvAktMDerE/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 5</span><span class="podcast-ep-name">Lights Out</span><span class="podcast-ep-who">Justin Britt-Gibson and Kelly Macdonald</span></span></button></li>
+            <li><button type="button" data-yt="p3ItpucOfm4" data-ep="Bad Optics" data-who="Justin Britt-Gibson, Stephen Williams, and Stephanie Economou on Bad Optics."><img src="https://i.ytimg.com/vi/p3ItpucOfm4/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 6</span><span class="podcast-ep-name">Bad Optics</span><span class="podcast-ep-who">Justin Britt-Gibson, Stephen Williams, and Stephanie Economou</span></span></button></li>
+            <li><button type="button" data-yt="tMJ6Z1FXx0M" data-ep="The Jordan Boys’ Legacy" data-who="Chris Mundy, Tom King, and Jason Ritter on The Jordan Boys’ Legacy."><img src="https://i.ytimg.com/vi/tMJ6Z1FXx0M/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 7</span><span class="podcast-ep-name">The Jordan Boys’ Legacy</span><span class="podcast-ep-who">Chris Mundy, Tom King, and Jason Ritter</span></span></button></li>
+            <li><button type="button" data-yt="en6nAtSEoxU" data-ep="Dirt and Stars" data-who="Chris Mundy, Damon Lindelof, and Tom King on the finale."><img src="https://i.ytimg.com/vi/en6nAtSEoxU/mqdefault.jpg" alt="" width="320" height="180"><span class="podcast-ep-copy"><span class="podcast-ep-num">Episode 8</span><span class="podcast-ep-name">Dirt and Stars</span><span class="podcast-ep-who">Chris Mundy, Damon Lindelof, and Tom King</span></span></button></li>
+          </ol>
+          <button type="button" class="podcast-more" data-podcast-more aria-controls="lanterns-episodes" aria-expanded="false">View all videos</button>
+        </div>
+      </div>
+      <p class="small podcast-watch"><a data-podcast-watch href="https://www.youtube.com/watch?v=n1UCvx1QhK0" target="_blank" rel="noopener">Watch on YouTube ↗</a></p>
+<script is:inline>
+(function () {
+  var root = document.currentScript.closest('section').querySelector('[data-podcast]');
+  if (!root) return;
+  var watch = root.parentElement.querySelector('[data-podcast-watch]');
+  var frame = root.querySelector('[data-podcast-frame]');
+  var title = root.querySelector('[data-podcast-title]');
+  var note = root.querySelector('[data-podcast-note]');
+  var buttons = Array.prototype.slice.call(root.querySelectorAll('[data-yt]'));
+  var more = root.querySelector('[data-podcast-more]');
+  var list = root.querySelector('.podcast-eps');
+  if (more && list) {
+    more.addEventListener('click', function () {
+      list.classList.add('is-open');
+      more.setAttribute('aria-expanded', 'true');
+      more.hidden = true;
+    });
+  }
+  buttons.forEach(function (button) {
+    button.addEventListener('click', function () {
+      var id = button.getAttribute('data-yt');
+      var name = button.getAttribute('data-ep');
+      frame.src = 'https://www.youtube-nocookie.com/embed/' + id + '?rel=0';
+      watch.href = 'https://www.youtube.com/watch?v=' + id;
+      frame.title = 'Lanterns: The Official Podcast, ' + name;
+      if (title) title.textContent = name;
+      if (note) note.textContent = button.getAttribute('data-who');
+      buttons.forEach(function (other) {
+        if (other === button) other.setAttribute('aria-current', 'true');
+        else other.removeAttribute('aria-current');
+      });
+    });
+  });
+})();
+
+</script>
+</section>
+<style is:inline set:html={css}></style>

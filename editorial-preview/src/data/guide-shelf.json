@@ -1,0 +1,52 @@
+[
+  {
+    "id": "clayface",
+    "title": "Clayface",
+    "copy": "A horror actor who became living clay and can reshape his face and body into anyone else."
+  },
+  {
+    "id": "batman",
+    "title": "Batman",
+    "copy": "Gotham’s detective. He has no powers, only training, and he took up the work after his parents were murdered."
+  },
+  {
+    "id": "vision",
+    "title": "Vision",
+    "copy": "An android Ultron built from Wonder Man’s brain patterns. He joined the Avengers and can change his own density."
+  },
+  {
+    "id": "ultron",
+    "title": "Ultron",
+    "copy": "A robot Hank Pym created from a copy of his own mind. Ultron turns on that maker and on humanity."
+  },
+  {
+    "id": "green-lantern",
+    "title": "Green Lantern",
+    "copy": "A power ring turns willpower into green light. Test pilot Hal Jordan and architect John Stewart have both worn one."
+  },
+  {
+    "id": "sinestro",
+    "title": "Sinestro",
+    "copy": "Once the finest Green Lantern of his sector. Cast out, he founded a corps whose yellow rings feed on fear."
+  },
+  {
+    "id": "doctor-doom",
+    "title": "Doctor Doom",
+    "copy": "The armored monarch of Latveria, a scientist and sorcerer who blames Reed Richards for the scars under his mask."
+  },
+  {
+    "id": "fantastic-four",
+    "title": "Fantastic Four",
+    "copy": "Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm, a family of explorers transformed by cosmic rays."
+  },
+  {
+    "id": "spiderman",
+    "title": "Spider-Man",
+    "copy": "A student bitten by a radioactive spider, who holds that great power comes with great responsibility."
+  },
+  {
+    "id": "venom",
+    "title": "Venom",
+    "copy": "A reporter fused with the alien symbiote Spider-Man cast off. The two of them share a hatred of Peter Parker."
+  }
+]

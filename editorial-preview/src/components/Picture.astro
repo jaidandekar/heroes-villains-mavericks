@@ -1,0 +1,8 @@
+---
+const { src, alt = '', kind = 'scene', base = './', eager = false, focus, wideSrc } = Astro.props;
+const url = src?.startsWith('media/') ? base + src : src;
+---
+<picture class:list={['picture', kind]} style="display:block">
+  {wideSrc && <source media="(min-width: 64rem)" srcset={wideSrc.startsWith('media/') ? base + wideSrc : wideSrc} />}
+  {url && <img src={url} alt={alt} data-focus-x={focus?.x} data-focus-y={focus?.y} loading={eager ? 'eager' : 'lazy'} onerror="this.hidden = true" />}
+</picture>

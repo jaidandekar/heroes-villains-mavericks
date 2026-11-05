@@ -1,0 +1,207 @@
+{
+  "verse-guy-gardner": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/74/Green_Lantern_%28Guy_Gardner%29.png",
+    "width": 226,
+    "height": 443
+  },
+  "verse-kyle-rayner": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d8/Green_Lantern_%28Kyle_Rayner%29.png",
+    "width": 281,
+    "height": 355
+  },
+  "verse-alan-scott": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/1a/Green_Lantern_%28Alan_Scott%29.png",
+    "width": 258,
+    "height": 383
+  },
+  "verse-gl-earth-one": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/ad/Green_Lantern_Earth_One.jpg",
+    "width": 250,
+    "height": 396
+  },
+  "hero-fantastic-four": {
+    "source": "https://image.tmdb.org/t/p/w1280/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "ff-worlds-greatest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4092294-01.jpg",
+    "width": 825,
+    "height": 1280
+  },
+  "ff-hickman-2": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6843035-9150347246-74880.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "ff-north": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/11159/111592040/9013622-9351001981-B0C2D.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "hero-batman": {
+    "source": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "batman-year-one": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/64684/2356058-bmyo_dlx_dj.jpg",
+    "width": 855,
+    "height": 1280
+  },
+  "batman-owls": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6594972-01.jpg",
+    "width": 829,
+    "height": 1280
+  },
+  "batman-dkr": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9116/1657463-1c.png",
+    "width": 600,
+    "height": 983
+  },
+  "batman-zoo": {
+    "source": "https://covers.openlibrary.org/b/id/15113626-L.jpg",
+    "width": 325,
+    "height": 500
+  },
+  "batman-beyond-vol1": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/58127/1595849-bat007.jpg",
+    "width": 833,
+    "height": 1280
+  },
+  "batman-knightquest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6623595-01.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "batman-one-million": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9241/624848-6751_20051105081406_large.jpg",
+    "width": 400,
+    "height": 609
+  },
+  "batman-darkest-knight": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4043975-01.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "shelf-last-ronin": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781684058419",
+    "width": 299,
+    "height": 450
+  },
+  "shelf-sinestro": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781401234553",
+    "width": 290,
+    "height": 450
+  },
+  "shelf-batman-spawn": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781779521507",
+    "width": 293,
+    "height": 450
+  },
+  "shelf-court-of-owls": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781401235420",
+    "width": 291,
+    "height": 450
+  },
+  "blackest-night": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781401228064",
+    "width": 270,
+    "height": 400
+  },
+  "cf-asylum": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56299/1283575-clayface.jpg",
+    "width": 515,
+    "height": 800
+  },
+  "cf-payne-debut": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/8/84205/2900409-det479.jpg",
+    "width": 403,
+    "height": 614
+  },
+  "cf-cassius-debut": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/39629-796-44600-1-batman.jpg",
+    "width": 400,
+    "height": 614
+  },
+  "sin-demon": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4328751-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "sin-war": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3485643-01.jpg",
+    "width": 586,
+    "height": 900
+  },
+  "ultron-unleashed": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/51078/1016657-avenge1.jpeg",
+    "width": 350,
+    "height": 524
+  },
+  "ultron-unlimited": {
+    "source": "https://covers.openlibrary.org/b/id/15150842-L.jpg",
+    "width": 332,
+    "height": 500
+  },
+  "ultron-conquest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4635237-01.jpg",
+    "width": 448,
+    "height": 675
+  },
+  "ultron-rage": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/40/4478781-avengers_rage_of_ultron_cover.jpg",
+    "width": 600,
+    "height": 900
+  },
+  "ultron-age": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3816330-01.jpg",
+    "width": 579,
+    "height": 900
+  },
+  "ultron-ultimate": {
+    "source": "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Ultron_%28Earth-1610%29_from_Ultimates_3_Vol_1_5_001.png/revision/latest?cb=20201017064555",
+    "width": 712,
+    "height": 604
+  },
+  "ultron-extreme": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/1202/89868-18108-106298-1-avengers-next.jpg",
+    "width": 400,
+    "height": 628
+  },
+  "venom-birth": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5674133-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "venom-lethal": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4897039-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "venom-rex": {
+    "source": "https://covers.openlibrary.org/b/id/8813263-L.jpg",
+    "width": 329,
+    "height": 500
+  },
+  "venom-gargan": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/2/22664/1054590-spm.jpg",
+    "width": 493,
+    "height": 762
+  },
+  "venom-agent": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/8/87073/1710738-venom01.jpg",
+    "width": 593,
+    "height": 900
+  },
+  "venom-ultimate": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/3318/105592-7257-108168-1-ultimate-spider-man.jpg",
+    "width": 400,
+    "height": 617
+  },
+  "venom-dylan": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8247950-large-4944271.jpg",
+    "width": 592,
+    "height": 900
+  }
+}

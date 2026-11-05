@@ -1,0 +1,214 @@
+{
+  "batman": {
+    "pitch": "Bruce Wayne is Gotham City’s masked detective. Armed with training, technology, and an obsession with justice, he hunts the criminals who prey on the city that took his parents.",
+    "overview": [
+      "Bruce Wayne was a child when he saw his parents murdered in Gotham. He spent years studying combat, detection, and forensic science before coming home to fight the kind of crime that had shattered his family.",
+      "Batman’s partnership with James Gordon gives him an ally inside a deeply compromised police department. The Robins and the wider Bat-Family complicate his reputation as a loner: many of his most consequential stories ask what happens when he trusts someone else with the work, or when someone else has to wear the cowl."
+    ],
+    "sources": [
+      {
+        "label": "DC’s Batman profile",
+        "url": "https://www.dc.com/characters/batman"
+      }
+    ],
+    "reading": {
+      "batman-year-one": {
+        "note": "The story follows Bruce and James Gordon through their first year fighting corruption in Gotham. Their parallel starts make it an introduction to both Batman’s methods and the police alliance that makes them possible.",
+        "url": "https://www.dc.com/characters/batman"
+      },
+      "batman-owls": {
+        "note": "An investigation leads Bruce to a secret society whose influence predates his family’s standing in Gotham. Start here if you want a detective story that challenges Batman’s confidence that he knows his own city.",
+        "url": "https://www.dc.com/blog/2026-01-21/how-to-start-reading-batman-comics"
+      },
+      "batman-dkr": {
+        "note": "This alternate future imagines what happens when an older Bruce returns to the cowl. It is a self-contained contrast to Year One: the point is what Batman’s return does to Gotham, rather than how he learns the job.",
+        "url": "https://www.dc.com/characters/batman"
+      },
+      "batman-zoo": {
+        "note": "A young Bruce faces a gang of masked killers in a Gotham where he has neither the Wayne fortune nor Alfred in his corner. The first six issues introduce a Batman whose tactics grow out of a very different upbringing.",
+        "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-1-the-zoo"
+      }
+    },
+    "chart": {
+      "label": "Circana BookScan · July 2026",
+      "url": "https://icv2.com/articles/markets/view/63115/",
+      "books": [
+        {
+          "rank": 3,
+          "title": "Absolute Batman Vol. 2: Abomination",
+          "cover": "media/chart-absolute-abomination.jpg",
+          "creators": "Scott Snyder",
+          "edition": "Collected edition · Volume 2",
+          "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-2-abomination",
+          "coverSource": "https://static.dc.com/2026-02/T2443000018301.jpg?w=640"
+        },
+        {
+          "rank": 4,
+          "title": "Batman: The Long Halloween · DC Compact Comics",
+          "cover": "media/chart-long-halloween.jpg",
+          "creators": "Jeph Loeb and Tim Sale",
+          "edition": "DC Compact Comics edition",
+          "url": "https://www.penguinrandomhouse.com/books/796845/batman-the-long-halloween-dc-compact-comics-edition-by-various/9781799502883/",
+          "coverSource": "https://images.penguinrandomhouse.com/cover/9781799502883"
+        },
+        {
+          "rank": 7,
+          "title": "Batman: Under the Red Hood · DC Compact Comics",
+          "cover": "media/chart-red-hood.jpg",
+          "creators": "Judd Winick and collaborators",
+          "edition": "DC Compact Comics edition",
+          "url": "https://www.penguinrandomhouse.com/books/811897/batman-under-the-red-hood-dc-compact-comics-edition-by-judd-winick/9781799508212/",
+          "coverSource": "https://images.penguinrandomhouse.com/cover/9781799508212"
+        }
+      ]
+    },
+    "products": [
+      {
+        "title": "DC Comics Batman travel mug",
+        "store": "BoxLunch",
+        "sku": "31128679",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-travel-mug-with-handle/31128679.html"
+      }
+    ]
+  },
+  "green-lantern": {
+    "pitch": "Green Lantern is a mantle carried by heroes like Hal Jordan and John Stewart. Their rings turn willpower into weapons, shields, and anything else they can imagine in defense of their sector.",
+    "overview": [
+      "Hal Jordan was a test pilot when a dying alien, Abin Sur, entrusted him with a power ring and responsibility for Earth’s sector. The ring made Hal part of the Green Lantern Corps, an interstellar force whose members use willpower to give their ideas physical form.",
+      "John Stewart started as a relief Lantern and grew into a Corps leader. His background as an architect shapes how he builds constructs, which is one of the clearest examples of how the same ring can look and feel different in different hands. The guide separates the people who carry the mantle from alternate realities and transformations."
+    ],
+    "sources": [
+      {
+        "label": "DC’s Hal Jordan profile",
+        "url": "https://www.dc.com/characters/green-lantern"
+      },
+      {
+        "label": "DC’s John Stewart profile",
+        "url": "https://www.dc.com/characters/john-stewart"
+      }
+    ],
+    "reading": {
+      "gl-secret-origin": {
+        "note": "Start here to see how a test pilot inherits both a ring and a duty from Abin Sur. The collection gives you the basic relationship between Hal, Earth’s sector, and the Corps before the larger crossover stories.",
+        "url": "https://www.dc.com/characters/green-lantern"
+      },
+      "gl-rebirth": {
+        "note": "This is the bridge into Geoff Johns’s Green Lantern era. Hal’s return sets up the ongoing 2005 series. Readers who want to understand why his return matters can start with Emerald Twilight and then come back here.",
+        "url": "https://www.dc.com/comics/green-lantern-2005/green-lantern-1"
+      },
+      "sinestro-corps-war": {
+        "note": "Sinestro recruits an army that draws its power from fear. The collection crosses between the two Lantern series, making it a good next read once you know the Corps and want to see how its individual members operate in a war.",
+        "url": "https://www.dc.com/graphic-novels/green-lantern-2005/green-lantern-the-sinestro-corps-war"
+      },
+      "blackest-night": {
+        "note": "The conflict widens when a new Corps raises dead heroes and villains. This is the central event collection; its companion books follow battles that happen alongside it, so start here before deciding how far into the tie-ins you want to go.",
+        "url": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night"
+      }
+    },
+    "chart": {
+      "label": "Circana BookScan · July 2026",
+      "url": "https://icv2.com/articles/markets/view/63115/",
+      "books": []
+    },
+    "products": [
+      {
+        "title": "Hal Jordan Funko Pop",
+        "store": "Amazon",
+        "sku": "B004OFRJDI",
+        "url": "https://www.amazon.com/dp/B004OFRJDI?tag=",
+        "image": "media/product-green-lantern-B004OFRJDI.jpg",
+        "imageSource": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg"
+      },
+      {
+        "title": "Green Lantern logo t-shirt",
+        "store": "Hot Topic",
+        "sku": "36796580",
+        "url": "https://www.hottopic.com/product/dc-comics-green-lantern-logo-t-shirt/36796580.html",
+        "image": "media/product-green-lantern-36796580.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796580_hi"
+      },
+      {
+        "title": "Green Lantern Corps bomber",
+        "store": "BoxLunch",
+        "sku": "35756042",
+        "url": "https://www.boxlunch.com/product/dc-comics-green-lantern-corps-bomber-jacket---boxlunch-exclusive/35756042.html",
+        "image": "media/product-green-lantern-35756042.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35756042_hi"
+      }
+    ]
+  },
+  "fantastic-four": {
+    "pitch": "The Fantastic Four are Marvel’s family of explorers. A flight through cosmic radiation gives Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm extraordinary abilities and sends them toward even stranger frontiers.",
+    "overview": [
+      "The four come home from their flight changed in different ways. Reed can stretch his body, Sue can become invisible and project force fields, Johnny can ignite and fly, and Ben gains immense strength along with a rocky body he can’t simply switch off.",
+      "Their adventures revolve around a family learning to live with those changes while exploring places that ordinary science cannot reach. Doctor Doom’s rivalry with Reed gives those discoveries a recurring personal cost. Later, the Future Foundation brings the Richards children and a new generation of problem-solvers into the story."
+    ],
+    "sources": [
+      {
+        "label": "Marvel’s Fantastic Four profile",
+        "url": "https://www.marvel.com/teams-and-groups/fantastic-four/in-comics"
+      },
+      {
+        "label": "Marvel’s Future Foundation reading guide",
+        "url": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "ultimate-fantastic-four",
+        "name": "Ultimate Fantastic Four",
+        "universe": "Ultimate Marvel",
+        "description": "The original Ultimate line reintroduces Reed, Sue, Johnny, and Ben as a younger team. It gives their experiments and family dynamic a new starting point, separate from the original Lee and Kirby run.",
+        "firstAppearance": "Ultimate Fantastic Four #1",
+        "source": "https://www.marvel.com/comics/issue/95/slug"
+      },
+      {
+        "slug": "future-foundation",
+        "name": "Future Foundation",
+        "universe": "Main Marvel continuity · Team era",
+        "description": "The family reorganizes after losing Johnny and invites Spider-Man into the group. The Foundation gives the Richards children and other young scientists a place to tackle problems of their own.",
+        "source": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      }
+    ],
+    "reading": {
+      "ff-worlds-greatest": {
+        "note": "Read this collection for the original flight, the team’s early experiments with its powers, and the start of Doom’s rivalry with Reed. It shows how quickly the premise moves from a family crisis to stories about exploration on a much larger scale.",
+        "url": "https://www.marvel.com/teams-and-groups/fantastic-four/in-comics"
+      },
+      "ff-hickman-2": {
+        "note": "The Future Foundation changes the scale of the family story by bringing young scientists into Reed’s orbit. Since this is a second volume, readers new to Hickman’s run can use Marvel’s chronology to find an earlier starting point.",
+        "url": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      },
+      "ff-north": {
+        "note": "The opening issues split up the team after a disaster. Ben and Alicia stumble into a time loop, while Reed and Sue encounter a town full of Doombots. The smaller mysteries give new readers a way into the family’s relationships before they learn what drove everyone apart.",
+        "url": "https://www.marvel.com/comics/collection/95695/fantastic_four_by_ryan_north_vol_1_whatever_happened_to_the_fantastic_four_2022"
+      }
+    },
+    "chart": {
+      "label": "Circana BookScan · July 2026",
+      "url": "https://icv2.com/articles/markets/view/63115/",
+      "books": [
+        {
+          "rank": 14,
+          "title": "Secret Wars (2015)",
+          "context": "Related event featuring Reed Richards and Doctor Doom",
+          "cover": "media/doom-secret-wars-2015.jpg",
+          "creators": "Jonathan Hickman and Esad Ribić",
+          "edition": "Trade paperback · 2015 series",
+          "url": "https://www.amazon.com/dp/0785198841",
+          "coverSource": "https://www.amazon.com/dp/0785198841"
+        }
+      ]
+    },
+    "products": [
+      {
+        "title": "Marvel Fantastic Four Cosmic T-shirt",
+        "store": "Hot Topic",
+        "sku": "32446384",
+        "url": "https://www.hottopic.com/product/marvel-fantastic-four-cosmic-t-shirt/32446384.html",
+        "image": "media/product-fantastic-four-32446384.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32446384_hi"
+      }
+    ]
+  }
+}

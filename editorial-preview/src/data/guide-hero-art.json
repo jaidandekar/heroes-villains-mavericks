@@ -1,0 +1,102 @@
+{
+  "batman": {
+    "src": "media/guide-wide-batman.jpg",
+    "alt": "Batman in the red-lit rain",
+    "credit": "The Batman promotional still via TMDB",
+    "source": "https://www.themoviedb.org/movie/414906-the-batman",
+    "focus": {
+      "x": 0.5,
+      "y": 0.36
+    }
+  },
+  "green-lantern": {
+    "src": "media/guide-wide-green-lantern.jpg",
+    "alt": "The Green Lantern Corps in flight",
+    "credit": "DC comic artwork via La Razón",
+    "source": "https://www.larazon.es/videojuegos/comics/dc-cambia-la-identidad-de-un-importante-green-lantern_2022041669971b242f00a0468817a179.html",
+    "focus": {
+      "x": 0.45,
+      "y": 0.44
+    }
+  },
+  "fantastic-four": {
+    "src": "media/guide-wide-fantastic-four.jpg",
+    "alt": "The four founding Fantastic Four members together",
+    "credit": "Marvel Rivals artwork via Space.com",
+    "source": "https://www.space.com/entertainment/space-games-toys/the-fantastic-four-join-marvel-rivals-ahead-of-their-big-screen-marvel-cinematic-universe-reboot",
+    "focus": {
+      "x": 0.52,
+      "y": 0.4
+    }
+  },
+  "doctor-doom": {
+    "src": "media/guide-wide-doctor-doom.jpg",
+    "alt": "Doctor Doom in his green hood and armor",
+    "credit": "Marvel Rivals cinematic art via esports.gg",
+    "source": "https://esports.gg/news/marvel-rivals/doom-is-on-his-way-to-marvel-rivals/",
+    "focus": {
+      "x": 0.53,
+      "y": 0.44
+    }
+  },
+  "ultron": {
+    "src": "media/guide-wide-ultron.jpg",
+    "alt": "Ultron in his metallic armor",
+    "credit": "Avengers: Age of Ultron still via Looper",
+    "source": "https://www.looper.com/144336/what-ultron-almost-looked-like/",
+    "focus": {
+      "x": 0.6,
+      "y": 0.42
+    }
+  },
+  "sinestro": {
+    "src": "media/guide-wide-sinestro.jpg",
+    "alt": "Sinestro wielding yellow ring energy",
+    "credit": "Infinite Crisis key art via Wallpaper Abyss",
+    "source": "https://wall.alphacoders.com/big.php?i=573511",
+    "focus": {
+      "x": 0.56,
+      "y": 0.38
+    }
+  },
+  "spiderman": {
+    "src": "media/guide-wide-spiderman.jpg",
+    "alt": "Spider-heroes racing through the Spider-Verse",
+    "credit": "Beyond the Spider-Verse artwork via TMDB",
+    "source": "https://www.themoviedb.org/movie/911430-spider-man-beyond-the-spider-verse",
+    "focus": {
+      "x": 0.45,
+      "y": 0.45
+    }
+  },
+  "venom": {
+    "src": "media/guide-wide-venom.jpg",
+    "alt": "Venom facing forward with his teeth bared",
+    "credit": "Venom: The Last Dance still via GamesRadar+",
+    "source": "https://www.gamesradar.com/entertainment/marvel-movies/venom-3-the-last-dance-easter-eggs-marvel-deep-cuts-references-explained/",
+    "focus": {
+      "x": 0.57,
+      "y": 0.39
+    }
+  },
+  "clayface": {
+    "src": "media/guide-wide-clayface.jpg",
+    "alt": "Clayface with his reflection distorted",
+    "credit": "Clayface promotional art via TMDB",
+    "source": "https://www.dc.com/movies/clayface-2026",
+    "focus": {
+      "x": 0.5,
+      "y": 0.41
+    }
+  },
+  "vision": {
+    "src": "media/guide-wide-vision.jpg",
+    "alt": "Vision seated beneath his red and green counterpart",
+    "credit": "VisionQuest promotional art via TMDB",
+    "source": "https://www.marvel.com/tv-shows/visionquest/1",
+    "focus": {
+      "x": 0.66,
+      "y": 0.43
+    }
+  }
+}
