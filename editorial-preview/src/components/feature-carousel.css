@@ -62,41 +62,6 @@
 .screen-trailer { padding: .45rem .75rem; border: 1px solid currentColor; border-radius: .35rem; }
 
 .version-feature { border-top: 1px solid var(--rule); }
-.version-feature .screen-card {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
-  align-items: stretch;
-  min-height: clamp(22rem, 34vw, 34rem);
-  aspect-ratio: auto;
-  background: #111827;
-}
-.version-feature .screen-card::after { content: none; }
-.version-feature .screen-card .picture {
-  position: relative;
-  inset: auto;
-  grid-area: 1 / 2;
-  min-height: 0;
-  background: radial-gradient(ellipse at center, #31445e, #182338 76%);
-}
-.version-feature .screen-card .picture img {
-  position: absolute;
-  inset: 0;
-  padding: clamp(.75rem, 2vw, 1.5rem);
-  object-fit: contain;
-  object-position: center;
-}
-.version-feature .screen-copy {
-  grid-area: 1 / 1;
-  align-self: center;
-  width: min(100%, 40rem);
-}
-@media (max-width: 48rem) {
-  .version-feature .screen-card { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto 1fr; min-height: 0; }
-  .version-feature .screen-card .picture { grid-area: 1 / 1; aspect-ratio: 4 / 3; }
-  .version-feature .screen-copy { grid-area: 2 / 1; align-self: start; }
-}
-
-.version-feature-wide { border-top: 1px solid var(--rule); }
-.version-feature-wide .screen-card::after {
+.version-feature .screen-card::after {
   background: linear-gradient(0deg, #080a0e, rgba(8,10,14,.78) 28%, transparent 72%);
 }

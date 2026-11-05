@@ -29,39 +29,6 @@
         "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-1-the-zoo"
       }
     },
-    "chart": {
-      "label": "Circana BookScan · July 2026",
-      "url": "https://icv2.com/articles/markets/view/63115/",
-      "books": [
-        {
-          "rank": 3,
-          "title": "Absolute Batman Vol. 2: Abomination",
-          "cover": "media/chart-absolute-abomination.jpg",
-          "creators": "Scott Snyder",
-          "edition": "Collected edition · Volume 2",
-          "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-2-abomination",
-          "coverSource": "https://static.dc.com/2026-02/T2443000018301.jpg?w=640"
-        },
-        {
-          "rank": 4,
-          "title": "Batman: The Long Halloween · DC Compact Comics",
-          "cover": "media/chart-long-halloween.jpg",
-          "creators": "Jeph Loeb and Tim Sale",
-          "edition": "DC Compact Comics edition",
-          "url": "https://www.penguinrandomhouse.com/books/796845/batman-the-long-halloween-dc-compact-comics-edition-by-various/9781799502883/",
-          "coverSource": "https://images.penguinrandomhouse.com/cover/9781799502883"
-        },
-        {
-          "rank": 7,
-          "title": "Batman: Under the Red Hood · DC Compact Comics",
-          "cover": "media/chart-red-hood.jpg",
-          "creators": "Judd Winick and collaborators",
-          "edition": "DC Compact Comics edition",
-          "url": "https://www.penguinrandomhouse.com/books/811897/batman-under-the-red-hood-dc-compact-comics-edition-by-judd-winick/9781799508212/",
-          "coverSource": "https://images.penguinrandomhouse.com/cover/9781799508212"
-        }
-      ]
-    },
     "products": [
       {
         "title": "McFarlane Batman (DC Rebirth) 7-inch Figure",
@@ -179,11 +146,6 @@
         "url": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night"
       }
     },
-    "chart": {
-      "label": "Circana BookScan · July 2026",
-      "url": "https://icv2.com/articles/markets/view/63115/",
-      "books": []
-    },
     "products": [
       {
         "title": "Hal Jordan Funko Pop",
@@ -192,7 +154,7 @@
         "url": "https://www.amazon.com/dp/B004OFRJDI",
         "image": "media/shop-B004OFRJDI.jpg",
         "imageSource": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg",
-        "label": "Collectible",
+        "label": "Collectibles",
         "imageCheckedAt": "2026-11-05"
       },
       {
@@ -213,6 +175,17 @@
         "image": "media/shop-35756042.jpg",
         "imageSource": "https://cdn.media.amplience.net/s/hottopic/35756042_hi",
         "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Green Lantern (The Silver Age) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0CV5ZKKYX",
+        "url": "https://www.amazon.com/dp/B0CV5ZKKYX",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/mcfarlane-dc-direct-digital-series/action-figures/green-lantern-dc-the-silver-age-10376.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0CV5ZKKYX.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0CV5ZKKYX.jpg",
         "imageCheckedAt": "2026-11-05"
       }
     ]
@@ -264,22 +237,6 @@
         "url": "https://www.marvel.com/comics/collection/95695/fantastic_four_by_ryan_north_vol_1_whatever_happened_to_the_fantastic_four_2022"
       }
     },
-    "chart": {
-      "label": "Circana BookScan · July 2026",
-      "url": "https://icv2.com/articles/markets/view/63115/",
-      "books": [
-        {
-          "rank": 14,
-          "title": "Secret Wars (2015)",
-          "context": "Related event featuring Reed Richards and Doctor Doom",
-          "cover": "media/doom-secret-wars-2015.jpg",
-          "creators": "Jonathan Hickman and Esad Ribić",
-          "edition": "Trade paperback · 2015 series",
-          "url": "https://www.amazon.com/dp/0785198841",
-          "coverSource": "https://www.amazon.com/dp/0785198841"
-        }
-      ]
-    },
     "products": [
       {
         "title": "Marvel Fantastic Four Cosmic T-shirt",
@@ -289,6 +246,26 @@
         "image": "media/shop-32446384.jpg",
         "imageSource": "https://cdn.media.amplience.net/s/hottopic/32446384_hi",
         "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Fantastic Four Minimates Deluxe Figure Set",
+        "store": "BoxLunch",
+        "sku": "33492027",
+        "url": "https://www.boxlunch.com/product/diamond-select-toys-marvel-minimates-fantastic-four-figures-deluxe-box-set/33492027.html",
+        "label": "Action figures",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33492017_hi?h=630",
+        "image": "media/shop-33492027.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Fantastic Four Enamel Charm Bracelet Set",
+        "store": "BoxLunch",
+        "sku": "35548053",
+        "url": "https://www.boxlunch.com/product/marvel-the-fantastic-four-classic-enamel-charm-cord-bracelet-set-4pcs/35548053.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35547824_hi?h=630",
+        "image": "media/shop-35548053.jpg",
         "imageCheckedAt": "2026-11-05"
       }
     ]
@@ -301,7 +278,7 @@
         "sku": "B0G27VB83P",
         "url": "https://www.amazon.com/dp/B0G27VB83P",
         "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
-        "label": "Collectible",
+        "label": "Collectibles",
         "image": "media/shop-B0G27VB83P.jpg",
         "imageCheckedAt": "2026-11-05"
       },
@@ -314,6 +291,17 @@
         "label": "Apparel",
         "image": "media/shop-36004920.jpg",
         "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Clayface (DC Rebirth) Megafig",
+        "store": "Amazon",
+        "sku": "B09DHGWLGK",
+        "url": "https://www.amazon.com/dp/B09DHGWLGK",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/multiverse/mcfarlane/clayface-dc-rebirth-3815.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B09DHGWLGK.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B09DHGWLGK.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -325,7 +313,7 @@
         "sku": "B07TXLJPRQ",
         "url": "https://www.amazon.com/dp/B07TXLJPRQ",
         "imageSource": "https://m.media-amazon.com/images/I/71vvWGyaKdL._AC_SL500_.jpg",
-        "label": "Collectible",
+        "label": "Collectibles",
         "image": "media/shop-B07TXLJPRQ.jpg",
         "imageCheckedAt": "2026-11-05"
       },
@@ -338,6 +326,27 @@
         "label": "Apparel",
         "image": "media/shop-37103250.jpg",
         "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Retro Doctor Doom 3.75-inch Figure",
+        "store": "Amazon",
+        "sku": "B0BFFTHJBF",
+        "url": "https://www.amazon.com/dp/B0BFFTHJBF",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-retro-kenner-3-75-doctor-doom-5625.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0BFFTHJBF.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0BFFTHJBF.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Doctor Doom Wallet",
+        "store": "BoxLunch",
+        "sku": "36965074",
+        "url": "https://www.boxlunch.com/product/marvel-avengers-doomsday-doctor-doom-wallet---boxlunch-exclusive/36965074.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36965070_hi?h=630",
+        "image": "media/shop-36965074.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -349,7 +358,7 @@
         "sku": "B08KGV6SH6",
         "url": "https://www.amazon.com/dp/B08KGV6SH6",
         "imageSource": "https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg",
-        "label": "Collectible",
+        "label": "Collectibles",
         "image": "media/shop-B08KGV6SH6.jpg",
         "imageCheckedAt": "2026-11-05"
       },
@@ -362,6 +371,17 @@
         "label": "Apparel",
         "image": "media/shop-15603261.jpg",
         "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Retro White Vision 6-inch Figure",
+        "store": "Amazon",
+        "sku": "B095824NYX",
+        "url": "https://www.amazon.com/dp/B095824NYX",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-marvel-comics-80th-anniv-retro-vision-white-retro-3584.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B095824NYX.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B095824NYX.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -373,7 +393,7 @@
         "sku": "B0DJFNV15R",
         "url": "https://www.amazon.com/dp/B0DJFNV15R",
         "imageSource": "https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg",
-        "label": "Collectible",
+        "label": "Collectibles",
         "image": "media/shop-B0DJFNV15R.jpg",
         "imageCheckedAt": "2026-11-05"
       },
@@ -385,6 +405,26 @@
         "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi",
         "label": "Apparel",
         "image": "media/shop-36984937.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Embossed Mask Mug",
+        "store": "BoxLunch",
+        "sku": "35232862",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-embossed-mask-mug/35232862.html",
+        "label": "Home goods",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35232848_hi?h=630",
+        "image": "media/shop-35232862.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Comic Panel Keychain",
+        "store": "BoxLunch",
+        "sku": "37009123",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-comic-panel-spider-man-keychain/37009123.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/37009114_hi?h=630",
+        "image": "media/shop-37009123.jpg",
         "imageCheckedAt": "2026-11-05"
       }
     ]
@@ -400,6 +440,17 @@
         "label": "Apparel",
         "image": "media/shop-36796620.jpg",
         "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Sinestro (Classic Uniform) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0GLQXBCFM",
+        "url": "https://www.amazon.com/dp/B0GLQXBCFM",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/multiverse/mcfarlane/sinestro-classic-uniform-14044.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0GLQXBCFM.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0GLQXBCFM.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -414,6 +465,17 @@
         "label": "Apparel",
         "image": "media/shop-33698817.jpg",
         "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Ultron 6-inch Figure",
+        "store": "Amazon",
+        "sku": "B0B3G4XF3X",
+        "url": "https://www.amazon.com/dp/B0B3G4XF3X",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-cassie-lang-ultron-5816.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0B3G4XF3X.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0B3G4XF3X.jpg",
+        "imageCheckedAt": "2026-11-05"
       }
     ]
   },
@@ -427,6 +489,27 @@
         "imageSource": "https://cdn.media.amplience.net/s/hottopic/36513928_hi",
         "label": "Apparel",
         "image": "media/shop-36513928.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Mondo Venom (The Animated Series) Sixth Scale Figure",
+        "store": "Amazon",
+        "sku": "B0FRBFN3FT",
+        "url": "https://www.amazon.com/dp/B0FRBFN3FT",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/mondo-marvel/action-figures/venom-the-animated-series-12889.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0FRBFN3FT.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0FRBFN3FT.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Venom Face Travel Mug",
+        "store": "BoxLunch",
+        "sku": "30923008",
+        "url": "https://www.boxlunch.com/product/marvel-venom-venom-face-travel-mug/30923008.html",
+        "label": "Home goods",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/30922731_hi?h=630",
+        "image": "media/shop-30923008.jpg",
         "imageCheckedAt": "2026-11-05"
       }
     ]

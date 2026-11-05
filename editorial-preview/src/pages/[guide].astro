@@ -11,6 +11,7 @@ import Picture from '../components/Picture.astro';
 import guides from '../data/guides.json';
 import guideHeroArt from '../data/guide-hero-art.json';
 import editorial from '../data/editorial.json';
+import bestsellers from '../data/bestsellers.json';
 export function getStaticPaths() {
   return Object.values(guides).map(guide => ({params: { guide: guide.id + '-guide' }, props: { guide }}));
 }
@@ -19,7 +20,7 @@ const edit = editorial[guide.id];
 const pitch = edit?.pitch ?? guide.profile.lead;
 const overview = edit?.overview ?? guide.profile.summary.split(/\n\n+/);
 const sources = edit?.sources ?? [{ label: 'Character reference', url: guide.profile.wikipedia }];
-const chart = edit?.chart;
+const chart = { ...bestsellers, books: bestsellers.books.filter(book => book.guides.includes(guide.id)) };
 const products = edit?.products ?? [];
 const heroArt = guideHeroArt[guide.id];
 const versions = [...guide.versions, ...(edit?.versions ?? [])];
@@ -62,7 +63,7 @@ const versionSlides = versions.map(version => {
     </div>
   </section>
   <span id="all-versions"></span>
-  <FeatureCarousel id="verses" title={guide.verses_h2} entries={versionSlides} base="../" variant={guide.id === 'batman' ? 'versions-wide' : 'versions'} />
+  <FeatureCarousel id="verses" title={guide.verses_h2} entries={versionSlides} base="../" variant="versions" />
   <section class="wrap section" id="graphic-novels">
     <div class="section-head"><h2>Required reading</h2><p>{reading.length} {reading.length === 1 ? 'story' : 'stories'} from the guide</p></div>
     <div class="shelf-stories">
@@ -77,8 +78,8 @@ const versionSlides = versions.map(version => {
           {primary && <span class="shelf-buy">View {primary.format || 'edition'} on Amazon ↗</span>}
           <Fragment slot="details">
             <p>{edit?.reading?.[run.slug]?.note ?? run.summary}</p>
-            {run.collects && <p class="small"><strong>Collects</strong> {run.collects}</p>}
-            {run.prerequisites && <p class="small"><strong>Before you read</strong> {run.prerequisites}</p>}
+            {run.collects && <p class="small"><strong>Collects</strong>{' '}{run.collects}</p>}
+            {run.prerequisites && <p class="small"><strong>Before you read</strong>{' '}{run.prerequisites}</p>}
             {(run.readingOrder?.length > 1) && (
               <details class="small">
                 <summary>Reading order</summary>

@@ -1,0 +1,92 @@
+{
+  "label": "Circana BookScan · July 2026",
+  "url": "https://icv2.com/articles/markets/view/63115/",
+  "books": [
+    {
+      "rank": 1,
+      "title": "Spider-Man: Brand New Day",
+      "creators": "Zeb Wells, Mark Waid, and Dan Slott",
+      "edition": "Marvel Compact edition",
+      "cover": "media/chart-spider-brand-new-day.jpg",
+      "url": "https://www.penguinrandomhouse.com/books/815110/spider-man-brand-new-day-marvel-compact-by-zeb-wells/",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/9781302968663",
+      "guides": [
+        "spiderman"
+      ]
+    },
+    {
+      "rank": 3,
+      "title": "Absolute Batman Vol. 2: Abomination",
+      "cover": "media/chart-absolute-abomination.jpg",
+      "creators": "Scott Snyder",
+      "edition": "Collected edition · Volume 2",
+      "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-2-abomination",
+      "coverSource": "https://static.dc.com/2026-02/T2443000018301.jpg?w=640",
+      "guides": [
+        "batman"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Batman: The Long Halloween · DC Compact Comics",
+      "cover": "media/chart-long-halloween.jpg",
+      "creators": "Jeph Loeb and Tim Sale",
+      "edition": "DC Compact Comics edition",
+      "url": "https://www.penguinrandomhouse.com/books/796845/batman-the-long-halloween-dc-compact-comics-edition-by-various/9781799502883/",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/9781799502883",
+      "guides": [
+        "batman"
+      ]
+    },
+    {
+      "rank": 7,
+      "title": "Batman: Under the Red Hood · DC Compact Comics",
+      "cover": "media/chart-red-hood.jpg",
+      "creators": "Judd Winick and collaborators",
+      "edition": "DC Compact Comics edition",
+      "url": "https://www.penguinrandomhouse.com/books/811897/batman-under-the-red-hood-dc-compact-comics-edition-by-judd-winick/9781799508212/",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/9781799508212",
+      "guides": [
+        "batman"
+      ]
+    },
+    {
+      "rank": 8,
+      "title": "Ultimate Spider-Man Vol. 4: One Last Day",
+      "creators": "Jonathan Hickman",
+      "edition": "Trade paperback · Volume 4",
+      "cover": "media/chart-ultimate-spider-one-last-day.jpg",
+      "url": "https://www.penguinrandomhouse.com/books/797778/ultimate-spider-man-by-jonathan-hickman-vol-4-one-last-day-by-jonathan-hickman/",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/9781302958305",
+      "guides": [
+        "spiderman"
+      ]
+    },
+    {
+      "rank": 9,
+      "title": "Spider-Men: Worlds Collide",
+      "creators": "Brian Michael Bendis",
+      "edition": "Marvel Premier Collection",
+      "cover": "media/chart-spider-men-worlds-collide.jpg",
+      "url": "https://www.penguinrandomhouse.com/books/801989/spider-men-worlds-collide-marvel-premier-collection-by-brian-michael-bendis/",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/9781302965563",
+      "guides": [
+        "spiderman"
+      ]
+    },
+    {
+      "rank": 14,
+      "title": "Secret Wars (2015)",
+      "context": "Related event featuring Reed Richards and Doctor Doom",
+      "cover": "media/doom-secret-wars-2015.jpg",
+      "creators": "Jonathan Hickman and Esad Ribić",
+      "edition": "Trade paperback · 2015 series",
+      "url": "https://www.amazon.com/dp/0785198841",
+      "coverSource": "https://www.amazon.com/dp/0785198841",
+      "guides": [
+        "fantastic-four",
+        "doctor-doom"
+      ]
+    }
+  ]
+}

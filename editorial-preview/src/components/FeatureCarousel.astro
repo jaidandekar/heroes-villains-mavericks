@@ -23,12 +23,12 @@ interface Props {
   entries: Slide[];
   heading?: 'h1' | 'h2';
   base?: string;
-  variant?: 'screen' | 'versions' | 'versions-wide';
+  variant?: 'screen' | 'versions';
 }
 const { id, title, entries, heading: Heading = 'h2', base = './', variant = 'screen' } = Astro.props;
 ---
 {entries.length > 0 && <>
-  <section class:list={['wrap section screen-feature', { 'version-feature': variant === 'versions', 'version-feature-wide': variant === 'versions-wide' }]} id={id} aria-labelledby={id + "-title"} aria-roledescription="carousel">
+  <section class:list={['wrap section screen-feature', { 'version-feature': variant === 'versions' }]} id={id} aria-labelledby={id + "-title"} aria-roledescription="carousel">
     <div class="section-head"><Heading id={id + "-title"}>{title}</Heading></div>
     <div class="screen-grid" id={id + "-slides"} tabindex="0" aria-label="Slides">
       {entries.map((entry, index) => <article class="screen-card" id={entry.id}>
@@ -37,7 +37,7 @@ const { id, title, entries, heading: Heading = 'h2', base = './', variant = 'scr
           <p class="eyebrow">{entry.label}</p>
           <h3>{entry.title}</h3>
           <p>{entry.copy}</p>
-          {entry.firstAppearance && <p class="small"><strong>First appearance</strong> {entry.firstAppearance}</p>}
+          {entry.firstAppearance && <p class="small"><strong>First appearance</strong>{' '}{entry.firstAppearance}</p>}
           {entry.scores?.length ? (
             <ul class="screen-scores" aria-label="Ratings from the original slate">
               {entry.scores.map(score => <li><a href={score.url}><strong>{score.value}</strong> <span>{score.source}</span></a></li>)}

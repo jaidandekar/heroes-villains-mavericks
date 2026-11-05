@@ -1,19 +1,47 @@
 {
   "hal-jordan": {
-    "src": "media/version-hal-jordan.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/en/9/90/Green_Lantern_%28Hal_Jordan%29.png"
+    "src": "media/guide-wide-green-lantern.jpg",
+    "source": "https://www.larazon.es/videojuegos/comics/dc-cambia-la-identidad-de-un-importante-green-lantern_2022041669971b242f00a0468817a179.html",
+    "focus": {
+      "x": 0.45,
+      "y": 0.44
+    }
   },
   "infamous-iron-man": {
-    "src": "media/version-infamous-iron-man.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/en/4/43/Infamous_Iron_Man_Vol_1_1_Textless.jpg"
+    "src": "media/multiverse-infamous-iron-man-detail.jpg",
+    "source": "https://www.marvel.com/comics/series/22548/infamous_iron_man_2016_-_2017",
+    "imageSource": "https://i.pinimg.com/originals/89/75/f8/8975f8538e9af09c08f10616a01f6805.jpg",
+    "focus": {
+      "x": 0.28,
+      "y": 0.19
+    },
+    "wideSrc": "media/multiverse-infamous-iron-man-desktop.jpg",
+    "crop": [
+      190,
+      300,
+      890,
+      1080
+    ]
   },
   "miles-morales": {
-    "src": "media/version-miles-morales.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/en/8/8e/Spider-Man_%28Miles_Morales%29_character_art.png"
+    "src": "media/multiverse-miles-morales.jpg",
+    "source": "https://www.thepopverse.com/comics-marvel-secret-wars-1984-2015-ending-explained-ultimate-universe-god-emperor-doom-jonathan-hickman",
+    "imageSource": "https://media.thepopverse.com/media/miles-morales-comes-to-the-616-secret-wars-mdspotw3albfbbi5hrsfwhdecu.jpg",
+    "focus": {
+      "x": 0.5,
+      "y": 0.43
+    },
+    "wideSrc": "media/multiverse-miles-morales-desktop.jpg"
   },
   "spider-2099": {
-    "src": "media/version-spider-2099.jpg",
-    "source": "https://upload.wikimedia.org/wikipedia/en/b/bb/Spider-Man_%28Miguel_O%27Hara%29.png"
+    "src": "media/multiverse-spider-2099-scene.jpg",
+    "source": "https://comicbookcritic.net/first-look-spider-man-2099-1-peter-david-will-sliney/",
+    "imageSource": "https://www.comicbookcritic.net/wp-content/uploads/2014/06/Spider_Man_2099_1_Preview_2.jpg",
+    "focus": {
+      "x": 0.48,
+      "y": 0.2
+    },
+    "wideSrc": "media/multiverse-spider-2099-desktop.jpg"
   },
   "batman-beyond": {
     "src": "media/version-wide-beyond.jpg",
@@ -25,15 +53,28 @@
   },
   "white-vision": {
     "src": "media/version-white-vision.jpg",
-    "source": "https://images.thedirect.com/media/photos/5VisionQuest.jpg"
+    "source": "https://images.thedirect.com/media/photos/5VisionQuest.jpg",
+    "wideSrc": "media/multiverse-white-vision-desktop.jpg"
   },
   "john-stewart": {
-    "src": "media/version-john-stewart.jpg",
-    "source": "https://static.dc.com/dc/files/default_images/Char_Thumb_JohnStewart_5f33095cd97be0.02227321.jpg"
+    "src": "media/multiverse-john-stewart.jpg",
+    "source": "https://www.nealadamsstore.com/John-Stewart-Green-Lanterns-Original-Color-Art_p_2458.html",
+    "imageSource": "https://www.nealadamsstore.com/assets/images/johnstewart6000-72.jpg",
+    "focus": {
+      "x": 0.62,
+      "y": 0.38
+    },
+    "wideSrc": "media/multiverse-john-stewart-desktop.jpg"
   },
   "jessica-cruz": {
-    "src": "media/version-jessica-cruz.jpg",
-    "source": "https://static.dc.com/dc/files/default_images/Char_Thumb_JessicaCruz_5f504210ee4414.58582716.jpg"
+    "src": "media/multiverse-jessica-cruz.jpg",
+    "source": "https://www.thebrightestday.net/green-lantern",
+    "imageSource": "https://www.thebrightestday.net/uploads/2/9/5/7/29570123/gl525_orig.jpg",
+    "focus": {
+      "x": 0.31,
+      "y": 0.45
+    },
+    "wideSrc": "media/multiverse-jessica-cruz-desktop.jpg"
   },
   "bruce-wayne": {
     "src": "media/guide-wide-batman.jpg",
@@ -45,55 +86,113 @@
   },
   "victor-von-doom": {
     "src": "media/doctor-doom-ross.jpg",
-    "source": "https://www.heroicfineartgallery.com/store/p685/DOCTOR_DOOM_Paper_Print_by_Alex_Ross_%28Unsigned%29.html"
+    "source": "https://www.heroicfineartgallery.com/store/p685/DOCTOR_DOOM_Paper_Print_by_Alex_Ross_%28Unsigned%29.html",
+    "focus": {
+      "x": 0.5,
+      "y": 0.2
+    },
+    "wideSrc": "media/multiverse-victor-von-doom-desktop.jpg"
   },
   "fantastic-four": {
     "src": "media/fantastic-four-ross.jpg",
     "source": "https://www.cinemablend.com/news/2560016/marvels-fantastic-four-reboot-has-taken-a-massive-step-forward"
   },
   "basil-karlo": {
-    "src": "media/identity-clayface.jpg",
-    "source": "https://www.dc.com/characters/clayface"
+    "src": "media/multiverse-basil-karlo-scene.jpg",
+    "source": "https://www.thewrap.com/dc-clayface-movie-release-date-mike-flanagan/",
+    "imageSource": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2024/12/clayface-dc.jpg?fit=1200%2C675&quality=89&ssl=1",
+    "focus": {
+      "x": 0.5,
+      "y": 0.3
+    },
+    "wideSrc": "media/multiverse-basil-karlo-desktop.jpg"
   },
   "classic-vision": {
     "src": "media/vision-ross.jpg",
-    "source": "https://www.heroicfineartgallery.com/store/p745/VISION_%26_SCARLET_WITCH_Set_of_2_Paper_Prints_by_Alex_Ross_%28Unsigned%29.html"
+    "source": "https://www.heroicfineartgallery.com/store/p745/VISION_%26_SCARLET_WITCH_Set_of_2_Paper_Prints_by_Alex_Ross_%28Unsigned%29.html",
+    "focus": {
+      "x": 0.5,
+      "y": 0.18
+    },
+    "wideSrc": "media/multiverse-classic-vision-desktop.jpg"
   },
   "peter-parker": {
     "src": "media/spiderman-ross.jpg",
-    "source": "https://www.dailyherald.com/20250507/submitted-content/alex-ross-heroes-villains-exhibition-opens-this-summer-at-the-bess-bower-dunn-museum/"
+    "source": "https://www.dailyherald.com/20250507/submitted-content/alex-ross-heroes-villains-exhibition-opens-this-summer-at-the-bess-bower-dunn-museum/",
+    "focus": {
+      "x": 0.5,
+      "y": 0.66
+    },
+    "wideSrc": "media/multiverse-peter-parker-desktop.jpg"
   },
   "sinestro": {
-    "src": "media/identity-sinestro.jpg",
-    "source": "https://www.dc.com/characters/sinestro"
+    "src": "media/guide-wide-sinestro.jpg",
+    "source": "https://wall.alphacoders.com/big.php?i=573511",
+    "focus": {
+      "x": 0.56,
+      "y": 0.38
+    },
+    "wideSrc": "media/multiverse-sinestro-desktop.jpg"
   },
   "ultron": {
     "src": "media/ultron-ross.jpg",
-    "source": "https://unknowncomicbooks.com/products/avengers-66-e-alex-ross-timeless-ultron-virgin-variant-03-08-2023-marvel"
+    "source": "https://unknowncomicbooks.com/products/avengers-66-e-alex-ross-timeless-ultron-virgin-variant-03-08-2023-marvel",
+    "focus": {
+      "x": 0.51,
+      "y": 0.2
+    },
+    "wideSrc": "media/multiverse-ultron-desktop.jpg"
   },
   "eddie-brock": {
     "src": "media/venom-ross.jpg",
-    "source": "https://www.midtowncomics.com/product/2180393"
+    "source": "https://www.midtowncomics.com/product/2180393",
+    "focus": {
+      "x": 0.55,
+      "y": 0.38
+    },
+    "wideSrc": "media/multiverse-eddie-brock-desktop.jpg"
   },
   "alan-scott": {
-    "src": "media/verse-alan-scott.jpg",
-    "source": "https://en.wikipedia.org/wiki/Alan_Scott"
+    "src": "media/multiverse-alan-scott.jpg",
+    "source": "https://www.cosmicteams.com/jsa/profiles/green-lantern-alan-scott.html",
+    "imageSource": "https://www.cosmicteams.com/jsa/profiles/images/post-crisis/showcase-95-01.jpg",
+    "focus": {
+      "x": 0.55,
+      "y": 0.35
+    }
   },
   "guy-gardner": {
-    "src": "media/verse-guy-gardner.jpg",
-    "source": "https://en.wikipedia.org/wiki/Guy_Gardner"
+    "src": "media/multiverse-guy-gardner-scene.jpg",
+    "source": "https://www.cultture.com/los-10-mejores-comics-de-guy-gardner-para-leer-antes-de-superman",
+    "imageSource": "https://www.cultture.com/pics/2024/09/los-10-mejores-comics-de-guy-gardner-para-leer-antes-de-superman.jpg",
+    "focus": {
+      "x": 0.5,
+      "y": 0.3
+    }
   },
   "kyle-rayner": {
-    "src": "media/verse-kyle-rayner.jpg",
-    "source": "https://en.wikipedia.org/wiki/Kyle_Rayner"
+    "src": "media/multiverse-kyle-rayner.jpg",
+    "source": "https://www.dccontinuityproject.com/green-lantern.html",
+    "imageSource": "https://www.dccontinuityproject.com/uploads/5/4/5/1/54516433/823197316_orig.jpg",
+    "focus": {
+      "x": 0.57,
+      "y": 0.28
+    },
+    "wideSrc": "media/multiverse-kyle-rayner-desktop.jpg"
   },
   "spider-gwen": {
     "src": "media/version-spider-gwen.jpg",
-    "source": "https://images.squarespace-cdn.com/content/v1/5133bc80e4b0c6fb04dcd6c4/1656591684202-YYO69ONFEOLHUJUWD0SJ/gwen_stacy_ghost_spider_web.jpg"
+    "source": "https://images.squarespace-cdn.com/content/v1/5133bc80e4b0c6fb04dcd6c4/1656591684202-YYO69ONFEOLHUJUWD0SJ/gwen_stacy_ghost_spider_web.jpg",
+    "focus": {
+      "x": 0.52,
+      "y": 0.25
+    },
+    "wideSrc": "media/multiverse-spider-gwen-desktop.jpg"
   },
   "dylan-brock": {
     "src": "media/version-dylan-brock.jpg",
-    "source": "https://ovicio.com.br/wp-content/uploads/2025/05/20250501-venom-dylan-brock-1024x576.webp"
+    "source": "https://ovicio.com.br/wp-content/uploads/2025/05/20250501-venom-dylan-brock-1024x576.webp",
+    "wideSrc": "media/multiverse-dylan-brock-desktop.jpg"
   },
   "absolute-batman": {
     "src": "media/version-wide-absolute-alt.jpg",
@@ -137,5 +236,200 @@
       "y": 0.2
     },
     "wideSrc": "media/version-wide-green-batman-desktop.jpg"
+  },
+  "gl-earth-one": {
+    "src": "media/multiverse-gl-earth-one.jpg",
+    "source": "https://www.dc.com/blog/2018/03/19/rethinking-hal-jordan-in-green-lantern-earth-one",
+    "imageSource": "https://static.dc.com/sites/default/files/imce/2018/03-MAR/GLEOv1_2_5ab1480e4799d2.61683351.jpg",
+    "focus": {
+      "x": 0.5,
+      "y": 0.26
+    },
+    "wideSrc": "media/multiverse-gl-earth-one-desktop.jpg"
+  },
+  "parallax-hal": {
+    "src": "media/multiverse-parallax-hal.jpg",
+    "source": "https://www.dc.com/blog/2024/08/30/zero-hour-explained-breaking-down-d-cs-second-crisis",
+    "imageSource": "https://static.dc.com/2024-08/20240830_DC_News_ZeroHourParallax.jpg",
+    "focus": {
+      "x": 0.65,
+      "y": 0.12
+    },
+    "wideSrc": "media/multiverse-parallax-hal-desktop.jpg"
+  },
+  "god-emperor-doom": {
+    "src": "media/multiverse-god-emperor-doom.jpg",
+    "source": "https://nerdist.com/article/doctor-doom-complete-marvel-comics-history/",
+    "imageSource": "https://cdn.nerdist.com/wp-content/uploads/2024/07/29153043/God-Emperor-Doom.jpg",
+    "focus": {
+      "x": 0.52,
+      "y": 0.23
+    },
+    "wideSrc": "media/multiverse-god-emperor-doom-desktop.jpg"
+  },
+  "ultimate-doom": {
+    "src": "media/multiverse-ultimate-doom.jpg",
+    "source": "https://marvel.fandom.com/wiki/Victor_van_Damme_(Earth-1610)",
+    "imageSource": "https://i.pinimg.com/736x/4f/80/d6/4f80d678ff2a1b6f650c5b293cd4d7c1.jpg",
+    "focus": {
+      "x": 0.6,
+      "y": 0.22
+    },
+    "wideSrc": "media/multiverse-ultimate-doom-desktop.jpg"
+  },
+  "doom-2099": {
+    "src": "media/multiverse-doom-2099.jpg",
+    "source": "https://www.pinterest.com/pin/doom-2099-vol-1-15--15762667441069641/",
+    "imageSource": "https://i.pinimg.com/736x/06/a9/87/06a987b880aac141f8fef3383ce2ba6e.jpg",
+    "focus": {
+      "x": 0.76,
+      "y": 0.56
+    },
+    "wideSrc": "media/multiverse-doom-2099-desktop.jpg",
+    "crop": [
+      24,
+      40,
+      700,
+      1106
+    ]
+  },
+  "doomwar-doom": {
+    "src": "media/multiverse-doomwar-doom.jpg",
+    "source": "https://databasecomics.com/2021/05/11/doomwar-wakanda-vibranium-tchalla/",
+    "imageSource": "https://databasecomics.com/wp-content/uploads/2021/04/doomwar20106int.jpg",
+    "focus": {
+      "x": 0.36,
+      "y": 0.3
+    },
+    "wideSrc": "media/multiverse-doomwar-doom-desktop.jpg"
+  },
+  "ultimate-fantastic-four": {
+    "src": "media/multiverse-ultimate-fantastic-four.jpg",
+    "source": "https://nbrehmer.medium.com/ultimate-fantastic-four-remains-the-best-attempt-at-modernizing-marvel-s-first-family-2e4111c0a44d",
+    "imageSource": "https://miro.medium.com/v2/resize:fit:1400/1*1wbgacMdm_P2RQl6Jxi4Aw.png",
+    "focus": {
+      "x": 0.5,
+      "y": 0.32
+    },
+    "wideSrc": "media/multiverse-ultimate-fantastic-four-desktop.jpg"
+  },
+  "future-foundation": {
+    "src": "media/multiverse-future-foundation.jpg",
+    "source": "https://www.marvel.com/articles/comics/meet-the-future-foundation-next-generation-geniuses-fantastic-four",
+    "imageSource": "https://cdn.marvel.com/content/2x/who_is_ff_amazing_spider-man_1999_660_art_by_mike_mckone_stefano_caselli_and_marte_gracia.jpg",
+    "focus": {
+      "x": 0.52,
+      "y": 0.44
+    },
+    "wideSrc": "media/multiverse-future-foundation-desktop.jpg"
+  },
+  "preston-payne": {
+    "src": "media/multiverse-preston-payne.jpg",
+    "source": "https://batman.fandom.com/de/wiki/Clayface_(Preston_Payne)",
+    "imageSource": "https://vignette.wikia.nocookie.net/batman/images/3/3c/Prestonpayne.jpg/revision/latest?cb=20120613231115&path-prefix=de",
+    "focus": {
+      "x": 0.51,
+      "y": 0.24
+    },
+    "wideSrc": "media/multiverse-preston-payne-desktop.jpg"
+  },
+  "cassius-clayface": {
+    "src": "media/multiverse-cassius-clayface.jpg",
+    "source": "https://dc.fandom.com/wiki/Cassius_Payne_(New_Earth)",
+    "imageSource": "https://static.wikia.nocookie.net/marvel_dc/images/9/95/Clayface.jpg/revision/latest?cb=20230514102637",
+    "focus": {
+      "x": 0.62,
+      "y": 0.22
+    },
+    "wideSrc": "media/multiverse-cassius-clayface-desktop.jpg"
+  },
+  "young-avengers-vision": {
+    "src": "media/multiverse-young-avengers-vision.jpg",
+    "source": "https://thedirect.com/article/marvel-next-gen-heroes-deserve-replace-mcu-originals",
+    "imageSource": "https://images.thedirect.com/media/photos/Young-Avengers-Vision-Cover.jpg",
+    "focus": {
+      "x": 0.54,
+      "y": 0.35
+    },
+    "wideSrc": "media/multiverse-young-avengers-vision-desktop.jpg"
+  },
+  "ultron-ultimate": {
+    "src": "media/multiverse-ultron-ultimate.jpg",
+    "source": "https://mightyavengers.net/characters/ultron/alternate-versions",
+    "imageSource": "https://mightyavengers.net/sites/default/files/images/characters/ultron/ultron-alternate-ultimate.jpg",
+    "focus": {
+      "x": 0.48,
+      "y": 0.3
+    },
+    "wideSrc": "media/multiverse-ultron-ultimate-desktop.jpg"
+  },
+  "flash-thompson": {
+    "src": "media/multiverse-flash-thompson.jpg",
+    "source": "https://game-bl4rg.blogspot.com/2012/08/rick-remender-finishes-up-venom-with-22.html",
+    "imageSource": "https://1.bp.blogspot.com/-sgb23ZsM_YM/UCFJzoTTRAI/AAAAAAAAAvM/bQ8JSg2AYg4/s1600/Flash_Thompson_Venom.jpg",
+    "focus": {
+      "x": 0.53,
+      "y": 0.33
+    }
+  },
+  "mac-gargan": {
+    "src": "media/multiverse-mac-gargan.jpg",
+    "source": "https://www.dexerto.com/comics/who-is-venom-everyone-who-ever-wore-the-venom-symbiote-in-marvel-comics-2321218/",
+    "imageSource": "https://editors.dexerto.com/wp-content/uploads/2023/10/03/mac-gargan-venom-1024x576.jpg",
+    "focus": {
+      "x": 0.63,
+      "y": 0.33
+    },
+    "wideSrc": "media/multiverse-mac-gargan-desktop.jpg"
+  },
+  "ultimate-venom": {
+    "src": "media/multiverse-ultimate-venom.jpg",
+    "source": "https://marvel.fandom.com/wiki/Venom_(Symbiote)_(Earth-1610)",
+    "imageSource": "https://i.pinimg.com/originals/36/cc/e4/36cce422cf7c689128993025ffedc86b.jpg",
+    "focus": {
+      "x": 0.53,
+      "y": 0.24
+    },
+    "wideSrc": "media/multiverse-ultimate-venom-desktop.jpg"
+  },
+  "ultimate-peter": {
+    "src": "media/multiverse-ultimate-peter.jpg",
+    "source": "https://www.pinterest.com/pin/5981411992071891/",
+    "imageSource": "https://i.pinimg.com/736x/1c/6c/de/1c6cde4fbc0e6572fd4384419b49508f.jpg",
+    "focus": {
+      "x": 0.49,
+      "y": 0.27
+    },
+    "wideSrc": "media/multiverse-ultimate-peter-desktop.jpg"
+  },
+  "ultimate-vision": {
+    "src": "media/multiverse-ultimate-vision-scene.jpg",
+    "source": "https://www.marvel-world.com/encyclopedie-3539-fiche-vision-la-ultimate-biographie.html",
+    "imageSource": "https://www.marvel-world.com/contents/encyclopedie/biographies/v/vision-la-ultimate/vision-la-ultimate_3.jpg",
+    "focus": {
+      "x": 0.5,
+      "y": 0.3
+    },
+    "wideSrc": "media/multiverse-ultimate-vision-desktop.jpg"
+  },
+  "ultron-extreme": {
+    "src": "media/multiverse-ultron-extreme.jpg",
+    "source": "https://mightyavengers.net/characters/ultron/alternate-versions",
+    "imageSource": "https://mightyavengers.net/sites/default/files/images/characters/ultron/ultron-alternate-avengersnext.jpg",
+    "focus": {
+      "x": 0.53,
+      "y": 0.54
+    },
+    "wideSrc": "media/multiverse-ultron-extreme-desktop.jpg"
+  },
+  "ultron-age": {
+    "src": "media/multiverse-ultron-age.jpg",
+    "source": "https://www.univision.com/entretenimiento/geek/tiempos-violentos-las-7-lineas-temporales-alternativas-mas-pavorosas-del-universo-marvel",
+    "imageSource": "https://uvn-brightspot.s3.amazonaws.com/assets/vixes/btg/comics.batanga.com/files/Preview-de-Age-of-Ultron-5-2.jpg",
+    "focus": {
+      "x": 0.5,
+      "y": 0.34
+    },
+    "wideSrc": "media/multiverse-ultron-age-desktop.jpg"
   }
 }
