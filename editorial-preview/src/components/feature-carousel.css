@@ -46,7 +46,9 @@
 .screen-picks { display: flex; flex-wrap: wrap; justify-content: center; }
 .screen-picks button { display: grid; place-items: center; width: clamp(1.7rem, 6vw, 2.65rem); padding: 0 .15rem; background: transparent; border: 0; }
 .screen-picks button::before { content: ''; width: 100%; height: .35rem; border-radius: 2px; background: #a1a1aa; }
-.screen-picks button[aria-current]::before { background: var(--state-blue); }
+.screen-picks button[aria-current]::before,
+.screen-picks button:hover::before,
+.screen-picks button:focus-visible::before { background: var(--carousel-control-active); }
 .screen-count { margin-top: .2rem; text-align: center; color: var(--muted); font-size: .8rem; }
 
 @media (min-width: 64rem) {
