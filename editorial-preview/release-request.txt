@@ -1,0 +1,3 @@
+2026-11-05
+Owner-approved launch of the redesigned homepage and ten character guides.
+Reviewed site revision: 51ab0dc

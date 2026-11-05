@@ -1,0 +1,25 @@
+name: Validate editorial platform
+
+on:
+  pull_request:
+  push:
+    branches: ['codex/**']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check routes, assets, and generated guides
+        run: python3 -B tools/check_project.py
+      - name: Check maintenance safety
+        run: python3 -B -m unittest discover -s tools/tests -v
+      - name: Check cover resolver
+        run: python3 -B tools/test_resolver.py

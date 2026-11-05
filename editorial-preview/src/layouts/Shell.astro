@@ -1,0 +1,48 @@
+---
+import css from './editorial.css?raw';
+const { title, description, home = './' } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <meta name="description" content={description} />
+  <title>{title} | Heroes, Villains &amp; Mavericks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&amp;display=swap" rel="stylesheet" />
+  <style is:inline set:html={css}></style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <div class="identity"><a class="wordmark" href={home + 'index.html'}>Heroes, Villains &amp; Mavericks</a> <a class="byline" href="https://indypendee.com/">by Jai Dandekar</a></div>
+
+  </header>
+  <main id="main"><slot /></main>
+  <footer class="wrap footer"><strong>Heroes, Villains &amp; Mavericks</strong><span>Editorial preview · By Jai Dandekar</span></footer>
+  <script is:inline>
+    // Map each source focal point to the upper part of the visible window.
+    const crop = image => {
+      if (!image.naturalWidth || !image.clientWidth) return;
+      const { clientWidth: w, clientHeight: h, naturalWidth: iw, naturalHeight: ih } = image;
+      const scale = Math.max(w / iw, h / ih);
+      const position = (frame, rendered, focus, anchor) => {
+        const travel = rendered - frame;
+        if (travel <= 0.01) return 50;
+        const offset = Math.max(0, Math.min(travel, rendered * focus - frame * anchor));
+        return 100 * offset / travel;
+      };
+      const x = position(w, iw * scale, Number(image.dataset.focusX), 0.5);
+      const y = position(h, ih * scale, Number(image.dataset.focusY), 0.34);
+      image.style.objectPosition = x + '% ' + y + '%';
+    };
+    const observer = new ResizeObserver(entries => entries.forEach(({ target }) => crop(target)));
+    document.querySelectorAll('img[data-focus-y]').forEach(image => {
+      observer.observe(image);
+      image.addEventListener('load', () => crop(image));
+      crop(image);
+    });
+  </script>
+</body>
+</html>

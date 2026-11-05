@@ -1,0 +1,17 @@
+---
+const { item, base = './', id = item.id, label = item.label ?? item.store } = Astro.props;
+if (!id || !item.title?.trim() || !item.store?.trim() || !item.url || !item.image) {
+  throw new Error('Product cards require an ID, title, retailer, product URL, and image.');
+}
+const image = item.image.startsWith('media/') ? base + item.image : item.image;
+---
+<li class="wishlist-item">
+  <a class="wishlist-card-link" href={item.url} aria-labelledby={'product-action-' + id + ' product-title-' + id}>
+    <div class="wishlist-art"><img src={image} alt="" loading="lazy" /></div>
+    <div class="wishlist-copy">
+      <p class="eyebrow">{label}</p>
+      <h3 id={'product-title-' + id}>{item.title}</h3>
+      <span class="wishlist-action" id={'product-action-' + id}>View at {item.store} <span aria-hidden="true">↗</span></span>
+    </div>
+  </a>
+</li>

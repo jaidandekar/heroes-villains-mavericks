@@ -1,0 +1,140 @@
+---
+import { validateScreenArt } from '../lib/validate-screen-art.mjs';
+import ProductCard from '../components/ProductCard.astro';
+import wishlistCss from '../components/wishlist.css?raw';
+import screenArtwork from '../data/screen-art.json';
+import BookCard from '../components/BookCard.astro';
+import shelfCss from '../components/reading-shelf.css?raw';
+import FeatureCarousel from '../components/FeatureCarousel.astro';
+import versionArtwork from '../data/version-carousel-art.json';
+import Shell from '../layouts/Shell.astro';
+import Picture from '../components/Picture.astro';
+import guides from '../data/guides.json';
+import guideHeroArt from '../data/guide-hero-art.json';
+import editorial from '../data/editorial.json';
+import bestsellers from '../data/bestsellers.json';
+import collections from '../data/character-collections.json';
+export function getStaticPaths() {
+  validateScreenArt(guides, screenArtwork);
+  return Object.values(guides).map(guide => ({params: { guide: guide.id + '-guide' }, props: { guide }}));
+}
+const { guide } = Astro.props;
+const edit = editorial[guide.id];
+const pitch = edit?.pitch ?? guide.profile.lead;
+const overview = edit?.overview ?? guide.profile.summary.split(/\n\n+/);
+const sources = edit?.sources ?? [{ label: 'Character reference', url: guide.profile.wikipedia }];
+const relatedBestsellers = bestsellers.books.filter(book => book.guides.includes(guide.id));
+const chart = relatedBestsellers.length
+  ? { ...bestsellers, books: relatedBestsellers, curated: false }
+  : { books: collections[guide.id] ?? [], curated: true };
+const products = edit?.products ?? [];
+const heroArt = guideHeroArt[guide.id];
+const versions = [...guide.versions, ...(edit?.versions ?? [])];
+const reading = [...guide.runs].sort((a, b) => {
+  const rank = (slug: string) => guide.home_runs.includes(slug) ? guide.home_runs.indexOf(slug) : Infinity;
+  return rank(a.slug) - rank(b.slug) || 0;
+});
+const versionSlides = versions.map(version => {
+  const firstRead = reading.find(run => run.versionSlug === version.slug || version.runs?.includes(run.slug));
+  return {
+    id: 'version/' + version.slug,
+    title: version.name,
+    label: version.universe,
+    copy: version.description,
+    art: versionArtwork[version.slug]?.src,
+    wideArt: versionArtwork[version.slug]?.wideSrc,
+    focus: versionArtwork[version.slug]?.focus,
+    firstAppearance: version.firstAppearance,
+    reference: version.source || version.wikipedia,
+    link: firstRead ? '#run/' + firstRead.slug : undefined,
+    action: 'Find this version in Required Reading',
+  };
+});
+
+---
+<Shell title={guide.brand} description={pitch} home="../">
+  <section class="wrap guide-hero" id="home">
+    <div><p class="eyebrow">Character guide</p><h1>{guide.brand}</h1><p class="lede">{pitch}</p><a class="button" href="#graphic-novels">Find your first read <span aria-hidden="true">↓</span></a></div>
+    <Picture src={heroArt.src} alt={heroArt.alt} focus={heroArt.focus} base="../" eager />
+  </section>
+  <p class="wrap small guide-art-credit"><a href={heroArt.source}>{heroArt.credit} ↗</a></p>
+  <nav class="wrap jump" aria-label="Guide sections">
+    <a href={'#' + guide.who_id}>About</a><a href="#verses">Versions</a><a href="#graphic-novels">Required reading</a>{(products.length > 0) && <a href="#collectibles">Collectibles</a>}<a href="#on-screen">Film &amp; TV</a>
+  </nav>
+  <section class="wrap section" id={guide.who_id}>
+    <div class="section-head"><h2>About {guide.brand}</h2></div>
+    <div class="overview">
+      <div>{overview.map((paragraph: string) => <p>{paragraph}</p>)}<ul class="references">{sources.map((source: {label:string,url:string}) => <li><a href={source.url}>{source.label} ↗</a></li>)}</ul></div>
+      <dl>{guide.profile.facts.map((fact: {label:string,value:string}) => <div><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl>
+    </div>
+  </section>
+  <span id="all-versions"></span>
+  <FeatureCarousel id="verses" title={guide.verses_h2} entries={versionSlides} base="../" variant="versions" />
+  <section class="wrap section" id="graphic-novels">
+    <div class="section-head"><h2>Required reading</h2><p>{reading.length} {reading.length === 1 ? 'story' : 'stories'} from the guide</p></div>
+    <div class="shelf-stories">
+      {reading.map((run, index) => {
+        const editions = run.amazon?.filter(edition => /^[A-Z0-9]{10}$/.test(edition.asin)) ?? [];
+        const primary = editions[0];
+        return <BookCard id={'run/' + run.slug} cover={run.cover} alt={'Cover for ' + run.title} base="../"
+          href={primary ? 'https://www.amazon.com/dp/' + primary.asin : edit?.reading?.[run.slug]?.url} external={!!primary}>
+          <p class="eyebrow">{String(index + 1).padStart(2, '0')} / {run.years}</p>
+          <h3>{run.title}</h3>
+          <p class="shelf-dek">{run.creators}</p>
+          {primary ? <span class="shelf-buy">View {primary.format || 'edition'} on Amazon ↗</span> : edit?.reading?.[run.slug]?.url && <span class="shelf-buy">View publisher edition ↗</span>}
+          <Fragment slot="details">
+            <p>{edit?.reading?.[run.slug]?.note ?? run.summary}</p>
+            {run.collects && <p class="small"><strong>Collects</strong>{' '}{run.collects}</p>}
+            {run.prerequisites && <p class="small"><strong>Before you read</strong>{' '}{run.prerequisites}</p>}
+            {(run.readingOrder?.length > 1) && (
+              <details class="small">
+                <summary>Reading order</summary>
+                <ol>{run.readingOrder.map(issue => <li>{issue}</li>)}</ol>
+              </details>
+            )}
+            {editions.slice(1).map(edition => (
+              <p class="small"><a href={'https://www.amazon.com/dp/' + edition.asin} rel="sponsored">View {edition.format || 'edition'} on Amazon ↗</a></p>
+            ))}
+            {edit?.reading?.[run.slug] && <p class="small"><a href={edit.reading[run.slug].url}>Publisher reference ↗</a></p>}
+          </Fragment>
+        </BookCard>;
+      })}
+    </div>
+    {chart.books.length > 0 && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
+      <h3 id="chart-title">{chart.curated ? guide.brand + ' collections' : 'Bestselling graphic novels'}</h3>
+      <p class="small">{chart.curated ? 'Character-focused collected editions · Editorial selections, without a verified sales ranking.' : <a href={chart.url}>{chart.label} ↗</a>}</p>
+      {chart.books.length ? <ol class="chart-list">{chart.books.map(book => <li value={book.rank}>
+        {book.cover && <a class="chart-cover" href={book.url} aria-label={'View ' + book.title}><img src={'../' + book.cover} alt={'Cover of ' + book.title} loading="lazy" /></a>}
+        <div class="chart-copy">
+          <p class="eyebrow">{chart.curated ? 'Collection spotlight' : '#' + book.rank + ' on this chart'}</p>
+          <h4><a href={book.url}>{book.title}</a></h4>
+          {book.creators && <p class="chart-creators">{book.creators}</p>}
+          {book.edition && <p class="small chart-edition">{book.edition}</p>}
+          {book.context && <p class="small chart-context">{book.context}</p>}
+        </div>
+      </li>)}</ol> : <p class="small chart-empty">No titles from this guide appeared in this chart.</p>}
+    </aside>}
+  </section>
+  {(products.length > 0) && <section class="wrap section" id="collectibles">
+    <div class="section-head"><h2>Collectibles &amp; apparel</h2></div>
+    <ul class="wishlist-grid">{products.map(product => <ProductCard item={product} base="../" id={guide.id + '-' + product.sku} />)}</ul>
+  </section>}
+  <section class="wrap section" id="on-screen">
+    <div class="section-head"><h2>Film &amp; TV</h2></div>
+    <div class="screen-title-grid">{guide.screen.flatMap(group => group.items.map(item => <article class="screen-title-card" id={'screen/' + item.id}>
+      <a href={item.imdb} class="screen-title-link">
+        {screenArtwork[item.id] && <span class="screen-title-art"><img src={'../' + screenArtwork[item.id].src} alt={'Poster for ' + item.title} loading="lazy" /></span>}
+        <div class="screen-title-copy">
+          <p class="eyebrow">{screenArtwork[item.id]?.kind === 'tv' ? 'TV series' : 'Film'} · {item.year || item.years}</p>
+          <h3>{item.title}</h3>
+          <p>{item.note}</p>
+          <span class="screen-title-action">View on IMDb ↗</span>
+        </div>
+      </a>
+    </article>))}</div>
+    <p class="small screen-art-credit">Poster artwork courtesy of <a href="https://www.themoviedb.org/">TMDB</a>.</p>
+  </section>
+</Shell>
+<style is:inline set:html={shelfCss}></style>
+
+<style is:inline set:html={wishlistCss}></style>

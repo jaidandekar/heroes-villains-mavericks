@@ -1,0 +1,110 @@
+---
+import Picture from './Picture.astro';
+import css from './feature-carousel.css?raw';
+
+interface Slide {
+  title: string;
+  art?: string;
+  id?: string;
+  firstAppearance?: string;
+  reference?: string;
+  wideArt?: string;
+  label: string;
+  copy: string;
+  link?: string;
+  action?: string;
+  scores?: { source: string; value: string; url: string }[];
+  trailer?: string;
+  focus?: { x: number; y: number };
+}
+interface Props {
+  id: string;
+  title: string;
+  entries: Slide[];
+  heading?: 'h1' | 'h2';
+  base?: string;
+  variant?: 'screen' | 'versions';
+}
+const { id, title, entries, heading: Heading = 'h2', base = './', variant = 'screen' } = Astro.props;
+---
+{entries.length > 0 && <>
+  <section class:list={['wrap section screen-feature', { 'version-feature': variant === 'versions' }]} id={id} aria-labelledby={id + "-title"} aria-roledescription="carousel">
+    <div class="section-head"><Heading id={id + "-title"}>{title}</Heading></div>
+    <div class="screen-grid" id={id + "-slides"} tabindex="0" aria-label="Slides">
+      {entries.map((entry, index) => <article class="screen-card" id={entry.id}>
+        {entry.art && <Picture src={entry.art} wideSrc={entry.wideArt} focus={entry.focus} base={base} eager={index === 0} />}
+        <div class="screen-copy">
+          <p class="eyebrow">{entry.label}</p>
+          <h3>{entry.title}</h3>
+          <p>{entry.copy}</p>
+          {entry.firstAppearance && <p class="small"><strong>First appearance</strong>{' '}{entry.firstAppearance}</p>}
+          {entry.scores?.length ? (
+            <ul class="screen-scores" aria-label="Ratings from the original slate">
+              {entry.scores.map(score => <li><a href={score.url}><strong>{score.value}</strong> <span>{score.source}</span></a></li>)}
+            </ul>
+          ) : null}
+          <div class="screen-actions">
+            {entry.trailer && <a class="screen-trailer" href={entry.trailer} target="_blank" rel="noopener">Watch trailer <span aria-hidden="true">↗</span></a>}
+            {entry.link && <a href={entry.link}>{entry.action} <span aria-hidden="true">↗</span></a>}
+            {entry.reference && <a href={entry.reference}>Version reference <span aria-hidden="true">↗</span></a>}
+          </div>
+        </div>
+      </article>)}
+    </div>
+    {(entries.length > 1) && <div class="screen-controls" aria-label="Choose a title">
+      <button type="button" data-screen-step="-1" aria-label="Previous title" aria-controls={id + "-slides"}>‹</button>
+      <div class="screen-picks">
+        {entries.map((entry, index) => <button type="button" data-screen-pick={index} aria-controls={id + "-slides"} aria-current={index === 0 ? 'true' : undefined} aria-label={entry.title}></button>)}
+      </div>
+      <button type="button" data-screen-step="1" aria-label="Next title" aria-controls={id + "-slides"}>›</button>
+    </div>}
+    {(entries.length > 1) && <p class="screen-count" aria-live="polite">1 of {entries.length}</p>}
+    <script is:inline>
+      (() => {
+        const root = document.currentScript.closest('.screen-feature');
+        const track = root.querySelector('.screen-grid');
+        const cards = [...track.children];
+        const picks = [...root.querySelectorAll('[data-screen-pick]')];
+        const count = root.querySelector('.screen-count');
+        if (cards.length < 2) return;
+        const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+        const start = card => card.offsetLeft - cards[0].offsetLeft;
+        let active = 0;
+        let requested = null;
+        function show(index) {
+          requested = (index + cards.length) % cards.length;
+          track.scrollTo({ left: start(cards[requested]), behavior: reduced.matches ? 'instant' : 'smooth' });
+        }
+        function openLinkedSlide() {
+          const fragment = location.hash.slice(1);
+          const index = cards.findIndex(card => card.id && card.id === fragment);
+          if (index >= 0) track.scrollTo({ left: start(cards[index]), behavior: 'instant' });
+        }
+        window.addEventListener('hashchange', openLinkedSlide);
+        requestAnimationFrame(openLinkedSlide);
+        track.addEventListener('scroll', () => {
+          const index = cards.reduce((closest, card, i) =>
+            Math.abs(start(card) - track.scrollLeft) < Math.abs(start(cards[closest]) - track.scrollLeft) ? i : closest, 0);
+          if (index !== active) {
+            picks[active].removeAttribute('aria-current');
+            picks[index].setAttribute('aria-current', 'true');
+            count.textContent = (index + 1) + ' of ' + cards.length;
+            active = index;
+          }
+          if (requested === active) requested = null;
+        }, { passive: true });
+        track.addEventListener('pointerdown', () => { requested = null; });
+        picks.forEach((pick, index) => pick.addEventListener('click', () => show(index)));
+        root.querySelectorAll('[data-screen-step]').forEach(button => {
+          button.addEventListener('click', () => show((requested ?? active) + Number(button.dataset.screenStep)));
+        });
+        track.addEventListener('keydown', event => {
+          if (!['ArrowLeft', 'ArrowRight'].includes(event.key)) return;
+          event.preventDefault();
+          show((requested ?? active) + (event.key === 'ArrowRight' ? 1 : -1));
+        });
+      })();
+    </script>
+  </section>
+  <style is:inline set:html={css}></style>
+</>}

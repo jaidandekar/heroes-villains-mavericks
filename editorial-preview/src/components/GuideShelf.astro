@@ -1,0 +1,44 @@
+---
+import Picture from './Picture.astro';
+import lineup from '../data/guide-shelf.json';
+import art from '../data/guide-art.json';
+import css from './guide-shelf.css?raw';
+
+const previewLabels = {
+  'green-lantern': 'DC · The Corps',
+  batman: 'DC · Gotham City',
+  'fantastic-four': 'Marvel · Team guide',
+};
+
+const picks = lineup.map(entry => {
+  const identity = art[entry.id];
+  return {
+    ...entry,
+    label: previewLabels[entry.id] ?? 'Character guide',
+    href: entry.id + '-guide/index.html',
+    image: identity.src,
+    focus: identity.focus,
+    kind: identity.shape,
+  };
+});
+---
+<section class="wrap section" id="characters" aria-labelledby="guides-title">
+  <div class="section-head">
+    <h2 id="guides-title">Get to know them</h2>
+    <p>Character guides and where to start reading</p>
+  </div>
+  <div class="guide-grid">
+    {picks.map(({ id, title, label, href, image, focus, kind, copy }) => <article class="guide-card">
+      <a class="guide-card-link" href={href} aria-labelledby={'guide-title-' + id}>
+        <Picture src={image} focus={focus} kind={kind} />
+        <div class="guide-card-copy">
+          <p class="eyebrow">{label}</p>
+          <h3 id={'guide-title-' + id}>{title}</h3>
+          <p>{copy}</p>
+          <span class="guide-card-action">Read the guide <span aria-hidden="true">↗</span></span>
+        </div>
+      </a>
+    </article>)}
+  </div>
+</section>
+<style is:inline set:html={css}></style>

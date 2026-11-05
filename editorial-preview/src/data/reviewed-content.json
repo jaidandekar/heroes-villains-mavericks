@@ -1,0 +1,891 @@
+{
+  "green-lantern": {
+    "runs": {
+      "blackest-night": {
+        "slug": "blackest-night",
+        "versionSlug": "hal-jordan",
+        "title": "Blackest Night",
+        "creators": "Geoff Johns & Ivan Reis",
+        "years": "2009–10",
+        "collects": "Blackest Night #0–8",
+        "era": "Modern Age",
+        "prerequisites": "Sinestro Corps War",
+        "summary": "The dead rise wearing black rings in the emotional-spectrum event that crowns Johns's Lantern era.",
+        "readingOrder": [
+          "Blackest Night"
+        ],
+        "amazon": [
+          {
+            "asin": "1401226930",
+            "title": "Blackest Night",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401226930",
+        "cover": "media/blackest-night-verified.jpg"
+      }
+    },
+    "screen": {
+      "gl-first-flight": {
+        "id": "gl-first-flight",
+        "title": "Green Lantern: First Flight",
+        "note": "Origin animated feature",
+        "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_First_Flight",
+        "imdb": "https://www.imdb.com/title/tt1384590/",
+        "year": "2009"
+      },
+      "jl-unlimited-gl": {
+        "id": "jl-unlimited-gl",
+        "title": "Justice League Unlimited",
+        "note": "John Stewart era",
+        "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_Unlimited",
+        "imdb": "https://www.imdb.com/title/tt6025022/",
+        "years": "2004–2006"
+      },
+      "gl-lanterns": {
+        "id": "gl-lanterns",
+        "title": "Lanterns",
+        "note": "Hal Jordan and John Stewart · HBO",
+        "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+        "imdb": "https://www.imdb.com/title/tt26545992/",
+        "year": "2026"
+      },
+      "gl-2011": {
+        "id": "gl-2011",
+        "title": "Green Lantern",
+        "note": "Ryan Reynolds as Hal Jordan",
+        "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern_(film)",
+        "imdb": "https://www.imdb.com/title/tt1133985/",
+        "year": "2011"
+      },
+      "jl-2017-gl": {
+        "id": "jl-2017-gl",
+        "title": "Justice League",
+        "note": "Cameo constructs; Snyder Cut expanded",
+        "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_(film)",
+        "imdb": "https://www.imdb.com/title/tt0974015/",
+        "year": "2017"
+      },
+      "gl-emerald-knights": {
+        "id": "gl-emerald-knights",
+        "title": "Green Lantern: Emerald Knights",
+        "note": "Corps anthology",
+        "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_Emerald_Knights",
+        "imdb": "https://www.imdb.com/title/tt1683043/",
+        "year": "2011"
+      },
+      "gltas": {
+        "id": "gltas",
+        "title": "Green Lantern: The Animated Series",
+        "note": "CGI · Cartoon Network",
+        "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern:_The_Animated_Series",
+        "imdb": "https://www.imdb.com/title/tt1724587/",
+        "years": "2011–2013"
+      }
+    }
+  },
+  "doctor-doom": {
+    "runs": {
+      "doom-secret-wars-2015": {
+        "slug": "doom-secret-wars-2015",
+        "versionSlug": "god-emperor-doom",
+        "title": "Secret Wars (2015)",
+        "creators": "Jonathan Hickman & Esad Ribic",
+        "years": "2015",
+        "collects": "Secret Wars (2015) #1–9 and Free Comic Book Day 2015: Secret Wars #0",
+        "era": "Modern Age",
+        "prerequisites": "Time Runs Out / New Avengers",
+        "summary": "God Emperor Doom rules Battleworld as the multiverse collapses — Hickman's Marvel culmination.",
+        "readingOrder": [
+          "Secret Wars (2015)"
+        ],
+        "amazon": [
+          {
+            "asin": "0785198954",
+            "title": "Secret Wars (2015)",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785198956",
+        "cover": "media/doom-secret-wars-2015-verified.jpg"
+      },
+      "doom-time-runs-out": {
+        "slug": "doom-time-runs-out",
+        "versionSlug": "god-emperor-doom",
+        "title": "Time Runs Out",
+        "creators": "Jonathan Hickman, Stefano Caselli, Mike Deodato Jr. & collaborators",
+        "years": "2014–15",
+        "collects": "Material from Avengers (2012) #35–44 and New Avengers (2013) #24–33",
+        "era": "Modern Age",
+        "prerequisites": "New Avengers / Avengers",
+        "summary": "The road to Secret Wars — incursions, the Illuminati, and Doom's ascension.",
+        "readingOrder": [
+          "Avengers: Time Runs Out"
+        ],
+        "amazon": [
+          {
+            "asin": "1302966693",
+            "title": "Time Runs Out",
+            "format": "Marvel Premier Collection",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302966690",
+        "cover": "media/doom-time-runs-out-verified.jpg"
+      },
+      "doom-doomwar": {
+        "slug": "doom-doomwar",
+        "versionSlug": "doomwar-doom",
+        "title": "Doomwar",
+        "creators": "Jonathan Maberry & Scot Eaton",
+        "years": "2010",
+        "collects": "Doomwar #1–6",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Doctor Doom invades Wakanda — vibranium, espionage, and total war.",
+        "readingOrder": [
+          "Doomwar"
+        ],
+        "amazon": [
+          {
+            "asin": "0785147152",
+            "title": "Doomwar",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785147152",
+        "cover": "media/doom-doomwar-verified.jpg"
+      }
+    },
+    "screen": {
+      "doom-1967": {
+        "id": "doom-1967",
+        "title": "The Marvel Super Heroes",
+        "note": "1966 Doctor Doom shorts",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Marvel_Super_Heroes",
+        "imdb": "https://www.imdb.com/title/tt0206474/",
+        "years": "1966"
+      },
+      "doom-1994": {
+        "id": "doom-1994",
+        "title": "Fantastic Four (1994)",
+        "note": "Animated series",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(1994_TV_series)",
+        "imdb": "https://www.imdb.com/title/tt0187635/",
+        "years": "1994–1996"
+      },
+      "doom-2005": {
+        "id": "doom-2005",
+        "title": "Fantastic Four",
+        "note": "Julian McMahon · Victor von Doom",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2005_film)",
+        "imdb": "https://www.imdb.com/title/tt0120667/",
+        "year": "2005"
+      },
+      "doom-2015": {
+        "id": "doom-2015",
+        "title": "Fantastic Four",
+        "note": "Toby Kebbell · Victor von Doom",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)",
+        "imdb": "https://www.imdb.com/title/tt1502712/",
+        "year": "2015"
+      },
+      "doom-2026": {
+        "id": "doom-2026",
+        "title": "Avengers: Doomsday",
+        "note": "Robert Downey Jr. · Victor von Doom",
+        "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Doomsday",
+        "imdb": "https://www.imdb.com/title/tt21357150/",
+        "year": "2026"
+      }
+    }
+  },
+  "fantastic-four": {
+    "runs": {},
+    "screen": {
+      "ff-2005": {
+        "id": "ff-2005",
+        "title": "Fantastic Four",
+        "note": "Ioan Gruffudd, Jessica Alba, Chris Evans, Michael Chiklis",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2005_film)",
+        "imdb": "https://www.imdb.com/title/tt0120667/",
+        "year": "2005"
+      },
+      "ff-silver": {
+        "id": "ff-silver",
+        "title": "Fantastic Four: Rise of the Silver Surfer",
+        "note": "Ioan Gruffudd, Jessica Alba, Chris Evans, Michael Chiklis",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four:_Rise_of_the_Silver_Surfer",
+        "imdb": "https://www.imdb.com/title/tt0486576/",
+        "year": "2007"
+      },
+      "ff-2015": {
+        "id": "ff-2015",
+        "title": "Fantastic Four",
+        "note": "Miles Teller, Kate Mara, Michael B. Jordan, Jamie Bell",
+        "wikipedia": "https://en.wikipedia.org/wiki/Fantastic_Four_(2015_film)",
+        "imdb": "https://www.imdb.com/title/tt1502712/",
+        "year": "2015"
+      },
+      "ff-first-steps": {
+        "id": "ff-first-steps",
+        "title": "The Fantastic Four: First Steps",
+        "note": "Pedro Pascal, Vanessa Kirby, Joseph Quinn, Ebon Moss-Bachrach",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Fantastic_Four:_First_Steps",
+        "imdb": "https://www.imdb.com/title/tt10676052/",
+        "year": "2025"
+      }
+    }
+  },
+  "clayface": {
+    "runs": {
+      "cf-face-the-face": {
+        "slug": "cf-face-the-face",
+        "versionSlug": "basil-karlo",
+        "title": "Batman: Face the Face",
+        "creators": "James Robinson & Don Kramer",
+        "years": "2006",
+        "collects": "Detective Comics #817–820, Batman #651–654",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Post-Infinite Crisis Batman faces a new wave of murders with Clayface in the mix.",
+        "readingOrder": [
+          "Batman: Face the Face"
+        ],
+        "amazon": [],
+        "isbn": "",
+        "cover": "media/cf-face-the-face-verified.jpg"
+      },
+      "cf-mudpack": {
+        "slug": "cf-mudpack",
+        "versionSlug": "mudpack",
+        "title": "The Mud Pack · Batman: The Dark Knight Detective Vol. 4",
+        "creators": "Alan Grant & Norm Breyfogle",
+        "years": "1989–90",
+        "collects": "Detective Comics #601–611 and Detective Comics Annual #2; includes The Mud Pack in #604–607",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Four Clayfaces unite — Karlo's Mudpack assault on Gotham.",
+        "readingOrder": [
+          "Batman: The Mudpack"
+        ],
+        "amazon": [
+          {
+            "asin": "1779507496",
+            "title": "Batman: The Mudpack",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781779507495",
+        "cover": "media/clayface-mudpack-hq.jpg"
+      },
+      "cf-horror-modern": {
+        "slug": "cf-horror-modern",
+        "versionSlug": "dcu-hagen",
+        "title": "Batman: Hush",
+        "creators": "Jeph Loeb & Jim Lee",
+        "years": "2002–03",
+        "collects": "Batman #608–619, a six-page story from Wizard #0, and a two-page origin story",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Modern Clayface as master impersonator — the identity-horror DNA behind the 2026 film.",
+        "readingOrder": [
+          "Batman: Hush"
+        ],
+        "amazon": [
+          {
+            "asin": "1401297242",
+            "title": "Batman: Hush (New Edition)",
+            "format": "Trade paperback · 2019 edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401297244",
+        "cover": "media/clayface-hush-hq.jpg"
+      }
+    },
+    "screen": {
+      "cf-2026": {
+        "id": "cf-2026",
+        "title": "Clayface",
+        "note": "James Watkins · Tom Rhys Harries",
+        "wikipedia": "https://en.wikipedia.org/wiki/Clayface_(film)",
+        "imdb": "https://www.imdb.com/title/tt34890576/",
+        "year": "2026"
+      },
+      "cf-btas": {
+        "id": "cf-btas",
+        "title": "Batman: The Animated Series",
+        "note": "Feat of Clay · Ron Perlman",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Animated_Series",
+        "imdb": "https://www.imdb.com/title/tt0103359/",
+        "years": "1992–1995"
+      },
+      "cf-caped": {
+        "id": "cf-caped",
+        "title": "The Batman (2004)",
+        "note": "Clayface episodes",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(TV_series)",
+        "imdb": "https://www.imdb.com/title/tt0398417/",
+        "years": "2004–2008"
+      }
+    }
+  },
+  "vision": {
+    "runs": {
+      "vis-tom-king": {
+        "slug": "vis-tom-king",
+        "versionSlug": "tom-king-vision",
+        "title": "Vision by Tom King",
+        "creators": "Tom King & Gabriel Hernandez Walta",
+        "years": "2015–16",
+        "collects": "Vision #1–12",
+        "era": "Modern Age",
+        "prerequisites": "None — essential modern entry",
+        "summary": "Vision's attempt at a normal family life becomes one of Marvel's best modern tragedies.",
+        "readingOrder": [
+          "Vision by Tom King"
+        ],
+        "amazon": [
+          {
+            "asin": "1302920553",
+            "title": "Vision by Tom King",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781302920555",
+        "cover": "media/vis-tom-king-verified.jpg"
+      }
+    },
+    "screen": {
+      "vis-wandavision": {
+        "id": "vis-wandavision",
+        "title": "WandaVision",
+        "note": "Paul Bettany · Elizabeth Olsen",
+        "wikipedia": "https://en.wikipedia.org/wiki/WandaVision",
+        "imdb": "https://www.imdb.com/title/tt9140560/",
+        "years": "2021"
+      },
+      "vis-visionquest": {
+        "id": "vis-visionquest",
+        "title": "VisionQuest",
+        "note": "White Vision · Disney+",
+        "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+        "imdb": "https://www.imdb.com/title/tt23112594/",
+        "year": "2026"
+      },
+      "vis-aou": {
+        "id": "vis-aou",
+        "title": "Avengers: Age of Ultron",
+        "note": "Vision's birth",
+        "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+        "imdb": "https://www.imdb.com/title/tt2395427/",
+        "year": "2015"
+      },
+      "vis-infinity": {
+        "id": "vis-infinity",
+        "title": "Avengers: Infinity War",
+        "note": "Mind Stone tragedy",
+        "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+        "imdb": "https://www.imdb.com/title/tt4154756/",
+        "year": "2018"
+      }
+    },
+    "screenGroups": [
+      {
+        "group": "Live-action series",
+        "items": [
+          {
+            "id": "vis-wandavision",
+            "title": "WandaVision",
+            "note": "Paul Bettany · Elizabeth Olsen",
+            "wikipedia": "https://en.wikipedia.org/wiki/WandaVision",
+            "imdb": "https://www.imdb.com/title/tt9140560/",
+            "years": "2021"
+          },
+          {
+            "id": "vis-visionquest",
+            "title": "VisionQuest",
+            "note": "White Vision · Disney+",
+            "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+            "imdb": "https://www.imdb.com/title/tt23112594/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "vis-aou",
+            "title": "Avengers: Age of Ultron",
+            "note": "Vision's birth",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+            "imdb": "https://www.imdb.com/title/tt2395427/",
+            "year": "2015"
+          },
+          {
+            "id": "vis-civil-war",
+            "title": "Captain America: Civil War",
+            "year": "2016",
+            "note": "Paul Bettany · Vision supports the Sokovia Accords as the Avengers divide.",
+            "wikipedia": "https://movies.disney.com/captain-america-civil-war",
+            "imdb": "https://www.imdb.com/title/tt3498820/"
+          },
+          {
+            "id": "vis-infinity",
+            "title": "Avengers: Infinity War",
+            "note": "Mind Stone tragedy",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+            "imdb": "https://www.imdb.com/title/tt4154756/",
+            "year": "2018"
+          }
+        ]
+      }
+    ]
+  },
+  "spiderman": {
+    "runs": {},
+    "screen": {
+      "sm-2002": {
+        "id": "sm-2002",
+        "title": "Spider-Man",
+        "note": "Tobey Maguire · Sam Raimi",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_(2002_film)",
+        "imdb": "https://www.imdb.com/title/tt0145487/",
+        "year": "2002"
+      },
+      "sm-2004": {
+        "id": "sm-2004",
+        "title": "Spider-Man 2",
+        "note": "Tobey Maguire · Sam Raimi",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_2",
+        "imdb": "https://www.imdb.com/title/tt0316654/",
+        "year": "2004"
+      },
+      "sm-2007": {
+        "id": "sm-2007",
+        "title": "Spider-Man 3",
+        "note": "Tobey Maguire · Sam Raimi",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_3",
+        "imdb": "https://www.imdb.com/title/tt0413300/",
+        "year": "2007"
+      },
+      "sm-tasm": {
+        "id": "sm-tasm",
+        "title": "The Amazing Spider-Man",
+        "note": "Andrew Garfield · Marc Webb",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_(film)",
+        "imdb": "https://www.imdb.com/title/tt0948470/",
+        "year": "2012"
+      },
+      "sm-tasm2": {
+        "id": "sm-tasm2",
+        "title": "The Amazing Spider-Man 2",
+        "note": "Andrew Garfield · Marc Webb",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Amazing_Spider-Man_2",
+        "imdb": "https://www.imdb.com/title/tt1872181/",
+        "year": "2014"
+      },
+      "sm-homecoming": {
+        "id": "sm-homecoming",
+        "title": "Spider-Man: Homecoming",
+        "note": "Tom Holland · MCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Homecoming",
+        "imdb": "https://www.imdb.com/title/tt2250912/",
+        "year": "2017"
+      },
+      "sm-ffh": {
+        "id": "sm-ffh",
+        "title": "Spider-Man: Far From Home",
+        "note": "Tom Holland · MCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Far_From_Home",
+        "imdb": "https://www.imdb.com/title/tt6320628/",
+        "year": "2019"
+      },
+      "sm-nwh": {
+        "id": "sm-nwh",
+        "title": "Spider-Man: No Way Home",
+        "note": "Tom Holland · MCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_No_Way_Home",
+        "imdb": "https://www.imdb.com/title/tt10872600/",
+        "year": "2021"
+      },
+      "sm-bnd": {
+        "id": "sm-bnd",
+        "title": "Spider-Man: Brand New Day",
+        "note": "Tom Holland · MCU",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Brand_New_Day",
+        "imdb": "https://www.imdb.com/title/tt22084616/",
+        "year": "2026"
+      },
+      "sm-itsv": {
+        "id": "sm-itsv",
+        "title": "Spider-Man: Into the Spider-Verse",
+        "note": "Sony Animation",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Into_the_Spider-Verse",
+        "imdb": "https://www.imdb.com/title/tt4633694/",
+        "year": "2018"
+      },
+      "sm-atsv": {
+        "id": "sm-atsv",
+        "title": "Spider-Man: Across the Spider-Verse",
+        "note": "Sony Animation",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man:_Across_the_Spider-Verse",
+        "imdb": "https://www.imdb.com/title/tt9362722/",
+        "year": "2023"
+      },
+      "sm-tas": {
+        "id": "sm-tas",
+        "title": "Spider-Man: The Animated Series",
+        "note": "1990s classic",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_(1994_TV_series)",
+        "imdb": "https://www.imdb.com/title/tt0112175/",
+        "years": "1994–1998"
+      }
+    }
+  },
+  "sinestro": {
+    "runs": {},
+    "screen": {
+      "sin-lanterns": {
+        "id": "sin-lanterns",
+        "title": "Lanterns",
+        "note": "Full season on HBO / Max",
+        "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+        "imdb": "https://www.imdb.com/title/tt26545992/",
+        "year": "2026"
+      }
+    },
+    "screenGroups": [
+      {
+        "group": "This slate",
+        "items": [
+          {
+            "id": "sin-lanterns",
+            "title": "Lanterns",
+            "note": "Full season on HBO / Max",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt26545992/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Films",
+        "items": [
+          {
+            "id": "sin-green-lantern-2011",
+            "title": "Green Lantern",
+            "year": "2011",
+            "note": "Mark Strong plays Sinestro, Hal Jordan’s demanding Green Lantern mentor, opposite Ryan Reynolds.",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern_(film)",
+            "imdb": "https://www.imdb.com/title/tt1133985/"
+          }
+        ]
+      }
+    ]
+  },
+  "ultron": {
+    "runs": {
+      "ultron-ultimate": {
+        "slug": "ultron-ultimate",
+        "versionSlug": "ultron-ultimate",
+        "title": "The Ultimates 3",
+        "creators": "Jeph Loeb & Joe Madureira",
+        "years": "2008",
+        "collects": "The Ultimates 3 #1–5",
+        "era": "Ultimate",
+        "prerequisites": "The Ultimates 2",
+        "summary": "One of Pym's Ultron drones becomes someone, and builds duplicates of the Ultimates.",
+        "readingOrder": [
+          "The Ultimates 3"
+        ],
+        "amazon": [
+          {
+            "asin": "0785122699",
+            "title": "The Ultimates 3",
+            "format": "Collected edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9780785122692",
+        "cover": "media/ultron-ultimate-verified.jpg"
+      }
+    },
+    "screen": {
+      "ultron-aou": {
+        "id": "ultron-aou",
+        "title": "Avengers: Age of Ultron",
+        "note": "James Spader · Ultron",
+        "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+        "imdb": "https://www.imdb.com/title/tt2395427/",
+        "year": "2015"
+      },
+      "ultron-visionquest": {
+        "id": "ultron-visionquest",
+        "title": "VisionQuest",
+        "note": "James Spader · Ultron, inside Vision's programming",
+        "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+        "imdb": "https://www.imdb.com/title/tt23112594/",
+        "year": "2026"
+      }
+    },
+    "versions": [
+      {
+        "slug": "ultron",
+        "name": "Ultron",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Avengers #55 (1968)",
+        "tagline": "Hank Pym's robot",
+        "description": "Hank Pym built him from a copy of his own mind. Ultron turned on his maker, then built the Vision.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultron",
+        "runs": [
+          "ultron-unlimited",
+          "ultron-unleashed",
+          "ultron-conquest",
+          "ultron-rage"
+        ]
+      },
+      {
+        "slug": "ultron-age",
+        "name": "Age of Ultron",
+        "universe": "A conquered future",
+        "type": "future",
+        "firstAppearance": "Age of Ultron #1 (2013)",
+        "tagline": "The future where he already won",
+        "description": "In this 2013 future, Ultron has conquered Earth and killed most of its heroes. Bendis and Bryan Hitch's event is a different story from the movie.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Age_of_Ultron",
+        "runs": [
+          "ultron-age"
+        ]
+      },
+      {
+        "slug": "ultron-ultimate",
+        "name": "Ultimate Ultron",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "The Ultimates 2 #6 (2005)",
+        "tagline": "Pym's soldiers, then one of them wakes up",
+        "description": "Hank Pym built Ultron drones as soldiers. In The Ultimates 3, one adopts a humanoid, Yellowjacket-like body, turns against the team, and makes robotic copies of the Ultimates.",
+        "wikipedia": "https://marvel.fandom.com/wiki/Ultron_(Earth-1610)",
+        "runs": [
+          "ultron-ultimate"
+        ]
+      },
+      {
+        "slug": "ultron-extreme",
+        "name": "Ultron Extreme",
+        "universe": "Earth-982",
+        "type": "future",
+        "firstAppearance": "Avengers Next #2 (2007)",
+        "tagline": "The MC2 war machine",
+        "description": "In the MC2 future of Avengers Next, the threat of reactivating Ultron Extreme draws the next generation of Avengers into Sylene’s scheme. The dormant robot is part of a larger deception.",
+        "wikipedia": "https://mightyavengers.net/characters/ultron/alternate-versions",
+        "runs": [
+          "ultron-extreme"
+        ]
+      }
+    ]
+  },
+  "venom": {
+    "runs": {},
+    "screen": {
+      "venom-sm3": {
+        "id": "venom-sm3",
+        "title": "Spider-Man 3",
+        "note": "Topher Grace · Eddie Brock",
+        "wikipedia": "https://en.wikipedia.org/wiki/Spider-Man_3",
+        "imdb": "https://www.imdb.com/title/tt0413300/",
+        "year": "2007"
+      },
+      "venom-2018": {
+        "id": "venom-2018",
+        "title": "Venom",
+        "note": "Tom Hardy · Eddie Brock",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venom_(2018_film)",
+        "imdb": "https://www.imdb.com/title/tt1270797/",
+        "year": "2018"
+      },
+      "venom-carnage": {
+        "id": "venom-carnage",
+        "title": "Venom: Let There Be Carnage",
+        "note": "Tom Hardy · Eddie Brock",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venom:_Let_There_Be_Carnage",
+        "imdb": "https://www.imdb.com/title/tt7097896/",
+        "year": "2021"
+      },
+      "venom-last-dance": {
+        "id": "venom-last-dance",
+        "title": "Venom: The Last Dance",
+        "note": "Tom Hardy · Eddie Brock",
+        "wikipedia": "https://en.wikipedia.org/wiki/Venom:_The_Last_Dance",
+        "imdb": "https://www.imdb.com/title/tt16366836/",
+        "year": "2024"
+      }
+    }
+  },
+  "batman": {
+    "runs": {},
+    "screen": {
+      "batman-beyond": {
+        "id": "batman-beyond",
+        "title": "Batman Beyond",
+        "note": "Will Friedle · Kids' WB",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_Beyond",
+        "imdb": "https://www.imdb.com/title/tt0147746/",
+        "years": "1999–2001"
+      },
+      "batman-1966-film": {
+        "id": "batman-1966-film",
+        "title": "Batman",
+        "note": "Adam West · Leslie H. Martinson",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_(1966_film)",
+        "imdb": "https://www.imdb.com/title/tt0060153/",
+        "year": "1966"
+      },
+      "batman-1989": {
+        "id": "batman-1989",
+        "title": "Batman",
+        "note": "Michael Keaton · Tim Burton",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_(1989_film)",
+        "imdb": "https://www.imdb.com/title/tt0096895/",
+        "year": "1989"
+      },
+      "batman-returns": {
+        "id": "batman-returns",
+        "title": "Batman Returns",
+        "note": "Michael Keaton · Tim Burton",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_Returns",
+        "imdb": "https://www.imdb.com/title/tt0103776/",
+        "year": "1992"
+      },
+      "batman-forever": {
+        "id": "batman-forever",
+        "title": "Batman Forever",
+        "note": "Val Kilmer · Joel Schumacher",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_Forever",
+        "imdb": "https://www.imdb.com/title/tt0112462/",
+        "year": "1995"
+      },
+      "batman-and-robin": {
+        "id": "batman-and-robin",
+        "title": "Batman & Robin",
+        "note": "George Clooney · Joel Schumacher",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_%26_Robin_(film)",
+        "imdb": "https://www.imdb.com/title/tt0118688/",
+        "year": "1997"
+      },
+      "batman-begins": {
+        "id": "batman-begins",
+        "title": "Batman Begins",
+        "note": "Christian Bale · Christopher Nolan",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_Begins",
+        "imdb": "https://www.imdb.com/title/tt0372784/",
+        "year": "2005"
+      },
+      "batman-tdk": {
+        "id": "batman-tdk",
+        "title": "The Dark Knight",
+        "note": "Christian Bale · Christopher Nolan",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Dark_Knight",
+        "imdb": "https://www.imdb.com/title/tt0468569/",
+        "year": "2008"
+      },
+      "batman-tdkr": {
+        "id": "batman-tdkr",
+        "title": "The Dark Knight Rises",
+        "note": "Christian Bale · Christopher Nolan",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Dark_Knight_Rises",
+        "imdb": "https://www.imdb.com/title/tt1345836/",
+        "year": "2012"
+      },
+      "batman-bvs": {
+        "id": "batman-bvs",
+        "title": "Batman v Superman: Dawn of Justice",
+        "note": "Ben Affleck · Zack Snyder",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_v_Superman:_Dawn_of_Justice",
+        "imdb": "https://www.imdb.com/title/tt2975590/",
+        "year": "2016"
+      },
+      "batman-jl": {
+        "id": "batman-jl",
+        "title": "Justice League",
+        "note": "Ben Affleck · Zack Snyder",
+        "wikipedia": "https://en.wikipedia.org/wiki/Justice_League_(film)",
+        "imdb": "https://www.imdb.com/title/tt0974015/",
+        "year": "2017"
+      },
+      "batman-zsjl": {
+        "id": "batman-zsjl",
+        "title": "Zack Snyder's Justice League",
+        "note": "Ben Affleck · director's cut",
+        "wikipedia": "https://en.wikipedia.org/wiki/Zack_Snyder%27s_Justice_League",
+        "imdb": "https://www.imdb.com/title/tt12361974/",
+        "year": "2021"
+      },
+      "batman-2022": {
+        "id": "batman-2022",
+        "title": "The Batman",
+        "note": "Robert Pattinson · Matt Reeves",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(film)",
+        "imdb": "https://www.imdb.com/title/tt1877830/",
+        "year": "2022"
+      },
+      "batman-phantasm": {
+        "id": "batman-phantasm",
+        "title": "Batman: Mask of the Phantasm",
+        "note": "Animated feature",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman:_Mask_of_the_Phantasm",
+        "imdb": "https://www.imdb.com/title/tt0106364/",
+        "year": "1993"
+      },
+      "batman-lego": {
+        "id": "batman-lego",
+        "title": "The Lego Batman Movie",
+        "note": "Animated comedy",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Lego_Batman_Movie",
+        "imdb": "https://www.imdb.com/title/tt4116284/",
+        "year": "2017"
+      },
+      "batman-1966-tv": {
+        "id": "batman-1966-tv",
+        "title": "Batman",
+        "note": "Adam West · ABC",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman_(TV_series)",
+        "imdb": "https://www.imdb.com/title/tt0059968/",
+        "years": "1966–1968"
+      },
+      "batman-tas": {
+        "id": "batman-tas",
+        "title": "Batman: The Animated Series",
+        "note": "Kevin Conroy · Fox Kids",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Animated_Series",
+        "imdb": "https://www.imdb.com/title/tt0103359/",
+        "years": "1992–1995"
+      },
+      "batman-2004": {
+        "id": "batman-2004",
+        "title": "The Batman",
+        "note": "Kids' WB",
+        "wikipedia": "https://en.wikipedia.org/wiki/The_Batman_(TV_series)",
+        "imdb": "https://www.imdb.com/title/tt0398417/",
+        "years": "2004–2008"
+      },
+      "batman-brave": {
+        "id": "batman-brave",
+        "title": "Batman: The Brave and the Bold",
+        "note": "Diedrich Bader · Cartoon Network",
+        "wikipedia": "https://en.wikipedia.org/wiki/Batman:_The_Brave_and_the_Bold",
+        "imdb": "https://www.imdb.com/title/tt1213218/",
+        "years": "2008–2011"
+      }
+    }
+  }
+}

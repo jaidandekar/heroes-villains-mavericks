@@ -1,0 +1,573 @@
+{
+  "batman": {
+    "pitch": "Bruce Wayne is Gotham City’s masked detective. Armed with training, technology, and an obsession with justice, he hunts the criminals who prey on the city that took his parents.",
+    "overview": [
+      "Bruce Wayne was a child when he saw his parents murdered in Gotham. He spent years studying combat, detection, and forensic science before coming home to fight the kind of crime that had shattered his family.",
+      "Batman’s partnership with James Gordon gives him an ally inside a deeply compromised police department. The Robins and the wider Bat-Family complicate his reputation as a loner: many of his most consequential stories ask what happens when he trusts someone else with the work, or when someone else has to wear the cowl."
+    ],
+    "sources": [
+      {
+        "label": "DC’s Batman profile",
+        "url": "https://www.dc.com/characters/batman"
+      }
+    ],
+    "reading": {
+      "batman-year-one": {
+        "note": "The story follows Bruce and James Gordon through their first year fighting corruption in Gotham. Their parallel starts make it an introduction to both Batman’s methods and the police alliance that makes them possible.",
+        "url": "https://www.dc.com/characters/batman"
+      },
+      "batman-owls": {
+        "note": "An investigation leads Bruce to a secret society whose influence predates his family’s standing in Gotham. Start here if you want a detective story that challenges Batman’s confidence that he knows his own city.",
+        "url": "https://www.dc.com/blog/2026-01-21/how-to-start-reading-batman-comics"
+      },
+      "batman-dkr": {
+        "note": "This alternate future imagines what happens when an older Bruce returns to the cowl. It is a self-contained contrast to Year One: the point is what Batman’s return does to Gotham, rather than how he learns the job.",
+        "url": "https://www.dc.com/characters/batman"
+      },
+      "batman-zoo": {
+        "note": "A young Bruce faces a gang of masked killers in a Gotham where he has neither the Wayne fortune nor Alfred in his corner. The first six issues introduce a Batman whose tactics grow out of a very different upbringing.",
+        "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-1-the-zoo"
+      }
+    },
+    "products": [
+      {
+        "title": "McFarlane Batman (DC Rebirth) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0CV6368FQ",
+        "url": "https://www.amazon.com/dp/B0CV6368FQ",
+        "image": "media/shop-B0CV6368FQ.jpg",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0CV6368FQ.01.LZZZZZZZ.jpg",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Action figures"
+      },
+      {
+        "title": "Batman Classic Logo T-Shirt",
+        "store": "Hot Topic",
+        "sku": "32978731",
+        "url": "https://www.hottopic.com/product/batman-classic-logo-t-shirt/32978731.html",
+        "image": "media/shop-32978731.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32978731_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Apparel"
+      },
+      {
+        "title": "Batman Incorporated Funko Pop!",
+        "store": "Hot Topic",
+        "sku": "35887904",
+        "url": "https://www.hottopic.com/product/funko-pop-heroes-dc-comics-batman-incorporated-batman-vinyl-figure/35887904.html",
+        "image": "media/shop-35887904.jpg",
+        "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwe6aa5f7e/images/funko/upload/1/FINAL_93399PKG_DC_BATMANTHRUTHEYEARS_BATMANINC_POP_PRINTFILE_POP_T7_glam-WEB.png?sh=800&sw=800",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Collectibles"
+      },
+      {
+        "title": "Batman Comic Panels Bifold Wallet",
+        "store": "BoxLunch",
+        "sku": "35561799",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-75-classic-comic-book-panels-collage-bifold-wallet/35561799.html",
+        "image": "media/shop-35561799.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35561308_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Accessories"
+      },
+      {
+        "title": "Batman Gotham City Noir Glass Set",
+        "store": "Hot Topic",
+        "sku": "36763541",
+        "url": "https://www.hottopic.com/product/dc-comics-batman-gotham-city-noir-glass-set/36763541.html",
+        "image": "media/shop-36763541.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36763533_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Home goods"
+      },
+      {
+        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+        "store": "Amazon",
+        "sku": "B0G27VB83P",
+        "url": "https://www.amazon.com/dp/B0G27VB83P",
+        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+        "label": "Action figures",
+        "image": "media/shop-B0G27VB83P.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Batman Beyond Icons T-Shirt",
+        "store": "BoxLunch",
+        "sku": "32791510",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-beyond-icons-t-shirt---boxlunch-exclusive/32791510.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32791510_hi",
+        "label": "Apparel",
+        "image": "media/shop-32791510.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Batman Symbol Multi-Tool Keychain",
+        "store": "BoxLunch",
+        "sku": "33144392",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-symbol-multi-tool-keychain/33144392.html",
+        "image": "media/shop-33144392.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33144377_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Accessories"
+      }
+    ]
+  },
+  "green-lantern": {
+    "pitch": "Green Lantern is a mantle carried by heroes like Hal Jordan and John Stewart. Their rings turn willpower into weapons, shields, and anything else they can imagine in defense of their sector.",
+    "overview": [
+      "Hal Jordan was a test pilot when a dying alien, Abin Sur, entrusted him with a power ring and responsibility for Earth’s sector. The ring made Hal part of the Green Lantern Corps, an interstellar force whose members use willpower to give their ideas physical form.",
+      "John Stewart started as a relief Lantern and grew into a Corps leader. His background as an architect shapes how he builds constructs, which is one of the clearest examples of how the same ring can look and feel different in different hands. The guide separates the people who carry the mantle from alternate realities and transformations."
+    ],
+    "sources": [
+      {
+        "label": "DC’s Hal Jordan profile",
+        "url": "https://www.dc.com/characters/green-lantern"
+      },
+      {
+        "label": "DC’s John Stewart profile",
+        "url": "https://www.dc.com/characters/john-stewart"
+      }
+    ],
+    "reading": {
+      "gl-secret-origin": {
+        "note": "Start here to see how a test pilot inherits both a ring and a duty from Abin Sur. The collection gives you the basic relationship between Hal, Earth’s sector, and the Corps before the larger crossover stories.",
+        "url": "https://www.dc.com/characters/green-lantern"
+      },
+      "gl-rebirth": {
+        "note": "This is the bridge into Geoff Johns’s Green Lantern era. Hal’s return sets up the ongoing 2005 series. Readers who want to understand why his return matters can start with Emerald Twilight and then come back here.",
+        "url": "https://www.dc.com/comics/green-lantern-2005/green-lantern-1"
+      },
+      "sinestro-corps-war": {
+        "note": "Sinestro recruits an army that draws its power from fear. The collection crosses between the two Lantern series, making it a good next read once you know the Corps and want to see how its individual members operate in a war.",
+        "url": "https://www.dc.com/graphic-novels/green-lantern-2005/green-lantern-the-sinestro-corps-war"
+      },
+      "blackest-night": {
+        "note": "The conflict widens when a new Corps raises dead heroes and villains. This is the central event collection; its companion books follow battles that happen alongside it, so start here before deciding how far into the tie-ins you want to go.",
+        "url": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night"
+      }
+    },
+    "products": [
+      {
+        "title": "Hal Jordan Funko Pop",
+        "store": "Amazon",
+        "sku": "B004OFRJDI",
+        "url": "https://www.amazon.com/dp/B004OFRJDI",
+        "image": "media/shop-B004OFRJDI.jpg",
+        "imageSource": "https://m.media-amazon.com/images/I/612a2Qz9z9L._AC_SL500_.jpg",
+        "label": "Collectibles",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Green Lantern logo t-shirt",
+        "store": "Hot Topic",
+        "sku": "36796580",
+        "url": "https://www.hottopic.com/product/dc-comics-green-lantern-logo-t-shirt/36796580.html",
+        "image": "media/shop-36796580.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796580_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Green Lantern Corps bomber",
+        "store": "BoxLunch",
+        "sku": "35756042",
+        "url": "https://www.boxlunch.com/product/dc-comics-green-lantern-corps-bomber-jacket---boxlunch-exclusive/35756042.html",
+        "image": "media/shop-35756042.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35756042_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Green Lantern (The Silver Age) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0CV5ZKKYX",
+        "url": "https://www.amazon.com/dp/B0CV5ZKKYX",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/mcfarlane-dc-direct-digital-series/action-figures/green-lantern-dc-the-silver-age-10376.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0CV5ZKKYX.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0CV5ZKKYX.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "fantastic-four": {
+    "pitch": "The Fantastic Four are Marvel’s family of explorers. A flight through cosmic radiation gives Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm extraordinary abilities and sends them toward even stranger frontiers.",
+    "overview": [
+      "The four come home from their flight changed in different ways. Reed can stretch his body, Sue can become invisible and project force fields, Johnny can ignite and fly, and Ben gains immense strength along with a rocky body he can’t simply switch off.",
+      "Their adventures revolve around a family learning to live with those changes while exploring places that ordinary science cannot reach. Doctor Doom’s rivalry with Reed gives those discoveries a recurring personal cost. Later, the Future Foundation brings the Richards children and a new generation of problem-solvers into the story."
+    ],
+    "sources": [
+      {
+        "label": "Marvel’s Fantastic Four profile",
+        "url": "https://www.marvel.com/teams-and-groups/fantastic-four/in-comics"
+      },
+      {
+        "label": "Marvel’s Future Foundation reading guide",
+        "url": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "ultimate-fantastic-four",
+        "name": "Ultimate Fantastic Four",
+        "universe": "Ultimate Marvel",
+        "description": "The original Ultimate line reintroduces Reed, Sue, Johnny, and Ben as a younger team. It gives their experiments and family dynamic a new starting point, separate from the original Lee and Kirby run.",
+        "firstAppearance": "Ultimate Fantastic Four #1",
+        "source": "https://www.marvel.com/comics/issue/95/slug"
+      },
+      {
+        "slug": "future-foundation",
+        "name": "Future Foundation",
+        "universe": "Main Marvel continuity · Team era",
+        "description": "The family reorganizes after losing Johnny and invites Spider-Man into the group. The Foundation gives the Richards children and other young scientists a place to tackle problems of their own.",
+        "source": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      },
+      {
+        "slug": "ff-1602",
+        "name": "The Fantastick Four",
+        "universe": "Earth-311 · Marvel 1602",
+        "description": "The 1602 world reimagines Reed, Sue, Johnny, and Ben as the Fantastick Four in an age of sailing ships and royal intrigue. Their period setting and adventures distinguish them from the modern Marvel family.",
+        "source": "https://share.marvel.com/comics/discover/297/marvel-1602"
+      },
+      {
+        "slug": "ff-2099-2019",
+        "name": "Fantastic Four 2099",
+        "universe": "Marvel 2099 · 2019 reimagining",
+        "description": "In Karla Pacheco and Steven Cummings’s dystopian future, a new quartet takes up the Fantastic Four legacy. This is the 2019 team, distinct from both the original family and the 1996 Fantastic Four 2099 series.",
+        "firstAppearance": "Fantastic Four 2099 #1 (2019)",
+        "source": "https://www.marvel.com/comics/issue/79183/fantastic_four_2099_2019_1"
+      }
+    ],
+    "reading": {
+      "ff-worlds-greatest": {
+        "note": "Read this collection for the original flight, the team’s early experiments with its powers, and the start of Doom’s rivalry with Reed. It shows how quickly the premise moves from a family crisis to stories about exploration on a much larger scale.",
+        "url": "https://www.marvel.com/teams-and-groups/fantastic-four/in-comics"
+      },
+      "ff-hickman-2": {
+        "note": "The Future Foundation changes the scale of the family story by bringing young scientists into Reed’s orbit. Since this is a second volume, readers new to Hickman’s run can use Marvel’s chronology to find an earlier starting point.",
+        "url": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      },
+      "ff-north": {
+        "note": "The opening issues split up the team after a disaster. Ben and Alicia stumble into a time loop, while Reed and Sue encounter a town full of Doombots. The smaller mysteries give new readers a way into the family’s relationships before they learn what drove everyone apart.",
+        "url": "https://www.marvel.com/comics/collection/95695/fantastic_four_by_ryan_north_vol_1_whatever_happened_to_the_fantastic_four_2022"
+      }
+    },
+    "products": [
+      {
+        "title": "Marvel Fantastic Four Cosmic T-shirt",
+        "store": "Hot Topic",
+        "sku": "32446384",
+        "url": "https://www.hottopic.com/product/marvel-fantastic-four-cosmic-t-shirt/32446384.html",
+        "image": "media/shop-32446384.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32446384_hi",
+        "label": "Apparel",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Fantastic Four Minimates Deluxe Figure Set",
+        "store": "BoxLunch",
+        "sku": "33492027",
+        "url": "https://www.boxlunch.com/product/diamond-select-toys-marvel-minimates-fantastic-four-figures-deluxe-box-set/33492027.html",
+        "label": "Action figures",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33492017_hi?h=630",
+        "image": "media/shop-33492027.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Fantastic Four Enamel Charm Bracelet Set",
+        "store": "BoxLunch",
+        "sku": "35548053",
+        "url": "https://www.boxlunch.com/product/marvel-the-fantastic-four-classic-enamel-charm-cord-bracelet-set-4pcs/35548053.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35547824_hi?h=630",
+        "image": "media/shop-35548053.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "clayface": {
+    "products": [
+      {
+        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+        "store": "Amazon",
+        "sku": "B0G27VB83P",
+        "url": "https://www.amazon.com/dp/B0G27VB83P",
+        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+        "label": "Collectibles",
+        "image": "media/shop-B0G27VB83P.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Clayface Hoodie",
+        "store": "Hot Topic",
+        "sku": "36004920",
+        "url": "https://www.hottopic.com/product/dc-comics-batman-clayface-hoodie/36004920.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36004920_hi",
+        "label": "Apparel",
+        "image": "media/shop-36004920.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Clayface (DC Rebirth) Megafig",
+        "store": "Amazon",
+        "sku": "B09DHGWLGK",
+        "url": "https://www.amazon.com/dp/B09DHGWLGK",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/multiverse/mcfarlane/clayface-dc-rebirth-3815.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B09DHGWLGK.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B09DHGWLGK.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "reading": {
+      "cf-face-the-face": {
+        "url": "https://www.dc.com/graphic-novels/batman-face-the-face"
+      },
+      "cf-mudpack": {
+        "url": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4"
+      },
+      "cf-horror-modern": {
+        "url": "https://www.dc.com/graphic-novels/batman-hush-new-edition"
+      }
+    }
+  },
+  "doctor-doom": {
+    "products": [
+      {
+        "title": "Funko POP! Marvel: Fantastic Four - Doctor Doom",
+        "store": "Amazon",
+        "sku": "B07TXLJPRQ",
+        "url": "https://www.amazon.com/dp/B07TXLJPRQ",
+        "imageSource": "https://m.media-amazon.com/images/I/71vvWGyaKdL._AC_SL500_.jpg",
+        "label": "Collectibles",
+        "image": "media/shop-B07TXLJPRQ.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Secret Wars Doctor Doom T-Shirt",
+        "store": "Hot Topic",
+        "sku": "37103250",
+        "url": "https://www.hottopic.com/product/marvel-secret-wars-doctor-doom-comic-t-shirt/37103250.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/37103250_hi",
+        "label": "Apparel",
+        "image": "media/shop-37103250.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Retro Doctor Doom 3.75-inch Figure",
+        "store": "Amazon",
+        "sku": "B0BFFTHJBF",
+        "url": "https://www.amazon.com/dp/B0BFFTHJBF",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-retro-kenner-3-75-doctor-doom-5625.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0BFFTHJBF.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0BFFTHJBF.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Doctor Doom Wallet",
+        "store": "BoxLunch",
+        "sku": "36965074",
+        "url": "https://www.boxlunch.com/product/marvel-avengers-doomsday-doctor-doom-wallet---boxlunch-exclusive/36965074.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36965070_hi?h=630",
+        "image": "media/shop-36965074.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "reading": {
+      "doom-secret-wars-2015": {
+        "url": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/"
+      },
+      "doom-time-runs-out": {
+        "url": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/"
+      },
+      "doom-doomwar": {
+        "url": "https://www.marvel.com/comics/collection/30862/"
+      }
+    }
+  },
+  "vision": {
+    "products": [
+      {
+        "title": "Funko Pop! Marvel: Wandavision - The Vision (Finale)",
+        "store": "Amazon",
+        "sku": "B08KGV6SH6",
+        "url": "https://www.amazon.com/dp/B08KGV6SH6",
+        "imageSource": "https://m.media-amazon.com/images/I/71rYdxDzpfL._AC_SL500_.jpg",
+        "label": "Collectibles",
+        "image": "media/shop-B08KGV6SH6.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "WandaVision Vision T-Shirt",
+        "store": "Hot Topic",
+        "sku": "15603261",
+        "url": "https://www.hottopic.com/product/marvel-wandavision-vision-t-shirt/15603261.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/15603261_hi",
+        "label": "Apparel",
+        "image": "media/shop-15603261.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Retro White Vision 6-inch Figure",
+        "store": "Amazon",
+        "sku": "B095824NYX",
+        "url": "https://www.amazon.com/dp/B095824NYX",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-marvel-comics-80th-anniv-retro-vision-white-retro-3584.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B095824NYX.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B095824NYX.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "reading": {
+      "vis-tom-king": {
+        "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555"
+      }
+    }
+  },
+  "spiderman": {
+    "products": [
+      {
+        "title": "Pop! Marvel: Spider-Man (Last Stand) Previews Exclusive Vinyl Figure",
+        "store": "Amazon",
+        "sku": "B0DJFNV15R",
+        "url": "https://www.amazon.com/dp/B0DJFNV15R",
+        "imageSource": "https://m.media-amazon.com/images/I/51uYEL3QU8L._AC_SL500_.jpg",
+        "label": "Collectibles",
+        "image": "media/shop-B0DJFNV15R.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Web Pose T-Shirt",
+        "store": "BoxLunch",
+        "sku": "36984937",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-web-pose-t-shirt---boxlunch-exclusive/36984937.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi",
+        "label": "Apparel",
+        "image": "media/shop-36984937.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Embossed Mask Mug",
+        "store": "BoxLunch",
+        "sku": "35232862",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-embossed-mask-mug/35232862.html",
+        "label": "Home goods",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35232848_hi?h=630",
+        "image": "media/shop-35232862.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Spider-Man Comic Panel Keychain",
+        "store": "BoxLunch",
+        "sku": "37009123",
+        "url": "https://www.boxlunch.com/product/marvel-spider-man-comic-panel-spider-man-keychain/37009123.html",
+        "label": "Accessories",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/37009114_hi?h=630",
+        "image": "media/shop-37009123.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  },
+  "sinestro": {
+    "products": [
+      {
+        "title": "Green Lantern Sinestro Corps T-Shirt",
+        "store": "Hot Topic",
+        "sku": "36796620",
+        "url": "https://www.hottopic.com/product/dc-comics-green-lantern-sinestro-corps-t-shirt/36796620.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36796620_hi",
+        "label": "Apparel",
+        "image": "media/shop-36796620.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "McFarlane Sinestro (Classic Uniform) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0GLQXBCFM",
+        "url": "https://www.amazon.com/dp/B0GLQXBCFM",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/dc/multiverse/mcfarlane/sinestro-classic-uniform-14044.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0GLQXBCFM.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0GLQXBCFM.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "sinestro-injustice",
+        "name": "Injustice Sinestro",
+        "universe": "Injustice universe",
+        "description": "In this alternate world, Sinestro supports Superman’s authoritarian regime. His alliance with Hal Jordan and war against the Green Lantern Corps make him a central threat in Injustice: Gods Among Us Year Two.",
+        "source": "https://www.dc.com/comics/injustice-gods-among-us-year-two-2013/injustice-gods-among-us-year-two-annual-1"
+      }
+    ]
+  },
+  "ultron": {
+    "products": [
+      {
+        "title": "Marvel Rivals Ultron T-Shirt",
+        "store": "Hot Topic",
+        "sku": "33698817",
+        "url": "https://www.hottopic.com/product/marvel-rivals-ultron-t-shirt/33698817.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33698817_hi",
+        "label": "Apparel",
+        "image": "media/shop-33698817.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Marvel Legends Ultron 6-inch Figure",
+        "store": "Amazon",
+        "sku": "B0B3G4XF3X",
+        "url": "https://www.amazon.com/dp/B0B3G4XF3X",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/marvel-legends-cassie-lang-ultron-5816.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0B3G4XF3X.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0B3G4XF3X.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "reading": {
+      "ultron-ultimate": {
+        "url": "https://www.marvel.com/comics/collection/23044/"
+      }
+    }
+  },
+  "venom": {
+    "products": [
+      {
+        "title": "Venom Symbiote T-Shirt",
+        "store": "BoxLunch",
+        "sku": "36513928",
+        "url": "https://www.boxlunch.com/product/marvel-venom-symbiote-t-shirt-%E2%80%94-boxlunch-exclusive/36513928.html",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36513928_hi",
+        "label": "Apparel",
+        "image": "media/shop-36513928.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Mondo Venom (The Animated Series) Sixth Scale Figure",
+        "store": "Amazon",
+        "sku": "B0FRBFN3FT",
+        "url": "https://www.amazon.com/dp/B0FRBFN3FT",
+        "label": "Action figures",
+        "reference": "https://www.actionfigure411.com/marvel/mondo-marvel/action-figures/venom-the-animated-series-12889.php",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0FRBFN3FT.01.LZZZZZZZ.jpg",
+        "image": "media/shop-B0FRBFN3FT.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
+        "title": "Venom Face Travel Mug",
+        "store": "BoxLunch",
+        "sku": "30923008",
+        "url": "https://www.boxlunch.com/product/marvel-venom-venom-face-travel-mug/30923008.html",
+        "label": "Home goods",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/30922731_hi?h=630",
+        "image": "media/shop-30923008.jpg",
+        "imageCheckedAt": "2026-11-05"
+      }
+    ]
+  }
+}

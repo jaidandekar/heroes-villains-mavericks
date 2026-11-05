@@ -1,0 +1,329 @@
+{
+  "verse-guy-gardner": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/7/74/Green_Lantern_%28Guy_Gardner%29.png",
+    "width": 226,
+    "height": 443
+  },
+  "verse-kyle-rayner": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/d/d8/Green_Lantern_%28Kyle_Rayner%29.png",
+    "width": 281,
+    "height": 355
+  },
+  "verse-alan-scott": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/1/1a/Green_Lantern_%28Alan_Scott%29.png",
+    "width": 258,
+    "height": 383
+  },
+  "verse-gl-earth-one": {
+    "source": "https://upload.wikimedia.org/wikipedia/en/a/ad/Green_Lantern_Earth_One.jpg",
+    "width": 250,
+    "height": 396
+  },
+  "hero-fantastic-four": {
+    "source": "https://image.tmdb.org/t/p/w1280/s94NjfKkcSczZ1FembwmQZwsuwY.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "ff-worlds-greatest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4092294-01.jpg",
+    "width": 825,
+    "height": 1280
+  },
+  "ff-hickman-2": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6843035-9150347246-74880.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "ff-north": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/11159/111592040/9013622-9351001981-B0C2D.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "hero-batman": {
+    "source": "https://image.tmdb.org/t/p/w1280/rvtdN5XkWAfGX6xDuPL6yYS2seK.jpg",
+    "width": 1280,
+    "height": 720
+  },
+  "batman-year-one": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/64684/2356058-bmyo_dlx_dj.jpg",
+    "width": 855,
+    "height": 1280
+  },
+  "batman-owls": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6594972-01.jpg",
+    "width": 829,
+    "height": 1280
+  },
+  "batman-dkr": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9116/1657463-1c.png",
+    "width": 600,
+    "height": 983
+  },
+  "batman-zoo": {
+    "source": "https://covers.openlibrary.org/b/id/15113626-L.jpg",
+    "width": 325,
+    "height": 500
+  },
+  "batman-beyond-vol1": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/58127/1595849-bat007.jpg",
+    "width": 833,
+    "height": 1280
+  },
+  "batman-knightquest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/6623595-01.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "batman-one-million": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/9241/624848-6751_20051105081406_large.jpg",
+    "width": 400,
+    "height": 609
+  },
+  "batman-darkest-knight": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4043975-01.jpg",
+    "width": 832,
+    "height": 1280
+  },
+  "shelf-last-ronin": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781684058419",
+    "width": 299,
+    "height": 450
+  },
+  "shelf-sinestro": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781401234553",
+    "width": 290,
+    "height": 450
+  },
+  "shelf-batman-spawn": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781779521507",
+    "width": 293,
+    "height": 450
+  },
+  "shelf-court-of-owls": {
+    "source": "https://images.penguinrandomhouse.com/cover/9781401235420",
+    "width": 291,
+    "height": 450
+  },
+  "blackest-night": {
+    "source": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night",
+    "imageSource": "https://static.dc.com/dc/files/default_images/14771_900x1350.jpg",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/blackest-night-verified.jpg"
+  },
+  "cf-asylum": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/56299/1283575-clayface.jpg",
+    "width": 515,
+    "height": 800
+  },
+  "cf-payne-debut": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/8/84205/2900409-det479.jpg",
+    "width": 403,
+    "height": 614
+  },
+  "cf-cassius-debut": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/4/39629-796-44600-1-batman.jpg",
+    "width": 400,
+    "height": 614
+  },
+  "sin-demon": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4328751-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "sin-war": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3485643-01.jpg",
+    "width": 586,
+    "height": 900
+  },
+  "ultron-unleashed": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/5/51078/1016657-avenge1.jpeg",
+    "width": 350,
+    "height": 524
+  },
+  "ultron-unlimited": {
+    "source": "https://covers.openlibrary.org/b/id/15150842-L.jpg",
+    "width": 332,
+    "height": 500
+  },
+  "ultron-conquest": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4635237-01.jpg",
+    "width": 448,
+    "height": 675
+  },
+  "ultron-rage": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/40/4478781-avengers_rage_of_ultron_cover.jpg",
+    "width": 600,
+    "height": 900
+  },
+  "ultron-age": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/3816330-01.jpg",
+    "width": 579,
+    "height": 900
+  },
+  "ultron-ultimate": {
+    "source": "https://www.marvel.com/comics/collection/23044/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785122692?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/ultron-ultimate-verified.jpg"
+  },
+  "ultron-extreme": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/1202/89868-18108-106298-1-avengers-next.jpg",
+    "width": 400,
+    "height": 628
+  },
+  "venom-birth": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/5674133-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "venom-lethal": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/6/67663/4897039-01.jpg",
+    "width": 585,
+    "height": 900
+  },
+  "venom-rex": {
+    "source": "https://covers.openlibrary.org/b/id/8813263-L.jpg",
+    "width": 329,
+    "height": 500
+  },
+  "venom-gargan": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/2/22664/1054590-spm.jpg",
+    "width": 493,
+    "height": 762
+  },
+  "venom-agent": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/8/87073/1710738-venom01.jpg",
+    "width": 593,
+    "height": 900
+  },
+  "venom-ultimate": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/0/3318/105592-7257-108168-1-ultimate-spider-man.jpg",
+    "width": 400,
+    "height": 617
+  },
+  "venom-dylan": {
+    "source": "https://comicvine.gamespot.com/a/uploads/scale_large/12/124259/8247950-large-4944271.jpg",
+    "width": 592,
+    "height": 900
+  },
+  "doom-secret-wars-2015": {
+    "source": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785198956?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-secret-wars-2015-verified.jpg"
+  },
+  "doom-time-runs-out": {
+    "source": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302966690?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-time-runs-out-verified.jpg"
+  },
+  "doom-doomwar": {
+    "source": "https://www.marvel.com/comics/collection/30862/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785147152?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/doom-doomwar-verified.jpg"
+  },
+  "cf-face-the-face": {
+    "source": "https://www.dc.com/graphic-novels/batman-face-the-face",
+    "imageSource": "https://static.dc.com/dc/files/default_images/5703_400x600.jpg",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/cf-face-the-face-verified.jpg"
+  },
+  "cf-mudpack": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_DKD_v4_CVR_5fff94399375a2.75320893.jpg",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/clayface-mudpack-hq.jpg"
+  },
+  "vis-tom-king": {
+    "source": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302920555?width=900",
+    "verifiedAt": "2026-11-05",
+    "cover": "media/vis-tom-king-verified.jpg"
+  },
+  "cf-horror-modern": {
+    "cover": "media/clayface-hush-hq.jpg",
+    "source": "https://www.dc.com/graphic-novels/batman-hush-new-edition",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_HUSH_NE_378_300-001_HD_5d816e07c904a8.52172832.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-clay-clay": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-2011/batman-the-dark-knight-vol-4-clay",
+    "imageSource": "https://static.dc.com/dc/files/default_images/batman_tdk_vol4_clay_5b044dc0d7c0a6.43884336.jpg",
+    "cover": "media/collection-clay-clay.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-clay-deus": {
+    "source": "https://www.dc.com/graphic-novels/detective-comics-2016/batman-detective-comics-vol-4-deus-ex-machina",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BMDTC_v4_145-001_HD_5b7f16285ecaa2.84613889.jpg",
+    "cover": "media/collection-clay-deus.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "clayface-mudpack-hq": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_DKD_v4_CVR_5fff94399375a2.75320893.jpg",
+    "cover": "media/clayface-mudpack-hq.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-gl-back": {
+    "source": "https://www.dc.com/graphic-novels/green-lantern-2023/green-lantern-vol-1-back-in-action",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779525093",
+    "cover": "media/collection-gl-back.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-gl-far": {
+    "source": "https://www.dc.com/graphic-novels/far-sector-2019/far-sector",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779512055",
+    "cover": "media/collection-gl-far.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-vis-fear": {
+    "source": "https://www.penguinrandomhouse.com/books/796243/the-vision-and-the-scarlet-witch-fear-the-reaper-by-steve-orlando/9781302964955/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302964955",
+    "cover": "media/collection-vis-fear.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-vis-saga": {
+    "source": "https://www.marvel.com/comics/collection/92066/vision_the_scarlet_witch_the_saga_of_wanda_and_vision_2021",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302928643",
+    "cover": "media/collection-vis-saga.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-sacrifice": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-2-sacrifice",
+    "imageSource": "https://static.dc.com/dc/files/default_images/sinestro_vol2_sacrifice_5b03540b96c3a2.71764590.jpg",
+    "cover": "media/collection-sin-sacrifice.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-rising": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-3-rising",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781401261580",
+    "cover": "media/collection-sin-rising.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-fall": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-4-the-fall-of-sinestro",
+    "imageSource": "https://static.dc.com/dc/files/default_images/sinestro_vol4_fallof_5b0307192201c7.96735279.jpg",
+    "cover": "media/collection-sin-fall.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-ultron-forever": {
+    "source": "https://www.marvel.com/comics/issue/51501/read",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785197690",
+    "cover": "media/collection-ultron-forever.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-venom-king": {
+    "source": "https://www.penguinrandomhouse.com/books/702971/king-in-black-by-donny-cates/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302925468",
+    "cover": "media/collection-venom-king.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-venom-recursion": {
+    "source": "https://www.penguinrandomhouse.com/books/711204/venom-by-al-ewing-and-ram-v-vol1-recursion-by-al-ewing/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302932558",
+    "cover": "media/collection-venom-recursion.jpg",
+    "verifiedAt": "2026-11-05"
+  }
+}
