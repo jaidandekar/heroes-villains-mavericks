@@ -221,6 +221,21 @@
         "universe": "Main Marvel continuity · Team era",
         "description": "The family reorganizes after losing Johnny and invites Spider-Man into the group. The Foundation gives the Richards children and other young scientists a place to tackle problems of their own.",
         "source": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
+      },
+      {
+        "slug": "ff-1602",
+        "name": "The Fantastick Four",
+        "universe": "Earth-311 · Marvel 1602",
+        "description": "The 1602 world reimagines Reed, Sue, Johnny, and Ben as the Fantastick Four in an age of sailing ships and royal intrigue. Their period setting and adventures distinguish them from the modern Marvel family.",
+        "source": "https://share.marvel.com/comics/discover/297/marvel-1602"
+      },
+      {
+        "slug": "ff-2099-2019",
+        "name": "Fantastic Four 2099",
+        "universe": "Marvel 2099 · 2019 reimagining",
+        "description": "In Karla Pacheco and Steven Cummings’s dystopian future, a new quartet takes up the Fantastic Four legacy. This is the 2019 team, distinct from both the original family and the 1996 Fantastic Four 2099 series.",
+        "firstAppearance": "Fantastic Four 2099 #1 (2019)",
+        "source": "https://www.marvel.com/comics/issue/79183/fantastic_four_2099_2019_1"
       }
     ],
     "reading": {
@@ -310,6 +325,9 @@
       },
       "cf-mudpack": {
         "url": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4"
+      },
+      "cf-horror-modern": {
+        "url": "https://www.dc.com/graphic-novels/batman-hush-new-edition"
       }
     }
   },
@@ -475,6 +493,15 @@
         "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0GLQXBCFM.01.LZZZZZZZ.jpg",
         "image": "media/shop-B0GLQXBCFM.jpg",
         "imageCheckedAt": "2026-11-05"
+      }
+    ],
+    "versions": [
+      {
+        "slug": "sinestro-injustice",
+        "name": "Injustice Sinestro",
+        "universe": "Injustice universe",
+        "description": "In this alternate world, Sinestro supports Superman’s authoritarian regime. His alliance with Hal Jordan and war against the Green Lantern Corps make him a central threat in Injustice: Gods Among Us Year Two.",
+        "source": "https://www.dc.com/comics/injustice-gods-among-us-year-two-2013/injustice-gods-among-us-year-two-annual-1"
       }
     ]
   },

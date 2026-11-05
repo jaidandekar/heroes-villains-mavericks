@@ -608,5 +608,25 @@
     "releaseYear": "2008",
     "verifiedAt": "2026-11-05",
     "imdb": "https://www.imdb.com/title/tt1213218/"
+  },
+  "vis-civil-war": {
+    "src": "media/screen-vision-civil-war.jpg",
+    "source": "https://www.themoviedb.org/movie/271110",
+    "imageSource": "https://image.tmdb.org/t/p/w500/rAGiXaUfPzY7CDEyNKUofk3Kw2e.jpg",
+    "kind": "movie",
+    "resolvedTitle": "Captain America: Civil War",
+    "releaseYear": "2016",
+    "verifiedAt": "2026-11-05",
+    "imdb": "https://www.imdb.com/title/tt3498820/"
+  },
+  "sin-green-lantern-2011": {
+    "src": "media/screen-tt1133985.jpg",
+    "source": "https://www.themoviedb.org/movie/44912",
+    "imageSource": "https://image.tmdb.org/t/p/w500/fj21HwUprqjjwTdkKC1XZurRSpV.jpg",
+    "kind": "movie",
+    "resolvedTitle": "Green Lantern",
+    "releaseYear": "2011",
+    "verifiedAt": "2026-11-05",
+    "imdb": "https://www.imdb.com/title/tt1133985/"
   }
 }

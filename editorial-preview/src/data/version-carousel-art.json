@@ -354,14 +354,14 @@
     "wideSrc": "media/multiverse-young-avengers-vision-desktop.jpg"
   },
   "ultron-ultimate": {
-    "src": "media/multiverse-ultron-ultimate.jpg",
-    "source": "https://mightyavengers.net/characters/ultron/alternate-versions",
-    "imageSource": "https://mightyavengers.net/sites/default/files/images/characters/ultron/ultron-alternate-ultimate.jpg",
+    "src": "media/feedback-ultron-ultimate.jpg",
+    "source": "https://marvel.fandom.com/wiki/Ultron_(Earth-1610)",
+    "imageSource": "https://static.wikia.nocookie.net/marveldatabase/images/d/d5/Ultron_%28Earth-1610%29_from_Ultimates_3_Vol_1_5_001.png/revision/latest?cb=20201017064555",
     "focus": {
-      "x": 0.48,
+      "x": 0.42,
       "y": 0.3
     },
-    "wideSrc": "media/multiverse-ultron-ultimate-desktop.jpg"
+    "verifiedAt": "2026-11-05"
   },
   "flash-thompson": {
     "src": "media/multiverse-flash-thompson.jpg",
@@ -431,5 +431,35 @@
       "y": 0.34
     },
     "wideSrc": "media/multiverse-ultron-age-desktop.jpg"
+  },
+  "ff-1602": {
+    "src": "media/feedback-ff-1602.jpg",
+    "source": "https://www.keycollectorcomics.com/issue/marvel-1602-fantastick-four-1-381662,381662/",
+    "imageSource": "https://image.keycollectorcomics.com/media/877ab025-7c7b-4b7e-ae5f-6312d6f85ffa.jpg?format=webp&quality=90&width=1600",
+    "focus": {
+      "x": 0.48,
+      "y": 0.28
+    },
+    "verifiedAt": "2026-11-05"
+  },
+  "ff-2099-2019": {
+    "src": "media/feedback-ff-2099-2019.jpg",
+    "source": "https://www.youdontreadcomics.com/comics/2019/11/24/2099-fantastic-four-review",
+    "imageSource": "https://images.squarespace-cdn.com/content/v1/58c35f74d1758e424ee76710/1574576019768-ZD7MDAZKSTTTYVJBHKA3/2099%2BFF%2BInside.jpg",
+    "focus": {
+      "x": 0.56,
+      "y": 0.37
+    },
+    "verifiedAt": "2026-11-05"
+  },
+  "sinestro-injustice": {
+    "src": "media/feedback-sinestro-injustice.jpg",
+    "source": "https://www.mortalkombatwarehouse.com/krossovers/injustice/characters/sinestro/",
+    "imageSource": "https://www.mortalkombatwarehouse.com/krossovers/injustice/renders/solo/sinestro.png",
+    "focus": {
+      "x": 0.7,
+      "y": 0.23
+    },
+    "verifiedAt": "2026-11-05"
   }
 }

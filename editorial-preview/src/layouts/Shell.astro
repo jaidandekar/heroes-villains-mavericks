@@ -17,11 +17,7 @@ const { title, description, home = './' } = Astro.props;
   <a class="skip" href="#main">Skip to content</a>
   <header class="masthead wrap">
     <div class="identity"><a class="wordmark" href={home + 'index.html'}>Heroes, Villains &amp; Mavericks</a> <a class="byline" href="https://indypendee.com/">by Jai Dandekar</a></div>
-    <nav aria-label="Main navigation">
-      <a href={home + 'index.html#now'}>Out now &amp; coming soon</a>
-      <a href={home + 'index.html#shelf'}>Reading</a>
-      <a href={home + 'index.html#characters'}>Guides</a>
-    </nav>
+
   </header>
   <main id="main"><slot /></main>
   <footer class="wrap footer"><strong>Heroes, Villains &amp; Mavericks</strong><span>Editorial preview · By Jai Dandekar</span></footer>

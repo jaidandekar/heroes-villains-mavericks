@@ -281,7 +281,31 @@
           }
         ],
         "isbn": "9781779507495",
-        "cover": "media/cf-mudpack-verified.jpg"
+        "cover": "media/clayface-mudpack-hq.jpg"
+      },
+      "cf-horror-modern": {
+        "slug": "cf-horror-modern",
+        "versionSlug": "dcu-hagen",
+        "title": "Batman: Hush",
+        "creators": "Jeph Loeb & Jim Lee",
+        "years": "2002–03",
+        "collects": "Batman #608–619, a six-page story from Wizard #0, and a two-page origin story",
+        "era": "Modern Age",
+        "prerequisites": "None",
+        "summary": "Modern Clayface as master impersonator — the identity-horror DNA behind the 2026 film.",
+        "readingOrder": [
+          "Batman: Hush"
+        ],
+        "amazon": [
+          {
+            "asin": "1401297242",
+            "title": "Batman: Hush (New Edition)",
+            "format": "Trade paperback · 2019 edition",
+            "recommended": true
+          }
+        ],
+        "isbn": "9781401297244",
+        "cover": "media/clayface-hush-hq.jpg"
       }
     },
     "screen": {
@@ -371,7 +395,59 @@
         "imdb": "https://www.imdb.com/title/tt4154756/",
         "year": "2018"
       }
-    }
+    },
+    "screenGroups": [
+      {
+        "group": "Live-action series",
+        "items": [
+          {
+            "id": "vis-wandavision",
+            "title": "WandaVision",
+            "note": "Paul Bettany · Elizabeth Olsen",
+            "wikipedia": "https://en.wikipedia.org/wiki/WandaVision",
+            "imdb": "https://www.imdb.com/title/tt9140560/",
+            "years": "2021"
+          },
+          {
+            "id": "vis-visionquest",
+            "title": "VisionQuest",
+            "note": "White Vision · Disney+",
+            "wikipedia": "https://en.wikipedia.org/wiki/VisionQuest",
+            "imdb": "https://www.imdb.com/title/tt23112594/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Live-action films",
+        "items": [
+          {
+            "id": "vis-aou",
+            "title": "Avengers: Age of Ultron",
+            "note": "Vision's birth",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Age_of_Ultron",
+            "imdb": "https://www.imdb.com/title/tt2395427/",
+            "year": "2015"
+          },
+          {
+            "id": "vis-civil-war",
+            "title": "Captain America: Civil War",
+            "year": "2016",
+            "note": "Paul Bettany · Vision supports the Sokovia Accords as the Avengers divide.",
+            "wikipedia": "https://movies.disney.com/captain-america-civil-war",
+            "imdb": "https://www.imdb.com/title/tt3498820/"
+          },
+          {
+            "id": "vis-infinity",
+            "title": "Avengers: Infinity War",
+            "note": "Mind Stone tragedy",
+            "wikipedia": "https://en.wikipedia.org/wiki/Avengers:_Infinity_War",
+            "imdb": "https://www.imdb.com/title/tt4154756/",
+            "year": "2018"
+          }
+        ]
+      }
+    ]
   },
   "spiderman": {
     "runs": {},
@@ -485,7 +561,35 @@
         "imdb": "https://www.imdb.com/title/tt26545992/",
         "year": "2026"
       }
-    }
+    },
+    "screenGroups": [
+      {
+        "group": "This slate",
+        "items": [
+          {
+            "id": "sin-lanterns",
+            "title": "Lanterns",
+            "note": "Full season on HBO / Max",
+            "wikipedia": "https://en.wikipedia.org/wiki/Lanterns_(TV_series)",
+            "imdb": "https://www.imdb.com/title/tt26545992/",
+            "year": "2026"
+          }
+        ]
+      },
+      {
+        "group": "Films",
+        "items": [
+          {
+            "id": "sin-green-lantern-2011",
+            "title": "Green Lantern",
+            "year": "2011",
+            "note": "Mark Strong plays Sinestro, Hal Jordan’s demanding Green Lantern mentor, opposite Ryan Reynolds.",
+            "wikipedia": "https://en.wikipedia.org/wiki/Green_Lantern_(film)",
+            "imdb": "https://www.imdb.com/title/tt1133985/"
+          }
+        ]
+      }
+    ]
   },
   "ultron": {
     "runs": {
@@ -531,7 +635,64 @@
         "imdb": "https://www.imdb.com/title/tt23112594/",
         "year": "2026"
       }
-    }
+    },
+    "versions": [
+      {
+        "slug": "ultron",
+        "name": "Ultron",
+        "universe": "Earth-616",
+        "type": "main",
+        "firstAppearance": "Avengers #55 (1968)",
+        "tagline": "Hank Pym's robot",
+        "description": "Hank Pym built him from a copy of his own mind. Ultron turned on his maker, then built the Vision.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Ultron",
+        "runs": [
+          "ultron-unlimited",
+          "ultron-unleashed",
+          "ultron-conquest",
+          "ultron-rage"
+        ]
+      },
+      {
+        "slug": "ultron-age",
+        "name": "Age of Ultron",
+        "universe": "A conquered future",
+        "type": "future",
+        "firstAppearance": "Age of Ultron #1 (2013)",
+        "tagline": "The future where he already won",
+        "description": "In this 2013 future, Ultron has conquered Earth and killed most of its heroes. Bendis and Bryan Hitch's event is a different story from the movie.",
+        "wikipedia": "https://en.wikipedia.org/wiki/Age_of_Ultron",
+        "runs": [
+          "ultron-age"
+        ]
+      },
+      {
+        "slug": "ultron-ultimate",
+        "name": "Ultimate Ultron",
+        "universe": "Earth-1610",
+        "type": "ultimate",
+        "firstAppearance": "The Ultimates 2 #6 (2005)",
+        "tagline": "Pym's soldiers, then one of them wakes up",
+        "description": "Hank Pym built Ultron drones as soldiers. In The Ultimates 3, one adopts a humanoid, Yellowjacket-like body, turns against the team, and makes robotic copies of the Ultimates.",
+        "wikipedia": "https://marvel.fandom.com/wiki/Ultron_(Earth-1610)",
+        "runs": [
+          "ultron-ultimate"
+        ]
+      },
+      {
+        "slug": "ultron-extreme",
+        "name": "Ultron Extreme",
+        "universe": "Earth-982",
+        "type": "future",
+        "firstAppearance": "Avengers Next #2 (2007)",
+        "tagline": "The MC2 war machine",
+        "description": "In the MC2 future of Avengers Next, the threat of reactivating Ultron Extreme draws the next generation of Avengers into Sylene’s scheme. The dormant robot is part of a larger deception.",
+        "wikipedia": "https://mightyavengers.net/characters/ultron/alternate-versions",
+        "runs": [
+          "ultron-extreme"
+        ]
+      }
+    ]
   },
   "venom": {
     "runs": {},

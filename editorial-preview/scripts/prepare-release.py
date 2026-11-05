@@ -3,6 +3,7 @@ import argparse
 from html import escape
 from html.parser import HTMLParser
 import json
+import re
 from pathlib import Path
 from shutil import copytree, ignore_patterns
 from urllib.parse import unquote, urlsplit
@@ -64,6 +65,11 @@ def main():
         suffix = route.removesuffix('index.html')
         canonical = escape(args.public_url.rstrip('/') + '/' + suffix, quote=True)
         html = file.read_text(encoding='utf-8')
+        if route not in redesigned:
+            # Retained routes get the same identity-only masthead as redesigned pages.
+            html = re.sub(r'<a class="site-header-portfolio"[^>]*>.*?</a>', '', html, flags=re.S)
+            html = re.sub(r'<div class="guide-bar">.*?</header>', '</header>', html, flags=re.S)
+
         html = html.replace('<meta name="robots" content="noindex">', '')
         html = html.replace('</head>', f'  <link rel="canonical" href="{canonical}">\n</head>', 1)
         file.write_text(html, encoding='utf-8')

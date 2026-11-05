@@ -43,4 +43,8 @@ for slug, guide in result.items():
     guide['runs'] = [overrides.get('runs', {}).get(run['slug'], run) for run in guide['runs']]
     for group in guide['screen']:
         group['items'] = [overrides.get('screen', {}).get(item['id'], item) for item in group['items']]
+    if 'versions' in overrides:
+        guide['versions'] = overrides['versions']
+    if 'screenGroups' in overrides:
+        guide['screen'] = overrides['screenGroups']
 (root / 'src/data/guides.json').write_text(json.dumps(result, indent=2, ensure_ascii=False) + '\n')

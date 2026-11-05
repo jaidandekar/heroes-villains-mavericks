@@ -232,14 +232,98 @@
   },
   "cf-mudpack": {
     "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
-    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779507495?width=900",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_DKD_v4_CVR_5fff94399375a2.75320893.jpg",
     "verifiedAt": "2026-11-05",
-    "cover": "media/cf-mudpack-verified.jpg"
+    "cover": "media/clayface-mudpack-hq.jpg"
   },
   "vis-tom-king": {
     "source": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555",
     "imageSource": "https://images.penguinrandomhouse.com/cover/9781302920555?width=900",
     "verifiedAt": "2026-11-05",
     "cover": "media/vis-tom-king-verified.jpg"
+  },
+  "cf-horror-modern": {
+    "cover": "media/clayface-hush-hq.jpg",
+    "source": "https://www.dc.com/graphic-novels/batman-hush-new-edition",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_HUSH_NE_378_300-001_HD_5d816e07c904a8.52172832.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-clay-clay": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-2011/batman-the-dark-knight-vol-4-clay",
+    "imageSource": "https://static.dc.com/dc/files/default_images/batman_tdk_vol4_clay_5b044dc0d7c0a6.43884336.jpg",
+    "cover": "media/collection-clay-clay.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-clay-deus": {
+    "source": "https://www.dc.com/graphic-novels/detective-comics-2016/batman-detective-comics-vol-4-deus-ex-machina",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BMDTC_v4_145-001_HD_5b7f16285ecaa2.84613889.jpg",
+    "cover": "media/collection-clay-deus.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "clayface-mudpack-hq": {
+    "source": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
+    "imageSource": "https://static.dc.com/dc/files/default_images/BM_DKD_v4_CVR_5fff94399375a2.75320893.jpg",
+    "cover": "media/clayface-mudpack-hq.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-gl-back": {
+    "source": "https://www.dc.com/graphic-novels/green-lantern-2023/green-lantern-vol-1-back-in-action",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779525093",
+    "cover": "media/collection-gl-back.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-gl-far": {
+    "source": "https://www.dc.com/graphic-novels/far-sector-2019/far-sector",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781779512055",
+    "cover": "media/collection-gl-far.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-vis-fear": {
+    "source": "https://www.penguinrandomhouse.com/books/796243/the-vision-and-the-scarlet-witch-fear-the-reaper-by-steve-orlando/9781302964955/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302964955",
+    "cover": "media/collection-vis-fear.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-vis-saga": {
+    "source": "https://www.marvel.com/comics/collection/92066/vision_the_scarlet_witch_the_saga_of_wanda_and_vision_2021",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302928643",
+    "cover": "media/collection-vis-saga.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-sacrifice": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-2-sacrifice",
+    "imageSource": "https://static.dc.com/dc/files/default_images/sinestro_vol2_sacrifice_5b03540b96c3a2.71764590.jpg",
+    "cover": "media/collection-sin-sacrifice.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-rising": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-3-rising",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781401261580",
+    "cover": "media/collection-sin-rising.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-sin-fall": {
+    "source": "https://www.dc.com/graphic-novels/sinestro-2014/sinestro-vol-4-the-fall-of-sinestro",
+    "imageSource": "https://static.dc.com/dc/files/default_images/sinestro_vol4_fallof_5b0307192201c7.96735279.jpg",
+    "cover": "media/collection-sin-fall.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-ultron-forever": {
+    "source": "https://www.marvel.com/comics/issue/51501/read",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9780785197690",
+    "cover": "media/collection-ultron-forever.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-venom-king": {
+    "source": "https://www.penguinrandomhouse.com/books/702971/king-in-black-by-donny-cates/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302925468",
+    "cover": "media/collection-venom-king.jpg",
+    "verifiedAt": "2026-11-05"
+  },
+  "collection-venom-recursion": {
+    "source": "https://www.penguinrandomhouse.com/books/711204/venom-by-al-ewing-and-ram-v-vol1-recursion-by-al-ewing/",
+    "imageSource": "https://images.penguinrandomhouse.com/cover/9781302932558",
+    "cover": "media/collection-venom-recursion.jpg",
+    "verifiedAt": "2026-11-05"
   }
 }

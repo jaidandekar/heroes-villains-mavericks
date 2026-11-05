@@ -13,6 +13,7 @@ import guides from '../data/guides.json';
 import guideHeroArt from '../data/guide-hero-art.json';
 import editorial from '../data/editorial.json';
 import bestsellers from '../data/bestsellers.json';
+import collections from '../data/character-collections.json';
 export function getStaticPaths() {
   validateScreenArt(guides, screenArtwork);
   return Object.values(guides).map(guide => ({params: { guide: guide.id + '-guide' }, props: { guide }}));
@@ -23,7 +24,9 @@ const pitch = edit?.pitch ?? guide.profile.lead;
 const overview = edit?.overview ?? guide.profile.summary.split(/\n\n+/);
 const sources = edit?.sources ?? [{ label: 'Character reference', url: guide.profile.wikipedia }];
 const relatedBestsellers = bestsellers.books.filter(book => book.guides.includes(guide.id));
-const chart = { ...bestsellers, books: relatedBestsellers.length ? relatedBestsellers : bestsellers.books.slice(0, 3), general: !relatedBestsellers.length };
+const chart = relatedBestsellers.length
+  ? { ...bestsellers, books: relatedBestsellers, curated: false }
+  : { books: collections[guide.id] ?? [], curated: true };
 const products = edit?.products ?? [];
 const heroArt = guideHeroArt[guide.id];
 const versions = [...guide.versions, ...(edit?.versions ?? [])];
@@ -97,14 +100,13 @@ const versionSlides = versions.map(version => {
         </BookCard>;
       })}
     </div>
-    {chart && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
-      <h3 id="chart-title">Bestselling graphic novels</h3>
-      <p class="small"><a href={chart.url}>{chart.label} ↗</a></p>
-      {chart.general && <p class="small">No {guide.brand} titles appeared in this chart. Explore these selections from the overall superhero chart.</p>}
+    {chart.books.length > 0 && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
+      <h3 id="chart-title">{chart.curated ? guide.brand + ' collections' : 'Bestselling graphic novels'}</h3>
+      <p class="small">{chart.curated ? 'Character-focused collected editions · Editorial selections, without a verified sales ranking.' : <a href={chart.url}>{chart.label} ↗</a>}</p>
       {chart.books.length ? <ol class="chart-list">{chart.books.map(book => <li value={book.rank}>
         {book.cover && <a class="chart-cover" href={book.url} aria-label={'View ' + book.title}><img src={'../' + book.cover} alt={'Cover of ' + book.title} loading="lazy" /></a>}
         <div class="chart-copy">
-          <p class="eyebrow">#{book.rank} on this chart</p>
+          <p class="eyebrow">{chart.curated ? 'Collection spotlight' : '#' + book.rank + ' on this chart'}</p>
           <h4><a href={book.url}>{book.title}</a></h4>
           {book.creators && <p class="chart-creators">{book.creators}</p>}
           {book.edition && <p class="small chart-edition">{book.edition}</p>}
