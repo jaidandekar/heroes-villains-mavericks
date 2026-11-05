@@ -64,6 +64,66 @@
     },
     "products": [
       {
+        "title": "McFarlane Batman (DC Rebirth) 7-inch Figure",
+        "store": "Amazon",
+        "sku": "B0CV6368FQ",
+        "url": "https://www.amazon.com/dp/B0CV6368FQ",
+        "image": "media/shop-B0CV6368FQ.jpg",
+        "imageSource": "https://images-na.ssl-images-amazon.com/images/P/B0CV6368FQ.01.LZZZZZZZ.jpg",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Action figures"
+      },
+      {
+        "title": "Batman Classic Logo T-Shirt",
+        "store": "Hot Topic",
+        "sku": "32978731",
+        "url": "https://www.hottopic.com/product/batman-classic-logo-t-shirt/32978731.html",
+        "image": "media/shop-32978731.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/32978731_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Apparel"
+      },
+      {
+        "title": "Batman Incorporated Funko Pop!",
+        "store": "Hot Topic",
+        "sku": "35887904",
+        "url": "https://www.hottopic.com/product/funko-pop-heroes-dc-comics-batman-incorporated-batman-vinyl-figure/35887904.html",
+        "image": "media/shop-35887904.jpg",
+        "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwe6aa5f7e/images/funko/upload/1/FINAL_93399PKG_DC_BATMANTHRUTHEYEARS_BATMANINC_POP_PRINTFILE_POP_T7_glam-WEB.png?sh=800&sw=800",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Collectibles"
+      },
+      {
+        "title": "Batman Comic Panels Bifold Wallet",
+        "store": "BoxLunch",
+        "sku": "35561799",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-75-classic-comic-book-panels-collage-bifold-wallet/35561799.html",
+        "image": "media/shop-35561799.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/35561308_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Accessories"
+      },
+      {
+        "title": "Batman Gotham City Noir Glass Set",
+        "store": "Hot Topic",
+        "sku": "36763541",
+        "url": "https://www.hottopic.com/product/dc-comics-batman-gotham-city-noir-glass-set/36763541.html",
+        "image": "media/shop-36763541.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/36763533_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Home goods"
+      },
+      {
+        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
+        "store": "Amazon",
+        "sku": "B0G27VB83P",
+        "url": "https://www.amazon.com/dp/B0G27VB83P",
+        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
+        "label": "Action figures",
+        "image": "media/shop-B0G27VB83P.jpg",
+        "imageCheckedAt": "2026-11-05"
+      },
+      {
         "title": "Batman Beyond Icons T-Shirt",
         "store": "BoxLunch",
         "sku": "32791510",
@@ -74,14 +134,14 @@
         "imageCheckedAt": "2026-11-05"
       },
       {
-        "title": "Mattel DC Premier Series Batman Vs Clayface 2-Pack",
-        "store": "Amazon",
-        "sku": "B0G27VB83P",
-        "url": "https://www.amazon.com/dp/B0G27VB83P",
-        "imageSource": "https://m.media-amazon.com/images/I/71FFYpuJjCL._AC_SL500_.jpg",
-        "label": "Collectible",
-        "image": "media/shop-B0G27VB83P.jpg",
-        "imageCheckedAt": "2026-11-05"
+        "title": "Batman Symbol Multi-Tool Keychain",
+        "store": "BoxLunch",
+        "sku": "33144392",
+        "url": "https://www.boxlunch.com/product/dc-comics-batman-symbol-multi-tool-keychain/33144392.html",
+        "image": "media/shop-33144392.jpg",
+        "imageSource": "https://cdn.media.amplience.net/s/hottopic/33144377_hi",
+        "imageCheckedAt": "2026-11-05",
+        "label": "Accessories"
       }
     ]
   },
