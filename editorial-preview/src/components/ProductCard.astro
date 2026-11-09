@@ -8,7 +8,7 @@ const searchUrl = retailerSearchUrl(item.store, item.searchQuery || item.title);
 const image = item.image.startsWith('media/') ? base + item.image : item.image;
 ---
 <li class="wishlist-item">
-  <a class="wishlist-card-link" href={searchUrl || item.url} aria-labelledby={'product-action-' + id + ' product-title-' + id}>
+  <a class="wishlist-card-link" href={searchUrl || item.url} target="_blank" rel="noopener noreferrer" aria-labelledby={'product-action-' + id + ' product-title-' + id}>
     <div class="wishlist-art"><img src={image} alt="" loading="lazy" /></div>
     <div class="wishlist-copy">
       <p class="eyebrow">{label}</p>

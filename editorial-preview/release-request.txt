@@ -1,5 +1,5 @@
 2026-11-09
-Owner-approved shopping-link update.
-Replace unverified product IDs with title-based Amazon, Hot Topic, and BoxLunch searches.
-Reviewed source revision: ad1dc53
+Owner-approved bestseller/collection shopping-link and new-tab update.
+Use Amazon title searches for collection cards and open guide shopping links in new tabs.
+Reviewed source revision: 56b0eb1
 Preserve original /site/ URL redirects.
