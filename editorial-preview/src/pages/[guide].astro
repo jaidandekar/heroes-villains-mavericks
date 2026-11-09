@@ -1,5 +1,6 @@
 ---
 import { validateScreenArt } from '../lib/validate-screen-art.mjs';
+import { amazonBookSearch } from '../lib/retailer-links.mjs';
 import ProductCard from '../components/ProductCard.astro';
 import wishlistCss from '../components/wishlist.css?raw';
 import screenArtwork from '../data/screen-art.json';
@@ -74,14 +75,13 @@ const versionSlides = versions.map(version => {
     <div class="section-head"><h2>Required reading</h2><p>{reading.length} {reading.length === 1 ? 'story' : 'stories'} from the guide</p></div>
     <div class="shelf-stories">
       {reading.map((run, index) => {
-        const editions = run.amazon?.filter(edition => /^[A-Z0-9]{10}$/.test(edition.asin)) ?? [];
-        const primary = editions[0];
+        const editions = run.amazon ?? [];
         return <BookCard id={'run/' + run.slug} cover={run.cover} alt={'Cover for ' + run.title} base="../"
-          href={primary ? 'https://www.amazon.com/dp/' + primary.asin : edit?.reading?.[run.slug]?.url} external={!!primary}>
+          href={amazonBookSearch(run.title, run.creators)} external>
           <p class="eyebrow">{String(index + 1).padStart(2, '0')} / {run.years}</p>
           <h3>{run.title}</h3>
           <p class="shelf-dek">{run.creators}</p>
-          {primary ? <span class="shelf-buy">View {primary.format || 'edition'} on Amazon ↗</span> : edit?.reading?.[run.slug]?.url && <span class="shelf-buy">View publisher edition ↗</span>}
+          <span class="shelf-buy">Find on Amazon ↗</span>
           <Fragment slot="details">
             <p>{edit?.reading?.[run.slug]?.note ?? run.summary}</p>
             {run.collects && <p class="small"><strong>Collects</strong>{' '}{run.collects}</p>}
@@ -93,7 +93,7 @@ const versionSlides = versions.map(version => {
               </details>
             )}
             {editions.slice(1).map(edition => (
-              <p class="small"><a href={'https://www.amazon.com/dp/' + edition.asin} rel="sponsored">View {edition.format || 'edition'} on Amazon ↗</a></p>
+              <p class="small"><a href={amazonBookSearch(run.title + ' ' + (edition.format || ''), run.creators)} rel="sponsored">Find {edition.format || 'edition'} on Amazon ↗</a></p>
             ))}
             {edit?.reading?.[run.slug] && <p class="small"><a href={edit.reading[run.slug].url}>Publisher reference ↗</a></p>}
           </Fragment>

@@ -67,6 +67,10 @@ def main():
         canonical = escape(args.public_url.rstrip('/') + '/' + suffix, quote=True)
         html = file.read_text(encoding='utf-8')
         if route not in redesigned:
+            # Legacy editions contain unverified IDs; resolve shopping by title instead.
+            html = html.replace('amazonUrl(p.asin)', 'amazonSearchUrl(run.title)')
+            html = html.replace(" + '&tag=' + AFFILIATE_TAG", '')
+            html = html.replace('<span class="product-cta">Buy →</span>', '<span class="product-cta">Find on Amazon ↗</span>')
             # Retained routes get the same identity-only masthead as redesigned pages.
             html = re.sub(r'<a class="site-header-portfolio"[^>]*>.*?</a>', '', html, flags=re.S)
             html = re.sub(r'<div class="guide-bar">.*?</header>', '</header>', html, flags=re.S)

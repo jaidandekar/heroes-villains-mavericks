@@ -1,4 +1,5 @@
-2026-11-05
-Owner-approved launch of the redesigned homepage and ten character guides.
-Reviewed site revision: 51ab0dc
-Compatibility update: preserve all 34 original /site/ URLs and their section links.
+2026-11-09
+Owner-approved shopping-link update.
+Replace unverified product IDs with title-based Amazon, Hot Topic, and BoxLunch searches.
+Reviewed source revision: ad1dc53
+Preserve original /site/ URL redirects.
