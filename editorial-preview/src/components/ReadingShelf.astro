@@ -1,38 +1,15 @@
 ---
-import { amazonBookSearch } from '../lib/retailer-links.mjs';
-import BookCard from './BookCard.astro';
+import RequiredReadingCards from './RequiredReadingCards.astro';
 import css from './reading-shelf.css?raw';
+const books = [
+  { slug: 'shelf-last-ronin', title: 'Teenage Mutant Ninja Turtles: The Last Ronin', creators: 'Kevin Eastman, Peter Laird, and Tom Waltz', cover: 'media/shelf-last-ronin.jpg' },
+  { slug: 'shelf-sinestro', title: 'Green Lantern Vol. 1: Sinestro', creators: 'Geoff Johns and Doug Mahnke', cover: 'media/shelf-sinestro.jpg' },
+  { slug: 'shelf-batman-spawn', title: 'Batman/Spawn: The Classic Collection', creators: 'Doug Moench, Frank Miller, Todd McFarlane, and others', cover: 'media/shelf-batman-spawn.jpg' },
+  { slug: 'shelf-court-of-owls', title: 'Batman Vol. 1: The Court of Owls', creators: 'Scott Snyder and Greg Capullo', cover: 'media/shelf-court-of-owls.jpg' },
+];
 ---
-    <section class="wrap section" id="shelf">
-      <h2 class="shelf-col-title">What’s on my bookshelf</h2>
-        <div class="shelf-stories">
-          <BookCard href={amazonBookSearch('Teenage Mutant Ninja Turtles: The Last Ronin', 'Kevin Eastman')} cover="media/shelf-last-ronin.jpg" external>
-
-                <h3>Teenage Mutant Ninja Turtles: The Last Ronin</h3>
-                <p class="shelf-dek">Kevin Eastman, Peter Laird, and Tom Waltz</p>
-
-                <span class="shelf-buy">Find on Amazon ↗</span>
-              </BookCard>
-          <BookCard href={amazonBookSearch('Green Lantern Vol. 1: Sinestro', 'Geoff Johns')} cover="media/shelf-sinestro.jpg" external>
-
-                <h3>Green Lantern Vol. 1: Sinestro</h3>
-                <p class="shelf-dek">Geoff Johns and Doug Mahnke</p>
-
-                <span class="shelf-buy">Find on Amazon ↗</span>
-              </BookCard>
-          <BookCard href={amazonBookSearch('Batman/Spawn: The Classic Collection', 'Doug Moench')} cover="media/shelf-batman-spawn.jpg" external>
-
-                <h3>Batman/Spawn: The Classic Collection</h3>
-                <p class="shelf-dek">Doug Moench, Frank Miller, Todd McFarlane, and others</p>
-
-                <span class="shelf-buy">Find on Amazon ↗</span>
-              </BookCard>
-          <BookCard href={amazonBookSearch('Batman Vol. 1: The Court of Owls', 'Scott Snyder')} cover="media/shelf-court-of-owls.jpg" external>
-                <h3>Batman Vol. 1: The Court of Owls</h3>
-                <p class="shelf-dek">Scott Snyder and Greg Capullo</p>
-                <span class="shelf-buy">Find on Amazon ↗</span>
-              </BookCard>
-        </div>
-    </section>
-
+<section class="wrap section" id="shelf" aria-labelledby="bookshelf-title">
+  <h2 class="shelf-col-title" id="bookshelf-title">What’s on my bookshelf</h2>
+  <RequiredReadingCards runs={books} base="./" />
+</section>
 <style is:inline set:html={css}></style>

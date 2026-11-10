@@ -12,7 +12,7 @@ const poses = [[38,-8,-16], [29,12,13], [46,-12,-10], [24,17,9], [33,-14,-14], [
         <h3 id={'artifact-title-' + run.slug}>{run.title}</h3>
         <p class="artifact-creators">{run.creators}</p>
         <span class="artifact-action" id={'artifact-action-' + run.slug}>Find on Amazon <span aria-hidden="true">↗</span></span>
-        <p class="artifact-description">{notes[run.slug]?.note ?? run.summary}</p>
+        {(notes[run.slug]?.note ?? run.summary) && <p class="artifact-description">{notes[run.slug]?.note ?? run.summary}</p>}
       </div>
     </a>
   </article>)}</div>
