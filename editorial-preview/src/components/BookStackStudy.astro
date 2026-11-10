@@ -1,0 +1,175 @@
+---
+import css from './book-stack-study.css?raw';
+import carouselCss from './feature-carousel.css?raw';
+const { runs, base = '../' } = Astro.props;
+const poses = [[38,-8,-16], [29,12,13], [46,-12,-10], [24,17,9], [33,-14,-14], [42,9,15], [27,-18,-8], [36,14,12]];
+const groups = runs.map((run, index) => ({
+  run,
+  pose: poses[index % poses.length],
+  color: ['#203c51', '#623333', '#37513b'][index % 3],
+}));
+---
+<section class="wrap section book-stack-study" id="book-stack-study" aria-labelledby="book-stack-title" aria-roledescription="carousel">
+  <div class="section-head"><div><p class="eyebrow">A different view</p><h2 id="book-stack-title">On the reading shelf</h2></div><p>One story at a time.</p></div>
+  <div class="pile-rail" id="reading-pile-slides" tabindex="0" aria-label="Physical book previews. Use left and right arrow keys to browse.">
+    {groups.map((group, slideIndex) => <article class="pile-card" style={'--pile-color: ' + group.color + '; --pose-x: ' + group.pose[0] + 'deg; --pose-y: ' + group.pose[1] + 'deg; --pose-z: ' + group.pose[2] + 'deg'} aria-roledescription="slide" aria-label={(slideIndex + 1) + ' of ' + groups.length + ': ' + group.run.title}>
+      <a class="pile-display" href={'#run/' + group.run.slug} aria-label={'Explore ' + group.run.title + ' in Required Reading'}>
+        <span class="pile-scene" aria-hidden="true">
+          <span class="pile-shadow"></span>
+          <span class="pile-object">
+            <span class="pile-book pile-book-top" style={'--depth: ' + (group.run.title.includes('#') ? 4 : 17) + 'px'}>
+              <span class="pile-book-back"></span><span class="pile-book-pages pile-book-bottom"></span><span class="pile-book-pages pile-book-right"></span><span class="pile-book-spine"></span>
+              <img class="pile-book-cover" src={base + group.run.cover} alt="" loading={slideIndex === 0 ? 'eager' : 'lazy'} />
+            </span>
+          </span>
+        </span>
+      </a>
+      <div class="pile-copy">
+        <p class="eyebrow">{String(slideIndex + 1).padStart(2, '0')} / {group.run.years}</p>
+        <h3>{group.run.title}</h3>
+        <p class="pile-creators">{group.run.creators}</p>
+        <p>{group.run.summary}</p>
+        <p class="small"><strong>Collects</strong>{' '}{group.run.collects}</p>
+        <a class="pile-action" href={'#run/' + group.run.slug}>Explore this read <span aria-hidden="true">↓</span></a>
+      </div>
+    </article>)}
+  </div>
+  <div class="screen-controls" aria-label="Choose a book">
+    <button type="button" data-pile-step="-1" aria-label="Previous book" aria-controls="reading-pile-slides">‹</button>
+    <div class="screen-picks">{groups.map((group, index) => <button type="button" data-pile-pick={index} aria-controls="reading-pile-slides" aria-current={index === 0 ? 'true' : undefined} aria-label={group.run.title}></button>)}</div>
+    <button type="button" data-pile-step="1" aria-label="Next book" aria-controls="reading-pile-slides">›</button>
+  </div>
+  <p class="screen-count" aria-live="polite" aria-atomic="true">1 of {groups.length}</p>
+  <script is:inline>
+    (() => {
+      const root = document.currentScript.closest('.book-stack-study');
+      const rail = root.querySelector('.pile-rail');
+      const cards = [...rail.children];
+      const picks = [...root.querySelectorAll('[data-pile-pick]')];
+      const counter = root.querySelector('.screen-count');
+      const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+      let active = 0, requested = null, sequence = 0, programmatic = false;
+      let animations = [];
+      const start = index => cards[index].offsetLeft - cards[0].offsetLeft;
+      const normalize = index => (index + cards.length) % cards.length;
+      function stopMotion() {
+        sequence++;
+        animations.forEach(animation => animation.cancel());
+        animations = [];
+        programmatic = false;
+      }
+      function select(index) {
+        picks[active].removeAttribute('aria-current');
+        picks[index].setAttribute('aria-current', 'true');
+        counter.textContent = (index + 1) + ' of ' + cards.length;
+        cards.forEach((card, i) => {
+          card.inert = i !== index;
+          card.setAttribute('aria-hidden', String(i !== index));
+        });
+        active = index;
+      }
+      function animate(element, frames, options) {
+        const animation = element.animate(frames, options);
+        animations.push(animation);
+        return animation;
+      }
+      function enter(card, direction, swipe = false) {
+        const incoming = [];
+        if (!swipe) incoming.push(animate(card.querySelector('.pile-scene'), [
+          { transform: `translateX(${direction * 115}%) rotate(${direction * 5}deg)`, opacity: 0 },
+          { transform: 'translateX(0) rotate(0deg)', opacity: 1 }
+        ], {duration: 520, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'both'}));
+        [...card.querySelector('.pile-copy').children].forEach((element, index) => {
+          incoming.push(animate(element, [
+            {transform: `translateX(${direction * 22}px) translateY(8px)`, opacity: 0},
+            {transform: 'translateX(0) translateY(0)', opacity: 1}
+          ], {duration: 340, delay: (swipe ? 0 : 110) + index * 35, easing: 'cubic-bezier(.22,1,.36,1)', fill: 'both'}));
+        });
+        return incoming;
+      }
+      async function show(index, direction = index >= (requested ?? active) ? 1 : -1) {
+        const target = normalize(index);
+        stopMotion();
+        requested = target;
+        const token = sequence;
+        programmatic = true;
+        if (reduced.matches || target === active) {
+          select(target);
+          rail.scrollTo({left: start(target), behavior: 'instant'});
+          programmatic = false;
+          requested = null;
+          return;
+        }
+        const outgoing = cards[active];
+        const exit = [
+          animate(outgoing.querySelector('.pile-scene'), [
+            {transform: 'translateX(0) rotate(0deg)', opacity: 1},
+            {transform: `translateX(${-direction * 115}%) rotate(${-direction * 7}deg)`, opacity: 0}
+          ], {duration: 260, easing: 'cubic-bezier(.55,0,1,.45)', fill: 'both'}),
+          animate(outgoing.querySelector('.pile-copy'), [
+            {transform: 'translateY(0)', opacity: 1},
+            {transform: 'translateY(-10px)', opacity: 0}
+          ], {duration: 160, fill: 'both'})
+        ];
+        await Promise.allSettled(exit.map(animation => animation.finished));
+        if (token !== sequence) return;
+        select(target);
+        rail.scrollTo({left: start(target), behavior: 'instant'});
+        const incoming = enter(cards[target], direction);
+        await Promise.allSettled(incoming.map(animation => animation.finished));
+        if (token !== sequence) return;
+        animations.forEach(animation => animation.cancel());
+        animations = [];
+        programmatic = false;
+        requested = null;
+      }
+      select(0);
+      rail.addEventListener('scroll', () => {
+        if (programmatic) return;
+        const index = cards.reduce((best, card, i) => Math.abs(start(i) - rail.scrollLeft) < Math.abs(start(best) - rail.scrollLeft) ? i : best, 0);
+        if (index === active) return;
+        const direction = index > active ? 1 : -1;
+        stopMotion();
+        requested = null;
+        select(index);
+        if (!reduced.matches) {
+          const token = sequence;
+          const incoming = enter(cards[index], direction, true);
+          Promise.allSettled(incoming.map(animation => animation.finished)).then(() => {
+            if (token !== sequence) return;
+            animations.forEach(animation => animation.cancel());
+            animations = [];
+          });
+        }
+      }, {passive: true});
+      rail.addEventListener('pointerdown', () => { stopMotion(); requested = null; });
+      picks.forEach((pick, index) => pick.addEventListener('click', () => show(index)));
+      root.querySelectorAll('[data-pile-step]').forEach(button => button.addEventListener('click', () => {
+        const direction = Number(button.dataset.pileStep);
+        show((requested ?? active) + direction, direction);
+      }));
+      rail.addEventListener('keydown', event => {
+        if (event.target !== rail || !['ArrowLeft','ArrowRight','Home','End'].includes(event.key)) return;
+        event.preventDefault();
+        const index = event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : (requested ?? active) + (event.key === 'ArrowRight' ? 1 : -1);
+        show(index, event.key === 'ArrowLeft' || event.key === 'Home' ? -1 : 1);
+      });
+      let width = rail.clientWidth;
+      function settle() {
+        const target = requested ?? active;
+        stopMotion();
+        requested = null;
+        select(target);
+        rail.scrollTo({left: start(target), behavior: 'instant'});
+      }
+      reduced.addEventListener('change', settle);
+      new ResizeObserver(() => {
+        if (rail.clientWidth === width) return;
+        width = rail.clientWidth;
+        settle();
+      }).observe(rail);
+    })();
+  </script>
+</section>
+<style is:inline set:html={carouselCss}></style>
+<style is:inline set:html={css}></style>

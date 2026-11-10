@@ -4,7 +4,7 @@ import { amazonBookSearch } from '../lib/retailer-links.mjs';
 import ProductCard from '../components/ProductCard.astro';
 import wishlistCss from '../components/wishlist.css?raw';
 import screenArtwork from '../data/screen-art.json';
-import BookCard from '../components/BookCard.astro';
+import RequiredReadingCards from '../components/RequiredReadingCards.astro';
 import shelfCss from '../components/reading-shelf.css?raw';
 import FeatureCarousel from '../components/FeatureCarousel.astro';
 import versionArtwork from '../data/version-carousel-art.json';
@@ -73,33 +73,7 @@ const versionSlides = versions.map(version => {
   <FeatureCarousel id="verses" title={guide.verses_h2} entries={versionSlides} base="../" variant="versions" />
   <section class="wrap section" id="graphic-novels">
     <div class="section-head"><h2>Required reading</h2><p>{reading.length} {reading.length === 1 ? 'story' : 'stories'} from the guide</p></div>
-    <div class="shelf-stories">
-      {reading.map((run, index) => {
-        const editions = run.amazon ?? [];
-        return <BookCard id={'run/' + run.slug} cover={run.cover} alt={'Cover for ' + run.title} base="../"
-          href={amazonBookSearch(run.title, run.creators)} external>
-          <p class="eyebrow">{String(index + 1).padStart(2, '0')} / {run.years}</p>
-          <h3>{run.title}</h3>
-          <p class="shelf-dek">{run.creators}</p>
-          <span class="shelf-buy">Find on Amazon ↗</span>
-          <Fragment slot="details">
-            <p>{edit?.reading?.[run.slug]?.note ?? run.summary}</p>
-            {run.collects && <p class="small"><strong>Collects</strong>{' '}{run.collects}</p>}
-            {run.prerequisites && <p class="small"><strong>Before you read</strong>{' '}{run.prerequisites}</p>}
-            {(run.readingOrder?.length > 1) && (
-              <details class="small">
-                <summary>Reading order</summary>
-                <ol>{run.readingOrder.map(issue => <li>{issue}</li>)}</ol>
-              </details>
-            )}
-            {editions.slice(1).map(edition => (
-              <p class="small"><a href={amazonBookSearch(run.title + ' ' + (edition.format || ''), run.creators)} target="_blank" rel="noopener noreferrer sponsored">Find {edition.format || 'edition'} on Amazon ↗</a></p>
-            ))}
-            {edit?.reading?.[run.slug] && <p class="small"><a href={edit.reading[run.slug].url} target="_blank" rel="noopener noreferrer">Publisher reference ↗</a></p>}
-          </Fragment>
-        </BookCard>;
-      })}
-    </div>
+    <RequiredReadingCards runs={reading} notes={edit?.reading ?? {}} />
     {chart.books.length > 0 && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
       <h3 id="chart-title">{chart.curated ? guide.brand + ' collections' : 'Bestselling graphic novels'}</h3>
       <p class="small">{chart.curated ? 'Character-focused collected editions · Editorial selections, without a verified sales ranking.' : <a href={chart.url} target="_blank" rel="noopener noreferrer">{chart.label} ↗</a>}</p>

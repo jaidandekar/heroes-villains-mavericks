@@ -1,0 +1,25 @@
+.physical-book { position: relative; display: block; width: 100%; aspect-ratio: 1 / 1.15; perspective: 1000px; overflow: hidden; background: radial-gradient(ellipse at 50% 65%, #dce3e6, #f0eee8 76%); }
+.physical-book-shadow { position: absolute; left: 15%; right: 12%; top: 75%; height: 9%; border-radius: 50%; background: #16263338; filter: blur(10px); transform: rotate(var(--book-z)); }
+.physical-book-object { position: absolute; width: 62%; aspect-ratio: 2 / 3; left: 50%; top: 48%; transform-style: preserve-3d; transform: translate(-50%, -50%) rotateX(var(--book-x)) rotateY(var(--book-y)) rotateZ(var(--book-z)); }
+.physical-book-lift { position: absolute; inset: 0; display: block; transform-style: preserve-3d; }
+.physical-book-back, .physical-book-cover { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border-radius: 2px 3px 3px 2px; }
+.physical-book-back { background: var(--book-color); box-shadow: 5px 10px 15px #0003; }
+.physical-book-cover { object-fit: fill; transform: translateZ(var(--book-depth)); outline: 1px solid #0002; transform-origin: left center; transition: transform .65s cubic-bezier(.2,.7,.25,1), filter .65s; backface-visibility: hidden; }
+.physical-book-pages { position: absolute; display: block; }
+.physical-book-bottom { top: 100%; left: 1px; width: calc(100% - 2px); height: var(--book-depth); transform-origin: top; transform: rotateX(90deg); background: repeating-linear-gradient(0deg,#f4edda 0,#f4edda 1px,#c8c3b5 1px,#e5dfcf 2px); border-bottom: 2px solid var(--book-color); }
+.physical-book-right { left: 100%; top: 1px; width: var(--book-depth); height: calc(100% - 2px); transform-origin: left; transform: rotateY(-90deg); background: repeating-linear-gradient(90deg,#eee8d6 0,#eee8d6 1px,#c8c3b5 1px,#e5dfcf 2px); }
+.physical-book-spine { position: absolute; left: 0; top: 0; width: var(--book-depth); height: 100%; transform-origin: left; transform: rotateY(-90deg); background: linear-gradient(90deg,#0005,transparent 30%,#ffffff18 65%,#0003),var(--book-color); }
+
+.physical-book-endpaper { position: absolute; inset: 1px; display: block; border-radius: 2px; transform: translateZ(calc(var(--book-depth) - 1px)); background: linear-gradient(90deg,#a49a85 0%,#e6decb 6%,#f8f1df 18%,#f2ead7 95%,#d5cbb6); box-shadow: inset 0 0 0 1px #0001; }
+.physical-book-under { position: absolute; display: block; inset: 0; transform-style: preserve-3d; transform: translate(var(--under-x),var(--under-y)) translateZ(calc(var(--under-level) * -11px)) rotateZ(var(--under-z)); }
+.physical-book-under img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; border-radius: 2px; transform: translateZ(7px); outline: 1px solid #0003; box-shadow: 1px 2px 3px #0003; }
+.physical-book-under-pages { position: absolute; inset: 0; display: block; background: #313940; border-radius: 2px; box-shadow: 2px 3px 5px #14233055; }
+.physical-book-under-pages::before { content: ''; position: absolute; top: 100%; left: 1px; width: calc(100% - 2px); height: 7px; transform-origin: top; transform: rotateX(90deg); background: repeating-linear-gradient(0deg,#ece6d7 0px,#ece6d7 1px,#bfb8a8 1px,#d8d0bf 2px); border-bottom: 1px solid #26313a; }
+.physical-book-under-pages::after { content: ''; position: absolute; left: 100%; top: 1px; width: 7px; height: calc(100% - 2px); transform-origin: left; transform: rotateY(-90deg); background: repeating-linear-gradient(90deg,#eee8d8 0px,#eee8d8 1px,#bfb8a8 1px,#d8d0bf 2px); }
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+ .artifact-card-link:hover .physical-book-cover { transform: translateZ(var(--book-depth)) rotateY(-16deg); filter: brightness(1.04); }
+}
+@media (prefers-reduced-motion: no-preference) {
+ .artifact-card-link:focus-visible .physical-book-cover { transform: translateZ(var(--book-depth)) rotateY(-16deg); }
+}
+@media (prefers-reduced-motion: reduce) { .physical-book-cover { transition: none; } }

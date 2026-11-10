@@ -1,0 +1,21 @@
+---
+import css from './physical-book.css?raw';
+const { cover, base = '../', pose = [35, -8, -12], color = '#203c51', depth = 14, stack = [], variant = 0, includeStyles = true } = Astro.props;
+---
+<span class="physical-book" aria-hidden="true" style={'--book-x: ' + pose[0] + 'deg; --book-y: ' + pose[1] + 'deg; --book-z: ' + pose[2] + 'deg; --book-color: ' + color + '; --book-depth: min(' + (depth / 8) + 'vw, ' + depth + 'px)'}>
+  <span class="physical-book-shadow"></span>
+  <span class="physical-book-object">
+  {stack.map((item, index) => <span class="physical-book-under" style={'--under-z: ' + ([5,-7,9,-4,6,-9,4,-6][(variant + index * 3) % 8]) + 'deg; --under-x: ' + ((variant % 3 - 1) * 2 + (index ? -2 : 2)) + '%; --under-y: ' + (index ? 4 : 2) + '%; --under-level: ' + (index + 1)}>
+    <span class="physical-book-under-pages"></span>
+    <img src={base + item.cover} alt="" loading="lazy" />
+  </span>)}
+  <span class="physical-book-lift">
+    <span class="physical-book-back"></span>
+    <span class="physical-book-pages physical-book-bottom"></span>
+    <span class="physical-book-pages physical-book-right"></span>
+    <span class="physical-book-spine"></span>
+    <span class="physical-book-endpaper"></span>
+    <img class="physical-book-cover" src={base + cover} alt="" loading="lazy" />
+  </span></span>
+</span>
+{includeStyles && <style is:inline set:html={css}></style>}

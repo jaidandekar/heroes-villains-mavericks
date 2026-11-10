@@ -1,0 +1,33 @@
+.book-stack-study { --pile-blue: #7db6e8; }
+.pile-rail { position: relative; display: grid; grid-auto-flow: column; grid-auto-columns: 100%; overflow-x: auto; overscroll-behavior-inline: contain; scroll-snap-type: x mandatory; scrollbar-width: none; border: 1px solid var(--rule); border-radius: .85rem; }
+.pile-rail::-webkit-scrollbar { display: none; }
+.pile-card { min-width: 0; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); scroll-snap-align: start; scroll-snap-stop: always; background: rgba(255,255,255,.35); }
+.pile-display { position: relative; display: block; text-decoration: none; background: radial-gradient(ellipse at 50% 60%, #d9e1e6, #f0eee7 72%); color: var(--ink); }
+.pile-scene { position: relative; display: block; height: 370px; perspective: 1000px; }
+.pile-shadow { position: absolute; left: 15%; right: 12%; top: 70%; height: 12%; border-radius: 50%; background: #16263340; filter: blur(14px); transform: rotate(-20deg); }
+.pile-object { position: absolute; width: 178px; height: 267px; left: calc(50% - 89px); top: 58px; transform-style: preserve-3d; transform: translate(-50%, -50%) rotateX(var(--pose-x)) rotateY(var(--pose-y)) rotateZ(var(--pose-z)); }
+.pile-book { position: absolute; inset: 0; display: block; transform-style: preserve-3d; transform: translate3d(0, 0, 0); transition: transform .55s cubic-bezier(.22,1.5,.4,1); }
+.pile-book-cover, .pile-book-back { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 2px 4px 4px 2px; }
+.pile-book-back { background: var(--pile-color); box-shadow: 5px 10px 15px #0003; }
+.pile-book-cover { display: block; object-fit: fill; transform: translateZ(var(--depth)); box-shadow: inset 3px 0 4px #0004; outline: 1px solid #0003; }
+.pile-book-pages { position: absolute; display: block; background: repeating-linear-gradient(0deg, #f4edda 0, #f4edda 1px, #c8c3b5 1px, #e5dfcf 2px); }
+.pile-book-bottom { top: 100%; left: 2px; width: calc(100% - 3px); height: var(--depth); transform-origin: top; transform: rotateX(90deg); border-bottom: 2px solid var(--pile-color); }
+.pile-book-right { left: 100%; top: 2px; height: calc(100% - 3px); width: var(--depth); transform-origin: left; transform: rotateY(-90deg); background: repeating-linear-gradient(90deg, #eee8d6 0, #eee8d6 1px, #c8c3b5 1px, #e5dfcf 2px); }
+.pile-book-spine { position: absolute; left: 0; top: 0; width: var(--depth); height: 100%; transform-origin: left; transform: rotateY(-90deg); background: linear-gradient(90deg, #0005, transparent 30%, #ffffff18 65%, #0003), var(--pile-color); }
+.pile-display:hover .pile-book-top, .pile-display:focus-visible .pile-book-top { transform: translate3d(0, -8px, 12px); }
+.pile-copy { align-self: center; padding: clamp(1.4rem, 4vw, 3.5rem); }
+.pile-copy h3 { font-size: clamp(1.6rem, 2.8vw, 2.5rem); letter-spacing: -.035em; margin-top: .65rem; }
+.pile-copy > p:not(.eyebrow) { margin-top: .85rem; color: var(--muted); }
+.pile-copy .pile-creators { color: var(--ink); font-weight: 650; }
+.pile-action { display: inline-flex; gap: 1.5rem; margin-top: 1.35rem; padding: .7rem 1rem; border: 1px solid var(--ink); border-radius: .45rem; text-decoration: none; font-size: .85rem; font-weight: 750; transition: background-color .2s; }
+.pile-action:hover, .pile-action:focus-visible { background: var(--pile-blue); border-color: var(--pile-blue); color: #17202b; }
+.pile-scene { --scene-height: 480px; height: var(--scene-height); }
+/* Size against both artwork dimensions, leaving room for the rotated corners. */
+.pile-object { width: min(64%, calc(var(--scene-height) * .58)); height: auto; aspect-ratio: 2 / 3; left: 50%; top: 50%; }
+@media (min-width: 90rem) { .pile-scene { --scene-height: 530px; } }
+@media (max-width: 65rem) { .pile-card { grid-template-columns: 1fr 1fr; } .pile-scene { --scene-height: 420px; } }
+@media (max-width: 40rem) { .pile-card { grid-template-columns: 1fr; } .pile-scene { --scene-height: 370px; } .pile-copy { padding: 1.35rem; } .pile-copy h3 { font-size: 1.6rem; } }
+@media (prefers-reduced-motion: reduce) { .pile-book, .pile-action { transition: none; } .pile-display:hover .pile-book-top, .pile-display:focus-visible .pile-book-top { transform: translate3d(0, 0, 0); } }
+
+/* Keep book entrances and exits inside their own artwork frame. */
+.book-stack-study .pile-display { overflow: hidden; }
