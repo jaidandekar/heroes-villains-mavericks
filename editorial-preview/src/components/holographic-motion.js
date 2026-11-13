@@ -4,7 +4,8 @@
   const status = control?.querySelector('[role="status"]');
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const coarse = matchMedia('(any-pointer: coarse)');
-  if (!control || !window.isSecureContext || !window.DeviceOrientationEvent) return;
+  if (!control) return;
+  const smallScreen = matchMedia('(max-width: 63.99rem)');
   const cards = [...document.querySelectorAll('[data-holo]')];
   const visible = new Set();
   const observer = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -13,6 +14,7 @@
   }));
   cards.forEach(card => observer.observe(card));
   let enabled = false, baseline = null, frame = 0, timer = 0, point = null;
+  let permitted = false;
   function reset(card) {
     card.removeAttribute('data-device-tilt');
     ['--holo-rx','--holo-ry','--foil-x','--foil-y'].forEach(key => card.style.removeProperty(key));
@@ -23,7 +25,7 @@
     cancelAnimationFrame(frame); frame = 0; clearTimeout(timer);
     cards.forEach(reset);
     button.textContent = 'Enable tilt'; button.setAttribute('aria-pressed','false');
-    status.textContent = message;
+    status.textContent = message || 'Enable tilt to make the foil respond as you move your phone.';
   }
   function orient(event) {
     if (!enabled || document.hidden || reduced.matches || !Number.isFinite(event.beta) || !Number.isFinite(event.gamma)) return;
@@ -48,19 +50,31 @@
     });
   }
   function availability() {
-    if (reduced.matches || !coarse.matches) stop();
-    control.hidden = reduced.matches || !coarse.matches;
+    const phone = coarse.matches || smallScreen.matches;
+    control.hidden = !phone;
+    button.disabled = false;
+    if (!phone) { stop(); return; }
+    if (reduced.matches) {
+      stop('Tilt is off because Reduce Motion is enabled on your device.');
+      button.disabled = true;
+    } else if (!window.isSecureContext || !window.DeviceOrientationEvent) {
+      stop('Motion access is unavailable in this browser; try opening this page in Safari.');
+      button.disabled = true;
+    } else if (!enabled) {
+      status.textContent = 'Enable tilt to make the foil respond as you move your phone.';
+    }
   }
   button.addEventListener('click', async () => {
     if (enabled) { stop(); return; }
     button.disabled = true;
     try {
       const api = window.DeviceOrientationEvent;
-      if (typeof api.requestPermission === 'function' && await api.requestPermission() !== 'granted') {
+      if (!permitted && typeof api.requestPermission === 'function' && await api.requestPermission() !== 'granted') {
         status.textContent = 'Motion access was not enabled. The foil still works without it.';
         return;
       }
       if (reduced.matches || document.hidden) return;
+      permitted = true;
       enabled = true; baseline = null;
       button.textContent = 'Disable tilt'; button.setAttribute('aria-pressed','true');
       status.textContent = 'Tilt your device to move the foil.';
@@ -70,10 +84,15 @@
       stop('Motion access is unavailable. The foil still works without it.');
     } finally { button.disabled = false; }
   });
-  document.addEventListener('visibilitychange',() => { if (document.hidden) stop(); });
+  document.addEventListener('visibilitychange',() => {
+    if (!enabled) return;
+    baseline = null; cards.forEach(reset);
+    if (document.hidden) { cancelAnimationFrame(frame); frame = 0; clearTimeout(timer); }
+  });
   window.addEventListener('orientationchange',() => { baseline = null; cards.forEach(reset); });
-  screen.orientation?.addEventListener('change',() => { baseline = null; cards.forEach(reset); });
+  screen.orientation?.addEventListener?.('change',() => { baseline = null; cards.forEach(reset); });
   reduced.addEventListener('change',availability);
   coarse.addEventListener('change',availability);
+  smallScreen.addEventListener('change',availability);
   availability();
 })();

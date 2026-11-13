@@ -17,7 +17,7 @@ const { cover, base = '../', pose = [35, -8, -12], color = '#203c51', depth = 14
     {format && <span class="physical-book-staples"></span>}
     <span class="physical-book-endpaper"><span class="physical-book-comic-page">{Array.from({ length: 6 }, () => <span class="physical-book-comic-panel"></span>)}</span></span>
     <img class="physical-book-cover" src={base + cover} alt="" loading="lazy" />
-    {format === 'comic' && <span class="physical-book-flex-cover">{Array.from({length: 24}, (_,index) => <span class="physical-book-cover-strip" style={'--strip: ' + index + '; --bend: ' + ((index / 23) ** 1.5).toFixed(4) + '; --curl-x: ' + ((Math.sin(.55 * index / 24) / .55 - index / 24) * 2400).toFixed(4) + '%; --curl-z: ' + ((1 - Math.cos(.55 * index / 24)) / .55).toFixed(5) + '; --curl-angle: ' + (-.55 * index / 24 * 180 / Math.PI).toFixed(3) + 'deg; background-image: url("' + base + cover + '")'}></span>)}</span>}
+    {format === 'comic' && <span class="physical-book-flex-cover">{Array.from({length: 24}, (_,index) => <span class="physical-book-cover-strip" style={'--strip: ' + index + '; --bend: ' + ((index / 23) ** 1.5).toFixed(4) + '; --curl-offset: ' + (Math.sin(.55 * index / 24) / .55 - index / 24).toFixed(7) + '; --curl-z: ' + ((1 - Math.cos(.55 * index / 24)) / .55).toFixed(5) + '; --curl-angle: ' + (-.55 * index / 24 * 180 / Math.PI).toFixed(3) + 'deg; background-image: url("' + base + cover + '")'}></span>)}</span>}
     {format && <span class="physical-book-cover-finish"></span>}
   </span></span>
 </span>

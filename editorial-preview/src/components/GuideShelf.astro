@@ -22,9 +22,9 @@ const picks = lineup.map(entry => {
     <h2 id="guides-title">Get to know them</h2>
     <p>Character guides and where to start reading</p>
   </div>
-  <div class="holo-tilt-control" data-tilt-control hidden>
+  <div class="holo-tilt-control" data-tilt-control>
     <button type="button" aria-pressed="false">Enable tilt</button>
-    <span role="status"></span>
+    <span role="status">Enable tilt to make the foil respond as you move your phone.</span>
   </div>
   <div class="guide-grid">
     {picks.map(({ id, title, href, image, focus, kind, copy }) => <article class="guide-card guide-portrait holo-card" data-holo data-character={id}>

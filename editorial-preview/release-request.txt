@@ -1,4 +1,3 @@
 2026-11-13
-Owner-approved homepage and ten-guide visual redesign.
-Publish character-themed holographic cards, shared navigation, responsive collector dossiers, comic hero and multiverse imagery, and format-aware Required Reading stacks.
-Include the reviewed weekly releases, wishlist, bookshelf, footer, and carousel updates.
+Owner-approved mobile navigation, iPhone motion controls, and comic-cover seam fixes.
+Keep sticky navigation together without shifting the hero; show motion availability on phones; render curved comic covers without vertical seams.

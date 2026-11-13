@@ -28,6 +28,7 @@ const footerLinks = [
 </head>
 <body id="top" class:list={{ 'collector-journal': design, 'guide-reference': guideReference }}>
   <a class="skip" href="#main">Skip to content</a>
+  <div class="site-navigation">
   <header class="masthead wrap site-chrome">
     <div class="identity">
       <a class="wordmark" href={home + 'index.html'} aria-label="Heroes, Villains &amp; Mavericks"><Fragment set:html={brandLogo} /></a>
@@ -36,6 +37,8 @@ const footerLinks = [
     <a class="byline" href="https://indypendee.com/" target="_blank" rel="noopener noreferrer">by Jai Dandekar</a>
   </header>
   {secondaryLinks.length > 0 && <nav class="guide-section-nav" aria-label="Guide sections"><div class="wrap">{secondaryLinks.map(({href,label}) => <a href={href}>{label}</a>)}</div></nav>}
+  </div>
+  <div class="navigation-space" aria-hidden="true"></div>
   <main id="main"><slot /></main>
   <footer class="wrap footer site-footer site-chrome" aria-label="Site footer">
     <div class="footer-main">
@@ -57,30 +60,44 @@ const footerLinks = [
   {design && <style is:inline set:html={directionCss}></style>}
   <style is:inline set:html={chromeCss}></style>
   <script is:inline>
-    // Compact after scrolling, with a small return threshold to avoid flicker.
+    // One sticky group keeps the two bars together, including in mobile Safari.
     const siteHeader = document.querySelector('.masthead');
+    const navigation = document.querySelector('.site-navigation');
     const sectionNav = document.querySelector('.guide-section-nav');
-    if (sectionNav) {
-      const sizeNavigation = () => {
-        const headerHeight = siteHeader.getBoundingClientRect().height;
-        document.documentElement.style.setProperty('--masthead-height', headerHeight + 'px');
-        document.documentElement.style.setProperty('--guide-scroll-offset', (headerHeight + sectionNav.getBoundingClientRect().height + 16) + 'px');
-      };
-      const navigationObserver = new ResizeObserver(sizeNavigation);
-      navigationObserver.observe(siteHeader, { box: 'border-box' });
-      navigationObserver.observe(sectionNav, { box: 'border-box' });
-      sizeNavigation();
-    }
+    let expandedHeight = 0;
     let headerFrame = 0;
+    const sizeNavigation = () => {
+      const headerHeight = siteHeader.getBoundingClientRect().height;
+      const secondaryHeight = sectionNav?.getBoundingClientRect().height || 0;
+      if (!siteHeader.classList.contains('is-compact')) expandedHeight = Math.max(expandedHeight,headerHeight);
+      // Preserve document flow as the visible header shrinks; never pull the hero upward.
+      document.documentElement.style.setProperty('--navigation-space', Math.max(0,expandedHeight - headerHeight) + 'px');
+      document.documentElement.style.setProperty('--masthead-height', headerHeight + 'px');
+      document.documentElement.style.setProperty('--guide-scroll-offset', (headerHeight + secondaryHeight + 16) + 'px');
+    };
     const updateHeader = () => {
       headerFrame = 0;
       const compact = window.scrollY > 64 || (siteHeader.classList.contains('is-compact') && window.scrollY > 8);
       siteHeader.classList.toggle('is-compact', compact);
+      sizeNavigation();
     };
+    const navigationObserver = new ResizeObserver(sizeNavigation);
+    navigationObserver.observe(navigation, { box: 'border-box' });
     window.addEventListener('scroll', () => {
       if (!headerFrame) headerFrame = requestAnimationFrame(updateHeader);
     }, { passive: true });
     window.addEventListener('pageshow', updateHeader);
+    window.addEventListener('resize', () => {
+      // Measure the expanded size without changing the visible header or the scroll position.
+      const probe = siteHeader.cloneNode(true);
+      probe.classList.remove('is-compact');
+      probe.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;top:0;left:0;right:0';
+      navigation.append(probe);
+      expandedHeight = probe.getBoundingClientRect().height;
+      probe.remove();
+      sizeNavigation();
+    });
+    sizeNavigation();
     updateHeader();
     // Map each source focal point to the upper part of the visible window.
     const crop = image => {

@@ -98,3 +98,6 @@
  .collector-journal .guide-portrait.holo-card .guide-card-copy > p:not(.eyebrow) { font-size: clamp(.6rem,1.45vw,.75rem); line-height: 1.4; margin-block: .4rem; }
  .collector-journal .guide-portrait.holo-card .guide-card-copy h3 { margin-bottom: 0; }
 }
+
+.holo-tilt-control button:disabled { opacity: .6; cursor: default; }
+@media (min-width:64rem) and (hover:hover) and (pointer:fine) { .holo-tilt-control { display: none; } }

@@ -58,3 +58,10 @@ html:has(.guide-section-nav) { scroll-padding-top: var(--guide-scroll-offset,10r
 @media (min-width:64rem) and (max-height:700px) {
  .guide-reference #verses .screen-copy { padding: 1.5rem; }
 }
+
+/* Reserve expanded-header space and stick both navigation rows as one unit. */
+.site-navigation { position: sticky; top: 0; z-index: 50; background: #fff; overflow-anchor: none; }
+.site-navigation .masthead.site-chrome { position: relative; top: auto; }
+.site-navigation .guide-section-nav { position: relative; top: auto; }
+.navigation-space { height: var(--navigation-space,0px); overflow-anchor: none; }
+html { scroll-padding-top: var(--guide-scroll-offset,7.5rem); }

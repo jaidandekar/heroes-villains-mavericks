@@ -62,13 +62,13 @@
 
 /* Flexible comic stock: narrow image slices trace a continuous curved surface. */
 .physical-book-flex-cover { container-type: inline-size; position: absolute; inset: 0; transform-style: preserve-3d; transform: translateZ(calc(var(--book-depth) + .3px)); pointer-events: none; }
-.physical-book-cover-strip { position: absolute; top: 0; bottom: 0; left: calc(var(--strip) * 100% / 24); width: calc(100% / 24 + .1px); background-size: 2400% 100%; background-position: calc(var(--strip) * 100% / 23) 0; transform-origin: left center; backface-visibility: hidden; transition: transform .65s cubic-bezier(.2,.7,.25,1); }
+.physical-book-cover-strip { position: absolute; top: 0; bottom: 0; left: calc(var(--strip) * 100% / 24); width: calc(100% / 24 + 1px); background-size: 100cqw 100%; background-position: calc(var(--strip) * -100cqw / 24) 0; transform-origin: left center; backface-visibility: hidden; transition: transform .65s cubic-bezier(.2,.7,.25,1); }
 .physical-book-cover-strip::after { content: ''; position: absolute; inset: 0; background: #ffffff06; opacity: 0; transition: opacity .65s; }
 .physical-book[data-format="comic"] .physical-book-cover { opacity: 0; }
 .physical-book[data-format="comic"] .physical-book-cover-finish { display: none; }
 @media(prefers-reduced-motion:no-preference) {
  .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover-strip {
-  transform: translateX(var(--curl-x)) translateZ(calc(var(--curl-z) * 100cqw)) rotateY(var(--curl-angle));
+  transform: translateX(calc(var(--curl-offset) * 100cqw)) translateZ(calc(var(--curl-z) * 100cqw)) rotateY(var(--curl-angle));
  }
  .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover-strip::after { opacity: 1; }
 }
@@ -86,3 +86,7 @@
  .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover { opacity: 0; }
  .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-flex-cover { opacity: 1; }
 }
+
+/* Overlap raster edges without rescaling each slice of the printed artwork. */
+.physical-book-cover-strip:last-child { width: calc(100% / 24); }
+.physical-book-cover-strip::after { content: none; }
