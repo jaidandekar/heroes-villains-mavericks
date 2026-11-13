@@ -23,3 +23,66 @@
  .artifact-card-link:focus-visible .physical-book-cover { transform: translateZ(var(--book-depth)) rotateY(-16deg); }
 }
 @media (prefers-reduced-motion: reduce) { .physical-book-cover { transition: none; } }
+
+/* A decorative comic-page layout is revealed as the cover hinges open. */
+.physical-book-comic-page { position: absolute; inset: 5% 5% 5% 8%; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); grid-template-rows: repeat(3,minmax(0,1fr)); gap: 3%; }
+.physical-book-comic-panel { position: relative; display: block; overflow: hidden; border: 1px solid #59616a; background: linear-gradient(145deg,#e5e8e5 45%,#b6c4c8 46%,#d3dbd9 80%); }
+.physical-book-comic-panel:nth-child(2n) { background: linear-gradient(35deg,#c2ccd0 35%,#e5e4da 36%,#dadfd9 75%); }
+.physical-book-comic-panel::after { content: ''; position: absolute; top: 9%; right: 8%; width: 28%; height: 17%; border: 1px solid #7c8587; border-radius: 50%; background: #f9f5e9; }
+
+/* Format-aware construction used by the Batman reference reading cards. */
+.physical-book[data-format] .physical-book-object { aspect-ratio: 2 / 3; }
+.physical-book[data-format="comic"] .physical-book-object { aspect-ratio: 6.625 / 10.25; }
+.physical-book[data-format] .physical-book-under { transform: translate(var(--under-x),var(--under-y)) translateZ(calc(-1 * var(--under-drop))) rotateZ(var(--under-z)); }
+.physical-book[data-format] .physical-book-under img { transform: translateZ(var(--under-depth)); }
+.physical-book[data-format] .physical-book-under-pages::before { height: var(--under-depth); }
+.physical-book[data-format] .physical-book-under-pages::after { width: var(--under-depth); }
+.physical-book[data-format] .physical-book-shadow { top: 70%; height: 12%; background: radial-gradient(ellipse,#14223065,transparent 70%); filter: blur(5px); }
+.physical-book[data-format] .physical-book-back { box-shadow: 2px 3px 3px #0004,5px 10px 14px #0003; }
+.physical-book[data-format] .physical-book-right { background: repeating-linear-gradient(90deg,#f5f0e5 0 .65px,#c5bfb3 .65px 1px,#e9e2d4 1px 1.7px); box-shadow: inset 0 0 2px #0004; }
+.physical-book[data-format] .physical-book-bottom { background: repeating-linear-gradient(0deg,#f5f0e5 0 .65px,#c5bfb3 .65px 1px,#e9e2d4 1px 1.7px); border-bottom-width: 1px; }
+.physical-book[data-format] .physical-book-endpaper { background: radial-gradient(#776b5024 .5px,transparent .7px) 0 0 / 3px 3px,linear-gradient(90deg,#a99d83,#f6f0df 12%,#fffaf0 85%,#e7ddc5); }
+.physical-book-cover-finish { position: absolute; inset: 0; pointer-events: none; transform: translateZ(calc(var(--book-depth) + .2px)); transform-origin: left center; border-radius: 2px; background: linear-gradient(90deg,#0005,transparent 3%,#ffffff38 4%,#0002 5%,transparent 8%),linear-gradient(125deg,#ffffff18,transparent 35%,#ffffff0c 70%,#0001); transition: transform .65s cubic-bezier(.2,.7,.25,1); }
+.physical-book[data-format="comic"] .physical-book-cover { border-radius: 1px 2px 3px 1px; }
+.physical-book[data-format="comic"] .physical-book-spine { border-radius: 50%; box-shadow: -1px 0 2px #fff4; }
+.physical-book-staples { display: none; }
+.physical-book[data-format="comic"] .physical-book-staples { display: block; position: absolute; inset: 0; transform: translateZ(calc(var(--book-depth) - .4px)); }
+.physical-book-staples::before,.physical-book-staples::after { content: ''; position: absolute; left: 0; top: 24%; width: 2px; height: 6%; border-radius: 2px; background: linear-gradient(90deg,#555,#ddd,#555); }
+.physical-book-staples::after { top: 72%; }
+.physical-book[data-format="hardcover"] .physical-book-cover,.physical-book[data-format="hardcover"] .physical-book-back { inset: -2px; width: calc(100% + 4px); height: calc(100% + 4px); border: 1px solid #0005; }
+@media (prefers-reduced-motion:no-preference) {
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format] .physical-book-cover,
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format] .physical-book-cover-finish { transform: translateZ(calc(var(--book-depth) + .2px)) rotateY(-18deg) skewY(-.6deg); }
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover,
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover-finish { transform: translateZ(calc(var(--book-depth) + .2px)) rotateY(-24deg) skewY(-1.5deg) rotateX(1deg); }
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="hardcover"] .physical-book-cover,
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="hardcover"] .physical-book-cover-finish { transform: translateZ(calc(var(--book-depth) + .2px)) rotateY(-12deg); }
+}
+@media(prefers-reduced-motion:reduce) { .physical-book-cover-finish { transition: none; } }
+
+/* Flexible comic stock: narrow image slices trace a continuous curved surface. */
+.physical-book-flex-cover { container-type: inline-size; position: absolute; inset: 0; transform-style: preserve-3d; transform: translateZ(calc(var(--book-depth) + .3px)); pointer-events: none; }
+.physical-book-cover-strip { position: absolute; top: 0; bottom: 0; left: calc(var(--strip) * 100% / 24); width: calc(100% / 24 + .1px); background-size: 2400% 100%; background-position: calc(var(--strip) * 100% / 23) 0; transform-origin: left center; backface-visibility: hidden; transition: transform .65s cubic-bezier(.2,.7,.25,1); }
+.physical-book-cover-strip::after { content: ''; position: absolute; inset: 0; background: #ffffff06; opacity: 0; transition: opacity .65s; }
+.physical-book[data-format="comic"] .physical-book-cover { opacity: 0; }
+.physical-book[data-format="comic"] .physical-book-cover-finish { display: none; }
+@media(prefers-reduced-motion:no-preference) {
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover-strip {
+  transform: translateX(var(--curl-x)) translateZ(calc(var(--curl-z) * 100cqw)) rotateY(var(--curl-angle));
+ }
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover-strip::after { opacity: 1; }
+}
+@media(prefers-reduced-motion:reduce) { .physical-book-cover-strip,.physical-book-cover-strip::after { transition: none; } }
+
+/* Loose issue piles cast a lighter, tighter contact shadow than bound volumes. */
+.physical-book[data-format="comic"] .physical-book-shadow { left: 12%; right: 9%; top: 74%; height: 7%; filter: blur(3px); opacity: .7; }
+.physical-book[data-format="comic"] .physical-book-under img { box-shadow: 1px 1px 2px #0004; border-radius: 1px; }
+.physical-book[data-format="paperback"] .physical-book-shadow { left: 16%; right: 14%; top: 73%; height: 11%; filter: blur(5px); }
+.physical-book[data-format="paperback"] .physical-book-under img { box-shadow: 1px 2px 2px #0005; }
+/* Keep the unbroken printed cover at rest; use the curved surface only as it opens. */
+.physical-book[data-format="comic"] .physical-book-cover { opacity: 1; }
+.physical-book[data-format="comic"] .physical-book-flex-cover { opacity: 0; }
+@media(prefers-reduced-motion:no-preference) {
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-cover { opacity: 0; }
+ .artifact-card-link:is(:hover,:focus-visible) .physical-book[data-format="comic"] .physical-book-flex-cover { opacity: 1; }
+}

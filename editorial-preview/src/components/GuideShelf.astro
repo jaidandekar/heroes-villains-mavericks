@@ -3,18 +3,13 @@ import Picture from './Picture.astro';
 import lineup from '../data/guide-shelf.json';
 import art from '../data/guide-art.json';
 import css from './guide-shelf.css?raw';
-
-const previewLabels = {
-  'green-lantern': 'DC · The Corps',
-  batman: 'DC · Gotham City',
-  'fantastic-four': 'Marvel · Team guide',
-};
+import holoCss from './holographic-cards.css?raw';
+import motionScript from './holographic-motion.js?raw';
 
 const picks = lineup.map(entry => {
   const identity = art[entry.id];
   return {
     ...entry,
-    label: previewLabels[entry.id] ?? 'Character guide',
     href: entry.id + '-guide/index.html',
     image: identity.src,
     focus: identity.focus,
@@ -27,18 +22,61 @@ const picks = lineup.map(entry => {
     <h2 id="guides-title">Get to know them</h2>
     <p>Character guides and where to start reading</p>
   </div>
+  <div class="holo-tilt-control" data-tilt-control hidden>
+    <button type="button" aria-pressed="false">Enable tilt</button>
+    <span role="status"></span>
+  </div>
   <div class="guide-grid">
-    {picks.map(({ id, title, label, href, image, focus, kind, copy }) => <article class="guide-card">
+    {picks.map(({ id, title, href, image, focus, kind, copy }) => <article class="guide-card guide-portrait holo-card" data-holo data-character={id}>
       <a class="guide-card-link" href={href} aria-labelledby={'guide-title-' + id}>
         <Picture src={image} focus={focus} kind={kind} />
+        <span class="holo-foil" aria-hidden="true"><span class="holo-glare"></span><span class="holo-grain"></span></span>
         <div class="guide-card-copy">
-          <p class="eyebrow">{label}</p>
           <h3 id={'guide-title-' + id}>{title}</h3>
           <p>{copy}</p>
-          <span class="guide-card-action">Read the guide <span aria-hidden="true">↗</span></span>
+          <span class="guide-card-action">View the guide <span class="link-arrow" aria-hidden="true">→</span></span>
         </div>
       </a>
     </article>)}
   </div>
 </section>
 <style is:inline set:html={css}></style>
+
+<style is:inline set:html={holoCss}></style>
+<script is:inline>
+(() => {
+  const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('[data-holo]').forEach(card => {
+    let frame = 0;
+    let point;
+    const reset = () => {
+      cancelAnimationFrame(frame); frame = 0;
+      card.removeAttribute('data-holo-active');
+      ['--holo-rx', '--holo-ry', '--foil-x', '--foil-y'].forEach(name => card.style.removeProperty(name));
+    };
+    card.addEventListener('pointermove', event => {
+      if (!finePointer.matches || reducedMotion.matches || event.pointerType === 'touch') return;
+      point = { x: event.clientX, y: event.clientY };
+      if (frame) return;
+      frame = requestAnimationFrame(() => {
+        frame = 0;
+        const rect = card.getBoundingClientRect();
+        const x = Math.max(0, Math.min(1, (point.x - rect.left) / rect.width));
+        const y = Math.max(0, Math.min(1, (point.y - rect.top) / rect.height));
+        card.style.setProperty('--holo-rx', ((.5 - y) * 7).toFixed(2) + 'deg');
+        card.style.setProperty('--holo-ry', ((x - .5) * 9).toFixed(2) + 'deg');
+        card.style.setProperty('--foil-x', (x * 100).toFixed(1) + '%');
+        card.style.setProperty('--foil-y', (y * 100).toFixed(1) + '%');
+        card.setAttribute('data-holo-active', '');
+      });
+    }, { passive: true });
+    card.addEventListener('pointerleave', reset);
+    card.addEventListener('pointercancel', reset);
+    reducedMotion.addEventListener('change', reset);
+    finePointer.addEventListener('change', reset);
+  });
+})();
+</script>
+
+<script is:inline set:html={motionScript}></script>

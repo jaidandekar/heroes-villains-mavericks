@@ -2,14 +2,14 @@
 import RequiredReadingCards from './RequiredReadingCards.astro';
 import css from './reading-shelf.css?raw';
 const books = [
-  { slug: 'shelf-last-ronin', title: 'Teenage Mutant Ninja Turtles: The Last Ronin', creators: 'Kevin Eastman, Peter Laird, and Tom Waltz', cover: 'media/shelf-last-ronin.jpg' },
-  { slug: 'shelf-sinestro', title: 'Green Lantern Vol. 1: Sinestro', creators: 'Geoff Johns and Doug Mahnke', cover: 'media/shelf-sinestro.jpg' },
-  { slug: 'shelf-batman-spawn', title: 'Batman/Spawn: The Classic Collection', creators: 'Doug Moench, Frank Miller, Todd McFarlane, and others', cover: 'media/shelf-batman-spawn.jpg' },
-  { slug: 'shelf-court-of-owls', title: 'Batman Vol. 1: The Court of Owls', creators: 'Scott Snyder and Greg Capullo', cover: 'media/shelf-court-of-owls.jpg' },
+  { slug: 'shelf-last-ronin', summary: "In a devastated future New York, the last surviving Ninja Turtle sets out to avenge his family and confront the forces that destroyed it.", source: "https://idwpublishing.com/products/tmnt-the-last-ronin", title: 'Teenage Mutant Ninja Turtles: The Last Ronin', creators: 'Kevin Eastman, Peter Laird, and Tom Waltz', cover: 'media/shelf-last-ronin.jpg' },
+  { slug: 'shelf-sinestro', summary: "Sinestro is a Green Lantern again. With a reluctant Hal Jordan beside him, he returns to Korugar to free his homeworld from the very corps he created.", source: "https://www.dc.com/graphic-novels/green-lantern-2011/green-lantern-vol-1-sinestro", title: 'Green Lantern Vol. 1: Sinestro', creators: 'Geoff Johns and Doug Mahnke', cover: 'media/shelf-sinestro.jpg' },
+  { slug: 'shelf-batman-spawn', summary: "Two classic crossovers bring Batman and Spawn together against an ancient evil in Gotham, then send the Dark Knight to Spawn’s New York City.", source: "https://www.dc.com/graphic-novels/batman/spawn-the-classic-collection", title: 'Batman/Spawn: The Classic Collection', creators: 'Doug Moench, Frank Miller, Todd McFarlane, and others', cover: 'media/shelf-batman-spawn.jpg' },
+  { slug: 'shelf-court-of-owls', summary: "A series of murders draws Batman into a mystery that challenges everything he thinks he knows about Gotham—and the people closest to him.", source: "https://www.dc.com/graphic-novels/batman-2011/batman-vol-1-the-court-of-owls-1", title: 'Batman Vol. 1: The Court of Owls', creators: 'Scott Snyder and Greg Capullo', cover: 'media/shelf-court-of-owls.jpg' },
 ];
 ---
 <section class="wrap section" id="shelf" aria-labelledby="bookshelf-title">
   <h2 class="shelf-col-title" id="bookshelf-title">What’s on my bookshelf</h2>
-  <RequiredReadingCards runs={books} base="./" />
+  <RequiredReadingCards runs={books} base="./" showCreators={false} />
 </section>
 <style is:inline set:html={css}></style>

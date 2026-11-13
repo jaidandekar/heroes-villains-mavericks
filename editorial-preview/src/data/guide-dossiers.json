@@ -1,0 +1,212 @@
+{
+  "green-lantern": {
+    "accent": "#83dcad",
+    "facts": [
+      {
+        "label": "Notable bearers",
+        "value": "Hal Jordan, John Stewart, Kyle Rayner"
+      },
+      {
+        "label": "First appearance",
+        "value": "All-American Comics #16 (1940) / Showcase #22 (1959)"
+      },
+      {
+        "label": "Created by",
+        "value": "Bill Finger & Martin Nodell; John Broome & Gil Kane"
+      },
+      {
+        "label": "Home",
+        "value": "Oa / Sector 2814"
+      }
+    ]
+  },
+  "doctor-doom": {
+    "accent": "#84b8a3",
+    "facts": [
+      {
+        "label": "Alter ego",
+        "value": "Victor von Doom"
+      },
+      {
+        "label": "First appearance",
+        "value": "Fantastic Four #5 (1962)"
+      },
+      {
+        "label": "Created by",
+        "value": "Stan Lee & Jack Kirby"
+      },
+      {
+        "label": "Home",
+        "value": "Latveria"
+      }
+    ]
+  },
+  "fantastic-four": {
+    "accent": "#87c8ef",
+    "facts": [
+      {
+        "label": "Members",
+        "value": "Reed, Sue, Johnny & Ben"
+      },
+      {
+        "label": "First appearance",
+        "value": "Fantastic Four #1 (1961)"
+      },
+      {
+        "label": "Created by",
+        "value": "Stan Lee & Jack Kirby"
+      },
+      {
+        "label": "Home",
+        "value": "Baxter Building"
+      }
+    ]
+  },
+  "clayface": {
+    "accent": "#d7a378",
+    "facts": [
+      {
+        "label": "Identities",
+        "value": "Basil Karlo, Matt Hagen, Preston Payne"
+      },
+      {
+        "label": "First appearance",
+        "value": "Detective Comics #40 (1940)"
+      },
+      {
+        "label": "Created by",
+        "value": "Bill Finger & Bob Kane"
+      },
+      {
+        "label": "Home",
+        "value": "Gotham City"
+      }
+    ]
+  },
+  "vision": {
+    "accent": "#d8bd72",
+    "facts": [
+      {
+        "label": "Alter ego",
+        "value": "Vision / Victor Shade"
+      },
+      {
+        "label": "First appearance",
+        "value": "Avengers #57 (1968)"
+      },
+      {
+        "label": "Created by",
+        "value": "Roy Thomas & John Buscema"
+      },
+      {
+        "label": "Built by",
+        "value": "Ultron"
+      }
+    ]
+  },
+  "spiderman": {
+    "accent": "#d66d83",
+    "facts": [
+      {
+        "label": "Alter ego",
+        "value": "Peter Parker"
+      },
+      {
+        "label": "First appearance",
+        "value": "Amazing Fantasy #15 (1962)"
+      },
+      {
+        "label": "Created by",
+        "value": "Stan Lee & Steve Ditko"
+      },
+      {
+        "label": "Home",
+        "value": "New York City"
+      }
+    ]
+  },
+  "sinestro": {
+    "accent": "#ecd25b",
+    "facts": [
+      {
+        "label": "Identity",
+        "value": "Thaal Sinestro"
+      },
+      {
+        "label": "First appearance",
+        "value": "Green Lantern #7 (1961)"
+      },
+      {
+        "label": "Created by",
+        "value": "John Broome & Gil Kane"
+      },
+      {
+        "label": "Home",
+        "value": "Korugar"
+      }
+    ]
+  },
+  "ultron": {
+    "accent": "#c5cedc",
+    "facts": [
+      {
+        "label": "Built by",
+        "value": "Hank Pym"
+      },
+      {
+        "label": "First appearance",
+        "value": "Avengers #54–55 (1968)"
+      },
+      {
+        "label": "Created by",
+        "value": "Roy Thomas & John Buscema"
+      },
+      {
+        "label": "Nature",
+        "value": "Artificial intelligence"
+      }
+    ]
+  },
+  "venom": {
+    "accent": "#b9b1d6",
+    "facts": [
+      {
+        "label": "Host",
+        "value": "Eddie Brock"
+      },
+      {
+        "label": "First appearance",
+        "value": "Amazing Spider-Man #300 (1988)"
+      },
+      {
+        "label": "Created by",
+        "value": "David Michelinie & Todd McFarlane"
+      },
+      {
+        "label": "Symbiote debut",
+        "value": "Amazing Spider-Man #252 (1984)"
+      }
+    ]
+  },
+  "batman": {
+    "accent": "#e9cd77",
+    "facts": [
+      {
+        "label": "Alter ego",
+        "value": "Bruce Wayne"
+      },
+      {
+        "label": "First appearance",
+        "value": "Detective Comics #27 (1939)"
+      },
+      {
+        "label": "Created by",
+        "value": "Bob Kane & Bill Finger"
+      },
+      {
+        "label": "Home",
+        "value": "Gotham City"
+      }
+    ]
+  }
+}

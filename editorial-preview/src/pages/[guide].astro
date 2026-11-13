@@ -9,6 +9,10 @@ import shelfCss from '../components/reading-shelf.css?raw';
 import FeatureCarousel from '../components/FeatureCarousel.astro';
 import versionArtwork from '../data/version-carousel-art.json';
 import Shell from '../layouts/Shell.astro';
+import aboutCss from '../components/guide-about.css?raw';
+import physicalEditions from '../data/physical-editions.json';
+import dossiers from '../data/guide-dossiers.json';
+import identities from '../data/guide-art.json';
 import Picture from '../components/Picture.astro';
 import guides from '../data/guides.json';
 import guideHeroArt from '../data/guide-hero-art.json';
@@ -43,6 +47,7 @@ const versionSlides = versions.map(version => {
     label: version.universe,
     copy: version.description,
     art: versionArtwork[version.slug]?.src,
+    artAlt: versionArtwork[version.slug]?.alt || version.name + ' comic artwork',
     wideArt: versionArtwork[version.slug]?.wideSrc,
     focus: versionArtwork[version.slug]?.focus,
     firstAppearance: version.firstAppearance,
@@ -53,42 +58,56 @@ const versionSlides = versions.map(version => {
 });
 
 ---
-<Shell title={guide.brand} description={pitch} home="../">
+<Shell guideReference title={guide.brand} description={pitch} home="../" secondaryLinks={[
+  {href: '#' + guide.who_id, label: 'About'},
+  {href: '#verses', label: 'Versions'},
+  {href: '#graphic-novels', label: 'Required reading'},
+  ...(products.length ? [{href: '#collectibles', label: 'Collectibles'}] : []),
+  {href: '#on-screen', label: 'Film & TV'},
+]}>
   <section class="wrap guide-hero" id="home">
-    <div><p class="eyebrow">Character guide</p><h1>{guide.brand}</h1><p class="lede">{pitch}</p><a class="button" href="#graphic-novels">Find your first read <span aria-hidden="true">↓</span></a></div>
+    <div><p class="eyebrow">Character guide</p><h1>{guide.brand}</h1><p class="lede">{pitch}</p></div>
     <Picture src={heroArt.src} alt={heroArt.alt} focus={heroArt.focus} base="../" eager />
   </section>
-  <p class="wrap small guide-art-credit"><a href={heroArt.source}>{heroArt.credit} ↗</a></p>
-  <nav class="wrap jump" aria-label="Guide sections">
-    <a href={'#' + guide.who_id}>About</a><a href="#verses">Versions</a><a href="#graphic-novels">Required reading</a>{(products.length > 0) && <a href="#collectibles">Collectibles</a>}<a href="#on-screen">Film &amp; TV</a>
-  </nav>
-  <section class="wrap section" id={guide.who_id}>
-    <div class="section-head"><h2>About {guide.brand}</h2></div>
-    <div class="overview">
-      <div>{overview.map((paragraph: string) => <p>{paragraph}</p>)}<ul class="references">{sources.map((source: {label:string,url:string}) => <li><a href={source.url}>{source.label} ↗</a></li>)}</ul></div>
-      <dl>{guide.profile.facts.map((fact: {label:string,value:string}) => <div><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl>
+  <p class="wrap small guide-art-credit"><a href={heroArt.source}>{heroArt.credit} <span class="link-arrow" aria-hidden="true">→</span></a></p>
+  <section class="wrap section about-editorial" id={guide.who_id} aria-labelledby="about-title">
+    <div class="section-head"><h2 id="about-title">About {guide.brand}</h2></div>
+    <div class="about-layout">
+      <aside style={'--dossier-accent: ' + dossiers[guide.id].accent} class="character-dossier" aria-labelledby="dossier-title">
+        <div class="dossier-heading"><div><p>Character dossier</p><h3 id="dossier-title">{guide.brand}</h3></div><img src={'../' + identities[guide.id].src} alt="" loading="lazy" /></div>
+        <dl>{dossiers[guide.id].facts.map((fact: {label:string,value:string}) => <div><dt>{fact.label}</dt><dd>{fact.value}</dd></div>)}</dl>
+      <p class="dossier-edition"><span>Heroes, Villains &amp; Mavericks</span><span>{['batman','green-lantern','clayface','sinestro'].includes(guide.id) ? 'DC' : 'Marvel'} · Character file</span></p>
+      </aside>
+      <div class="about-biography">
+        {overview.map((paragraph: string) => <p>{paragraph}</p>)}
+        <div class="about-sources"><p>Sources &amp; further exploration</p><ul class="references">{sources.map((source: {label:string,url:string}) => <li><a href={source.url}>{source.label} <span class="link-arrow" aria-hidden="true">→</span></a></li>)}</ul></div>
+      </div>
     </div>
   </section>
+  <style is:inline set:html={aboutCss}></style>
   <span id="all-versions"></span>
   <FeatureCarousel id="verses" title={guide.verses_h2} entries={versionSlides} base="../" variant="versions" />
   <section class="wrap section" id="graphic-novels">
     <div class="section-head"><h2>Required reading</h2><p>{reading.length} {reading.length === 1 ? 'story' : 'stories'} from the guide</p></div>
-    <RequiredReadingCards runs={reading} notes={edit?.reading ?? {}} />
-    {chart.books.length > 0 && <aside class="chart" id="bestsellers" aria-labelledby="chart-title">
-      <h3 id="chart-title">{chart.curated ? guide.brand + ' collections' : 'Bestselling graphic novels'}</h3>
-      <p class="small">{chart.curated ? 'Character-focused collected editions · Editorial selections, without a verified sales ranking.' : <a href={chart.url} target="_blank" rel="noopener noreferrer">{chart.label} ↗</a>}</p>
+    <div>
+    <RequiredReadingCards runs={reading} notes={edit?.reading ?? {}} showCreators={false} editions={physicalEditions} />
+
+
+    </div>
+  </section>
+  {chart.books.length > 0 && <section class="wrap section reading-market" id="bestsellers" aria-labelledby="market-title">
+    <div class="section-head"><h2 id="market-title">{chart.curated ? guide.brand + ' collections' : 'Bestselling graphic novels'}</h2><p>{chart.curated ? 'Character-focused editorial selections' : <a href={chart.url} target="_blank" rel="noopener noreferrer">{chart.label} <span class="link-arrow" aria-hidden="true">→</span></a>}</p></div>
       {chart.books.length ? <ol class="chart-list">{chart.books.map(book => <li value={book.rank}>
         {book.cover && <a class="chart-cover" href={amazonBookSearch(book.title, book.creators)} target="_blank" rel="noopener noreferrer" aria-label={'Find ' + book.title + ' on Amazon (opens in a new tab)'}><img src={'../' + book.cover} alt={'Cover of ' + book.title} loading="lazy" /></a>}
         <div class="chart-copy">
           <p class="eyebrow">{chart.curated ? 'Collection spotlight' : '#' + book.rank + ' on this chart'}</p>
           <h4><a href={amazonBookSearch(book.title, book.creators)} target="_blank" rel="noopener noreferrer">{book.title}</a></h4>
-          {book.creators && <p class="chart-creators">{book.creators}</p>}
           {book.edition && <p class="small chart-edition">{book.edition}</p>}
           {book.context && <p class="small chart-context">{book.context}</p>}
+          <a class="market-action" href={amazonBookSearch(book.title, book.creators)} target="_blank" rel="noopener noreferrer">Find on Amazon <span class="link-arrow" aria-hidden="true">→</span></a>
         </div>
       </li>)}</ol> : <p class="small chart-empty">No titles from this guide appeared in this chart.</p>}
-    </aside>}
-  </section>
+  </section>}
   {(products.length > 0) && <section class="wrap section" id="collectibles">
     <div class="section-head"><h2>Collectibles &amp; apparel</h2></div>
     <ul class="wishlist-grid">{products.map(product => <ProductCard item={product} base="../" id={guide.id + '-' + product.sku} />)}</ul>
@@ -102,7 +121,7 @@ const versionSlides = versions.map(version => {
           <p class="eyebrow">{screenArtwork[item.id]?.kind === 'tv' ? 'TV series' : 'Film'} · {item.year || item.years}</p>
           <h3>{item.title}</h3>
           <p>{item.note}</p>
-          <span class="screen-title-action">View on IMDb ↗</span>
+          <span class="screen-title-action">View on IMDb <span class="link-arrow" aria-hidden="true">→</span></span>
         </div>
       </a>
     </article>))}</div>

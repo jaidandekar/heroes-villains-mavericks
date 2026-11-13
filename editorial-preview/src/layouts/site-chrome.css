@@ -1,0 +1,60 @@
+/* One header and footer treatment for the homepage and every guide. */
+.site-chrome {
+ --paper: #fff; --ink: #18262d; --muted: #566168; --link: #235d96; --accent: #235d96;
+ --font-display: 'Google Sans Flex','Helvetica Neue',Arial,sans-serif;
+ font-family: var(--font-display); color: var(--ink); -webkit-font-smoothing: antialiased;
+}
+.masthead.site-chrome { min-height: 6.4rem; border-bottom: 0; background: #fff; position: sticky; top: 0; z-index: 50; }
+.masthead.site-chrome .identity { width: auto; display: flex; flex-wrap: nowrap; justify-content: flex-start; gap: .5rem 1.25rem; }
+.masthead.site-chrome .byline { font-size: .875rem; letter-spacing: .02em; }
+.masthead.site-chrome::after { content: ''; position: absolute; left: calc(50% - 50vw); bottom: 0; width: 100vw; height: 1px; background: #f0f0f2; box-shadow: 0 2px 3px rgb(24 38 45 / .18),0 5px 7px rgb(24 38 45 / .12); pointer-events: none; }
+.masthead.site-chrome.is-compact { min-height: 3.5rem; padding-block: .25rem; }
+.site-footer.site-chrome { background: #fff; }
+.site-footer.site-chrome::after { content: ''; position: absolute; inset: 0 calc(50% - 50vw); z-index: -1; background: #fff; pointer-events: none; }
+.site-footer.site-chrome::before { box-shadow: none; }
+@media(max-width:44rem) {
+ .masthead.site-chrome { min-height: 0; padding-block: .5rem; }
+ .masthead.site-chrome .identity { gap: .65rem; }
+ .masthead.site-chrome .byline { font-size: clamp(.6875rem,3.1vw,.8125rem); letter-spacing: 0; }
+ .masthead.site-chrome.is-compact { min-height: 3rem; padding-block: .125rem; }
+}
+
+/* Guide navigation stays joined to the changing height of the main header. */
+.guide-section-nav { position: sticky; top: var(--masthead-height,6.4rem); z-index: 49; background: #f3f5f7; border-bottom: 1px solid #dce2e7; color: #405563; font-family: 'Google Sans Flex','Helvetica Neue',Arial,sans-serif; }
+.guide-section-nav > div { display: flex; align-items: center; gap: 1.75rem; overflow-x: auto; scrollbar-width: thin; }
+.guide-section-nav a { display: inline-flex; align-items: center; flex-shrink: 0; min-height: 2.75rem; font-size: .8rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.guide-section-nav a:hover, .guide-section-nav a:focus-visible { color: #235d96; text-decoration: underline; }
+.guide-section-nav a:focus-visible { outline: 2px solid #235d96; outline-offset: -2px; }
+html:has(.guide-section-nav) { scroll-padding-top: var(--guide-scroll-offset,10rem); }
+@media (max-width:44rem) { .guide-section-nav > div { gap: 1.25rem; } .guide-section-nav a { font-size: .75rem; } }
+
+/* Reference guide shares the homepage's full-width, flat section dividers and rhythm. */
+.guide-reference { overflow-x: clip; }
+.guide-reference main .section {
+ position: relative;
+ border-top: 0;
+ padding-block: clamp(3.5rem,5vw,5rem) clamp(3.5rem,7vw,7rem);
+}
+.guide-reference main .section::before {
+ content: ''; position: absolute; top: 0; left: calc(50% - 50vw);
+ width: 100vw; height: 1px; background: #f0f0f2;
+ box-shadow: none; pointer-events: none;
+}
+
+/* Shared carousel height: approved on the Batman reference guide. */
+@media (min-width:44.01rem) and (max-width:63.99rem) {
+ .screen-feature .screen-card { min-height: clamp(28rem,55vw,36rem); }
+}
+@media (max-width:44rem) {
+ .screen-feature .screen-card { min-height: 41.5rem; }
+}
+@media (min-width:64rem) {
+ .screen-feature .screen-card { aspect-ratio: auto; min-height: 0; height: min(45.5rem,calc(100svh - 20.5rem)); }
+ .guide-reference #verses .screen-copy { padding: clamp(1.5rem,3vw,3rem); }
+}
+@media (min-width:64rem) and (max-height:900px) {
+ .guide-reference #verses .screen-copy { padding: 2rem; }
+}
+@media (min-width:64rem) and (max-height:700px) {
+ .guide-reference #verses .screen-copy { padding: 1.5rem; }
+}

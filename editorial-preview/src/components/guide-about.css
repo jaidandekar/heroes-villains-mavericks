@@ -1,0 +1,161 @@
+/* Batman reference: an editorial biography paired with a compact character dossier. */
+.guide-reference .about-editorial { --about-blue: #235d96; --about-ink: #18262d; color: var(--about-ink); }
+.guide-reference .about-editorial > .section-head { margin-bottom: clamp(1.75rem,3vw,3rem); }
+.guide-reference .about-editorial > .section-head h2 { font-size: clamp(.95rem,1.25vw,1.2rem); font-weight: 800; letter-spacing: .065em; text-transform: uppercase; line-height: 1.3; }
+.guide-reference .about-layout { display: grid; grid-template-columns: minmax(0,1.55fr) minmax(18rem,1fr); gap: clamp(2rem,6vw,6rem); align-items: start; }
+.about-biography { max-width: 67ch; }
+.about-biography > p { font-size: clamp(1rem,1.15vw,1.1rem); line-height: 1.8; color: #46545e; margin-bottom: 1.25rem; text-wrap: pretty; }
+.about-biography > p:first-child { font-size: clamp(1.35rem,2.1vw,2rem); line-height: 1.3; font-weight: 500; letter-spacing: -.02em; color: #182e40; margin-bottom: 1.75rem; }
+.about-sources { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e9edf0; }
+.about-sources > p { color: #65727c; font-size: .65rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 700; }
+.about-sources .references { margin-top: .4rem; gap: .25rem 1.25rem; font-size: .75rem; color: #586c7c; }
+.about-sources a { display: inline-flex; align-items: center; min-height: 2.75rem; text-decoration: none; }
+.about-sources a:hover { color: #235d96; text-decoration: underline; }
+.character-dossier { border: 1px solid #dbe5ef; border-radius: 14px; overflow: hidden; background: linear-gradient(135deg,#f0f6fc,#fafcfe 70%); box-shadow: 0 6px 22px #193b5c08; }
+.dossier-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.5rem; border-bottom: 1px solid #dbe5ef; background: linear-gradient(120deg,#e0edfa,#f1f7fd); }
+.dossier-heading p { font-size: .65rem; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; color: #235d96; margin-bottom: .45rem; }
+.dossier-heading h3 { font-size: 1.5rem; font-weight: 600; letter-spacing: -.025em; line-height: 1.15; }
+.dossier-heading img { width: 72px; height: 80px; object-fit: cover; object-position: 50% 30%; border-radius: 8px; box-shadow: 0 0 0 1px #235d9626; }
+.character-dossier dl { margin: 0; padding: .25rem 1.5rem; }
+.character-dossier dl > div { padding: 1rem 0; }
+.character-dossier dl > div + div { border-top: 1px solid #dfe8f0; }
+.character-dossier dt { font-size: .65rem; text-transform: uppercase; letter-spacing: .08em; font-weight: 700; color: #52718b; margin-bottom: .35rem; }
+.character-dossier dd { font-size: .95rem; line-height: 1.5; font-weight: 500; color: #203d54; }
+@media (max-width: 55rem) {
+ .guide-reference .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+ .character-dossier dl { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); column-gap: 1.5rem; }
+ .character-dossier dl > div:nth-child(2) { border-top: 0; }
+}
+@media (max-width: 25rem) { .dossier-heading { padding: 1.25rem; } .character-dossier dl { padding-inline: 1.25rem; column-gap: 1rem; } .character-dossier dd { font-size: .85rem; overflow-wrap: anywhere; } }
+
+/* A companion reverse side to Batman's charcoal-and-gold collector card. */
+.guide-reference .character-dossier {
+ position: relative; isolation: isolate; padding: 8px; border: 1px solid #8f875e; border-radius: 18px;
+ background: linear-gradient(130deg,#fff1b2,#778b9e 18%,#e9cd77 35%,#f9efbe 50%,#7d91a2 72%,#e9ca68);
+ box-shadow: inset 0 0 0 2px #fff6d580, 0 9px 24px #1526361c;
+}
+.guide-reference .character-dossier::before {
+ content: ''; position: absolute; z-index: -1; inset: 8px; border: 1px solid #e1cc8e; border-radius: 10px;
+ background: repeating-linear-gradient(135deg,transparent 0 22px,#d7e6ff08 23px,transparent 24px 46px),radial-gradient(ellipse at 20% 0%,#3c5069,#1a293b 55%,#101c2a);
+ pointer-events: none;
+}
+.guide-reference .character-dossier .dossier-heading {
+ position: relative; margin: 5px 5px 0; padding: 1.25rem; border: 1px solid #d4c48f66; border-radius: 7px;
+ background: linear-gradient(115deg,#a7c7eb21,#edd98f17 55%,#b5a2dc21); gap: 1.25rem;
+}
+.guide-reference .character-dossier .dossier-heading::after {
+ content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+ background: repeating-linear-gradient(110deg,transparent 0 17%,#a9e0f10d 19%,#e0b2e411 23%,transparent 28%);
+}
+.guide-reference .character-dossier .dossier-heading p { color: #ebd79d; font-size: .6rem; letter-spacing: .16em; }
+.guide-reference .character-dossier .dossier-heading h3 { color: #f7f3e6; font-size: clamp(1.6rem,2.3vw,2rem); font-weight: 600; }
+.guide-reference .character-dossier .dossier-heading img { width: 88px; height: 104px; flex-shrink: 0; border-radius: 5px; border: 2px solid #e6d59b; box-shadow: 0 0 0 2px #0e1c2b,0 4px 12px #0005; }
+.guide-reference .character-dossier dl { position: relative; margin: 0 5px 5px; padding: .25rem 1.25rem .5rem; }
+.guide-reference .character-dossier dl > div { padding: 1rem 0; }
+.guide-reference .character-dossier dl > div + div { border-top: 1px solid #cfdaea26; }
+.guide-reference .character-dossier dt { color: #d6c791; font-size: .6rem; letter-spacing: .12em; }
+.guide-reference .character-dossier dd { color: #ecf2fa; font-weight: 400; line-height: 1.55; }
+.guide-reference .character-dossier .dossier-edition { display: flex; justify-content: space-between; gap: 1rem; margin: 0 1.5rem .75rem; padding-top: .75rem; border-top: 1px solid #d4c48f66; color: #cbbc8f; font-size: .55rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+@media (max-width: 25rem) {
+ .guide-reference .character-dossier .dossier-heading { padding: 1rem; }
+ .guide-reference .character-dossier .dossier-heading img { width: 72px; height: 88px; }
+ .guide-reference .character-dossier dl { padding-inline: 1rem; }
+ .guide-reference .character-dossier .dossier-edition { margin-inline: 1.25rem; }
+}
+
+/* Keep the reverse in a physical trading-card silhouette (2.5 × 3.5 inches). */
+.guide-reference .character-dossier {
+ aspect-ratio: 5 / 7; width: min(100%,26rem); justify-self: end;
+ display: flex; flex-direction: column;
+}
+.guide-reference .character-dossier .dossier-heading {
+ flex: 1; min-height: 0; display: block; overflow: hidden; padding: 1rem;
+}
+.guide-reference .character-dossier .dossier-heading > div { position: relative; z-index: 2; }
+.guide-reference .character-dossier .dossier-heading img {
+ position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+ object-position: 50% 28%; border: 0; border-radius: inherit; box-shadow: none;
+}
+.guide-reference .character-dossier .dossier-heading::after {
+ z-index: 1; background: linear-gradient(180deg,#0a1728dc,transparent 60%),linear-gradient(110deg,#8dccff19,transparent 45%,#e4c9771a);
+}
+.guide-reference .character-dossier dl {
+ display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 0 1rem;
+ flex: none; padding: .25rem 1rem; margin: 0 5px;
+}
+.guide-reference .character-dossier dl > div { padding: .8rem 0; }
+.guide-reference .character-dossier dl > div:nth-child(-n+2) { border-top: 0; }
+.guide-reference .character-dossier dd { font-size: .85rem; overflow-wrap: anywhere; }
+.guide-reference .character-dossier .dossier-edition { margin: .25rem 1.3rem .5rem; padding-top: .65rem; font-size: .48rem; }
+@media(max-width:55rem) { .guide-reference .character-dossier { justify-self: center; } }
+@media(max-width:25rem) {
+ .guide-reference .character-dossier .dossier-heading { padding: .85rem; }
+ .guide-reference .character-dossier dl > div { padding: .65rem 0; }
+ .guide-reference .character-dossier dd { font-size: .8rem; }
+ .guide-reference .character-dossier .dossier-edition { font-size: .43rem; }
+}
+
+/* Card first, with a tighter editorial gutter beside the biography. */
+.guide-reference .about-layout { grid-template-columns: minmax(18rem,26rem) minmax(0,1fr); gap: clamp(1.5rem,3vw,3rem); }
+.guide-reference .character-dossier { justify-self: start; }
+@media(max-width:55rem) {
+ .guide-reference .about-layout { grid-template-columns: 1fr; gap: 2rem; }
+ .guide-reference .character-dossier { justify-self: center; }
+}
+
+
+/* Standalone cover gallery: five, four, three, then two columns. */
+.guide-reference .reading-market > .section-head h2 { font-size: clamp(.95rem,1.25vw,1.2rem); font-weight: 800; letter-spacing: .065em; text-transform: uppercase; line-height: 1.3; }
+.reading-market .section-head > p { font-size: .75rem; color: #65727c; }
+.reading-market .chart-list { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.5rem 1rem; margin-top: 1.5rem; }
+.reading-market .chart-list li { display: block; padding: 0; border: 0; min-width: 0; }
+.reading-market .chart-cover { aspect-ratio: 2 / 3; margin-bottom: 1rem; }
+.reading-market .chart-cover img { object-fit: contain; object-position: center; }
+.reading-market .chart-copy h4 { font-size: 1rem; font-weight: 600; line-height: 1.4; margin-block: .45rem; }
+.reading-market .chart-copy .eyebrow { font-size: .6rem; color: #526e86; }
+.reading-market .chart-creators, .reading-market .chart-edition { font-size: .75rem; line-height: 1.5; color: #65727c; }
+.reading-market .chart-edition { display: block; }
+@media(min-width:40rem) { .reading-market .chart-list { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media(min-width:64rem) { .reading-market .chart-list { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+@media(min-width:80rem) { .reading-market .chart-list { grid-template-columns: repeat(5,minmax(0,1fr)); } }
+
+/* Aligned cover stages and compact, clearly grouped catalogue details. */
+.guide-reference .reading-market .section-head { align-items: baseline; gap: .75rem 2rem; margin-bottom: 2rem; }
+.guide-reference .reading-market .chart-list { margin-top: 0; gap: 1.5rem; }
+.guide-reference .reading-market .chart-list li { border: 1px solid #e6eaee; border-radius: 12px; overflow: hidden; background: #fff; }
+.guide-reference .reading-market .chart-cover { display: block; aspect-ratio: 4 / 3; margin: 0; padding: 1.25rem; background: #f7f7f8; }
+.guide-reference .reading-market .chart-cover img { filter: drop-shadow(3px 5px 4px #172b3d30); }
+.guide-reference .reading-market .chart-copy { padding: 1rem 1.1rem .75rem; }
+.guide-reference .reading-market .chart-copy .eyebrow { display: inline-block; margin: 0 0 .65rem; padding: .2rem .5rem; border-radius: 4px; color: #365d7b; background: #edf3f8; font-size: .58rem; line-height: 1.5; letter-spacing: .075em; }
+.guide-reference .reading-market .chart-copy h4 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.4; text-wrap: pretty; }
+.guide-reference .reading-market .chart-edition { margin-top: .55rem; }
+.guide-reference .reading-market .market-action { display: inline-flex; align-items: center; gap: .3rem; min-height: 2.75rem; margin-top: .35rem; font-size: .75rem; font-weight: 700; color: #235d96; text-decoration: none; }
+.guide-reference .reading-market .market-action:hover { text-decoration: underline; }
+@media(min-width:40rem) { .guide-reference .reading-market .chart-list { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media(min-width:64rem) { .guide-reference .reading-market .chart-list { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+@media(min-width:80rem) { .guide-reference .reading-market .chart-list { grid-template-columns: repeat(5,minmax(0,1fr)); } }
+@media(max-width:39.99rem) {
+ .guide-reference .reading-market .chart-list { gap: .75rem; }
+ .guide-reference .reading-market .chart-cover { aspect-ratio: 3 / 4; padding: .85rem; }
+ .guide-reference .reading-market .chart-copy { padding: .85rem .75rem .5rem; }
+ .guide-reference .reading-market .chart-copy h4 { font-size: .9rem; }
+ .guide-reference .reading-market .market-action { font-size: .7rem; }
+}
+
+/* Let portrait cover art occupy the full card width at every breakpoint. */
+.guide-reference .reading-market .chart-cover { aspect-ratio: 2 / 3; padding: 0; }
+.guide-reference .reading-market .chart-cover img { width: 100%; height: 100%; object-fit: contain; filter: none; }
+/* A compact card silhouette; shrink the portrait region rather than stretching the card. */
+.guide-reference .about-layout { grid-template-columns: minmax(0,21rem) minmax(0,1fr); }
+.guide-reference .character-dossier { width: 100%; max-width: 21rem; aspect-ratio: 5 / 7; min-width: 0; }
+.guide-reference .character-dossier .dossier-heading { flex: 1 1 0; min-height: 0; }
+.guide-reference .character-dossier dl > div { padding-block: .65rem; }
+.guide-reference .character-dossier dd { font-size: .8rem; }
+.guide-reference .character-dossier .dossier-edition { font-size: .42rem; margin-inline: 1.15rem; }
+@media(max-width:55rem) { .guide-reference .about-layout { grid-template-columns: 1fr; } }
+
+/* Character palettes carry through to each companion dossier. */
+.guide-reference .character-dossier { background: linear-gradient(130deg,#f5f2de,var(--dossier-accent) 22%,#aabac6 45%,var(--dossier-accent) 75%,#f5f2de); border-color: color-mix(in srgb,var(--dossier-accent) 70%,#18262d); }
+.guide-reference .character-dossier::before { border-color: var(--dossier-accent); }
+.guide-reference .character-dossier dt,.guide-reference .character-dossier .dossier-heading p { color: var(--dossier-accent); }
+.guide-reference .character-dossier .dossier-heading h3 { max-width: 75%; font-size: clamp(1.2rem,1.8vw,1.6rem); }

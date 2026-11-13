@@ -1,4 +1,4 @@
-.guide-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.guide-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
 .guide-card { border: 1px solid var(--rule); border-radius: .85rem; background: white; }
 .guide-card-link { display: flex; flex-direction: column; height: 100%; border-radius: inherit; text-decoration: none; }
 .guide-card-link:hover { color: inherit; }
@@ -8,7 +8,6 @@
 .guide-card-action { margin-top: auto; font-size: .86rem; font-weight: 800; color: var(--link); }
 .guide-card-link:hover .guide-card-action { text-decoration: underline; }
 @media (max-width: 48rem) {
-  .guide-grid { grid-template-columns: 1fr; }
   .guide-card-link { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.7fr); }
   .guide-card-link .picture { position: relative; aspect-ratio: auto; border-radius: .8rem 0 0 .8rem; }
   .guide-card-link .picture img { position: absolute; inset: 0; }
@@ -22,9 +21,9 @@
 @media (max-width: 48rem) {
   .guide-card-link .picture.cover img { padding: .4rem; }
 }
-@media (min-width: 68rem) {
-  .guide-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-}
+@media (min-width: 40rem) { .guide-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (min-width: 64rem) { .guide-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+@media (min-width: 80rem) { .guide-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); } }
 
 .guide-card-link .character-render { background: #11151e; }
 .guide-card-link .character-render img { object-fit: contain; }

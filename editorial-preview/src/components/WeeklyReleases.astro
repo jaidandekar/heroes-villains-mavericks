@@ -1,0 +1,34 @@
+---
+import batch from '../data/weekly-releases.json';
+import guides from '../data/guides.json';
+import { rankWeekly, weekLabel } from '../lib/weekly-releases.mjs';
+import css from './weekly-releases.css?raw';
+const entries = rankWeekly(batch.entries);
+const label = weekLabel(batch);
+const displayDate = (value) => new Intl.DateTimeFormat('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' }).format(new Date(value + 'T12:00:00Z'));
+---
+<section class="wrap section weekly-releases" id="weekly-releases" aria-labelledby="weekly-title" data-weekly data-start={batch.weekStart} data-end={batch.weekEnd}>
+  <div class="section-head"><h2 id="weekly-title">New this week</h2><p><time datetime={batch.weekStart}>{label}</time></p></div>
+  <div class="weekly-intro"><p>Fresh from Marvel and DC, with the characters in these guides first in line.</p><p class="weekly-checked">Checked <time datetime={batch.verifiedOn}>{displayDate(batch.verifiedOn)}</time></p></div>
+  <p class="weekly-stale" data-weekly-stale hidden>This is the latest verified edition. A newer release list is still being checked.</p>
+  <div class="weekly-grid" id="weekly-grid">{entries.map(entry => <article class="weekly-card">
+    <div class="weekly-cover"><img src={'./' + entry.cover} alt={'Cover of ' + entry.title} loading="lazy" width="460" height="700" /></div>
+    <div class="weekly-copy"><p class="eyebrow">{entry.publisher}</p><h3>{entry.title}</h3><p class="weekly-summary">{entry.summary} Released <time datetime={entry.releaseDate}>{displayDate(entry.releaseDate)}</time>.</p>
+      <div class="weekly-links">{entry.guideIds.map(id => <a href={id + '-guide/index.html'}>Explore {guides[id].brand} <span class="link-arrow" aria-hidden="true">→</span></a>)}</div>
+    </div>
+  </article>)}</div>
+  {entries.length === 0 && <p>No releases have been verified for this edition yet.</p>}
+  <p class="weekly-source-note">Selected U.S. print releases; publication dates can change. Details and cover artwork from DC and Penguin Random House.</p>
+</section>
+<style is:inline set:html={css}></style>
+<script is:inline>
+(() => {
+  const section = document.querySelector('[data-weekly]');
+  if (!section) return;
+  const today = new Intl.DateTimeFormat('sv-SE', { timeZone: 'America/Chicago', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
+  if (today < section.dataset.start || today > section.dataset.end) {
+    section.querySelector('h2').textContent = 'Latest comic releases';
+    section.querySelector('[data-weekly-stale]').hidden = false;
+  }
+})();
+</script>

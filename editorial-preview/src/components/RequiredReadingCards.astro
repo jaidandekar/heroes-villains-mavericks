@@ -2,17 +2,19 @@
 import PhysicalBook from './PhysicalBook.astro';
 import { amazonBookSearch } from '../lib/retailer-links.mjs';
 import css from './required-reading-cards.css?raw';
-const { runs, notes = {}, base = '../' } = Astro.props;
+const { runs, notes = {}, base = '../', showCreators = true, editions = {} } = Astro.props;
+const editionRuns = runs.map(run => ({...run, physical: editions[run.slug]}));
 const poses = [[38,-8,-16], [29,12,13], [46,-12,-10], [24,17,9], [33,-14,-14], [42,9,15], [27,-18,-8], [36,14,12]];
 ---
-<div class="shelf-stories artifact-grid">{runs.map((run, index) => <article class="artifact-card" id={'run/' + run.slug}>
+<div class="shelf-stories artifact-grid">{editionRuns.map((run, index) => <article class="artifact-card" id={'run/' + run.slug}>
     <a class="artifact-card-link" href={amazonBookSearch(run.title, run.creators)} target="_blank" rel="noopener noreferrer" aria-labelledby={'artifact-title-' + run.slug + ' artifact-action-' + run.slug}>
-      <PhysicalBook includeStyles={index === 0} cover={run.cover} base={base} pose={poses[index % poses.length]} stack={[...runs.slice(index + 1), ...runs.slice(0, index)].slice(0, 2)} variant={index} color={['#203c51','#623333','#37513b'][index % 3]} depth={run.title.includes('#') ? 3 : 12} />
+      <PhysicalBook includeStyles={index === 0} cover={run.cover} base={base} pose={run.physical?.pose ?? poses[index % poses.length]} stackLayout={run.physical?.stackLayout} stack={[...editionRuns.slice(index + 1), ...editionRuns.slice(0, index)].filter(item => !run.physical || (['paperback','hardcover'].includes(item.physical?.format)) === (['paperback','hardcover'].includes(run.physical.format))).slice(0, run.physical?.stackLayout?.length ?? 2)} format={run.physical?.format} variant={index} color={['#203c51','#623333','#37513b'][index % 3]} depth={run.physical?.depth ?? (run.title.includes('#') ? 3 : 12)} />
       <div class="artifact-copy">
         <h3 id={'artifact-title-' + run.slug}>{run.title}</h3>
-        <p class="artifact-creators">{run.creators}</p>
-        <span class="artifact-action" id={'artifact-action-' + run.slug}>Find on Amazon <span aria-hidden="true">↗</span></span>
-        {(notes[run.slug]?.note ?? run.summary) && <p class="artifact-description">{notes[run.slug]?.note ?? run.summary}</p>}
+        {showCreators && <p class="artifact-creators">{run.creators}</p>}
+        {!showCreators && (notes[run.slug]?.note ?? run.summary) && <p class="artifact-description">{notes[run.slug]?.note ?? run.summary}</p>}
+        <span class="artifact-action" id={'artifact-action-' + run.slug}>Find on Amazon <span class="link-arrow" aria-hidden="true">→</span></span>
+        {showCreators && (notes[run.slug]?.note ?? run.summary) && <p class="artifact-description">{notes[run.slug]?.note ?? run.summary}</p>}
       </div>
     </a>
   </article>)}</div>

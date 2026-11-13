@@ -1,10 +1,12 @@
 ---
 import Shell from '../layouts/Shell.astro';
+import site from '../data/site.json';
 import LanternsPodcast from '../components/LanternsPodcast.astro';
 import Wishlist from '../components/Wishlist.astro';
 import ReadingShelf from '../components/ReadingShelf.astro';
 import FeatureCarousel from '../components/FeatureCarousel.astro';
 import GuideShelf from '../components/GuideShelf.astro';
+import WeeklyReleases from '../components/WeeklyReleases.astro';
 const entries = [
   { title: 'Lanterns', art: 'media/lanterns.jpg', label: "The full season is streaming now on Max.", copy: "Hal Jordan and John Stewart investigate a murder in the American heartland.", scores: [{"url": "https://www.rottentomatoes.com/tv/lanterns/s01", "value": "92%", "source": "Rotten Tomatoes"}, {"url": "https://www.imdb.com/title/tt26545992/", "value": "8.4", "source": "IMDb"}, {"url": "https://www.metacritic.com/tv/lanterns/", "value": "72", "source": "Metacritic"}], trailer: "https://www.youtube.com/watch?v=7UIBOsuUwc4", link: "green-lantern-guide/index.html", action: "Learn more about Green Lantern" },
   { title: 'VisionQuest', art: 'media/vision.jpg', wideArt: 'media/vision-wide.jpg', focus: { x: 0.5, y: 0.44 }, label: "Episodes 1 through 6 streaming now on Disney+. The finale airs on November 11.", copy: "Vision is hunted, resisting Ultron, while a boy who may be his son is drawn into the chase.", scores: [{"url": "https://www.rottentomatoes.com/tv/visionquest/s01", "value": "91%", "source": "Rotten Tomatoes"}, {"url": "https://www.imdb.com/title/tt23112594/", "value": "7.8", "source": "IMDb"}, {"url": "https://www.metacritic.com/tv/visionquest/", "value": "64", "source": "Metacritic"}], trailer: "https://www.youtube.com/watch?v=oSVTAUKyrL8", link: "vision-guide/index.html", action: "Learn more about Vision" },
@@ -13,10 +15,17 @@ const entries = [
   { title: 'Spider-Man: Beyond the Spider-Verse', art: 'media/beyond.jpg', wideArt: 'media/beyond-wide.jpg', focus: { x: 0.62, y: 0.50 }, label: "In theaters on June 18, 2027.", copy: "Miles keeps searching for a way home. Sony Pictures Animation’s third film.", scores: [], link: "spiderman-guide/index.html", action: "Learn more about Spider-Man" },
 ];
 ---
-<Shell title="The comics behind the screen" description="A field guide to comic books, characters, and their worlds on screen.">
-  <FeatureCarousel id="now" title="Out now &amp; coming soon" heading="h1" entries={entries} />
-  <LanternsPodcast />
-  <ReadingShelf />
-  <Wishlist />
+<Shell design title="The comics behind the screen" description="A field guide to comic books, characters, and their worlds on screen.">
+  <section class="wrap journal-intro" aria-labelledby="journal-title">
+    <div class="journal-opening">
+      <h1 id="journal-title">Heroes, Villains <span class="hero-name-tail">&amp; Mavericks</span></h1>
+      <p>{site.description}</p>
+    </div>
+  </section>
+  <FeatureCarousel combineAvailability id="now" title="In theaters &amp; streaming" heading="h2" entries={entries} />
   <GuideShelf />
+  <WeeklyReleases />
+  <ReadingShelf />
+  <LanternsPodcast />
+  <Wishlist />
 </Shell>

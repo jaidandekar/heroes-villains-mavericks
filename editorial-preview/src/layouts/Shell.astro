@@ -1,6 +1,19 @@
 ---
 import css from './editorial.css?raw';
-const { title, description, home = './' } = Astro.props;
+import chromeCss from './site-chrome.css?raw';
+import site from '../data/site.json';
+import logo from '../../public/media/hvm-logo.svg?raw';
+import directionCss from './collector-journal.css?raw';
+const { title, description, home = './', design = false, secondaryLinks = [], guideReference = false } = Astro.props;
+const brandLogo = logo.replaceAll('fill="black"', 'fill="currentColor"').replace('<svg ', '<svg aria-hidden="true" focusable="false" ');
+const footerLinks = [
+  ['Home', 'index.html'],
+  ['Character guides', 'index.html#characters'],
+  ['New this week', 'index.html#weekly-releases'],
+  ['My bookshelf', 'index.html#shelf'],
+  ['Behind the scenes', 'index.html#lanterns-podcast'],
+  ['My wishlist', 'index.html#wishlist'],
+];
 ---
 <!doctype html>
 <html lang="en">
@@ -13,15 +26,62 @@ const { title, description, home = './' } = Astro.props;
   <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@8..144,100..900&amp;display=swap" rel="stylesheet" />
   <style is:inline set:html={css}></style>
 </head>
-<body>
+<body id="top" class:list={{ 'collector-journal': design, 'guide-reference': guideReference }}>
   <a class="skip" href="#main">Skip to content</a>
-  <header class="masthead wrap">
-    <div class="identity"><a class="wordmark" href={home + 'index.html'}>Heroes, Villains &amp; Mavericks</a> <a class="byline" href="https://indypendee.com/">by Jai Dandekar</a></div>
-
+  <header class="masthead wrap site-chrome">
+    <div class="identity">
+      <a class="wordmark" href={home + 'index.html'} aria-label="Heroes, Villains &amp; Mavericks"><Fragment set:html={brandLogo} /></a>
+      <nav aria-label="Main navigation"><a href={home + 'index.html'}>Home</a><a href={home + 'index.html#characters'}>Character guides</a></nav>
+    </div>
+    <a class="byline" href="https://indypendee.com/" target="_blank" rel="noopener noreferrer">by Jai Dandekar</a>
   </header>
+  {secondaryLinks.length > 0 && <nav class="guide-section-nav" aria-label="Guide sections"><div class="wrap">{secondaryLinks.map(({href,label}) => <a href={href}>{label}</a>)}</div></nav>}
   <main id="main"><slot /></main>
-  <footer class="wrap footer"><strong>Heroes, Villains &amp; Mavericks</strong><span>Editorial preview · By Jai Dandekar</span></footer>
+  <footer class="wrap footer site-footer site-chrome" aria-label="Site footer">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <a class="footer-mark" href={home + 'index.html'} aria-label="Heroes, Villains &amp; Mavericks home"><Fragment set:html={brandLogo} /></a>
+        <p class="footer-name">Heroes, Villains &amp; Mavericks</p>
+        <p class="footer-description">{site.description}</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <p class="footer-label">Explore</p>
+        <ul>{footerLinks.map(([label, path]) => <li><a href={home + path}>{label}</a></li>)}</ul>
+      </nav>
+    </div>
+    <div class="footer-meta">
+      <a href="https://indypendee.com/" target="_blank" rel="noopener noreferrer">Design &amp; editorial by Jai Dandekar <span class="link-arrow" aria-hidden="true">→</span></a>
+      <a href="#top">Back to top <span class="link-arrow" aria-hidden="true">→</span></a>
+    </div>
+  </footer>
+  {design && <style is:inline set:html={directionCss}></style>}
+  <style is:inline set:html={chromeCss}></style>
   <script is:inline>
+    // Compact after scrolling, with a small return threshold to avoid flicker.
+    const siteHeader = document.querySelector('.masthead');
+    const sectionNav = document.querySelector('.guide-section-nav');
+    if (sectionNav) {
+      const sizeNavigation = () => {
+        const headerHeight = siteHeader.getBoundingClientRect().height;
+        document.documentElement.style.setProperty('--masthead-height', headerHeight + 'px');
+        document.documentElement.style.setProperty('--guide-scroll-offset', (headerHeight + sectionNav.getBoundingClientRect().height + 16) + 'px');
+      };
+      const navigationObserver = new ResizeObserver(sizeNavigation);
+      navigationObserver.observe(siteHeader, { box: 'border-box' });
+      navigationObserver.observe(sectionNav, { box: 'border-box' });
+      sizeNavigation();
+    }
+    let headerFrame = 0;
+    const updateHeader = () => {
+      headerFrame = 0;
+      const compact = window.scrollY > 64 || (siteHeader.classList.contains('is-compact') && window.scrollY > 8);
+      siteHeader.classList.toggle('is-compact', compact);
+    };
+    window.addEventListener('scroll', () => {
+      if (!headerFrame) headerFrame = requestAnimationFrame(updateHeader);
+    }, { passive: true });
+    window.addEventListener('pageshow', updateHeader);
+    updateHeader();
     // Map each source focal point to the upper part of the visible window.
     const crop = image => {
       if (!image.naturalWidth || !image.clientWidth) return;

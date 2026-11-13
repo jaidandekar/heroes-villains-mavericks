@@ -13,7 +13,7 @@ const image = item.image.startsWith('media/') ? base + item.image : item.image;
     <div class="wishlist-copy">
       <p class="eyebrow">{label}</p>
       <h3 id={'product-title-' + id}>{item.title}</h3>
-      <span class="wishlist-action" id={'product-action-' + id}>{searchUrl ? 'Search ' : 'View at '}{item.store} <span aria-hidden="true">↗</span></span>
+      <span class="wishlist-action" id={'product-action-' + id}>{searchUrl ? 'Search ' : 'View at '}{item.store} <span class="link-arrow" aria-hidden="true">→</span></span>
     </div>
   </a>
 </li>

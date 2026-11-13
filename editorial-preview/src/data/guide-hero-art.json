@@ -1,12 +1,13 @@
 {
   "batman": {
-    "src": "media/guide-wide-batman.jpg",
-    "alt": "Batman in the red-lit rain",
-    "credit": "The Batman promotional still via TMDB",
-    "source": "https://www.themoviedb.org/movie/414906-the-batman",
+    "src": "media/guide-batman-comic-action.jpg",
+    "alt": "Comic illustration of Batman fighting attackers with his cape spread behind him",
+    "credit": "DC Batman character-gallery comic artwork",
+    "source": "https://www.dc.com/characters/batman",
+    "assetSource": "https://static.dc.com/2024-03/batman_charGal_2024_3.jpg",
     "focus": {
-      "x": 0.5,
-      "y": 0.36
+      "x": 0.61,
+      "y": 0.24
     }
   },
   "green-lantern": {
@@ -20,83 +21,83 @@
     }
   },
   "fantastic-four": {
-    "src": "media/guide-wide-fantastic-four.jpg",
-    "alt": "The four founding Fantastic Four members together",
-    "credit": "Marvel Rivals artwork via Space.com",
-    "source": "https://www.space.com/entertainment/space-games-toys/the-fantastic-four-join-marvel-rivals-ahead-of-their-big-screen-marvel-cinematic-universe-reboot",
+    "src": "media/fantastic-four-ross.jpg",
+    "alt": "fantastic four in character-focused comic artwork",
+    "source": "https://www.cinemablend.com/news/2560016/marvels-fantastic-four-reboot-has-taken-a-massive-step-forward",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.52,
-      "y": 0.4
+      "x": 0.5,
+      "y": 0.25
     }
   },
   "doctor-doom": {
-    "src": "media/guide-wide-doctor-doom.jpg",
-    "alt": "Doctor Doom in his green hood and armor",
-    "credit": "Marvel Rivals cinematic art via esports.gg",
-    "source": "https://esports.gg/news/marvel-rivals/doom-is-on-his-way-to-marvel-rivals/",
+    "src": "media/multiverse-victor-von-doom-desktop.jpg",
+    "alt": "doctor doom in character-focused comic artwork",
+    "source": "https://www.heroicfineartgallery.com/store/p685/DOCTOR_DOOM_Paper_Print_by_Alex_Ross_%28Unsigned%29.html",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.53,
-      "y": 0.44
+      "x": 0.5,
+      "y": 0.2
     }
   },
   "ultron": {
-    "src": "media/guide-wide-ultron.jpg",
-    "alt": "Ultron in his metallic armor",
-    "credit": "Avengers: Age of Ultron still via Looper",
-    "source": "https://www.looper.com/144336/what-ultron-almost-looked-like/",
+    "src": "media/multiverse-ultron-desktop.jpg",
+    "alt": "ultron in character-focused comic artwork",
+    "source": "https://unknowncomicbooks.com/products/avengers-66-e-alex-ross-timeless-ultron-virgin-variant-03-08-2023-marvel",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.6,
-      "y": 0.42
+      "x": 0.51,
+      "y": 0.2
     }
   },
   "sinestro": {
-    "src": "media/guide-wide-sinestro.jpg",
-    "alt": "Sinestro wielding yellow ring energy",
-    "credit": "Infinite Crisis key art via Wallpaper Abyss",
-    "source": "https://wall.alphacoders.com/big.php?i=573511",
+    "src": "media/guide-comic-sinestro.jpg",
+    "alt": "sinestro in character-focused comic artwork",
+    "source": "https://getwallpapers.com/collection/sinestro-wallpapers",
+    "credit": "Comic character artwork · DC",
     "focus": {
-      "x": 0.56,
-      "y": 0.38
+      "x": 0.49,
+      "y": 0.31
     }
   },
   "spiderman": {
-    "src": "media/guide-wide-spiderman.jpg",
-    "alt": "Spider-heroes racing through the Spider-Verse",
-    "credit": "Beyond the Spider-Verse artwork via TMDB",
-    "source": "https://www.themoviedb.org/movie/911430-spider-man-beyond-the-spider-verse",
+    "src": "media/multiverse-peter-parker-desktop.jpg",
+    "alt": "spiderman in character-focused comic artwork",
+    "source": "https://www.dailyherald.com/20250507/submitted-content/alex-ross-heroes-villains-exhibition-opens-this-summer-at-the-bess-bower-dunn-museum/",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.45,
-      "y": 0.45
+      "x": 0.5,
+      "y": 0.66
     }
   },
   "venom": {
-    "src": "media/guide-wide-venom.jpg",
-    "alt": "Venom facing forward with his teeth bared",
-    "credit": "Venom: The Last Dance still via GamesRadar+",
-    "source": "https://www.gamesradar.com/entertainment/marvel-movies/venom-3-the-last-dance-easter-eggs-marvel-deep-cuts-references-explained/",
+    "src": "media/multiverse-eddie-brock-desktop.jpg",
+    "alt": "venom in character-focused comic artwork",
+    "source": "https://www.midtowncomics.com/product/2180393",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.57,
-      "y": 0.39
+      "x": 0.55,
+      "y": 0.38
     }
   },
   "clayface": {
-    "src": "media/guide-wide-clayface.jpg",
-    "alt": "Clayface with his reflection distorted",
-    "credit": "Clayface promotional art via TMDB",
-    "source": "https://www.dc.com/movies/clayface-2026",
+    "src": "media/multiverse-basil-karlo-desktop.jpg",
+    "alt": "clayface in character-focused comic artwork",
+    "source": "https://www.thewrap.com/dc-clayface-movie-release-date-mike-flanagan/",
+    "credit": "Comic character artwork · DC",
     "focus": {
       "x": 0.5,
-      "y": 0.41
+      "y": 0.3
     }
   },
   "vision": {
-    "src": "media/guide-wide-vision.jpg",
-    "alt": "Vision seated beneath his red and green counterpart",
-    "credit": "VisionQuest promotional art via TMDB",
-    "source": "https://www.marvel.com/tv-shows/visionquest/1",
+    "src": "media/multiverse-classic-vision-desktop.jpg",
+    "alt": "vision in character-focused comic artwork",
+    "source": "https://www.heroicfineartgallery.com/store/p745/VISION_%26_SCARLET_WITCH_Set_of_2_Paper_Prints_by_Alex_Ross_%28Unsigned%29.html",
+    "credit": "Comic character artwork · Marvel",
     "focus": {
-      "x": 0.66,
-      "y": 0.43
+      "x": 0.5,
+      "y": 0.18
     }
   }
 }

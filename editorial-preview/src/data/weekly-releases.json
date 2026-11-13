@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "weekStart": "2026-11-09",
+  "weekEnd": "2026-11-15",
+  "verifiedOn": "2026-11-12",
+  "scope": "Marvel and DC; guide-related releases prioritized. Selected releases, not a complete catalog.",
+  "entries": [
+    {
+      "id": "dc-green-lantern-corps-22",
+      "title": "Green Lantern Corps #22",
+      "publisher": "DC",
+      "format": "single-issue",
+      "creators": "Morgan Hampton · Juan José Ryp · Fernando Pasarin",
+      "releaseDate": "2026-11-11",
+      "guideIds": [
+        "green-lantern"
+      ],
+      "summary": "Guy Gardner and Kyle Rayner search for Hal Jordan inside the Well of the Emotional Entities, where Krona and surviving Guardians await.",
+      "source": "https://www.dc.com/comics/green-lantern-corps-2025/green-lantern-corps-2025-22",
+      "coverSource": "https://static.dc.com/dc/files/default_images/28a89e0b-26d6-4f5d-8829-64c941692a6c/b55e2b32-063f-43d8-b49a-b7313b3f7f28/0.jpg?w=800",
+      "cover": "media/weekly/dc-green-lantern-corps-22.jpg",
+      "sourceLabel": "DC",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "marvel-amazing-spider-man-1003",
+      "title": "Amazing Spider-Man #1003",
+      "publisher": "Marvel",
+      "format": "single-issue",
+      "creators": "Joe Kelly · Pat Gleason",
+      "releaseDate": "2026-11-11",
+      "guideIds": [
+        "spiderman"
+      ],
+      "summary": "Peter races to stop an assassin as New York struggles with the fallout from Armageddon.",
+      "isbn": "75960623001300311",
+      "source": "https://prhcomics.com/book/?isbn=75960623001300311",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/700jpg/75960623001300311",
+      "cover": "media/weekly/marvel-amazing-spider-man-1003.jpg",
+      "sourceLabel": "Penguin Random House",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "dc-batman-robin-dynamic-duos-4",
+      "title": "Batman & Robin: Year One – Dynamic Duos #4",
+      "publisher": "DC",
+      "format": "single-issue",
+      "creators": "Mark Waid · Chris Samnee",
+      "releaseDate": "2026-11-11",
+      "guideIds": [
+        "batman"
+      ],
+      "summary": "Robin’s undercover work with the Wolf Pack gives Batman a lead, before an encounter with Catwoman changes the investigation.",
+      "source": "https://www.dc.com/comics/batman-and-robin-year-one-2024/batman-and-robin-year-one-dynamic-duos-2026-4",
+      "coverSource": "https://static.dc.com/dc/files/default_images/e3813648-03a4-4ef0-bfd2-209271ddf7ec/d3d78acd-1963-4a42-8be0-6a67f8d8a58c/0.jpg?w=800",
+      "cover": "media/weekly/dc-batman-robin-dynamic-duos-4.jpg",
+      "sourceLabel": "DC",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "marvel-emperor-doom-1",
+      "title": "Emperor Doom #1",
+      "publisher": "Marvel",
+      "format": "single-issue",
+      "creators": "David Michelinie · Bob Hall",
+      "releaseDate": "2026-11-11",
+      "guideIds": [
+        "doctor-doom"
+      ],
+      "summary": "The 1987 graphic novel returns in comic-book format: Doom controls the world, and Wonder Man must rally the Avengers against him.",
+      "isbn": "75960621432700111",
+      "source": "https://prhcomics.com/book/?isbn=75960621432700111",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/700jpg/75960621432700111",
+      "cover": "media/weekly/marvel-emperor-doom-1.jpg",
+      "sourceLabel": "Penguin Random House",
+      "verifiedOn": "2026-11-12",
+      "significance": 2,
+      "quality": 1
+    },
+    {
+      "id": "dc-clayface-celebrity-dirt-5",
+      "title": "Clayface: Celebrity Dirt #5",
+      "publisher": "DC",
+      "format": "single-issue",
+      "creators": "Jude Ellison S. Doyle · Fran Galán",
+      "releaseDate": "2026-11-11",
+      "guideIds": [
+        "clayface"
+      ],
+      "summary": "Basil Karlo’s search for his abducted neighbor reaches a crisis in the penultimate issue of this body-horror story.",
+      "source": "https://www.dc.com/comics/clayface-celebrity-dirt-2026/clayface-celebrity-dirt-2026-5",
+      "coverSource": "https://static.dc.com/dc/files/default_images/b0c8291e-5e79-4ad8-956f-a431416ef4ac/56536bb6-8296-48a4-85ad-2be9a62eba06/0.jpg?w=800",
+      "cover": "media/weekly/dc-clayface-celebrity-dirt-5.jpg",
+      "sourceLabel": "DC",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "marvel-planet-apes-fantastic-four-tp",
+      "title": "Planet of the Apes vs. Fantastic Four",
+      "publisher": "Marvel",
+      "format": "collected-edition",
+      "binding": "Paperback",
+      "creators": "Josh Trujillo · Andrea Di Vito",
+      "releaseDate": "2026-11-10",
+      "guideIds": [
+        "fantastic-four"
+      ],
+      "summary": "Marvel’s first family encounters Cornelius, Zira, and the inhabitants of the Planet of the Apes in this collected crossover.",
+      "isbn": "9781302968144",
+      "source": "https://prhcomics.com/book/?isbn=9781302968144",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/700jpg/9781302968144",
+      "cover": "media/weekly/marvel-planet-apes-fantastic-four-tp.jpg",
+      "sourceLabel": "Penguin Random House",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "dc-batman-black-casebook-deluxe",
+      "title": "Batman: Black Casebook – Deluxe Edition",
+      "publisher": "DC",
+      "format": "collected-edition",
+      "binding": "Hardcover",
+      "creators": "Bill Finger · Edmond Hamilton · Sheldon Moldoff · Dick Sprang",
+      "releaseDate": "2026-11-10",
+      "guideIds": [
+        "batman"
+      ],
+      "summary": "An oversized collection of strange Batman stories from the 1950s and 1960s that later inspired Grant Morrison’s run.",
+      "isbn": "9781799509424",
+      "source": "https://prhcomics.com/book/?isbn=9781799509424",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/700jpg/9781799509424",
+      "cover": "media/weekly/dc-batman-black-casebook-deluxe.jpg",
+      "sourceLabel": "Penguin Random House",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    },
+    {
+      "id": "marvel-godzilla-infinity-roar-tp",
+      "title": "Godzilla: Infinity Roar",
+      "publisher": "Marvel",
+      "format": "collected-edition",
+      "binding": "Paperback",
+      "creators": "Gerry Duggan · Javier Garrón · Ig Guara · Domenico Carbone",
+      "releaseDate": "2026-11-10",
+      "guideIds": [
+        "venom"
+      ],
+      "summary": "Godzilla’s cosmic rampage meets Knull, the symbiote god, in a collected story connecting Marvel’s space adventures to Venom’s wider mythology.",
+      "isbn": "9781302969103",
+      "source": "https://prhcomics.com/book/?isbn=9781302969103",
+      "coverSource": "https://images.penguinrandomhouse.com/cover/700jpg/9781302969103",
+      "cover": "media/weekly/marvel-godzilla-infinity-roar-tp.jpg",
+      "sourceLabel": "Penguin Random House",
+      "verifiedOn": "2026-11-12",
+      "significance": 1,
+      "quality": 1
+    }
+  ]
+}

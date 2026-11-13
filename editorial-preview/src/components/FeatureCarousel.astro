@@ -5,6 +5,7 @@ import css from './feature-carousel.css?raw';
 interface Slide {
   title: string;
   art?: string;
+  artAlt?: string;
   id?: string;
   firstAppearance?: string;
   reference?: string;
@@ -22,21 +23,22 @@ interface Props {
   title: string;
   entries: Slide[];
   heading?: 'h1' | 'h2';
+  combineAvailability?: boolean;
   base?: string;
   variant?: 'screen' | 'versions';
 }
-const { id, title, entries, heading: Heading = 'h2', base = './', variant = 'screen' } = Astro.props;
+const { id, title, entries, heading: Heading = 'h2', combineAvailability = false, base = './', variant = 'screen' } = Astro.props;
 ---
 {entries.length > 0 && <>
   <section class:list={['wrap section screen-feature', { 'version-feature': variant === 'versions' }]} id={id} aria-labelledby={id + "-title"} aria-roledescription="carousel">
     <div class="section-head"><Heading id={id + "-title"}>{title}</Heading></div>
     <div class="screen-grid" id={id + "-slides"} tabindex="0" aria-label="Slides">
       {entries.map((entry, index) => <article class="screen-card" id={entry.id}>
-        {entry.art && <Picture src={entry.art} wideSrc={entry.wideArt} focus={entry.focus} base={base} eager={index === 0} />}
+        {entry.art && <Picture src={entry.art} alt={entry.artAlt || ''} wideSrc={entry.wideArt} focus={entry.focus} base={base} eager={index === 0} />}
         <div class="screen-copy">
-          <p class="eyebrow">{entry.label}</p>
+          {!combineAvailability && <p class="eyebrow">{entry.label}</p>}
           <h3>{entry.title}</h3>
-          <p>{entry.copy}</p>
+          <p>{combineAvailability ? [entry.copy, entry.label].filter(Boolean).join(' ') : entry.copy}</p>
           {entry.firstAppearance && <p class="small"><strong>First appearance</strong>{' '}{entry.firstAppearance}</p>}
           {entry.scores?.length ? (
             <ul class="screen-scores" aria-label="Ratings from the original slate">
@@ -44,9 +46,9 @@ const { id, title, entries, heading: Heading = 'h2', base = './', variant = 'scr
             </ul>
           ) : null}
           <div class="screen-actions">
-            {entry.trailer && <a class="screen-trailer" href={entry.trailer} target="_blank" rel="noopener">Watch trailer <span aria-hidden="true">↗</span></a>}
-            {entry.link && <a href={entry.link}>{entry.action} <span aria-hidden="true">↗</span></a>}
-            {entry.reference && <a href={entry.reference}>Version reference <span aria-hidden="true">↗</span></a>}
+            {entry.trailer && <a class="screen-trailer" href={entry.trailer} target="_blank" rel="noopener">Watch trailer {!combineAvailability && <span class="link-arrow" aria-hidden="true">→</span>}</a>}
+            {entry.link && <a class="screen-more" href={entry.link}>{entry.action} {!combineAvailability && <span class="link-arrow" aria-hidden="true">→</span>}</a>}
+            {entry.reference && <a href={entry.reference}>Version reference <span class="link-arrow" aria-hidden="true">→</span></a>}
           </div>
         </div>
       </article>)}

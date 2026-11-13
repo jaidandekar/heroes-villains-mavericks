@@ -1,0 +1,100 @@
+/* Shared collector-card finish; character palettes tint the foil stock and translucent plate. */
+.collector-journal .guide-portrait.holo-card { --foil-x: 45%; --foil-y: 25%; position: relative; isolation: isolate; box-shadow: 0 3px 9px #13232e26; transition: transform .2s ease-out, box-shadow .3s ease; }
+.collector-journal .guide-portrait.holo-card .guide-card-link::before { content: ''; position: absolute; inset: 0; z-index: 5; padding: 3px; border-radius: inherit; background: linear-gradient(135deg,#e5e8e9,#8ad9d0 18%,#cab3f2 35%,#fae6b8 50%,#8fc8df 68%,#d7c0e9 84%,#f5f4e3); mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); mask-composite: exclude; pointer-events: none; }
+.collector-journal .guide-portrait.holo-card .guide-card-link::after { z-index: 2; }
+.collector-journal .guide-portrait.holo-card .guide-card-copy { z-index: 3; }
+.holo-foil { position: absolute; inset: 0; z-index: 1; overflow: hidden; border-radius: inherit; pointer-events: none; background: repeating-linear-gradient(115deg,transparent 0%,#8cecd173 10%,#a2b3ff80 20%,#efd0ef80 30%,#ffe6a885 40%,transparent 50%); background-size: 140% 140%; background-position: var(--foil-x) var(--foil-y); mix-blend-mode: color-dodge; opacity: .52; mask-image: linear-gradient(#000 0%,#000 55%,transparent 88%); transition: opacity .3s ease; }
+.holo-glare { position: absolute; inset: 0; display: block; background: radial-gradient(ellipse at var(--foil-x) var(--foil-y),#ffffffb3, #ffffff26 25%, transparent 58%); }
+.holo-grain { position: absolute; inset: 0; display: block; background: radial-gradient(#fff9 .65px,transparent .9px); background-size: 5px 5px; opacity: .25; }
+.collector-journal .guide-portrait.holo-card:focus-within .holo-foil { opacity: .68; }
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+ .collector-journal .guide-portrait.holo-card[data-holo-active] { transform: perspective(1000px) rotateX(var(--holo-rx,0deg)) rotateY(var(--holo-ry,0deg)) translateY(-3px); box-shadow: 0 12px 22px #13232e38; }
+ .holo-card[data-holo-active] .holo-foil { opacity: .72; }
+}
+@media (prefers-reduced-motion:reduce) {
+ .collector-journal .guide-portrait.holo-card, .holo-foil { transition: none; }
+}
+
+/* Foil-stock frame, engraved inner keyline, and a translucent information plate. */
+.collector-journal .guide-portrait.holo-card { padding: 7px; border-radius: 16px; background: linear-gradient(135deg,var(--card-light) 0%,var(--card-main) 15%,var(--card-light) 30%,var(--card-accent) 48%,var(--card-light) 65%,var(--card-main) 82%,var(--card-accent) 100%); box-shadow: inset 0 0 0 1px #756c55, inset 0 0 0 3px #fff9d580, 0 4px 9px #13232e40; }
+.collector-journal .guide-portrait.holo-card .guide-card-link { min-height: calc(26rem - 14px); border-radius: 10px; box-shadow: 0 0 0 1px #182a39, 0 0 0 2px var(--card-light); }
+.collector-journal .guide-portrait.holo-card .guide-card-link::before { padding: 2px; background: linear-gradient(120deg,var(--card-light),var(--card-main),var(--card-accent),var(--card-light),var(--card-main)); }
+.collector-journal .guide-portrait.holo-card .guide-card-copy { margin: 0 7px 7px; padding: 1rem .75rem .8rem; border: 1px solid color-mix(in srgb,var(--card-light) 60%,transparent); border-radius: 6px; background: linear-gradient(125deg,rgb(var(--card-ink) / .5),rgb(var(--card-ink) / .6)); box-shadow: inset 0 0 0 2px #ffffff0d, 0 -2px 12px #0d1c2755; }
+.collector-journal .guide-portrait.holo-card .guide-card-copy .eyebrow { padding-bottom: .5rem; border-bottom: 1px solid color-mix(in srgb,var(--card-light) 30%,transparent); color: var(--card-light); }
+.collector-journal .guide-portrait.holo-card .guide-card-action { border-top: 1px solid color-mix(in srgb,var(--card-light) 30%,transparent); padding-top: .55rem; width: 100%; }
+.holo-foil { opacity: .64; mask-image: linear-gradient(#000 0%,#000 58%,transparent 90%); }
+.holo-foil::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(135deg,transparent 0 18px,#fff5 19px,transparent 20px 38px), repeating-linear-gradient(45deg,transparent 0 38px,#b7dfff38 39px,transparent 40px 76px); opacity: .32; }
+.holo-foil::after { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at center,#fff 0 2%,#dff9ff99 3% 6%,transparent 19%) 18% 12% / 47px 61px, radial-gradient(ellipse at center,#fff 0 1%,#ffecad99 2% 5%,transparent 15%) 70% 35% / 73px 89px; opacity: .6; }
+.holo-grain { background: repeating-conic-gradient(#fff5 0% 25%,transparent 0% 50%) 0 0 / 4px 4px; opacity: .18; }
+@media (max-width: 63.99rem) {
+ .collector-journal .guide-portrait.holo-card .guide-card-link { min-height: calc(18rem - 14px); }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy { padding: .65rem .55rem; margin: 0 5px 5px; }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy .eyebrow { font-size: .52rem; padding-bottom: .35rem; }
+ .collector-journal .guide-portrait.holo-card .guide-card-action { font-size: .68rem; padding-top: .4rem; }
+}
+
+/* Palettes follow each character’s costume and artwork. */
+.holo-card[data-character="clayface"] { --card-main: #bd7944; --card-accent: #e1ac6d; --card-light: #ffe5b7; --card-ink: 57 31 20; }
+.holo-card[data-character="batman"] { --card-main: #71869d; --card-accent: #e5bc53; --card-light: #fff0b2; --card-ink: 17 26 40; }
+.holo-card[data-character="vision"] { --card-main: #5eae7b; --card-accent: #b95164; --card-light: #f4e4a2; --card-ink: 22 47 35; }
+.holo-card[data-character="ultron"] { --card-main: #a4b5c3; --card-accent: #e44546; --card-light: #eef6ff; --card-ink: 39 24 32; }
+.holo-card[data-character="green-lantern"] { --card-main: #36b878; --card-accent: #8ee4b3; --card-light: #d8ffe5; --card-ink: 12 49 34; }
+.holo-card[data-character="sinestro"] { --card-main: #e9be38; --card-accent: #9f67b8; --card-light: #fff2a5; --card-ink: 53 35 25; }
+.holo-card[data-character="doctor-doom"] { --card-main: #398b69; --card-accent: #a3b1bf; --card-light: #deeee8; --card-ink: 17 41 33; }
+.holo-card[data-character="fantastic-four"] { --card-main: #438fdb; --card-accent: #78c9ef; --card-light: #e1f5ff; --card-ink: 15 40 65; }
+.holo-card[data-character="spiderman"] { --card-main: #d53d52; --card-accent: #438bdb; --card-light: #e4efff; --card-ink: 48 22 43; }
+.holo-card[data-character="venom"] { --card-main: #7a78a2; --card-accent: #a9c4cd; --card-light: #f2eefc; --card-ink: 22 20 36; }
+
+.holo-tilt-control { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin: 0 0 1rem; font-size: .8rem; }
+.holo-tilt-control[hidden] { display: none; }
+.holo-tilt-control button { border: 1px solid currentColor; border-radius: 99px; padding: .6rem 1rem; color: var(--link); background: white; font: inherit; cursor: pointer; }
+.holo-tilt-control button:hover, .holo-tilt-control button[aria-pressed="true"] { background: #e6f2ff; }
+@media (prefers-reduced-motion:no-preference) {
+ .collector-journal .guide-portrait.holo-card[data-device-tilt] { transform: perspective(1000px) rotateX(var(--holo-rx,0deg)) rotateY(var(--holo-ry,0deg)); }
+ .holo-card[data-device-tilt] .holo-foil { opacity: .72; }
+}
+
+.collector-journal .guide-portrait.holo-card .guide-card-copy h3 { font-size: clamp(1.35rem,1.65vw,1.75rem); }
+@media (max-width: 63.99rem) {
+ .collector-journal .guide-portrait.holo-card .guide-card-copy h3 { font-size: clamp(1rem,2.5vw,1.3rem); }
+}
+
+/* The artwork stays fixed to the card stock as the whole card tilts. */
+.collector-journal .guide-portrait.holo-card .guide-card-link .picture img,
+.collector-journal .guide-portrait.holo-card .guide-card-link:hover .picture img {
+ transform: none;
+ transition: none;
+}
+.collector-journal .guide-portrait.holo-card .guide-card-link:hover .guide-card-action {
+ text-decoration: none;
+}
+.collector-journal .guide-portrait.holo-card .guide-card-link:hover .link-arrow {
+ transform: none;
+}
+
+/* Keep the collector-card stock at 5:7 as the grid changes column counts. */
+.collector-journal .guide-portrait.holo-card {
+ aspect-ratio: 5 / 7; min-height: 0; display: flex; flex-direction: column;
+ padding: clamp(4px,.5vw,7px);
+}
+.collector-journal .guide-portrait.holo-card .guide-card-link {
+ flex: 1; min-height: 0; height: auto;
+}
+@media(max-width:63.99rem) {
+ .collector-journal .guide-portrait.holo-card .guide-card-copy { padding: .5rem; margin: 0 4px 4px; }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy h3 { font-size: clamp(.9rem,2.25vw,1.3rem); margin-bottom: .45rem; }
+ .collector-journal .guide-portrait.holo-card .guide-card-action { padding-top: .35rem; font-size: .65rem; }
+}
+@media(min-width:64rem) {
+ .collector-journal .guide-portrait.holo-card .guide-card-copy { padding: .65rem; margin: 0 5px 5px; }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy h3 { font-size: clamp(1.1rem,1.45vw,1.6rem); }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy > p:not(.eyebrow) { font-size: .73rem; line-height: 1.45; margin-block: .45rem; }
+ .collector-journal .guide-portrait.holo-card .guide-card-action { font-size: .65rem; padding-top: .4rem; }
+}
+
+/* Keep the character pitch on the collector card at every grid width. */
+.collector-journal .guide-portrait.holo-card .guide-card-copy > p:not(.eyebrow) { display: block; }
+@media(max-width:63.99rem) {
+ .collector-journal .guide-portrait.holo-card .guide-card-copy > p:not(.eyebrow) { font-size: clamp(.6rem,1.45vw,.75rem); line-height: 1.4; margin-block: .4rem; }
+ .collector-journal .guide-portrait.holo-card .guide-card-copy h3 { margin-bottom: 0; }
+}

@@ -1,5 +1,4 @@
-2026-11-10
-Owner-approved homepage bookshelf release.
-Use shared physical book stacks and spine-opening hover for the four personal bookshelf cards.
-Reviewed source revision: 96bc097
-Preserve guide reading cards, shopping links, and original /site/ URL redirects.
+2026-11-13
+Owner-approved homepage and ten-guide visual redesign.
+Publish character-themed holographic cards, shared navigation, responsive collector dossiers, comic hero and multiverse imagery, and format-aware Required Reading stacks.
+Include the reviewed weekly releases, wishlist, bookshelf, footer, and carousel updates.

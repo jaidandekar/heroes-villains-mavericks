@@ -1,0 +1,194 @@
+/* Homepage direction: magazine scale, collector's detail. */
+.collector-journal {
+  --paper: #fff; --ink: #18262d; --muted: #566168; --rule: #e4e4e7;
+  --card-radius: .75rem;
+  --panel: #eaeae3; --accent: #235d96; --link: #235d96;
+  --font-display: 'Google Sans Flex', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: var(--font-display); --display: var(--font-display); --body: var(--font-body);
+  background: var(--paper); font-family: var(--body); -webkit-font-smoothing: antialiased;
+}
+.collector-journal .masthead { min-height: 6.4rem; border-bottom: 1px solid #f0f0f2; }
+.collector-journal .identity { width: auto; justify-content: flex-start; gap: .5rem 1.25rem; }
+.collector-journal .wordmark { font-family: var(--font-display); font-size: clamp(1.25rem,2.1vw,2rem); font-weight: 900; letter-spacing: -.055em; }
+.collector-journal .byline { color: var(--ink); font-size: .875rem; letter-spacing: .02em; }
+.journal-intro { padding-block: clamp(2.5rem,6vw,6rem) clamp(2.75rem,5vw,5rem); }
+.journal-opening { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 56rem; }
+.journal-opening h1 { max-width: 18ch; font-family: var(--font-display); font-size: clamp(2.5rem,5.2vw,5.25rem); font-weight: 900; line-height: 1.03; letter-spacing: -.015em; }
+.journal-opening > p { max-width: 38ch; text-wrap: pretty; font-size: clamp(1.1rem,1.7vw,1.6rem); line-height: 1.4; color: var(--muted); }
+.collector-journal .section { padding-block: clamp(3.5rem,5vw,5rem) clamp(3.5rem,7vw,7rem); border-top: 1px solid #f0f0f2; }
+.collector-journal .section-head { align-items: baseline; margin-bottom: 1.7rem; gap: 1rem 2rem; }
+.collector-journal .section-head h2, .collector-journal .shelf-col-title { font-family: var(--font-display); font-size: clamp(.95rem,1.25vw,1.2rem); font-weight: 800; line-height: 1.3; text-transform: uppercase; letter-spacing: .065em; }
+.collector-journal .section-head > p { font-size: .8rem; max-width: 42ch; color: var(--muted); }
+.collector-journal .shelf-col-title { margin-bottom: 1.7rem; }
+.collector-journal .screen-grid { border-radius: var(--card-radius); }
+.collector-journal .screen-copy { padding: clamp(1.5rem,4vw,4rem); width: min(100%,49rem); }
+.collector-journal .screen-copy h3 { font-family: var(--font-display); font-size: clamp(2.5rem,5.2vw,5.25rem); font-weight: 600; line-height: 1.08; letter-spacing: -.025em; }
+.collector-journal .screen-copy p:not(.eyebrow) { max-width: 48ch; font-size: clamp(.9rem,1.1vw,1.1rem); line-height: 1.65; }
+.collector-journal .screen-copy .eyebrow { color: #c5dff5; font-size: .65rem; letter-spacing: .12em; }
+.collector-journal .screen-controls { justify-content: center; margin-top: .85rem; }
+.collector-journal .screen-controls > button { border-width: 2px; border-radius: 50%; background: transparent; }
+.collector-journal .screen-count { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+.collector-journal .screen-trailer { border-radius: 2px; }
+.collector-journal .podcast-player, .collector-journal .podcast-side { border-radius: var(--card-radius); }
+.collector-journal .podcast-side { background: #f7f7f8; border-color: var(--rule); box-shadow: none; padding: 1.5rem; }
+.collector-journal .podcast-title { font-family: var(--font-display); font-size: clamp(1.15rem,1.65vw,1.65rem); font-weight: 600; line-height: 1.08; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.collector-journal .podcast-eps button[aria-current="true"] { background: #dce5ed; }
+.collector-journal .podcast-eps button[aria-current="true"] .podcast-ep-num { color: var(--link); }
+.collector-journal .artifact-card, .collector-journal .wishlist-item, .collector-journal .guide-card { border-radius: var(--card-radius); border-color: var(--rule); background: transparent; }
+.collector-journal .artifact-card-link, .collector-journal .wishlist-card-link, .collector-journal .guide-card-link { border-radius: inherit; }
+.collector-journal .artifact-copy, .collector-journal .wishlist-copy, .collector-journal .guide-card-copy { padding: 1.25rem; }
+.collector-journal .artifact-copy h3, .collector-journal .wishlist-copy h3 { font-size: 1rem; font-weight: 800; line-height: 1.35; letter-spacing: -.035em; }
+.collector-journal .artifact-copy .artifact-creators { font-size: .78rem; line-height: 1.6; }
+.collector-journal .artifact-action, .collector-journal .wishlist-action, .collector-journal .guide-card-action { font-size: .73rem; letter-spacing: .015em; font-weight: 800; }
+.collector-journal .physical-book { background: radial-gradient(ellipse at 50% 65%,#d4dcd9,#e9e9e0 78%); }
+.collector-journal .wishlist-art { border-radius: 0; background: #fdfcf9; }
+.collector-journal .guide-card-link .picture { border-radius: 0; }
+.collector-journal .guide-card-copy h3 { font-family: var(--font-display); font-size: clamp(1.4rem,1.8vw,1.9rem); font-weight: 900; line-height: 1.05; letter-spacing: -.04em; }
+.collector-journal .guide-card-copy > p:not(.eyebrow) { font-size: .8rem; line-height: 1.65; color: var(--muted); }
+.collector-journal .eyebrow { color: var(--link); font-size: .6rem; letter-spacing: .12em; }
+@media (max-width: 44rem) {
+ .collector-journal .masthead { min-height: 0; padding-block: .5rem; }
+ .collector-journal .identity { display: flex; flex-wrap: nowrap; gap: .65rem; }
+ .collector-journal .wordmark { display: block; font-size: clamp(1.2rem,5.1vw,2rem); }
+ .collector-journal .byline { display: inline-block; margin-top: 0; font-size: clamp(.6875rem,3.1vw,.8125rem); letter-spacing: 0; }
+ .journal-opening h1 { font-size: 2.5rem; }
+ .collector-journal .section-head h2, .collector-journal .shelf-col-title { font-size: .95rem; }
+ .collector-journal .screen-copy h3 { font-size: 2.5rem; }
+ .collector-journal .artifact-copy, .collector-journal .wishlist-copy, .collector-journal .guide-card-copy { padding: .85rem; }
+ .collector-journal .artifact-copy h3, .collector-journal .wishlist-copy h3 { font-size: .9rem; }
+ .collector-journal .artifact-copy .artifact-creators { font-size: .73rem; }
+ .collector-journal .podcast-side { padding: 1rem; }
+}
+
+/* Readable film summaries and a distinct primary action. */
+.collector-journal #now .screen-copy { width: min(100%, 57rem); }
+.collector-journal #now .screen-copy > p:not(.eyebrow) { font-size: clamp(1.1rem,1.55vw,1.5rem); line-height: 1.5; max-width: 46ch; margin-block: .9rem; }
+.collector-journal #now .screen-scores { gap: 1rem 2rem; margin-block: 1.25rem; }
+.collector-journal #now .screen-scores strong { font-size: clamp(1.65rem,2.6vw,2.5rem); font-weight: 900; letter-spacing: -.04em; }
+.collector-journal #now .screen-scores span { font-size: .65rem; margin-top: .25rem; }
+.collector-journal #now .screen-actions { gap: 1rem 1.5rem; }
+.collector-journal #now .screen-trailer { display: inline-flex; align-items: center; justify-content: center; gap: 1.25rem; min-height: 3rem; padding: .8rem 1.25rem; background: white; color: #142b40; border: 1px solid white; border-radius: .3rem; font-size: 1rem; font-weight: 800; text-decoration: none; transition: background .2s, border-color .2s; }
+.collector-journal #now .screen-trailer:hover { color: #142b40; background: #c5dff5; border-color: #c5dff5; text-decoration: none; }
+.collector-journal #now .screen-trailer:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+
+@media (prefers-reduced-motion:reduce) { .collector-journal #now .screen-trailer { transition: none; } }
+
+/* Keep the information at the top and the actions at the foot of each slide. */
+.collector-journal #now .screen-card { align-items: stretch; }
+.collector-journal #now .screen-card::after { background: linear-gradient(90deg,rgba(8,12,20,.91),rgba(8,12,20,.62) 45%,rgba(8,12,20,.08)),linear-gradient(0deg,rgba(8,12,20,.72),transparent 30%); }
+.collector-journal #now .screen-copy { display: flex; flex-direction: column; align-items: flex-start; }
+.collector-journal #now .screen-copy > * { flex-shrink: 0; }
+.collector-journal #now .screen-actions { margin-top: auto; padding-top: 2rem; width: 100%; }
+@media (max-width:44rem) {
+ .collector-journal #now .screen-card::after { background: linear-gradient(90deg,rgba(8,12,20,.84),rgba(8,12,20,.38)),linear-gradient(0deg,rgba(8,12,20,.85),transparent 40%); }
+}
+
+/* Ratings stay together; actions share a pill silhouette. */
+.collector-journal #now .screen-scores { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); width: min(100%,25rem); gap: .65rem; align-self: flex-start; align-items: stretch; }
+.collector-journal #now .screen-scores li { display: flex; min-width: 0; }
+.collector-journal #now .screen-scores a { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; padding: .85rem .35rem; border: 1px solid white; border-radius: .65rem; background: transparent; color: white; text-align: center; }
+.collector-journal #now .screen-scores span { display: flex; align-items: center; justify-content: center; min-height: 2.7em; line-height: 1.35; }
+.collector-journal #now .screen-scores a:hover { color: white; text-decoration: underline; }
+.collector-journal #now .screen-actions { gap: .85rem; }
+.collector-journal #now .screen-trailer, .collector-journal #now .screen-more { display: inline-flex; align-items: center; justify-content: center; min-height: 3rem; padding: .8rem 1.25rem; border-radius: 999px; font-size: 1rem; font-weight: 800; line-height: 1.3; text-align: center; text-decoration: none; }
+.collector-journal #now .screen-more { border: 1px solid white; background: transparent; color: white; }
+.collector-journal #now .screen-more:hover { color: #c5dff5; border-color: #c5dff5; text-decoration: none; }
+.collector-journal #now .screen-more:focus-visible { outline: 3px solid white; outline-offset: 4px; }
+
+/* Budget for the section heading and controls on shorter desktop viewports. */
+@media (min-width:64rem) {
+ .collector-journal #now .screen-copy { padding: clamp(1.5rem,3vw,3rem); }
+}
+@media (min-width:64rem) and (max-height:900px) {
+ .collector-journal #now .screen-copy { padding: 2rem; }
+ .collector-journal #now .screen-copy h3 { font-size: clamp(2.4rem,3.7vw,3.5rem); }
+ .collector-journal #now .screen-copy > p:not(.eyebrow) { font-size: clamp(1rem,1.3vw,1.25rem); line-height: 1.45; margin-block: .75rem; }
+ .collector-journal #now .screen-scores { margin-block: .8rem; }
+ .collector-journal #now .screen-scores strong { font-size: 2rem; }
+ .collector-journal #now .screen-scores a { padding-block: .6rem; }
+ .collector-journal #now .screen-actions { padding-top: 1rem; }
+}
+@media (min-width:64rem) and (max-height:700px) {
+ .collector-journal #now .screen-copy { padding: 1.5rem; }
+ .collector-journal #now .screen-copy h3 { font-size: 2.4rem; }
+ .collector-journal #now .screen-copy > p:not(.eyebrow) { font-size: 1rem; margin-block: .6rem; }
+ .collector-journal #now .screen-scores { margin-block: .65rem; }
+ .collector-journal #now .screen-scores strong { font-size: 1.75rem; }
+ .collector-journal #now .screen-scores a { padding-block: .5rem; }
+}
+
+/* Keep the selected episode title slightly quieter than feature-slide titles. */
+@media (max-width:44rem) { .collector-journal .podcast-title { font-size: clamp(1.1rem,4.4vw,1.4rem); } }
+@media (min-width:64rem) and (max-height:900px) { .collector-journal .podcast-title { font-size: clamp(1.15rem,1.65vw,1.65rem); } }
+@media (min-width:64rem) and (max-height:700px) { .collector-journal .podcast-title { font-size: clamp(1.15rem,1.65vw,1.65rem); } }
+
+/* Match the personal bookshelf cards to the playlist panel. */
+.collector-journal #shelf .artifact-card { background: white; }
+.collector-journal #shelf .physical-book { background: #f7f7f8; }
+
+/* Fill wishlist art frames without inset padding or letterboxing. */
+.collector-journal #wishlist .wishlist-art img { padding: 0; object-fit: cover; object-position: center; }
+
+.collector-journal .wishlist-item, .collector-journal .guide-card { overflow: hidden; }
+
+/* Portrait-card exploration for three character guides. */
+.collector-journal .guide-portrait { border: 0; background: #121c24; }
+.collector-journal .guide-portrait .guide-card-link { position: relative; isolation: isolate; display: flex; flex-direction: column; justify-content: flex-end; min-height: 26rem; overflow: hidden; color: white; }
+.collector-journal .guide-portrait .picture { position: absolute; inset: 0; aspect-ratio: auto; background: #121c24; }
+.collector-journal .guide-portrait .picture img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .65s cubic-bezier(.2,.7,.25,1); }
+.collector-journal .guide-portrait .guide-card-link::after { content: ''; position: absolute; z-index: 0; inset: 0; background: linear-gradient(0deg,rgba(6,12,20,.98),rgba(6,12,20,.84) 32%,rgba(6,12,20,.1) 76%); pointer-events: none; }
+.collector-journal .guide-portrait .guide-card-copy { position: relative; z-index: 1; flex: none; padding: 1.25rem; }
+.collector-journal .guide-portrait .guide-card-copy .eyebrow { color: #c5dff5; }
+.collector-journal .guide-portrait .guide-card-copy h3 { font-size: clamp(1.65rem,2.1vw,2.25rem); font-weight: 600; letter-spacing: -.025em; line-height: 1.08; }
+.collector-journal .guide-portrait .guide-card-copy > p:not(.eyebrow) { color: #e6ebef; font-size: .8rem; line-height: 1.55; }
+.collector-journal .guide-portrait .guide-card-action { display: inline-block; margin-top: .25rem; color: white; }
+.collector-journal .guide-portrait .guide-card-link:hover, .collector-journal .guide-portrait .guide-card-link:focus-visible { color: white; }
+.collector-journal .guide-portrait .guide-card-link:focus-visible { outline-offset: -4px; }
+@media (hover:hover) and (prefers-reduced-motion:no-preference) {
+ .collector-journal .guide-portrait .guide-card-link:hover .picture img { transform: scale(1.045); }
+}
+@media (max-width:48rem) {
+ .collector-journal .guide-portrait .guide-card-link { min-height: 26rem; }
+ .collector-journal .guide-portrait .guide-card-copy { padding: .85rem; }
+ .collector-journal .guide-portrait .guide-card-copy h3 { font-size: clamp(1.15rem,3vw,1.5rem); overflow-wrap: anywhere; }
+ .collector-journal .guide-portrait .guide-card-copy > p:not(.eyebrow) { max-width: 38ch; font-size: .75rem; }
+}
+@media (prefers-reduced-motion:reduce) { .collector-journal .guide-portrait .picture img { transition: none; } }
+
+@media (max-width:44rem) { .collector-journal .wordmark svg { width: auto; height: .95rem; } }
+
+/* Keep the brand hero and entertainment slide titles at the same scale. */
+@media (min-width:64rem) and (max-height:900px) { .journal-opening h1 { font-size: clamp(2.4rem,3.7vw,3.5rem); } }
+@media (min-width:64rem) and (max-height:700px) { .journal-opening h1 { font-size: 2.4rem; } }
+
+.journal-opening .hero-name-tail { white-space: nowrap; }
+
+/* Full-width seams cast a soft shadow onto the section beneath them. */
+.collector-journal { overflow-x: clip; }
+.collector-journal .masthead, .collector-journal .section, .collector-journal .footer { position: relative; }
+.collector-journal .masthead { border-bottom: 0; }
+.collector-journal .section, .collector-journal .footer { border-top: 0; }
+.collector-journal .masthead::after, .collector-journal .section::before, .collector-journal .footer::before {
+ content: ''; position: absolute; left: calc(50% - 50vw); width: 100vw; height: 1px;
+ background: #f0f0f2; box-shadow: 0 2px 3px rgb(24 38 45 / .18), 0 5px 7px rgb(24 38 45 / .12);
+ pointer-events: none;
+}
+.collector-journal .masthead::after { bottom: 0; }
+.collector-journal .section::before, .collector-journal .footer::before { top: 0; }
+
+.collector-journal .masthead { position: sticky; top: 0; z-index: 50; }
+
+.collector-journal .masthead.is-compact { min-height: 3.5rem; padding-block: .25rem; }
+@media (max-width:44rem) { .collector-journal .masthead.is-compact { min-height: 3rem; padding-block: .125rem; } }
+
+/* Only the navigation casts a shadow; section dividers stay flat. */
+.collector-journal .section::before, .collector-journal .footer::before { box-shadow: none; }
+
+@media (max-width:40rem) { .collector-journal .guide-grid { gap: .65rem; } }
+
+/* Compact character discovery in two- and three-column layouts without losing the portrait or action. */
+@media (max-width:63.99rem) {
+ .collector-journal .guide-portrait .guide-card-copy > p:not(.eyebrow) { display: none; }
+ .collector-journal .guide-portrait .guide-card-link { min-height: 18rem; }
+ .collector-journal .guide-portrait .guide-card-copy h3 { margin-bottom: .8rem; }
+}

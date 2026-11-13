@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build"
+    "build": "python3 -B scripts/check-weekly-releases.py && astro build"
   },
   "dependencies": {
     "astro": "5.18.2"

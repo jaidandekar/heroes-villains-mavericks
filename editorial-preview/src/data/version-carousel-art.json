@@ -44,17 +44,30 @@
     "wideSrc": "media/multiverse-spider-2099-desktop.jpg"
   },
   "batman-beyond": {
-    "src": "media/version-wide-beyond.jpg",
-    "source": "https://www.slashfilm.com/img/gallery/reusing-tried-and-true-villains-was-never-an-option-for-batman-beyond/l-intro-1670183868.jpg",
+    "src": "media/version-comic-batman-beyond.jpg",
+    "source": "https://www.dc.com/blog/2023/04/06/batman-beyond-neo-year-team-reunites-for-batman-beyond-neo-gothic",
+    "imageSource": "https://static.dc.com/2023-04/press_040623_Batman%20Beyond_feat_3x1.jpg",
     "focus": {
-      "x": 0.57,
-      "y": 0.24
-    }
+      "x": 0.5,
+      "y": 0.23
+    },
+    "alt": "Terry McGinnis as Batman Beyond in black and red, leaping through Neo-Gotham in comic artwork"
   },
   "white-vision": {
-    "src": "media/version-white-vision.jpg",
-    "source": "https://images.thedirect.com/media/photos/5VisionQuest.jpg",
-    "wideSrc": "media/multiverse-white-vision-desktop.jpg"
+    "src": "media/version-comic-white-vision.jpg",
+    "source": "https://anime.everyeye.it/articoli/speciale-wandavision-visione-bianca-anti-visione-storia-fumetti-marvel-52200.html",
+    "imageSource": "https://images.everyeye.it/img-singole/articolo-120138.jpg",
+    "crop": [
+      294,
+      0,
+      574,
+      550
+    ],
+    "focus": {
+      "x": 0.52,
+      "y": 0.16
+    },
+    "alt": "white vision in comic artwork"
   },
   "john-stewart": {
     "src": "media/multiverse-john-stewart.jpg",
@@ -77,12 +90,14 @@
     "wideSrc": "media/multiverse-jessica-cruz-desktop.jpg"
   },
   "bruce-wayne": {
-    "src": "media/guide-wide-batman.jpg",
-    "source": "https://www.themoviedb.org/movie/414906-the-batman",
+    "src": "media/version-comic-bruce-wayne.jpg",
+    "source": "https://www.dc.com/characters/batman",
+    "imageSource": "https://static.dc.com/2024-03/batman_charGal_2024_1.jpg",
     "focus": {
-      "x": 0.5,
-      "y": 0.36
-    }
+      "x": 0.59,
+      "y": 0.24
+    },
+    "alt": "Bruce Wayne as Batman, in gray armor with his cape spread, against a collage of comic panels"
   },
   "victor-von-doom": {
     "src": "media/doctor-doom-ross.jpg",
@@ -126,13 +141,14 @@
     "wideSrc": "media/multiverse-peter-parker-desktop.jpg"
   },
   "sinestro": {
-    "src": "media/guide-wide-sinestro.jpg",
-    "source": "https://wall.alphacoders.com/big.php?i=573511",
+    "src": "media/guide-comic-sinestro.jpg",
+    "source": "https://getwallpapers.com/collection/sinestro-wallpapers",
+    "imageSource": "https://getwallpapers.com/wallpaper/full/c/c/0/793149-best-sinestro-wallpapers-1986x1528.jpg",
     "focus": {
-      "x": 0.56,
-      "y": 0.38
+      "x": 0.49,
+      "y": 0.31
     },
-    "wideSrc": "media/multiverse-sinestro-desktop.jpg"
+    "alt": "sinestro in comic artwork"
   },
   "ultron": {
     "src": "media/ultron-ross.jpg",
@@ -203,22 +219,22 @@
     }
   },
   "dark-knight-returns": {
-    "src": "media/version-wide-dkr.jpg",
-    "source": "https://pics.filmaffinity.com/Batman_The_Dark_Knight_Returns_Part_1-174836092-large.jpg",
+    "src": "media/version-comic-dark-knight-returns.jpg",
+    "source": "https://www.dc.com/blog/2022/09/12/batman-vs-superman-in-dark-knight-returns-is-it-d-cs-greatest-fight",
+    "imageSource": "https://static.dc.com/sites/default/files/imce/2022/09-SEP/thepunch_6319561f2726c6.93760823.jpg",
     "focus": {
-      "x": 0.66,
-      "y": 0.26
+      "x": 0.59,
+      "y": 0.18
     },
-    "wideSrc": "media/version-wide-dkr-desktop.jpg"
+    "alt": "Frank Miller’s armored Batman fighting Superman in The Dark Knight Returns comic"
   },
   "batman-one-million": {
     "src": "media/version-wide-one-million.jpg",
     "source": "https://imgix.ranker.com/user_node_img/50146/1002904945/original/1002904945-photo-u1750402552?auto=format&dpr=2&fit=crop&fm=pjpg&q=60&w=500",
     "focus": {
-      "x": 0.54,
-      "y": 0.22
-    },
-    "wideSrc": "media/version-wide-one-million-desktop.jpg"
+      "x": 0.49,
+      "y": 0.18
+    }
   },
   "azrael-batman": {
     "src": "media/version-wide-azrael.jpg",
@@ -453,13 +469,13 @@
     "verifiedAt": "2026-11-05"
   },
   "sinestro-injustice": {
-    "src": "media/feedback-sinestro-injustice.jpg",
-    "source": "https://www.mortalkombatwarehouse.com/krossovers/injustice/characters/sinestro/",
-    "imageSource": "https://www.mortalkombatwarehouse.com/krossovers/injustice/renders/solo/sinestro.png",
+    "src": "media/version-comic-sinestro-injustice.jpg",
+    "source": "https://injustice.fandom.com/wiki/Sinestro/Gallery",
+    "imageSource": "https://vignette.wikia.nocookie.net/injusticegodsamongus/images/5/58/Sinestro_Corps.png/revision/latest?cb=20160703192823",
     "focus": {
-      "x": 0.7,
-      "y": 0.23
+      "x": 0.29,
+      "y": 0.29
     },
-    "verifiedAt": "2026-11-05"
+    "alt": "sinestro injustice in comic artwork"
   }
 }

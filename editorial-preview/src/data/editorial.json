@@ -13,20 +13,32 @@
     ],
     "reading": {
       "batman-year-one": {
-        "note": "The story follows Bruce and James Gordon through their first year fighting corruption in Gotham. Their parallel starts make it an introduction to both Batman’s methods and the police alliance that makes them possible.",
+        "note": "Bruce Wayne and James Gordon confront Gotham’s corruption in a foundational story about Batman’s beginnings and his most important police alliance.",
         "url": "https://www.dc.com/characters/batman"
       },
       "batman-owls": {
-        "note": "An investigation leads Bruce to a secret society whose influence predates his family’s standing in Gotham. Start here if you want a detective story that challenges Batman’s confidence that he knows his own city.",
+        "note": "A secret society forces Bruce to question everything he knows about Gotham in a detective story that makes an accessible starting point.",
         "url": "https://www.dc.com/blog/2026-01-21/how-to-start-reading-batman-comics"
       },
       "batman-dkr": {
-        "note": "This alternate future imagines what happens when an older Bruce returns to the cowl. It is a self-contained contrast to Year One: the point is what Batman’s return does to Gotham, rather than how he learns the job.",
+        "note": "An older Bruce Wayne returns to the cowl in a self-contained alternate future that explores what Batman’s return means for Gotham.",
         "url": "https://www.dc.com/characters/batman"
       },
       "batman-zoo": {
-        "note": "A young Bruce faces a gang of masked killers in a Gotham where he has neither the Wayne fortune nor Alfred in his corner. The first six issues introduce a Batman whose tactics grow out of a very different upbringing.",
+        "note": "A young Bruce faces masked killers without the Wayne fortune or Alfred in an alternate Gotham that reshapes Batman’s origins.",
         "url": "https://www.dc.com/graphic-novels/absolute-batman-2024/absolute-batman-vol-1-the-zoo"
+      },
+      "batman-beyond-vol1": {
+        "note": "Terry McGinnis puts on the future batsuit for the first time in the comics."
+      },
+      "batman-knightquest": {
+        "note": "Jean-Paul Valley wears the armor and calls himself Batman while Bruce is gone."
+      },
+      "batman-one-million": {
+        "note": "The Batman of the 853rd century, published as part of DC One Million."
+      },
+      "batman-darkest-knight": {
+        "note": "Bruce Wayne receives Abin Sur's ring and becomes a Green Lantern."
       }
     },
     "products": [
@@ -130,20 +142,47 @@
     ],
     "reading": {
       "gl-secret-origin": {
-        "note": "Start here to see how a test pilot inherits both a ring and a duty from Abin Sur. The collection gives you the basic relationship between Hal, Earth’s sector, and the Corps before the larger crossover stories.",
+        "note": "Start here to see how a test pilot inherits both a ring and a duty from Abin Sur.",
         "url": "https://www.dc.com/characters/green-lantern"
       },
       "gl-rebirth": {
-        "note": "This is the bridge into Geoff Johns’s Green Lantern era. Hal’s return sets up the ongoing 2005 series. Readers who want to understand why his return matters can start with Emerald Twilight and then come back here.",
+        "note": "This is the bridge into Geoff Johns’s Green Lantern era.",
         "url": "https://www.dc.com/comics/green-lantern-2005/green-lantern-1"
       },
       "sinestro-corps-war": {
-        "note": "Sinestro recruits an army that draws its power from fear. The collection crosses between the two Lantern series, making it a good next read once you know the Corps and want to see how its individual members operate in a war.",
+        "note": "Sinestro recruits an army that draws its power from fear.",
         "url": "https://www.dc.com/graphic-novels/green-lantern-2005/green-lantern-the-sinestro-corps-war"
       },
       "blackest-night": {
-        "note": "The conflict widens when a new Corps raises dead heroes and villains. This is the central event collection; its companion books follow battles that happen alongside it, so start here before deciding how far into the tie-ins you want to go.",
+        "note": "The conflict widens when a new Corps raises dead heroes and villains.",
         "url": "https://www.dc.com/graphic-novels/blackest-night-2009/blackest-night"
+      },
+      "gl-mosaic": {
+        "note": "John Stewart's surreal tenure as caretaker of a patchwork world — cult favorite character work."
+      },
+      "gl-corps-recon": {
+        "note": "The Corps rebuilds with John Stewart among its leaders."
+      },
+      "guy-gardner-warrior": {
+        "note": "Guy without a ring — still picking fights and somehow saving the day."
+      },
+      "emerald-knights": {
+        "note": "Kyle Rayner inherits the last ring after Emerald Twilight."
+      },
+      "gl-ion": {
+        "note": "Kyle ascends to Ion, the living embodiment of willpower."
+      },
+      "gl-rebirth-jessica": {
+        "note": "Jessica Cruz and Simon Baz share Earth duty in the Rebirth era."
+      },
+      "alan-scott-golden-age": {
+        "note": "The magic-ring adventures that started the Green Lantern legacy."
+      },
+      "gl-earth-one-vol1": {
+        "note": "A grounded, cinematic reinvention of Hal's first contact with the Corps."
+      },
+      "emerald-twilight": {
+        "note": "Hal Jordan's catastrophic fall that ends the classic Corps era."
       }
     },
     "products": [
@@ -240,15 +279,15 @@
     ],
     "reading": {
       "ff-worlds-greatest": {
-        "note": "Read this collection for the original flight, the team’s early experiments with its powers, and the start of Doom’s rivalry with Reed. It shows how quickly the premise moves from a family crisis to stories about exploration on a much larger scale.",
+        "note": "Read this collection for the original flight, the team’s early experiments with its powers, and the start of Doom’s rivalry with Reed.",
         "url": "https://www.marvel.com/teams-and-groups/fantastic-four/in-comics"
       },
       "ff-hickman-2": {
-        "note": "The Future Foundation changes the scale of the family story by bringing young scientists into Reed’s orbit. Since this is a second volume, readers new to Hickman’s run can use Marvel’s chronology to find an earlier starting point.",
+        "note": "The Future Foundation changes the scale of the family story by bringing young scientists into Reed’s orbit.",
         "url": "https://www.marvel.com/comics/guides/2508/the-future-foundation"
       },
       "ff-north": {
-        "note": "The opening issues split up the team after a disaster. Ben and Alicia stumble into a time loop, while Reed and Sue encounter a town full of Doombots. The smaller mysteries give new readers a way into the family’s relationships before they learn what drove everyone apart.",
+        "note": "The opening issues split up the team after a disaster.",
         "url": "https://www.marvel.com/comics/collection/95695/fantastic_four_by_ryan_north_vol_1_whatever_happened_to_the_fantastic_four_2022"
       }
     },
@@ -321,13 +360,40 @@
     ],
     "reading": {
       "cf-face-the-face": {
-        "url": "https://www.dc.com/graphic-novels/batman-face-the-face"
+        "url": "https://www.dc.com/graphic-novels/batman-face-the-face",
+        "note": "Post-Infinite Crisis Batman faces a new wave of murders with Clayface in the mix."
       },
       "cf-mudpack": {
-        "url": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4"
+        "url": "https://www.dc.com/graphic-novels/batman-the-dark-knight-detective-vol-4",
+        "note": "Four Clayfaces unite — Karlo's Mudpack assault on Gotham."
       },
       "cf-horror-modern": {
-        "url": "https://www.dc.com/graphic-novels/batman-hush-new-edition"
+        "url": "https://www.dc.com/graphic-novels/batman-hush-new-edition",
+        "note": "Modern Clayface as master impersonator — the identity-horror DNA behind the 2026 film."
+      },
+      "cf-asylum": {
+        "note": "Basil Karlo, the mud monster, on his own one-shot."
+      },
+      "cf-origin-classic": {
+        "note": "Basil Karlo debuts as a murderous actor whom Batman must stop in this Golden Age collection."
+      },
+      "cf-outsiders": {
+        "note": "Clayface and other rogues orbit Batman's international team era."
+      },
+      "cf-payne-debut": {
+        "note": "Preston Payne, the man whose touch dissolves, in his containment suit."
+      },
+      "cf-payne": {
+        "note": "Preston Payne's tragic Clayface stories collected among Len Wein's Batman work."
+      },
+      "cf-cassius-debut": {
+        "note": "Cassius Payne, the child Clayface, looms over Gotham in Batman #550."
+      },
+      "cf-cassius": {
+        "note": "Cassius emerges in the earthquake-era Gotham stories."
+      },
+      "cf-btas-era": {
+        "note": "The definitive tragic Matt Hagen Clayface that shaped every later adaptation."
       }
     }
   },
@@ -377,13 +443,37 @@
     ],
     "reading": {
       "doom-secret-wars-2015": {
-        "url": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/"
+        "url": "https://www.penguinrandomhouse.com/books/693167/secret-wars-by-jonathan-hickman/",
+        "note": "God Emperor Doom rules Battleworld as the multiverse collapses — Hickman's Marvel culmination."
       },
       "doom-time-runs-out": {
-        "url": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/"
+        "url": "https://www.penguinrandomhouse.com/books/801987/avengers-time-runs-out-marvel-premier-collection-by-jonathan-hickman/",
+        "note": "The road to Secret Wars — incursions, the Illuminati, and Doom's ascension."
       },
       "doom-doomwar": {
-        "url": "https://www.marvel.com/comics/collection/30862/"
+        "url": "https://www.marvel.com/comics/collection/30862/",
+        "note": "Doctor Doom invades Wakanda — vibranium, espionage, and total war."
+      },
+      "doom-books-of-doom": {
+        "note": "The definitive origin of Victor von Doom from gypsy child to iron-faced monarch."
+      },
+      "doom-unthinkable": {
+        "note": "Doctor Doom unleashes hell itself against the Fantastic Four in Waid's terrifying arc."
+      },
+      "doom-triumph-torment": {
+        "note": "Doom bargains with Mephisto to save his mother's soul — Marvel's finest villain spotlight."
+      },
+      "doom-infamous-iron-man": {
+        "note": "Doctor Doom wears the Iron Man armor and tries to prove he can be a hero."
+      },
+      "doom-ultimate-vol1": {
+        "note": "Ultimate Doom's origin and first strike against the Ultimate Fantastic Four."
+      },
+      "doom-ultimate-cataclysm": {
+        "note": "Ultimate Doom faces the end of the Ultimate Universe."
+      },
+      "doom-2099-vol1": {
+        "note": "Victor von Doom awakens in the future to reclaim his throne in the 2099 line."
       }
     }
   },
@@ -423,7 +513,32 @@
     ],
     "reading": {
       "vis-tom-king": {
-        "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555"
+        "url": "https://penguinrandomhouselibrary.com/book/?isbn=9781302920555",
+        "note": "Vision's attempt at a normal family life becomes one of Marvel's best modern tragedies."
+      },
+      "vis-avengers-classic": {
+        "note": "Vision's debut and early Avengers years — Ultron's son becomes Earth's champion."
+      },
+      "vis-bride-of-ultron": {
+        "note": "Ultron's schemes and Vision's birth collide in foundational Avengers lore."
+      },
+      "vis-vision-quest": {
+        "note": "Vision is dismantled by the government — the birth of the White Vision."
+      },
+      "vis-scarlets-1982": {
+        "note": "Domestic life for an android and a witch — Marvel's strangest romance begins."
+      },
+      "vis-scarlets-1985": {
+        "note": "Wanda and Vision's children, magic, and suburbia — the comic DNA of WandaVision."
+      },
+      "vis-white": {
+        "note": "Aftermath threads of the colorless Vision seeking identity."
+      },
+      "vis-ultimate": {
+        "note": "Ultimate Vision as cosmic warning system in Millar/Hitch's Ultimates."
+      },
+      "vis-young-avengers": {
+        "note": "Jonas the Vision joins Marvel's next generation."
       }
     }
   },
@@ -469,7 +584,36 @@
         "image": "media/shop-37009123.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "sm-origin": {
+        "note": "The radioactive spider, Uncle Ben, and the birth of Marvel's greatest street-level hero."
+      },
+      "sm-brand-new-day": {
+        "note": "Peter starts over after One More Day — the comic era that shares a name with the 2026 film."
+      },
+      "sm-kraven": {
+        "note": "Kraven buries Spider-Man and steals his life — one of the darkest, best Spidey sagas ever."
+      },
+      "sm-superior": {
+        "note": "Otto Octavius in Peter's body — a Superior Spider-Man who will save the city his way."
+      },
+      "sm-miles-ultimate": {
+        "note": "Miles Morales steps into the costume after Ultimate Peter's death."
+      },
+      "sm-miles-616": {
+        "note": "Miles arrives in the mainstream Marvel Universe and proves there is room for two Spider-Men."
+      },
+      "sm-ultimate-vol1": {
+        "note": "A modern retelling of Peter's origin that redefined Spider-Man for a generation."
+      },
+      "sm-spider-gwen": {
+        "note": "Gwen Stacy as Spider-Woman — band practice, dimension hops, and a life Peter never lived."
+      },
+      "sm-2099": {
+        "note": "Miguel O'Hara's debut as the future Spider-Man in Nueva York."
+      }
+    }
   },
   "sinestro": {
     "products": [
@@ -503,7 +647,15 @@
         "description": "In this alternate world, Sinestro supports Superman’s authoritarian regime. His alliance with Hal Jordan and war against the Green Lantern Corps make him a central threat in Injustice: Gods Among Us Year Two.",
         "source": "https://www.dc.com/comics/injustice-gods-among-us-year-two-2013/injustice-gods-among-us-year-two-annual-1"
       }
-    ]
+    ],
+    "reading": {
+      "sin-demon": {
+        "note": "After losing Korugar and those closest to him, Sinestro fights to reclaim control of the yellow corps."
+      },
+      "sin-war": {
+        "note": "Sinestro builds an army to destroy the Green Lantern Corps."
+      }
+    }
   },
   "ultron": {
     "products": [
@@ -531,7 +683,26 @@
     ],
     "reading": {
       "ultron-ultimate": {
-        "url": "https://www.marvel.com/comics/collection/23044/"
+        "url": "https://www.marvel.com/comics/collection/23044/",
+        "note": "One of Pym's Ultron drones becomes someone, and builds duplicates of the Ultimates."
+      },
+      "ultron-unleashed": {
+        "note": "Ultron's origin, the building of the Vision, and his attempt to build a bride."
+      },
+      "ultron-unlimited": {
+        "note": "Ultron builds a new body and an army, and the Avengers almost lose."
+      },
+      "ultron-conquest": {
+        "note": "Ultron takes the Phalanx and turns them on the Kree."
+      },
+      "ultron-rage": {
+        "note": "Hank Pym and Ultron are fused into one body, and the Avengers have to face the result."
+      },
+      "ultron-age": {
+        "note": "A future Earth that Ultron has already remade."
+      },
+      "ultron-extreme": {
+        "note": "Ultron Extreme, a heavier model from the MC2 future, is brought back against the next Avengers."
       }
     }
   },
@@ -568,6 +739,29 @@
         "image": "media/shop-30923008.jpg",
         "imageCheckedAt": "2026-11-05"
       }
-    ]
+    ],
+    "reading": {
+      "venom-birth": {
+        "note": "Spider-Man wears the alien costume, rejects it, and meets the enemy it makes with Eddie Brock."
+      },
+      "venom-lethal": {
+        "note": "Eddie takes the symbiote to San Francisco and tries to be a protector."
+      },
+      "venom-rex": {
+        "note": "Eddie is pulled back to the symbiote, and something older than either of them wakes up."
+      },
+      "venom-gargan": {
+        "note": "The symbiote is auctioned off, and Mac Gargan is the one who walks out wearing it."
+      },
+      "venom-agent": {
+        "note": "Flash Thompson bonds with the symbiote as Agent Venom for military missions."
+      },
+      "venom-ultimate": {
+        "note": "The Ultimate Universe's Eddie Brock meets a symbiote that was never Peter's costume."
+      },
+      "venom-dylan": {
+        "note": "Dylan Brock is the Venom on the street in Al Ewing and Bryan Hitch's series."
+      }
+    }
   }
 }

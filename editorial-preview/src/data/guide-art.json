@@ -1,7 +1,7 @@
 {
   "batman": {
     "src": "media/identity-batman.jpg",
-    "alt": "Illustration of Bruce Wayne in Batman’s cowl",
+    "alt": "Illustration of Bruce Wayne in Batman\u2019s cowl",
     "focus": {
       "x": 0.5,
       "y": 0.34
@@ -22,15 +22,15 @@
     "source": "https://www.dc.com/characters/green-lantern"
   },
   "fantastic-four": {
-    "src": "media/fantastic-four-ross.jpg",
-    "alt": "Mister Fantastic, Human Torch, the Thing, and Invisible Woman",
-    "source": "https://www.cinemablend.com/news/2560016/marvels-fantastic-four-reboot-has-taken-a-massive-step-forward",
-    "assetSource": "https://cdn.mos.cms.futurecdn.net/x94fWjcYibmmmrssDggax3.jpg",
-    "credit": "Artwork by Alex Ross",
-    "shape": "ensemble",
+    "src": "media/identity-fantastic-four-team.jpg",
+    "alt": "Reed Richards, Sue Storm, Johnny Storm, and Ben Grimm together in their blue Fantastic Four uniforms",
+    "source": "https://i.annihil.us/u/prod/marvel/universe3zx/images/a/a5/FantasticFour_Head.jpg",
+    "assetSource": "https://i.annihil.us/u/prod/marvel/universe3zx/images/a/a5/FantasticFour_Head.jpg",
+    "credit": "Marvel character artwork",
+    "shape": "portrait",
     "focus": {
-      "x": 0.5,
-      "y": 0.5
+      "x": 0.53,
+      "y": 0.29
     }
   },
   "clayface": {

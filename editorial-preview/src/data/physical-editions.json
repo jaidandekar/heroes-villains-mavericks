@@ -1,0 +1,1561 @@
+{
+  "batman-year-one": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "batman-owls": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "batman-dkr": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "batman-zoo": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "batman-beyond-vol1": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      26,
+      -10,
+      -9
+    ],
+    "stackLayout": [
+      [
+        13,
+        9,
+        3
+      ],
+      [
+        -10,
+        -7,
+        6
+      ]
+    ]
+  },
+  "batman-knightquest": {
+    "format": "paperback",
+    "depth": 19,
+    "pose": [
+      39,
+      7,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        -1,
+        1
+      ],
+      [
+        4,
+        2,
+        2
+      ]
+    ]
+  },
+  "batman-one-million": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      24,
+      10,
+      6
+    ],
+    "stackLayout": [
+      [
+        -15,
+        -10,
+        4
+      ],
+      [
+        11,
+        8,
+        7
+      ]
+    ]
+  },
+  "batman-darkest-knight": {
+    "format": "prestige",
+    "depth": 5,
+    "pose": [
+      32,
+      -6,
+      -6
+    ],
+    "stackLayout": [
+      [
+        7,
+        5,
+        2
+      ]
+    ]
+  },
+  "gl-secret-origin": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "gl-rebirth": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "sinestro-corps-war": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "blackest-night": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "gl-mosaic": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "gl-corps-recon": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "guy-gardner-warrior": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "emerald-knights": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "gl-ion": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "gl-rebirth-jessica": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "alan-scott-golden-age": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "gl-earth-one-vol1": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "emerald-twilight": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "doom-books-of-doom": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "doom-unthinkable": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "doom-triumph-torment": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "doom-secret-wars-2015": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "doom-time-runs-out": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "doom-infamous-iron-man": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "doom-ultimate-vol1": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "doom-ultimate-cataclysm": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "doom-2099-vol1": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "doom-doomwar": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "ff-worlds-greatest": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "ff-hickman-2": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "ff-north": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "cf-asylum": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      24,
+      10,
+      6
+    ],
+    "stackLayout": [
+      [
+        -15,
+        -10,
+        4
+      ],
+      [
+        11,
+        8,
+        7
+      ]
+    ]
+  },
+  "cf-origin-classic": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "cf-face-the-face": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "cf-outsiders": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "cf-payne-debut": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      24,
+      10,
+      6
+    ],
+    "stackLayout": [
+      [
+        -15,
+        -10,
+        4
+      ],
+      [
+        11,
+        8,
+        7
+      ]
+    ]
+  },
+  "cf-payne": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "cf-mudpack": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "cf-cassius-debut": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      26,
+      -10,
+      -9
+    ],
+    "stackLayout": [
+      [
+        13,
+        9,
+        3
+      ],
+      [
+        -10,
+        -7,
+        6
+      ]
+    ]
+  },
+  "cf-cassius": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "cf-btas-era": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "cf-horror-modern": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "vis-avengers-classic": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "vis-bride-of-ultron": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "vis-vision-quest": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "vis-scarlets-1982": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "vis-scarlets-1985": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "vis-tom-king": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "vis-white": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "vis-ultimate": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "vis-young-avengers": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "sm-origin": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "sm-brand-new-day": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "sm-kraven": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "sm-superior": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "sm-miles-ultimate": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "sm-miles-616": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "sm-ultimate-vol1": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "sm-spider-gwen": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "sm-2099": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "sin-demon": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "sin-war": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "ultron-unleashed": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "ultron-unlimited": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "ultron-conquest": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "ultron-rage": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "ultron-age": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "ultron-ultimate": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "ultron-extreme": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "venom-birth": {
+    "format": "paperback",
+    "depth": 10,
+    "pose": [
+      38,
+      -8,
+      -10
+    ],
+    "stackLayout": [
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        -3,
+        2,
+        2
+      ]
+    ]
+  },
+  "venom-lethal": {
+    "format": "paperback",
+    "depth": 12,
+    "pose": [
+      32,
+      8,
+      7
+    ],
+    "stackLayout": [
+      [
+        -2,
+        2,
+        1
+      ]
+    ]
+  },
+  "venom-rex": {
+    "format": "paperback",
+    "depth": 15,
+    "pose": [
+      40,
+      -7,
+      -7
+    ],
+    "stackLayout": [
+      [
+        3,
+        -2,
+        2
+      ],
+      [
+        -1,
+        1,
+        3
+      ]
+    ]
+  },
+  "venom-gargan": {
+    "format": "paperback",
+    "depth": 13,
+    "pose": [
+      30,
+      10,
+      8
+    ],
+    "stackLayout": [
+      [
+        -3,
+        1,
+        2
+      ],
+      [
+        2,
+        -2,
+        3
+      ]
+    ]
+  },
+  "venom-agent": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      24,
+      10,
+      6
+    ],
+    "stackLayout": [
+      [
+        -15,
+        -10,
+        4
+      ],
+      [
+        11,
+        8,
+        7
+      ]
+    ]
+  },
+  "venom-ultimate": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      26,
+      -10,
+      -9
+    ],
+    "stackLayout": [
+      [
+        13,
+        9,
+        3
+      ],
+      [
+        -10,
+        -7,
+        6
+      ]
+    ]
+  },
+  "venom-dylan": {
+    "format": "comic",
+    "depth": 2,
+    "pose": [
+      24,
+      10,
+      6
+    ],
+    "stackLayout": [
+      [
+        -15,
+        -10,
+        4
+      ],
+      [
+        11,
+        8,
+        7
+      ]
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+.weekly-intro { display: flex; align-items: baseline; flex-wrap: wrap; justify-content: space-between; gap: .5rem 2rem; margin-bottom: 1.4rem; color: var(--muted); font-size: .95rem; }
+.weekly-checked { font-size: .75rem; }
+.weekly-stale { padding: .8rem 1rem; margin-bottom: 1rem; border: 1px solid var(--rule); border-radius: .5rem; color: var(--muted); font-size: .85rem; }
+.weekly-grid { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 1rem; }
+.weekly-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--rule); border-radius: .75rem; overflow: hidden; background: white; }
+.weekly-cover { position: relative; display: block; flex: none; width: 100%; aspect-ratio: 3 / 4; background: #f7f7f8; }
+.weekly-cover img { position: absolute; inset: 1.25rem; display: block; width: calc(100% - 2.5rem); height: calc(100% - 2.5rem); object-fit: contain; filter: drop-shadow(2px 4px 4px #18262d26); transition: transform .3s ease; }
+.weekly-cover:hover img { transform: translateY(-3px); }
+.weekly-copy { display: flex; flex: 1; flex-direction: column; padding: 1.1rem; }
+.weekly-copy h3 { font-size: 1.1rem; font-weight: 600; line-height: 1.2; letter-spacing: -.02em; }
+.weekly-summary { margin-top: .85rem; font-size: .85rem; line-height: 1.55; }
+.weekly-links { padding-top: 1rem; display: flex; flex-wrap: wrap; gap: .65rem 1rem; margin-top: auto; font-size: .75rem; font-weight: 700; }
+.weekly-links a { color: var(--link); text-decoration: none; }
+.weekly-links a:hover { text-decoration: underline; }
+.weekly-source-note { max-width: 85ch; margin-top: 1.4rem; color: var(--muted); font-size: .75rem; line-height: 1.6; }
+@media (max-width:79.99rem) { .weekly-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+@media (max-width:63.99rem) { .weekly-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media (max-width:39.99rem) {
+ .weekly-grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem; }
+ .weekly-cover img { inset: .75rem; width: calc(100% - 1.5rem); height: calc(100% - 1.5rem); }
+ .weekly-copy { padding: .8rem; }
+ .weekly-copy h3 { font-size: .95rem; }
+ .weekly-summary { font-size: .8rem; }
+}
+@media (prefers-reduced-motion:reduce) { .weekly-cover img { transition: none; } .weekly-cover:hover img { transform: none; } }

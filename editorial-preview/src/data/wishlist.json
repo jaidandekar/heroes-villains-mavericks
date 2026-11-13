@@ -1,57 +1,92 @@
 [
   {
     "id": "mcfarlane-batman-lantern",
-    "title": "Batman as Green Lantern",
-    "label": "McFarlane Toys · 7-inch Collector Edition",
+    "title": "McFarlane Toys – 7\" Figure – Batman as Green Lantern – DC McFarlane Collector Edition",
     "url": "https://www.bestbuy.com/site/mcfarlane-toys-7-figure-batman-as-green-lantern-dc-mcfarlane-collector-edition/6561906.p",
     "store": "Best Buy",
     "guide": "Batman variant",
     "guideUrl": "batman-guide/index.html#version/batman-green-lantern",
     "image": "media/wishlist-mcfarlane-batman-lantern.jpg",
-    "imageSource": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6561/6561906_sd.jpg"
+    "imageSource": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6561/6561906_sd.jpg",
+    "brand": "DC"
+  },
+  {
+    "id": "doom-retro-sweatshirt",
+    "title": "Marvel Comics Retro Doctor Doom Arms Crossed Sweatshirt",
+    "url": "https://www.boxlunch.com/product/marvel-comics-retro-doctor-doom-arms-crossed-sweatshirt/37292242.html",
+    "store": "BoxLunch",
+    "guide": "Doctor Doom guide",
+    "guideUrl": "doctor-doom-guide/index.html",
+    "image": "media/wishlist-doctor-doom-sweatshirt.jpg",
+    "imageSource": "https://cdn.media.amplience.net/s/hottopic/37292231_hi?h=800",
+    "searchQuery": "Marvel Comics Retro Doctor Doom Arms Crossed Sweatshirt",
+    "brand": "Marvel"
   },
   {
     "id": "funko-hal",
-    "title": "Pop! Hal Jordan",
-    "label": "Funko · Lanterns · #649",
+    "title": "Pop! Hal Jordan (Lanterns)",
     "url": "https://funko.com/pop-hal-jordan-lanterns/94736.html",
     "store": "Funko",
     "guide": "Green Lantern guide",
     "guideUrl": "green-lantern-guide/index.html",
     "image": "media/wishlist-funko-hal.jpg",
-    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw2b87108d/images/funko/upload/1/94736a_POPHEROES_DCLANT_HalJordan_Renders_Rev2-glam-WEB.png?sh=800&sw=800"
+    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw2b87108d/images/funko/upload/1/94736a_POPHEROES_DCLANT_HalJordan_Renders_Rev2-glam-WEB.png?sh=800&sw=800",
+    "brand": "DC"
+  },
+  {
+    "id": "funko-mister-fantastic",
+    "title": "Pop! Mister Fantastic (Fantastic Four: First Steps)",
+    "url": "https://funko.com/pop-mister-fantastic-fantastic-four-first-steps/83584.html",
+    "store": "Funko",
+    "guide": "Fantastic Four guide",
+    "guideUrl": "fantastic-four-guide/index.html",
+    "image": "media/wishlist-mister-fantastic-funko.jpg",
+    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dw75af0bdc/images/funko/upload/83584_Marvel_S1_MisterFantastic_POP_EDIT_T7_GLAM_Frontview-WEB.png?sh=800&sw=800",
+    "brand": "Marvel"
   },
   {
     "id": "funko-beyond",
     "title": "Pop! Batman Beyond",
-    "label": "Funko · From the Vault · #458",
     "url": "https://funko.com/pop-batman-beyond/66645.html",
-    "store": "Funko Vault",
+    "store": "Funko",
     "guide": "Batman Beyond variant",
     "guideUrl": "batman-guide/index.html#version/batman-beyond",
     "image": "media/wishlist-funko-beyond.jpg",
-    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc1a96b50/images/funko/upload/66645A_POPHeroesDC_BatmanBeyond_GLAM-WEB.png?sh=800&sw=800"
+    "imageSource": "https://funko.com/dw/image/v2/BGTS_PRD/on/demandware.static/-/Sites-funko-master-catalog/default/dwc1a96b50/images/funko/upload/66645A_POPHeroesDC_BatmanBeyond_GLAM-WEB.png?sh=800&sw=800",
+    "brand": "DC"
   },
   {
     "id": "spider-man-web-pose",
-    "title": "Spider-Man Web Pose Tee",
-    "label": "Apparel · BoxLunch Exclusive",
+    "title": "Marvel Spider-Man Web Pose T-Shirt – BoxLunch Exclusive",
     "url": "https://www.boxlunch.com/product/marvel-spider-man-web-pose-t-shirt---boxlunch-exclusive/36984937.html",
     "store": "BoxLunch",
     "guide": "Spider-Man guide",
     "guideUrl": "spiderman-guide/index.html",
     "image": "media/wishlist-spider-man-web-pose.jpg",
-    "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi?h=630"
+    "imageSource": "https://cdn.media.amplience.net/s/hottopic/36984937_hi?h=630",
+    "brand": "Marvel"
   },
   {
     "id": "hal-hoodie",
     "title": "Green Lantern Hal Jordan Hoodie",
-    "label": "Apparel · Corps logo and Hal Jordan artwork",
     "url": "https://shop.dc.com/products/green-lantern-hal-jordan-hoodie",
     "store": "DC Shop",
     "guide": "Green Lantern guide",
     "guideUrl": "green-lantern-guide/index.html",
     "image": "media/wishlist-hal-hoodie.jpg",
-    "imageSource": "https://shop.dc.com/cdn/shop/files/unisex-heavy-blend-hoodie-ash-back-689e4f49dca88.jpg?v=1755206113&width=800"
+    "imageSource": "https://shop.dc.com/cdn/shop/files/unisex-heavy-blend-hoodie-ash-back-689e4f49dca88.jpg?v=1755206113&width=800",
+    "brand": "DC"
+  },
+  {
+    "id": "venom-face-travel-mug",
+    "title": "Marvel Venom Venom Face Travel Mug",
+    "url": "https://www.boxlunch.com/product/marvel-venom-venom-face-travel-mug/30923008.html",
+    "store": "BoxLunch",
+    "guide": "Venom guide",
+    "guideUrl": "venom-guide/index.html",
+    "image": "media/wishlist-venom-travel-mug.jpg",
+    "imageSource": "https://cdn.media.amplience.net/s/hottopic/30922731_hi?h=800",
+    "searchQuery": "Marvel Venom Venom Face Travel Mug",
+    "brand": "Marvel"
   }
 ]
