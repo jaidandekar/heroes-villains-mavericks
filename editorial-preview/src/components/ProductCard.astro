@@ -4,7 +4,7 @@ const { item, base = './', id = item.id, label = item.label ?? item.store } = As
 if (!id || !item.title?.trim() || !item.store?.trim() || !item.url || !item.image) {
   throw new Error('Product cards require an ID, title, retailer, product URL, and image.');
 }
-const searchUrl = retailerSearchUrl(item.store, item.searchQuery || item.title);
+const searchUrl = item.directProductLink ? undefined : retailerSearchUrl(item.store, item.searchQuery || item.title);
 const image = item.image.startsWith('media/') ? base + item.image : item.image;
 ---
 <li class="wishlist-item">

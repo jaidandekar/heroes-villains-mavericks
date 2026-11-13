@@ -78,15 +78,18 @@
     "brand": "DC"
   },
   {
-    "id": "venom-face-travel-mug",
-    "title": "Marvel Venom Venom Face Travel Mug",
-    "url": "https://www.boxlunch.com/product/marvel-venom-venom-face-travel-mug/30923008.html",
-    "store": "BoxLunch",
+    "id": "venom-jeff-marvel-rivals",
+    "title": "Marvel Legends Series Marvel Rivals Venom & Jeff the Land Shark",
+    "url": "https://www.amazon.com/dp/B0FJR4NYB6",
+    "store": "Amazon",
+    "directProductLink": true,
     "guide": "Venom guide",
     "guideUrl": "venom-guide/index.html",
-    "image": "media/wishlist-venom-travel-mug.jpg",
-    "imageSource": "https://cdn.media.amplience.net/s/hottopic/30922731_hi?h=800",
-    "searchQuery": "Marvel Venom Venom Face Travel Mug",
+    "image": "media/wishlist-venom-jeff-marvel-rivals.jpg",
+    "imageSource": "https://cdn.media.amplience.net/i/hasbropulse/G2074_DIO_MVL_LEGENDS_FALL_GMR_PRG_3_396?fmt=jpg&w=1000",
+    "source": "https://www.hasbropulse.com/product/marvel-legends-series-marvel-rivals-venom-jeff-the-land-shark/G20745L00",
+    "sku": "G20745L00",
+    "asin": "B0FJR4NYB6",
     "brand": "Marvel"
   }
 ]
