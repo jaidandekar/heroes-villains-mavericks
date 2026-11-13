@@ -3,7 +3,7 @@
 .collector-journal .guide-portrait.holo-card .guide-card-link::before { content: ''; position: absolute; inset: 0; z-index: 5; padding: 3px; border-radius: inherit; background: linear-gradient(135deg,#e5e8e9,#8ad9d0 18%,#cab3f2 35%,#fae6b8 50%,#8fc8df 68%,#d7c0e9 84%,#f5f4e3); mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); mask-composite: exclude; pointer-events: none; }
 .collector-journal .guide-portrait.holo-card .guide-card-link::after { z-index: 2; }
 .collector-journal .guide-portrait.holo-card .guide-card-copy { z-index: 3; }
-.holo-foil { position: absolute; inset: 0; z-index: 1; overflow: hidden; border-radius: inherit; pointer-events: none; background: repeating-linear-gradient(115deg,transparent 0%,#8cecd173 10%,#a2b3ff80 20%,#efd0ef80 30%,#ffe6a885 40%,transparent 50%); background-size: 140% 140%; background-position: var(--foil-x) var(--foil-y); mix-blend-mode: color-dodge; opacity: .52; mask-image: linear-gradient(#000 0%,#000 55%,transparent 88%); transition: opacity .3s ease; }
+.holo-foil { position: absolute; inset: 0; z-index: 1; overflow: hidden; border-radius: inherit; pointer-events: none; background: repeating-linear-gradient(var(--foil-angle,115deg),transparent 0%,#8cecd173 10%,#a2b3ff80 20%,#efd0ef80 30%,#ffe6a885 40%,transparent 50%); background-size: 140% 140%; background-position: var(--foil-x) var(--foil-y); mix-blend-mode: color-dodge; opacity: .52; mask-image: linear-gradient(#000 0%,#000 55%,transparent 88%); transition: opacity .3s ease; }
 .holo-glare { position: absolute; inset: 0; display: block; background: radial-gradient(ellipse at var(--foil-x) var(--foil-y),#ffffffb3, #ffffff26 25%, transparent 58%); }
 .holo-grain { position: absolute; inset: 0; display: block; background: radial-gradient(#fff9 .65px,transparent .9px); background-size: 5px 5px; opacity: .25; }
 .collector-journal .guide-portrait.holo-card:focus-within .holo-foil { opacity: .68; }
@@ -101,3 +101,9 @@
 
 .holo-tilt-control button:disabled { opacity: .6; cursor: default; }
 @media (min-width:64rem) and (hover:hover) and (pointer:fine) { .holo-tilt-control { display: none; } }
+
+/* Device motion sweeps the foil across the artwork rather than barely shifting it. */
+@media(prefers-reduced-motion:no-preference) {
+ .holo-card[data-device-tilt] .holo-foil { opacity: .88; background-size: 260% 260%; filter: saturate(1.5) hue-rotate(var(--foil-hue,0deg)); }
+ .holo-card[data-device-tilt] .holo-glare { background: radial-gradient(ellipse at var(--foil-x) var(--foil-y),#ffffffd9, #e0f2ff73 12%,#ffffff1a 30%,transparent 48%); }
+}

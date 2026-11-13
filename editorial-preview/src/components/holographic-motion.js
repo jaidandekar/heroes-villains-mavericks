@@ -17,7 +17,7 @@
   let permitted = false;
   function reset(card) {
     card.removeAttribute('data-device-tilt');
-    ['--holo-rx','--holo-ry','--foil-x','--foil-y'].forEach(key => card.style.removeProperty(key));
+    ['--holo-rx','--holo-ry','--foil-x','--foil-y','--foil-angle','--foil-hue'].forEach(key => card.style.removeProperty(key));
   }
   function stop(message = '') {
     enabled = false; baseline = null;
@@ -35,16 +35,18 @@
     const beta = wrap(event.beta - baseline.beta);
     const gamma = wrap(event.gamma - baseline.gamma);
     const angle = (screen.orientation?.angle ?? window.orientation ?? 0) * Math.PI / 180;
-    const clamp = value => Math.max(-1,Math.min(1,value / 25));
+    const clamp = value => Math.max(-1,Math.min(1,value / 12));
     point = { x: clamp(gamma * Math.cos(angle) + beta * Math.sin(angle)), y: clamp(beta * Math.cos(angle) - gamma * Math.sin(angle)) };
     if (frame) return;
     frame = requestAnimationFrame(() => {
       frame = 0;
       visible.forEach(card => {
-        card.style.setProperty('--holo-rx',(-point.y * 3.5).toFixed(2) + 'deg');
-        card.style.setProperty('--holo-ry',(point.x * 4.5).toFixed(2) + 'deg');
-        card.style.setProperty('--foil-x',(50 + point.x * 40).toFixed(1) + '%');
-        card.style.setProperty('--foil-y',(50 + point.y * 40).toFixed(1) + '%');
+        card.style.setProperty('--holo-rx',(-point.y * 5).toFixed(2) + 'deg');
+        card.style.setProperty('--holo-ry',(point.x * 6.5).toFixed(2) + 'deg');
+        card.style.setProperty('--foil-x',(50 + point.x * 50).toFixed(1) + '%');
+        card.style.setProperty('--foil-y',(50 + point.y * 50).toFixed(1) + '%');
+        card.style.setProperty('--foil-angle',(115 + point.x * 25 + point.y * 10).toFixed(1) + 'deg');
+        card.style.setProperty('--foil-hue',(point.x * 18).toFixed(1) + 'deg');
         card.setAttribute('data-device-tilt','');
       });
     });
